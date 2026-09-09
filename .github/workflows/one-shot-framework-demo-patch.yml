@@ -1,0 +1,57 @@
+name: One-shot framework demo patch
+
+on:
+  push:
+    branches:
+      - feat/framework-backed-demos
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/framework-backed-demos
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Generate lockfile and patch lazy framework demos
+        run: |
+          npm install --package-lock-only --no-audit --no-fund
+          python - <<'PY'
+          from pathlib import Path
+
+          p = Path('web/mechanism-workbench.js')
+          s = p.read_text()
+          old = '''(() => {\n  const chapterLabels = new Map();\n  const demoMap = {\n    "camera-dolly": demoCameraDolly,\n    "depth-parallax": demoDepthParallax,\n    "split-text-reveal": demoSplitText,\n    "particle-attractor": demoParticleAttractor,\n    "noise-threshold-wipe": demoNoiseWipe,\n    "explode-assemble": demoExplodeAssemble,\n    "scroll-scrub": demoScrollScrub,\n    "stage-spotlight": demoStageSpotlight,\n    "bond-morph": demoBondMorph,\n    "graph-relayout": demoGraphRelayout,\n    "canvas-focus-lens": demoFocusLens,\n    "anchored-callout": demoAnchoredCallout,\n  };\n'''
+          new = '''(() => {\n  const chapterLabels = new Map();\n  const frameworkModules = new Map();\n  const demoMap = {\n    "camera-dolly": lazyFrameworkDemo("./framework/three-demos.js", "cameraDolly", demoCameraDolly),\n    "orbital-overlap": lazyFrameworkDemo("./framework/three-demos.js", "orbitalOverlap", null),\n    "depth-parallax": demoDepthParallax,\n    "split-text-reveal": demoSplitText,\n    "particle-attractor": demoParticleAttractor,\n    "noise-threshold-wipe": demoNoiseWipe,\n    "explode-assemble": lazyFrameworkDemo("./framework/three-demos.js", "explodeAssemble", demoExplodeAssemble),\n    "scroll-scrub": demoScrollScrub,\n    "stage-spotlight": demoStageSpotlight,\n    "bond-morph": demoBondMorph,\n    "graph-relayout": lazyFrameworkDemo("./framework/d3-demos.js", "graphRelayout", demoGraphRelayout),\n    "canvas-focus-lens": demoFocusLens,\n    "anchored-callout": lazyFrameworkDemo("./framework/three-demos.js", "anchoredCallout", demoAnchoredCallout),\n  };\n'''
+          if old not in s:
+              raise SystemExit('demoMap patch target not found')
+          s = s.replace(old, new, 1)
+
+          marker = '''  const reducedMotion = () => window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;\n'''
+          insert = '''  function loadFrameworkModule(path) {\n    if (!frameworkModules.has(path)) frameworkModules.set(path, import(path));\n    return frameworkModules.get(path);\n  }\n\n  function lazyFrameworkDemo(path, exportName, fallback) {\n    return (host) => {\n      let disposed = false;\n      let cleanup = () => {};\n      host.innerHTML = `<div class="demo-loading">Loading renderer…</div>`;\n      loadFrameworkModule(path)\n        .then((module) => {\n          if (disposed || !host.isConnected) return;\n          const init = module?.[exportName];\n          if (typeof init !== "function") throw new Error(`Missing framework demo export: ${exportName}`);\n          cleanup = init(host) || (() => {});\n        })\n        .catch((error) => {\n          console.error(`Framework demo failed (${exportName})`, error);\n          if (disposed) return;\n          if (typeof fallback === "function") cleanup = fallback(host) || (() => {});\n          else host.innerHTML = `<p class="demo-loading">Renderer unavailable.</p>`;\n        });\n      return () => {\n        disposed = true;\n        cleanup();\n      };\n    };\n  }\n\n'''
+          if marker not in s:
+              raise SystemExit('lazy loader insertion target not found')
+          s = s.replace(marker, insert + marker, 1)
+          p.write_text(s)
+
+          css = Path('web/board.css')
+          c = css.read_text()
+          marker = '.demo-stage svg { display: block; width: 100%; height: auto; }\n'
+          add = '''.framework-stage { position: relative; height: 240px; overflow: hidden; border-bottom: 1px solid var(--line); background: var(--paper); }\n.framework-stage canvas, .framework-stage > svg { display: block; width: 100%; height: 240px; }\n.framework-overlay { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }\n.framework-badge { position: absolute; top: 9px; left: 10px; padding: 4px 6px; border: 1px solid rgba(17,17,17,.18); background: rgba(248,248,245,.88); color: var(--muted); font: 600 8px/1 var(--mono); letter-spacing: .05em; text-transform: uppercase; }\n.demo-loading { min-height: 240px; display: grid; place-items: center; margin: 0; color: var(--muted); font: 500 10px/1.4 var(--mono); }\n'''
+          if marker not in c:
+              raise SystemExit('framework CSS insertion target not found')
+          c = c.replace(marker, marker + add, 1)
+          css.write_text(c)
+          PY
+          node --check web/mechanism-workbench.js
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add package-lock.json web/mechanism-workbench.js web/board.css
+          git commit -m "Wire lazy framework-backed demos"
+          git push origin HEAD:feat/framework-backed-demos
