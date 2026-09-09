@@ -37,4 +37,6 @@ jobs:
         run: python scripts/validate_board.py
 
       - name: Validate capability board JavaScript
-        run: node --check web/board.js
+        run: |
+          node --check web/board.js
+          node --check web/mechanism-workbench.js
