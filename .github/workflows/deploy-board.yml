@@ -9,6 +9,7 @@ on:
       - web/**
       - registries/**
       - catalog.yaml
+      - scripts/build_board_data.py
       - .github/workflows/deploy-board.yml
   workflow_dispatch:
 
@@ -28,9 +29,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
+      - name: Compile runtime data
+        run: |
+          python -m pip install --disable-pip-version-check --quiet pyyaml
+          mkdir -p _site/data
+          python scripts/build_board_data.py --output _site/data/board.json
+
       - name: Build static board artifact
         run: |
-          mkdir -p _site
           cp index.html _site/index.html
           cp catalog.yaml _site/catalog.yaml
           cp -R web _site/web
