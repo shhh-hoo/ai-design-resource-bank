@@ -4,13 +4,14 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
+BOOT_JS = ROOT / "web" / "boot.js"
 JS = ROOT / "web" / "board.js"
 WORKBENCH_JS = ROOT / "web" / "mechanism-workbench.js"
 CSS = ROOT / "web" / "board.css"
 
 errors: list[str] = []
 
-for path in (INDEX, JS, WORKBENCH_JS, CSS):
+for path in (INDEX, BOOT_JS, JS, WORKBENCH_JS, CSS):
     if not path.exists():
         errors.append(f"missing board asset: {path.relative_to(ROOT)}")
 
@@ -24,10 +25,10 @@ if INDEX.exists():
         'id="detailDrawer"',
         'id="mechanismCardTemplate"',
         './web/board.css',
+        './web/boot.js',
         './web/board.js',
         './web/mechanism-workbench.js',
         'Subject → mechanism → demo → tool',
-        'js-yaml@4.1.0',
     ):
         if required not in html:
             errors.append(f"index.html missing required board contract: {required}")
@@ -37,17 +38,27 @@ if INDEX.exists():
         'id="tierSelect"',
         'id="boardView"',
         'class="card-tags"',
+        'cdn.jsdelivr.net',
+        'js-yaml',
     ):
         if removed in html:
-            errors.append(f"index.html reintroduced dense legacy surface: {removed}")
+            errors.append(f"index.html reintroduced dense/slow legacy surface: {removed}")
+
+if BOOT_JS.exists():
+    boot = BOOT_JS.read_text(encoding="utf-8")
+    for required in (
+        "data/board.json",
+        "window.__BOARD_DATA__",
+        'cache: "force-cache"',
+        'import("./board.js")',
+        'import("./mechanism-workbench.js")',
+    ):
+        if required not in boot:
+            errors.append(f"web/boot.js missing fast-start behavior: {required}")
 
 if JS.exists():
     js = JS.read_text(encoding="utf-8")
     for required in (
-        './registries/frontend-mechanisms.yaml',
-        './registries/frontend-tools.yaml',
-        './registries/reference-galleries.yaml',
-        './catalog.yaml',
         'Copy AI brief',
         'history.pushState',
         'demoMovableTangent',
