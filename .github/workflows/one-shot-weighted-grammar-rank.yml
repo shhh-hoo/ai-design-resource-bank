@@ -1,0 +1,22 @@
+name: Apply weighted grammar ranking patch
+on:
+  push:
+    branches: [feat/master-decision-board]
+permissions:
+  contents: write
+jobs:
+  patch:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: feat/master-decision-board
+      - run: python scripts/_patch_weighted_grammar_rank.py
+      - run: node --check web/decision-board.js
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add web/decision-board.js
+          git commit -m "Weight grammar mechanism relevance"
+          git push origin HEAD:feat/master-decision-board
