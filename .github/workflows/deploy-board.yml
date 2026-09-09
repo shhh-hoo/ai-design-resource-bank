@@ -12,6 +12,7 @@ on:
       - package.json
       - package-lock.json
       - scripts/build_board_data.py
+      - scripts/build_subject_atlas_data.py
       - scripts/build_framework_demos.mjs
       - .github/workflows/deploy-board.yml
   workflow_dispatch:
@@ -46,6 +47,7 @@ jobs:
           python -m pip install --disable-pip-version-check --quiet pyyaml
           mkdir -p _site/data
           python scripts/build_board_data.py --output _site/data/board.json
+          python scripts/build_subject_atlas_data.py --output _site/data/subject-atlas.json
 
       - name: Build static board artifact
         run: |
