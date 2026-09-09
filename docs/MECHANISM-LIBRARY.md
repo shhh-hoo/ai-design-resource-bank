@@ -18,7 +18,31 @@ production tool
 verified Resource Package when available
 ```
 
-The live proof is deliberately small. It proves the behavior, not the production architecture. A native SVG/DOM proof may therefore recommend Three.js, GSAP, G6, RDKit.js, PixiJS, or another mature tool for real use.
+The live proof is deliberately small. It proves the behavior, not a whole production application. Small does **not** mean fake: the proof should use the narrowest runtime that genuinely owns the hard behavior.
+
+## Demo fidelity rule
+
+Use native DOM/SVG when the hard part is explanatory geometry, direct manipulation, annotation, or state linkage that SVG expresses truthfully.
+
+Use a mature framework/engine when the runtime itself carries the meaning. Examples:
+
+- perspective, camera movement, depth, projection, spatial anchoring → Three.js / R3F;
+- graph forces or computed relationship layout → D3 force / G6 / Cytoscape as appropriate;
+- rigid-body motion and collision → Matter.js / Rapier;
+- high-volume particles, filters, GPU 2D → PixiJS;
+- molecular structure semantics → RDKit.js / Mol* / 3Dmol.js;
+- domain-specific interactive mathematics → Mafs / JSXGraph when their coordinate and dependency model is the point.
+
+Do **not** substitute a 2D SVG imitation merely because it is quicker to hand-code. If a camera demo never creates a camera, a physics demo never runs a model, or a graph layout never computes a layout, it is not a faithful proof of that mechanism.
+
+Framework-backed demos must still remain lightweight:
+
+- bundle dependencies at build time and self-host them;
+- lazy-load the framework only after the user opens the relevant `Try` drawer;
+- dispose renderers, geometries, materials, simulations, listeners, and animation handles on close;
+- avoid permanent animation loops when interaction-triggered redraw is sufficient;
+- preserve a simple fallback when practical;
+- one demo still proves one mechanism.
 
 ## Editorial chapters
 
@@ -67,16 +91,18 @@ One demo should prove one mechanism.
 
 Good:
 
-- camera dolly → relative foreground/background change;
+- camera dolly → a real perspective camera changes relative foreground/background scale;
 - particle attractor → visible field from particle motion;
 - bond morph → atom identity persists while bond state changes;
-- graph re-layout → nodes preserve identity through position changes.
+- graph re-layout → a real layout engine computes positions while nodes preserve identity.
 
 Bad:
 
 - a polished hero combining camera, particles, shader wipe, typography, sound and scroll into one demo;
 - a screenshot with no manipulable state;
-- a fake simulation whose motion is unrelated to the underlying model.
+- a fake simulation whose motion is unrelated to the underlying model;
+- a 2D scale transform presented as a camera dolly;
+- hand-authored graph coordinates presented as a computed layout.
 
 ## Human-facing constraint
 
