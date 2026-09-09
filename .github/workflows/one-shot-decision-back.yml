@@ -1,0 +1,22 @@
+name: Apply decision back-nav patch
+on:
+  push:
+    branches: [feat/master-decision-board]
+permissions:
+  contents: write
+jobs:
+  patch:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: feat/master-decision-board
+      - run: python scripts/_patch_decision_back.py
+      - run: node --check web/board.js
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add web/board.js
+          git commit -m "Close routed drawer on decision back-nav"
+          git push origin HEAD:feat/master-decision-board
