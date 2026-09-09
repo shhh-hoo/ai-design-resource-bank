@@ -85,9 +85,17 @@ if WORKBENCH_JS.exists():
         'demoFocusLens',
         'demoAnchoredCallout',
         'prefers-reduced-motion',
+        'eyebrow.textContent !== nextText',
+        'observe(content, { childList: true })',
     ):
         if required not in extension:
             errors.append(f"web/mechanism-workbench.js missing expected behavior: {required}")
+    for banned in (
+        'observe(content, { childList: true, subtree: true })',
+        'if (label) eyebrow.textContent = `${label} / mechanism`',
+    ):
+        if banned in extension:
+            errors.append(f"web/mechanism-workbench.js reintroduced recursive drawer observer pattern: {banned}")
 
 if CSS.exists():
     css = CSS.read_text(encoding="utf-8")

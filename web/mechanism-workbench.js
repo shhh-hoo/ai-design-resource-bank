@@ -152,7 +152,8 @@
     const item = (registry.mechanisms || []).find((mechanism) => mechanism.id === hash);
     if (!item) return;
     const label = chapterLabels.get(item.domain);
-    if (label) eyebrow.textContent = `${label} / mechanism`;
+    const nextText = label ? `${label} / mechanism` : "";
+    if (nextText && eyebrow.textContent !== nextText) eyebrow.textContent = nextText;
   }
 
   function observeChapters() {
@@ -183,7 +184,7 @@
         activeDemoHost = host;
         activeCleanup = demo(host) || (() => {});
       }));
-    }).observe(content, { childList: true, subtree: true });
+    }).observe(content, { childList: true });
 
     new MutationObserver(() => {
       if (!drawer.classList.contains("is-open")) cleanupDemo();
