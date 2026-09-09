@@ -4,12 +4,14 @@ from __future__ import annotations
 import re
 import sys
 from pathlib import Path
+from urllib.parse import urlparse
 
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 SUBJECTS_PATH = ROOT / "registries" / "curriculum-subjects.yaml"
 ATLAS_PATH = ROOT / "registries" / "subject-visualization-families.yaml"
+SOURCES_PATH = ROOT / "registries" / "curriculum-research-sources.yaml"
 TOOLS_PATH = ROOT / "registries" / "frontend-tools.yaml"
 MECHANISMS_PATH = ROOT / "registries" / "frontend-mechanisms.yaml"
 ID_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
@@ -31,6 +33,13 @@ def ids_from_list(doc: dict, key: str) -> set[str]:
     if not isinstance(entries, list):
         return set()
     return {entry.get("id") for entry in entries if isinstance(entry, dict) and isinstance(entry.get("id"), str)}
+
+
+def valid_https_url(value: object) -> bool:
+    if not isinstance(value, str):
+        return False
+    parsed = urlparse(value)
+    return parsed.scheme == "https" and bool(parsed.netloc)
 
 
 def validate_subjects(errors: list[str], doc: dict, family_ids: set[str]) -> tuple[int, int]:
@@ -180,18 +189,59 @@ def validate_atlas(
     return len(grammars), len(families)
 
 
+def validate_sources(errors: list[str], doc: dict, family_ids: set[str]) -> int:
+    if doc.get("version") != 1:
+        fail(errors, f"{SOURCES_PATH.relative_to(ROOT)}: version must be 1")
+
+    families = doc.get("families")
+    if not isinstance(families, dict) or not families:
+        fail(errors, "curriculum-research-sources.families must be a non-empty mapping")
+        return 0
+
+    source_family_ids = set(families)
+    missing = family_ids - source_family_ids
+    extra = source_family_ids - family_ids
+    for family_id in sorted(missing):
+        fail(errors, f"curriculum-research-sources: missing sources for family {family_id!r}")
+    for family_id in sorted(extra):
+        fail(errors, f"curriculum-research-sources: unknown family {family_id!r}")
+
+    source_count = 0
+    for family_id, sources in families.items():
+        prefix = f"curriculum-research-sources.families.{family_id}"
+        if not isinstance(sources, list) or not sources:
+            fail(errors, f"{prefix}: expected a non-empty list")
+            continue
+        for index, source in enumerate(sources):
+            source_count += 1
+            source_prefix = f"{prefix}[{index}]"
+            if not isinstance(source, dict):
+                fail(errors, f"{source_prefix}: expected a mapping")
+                continue
+            if source.get("program") not in ALLOWED_PROGRAMS:
+                fail(errors, f"{source_prefix}: unsupported program {source.get('program')!r}")
+            if not source.get("label"):
+                fail(errors, f"{source_prefix}: missing/empty label")
+            if not valid_https_url(source.get("url")):
+                fail(errors, f"{source_prefix}: url must be an https URL")
+
+    return source_count
+
+
 def main() -> int:
     errors: list[str] = []
     tools_doc = load_yaml(TOOLS_PATH)
     mechanisms_doc = load_yaml(MECHANISMS_PATH)
     atlas_doc = load_yaml(ATLAS_PATH)
     subjects_doc = load_yaml(SUBJECTS_PATH)
+    sources_doc = load_yaml(SOURCES_PATH)
 
     tool_ids = ids_from_list(tools_doc, "tools")
     mechanism_ids = ids_from_list(mechanisms_doc, "mechanisms")
     grammar_count, family_count = validate_atlas(errors, atlas_doc, tool_ids, mechanism_ids)
     family_ids = set(atlas_doc.get("families", {})) if isinstance(atlas_doc.get("families"), dict) else set()
     cambridge_count, ap_count = validate_subjects(errors, subjects_doc, family_ids)
+    source_count = validate_sources(errors, sources_doc, family_ids)
 
     if errors:
         print("Subject visualization atlas validation failed:\n", file=sys.stderr)
@@ -202,7 +252,8 @@ def main() -> int:
     print(
         "Subject visualization atlas validation passed: "
         f"{cambridge_count} Cambridge entries, {ap_count} AP subjects, "
-        f"{family_count} families, {grammar_count} visualization grammars."
+        f"{family_count} families, {grammar_count} visualization grammars, "
+        f"{source_count} official provenance anchors."
     )
     return 0
 
