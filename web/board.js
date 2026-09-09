@@ -701,6 +701,7 @@
     const hash = decodeURIComponent(location.hash.replace(/^#/, ""));
     if (!hash || !hash.includes(":")) return;
     if (hash.startsWith("subject:") || hash.startsWith("grammar:")) {
+      if (state.openUid) closeDrawer(false);
       setView("decide");
       return;
     }
