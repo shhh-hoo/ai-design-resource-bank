@@ -26,3 +26,6 @@ jobs:
 
       - name: Validate resource packages
         run: python scripts/validate_resources.py
+
+      - name: Validate capability registries
+        run: python scripts/validate_registries.py
