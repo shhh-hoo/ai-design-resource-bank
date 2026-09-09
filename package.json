@@ -1,0 +1,15 @@
+{
+  "name": "ai-design-resource-bank",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:framework-demos": "node scripts/build_framework_demos.mjs"
+  },
+  "dependencies": {
+    "d3-force": "3.0.0",
+    "three": "0.186.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}

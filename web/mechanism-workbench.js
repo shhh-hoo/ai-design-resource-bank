@@ -1,18 +1,20 @@
 (() => {
   const chapterLabels = new Map();
+  const frameworkModules = new Map();
   const demoMap = {
-    "camera-dolly": demoCameraDolly,
+    "camera-dolly": lazyFrameworkDemo("./framework/three-demos.js", "cameraDolly", demoCameraDolly),
+    "orbital-overlap": lazyFrameworkDemo("./framework/three-demos.js", "orbitalOverlap", null),
     "depth-parallax": demoDepthParallax,
     "split-text-reveal": demoSplitText,
     "particle-attractor": demoParticleAttractor,
     "noise-threshold-wipe": demoNoiseWipe,
-    "explode-assemble": demoExplodeAssemble,
+    "explode-assemble": lazyFrameworkDemo("./framework/three-demos.js", "explodeAssemble", demoExplodeAssemble),
     "scroll-scrub": demoScrollScrub,
     "stage-spotlight": demoStageSpotlight,
     "bond-morph": demoBondMorph,
-    "graph-relayout": demoGraphRelayout,
+    "graph-relayout": lazyFrameworkDemo("./framework/d3-demos.js", "graphRelayout", demoGraphRelayout),
     "canvas-focus-lens": demoFocusLens,
-    "anchored-callout": demoAnchoredCallout,
+    "anchored-callout": lazyFrameworkDemo("./framework/three-demos.js", "anchoredCallout", demoAnchoredCallout),
   };
 
   let registry = null;
@@ -20,6 +22,42 @@
   let activeDemoHost = null;
   let pendingDemoHost = null;
   let activeCleanup = null;
+
+  function loadFrameworkModule(path) {
+    if (!frameworkModules.has(path)) frameworkModules.set(path, import(path));
+    return frameworkModules.get(path);
+  }
+
+  function lazyFrameworkDemo(path, exportName, fallback) {
+    return (host) => {
+      let disposed = false;
+      let cleanup = () => {};
+      host.innerHTML = `<div class="demo-loading">Loading renderer…</div>`;
+      loadFrameworkModule(path)
+        .then((module) => {
+          if (disposed || !host.isConnected) return;
+          const init = module?.[exportName];
+          if (typeof init !== "function") throw new Error(`Missing framework demo export: ${exportName}`);
+          cleanup = init(host) || (() => {});
+        })
+        .catch((error) => {
+          console.error(`Framework demo failed (${exportName})`, error);
+          if (disposed || !host.isConnected) return;
+          host.replaceChildren();
+          try {
+            if (typeof fallback === "function") cleanup = fallback(host) || (() => {});
+            else host.innerHTML = `<p class="demo-loading" data-renderer-fallback>Renderer unavailable on this browser.</p>`;
+          } catch (fallbackError) {
+            console.error(`Framework fallback failed (${exportName})`, fallbackError);
+            host.innerHTML = `<p class="demo-loading" data-renderer-fallback>Renderer unavailable on this browser.</p>`;
+          }
+        });
+      return () => {
+        disposed = true;
+        cleanup();
+      };
+    };
+  }
 
   const reducedMotion = () => window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
   const escapeHtml = (value = "") => String(value).replace(/[&<>'\"]/g, (char) => ({
@@ -162,33 +200,40 @@
     new MutationObserver(() => queueChapterRender()).observe(host, { childList: true });
   }
 
+  function syncDrawerDemo(content, drawer) {
+    prettyDrawerEyebrow();
+    const host = content.querySelector("[data-demo]");
+    if (!host) return;
+    const demo = demoMap[host.dataset.demo];
+    if (!demo || host === activeDemoHost || host === pendingDemoHost) return;
+    pendingDemoHost = host;
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      if (!host.isConnected || !drawer.classList.contains("is-open")) {
+        pendingDemoHost = null;
+        return;
+      }
+      cleanupDemo();
+      pendingDemoHost = null;
+      activeDemoHost = host;
+      activeCleanup = demo(host) || (() => {});
+    }));
+  }
+
   function observeDrawer() {
     const content = document.getElementById("drawerContent");
     const drawer = document.getElementById("detailDrawer");
     if (!content || !drawer) return;
 
-    new MutationObserver(() => {
-      prettyDrawerEyebrow();
-      const host = content.querySelector("[data-demo]");
-      if (!host) return;
-      const demo = demoMap[host.dataset.demo];
-      if (!demo || host === activeDemoHost || host === pendingDemoHost) return;
-      pendingDemoHost = host;
-      requestAnimationFrame(() => requestAnimationFrame(() => {
-        if (!host.isConnected || !drawer.classList.contains("is-open")) {
-          pendingDemoHost = null;
-          return;
-        }
-        cleanupDemo();
-        pendingDemoHost = null;
-        activeDemoHost = host;
-        activeCleanup = demo(host) || (() => {});
-      }));
-    }).observe(content, { childList: true });
+    new MutationObserver(() => syncDrawerDemo(content, drawer)).observe(content, { childList: true });
 
     new MutationObserver(() => {
-      if (!drawer.classList.contains("is-open")) cleanupDemo();
+      if (drawer.classList.contains("is-open")) syncDrawerDemo(content, drawer);
+      else cleanupDemo();
     }).observe(drawer, { attributes: true, attributeFilter: ["class"] });
+
+    // Deep links can render the drawer before this extension finishes loading.
+    // Synchronize the already-open drawer once so click and deep-link paths converge.
+    syncDrawerDemo(content, drawer);
   }
 
   function cleanupDemo() {

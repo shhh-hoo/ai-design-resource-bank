@@ -21,8 +21,16 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+
       - name: Install validator dependencies
-        run: python -m pip install --disable-pip-version-check --quiet pyyaml jsonschema
+        run: |
+          python -m pip install --disable-pip-version-check --quiet pyyaml jsonschema
+          npm ci --no-audit --no-fund
 
       - name: Validate resource packages
         run: python scripts/validate_resources.py
@@ -39,11 +47,21 @@ jobs:
       - name: Compile runtime board data
         run: python scripts/build_board_data.py --output .board-test/data/board.json
 
+      - name: Bundle lazy framework demos
+        env:
+          BOARD_FRAMEWORK_OUTDIR: .board-test/framework
+        run: npm run build:framework-demos
+
       - name: Validate board performance budget
         run: python scripts/validate_board_perf.py --data .board-test/data/board.json
+
+      - name: Validate lazy framework bundles
+        run: python scripts/validate_framework_demos.py --dir .board-test/framework
 
       - name: Validate capability board JavaScript
         run: |
           node --check web/boot.js
           node --check web/board.js
           node --check web/mechanism-workbench.js
+          node --check web/framework/three-demos.js
+          node --check web/framework/d3-demos.js
