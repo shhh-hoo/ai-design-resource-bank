@@ -221,7 +221,8 @@
     new MutationObserver(() => syncDrawerDemo(content, drawer)).observe(content, { childList: true });
 
     new MutationObserver(() => {
-      if (!drawer.classList.contains("is-open")) cleanupDemo();
+      if (drawer.classList.contains("is-open")) syncDrawerDemo(content, drawer);
+      else cleanupDemo();
     }).observe(drawer, { attributes: true, attributeFilter: ["class"] });
 
     // Deep links can render the drawer before this extension finishes loading.
