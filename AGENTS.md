@@ -44,7 +44,17 @@ Before choosing an implementation:
 5. follow `skills/select-frontend-resource/SKILL.md` for nontrivial selection decisions;
 6. prefer an existing verified Resource Package when one already contains the needed mechanism.
 
-The registries are discovery/selection infrastructure. They do **not** mean every listed external tool has been validated locally or ingested as a Resource Package.
+For curriculum or subject-matter visualization, add a curriculum-aware routing step **before** tool selection:
+
+1. identify the subject in `registries/curriculum-subjects.yaml`;
+2. read its family in `registries/subject-visualization-families.yaml`;
+3. translate the actual learning relationship into one of the atlas visualization grammars;
+4. then select the narrowest existing tool/mechanism from the bank;
+5. consult `docs/SUBJECT-VISUALIZATION-ATLAS.md` for fidelity rules and cross-subject implementation priorities.
+
+Do not build one bespoke visualization stack per school subject. Curriculum labels are retrieval metadata; implementations should be shared when the underlying relationship is the same. A derivative, a supply-demand equilibrium, a migration flow, and a protein structure should not be forced through one generic renderer simply because all are “visualizations.”
+
+The registries are discovery/selection infrastructure. They do **not** mean every listed external tool has already been validated locally or ingested as a Resource Package.
 
 Prefer domain semantics over generic rendering when correctness matters: e.g. a chemistry toolkit before hand-drawn bond SVG, a math engine before manually implementing coordinates, a geospatial engine before raw Three.js Earth geometry, and an actual physics engine before timeline animation presented as simulation.
 

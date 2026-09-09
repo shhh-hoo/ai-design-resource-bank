@@ -1,0 +1,114 @@
+version: 1
+snapshot_date: '2026-09-10'
+scope:
+  a_level_baseline: Cambridge International AS & A Level
+  a_level_other_boards: [AQA, Pearson Edexcel, OCR]
+  cambridge_catalog_entries: 57
+  cambridge_note: >-
+    Cambridge says it offers 55 subjects; the public subject page currently lists 57 syllabus entries because
+    it includes level, language, and regional variants. This snapshot preserves every listed entry.
+  ap_catalog_entries: 42
+subjects:
+  - {id: cambridge-9706-accounting, program: cambridge-international-as-a-level, name: "Accounting", code: '9706', family: economics-business}
+  - {id: cambridge-8679-afrikaans-language, program: cambridge-international-as-a-level, name: "Afrikaans - Language (AS Level only)", code: '8679', family: language-literature}
+  - {id: cambridge-9680-arabic, program: cambridge-international-as-a-level, name: "Arabic", code: '9680', family: language-literature}
+  - {id: cambridge-8680-arabic-language, program: cambridge-international-as-a-level, name: "Arabic - Language (AS Level only)", code: '8680', family: language-literature}
+  - {id: cambridge-9479-art-design, program: cambridge-international-as-a-level, name: "Art & Design", code: '9479', family: art-design-media}
+  - {id: cambridge-9484-biblical-studies, program: cambridge-international-as-a-level, name: "Biblical Studies", code: '9484', family: law-religion-thinking}
+  - {id: cambridge-9700-biology, program: cambridge-international-as-a-level, name: "Biology", code: '9700', family: biology}
+  - {id: cambridge-9609-business, program: cambridge-international-as-a-level, name: "Business", code: '9609', family: economics-business}
+  - {id: cambridge-9701-chemistry, program: cambridge-international-as-a-level, name: "Chemistry", code: '9701', family: chemistry}
+  - {id: cambridge-9868-chinese-language-literature, program: cambridge-international-as-a-level, name: "Chinese - Language & Literature (A Level only)", code: '9868', family: language-literature}
+  - {id: cambridge-8238-chinese-language, program: cambridge-international-as-a-level, name: "Chinese Language (AS Level only)", code: '8238', family: language-literature}
+  - {id: cambridge-9274-classical-studies, program: cambridge-international-as-a-level, name: "Classical Studies", code: '9274', family: law-religion-thinking}
+  - {id: cambridge-9618-computer-science, program: cambridge-international-as-a-level, name: "Computer Science", code: '9618', family: computer-science}
+  - {id: cambridge-9705-design-technology, program: cambridge-international-as-a-level, name: "Design & Technology", code: '9705', family: art-design-media}
+  - {id: cambridge-9481-digital-media-design, program: cambridge-international-as-a-level, name: "Digital Media & Design", code: '9481', family: art-design-media}
+  - {id: cambridge-9482-drama, program: cambridge-international-as-a-level, name: "Drama", code: '9482', family: art-design-media}
+  - {id: cambridge-9708-economics, program: cambridge-international-as-a-level, name: "Economics", code: '9708', family: economics-business}
+  - {id: cambridge-8695-english-language-literature, program: cambridge-international-as-a-level, name: "English - Language and Literature (AS Level only)", code: '8695', family: language-literature}
+  - {id: cambridge-9695-literature-english, program: cambridge-international-as-a-level, name: "English - Literature", code: '9695', family: language-literature}
+  - {id: cambridge-8021-english-general-paper, program: cambridge-international-as-a-level, name: "English General Paper (AS Level only)", code: '8021', family: research-interdisciplinary}
+  - {id: cambridge-9093-english-language, program: cambridge-international-as-a-level, name: "English Language", code: '9093', family: language-literature}
+  - {id: cambridge-8291-environmental-management, program: cambridge-international-as-a-level, name: "Environmental Management (AS only)", code: '8291', family: earth-environment}
+  - {id: cambridge-9981-european-history, program: cambridge-international-as-a-level, name: "European History", code: '9981', family: history-government}
+  - {id: cambridge-9898-french-language-literature, program: cambridge-international-as-a-level, name: "French Language & Literature", code: '9898', family: language-literature}
+  - {id: cambridge-8028-french-language, program: cambridge-international-as-a-level, name: "French Language (AS Level only)", code: '8028', family: language-literature}
+  - {id: cambridge-9696-geography, program: cambridge-international-as-a-level, name: "Geography", code: '9696', family: geography}
+  - {id: cambridge-8027-german-language, program: cambridge-international-as-a-level, name: "German - Language (AS Level only)", code: '8027', family: language-literature}
+  - {id: cambridge-9897-german-language-literature, program: cambridge-international-as-a-level, name: "German Language & Literature (A Level only)", code: '9897', family: language-literature}
+  - {id: cambridge-9239-global-perspectives-research, program: cambridge-international-as-a-level, name: "Global Perspectives & Research", code: '9239', family: research-interdisciplinary}
+  - {id: cambridge-9487-hinduism, program: cambridge-international-as-a-level, name: "Hinduism", code: '9487', family: law-religion-thinking}
+  - {id: cambridge-9489-history, program: cambridge-international-as-a-level, name: "History", code: '9489', family: history-government}
+  - {id: cambridge-9626-information-technology, program: cambridge-international-as-a-level, name: "Information Technology", code: '9626', family: computer-science}
+  - {id: cambridge-9982-international-history, program: cambridge-international-as-a-level, name: "International History", code: '9982', family: history-government}
+  - {id: cambridge-9488-islamic-studies, program: cambridge-international-as-a-level, name: "Islamic Studies", code: '9488', family: law-religion-thinking}
+  - {id: cambridge-9084-law, program: cambridge-international-as-a-level, name: "Law", code: '9084', family: law-religion-thinking}
+  - {id: cambridge-9693-marine-science, program: cambridge-international-as-a-level, name: "Marine Science", code: '9693', family: earth-environment}
+  - {id: cambridge-9709-mathematics, program: cambridge-international-as-a-level, name: "Mathematics", code: '9709', family: mathematics}
+  - {id: cambridge-9231-further-mathematics, program: cambridge-international-as-a-level, name: "Mathematics - Further", code: '9231', family: mathematics}
+  - {id: cambridge-9607-media-studies, program: cambridge-international-as-a-level, name: "Media Studies", code: '9607', family: art-design-media}
+  - {id: cambridge-9483-music, program: cambridge-international-as-a-level, name: "Music", code: '9483', family: music}
+  - {id: cambridge-9702-physics, program: cambridge-international-as-a-level, name: "Physics", code: '9702', family: physics}
+  - {id: cambridge-8684-portuguese-language, program: cambridge-international-as-a-level, name: "Portuguese - Language (AS Level only)", code: '8684', family: language-literature}
+  - {id: cambridge-9718-portuguese, program: cambridge-international-as-a-level, name: "Portuguese (A Level only)", code: '9718', family: language-literature}
+  - {id: cambridge-9990-psychology, program: cambridge-international-as-a-level, name: "Psychology", code: '9990', family: psychology-social}
+  - {id: cambridge-9699-sociology, program: cambridge-international-as-a-level, name: "Sociology", code: '9699', family: psychology-social}
+  - {id: cambridge-9844-spanish-language-literature, program: cambridge-international-as-a-level, name: "Spanish - Language & Literature (A Level only)", code: '9844', family: language-literature}
+  - {id: cambridge-8022-spanish-language, program: cambridge-international-as-a-level, name: "Spanish Language (AS Level only)", code: '8022', family: language-literature}
+  - {id: cambridge-8386-sport-physical-education, program: cambridge-international-as-a-level, name: "Sport & Physical Education (AS Level only)", code: '8386', family: physical-education}
+  - {id: cambridge-9689-tamil, program: cambridge-international-as-a-level, name: "Tamil (A Level only)", code: '9689', family: language-literature}
+  - {id: cambridge-8689-tamil-language, program: cambridge-international-as-a-level, name: "Tamil - Language (AS Level only)", code: '8689', family: language-literature}
+  - {id: cambridge-9694-thinking-skills, program: cambridge-international-as-a-level, name: "Thinking Skills", code: '9694', family: law-religion-thinking}
+  - {id: cambridge-9395-travel-tourism, program: cambridge-international-as-a-level, name: "Travel & Tourism", code: '9395', family: travel-tourism}
+  - {id: cambridge-8686-urdu-language, program: cambridge-international-as-a-level, name: "Urdu - Language (AS Level only)", code: '8686', family: language-literature}
+  - {id: cambridge-9686-urdu-pakistan, program: cambridge-international-as-a-level, name: "Urdu - Pakistan only (A Level only)", code: '9686', family: language-literature}
+  - {id: cambridge-9866-urdu-language-literature, program: cambridge-international-as-a-level, name: "Urdu Language & Literature (Pakistan)", code: '9866', family: language-literature}
+  - {id: cambridge-8102-us-history-since-1877, program: cambridge-international-as-a-level, name: "US History since 1877", code: '8102', family: history-government}
+  - {id: cambridge-8101-us-history-to-1877, program: cambridge-international-as-a-level, name: "US History to 1877", code: '8101', family: history-government}
+  - {id: ap-2d-art-design, program: ap, name: "AP 2-D Art and Design", family: art-design-media}
+  - {id: ap-3d-art-design, program: ap, name: "AP 3-D Art and Design", family: art-design-media}
+  - {id: ap-drawing, program: ap, name: "AP Drawing", family: art-design-media}
+  - {id: ap-art-history, program: ap, name: "AP Art History", family: art-design-media}
+  - {id: ap-music-theory, program: ap, name: "AP Music Theory", family: music}
+  - {id: ap-english-language-composition, program: ap, name: "AP English Language and Composition", family: language-literature}
+  - {id: ap-english-literature-composition, program: ap, name: "AP English Literature and Composition", family: language-literature}
+  - {id: ap-african-american-studies, program: ap, name: "AP African American Studies", family: history-government}
+  - {id: ap-comparative-government-politics, program: ap, name: "AP Comparative Government and Politics", family: history-government}
+  - {id: ap-european-history, program: ap, name: "AP European History", family: history-government}
+  - {id: ap-human-geography, program: ap, name: "AP Human Geography", family: geography}
+  - {id: ap-macroeconomics, program: ap, name: "AP Macroeconomics", family: economics-business}
+  - {id: ap-microeconomics, program: ap, name: "AP Microeconomics", family: economics-business}
+  - {id: ap-psychology, program: ap, name: "AP Psychology", family: psychology-social}
+  - {id: ap-us-government-politics, program: ap, name: "AP United States Government and Politics", family: history-government}
+  - {id: ap-us-history, program: ap, name: "AP United States History", family: history-government}
+  - {id: ap-world-history-modern, program: ap, name: "AP World History: Modern", family: history-government}
+  - {id: ap-calculus-ab, program: ap, name: "AP Calculus AB", family: mathematics}
+  - {id: ap-calculus-bc, program: ap, name: "AP Calculus BC", family: mathematics}
+  - {id: ap-computer-science-a, program: ap, name: "AP Computer Science A", family: computer-science}
+  - {id: ap-computer-science-principles, program: ap, name: "AP Computer Science Principles", family: computer-science}
+  - {id: ap-precalculus, program: ap, name: "AP Precalculus", family: mathematics}
+  - {id: ap-statistics, program: ap, name: "AP Statistics", family: mathematics}
+  - {id: ap-biology, program: ap, name: "AP Biology", family: biology}
+  - {id: ap-chemistry, program: ap, name: "AP Chemistry", family: chemistry}
+  - {id: ap-environmental-science, program: ap, name: "AP Environmental Science", family: earth-environment}
+  - {id: ap-physics-1, program: ap, name: "AP Physics 1: Algebra-Based", family: physics}
+  - {id: ap-physics-2, program: ap, name: "AP Physics 2: Algebra-Based", family: physics}
+  - {id: ap-physics-c-electricity-magnetism, program: ap, name: "AP Physics C: Electricity and Magnetism", family: physics}
+  - {id: ap-physics-c-mechanics, program: ap, name: "AP Physics C: Mechanics", family: physics}
+  - {id: ap-chinese-language-culture, program: ap, name: "AP Chinese Language and Culture", family: language-literature}
+  - {id: ap-french-language-culture, program: ap, name: "AP French Language and Culture", family: language-literature}
+  - {id: ap-german-language-culture, program: ap, name: "AP German Language and Culture", family: language-literature}
+  - {id: ap-italian-language-culture, program: ap, name: "AP Italian Language and Culture", family: language-literature}
+  - {id: ap-japanese-language-culture, program: ap, name: "AP Japanese Language and Culture", family: language-literature}
+  - {id: ap-latin, program: ap, name: "AP Latin", family: language-literature}
+  - {id: ap-spanish-language-culture, program: ap, name: "AP Spanish Language and Culture", family: language-literature}
+  - {id: ap-spanish-literature-culture, program: ap, name: "AP Spanish Literature and Culture", family: language-literature}
+  - {id: ap-research, program: ap, name: "AP Research", family: research-interdisciplinary}
+  - {id: ap-seminar, program: ap, name: "AP Seminar", family: research-interdisciplinary}
+  - {id: ap-business-personal-finance, program: ap, name: "AP Business with Personal Finance", family: economics-business}
+  - {id: ap-cybersecurity, program: ap, name: "AP Cybersecurity", family: computer-science}
+sources:
+  cambridge_subject_catalog: https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-advanced/cambridge-international-as-and-a-levels/subjects/
+  cambridge_curriculum: https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-advanced/cambridge-international-as-and-a-levels/curriculum/
+  ap_course_catalog: https://apstudents.collegeboard.org/courses

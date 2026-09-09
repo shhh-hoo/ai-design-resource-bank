@@ -41,6 +41,9 @@ jobs:
       - name: Validate mechanism registry
         run: python scripts/validate_mechanisms.py
 
+      - name: Validate subject visualization atlas
+        run: python scripts/validate_subject_atlas.py
+
       - name: Validate capability board contract
         run: python scripts/validate_board.py
 
