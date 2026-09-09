@@ -36,7 +36,14 @@ jobs:
       - name: Validate capability board contract
         run: python scripts/validate_board.py
 
+      - name: Compile runtime board data
+        run: python scripts/build_board_data.py --output .board-test/data/board.json
+
+      - name: Validate board performance budget
+        run: python scripts/validate_board_perf.py --data .board-test/data/board.json
+
       - name: Validate capability board JavaScript
         run: |
+          node --check web/boot.js
           node --check web/board.js
           node --check web/mechanism-workbench.js
