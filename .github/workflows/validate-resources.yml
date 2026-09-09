@@ -44,6 +44,9 @@ jobs:
       - name: Validate subject visualization atlas
         run: python scripts/validate_subject_atlas.py
 
+      - name: Validate curated grammar mechanism routes
+        run: python scripts/validate_grammar_mechanisms.py
+
       - name: Validate capability board contract
         run: python scripts/validate_board.py
 
