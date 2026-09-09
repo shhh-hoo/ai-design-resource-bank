@@ -23,6 +23,7 @@ def main() -> int:
     payload = {
         "subjects": load_yaml(ROOT / "registries" / "curriculum-subjects.yaml"),
         "atlas": load_yaml(ROOT / "registries" / "subject-visualization-families.yaml"),
+        "grammar_mechanisms": load_yaml(ROOT / "registries" / "visualization-grammar-mechanisms.yaml"),
     }
 
     output = args.output if args.output.is_absolute() else ROOT / args.output
