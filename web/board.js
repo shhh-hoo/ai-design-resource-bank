@@ -14,6 +14,7 @@
 
   const els = {
     search: document.getElementById("searchInput"),
+    intro: document.querySelector(".intro"),
     globalSearch: document.getElementById("globalSearch"),
     chapterNav: document.getElementById("chapterNav"),
     decide: document.getElementById("decisionView"),
@@ -309,6 +310,7 @@
     els.explore.hidden = view !== "explore";
     els.index.hidden = view !== "index";
     els.decide.hidden = view !== "decide";
+    els.intro.hidden = view === "decide";
     els.globalSearch.hidden = view === "decide";
     els.chapterNav.hidden = view !== "explore";
     els.viewButtons.forEach((button) => button.classList.toggle("is-active", button.dataset.view === view));

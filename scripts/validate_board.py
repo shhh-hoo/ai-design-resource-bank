@@ -8,11 +8,12 @@ BOOT_JS = ROOT / "web" / "boot.js"
 JS = ROOT / "web" / "board.js"
 WORKBENCH_JS = ROOT / "web" / "mechanism-workbench.js"
 DECISION_JS = ROOT / "web" / "decision-board.js"
+DECISION_CSS = ROOT / "web" / "decision-board.css"
 CSS = ROOT / "web" / "board.css"
 
 errors: list[str] = []
 
-for path in (INDEX, BOOT_JS, JS, WORKBENCH_JS, DECISION_JS, CSS):
+for path in (INDEX, BOOT_JS, JS, WORKBENCH_JS, DECISION_JS, DECISION_CSS, CSS):
     if not path.exists():
         errors.append(f"missing board asset: {path.relative_to(ROOT)}")
 
@@ -110,8 +111,6 @@ if CSS.exists():
         '.demo-stage',
         '.drawer',
         '.index-view',
-        '.decision-view',
-        '.decision-workspace',
         '@media (max-width: 560px)',
         '@media (prefers-reduced-motion: reduce)',
     ):
@@ -126,6 +125,13 @@ if CSS.exists():
     ):
         if banned in css:
             errors.append(f"web/board.css violates editorial surface contract: {banned}")
+
+
+if DECISION_CSS.exists():
+    decision_css = DECISION_CSS.read_text(encoding="utf-8")
+    for required in ('.decision-view', '.decision-workspace', '@media (max-width: 560px)'):
+        if required not in decision_css:
+            errors.append(f"web/decision-board.css missing required decision style: {required}")
 
 for data_path in (
     ROOT / "registries" / "frontend-mechanisms.yaml",

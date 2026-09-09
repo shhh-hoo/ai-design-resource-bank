@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
 BOARD_JS = ROOT / "web" / "board.js"
 DECISION_JS = ROOT / "web" / "decision-board.js"
+DECISION_CSS = ROOT / "web" / "decision-board.css"
 CSS = ROOT / "web" / "board.css"
 BUILD_SCRIPT = ROOT / "scripts" / "build_subject_atlas_data.py"
 
@@ -21,7 +22,7 @@ def main() -> int:
     data_path = args.data if args.data.is_absolute() else ROOT / args.data
 
     errors: list[str] = []
-    for path in (INDEX, BOARD_JS, DECISION_JS, CSS, BUILD_SCRIPT, data_path):
+    for path in (INDEX, BOARD_JS, DECISION_JS, DECISION_CSS, CSS, BUILD_SCRIPT, data_path):
         if not path.exists():
             errors.append(f"missing decision-board asset: {path.relative_to(ROOT) if path.is_relative_to(ROOT) else path}")
 
@@ -39,6 +40,8 @@ def main() -> int:
                 errors.append(f"index.html missing decision-board contract: {required}")
         if 'modulepreload" href="./web/decision-board.js' in html:
             errors.append("decision-board.js must remain lazy and must not be modulepreloaded")
+        if './web/decision-board.css' in html:
+            errors.append("decision-board.css must remain lazy and must not be linked from index.html")
 
     if BOARD_JS.exists():
         text = BOARD_JS.read_text(encoding="utf-8")
@@ -63,6 +66,8 @@ def main() -> int:
             'history.pushState',
             'navigator.clipboard.writeText',
             'window.__BOARD_DATA__',
+            'loadDecisionStyles',
+            'matchesQuery',
         ):
             if required not in text:
                 errors.append(f"web/decision-board.js missing expected behavior: {required}")
@@ -77,8 +82,8 @@ def main() -> int:
         if DECISION_JS.stat().st_size > 42_000:
             errors.append(f"decision-board.js exceeds 42 KB lazy-code budget: {DECISION_JS.stat().st_size:,} bytes")
 
-    if CSS.exists():
-        css = CSS.read_text(encoding="utf-8")
+    if DECISION_CSS.exists():
+        decision_css = DECISION_CSS.read_text(encoding="utf-8")
         for required in (
             '.decision-view',
             '.decision-path',
@@ -87,8 +92,13 @@ def main() -> int:
             '.decision-route-row',
             '.decision-bank-row',
         ):
-            if required not in css:
-                errors.append(f"web/board.css missing decision style: {required}")
+            if required not in decision_css:
+                errors.append(f"web/decision-board.css missing decision style: {required}")
+        if DECISION_CSS.stat().st_size > 16_000:
+            errors.append(f"decision-board.css exceeds 16 KB lazy-style budget: {DECISION_CSS.stat().st_size:,} bytes")
+
+    if CSS.exists() and '.decision-view' in CSS.read_text(encoding="utf-8"):
+        errors.append("web/board.css must not include lazy decision-board styles")
 
     if data_path.exists():
         if data_path.stat().st_size > 120_000:
@@ -114,9 +124,14 @@ def main() -> int:
             print(f"- {error}", file=sys.stderr)
         return 1
 
+    lazy_total = DECISION_JS.stat().st_size + DECISION_CSS.stat().st_size + data_path.stat().st_size
+    if lazy_total > 90_000:
+        print(f"Master decision board lazy payload exceeds 90 KB: {lazy_total:,} bytes", file=sys.stderr)
+        return 1
     print(
         "Master decision board validation passed: "
-        f"{DECISION_JS.stat().st_size:,} B lazy JS, {data_path.stat().st_size:,} B lazy data."
+        f"{DECISION_JS.stat().st_size:,} B lazy JS, {DECISION_CSS.stat().st_size:,} B lazy CSS, "
+        f"{data_path.stat().st_size:,} B lazy data; {lazy_total:,} B total before compression."
     )
     return 0
 

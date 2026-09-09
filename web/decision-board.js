@@ -54,6 +54,13 @@ function titleCase(value = "") {
   return String(value).split("-").map((part) => part ? part[0].toUpperCase() + part.slice(1) : part).join(" ");
 }
 
+function matchesQuery(value, query) {
+  const tokens = String(query || "").trim().toLowerCase().split(/\s+/).filter(Boolean);
+  if (!tokens.length) return true;
+  const haystack = String(value || "").toLowerCase().replace(/[-_/]+/g, " ");
+  return tokens.every((token) => haystack.includes(token));
+}
+
 function rawBank() {
   return window.__BOARD_DATA__ || {};
 }
@@ -82,6 +89,21 @@ function familyIdsForGrammar(grammarId) {
   return Object.entries(data?.atlas?.families || {})
     .filter(([, family]) => (family.grammars || []).includes(grammarId))
     .map(([id]) => id);
+}
+
+async function loadDecisionStyles() {
+  const id = "decision-board-styles";
+  if (document.getElementById(id)) return;
+  const href = new URL("./decision-board.css", import.meta.url).href;
+  await new Promise((resolve, reject) => {
+    const link = document.createElement("link");
+    link.id = id;
+    link.rel = "stylesheet";
+    link.href = href;
+    link.onload = resolve;
+    link.onerror = () => reject(new Error("Decision styles failed to load."));
+    document.head.append(link);
+  });
 }
 
 async function loadAtlas() {
@@ -145,7 +167,7 @@ function subjectsForProgram() {
   const query = state.subjectQuery.trim().toLowerCase();
   return (data?.subjects?.subjects || [])
     .filter((subject) => subject.program === state.program)
-    .filter((subject) => !query || [subject.name, subject.code, subject.family].filter(Boolean).join(" ").toLowerCase().includes(query))
+    .filter((subject) => matchesQuery([subject.name, subject.code, subject.family].filter(Boolean).join(" "), query))
     .sort((a, b) => a.name.localeCompare(b.name));
 }
 
@@ -209,9 +231,8 @@ function subjectDetailHtml(subject) {
   const topics = family.topic_seeds || [];
   const topic = topics[Math.min(state.topicIndex, Math.max(0, topics.length - 1))] || null;
   const routes = rankGrammars(family, topic);
-  const mechanisms = (family.mechanisms || []).map(mechanismById).filter(Boolean).slice(0, 6);
-  const routeTools = [...new Set(routes.flatMap((id) => grammarById(id)?.default_tools || []))]
-    .map(toolById).filter(Boolean).slice(0, 6);
+  const mechanisms = (family.mechanisms || []).map(mechanismById).filter(Boolean).slice(0, 4);
+  const routeTools = (family.tools || []).map(toolById).filter(Boolean).slice(0, 4);
   const gaps = routes.map((id) => grammarById(id)?.gap_note).filter(Boolean);
   return `
     <div class="decision-subject-head">
@@ -274,7 +295,7 @@ function renderGrammarList(host) {
   const query = state.grammarQuery.trim().toLowerCase();
   const grammars = Object.entries(data?.atlas?.grammars || {})
     .map(([id, grammar]) => ({ id, ...grammar }))
-    .filter((item) => !query || `${item.id} ${item.description}`.toLowerCase().includes(query))
+    .filter((item) => matchesQuery(`${item.id} ${item.description}`, query))
     .sort((a, b) => titleCase(a.id).localeCompare(titleCase(b.id)));
   const selected = state.grammarId ? grammarById(state.grammarId) : null;
   host.innerHTML = `
@@ -313,7 +334,7 @@ function grammarDetailHtml(grammarId, grammar) {
   const families = familyIds.map((id) => ({ id, ...familyById(id) })).filter((item) => item.label);
   const tools = (grammar.default_tools || []).map(toolById).filter(Boolean);
   const mechanisms = [...new Set(familyIds.flatMap((id) => familyById(id)?.mechanisms || []))]
-    .map(mechanismById).filter(Boolean).slice(0, 8);
+    .map(mechanismById).filter(Boolean).slice(0, 6);
   const subjectExamples = (data?.subjects?.subjects || [])
     .filter((subject) => familyIds.includes(subject.family))
     .slice(0, 10);
@@ -497,6 +518,7 @@ function bindHost(host) {
 export async function mountDecisionBoard(host) {
   if (!host) return;
   activeHost = host;
+  await loadDecisionStyles();
   bindHost(host);
   if (!data) {
     renderLoading(host);
