@@ -624,7 +624,7 @@ tools:
     license: MIT
     use_when: Relationship/network visualization needs graph layouts, many nodes/edges, graph-specific behaviors, or large-data performance.
     avoid_when: The user is editing a workflow/node canvas rather than analyzing or viewing a graph.
-    agent_notes: Compare with React Flow: G6 for graph visualization; React Flow for node-editor product interaction.
+    agent_notes: Compare with React Flow — G6 for graph visualization; React Flow for node-editor product interaction.
     tags: [graph, network, layout, large-data]
 
   - id: cytoscapejs
