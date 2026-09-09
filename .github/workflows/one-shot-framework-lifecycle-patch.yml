@@ -1,0 +1,36 @@
+name: One-shot framework lifecycle patch
+
+on:
+  push:
+    branches:
+      - feat/framework-backed-demos
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/framework-backed-demos
+      - name: Make drawer framework sync re-entrant
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('web/mechanism-workbench.js')
+          s = p.read_text()
+          old = '''  function observeDrawer() {\n    const content = document.getElementById("drawerContent");\n    const drawer = document.getElementById("detailDrawer");\n    if (!content || !drawer) return;\n\n    new MutationObserver(() => {\n      prettyDrawerEyebrow();\n      const host = content.querySelector("[data-demo]");\n      if (!host) return;\n      const demo = demoMap[host.dataset.demo];\n      if (!demo || host === activeDemoHost || host === pendingDemoHost) return;\n      pendingDemoHost = host;\n      requestAnimationFrame(() => requestAnimationFrame(() => {\n        if (!host.isConnected || !drawer.classList.contains("is-open")) {\n          pendingDemoHost = null;\n          return;\n        }\n        cleanupDemo();\n        pendingDemoHost = null;\n        activeDemoHost = host;\n        activeCleanup = demo(host) || (() => {});\n      }));\n    }).observe(content, { childList: true });\n\n    new MutationObserver(() => {\n      if (!drawer.classList.contains("is-open")) cleanupDemo();\n    }).observe(drawer, { attributes: true, attributeFilter: ["class"] });\n  }\n'''
+          new = '''  function syncDrawerDemo(content, drawer) {\n    prettyDrawerEyebrow();\n    const host = content.querySelector("[data-demo]");\n    if (!host) return;\n    const demo = demoMap[host.dataset.demo];\n    if (!demo || host === activeDemoHost || host === pendingDemoHost) return;\n    pendingDemoHost = host;\n    requestAnimationFrame(() => requestAnimationFrame(() => {\n      if (!host.isConnected || !drawer.classList.contains("is-open")) {\n        pendingDemoHost = null;\n        return;\n      }\n      cleanupDemo();\n      pendingDemoHost = null;\n      activeDemoHost = host;\n      activeCleanup = demo(host) || (() => {});\n    }));\n  }\n\n  function observeDrawer() {\n    const content = document.getElementById("drawerContent");\n    const drawer = document.getElementById("detailDrawer");\n    if (!content || !drawer) return;\n\n    new MutationObserver(() => syncDrawerDemo(content, drawer)).observe(content, { childList: true });\n\n    new MutationObserver(() => {\n      if (!drawer.classList.contains("is-open")) cleanupDemo();\n    }).observe(drawer, { attributes: true, attributeFilter: ["class"] });\n\n    // Deep links can render the drawer before this extension finishes loading.\n    // Synchronize the already-open drawer once so click and deep-link paths converge.\n    syncDrawerDemo(content, drawer);\n  }\n'''
+          if old not in s:
+              raise SystemExit('drawer lifecycle patch target not found')
+          p.write_text(s.replace(old, new, 1))
+          PY
+          node --check web/mechanism-workbench.js
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add web/mechanism-workbench.js
+          git commit -m "Sync framework demos for existing drawers"
+          git push origin HEAD:feat/framework-backed-demos
