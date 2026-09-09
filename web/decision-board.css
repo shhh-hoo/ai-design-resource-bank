@@ -113,6 +113,7 @@
   .decision-path { grid-template-columns: 28px minmax(0, 1fr) auto; padding: 18px 0; }
   .decision-workspace { padding-top: 28px; }
   .decision-detail h2 { font-size: 40px; }
+  .decision-list { max-height: 180px; }
   .decision-bank-row { grid-template-columns: 1fr 14px; }
   .decision-bank-row small { grid-column: 1 / -1; }
   .decision-gap { grid-template-columns: 1fr; gap: 6px; }
