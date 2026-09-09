@@ -1,0 +1,42 @@
+name: One-shot drawer hotfix
+
+on:
+  push:
+    branches:
+      - fix/drawer-mutation-loop-v2
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fix/drawer-mutation-loop-v2
+      - name: Patch recursive drawer observer
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('web/mechanism-workbench.js')
+          s = p.read_text()
+          old = '    const label = chapterLabels.get(item.domain);\n    if (label) eyebrow.textContent = `${label} / mechanism`;\n'
+          new = '    const label = chapterLabels.get(item.domain);\n    const nextText = label ? `${label} / mechanism` : "";\n    if (nextText && eyebrow.textContent !== nextText) eyebrow.textContent = nextText;\n'
+          if old not in s:
+              raise SystemExit('eyebrow patch target not found')
+          s = s.replace(old, new, 1)
+          old_obs = '    }).observe(content, { childList: true, subtree: true });\n'
+          new_obs = '    }).observe(content, { childList: true });\n'
+          if old_obs not in s:
+              raise SystemExit('observer patch target not found')
+          s = s.replace(old_obs, new_obs, 1)
+          p.write_text(s)
+          PY
+          node --check web/mechanism-workbench.js
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add web/mechanism-workbench.js
+          git commit -m "Stop recursive drawer mutation loop"
+          git push origin HEAD:fix/drawer-mutation-loop-v2
