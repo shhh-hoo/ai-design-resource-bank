@@ -1,18 +1,20 @@
 (() => {
   const chapterLabels = new Map();
+  const frameworkModules = new Map();
   const demoMap = {
-    "camera-dolly": demoCameraDolly,
+    "camera-dolly": lazyFrameworkDemo("./framework/three-demos.js", "cameraDolly", demoCameraDolly),
+    "orbital-overlap": lazyFrameworkDemo("./framework/three-demos.js", "orbitalOverlap", null),
     "depth-parallax": demoDepthParallax,
     "split-text-reveal": demoSplitText,
     "particle-attractor": demoParticleAttractor,
     "noise-threshold-wipe": demoNoiseWipe,
-    "explode-assemble": demoExplodeAssemble,
+    "explode-assemble": lazyFrameworkDemo("./framework/three-demos.js", "explodeAssemble", demoExplodeAssemble),
     "scroll-scrub": demoScrollScrub,
     "stage-spotlight": demoStageSpotlight,
     "bond-morph": demoBondMorph,
-    "graph-relayout": demoGraphRelayout,
+    "graph-relayout": lazyFrameworkDemo("./framework/d3-demos.js", "graphRelayout", demoGraphRelayout),
     "canvas-focus-lens": demoFocusLens,
-    "anchored-callout": demoAnchoredCallout,
+    "anchored-callout": lazyFrameworkDemo("./framework/three-demos.js", "anchoredCallout", demoAnchoredCallout),
   };
 
   let registry = null;
@@ -20,6 +22,36 @@
   let activeDemoHost = null;
   let pendingDemoHost = null;
   let activeCleanup = null;
+
+  function loadFrameworkModule(path) {
+    if (!frameworkModules.has(path)) frameworkModules.set(path, import(path));
+    return frameworkModules.get(path);
+  }
+
+  function lazyFrameworkDemo(path, exportName, fallback) {
+    return (host) => {
+      let disposed = false;
+      let cleanup = () => {};
+      host.innerHTML = `<div class="demo-loading">Loading renderer…</div>`;
+      loadFrameworkModule(path)
+        .then((module) => {
+          if (disposed || !host.isConnected) return;
+          const init = module?.[exportName];
+          if (typeof init !== "function") throw new Error(`Missing framework demo export: ${exportName}`);
+          cleanup = init(host) || (() => {});
+        })
+        .catch((error) => {
+          console.error(`Framework demo failed (${exportName})`, error);
+          if (disposed) return;
+          if (typeof fallback === "function") cleanup = fallback(host) || (() => {});
+          else host.innerHTML = `<p class="demo-loading">Renderer unavailable.</p>`;
+        });
+      return () => {
+        disposed = true;
+        cleanup();
+      };
+    };
+  }
 
   const reducedMotion = () => window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
   const escapeHtml = (value = "") => String(value).replace(/[&<>'\"]/g, (char) => ({

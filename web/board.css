@@ -259,6 +259,11 @@ kbd {
 .drawer-summary { max-width: 500px; margin: 18px 0 0; color: #42423f; font-size: 15px; line-height: 1.55; }
 .demo-stage { margin: 34px 0 28px; padding: 12px; border: 1px solid var(--line-dark); background: #f8f8f5; }
 .demo-stage svg { display: block; width: 100%; height: auto; }
+.framework-stage { position: relative; height: 240px; overflow: hidden; border-bottom: 1px solid var(--line); background: var(--paper); }
+.framework-stage canvas, .framework-stage > svg { display: block; width: 100%; height: 240px; }
+.framework-overlay { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.framework-badge { position: absolute; top: 9px; left: 10px; padding: 4px 6px; border: 1px solid rgba(17,17,17,.18); background: rgba(248,248,245,.88); color: var(--muted); font: 600 8px/1 var(--mono); letter-spacing: .05em; text-transform: uppercase; }
+.demo-loading { min-height: 240px; display: grid; place-items: center; margin: 0; color: var(--muted); font: 500 10px/1.4 var(--mono); }
 .demo-controls { display: flex; align-items: center; gap: 12px; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line); }
 .demo-controls label { color: var(--muted); font-size: 10px; }
 .demo-controls input[type="range"] { flex: 1; accent-color: var(--accent); }
