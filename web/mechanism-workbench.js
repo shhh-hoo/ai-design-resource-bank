@@ -194,33 +194,39 @@
     new MutationObserver(() => queueChapterRender()).observe(host, { childList: true });
   }
 
+  function syncDrawerDemo(content, drawer) {
+    prettyDrawerEyebrow();
+    const host = content.querySelector("[data-demo]");
+    if (!host) return;
+    const demo = demoMap[host.dataset.demo];
+    if (!demo || host === activeDemoHost || host === pendingDemoHost) return;
+    pendingDemoHost = host;
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      if (!host.isConnected || !drawer.classList.contains("is-open")) {
+        pendingDemoHost = null;
+        return;
+      }
+      cleanupDemo();
+      pendingDemoHost = null;
+      activeDemoHost = host;
+      activeCleanup = demo(host) || (() => {});
+    }));
+  }
+
   function observeDrawer() {
     const content = document.getElementById("drawerContent");
     const drawer = document.getElementById("detailDrawer");
     if (!content || !drawer) return;
 
-    new MutationObserver(() => {
-      prettyDrawerEyebrow();
-      const host = content.querySelector("[data-demo]");
-      if (!host) return;
-      const demo = demoMap[host.dataset.demo];
-      if (!demo || host === activeDemoHost || host === pendingDemoHost) return;
-      pendingDemoHost = host;
-      requestAnimationFrame(() => requestAnimationFrame(() => {
-        if (!host.isConnected || !drawer.classList.contains("is-open")) {
-          pendingDemoHost = null;
-          return;
-        }
-        cleanupDemo();
-        pendingDemoHost = null;
-        activeDemoHost = host;
-        activeCleanup = demo(host) || (() => {});
-      }));
-    }).observe(content, { childList: true });
+    new MutationObserver(() => syncDrawerDemo(content, drawer)).observe(content, { childList: true });
 
     new MutationObserver(() => {
       if (!drawer.classList.contains("is-open")) cleanupDemo();
     }).observe(drawer, { attributes: true, attributeFilter: ["class"] });
+
+    // Deep links can render the drawer before this extension finishes loading.
+    // Synchronize the already-open drawer once so click and deep-link paths converge.
+    syncDrawerDemo(content, drawer);
   }
 
   function cleanupDemo() {
