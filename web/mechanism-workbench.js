@@ -42,9 +42,15 @@
         })
         .catch((error) => {
           console.error(`Framework demo failed (${exportName})`, error);
-          if (disposed) return;
-          if (typeof fallback === "function") cleanup = fallback(host) || (() => {});
-          else host.innerHTML = `<p class="demo-loading">Renderer unavailable.</p>`;
+          if (disposed || !host.isConnected) return;
+          host.replaceChildren();
+          try {
+            if (typeof fallback === "function") cleanup = fallback(host) || (() => {});
+            else host.innerHTML = `<p class="demo-loading" data-renderer-fallback>Renderer unavailable on this browser.</p>`;
+          } catch (fallbackError) {
+            console.error(`Framework fallback failed (${exportName})`, fallbackError);
+            host.innerHTML = `<p class="demo-loading" data-renderer-fallback>Renderer unavailable on this browser.</p>`;
+          }
         });
       return () => {
         disposed = true;
