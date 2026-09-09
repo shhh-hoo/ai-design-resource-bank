@@ -1,0 +1,8 @@
+version: '0.1'
+purpose: Cross-media creative vocabulary for learning, recognition, comparison, selection, and AI retrieval.
+sources:
+- ./dictionary/terms/01-art-visual.yaml
+- ./dictionary/terms/02-material-type.yaml
+- ./dictionary/terms/03-cinema.yaml
+- ./dictionary/terms/04-motion.yaml
+- ./dictionary/terms/05-game-hci.yaml

@@ -34,6 +34,12 @@ async function boot() {
   await import("./board.js");
   await import("./mechanism-workbench.js");
 
+  const requestedView = new URLSearchParams(window.location.search).get("view");
+  if (["explore", "index"].includes(requestedView)) {
+    const button = document.querySelector(`[data-view="${requestedView}"]`);
+    if (button instanceof HTMLButtonElement) button.click();
+  }
+
   document.documentElement.dataset.rbReady = "true";
   performance.measure("rb-boot", { start: startedAt, end: performance.now() });
 }

@@ -1,0 +1,311 @@
+version: '0.1'
+terms:
+- id: squash-and-stretch
+  term:
+    en: Squash and Stretch
+    zh: 挤压与拉伸
+  aliases:
+  - squash & stretch
+  naming: established
+  entry_status: seed
+  domains:
+  - animation
+  - game
+  kinds:
+  - animation-principle
+  - motion
+  definition:
+    zh: 通过形体在受力、加速或碰撞时压扁与拉长来表达重量、弹性和动势，同时保持体积感知的一致性。
+  recognition:
+  - 运动或受力时形体比例明显改变
+  - 形变与速度、碰撞或重量同步
+  - 好的处理会保留总体体积感而不是随意变形
+  looks_like:
+  - 球落地时被压扁，弹起时又拉长
+  - 物体像有弹性一样把速度“画”在形状里
+  not_to_confuse_with:
+  - morphing
+  - smear-frame
+  examples:
+  - title: bouncing-ball animation exercises
+    annotation: 小球接触地面时压扁、离地加速时拉长，是最基础的 squash and stretch 练习。
+    asset_policy: text-reference-only
+  related:
+  - anticipation
+  - smear-frame
+  preview:
+    type: squash
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: anticipation
+  term:
+    en: Anticipation
+    zh: 预备动作
+  aliases:
+  - anticipation pose
+  naming: established
+  entry_status: seed
+  domains:
+  - animation
+  - game
+  - stage
+  kinds:
+  - animation-principle
+  - motion
+  definition:
+    zh: 在主要动作发生前加入方向相反、蓄力或提示性的准备动作，让观众能够预判即将发生的运动。
+  recognition:
+  - 主动作前存在明显的蓄力或反向移动
+  - 预备阶段通常更小、更慢或更集中
+  - 主要动作因此更容易读懂且更有冲击力
+  looks_like:
+  - 人跳起来之前先蹲下
+  - 挥拳之前手臂先往后拉
+  not_to_confuse_with:
+  - follow-through
+  - secondary-action
+  examples:
+  - title: jump preparation in character animation
+    annotation: 角色先下蹲再起跳，让动作方向和力度在真正离地前就被读到。
+    asset_policy: text-reference-only
+  related:
+  - squash-and-stretch
+  - secondary-action
+  preview:
+    type: anticipation
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: smear-frame
+  term:
+    en: Smear Frame
+    zh: 拖影帧 / 涂抹帧
+  aliases:
+  - smear
+  - motion smear
+  naming: established
+  entry_status: seed
+  domains:
+  - animation
+  - illustration
+  kinds:
+  - animation-technique
+  - motion
+  definition:
+    zh: 在极快速动作中把主体形体沿运动路径夸张拉长、复制或扭曲，用单帧表达高速位移。
+  recognition:
+  - 某些中间帧看起来“画坏了”或被拉长
+  - 形变方向与运动方向一致
+  - 正常速度播放时形成清晰速度感，而静止看会非常夸张
+  looks_like:
+  - 快速挥手时手臂一帧变成一条长条
+  - 单帧截图很奇怪，但播放起来速度特别有力
+  not_to_confuse_with:
+  - motion-blur
+  - squash-and-stretch
+  examples:
+  - title: classic hand-drawn fast-action smears
+    annotation: 手绘动画常在高速转头、挥拳或移动中使用极端中间帧把运动路径压缩进单帧。
+    asset_policy: text-reference-only
+  related:
+  - motion-blur
+  - squash-and-stretch
+  preview:
+    type: smear
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: motion-blur
+  term:
+    en: Motion Blur
+    zh: 运动模糊
+  aliases:
+  - 动态模糊
+  naming: established
+  entry_status: seed
+  domains:
+  - cinema
+  - photography
+  - animation
+  - game
+  kinds:
+  - rendering
+  - motion
+  definition:
+    zh: 由于曝光期间主体或相机发生位移，使图像沿运动方向产生连续拖尾或模糊。
+  recognition:
+  - 模糊具有明显方向
+  - 快速物体边缘被连续拉开
+  - 模糊强度与曝光时间和相对速度有关
+  looks_like:
+  - 快速移动的东西后面拖着连续模糊的尾巴
+  - 看得到运动方向，但不是一帧一帧复制出来的
+  not_to_confuse_with:
+  - smear-frame
+  - depth-of-field
+  examples:
+  - title: long-exposure moving subjects
+    annotation: 曝光期间的真实位移会把主体沿运动路径连续积分到画面中。
+    asset_policy: text-reference-only
+  related:
+  - smear-frame
+  - whip-pan
+  - film-grain
+  preview:
+    type: blur
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: secondary-action
+  term:
+    en: Secondary Action
+    zh: 次要动作
+  aliases:
+  - secondary motion
+  naming: established
+  entry_status: seed
+  domains:
+  - animation
+  - game
+  - stage
+  kinds:
+  - animation-principle
+  - motion
+  definition:
+    zh: 在不抢走主要动作注意力的前提下加入辅助运动，用来强化角色状态、重量、节奏或情绪。
+  recognition:
+  - 主动作仍然一眼可读
+  - 另一个较弱运动补充信息或节奏
+  - 次要动作通常与主动作存在物理或表演上的联系
+  looks_like:
+  - 人走路是主动作，手里钥匙轻轻晃是次要动作
+  - 头转过去时头发晚一点跟上
+  not_to_confuse_with:
+  - follow-through
+  - anticipation
+  examples:
+  - title: character walk with prop or clothing motion
+    annotation: 主体步态保持核心可读性，同时服装、头发或道具提供第二层运动信息。
+    asset_policy: text-reference-only
+  related:
+  - anticipation
+  - looping-animation
+  preview:
+    type: secondary
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: stagger
+  term:
+    en: Stagger
+    zh: 错峰 / 交错动画
+  aliases:
+  - staggered animation
+  - stagger timing
+  naming: established
+  entry_status: seed
+  domains:
+  - animation
+  - motion-design
+  - ui
+  kinds:
+  - timing
+  - motion
+  definition:
+    zh: 让一组相似元素以固定或有规律的时间偏移依次启动，而不是同时运动。
+  recognition:
+  - 多个元素执行相同或相似动作
+  - 起始时间存在递进偏移
+  - 视觉节奏来自时间差而不是轨迹差异
+  looks_like:
+  - 一排字不是一起出现，而是一个接一个进来
+  - 卡片像多米诺骨牌一样依次启动
+  not_to_confuse_with:
+  - delay
+  - cascade-layout
+  examples:
+  - title: sequential text or card entrance animation
+    annotation: 相同进入动作以逐项延迟形成节奏，是 stagger 的典型使用方式。
+    asset_policy: text-reference-only
+  related:
+  - looping-animation
+  - anticipation
+  preview:
+    type: stagger
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: morphing
+  term:
+    en: Morphing
+    zh: 形变过渡
+  aliases:
+  - morph
+  - shape morph
+  naming: established
+  entry_status: seed
+  domains:
+  - animation
+  - motion-design
+  - ui
+  - cinema
+  kinds:
+  - transition
+  - motion
+  definition:
+    zh: 让一个形状、对象或图像连续地变成另一个，使中间状态承担转场本身。
+  recognition:
+  - 起点和终点形态不同但连续可追踪
+  - 中间过程不是简单淡入淡出
+  - 轮廓、位置或内部结构连续重组
+  looks_like:
+  - 一个圆顺滑地变成一个字母或另一个物体
+  - 两个对象不是切换，而是彼此“长成”对方
+  not_to_confuse_with:
+  - crossfade
+  - match-cut
+  examples:
+  - title: shape-to-shape animation morphs
+    annotation: 轮廓顶点或路径在时间中连续映射，是最直接的形变示例。
+    asset_policy: text-reference-only
+  related:
+  - match-cut
+  - squash-and-stretch
+  preview:
+    type: morph
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: looping-animation
+  term:
+    en: Looping Animation
+    zh: 循环动画
+  aliases:
+  - animation loop
+  - seamless loop
+  naming: established
+  entry_status: seed
+  domains:
+  - animation
+  - game
+  - motion-design
+  kinds:
+  - timing
+  - motion
+  definition:
+    zh: 让动画终点自然回到起点并重复播放；无缝循环会尽量隐藏循环边界。
+  recognition:
+  - 动画按周期重复
+  - 起点和终点状态兼容
+  - 良好循环中很难察觉明确的“重新开始”瞬间
+  looks_like:
+  - 动画一直重复，但看不出在哪里重播
+  - 动作像一个完整呼吸周期不断循环
+  not_to_confuse_with:
+  - boomerang
+  - repeated-transition
+  examples:
+  - title: idle animation cycles in games
+    annotation: 角色呼吸、轻微重心变化等常设计成能长期重复的无缝循环。
+    asset_policy: text-reference-only
+  related:
+  - secondary-action
+  - stagger
+  preview:
+    type: loop
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []

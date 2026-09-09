@@ -1,0 +1,304 @@
+version: '0.1'
+terms:
+- id: chiaroscuro
+  term:
+    en: Chiaroscuro
+    zh: 明暗对照法
+  aliases:
+  - 明暗法
+  naming: established
+  entry_status: seed
+  domains:
+  - art
+  - cinema
+  - photography
+  - lighting
+  kinds:
+  - technique
+  - lighting
+  definition:
+    zh: 用强烈的明暗对比塑造体积、焦点与戏剧性空间。
+  recognition:
+  - 大面积深暗区域与集中高光并置
+  - 光线方向明确，主体从黑暗中被“雕刻”出来
+  - 明暗关系承担叙事或视觉层级，而不只是曝光差异
+  looks_like:
+  - 人物像从黑暗里被一束光切出来
+  - 画面大部分很暗，但亮部非常集中
+  not_to_confuse_with:
+  - low-key-lighting
+  - tenebrism
+  examples:
+  - title: Caravaggio — The Calling of Saint Matthew
+    annotation: 人物和动作被定向光切开，是辨认 chiaroscuro 的经典入口。
+    asset_policy: text-reference-only
+  related:
+  - negative-space
+  preview:
+    type: light-dark
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: impasto
+  term:
+    en: Impasto
+    zh: 厚涂法
+  aliases:
+  - 厚涂
+  naming: established
+  entry_status: seed
+  domains:
+  - art
+  - texture
+  kinds:
+  - technique
+  - texture
+  definition:
+    zh: 让颜料以明显厚度堆积在表面，使笔触本身形成可见的立体纹理。
+  recognition:
+  - 颜料表面有凸起
+  - 侧光下能看到笔触阴影
+  - 纹理来自真实材料厚度，而非仅靠颜色模拟
+  looks_like:
+  - 颜料像奶油一样堆在画布上
+  - 能看见一条条凸起的笔触
+  not_to_confuse_with:
+  - dry-brush
+  - palette-knife
+  examples:
+  - title: Vincent van Gogh — The Starry Night
+    annotation: 旋转笔触和厚颜料表面让笔触本身成为视觉对象。
+    asset_policy: text-reference-only
+  related:
+  - film-grain
+  - paper-grain
+  preview:
+    type: surface-ridge
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: negative-space
+  term:
+    en: Negative Space
+    zh: 负空间
+  aliases:
+  - 留白空间
+  naming: established
+  entry_status: seed
+  domains:
+  - art
+  - graphic-design
+  - photography
+  - ui
+  kinds:
+  - composition
+  definition:
+    zh: 把主体周围或主体之间的空白当成主动的构图元素，用空来定义形与关系。
+  recognition:
+  - 空白区域具有明确轮廓或视觉作用
+  - 主体并未占满画面
+  - 视觉重心由“有”和“无”共同构成
+  looks_like:
+  - 真正重要的形状反而出现在空白里
+  - 画面看起来很空，但空白在组织信息
+  not_to_confuse_with:
+  - white-space
+  - figure-ground
+  examples:
+  - title: Rubin vase / face–vase illusion
+    annotation: 中央与两侧形状可以互换前景和背景，直观展示空白如何参与成形。
+    asset_policy: text-reference-only
+  related:
+  - figure-ground
+  - swiss-style
+  preview:
+    type: negative-space
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: trompe-loeil
+  term:
+    en: Trompe-l'œil
+    zh: 错视画 / 视觉欺骗
+  aliases:
+  - trompe l'oeil
+  - 错视
+  naming: established
+  entry_status: seed
+  domains:
+  - art
+  - architecture
+  - spatial
+  kinds:
+  - technique
+  - composition
+  definition:
+    zh: 利用透视、明暗和尺度制造“真实物体或真实空间就在这里”的错觉。
+  recognition:
+  - 二维表面被处理成似乎有真实深度
+  - 视点往往被精确设计
+  - 观众短暂误判物体或空间是否真实存在
+  looks_like:
+  - 墙上画的洞看起来真的能走进去
+  - 平面像突然变成立体空间
+  not_to_confuse_with:
+  - forced-perspective
+  - anamorphosis
+  examples:
+  - title: Andrea Pozzo — Sant’Ignazio ceiling illusion
+    annotation: 穹顶与建筑延伸被绘制出来，制造实际并不存在的空间。
+    asset_policy: text-reference-only
+  related:
+  - dolly-zoom
+  preview:
+    type: false-depth
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: collage
+  term:
+    en: Collage
+    zh: 拼贴
+  aliases:
+  - 拼贴艺术
+  naming: established
+  entry_status: seed
+  domains:
+  - art
+  - graphic-design
+  - illustration
+  kinds:
+  - technique
+  - composition
+  definition:
+    zh: 把不同来源、尺度、材质或语境的片段并置，利用断裂和重新组合产生新意义。
+  recognition:
+  - 能感到来源不同的图像或材料被组合
+  - 边缘、重叠、裁切常被保留
+  - 语义来自片段之间的碰撞
+  looks_like:
+  - 照片、纸张、文字像剪下来重新贴在一起
+  - 画面故意保留“不同来源”的感觉
+  not_to_confuse_with:
+  - photomontage
+  - mixed-media
+  examples:
+  - title: Hannah Höch — Cut with the Kitchen Knife
+    annotation: 照片、文字和机械图像被重新拼接，典型展示拼贴的语义重组。
+    asset_policy: text-reference-only
+  related:
+  - risograph
+  preview:
+    type: collage
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: figure-ground
+  term:
+    en: Figure–Ground
+    zh: 图形—背景关系
+  aliases:
+  - figure/ground
+  naming: established
+  entry_status: seed
+  domains:
+  - art
+  - graphic-design
+  - hci
+  - ui
+  kinds:
+  - composition
+  - hci-principle
+  definition:
+    zh: 视觉系统把某些区域读成前景主体、另一些读成背景；设计可稳定、模糊或反转这种关系。
+  recognition:
+  - 前景和背景存在竞争或切换
+  - 边界同时属于两个可能的形状
+  - 视觉层级主要由轮廓和占用关系决定
+  looks_like:
+  - 同一张图一会儿像杯子，一会儿像两张脸
+  - 你会在前景和背景之间来回切换
+  not_to_confuse_with:
+  - negative-space
+  - closure
+  examples:
+  - title: Rubin vase
+    annotation: 经典的双稳态图形：花瓶与两张侧脸共享同一条轮廓。
+    asset_policy: text-reference-only
+  related:
+  - negative-space
+  preview:
+    type: figure-ground
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: swiss-style
+  term:
+    en: Swiss Style
+    zh: 瑞士国际主义设计
+  aliases:
+  - International Typographic Style
+  - 国际主义平面风格
+  naming: established
+  entry_status: seed
+  domains:
+  - graphic-design
+  - typography
+  kinds:
+  - style
+  - movement
+  definition:
+    zh: 以严格网格、无衬线字体、非对称版式和信息清晰度为核心的现代主义平面设计语言。
+  recognition:
+  - 强网格与明确对齐
+  - 无衬线字体和克制的装饰
+  - 非对称但高度秩序化的构图
+  looks_like:
+  - 像严谨的展览海报：大字、网格、几何关系很清楚
+  - 信息很多但不乱，几乎没有装饰性阴影
+  not_to_confuse_with:
+  - bauhaus
+  - minimalism
+  examples:
+  - title: Josef Müller-Brockmann — concert posters
+    annotation: 网格、摄影/几何与无衬线排版的控制非常典型。
+    asset_policy: text-reference-only
+  related:
+  - negative-space
+  - condensed-type
+  preview:
+    type: grid
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: art-nouveau
+  term:
+    en: Art Nouveau
+    zh: 新艺术运动
+  aliases:
+  - Jugendstil
+  naming: established
+  entry_status: seed
+  domains:
+  - art
+  - graphic-design
+  - architecture
+  - illustration
+  kinds:
+  - style
+  - movement
+  definition:
+    zh: 以植物性曲线、连续轮廓、装饰性结构和艺术与工艺融合为特征的十九世纪末视觉风格。
+  recognition:
+  - 鞭状曲线和植物纹样
+  - 人物、文字与边框往往融成整体
+  - 装饰不是附加层，而是结构本身
+  looks_like:
+  - 线条像藤蔓一样沿着画面生长
+  - 海报边框、头发、植物和字形连成一个系统
+  not_to_confuse_with:
+  - art-deco
+  - rococo
+  examples:
+  - title: Alphonse Mucha — theatrical posters
+    annotation: 女性形象、植物曲线、装饰边框和排版形成统一平面。
+    asset_policy: text-reference-only
+  related:
+  - variable-font
+  preview:
+    type: organic-line
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []

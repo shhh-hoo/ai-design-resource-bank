@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f6f6f2" />
+  <title>Design Dictionary — AI Design Resource Bank</title>
+  <meta name="description" content="A cross-media creative vocabulary atlas for art, cinema, games, HCI, typography, material, texture, motion, and more." />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" href="./web/board.css" />
+  <link rel="stylesheet" href="./web/dictionary.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="AI Design Resource Bank home">
+      <span class="brand-mark">RB</span>
+      <span>AI Design Resource Bank</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a class="nav-link" href="./">Explore</a>
+      <a class="nav-link is-active" href="./dictionary.html" aria-current="page">Dictionary</a>
+      <a class="nav-link" href="./?view=index">Index</a>
+      <a class="nav-link" href="https://github.com/shhh-hoo/ai-design-resource-bank" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main class="dict-main">
+    <section class="dict-hero" aria-labelledby="dict-title">
+      <p class="eyebrow">Creative vocabulary → recognition → comparison → selection</p>
+      <div class="dict-hero-grid">
+        <h1 id="dict-title">Design Dictionary</h1>
+        <div class="dict-intro-copy">
+          <p>跨媒介的创作词汇图鉴。不是只收 UI：art、cinema、animation、game、HCI、type、material、texture、lighting 等都可以进入同一个可学习、可挑选的 vocabulary layer。</p>
+          <p class="dict-note">卡片中的图形是原创 mnemonic，用来帮助辨认概念，不是对第三方作品的复制。</p>
+        </div>
+      </div>
+
+      <label class="dict-search" for="dictSearch">
+        <span aria-hidden="true">⌕</span>
+        <input id="dictSearch" type="search" autocomplete="off" placeholder="Search a term, 中文名, or describe what it looks like…" />
+        <kbd>/</kbd>
+      </label>
+
+      <div class="dict-facets" aria-label="Dictionary filters">
+        <div class="dict-facet-row">
+          <span class="dict-facet-label">DOMAIN</span>
+          <div class="dict-facet-options" id="domainFilters"></div>
+        </div>
+        <div class="dict-facet-row">
+          <span class="dict-facet-label">KIND</span>
+          <div class="dict-facet-options" id="kindFilters"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dict-browser" aria-live="polite">
+      <div class="dict-browser-head">
+        <p id="dictSummary">Loading dictionary…</p>
+        <button class="text-button" id="dictClear" type="button" hidden>Clear filters</button>
+      </div>
+      <div class="dict-grid" id="dictGrid"></div>
+      <div class="dict-empty" id="dictEmpty" hidden>
+        <p>No term matches this description yet.</p>
+        <small>Try the English name, 中文名, a visual cue, a domain, or a related technique.</small>
+      </div>
+    </section>
+  </main>
+
+  <div class="drawer-backdrop" id="dictBackdrop" hidden></div>
+  <aside class="drawer dict-drawer" id="dictDrawer" aria-hidden="true" aria-labelledby="dictDrawerTitle">
+    <div class="drawer-bar">
+      <span>Dictionary term</span>
+      <button class="drawer-close" id="dictDrawerClose" type="button" aria-label="Close term details">×</button>
+    </div>
+    <div class="drawer-content" id="dictDrawerContent"></div>
+  </aside>
+
+  <aside class="selection-tray" id="selectionTray" aria-label="Selected vocabulary">
+    <button class="selection-toggle" id="selectionToggle" type="button" aria-expanded="false">
+      <span>MY SELECTION</span>
+      <span id="selectionCount">0</span>
+    </button>
+    <div class="selection-body" id="selectionBody" hidden>
+      <p class="selection-empty" id="selectionEmpty">Pick terms while you browse. This becomes a working creative vocabulary, not an automatic style recipe.</p>
+      <div class="selection-list" id="selectionList"></div>
+      <div class="selection-actions">
+        <button type="button" id="copySelection">Copy vocabulary</button>
+        <button type="button" id="clearSelection">Clear</button>
+      </div>
+    </div>
+  </aside>
+
+  <section class="load-error" id="dictLoadError" hidden>
+    <p class="eyebrow">Dictionary unavailable</p>
+    <h2>The dictionary registry could not be loaded.</h2>
+    <p id="dictLoadErrorMessage"></p>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+  <script src="./web/dictionary-previews.js" defer></script>
+  <script src="./web/dictionary.js" defer></script>
+</body>
+</html>

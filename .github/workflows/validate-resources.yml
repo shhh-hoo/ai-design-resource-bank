@@ -33,6 +33,9 @@ jobs:
       - name: Validate mechanism registry
         run: python scripts/validate_mechanisms.py
 
+      - name: Validate design dictionary
+        run: python scripts/validate_dictionary.py
+
       - name: Validate capability board contract
         run: python scripts/validate_board.py
 
@@ -47,3 +50,5 @@ jobs:
           node --check web/boot.js
           node --check web/board.js
           node --check web/mechanism-workbench.js
+          node --check web/dictionary-previews.js
+          node --check web/dictionary.js
