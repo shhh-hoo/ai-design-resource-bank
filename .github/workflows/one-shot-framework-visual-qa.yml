@@ -57,13 +57,27 @@ jobs:
           async function moveControl(page, value) {
             if (value) {
               const range = page.locator('.drawer .demo-stage input[type="range"]');
-              await range.evaluate((element, nextValue) => {
-                element.value = nextValue;
-                element.dispatchEvent(new Event('input', { bubbles: true }));
-              }, value);
+              if (await range.count()) {
+                await range.evaluate((element, nextValue) => {
+                  element.value = nextValue;
+                  element.dispatchEvent(new Event('input', { bubbles: true }));
+                }, value);
+              }
             } else {
-              await page.locator('.drawer .demo-stage button').click();
+              const button = page.locator('.drawer .demo-stage button');
+              if (await button.count()) await button.click();
             }
+          }
+
+          async function assertSettledFallback(page, name, id) {
+            await page.waitForTimeout(500);
+            const state = await page.locator('.drawer .demo-stage').evaluate((host) => ({
+              text: host.textContent || '',
+              hasSvg: Boolean(host.querySelector('svg')),
+              hasFallbackMessage: Boolean(host.querySelector('[data-renderer-fallback]')),
+            }));
+            if (/Loading renderer/i.test(state.text)) throw new Error(`${name}/${id}: renderer fallback never settled`);
+            if (!state.hasSvg && !state.hasFallbackMessage) throw new Error(`${name}/${id}: no usable fallback state`);
           }
 
           async function runBrowser(browserType, name, screenshots) {
@@ -96,7 +110,7 @@ jobs:
                     }
                   });
                   if (!directImport.ok) throw new Error(`Firefox Three bundle import failed: ${directImport.error}`);
-                  await page.waitForSelector('.drawer .demo-stage svg');
+                  await assertSettledFallback(page, name, id);
                 } else {
                   throw error;
                 }
@@ -125,7 +139,6 @@ jobs:
               if (screenshots) await page.screenshot({ path: `qa-screenshots/${id}.png` });
             }
 
-            // Regression check for the Firefox drawer freeze: repeated open/close must stay responsive.
             if (name === 'firefox') {
               await page.goto(base, { waitUntil: 'networkidle' });
               for (let i = 0; i < 8; i += 1) {
@@ -149,6 +162,7 @@ jobs:
           JS
           node .framework-qa.mjs
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: framework-demo-screenshots
           path: qa-screenshots/*.png
