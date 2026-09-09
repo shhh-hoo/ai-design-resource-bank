@@ -1,0 +1,138 @@
+version: 1
+purpose: >-
+  Human-facing reusable frontend mechanisms. Each entry names an interaction or explanatory
+  pattern, the task it solves, a small live demo key, and mature tools worth checking before
+  implementing it in production.
+
+mechanisms:
+  - id: movable-tangent
+    name: Movable tangent
+    domain: math
+    summary: Drag a point along a curve to connect local slope with the derivative.
+    use_when: Teaching rate of change, gradient, local linearity, or derivative intuition.
+    tools: [mafs, jsxgraph]
+    demo: movable-tangent
+    primitives: [function-plot, draggable-point, tangent-line, slope-readout]
+    implementation_note: Keep the point, tangent, and numeric slope synchronized from one parameter value.
+    status: seed
+
+  - id: area-under-curve
+    name: Area under a curve
+    domain: math
+    summary: Move a boundary and watch accumulated area grow with it.
+    use_when: Teaching integration, accumulation, displacement from velocity, or probability area.
+    tools: [mafs, jsxgraph, d3]
+    demo: area-under-curve
+    primitives: [function-plot, variable-boundary, area-fill, accumulator]
+    implementation_note: Make the moving boundary the single source of truth for both geometry and the displayed value.
+    status: seed
+
+  - id: vector-decomposition
+    name: Vector decomposition
+    domain: math
+    summary: Drag one vector and keep its horizontal and vertical components attached.
+    use_when: Teaching components, resultant vectors, forces, velocity, or coordinate projections.
+    tools: [mafs, jsxgraph]
+    demo: vector-decomposition
+    primitives: [draggable-vector, component-arrows, projections, labels]
+    implementation_note: Preserve geometric dependency so the components cannot drift from the parent vector.
+    status: seed
+
+  - id: force-vector-overlay
+    name: Force vector overlay
+    domain: physics
+    summary: Put forces directly on the object whose motion they explain.
+    use_when: Showing free-body ideas without separating the diagram from the moving system.
+    tools: [matter-js]
+    demo: force-vector-overlay
+    primitives: [body, force-arrows, direction, magnitude]
+    implementation_note: Derive arrow direction and length from the same state used by the simulation.
+    status: seed
+
+  - id: wave-propagation
+    name: Wave propagation
+    domain: physics
+    summary: Animate phase through space while keeping amplitude and wavelength legible.
+    use_when: Teaching waves, phase, wavelength, frequency, interference, or oscillation.
+    tools: [p5js]
+    demo: wave-propagation
+    primitives: [wave-path, phase, amplitude-control, wavelength-control]
+    implementation_note: Animate phase rather than translating a static curve; controls should change the model, not only the drawing.
+    status: seed
+
+  - id: reaction-coordinate
+    name: Reaction coordinate
+    domain: chemistry
+    summary: Scrub from reactants through the transition state to products on one energy path.
+    use_when: Connecting activation energy, transition state, exothermicity, and reaction progress.
+    tools: [plotly-js, d3]
+    demo: reaction-coordinate
+    primitives: [energy-curve, scrubber, state-marker, energy-difference]
+    implementation_note: Keep the progress marker and chemical-state annotation tied to the same normalized reaction coordinate.
+    status: seed
+
+  - id: orbital-overlap
+    name: Orbital overlap
+    domain: chemistry
+    summary: Move orbitals together and make overlap appear as a spatial relationship.
+    use_when: Explaining bond formation, sigma/pi overlap, or qualitative orbital interaction.
+    tools: [threejs]
+    demo: orbital-overlap
+    primitives: [lobes, separation-control, overlap-region, phase]
+    implementation_note: Use color only to distinguish phase or overlap; geometry should carry the primary explanation.
+    status: seed
+
+  - id: electron-pushing
+    name: Electron pushing
+    domain: chemistry
+    summary: Animate a curved arrow as a state change, not as decoration on a static scheme.
+    use_when: Teaching reaction mechanisms, electron pairs, bond making, or bond breaking.
+    tools: [svgjs, motion]
+    demo: electron-pushing
+    primitives: [curved-arrow, electron-source, destination, before-after-state]
+    implementation_note: The arrow should trigger a deterministic structure change so the causal relation stays explicit.
+    status: seed
+
+  - id: mask-transition
+    name: Mask transition
+    domain: animation
+    summary: Reveal the next state through a controlled moving window instead of cross-fading everything.
+    use_when: Comparing two states, scene changes, before/after explanations, or editorial transitions.
+    tools: [motion, gsap]
+    demo: mask-transition
+    primitives: [mask, reveal-progress, foreground, background]
+    implementation_note: Keep the mask geometry simple enough that the transition reads before the ornament does.
+    status: seed
+
+  - id: pinned-reveal
+    name: Pinned reveal
+    domain: animation
+    summary: Hold one explanatory object steady while the surrounding narrative advances.
+    use_when: Scrollytelling, stage-like sequencing, progressive diagrams, or chapter transitions.
+    tools: [gsap, motion]
+    demo: pinned-reveal
+    primitives: [sticky-stage, progress, narrative-steps, state-switch]
+    implementation_note: Pin only the explanatory anchor; let the text continue to establish temporal progress.
+    status: seed
+
+  - id: focus-context
+    name: Focus + context
+    domain: graphs
+    summary: Emphasize one node and its neighborhood without erasing the rest of the network.
+    use_when: Knowledge graphs, concept networks, dependency maps, or graph exploration.
+    tools: [antv-g6, cytoscapejs]
+    demo: focus-context
+    primitives: [focus-node, neighbors, faded-context, edge-emphasis]
+    implementation_note: Preserve enough context for orientation; de-emphasize unrelated nodes instead of removing them.
+    status: seed
+
+  - id: semantic-zoom
+    name: Semantic zoom
+    domain: graphs
+    summary: Reveal more meaning as the user zooms in instead of merely scaling pixels.
+    use_when: Large graphs, maps, concept spaces, timelines, or dense spatial canvases.
+    tools: [antv-g6]
+    demo: semantic-zoom
+    primitives: [zoom-level, label-threshold, detail-threshold, aggregation]
+    implementation_note: Define semantic thresholds explicitly so added detail corresponds to a real information level.
+    status: seed

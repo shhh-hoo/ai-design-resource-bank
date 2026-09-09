@@ -30,6 +30,9 @@ jobs:
       - name: Validate capability registries
         run: python scripts/validate_registries.py
 
+      - name: Validate mechanism registry
+        run: python scripts/validate_mechanisms.py
+
       - name: Validate capability board contract
         run: python scripts/validate_board.py
 
