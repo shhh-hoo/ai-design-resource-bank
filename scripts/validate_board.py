@@ -49,12 +49,14 @@ if BOOT_JS.exists():
     for required in (
         "data/board.json",
         "window.__BOARD_DATA__",
-        'cache: "force-cache"',
+        'cache: "default"',
         'import("./board.js")',
         'import("./mechanism-workbench.js")',
     ):
         if required not in boot:
             errors.append(f"web/boot.js missing fast-start behavior: {required}")
+    if 'cache: "no-store"' in boot:
+        errors.append("web/boot.js must not disable HTTP caching")
 
 if JS.exists():
     js = JS.read_text(encoding="utf-8")
