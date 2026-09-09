@@ -1,0 +1,127 @@
+name: One-shot master board browser QA
+
+on:
+  push:
+    branches: [feat/master-decision-board]
+
+permissions:
+  contents: read
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: feat/master-decision-board
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+      - name: Build preview
+        run: |
+          npm ci --no-audit --no-fund
+          npm install --no-save --package-lock=false playwright@1.63.0
+          npx playwright install --with-deps chromium firefox
+          python -m pip install --disable-pip-version-check --quiet pyyaml
+          mkdir -p _preview/data
+          python scripts/build_board_data.py --output _preview/data/board.json
+          python scripts/build_subject_atlas_data.py --output _preview/data/subject-atlas.json
+          cp index.html _preview/index.html
+          cp catalog.yaml _preview/catalog.yaml
+          cp -R web _preview/web
+          cp -R registries _preview/registries
+          BOARD_FRAMEWORK_OUTDIR=_preview/web/framework npm run build:framework-demos
+      - name: Browser decision-flow QA
+        run: |
+          python -m http.server 4173 --directory _preview >/tmp/resource-bank-server.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID || true' EXIT
+          mkdir -p qa-screenshots
+          cat > .master-board-qa.mjs <<'JS'
+          import { chromium, firefox } from 'playwright';
+
+          const base = 'http://127.0.0.1:4173/';
+
+          async function exercise(browserType, name, screenshots = false) {
+            const browser = await browserType.launch({ headless: true });
+            const page = await browser.newPage({ viewport: { width: 1365, height: 900 } });
+            const errors = [];
+            const requests = [];
+            page.on('console', (msg) => { if (msg.type() === 'error') errors.push(msg.text()); });
+            page.on('pageerror', (error) => errors.push(error.message));
+            page.on('request', (request) => requests.push(request.url()));
+
+            await page.goto(base, { waitUntil: 'networkidle' });
+            if (requests.some((url) => url.includes('decision-board.js') || url.includes('subject-atlas.json'))) {
+              throw new Error(`${name}: decision assets loaded on the critical startup path`);
+            }
+
+            await page.getByRole('button', { name: 'Decide', exact: true }).click();
+            await page.getByRole('heading', { name: 'Start from what you know.' }).waitFor();
+            await page.waitForFunction(() => performance.getEntriesByType('resource').some((entry) => entry.name.includes('subject-atlas.json')));
+            if (!requests.some((url) => url.includes('decision-board.js'))) throw new Error(`${name}: lazy decision JS was not requested`);
+            if (!requests.some((url) => url.includes('subject-atlas.json'))) throw new Error(`${name}: lazy subject atlas was not requested`);
+            if (screenshots) await page.screenshot({ path: 'qa-screenshots/decision-landing.png', fullPage: true });
+
+            await page.getByRole('button', { name: /I know the subject/ }).click();
+            const subjectSearch = page.locator('[data-subject-search]');
+            await subjectSearch.fill('AP Chemistry');
+            await page.getByRole('button', { name: /AP Chemistry/ }).click();
+            await page.getByRole('heading', { name: 'AP Chemistry' }).waitFor();
+            await page.getByRole('button', { name: /Organic reactions and synthesis/ }).click();
+            await page.getByText('Recommended representation routes').waitFor();
+            if (await page.locator('.decision-route-row').count() < 2) throw new Error(`${name}: subject route did not produce representation options`);
+            if (await page.locator('.decision-bank-row').count() < 2) throw new Error(`${name}: subject route did not connect back to the bank`);
+            if (screenshots) await page.screenshot({ path: 'qa-screenshots/ap-chemistry-decision.png', fullPage: true });
+
+            const firstMechanism = page.locator('[data-bank-uid^="mechanism:"]').first();
+            await firstMechanism.click();
+            await page.locator('.drawer.is-open').waitFor();
+            await page.goBack({ waitUntil: 'networkidle' });
+            await page.waitForFunction(() => !document.querySelector('.drawer')?.classList.contains('is-open'));
+            await page.getByRole('heading', { name: 'AP Chemistry' }).waitFor();
+
+            await page.locator('[data-decision-home]').click();
+            await page.getByRole('button', { name: /I know what I need to show/ }).click();
+            const grammarSearch = page.locator('[data-grammar-search]');
+            await grammarSearch.fill('spatial map');
+            await page.locator('[data-grammar-id="spatial-map"]').click();
+            await page.getByRole('heading', { name: 'Spatial Map' }).waitFor();
+            if (await page.locator('.decision-bank-row').count() < 2) throw new Error(`${name}: grammar route did not expose engines/mechanisms`);
+            if (screenshots) await page.screenshot({ path: 'qa-screenshots/spatial-map-decision.png', fullPage: true });
+
+            for (let i = 0; i < 6; i += 1) {
+              await page.locator('[data-decision-home]').click();
+              await page.getByRole('button', { name: i % 2 ? /I know the subject/ : /I know what I need to show/ }).click();
+              await page.locator('.decision-workspace').waitFor();
+            }
+            const responsive = await page.evaluate(() => new Promise((resolve) => setTimeout(() => resolve('ok'), 50)));
+            if (responsive !== 'ok') throw new Error(`${name}: decision navigation became unresponsive`);
+            if (errors.length) throw new Error(`${name} console errors:\n${errors.join('\n')}`);
+
+            await browser.close();
+          }
+
+          async function mobileShot() {
+            const browser = await chromium.launch({ headless: true });
+            const page = await browser.newPage({ viewport: { width: 390, height: 844 } });
+            await page.goto(`${base}#subject:ap-chemistry`, { waitUntil: 'networkidle' });
+            await page.getByRole('heading', { name: 'AP Chemistry' }).waitFor();
+            const overflow = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth + 1);
+            if (overflow) throw new Error('mobile: page-level horizontal overflow');
+            await page.screenshot({ path: 'qa-screenshots/ap-chemistry-mobile.png', fullPage: true });
+            await browser.close();
+          }
+
+          await exercise(chromium, 'chromium', true);
+          await exercise(firefox, 'firefox', false);
+          await mobileShot();
+          JS
+          node .master-board-qa.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: master-board-screenshots
+          path: qa-screenshots/*.png
+          if-no-files-found: warn
