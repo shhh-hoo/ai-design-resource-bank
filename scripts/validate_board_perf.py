@@ -42,13 +42,15 @@ def main() -> int:
         text = boot.read_text(encoding="utf-8")
         for required in (
             "data/board.json",
-            'cache: "force-cache"',
+            'cache: "default"',
             "window.__BOARD_DATA__",
             'import("./board.js")',
             'import("./mechanism-workbench.js")',
         ):
             if required not in text:
                 errors.append(f"web/boot.js missing fast-boot behavior: {required}")
+        if 'cache: "no-store"' in text:
+            errors.append("web/boot.js must not disable HTTP caching")
 
     if data_path.exists() and data_path.stat().st_size > 100_000:
         errors.append(
