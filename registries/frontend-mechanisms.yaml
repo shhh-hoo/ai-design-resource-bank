@@ -4,6 +4,35 @@ purpose: >-
   pattern, the task it solves, a small live demo key, and mature tools worth checking before
   implementing it in production.
 
+chapters:
+  - id: math
+    label: Mathematics
+    blurb: Turn abstract relationships into objects that can be manipulated.
+  - id: physics
+    label: Physics
+    blurb: Keep state, force, motion, and time visible in the same explanation.
+  - id: chemistry
+    label: Chemistry
+    blurb: Show change without losing the chemical meaning carried by structure and space.
+  - id: animation
+    label: Motion
+    blurb: Use movement to establish sequence, hierarchy, and comparison—not decoration.
+  - id: stage
+    label: Stage & camera
+    blurb: Direct attention by moving the viewpoint, framing, or light instead of adding more interface.
+  - id: typography
+    label: Typography
+    blurb: Let type reveal structure and emphasis without turning reading into an effect demo.
+  - id: rendering
+    label: Rendering & particles
+    blurb: Use depth, fields, noise, and particles when the visual mechanism needs more than ordinary DOM motion.
+  - id: spatial-3d
+    label: 3D explanation
+    blurb: Keep identity, orientation, and annotation stable while objects move through space.
+  - id: graphs
+    label: Graphs & space
+    blurb: Preserve orientation while revealing structure, focus, and scale.
+
 mechanisms:
   - id: movable-tangent
     name: Movable tangent
@@ -93,6 +122,17 @@ mechanisms:
     implementation_note: The arrow should trigger a deterministic structure change so the causal relation stays explicit.
     status: seed
 
+  - id: bond-morph
+    name: Bond morph
+    domain: chemistry
+    summary: Show one bond weakening as another forms so structure change reads as one continuous event.
+    use_when: Explaining substitution, addition, elimination, resonance changes, or concerted bond-making and bond-breaking.
+    tools: [svgjs, motion, rdkit-js]
+    demo: bond-morph
+    primitives: [bond-state, bond-opacity, atom-identity, reaction-progress]
+    implementation_note: Preserve atom identity while bond state changes; do not morph whole structures so aggressively that correspondence is lost.
+    status: seed
+
   - id: mask-transition
     name: Mask transition
     domain: animation
@@ -115,6 +155,112 @@ mechanisms:
     implementation_note: Pin only the explanatory anchor; let the text continue to establish temporal progress.
     status: seed
 
+  - id: scroll-scrub
+    name: Scroll-scrub timeline
+    domain: animation
+    summary: Map scroll position to one deterministic playhead instead of firing disconnected enter animations.
+    use_when: Scrollytelling, product walkthroughs, progressive diagrams, or sequences where users should be able to move backward as naturally as forward.
+    tools: [gsap, motion]
+    demo: scroll-scrub
+    primitives: [scroll-progress, playhead, reversible-state, progress-indicator]
+    implementation_note: Make scroll position the source of truth; derived visual states should be reversible at any point in the timeline.
+    status: seed
+    references:
+      - https://gsap.com/docs/v3/Plugins/ScrollTrigger/
+      - https://motion.dev/examples?category=scroll
+
+  - id: camera-dolly
+    name: Camera dolly
+    domain: stage
+    summary: Move the viewpoint through depth so foreground and background change relationship, not just size.
+    use_when: Stage-like scene changes, 3D storytelling, product reveals, or teaching spatial relationships where perspective matters.
+    tools: [threejs, theatrejs]
+    demo: camera-dolly
+    primitives: [camera-position, focal-target, foreground, background, depth-cue]
+    implementation_note: Keep a stable focal target and distinguish camera translation from simply scaling the scene.
+    status: seed
+
+  - id: stage-spotlight
+    name: Stage spotlight
+    domain: stage
+    summary: Move one pool of attention across a scene while everything else remains present.
+    use_when: Presentations, stage metaphors, diagram walkthroughs, or interfaces where attention should move without hiding context.
+    tools: [gsap, motion, svgjs]
+    demo: stage-spotlight
+    primitives: [attention-window, stage, target, context]
+    implementation_note: Use light or contrast to redirect attention; avoid turning every target into a separate card or modal.
+    status: seed
+
+  - id: split-text-reveal
+    name: Split-text reveal
+    domain: typography
+    summary: Reveal words or lines in reading order so motion reinforces phrasing instead of fragmenting it.
+    use_when: Editorial headlines, chapter changes, emphasis, or short instructional statements where textual rhythm matters.
+    tools: [motion, gsap]
+    demo: split-text-reveal
+    primitives: [text-segmentation, stagger, clipping, reading-order]
+    implementation_note: Segment at meaningful phrase boundaries and preserve legibility when reduced motion is requested.
+    status: seed
+    references:
+      - https://motion.dev/examples?category=text
+
+  - id: depth-parallax
+    name: Depth parallax
+    domain: rendering
+    summary: Move visual layers at different rates so depth emerges from relative motion.
+    use_when: Hero scenes, spatial diagrams, galleries, or teaching visuals where near/far relationships should be felt immediately.
+    tools: [motion, gsap, threejs]
+    demo: depth-parallax
+    primitives: [layer-depth, viewpoint, relative-motion, foreground-background]
+    implementation_note: Tie movement amplitude to semantic depth; random layer speeds quickly become decorative noise.
+    status: seed
+
+  - id: particle-attractor
+    name: Particle attractor
+    domain: rendering
+    summary: Let many small elements reveal an invisible field by moving toward a controllable attractor.
+    use_when: Field visualizations, generative transitions, particle interfaces, or effects where force should be inferred from motion.
+    tools: [pixijs, p5js]
+    demo: particle-attractor
+    primitives: [particles, attractor, velocity, force-field]
+    implementation_note: Keep force rules explicit and bounded; particle count should scale with the renderer rather than the desired visual density alone.
+    status: seed
+
+  - id: noise-threshold-wipe
+    name: Noise-threshold wipe
+    domain: rendering
+    summary: Reveal the next state through a spatial noise threshold rather than a clean geometric edge.
+    use_when: Organic scene transitions, shader reveals, dissolves, x-ray effects, or visual changes that need irregular boundaries.
+    tools: [threejs, gsap]
+    demo: noise-threshold-wipe
+    primitives: [noise-field, threshold, reveal-progress, mask]
+    implementation_note: Treat the noise field as stable data and animate the threshold; changing both creates incoherent flicker.
+    status: seed
+    references:
+      - https://tympanus.net/codrops/2026/04/28/more-than-a-portfolio-building-a-scroll-driven-3d-world-with-something-to-say/
+
+  - id: explode-assemble
+    name: Explode / assemble
+    domain: spatial-3d
+    summary: Separate a system into identifiable parts, then bring the same parts back into one whole.
+    use_when: Exploded diagrams, mechanical assemblies, molecular structures, layered systems, or product construction stories.
+    tools: [threejs, theatrejs]
+    demo: explode-assemble
+    primitives: [part-identity, local-offset, assembly-progress, correspondence]
+    implementation_note: Every part must keep identity across the transition; an exploded view is explanatory only if users can map pieces back to the whole.
+    status: seed
+
+  - id: anchored-callout
+    name: Anchored callout
+    domain: spatial-3d
+    summary: Keep a label attached to the same feature while the object or camera moves.
+    use_when: 3D explanations, product anatomy, molecular viewers, maps, or scenes where labels must survive motion without drifting.
+    tools: [threejs, react-three-fiber]
+    demo: anchored-callout
+    primitives: [world-anchor, screen-label, leader-line, projection]
+    implementation_note: Derive screen position from the feature anchor every frame and handle occlusion or label collisions separately from the 3D scene.
+    status: seed
+
   - id: focus-context
     name: Focus + context
     domain: graphs
@@ -135,4 +281,26 @@ mechanisms:
     demo: semantic-zoom
     primitives: [zoom-level, label-threshold, detail-threshold, aggregation]
     implementation_note: Define semantic thresholds explicitly so added detail corresponds to a real information level.
+    status: seed
+
+  - id: graph-relayout
+    name: Graph re-layout continuity
+    domain: graphs
+    summary: Change the graph layout while keeping node identity visually continuous.
+    use_when: Switching between hierarchy, network, timeline, or grouped views without making users relearn the graph.
+    tools: [antv-g6, cytoscapejs]
+    demo: graph-relayout
+    primitives: [stable-node-id, old-layout, new-layout, interpolated-position]
+    implementation_note: Animate the same node objects between positions; replacing the graph with a fresh render destroys correspondence.
+    status: seed
+
+  - id: canvas-focus-lens
+    name: Canvas focus lens
+    domain: graphs
+    summary: Move a local lens across a dense canvas to reveal detail without committing to a full zoom.
+    use_when: Infinite canvases, dense diagrams, maps, network inspection, or overview-detail interfaces.
+    tools: [tldraw, konva]
+    demo: canvas-focus-lens
+    primitives: [overview, lens, local-detail, pointer-position]
+    implementation_note: Keep the overview stable under the lens; the local layer should add information rather than merely magnify pixels.
     status: seed
