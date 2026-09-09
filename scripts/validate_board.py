@@ -5,11 +5,12 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "index.html"
 JS = ROOT / "web" / "board.js"
+WORKBENCH_JS = ROOT / "web" / "mechanism-workbench.js"
 CSS = ROOT / "web" / "board.css"
 
 errors: list[str] = []
 
-for path in (INDEX, JS, CSS):
+for path in (INDEX, JS, WORKBENCH_JS, CSS):
     if not path.exists():
         errors.append(f"missing board asset: {path.relative_to(ROOT)}")
 
@@ -24,6 +25,8 @@ if INDEX.exists():
         'id="mechanismCardTemplate"',
         './web/board.css',
         './web/board.js',
+        './web/mechanism-workbench.js',
+        'Subject → mechanism → demo → tool',
         'js-yaml@4.1.0',
     ):
         if required not in html:
@@ -54,6 +57,24 @@ if JS.exists():
     ):
         if required not in js:
             errors.append(f"web/board.js missing expected behavior/path: {required}")
+
+if WORKBENCH_JS.exists():
+    extension = WORKBENCH_JS.read_text(encoding="utf-8")
+    for required in (
+        'registry.chapters',
+        'renderRegistryChapters',
+        'demoCameraDolly',
+        'demoSplitText',
+        'demoParticleAttractor',
+        'demoNoiseWipe',
+        'demoBondMorph',
+        'demoGraphRelayout',
+        'demoFocusLens',
+        'demoAnchoredCallout',
+        'prefers-reduced-motion',
+    ):
+        if required not in extension:
+            errors.append(f"web/mechanism-workbench.js missing expected behavior: {required}")
 
 if CSS.exists():
     css = CSS.read_text(encoding="utf-8")
