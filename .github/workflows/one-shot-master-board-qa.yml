@@ -92,6 +92,9 @@ jobs:
             await page.locator('[data-grammar-id="spatial-map"]').click();
             await page.getByRole('heading', { name: 'Spatial Map' }).waitFor();
             if (await page.locator('.decision-bank-row').count() < 2) throw new Error(`${name}: grammar route did not expose engines/mechanisms`);
+            const spatialMechanisms = await page.locator('[data-bank-uid^="mechanism:"]').allInnerTexts();
+            if (spatialMechanisms.some((text) => /Wave propagation|Particle attractor/i.test(text))) throw new Error(`${name}: spatial-map inherited unrelated family mechanisms`);
+            if (!spatialMechanisms.some((text) => /Semantic zoom|Canvas focus lens|Anchored callout/i.test(text))) throw new Error(`${name}: spatial-map did not surface a map-relevant bank mechanism`);
             if (screenshots) await page.screenshot({ path: 'qa-screenshots/spatial-map-decision.png', fullPage: true });
 
             for (let i = 0; i < 6; i += 1) {
