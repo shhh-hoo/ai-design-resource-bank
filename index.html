@@ -3,120 +3,87 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#f3f0e7" />
-  <title>AI Design Resource Bank — Capability Board</title>
-  <meta name="description" content="Navigate frontend capabilities, reference galleries, and reusable resource packages." />
+  <meta name="theme-color" content="#f6f6f2" />
+  <title>AI Design Resource Bank</title>
+  <meta name="description" content="A human-readable workbench for frontend mechanisms, tools, references, and reusable resources." />
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="stylesheet" href="./web/board.css" />
 </head>
 <body>
-  <div class="grain" aria-hidden="true"></div>
-  <div class="app-shell">
-    <header class="topbar">
-      <a class="brand" href="#" aria-label="AI Design Resource Bank home">
-        <span class="brand-mark">RB</span>
-        <span class="brand-copy">
-          <strong>AI Design Resource Bank</strong>
-          <small>Capability Board</small>
-        </span>
-      </a>
-      <div class="topbar-actions">
-        <div class="view-switch" aria-label="View mode">
-          <button class="view-button is-active" type="button" data-view="board">Board</button>
-          <button class="view-button" type="button" data-view="index">Index</button>
-        </div>
-        <a class="repo-link" href="https://github.com/shhh-hoo/ai-design-resource-bank" target="_blank" rel="noreferrer">
-          GitHub <span aria-hidden="true">↗</span>
-        </a>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="AI Design Resource Bank home">
+      <span class="brand-mark">RB</span>
+      <span>AI Design Resource Bank</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <button class="nav-link is-active" type="button" data-view="explore">Explore</button>
+      <button class="nav-link" type="button" data-view="index">Index</button>
+      <a class="nav-link" href="https://github.com/shhh-hoo/ai-design-resource-bank" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">Capability → tool → mechanism → demo</p>
+      <div class="intro-grid">
+        <h1 id="page-title">Find a mechanism.<br />Try it. Then build.</h1>
+        <p class="intro-note">A working index of frontend ideas worth reusing. Start with the behavior, not the library.</p>
       </div>
-    </header>
-
-    <section class="hero" aria-labelledby="page-title">
-      <div class="hero-kicker">
-        <span>Capability map</span>
-        <span class="hero-rule"></span>
-        <span>Choose before you hand-roll</span>
-      </div>
-      <div class="hero-main">
-        <h1 id="page-title">Find the right primitive.<br />Then make it yours.</h1>
-        <div class="hero-stats" id="heroStats" aria-live="polite">
-          <span class="stat-skeleton"></span>
-          <span class="stat-skeleton"></span>
-          <span class="stat-skeleton"></span>
-        </div>
-      </div>
-
-      <div class="controls">
-        <label class="search-box" for="searchInput">
-          <span class="search-icon" aria-hidden="true">⌕</span>
-          <input id="searchInput" type="search" autocomplete="off" placeholder="Search “function plot”, “molecule”, “shader”, “scroll”…" />
-          <kbd>/</kbd>
-        </label>
-
-        <div class="type-filters" id="typeFilters" aria-label="Resource type filters">
-          <button class="filter-pill is-active" type="button" data-type="all">Everything</button>
-          <button class="filter-pill" type="button" data-type="tool">Tools</button>
-          <button class="filter-pill" type="button" data-type="reference">References</button>
-          <button class="filter-pill" type="button" data-type="package">Packages</button>
-        </div>
-
-        <select class="tier-select" id="tierSelect" aria-label="Priority filter">
-          <option value="all">All priorities</option>
-          <option value="core">Core only</option>
-          <option value="specialized">Specialized</option>
-          <option value="secondary">Secondary</option>
-        </select>
-      </div>
-
-      <nav class="domain-nav" id="domainNav" aria-label="Capability domains"></nav>
+      <label class="search" for="searchInput">
+        <span aria-hidden="true">⌕</span>
+        <input id="searchInput" type="search" autocomplete="off" placeholder="Search a behavior, subject, or tool" />
+        <kbd>/</kbd>
+      </label>
+      <nav class="chapter-nav" id="chapterNav" aria-label="Subjects"></nav>
     </section>
 
-    <main class="main-content">
-      <div class="result-strip">
-        <p id="resultSummary">Loading the bank…</p>
-        <button class="quiet-button" type="button" id="clearFilters" hidden>Clear filters</button>
+    <section class="explore-view" id="exploreView" aria-label="Mechanism workbench">
+      <div class="section-lead">
+        <p id="resultSummary">Loading the workbench…</p>
+        <button class="text-button" id="clearSearch" type="button" hidden>Clear search</button>
       </div>
+      <div id="mechanismChapters"></div>
+      <div id="searchResults" hidden></div>
+    </section>
 
-      <section class="board-view" id="boardView" aria-label="Capability board">
-        <div class="board-loading">
-          <div></div><div></div><div></div><div></div>
-        </div>
-      </section>
+    <section class="index-view" id="indexView" aria-label="Resource index" hidden>
+      <div class="index-toolbar">
+        <p>Everything in the bank, kept deliberately terse.</p>
+        <select id="indexType" aria-label="Index type">
+          <option value="all">All</option>
+          <option value="mechanism">Mechanisms</option>
+          <option value="tool">Tools</option>
+          <option value="reference">References</option>
+          <option value="package">Packages</option>
+        </select>
+      </div>
+      <div id="indexList"></div>
+    </section>
 
-      <section class="index-view" id="indexView" aria-label="Capability index" hidden></section>
-
-      <section class="load-error" id="loadError" hidden>
-        <span class="error-index">ERR / DATA</span>
-        <h2>The board could not load its registry data.</h2>
-        <p id="loadErrorMessage"></p>
-        <p>Serve the repository over HTTP and make sure the registry YAML files and the YAML parser are reachable.</p>
-        <a href="https://github.com/shhh-hoo/ai-design-resource-bank/tree/main/registries" target="_blank" rel="noreferrer">Open registries on GitHub ↗</a>
-      </section>
-    </main>
-  </div>
+    <section class="load-error" id="loadError" hidden>
+      <p class="eyebrow">Data unavailable</p>
+      <h2>The workbench could not load its registry files.</h2>
+      <p id="loadErrorMessage"></p>
+    </section>
+  </main>
 
   <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
   <aside class="drawer" id="detailDrawer" aria-hidden="true" aria-labelledby="drawerTitle">
-    <div class="drawer-topbar">
+    <div class="drawer-bar">
       <span id="drawerKind">Resource</span>
       <button class="drawer-close" id="drawerClose" type="button" aria-label="Close details">×</button>
     </div>
-    <div class="drawer-scroll" id="drawerContent"></div>
+    <div class="drawer-content" id="drawerContent"></div>
   </aside>
 
-  <template id="resourceCardTemplate">
-    <article class="resource-card" tabindex="0">
-      <div class="card-topline">
-        <span class="card-kind"></span>
-        <span class="card-priority"></span>
+  <template id="mechanismCardTemplate">
+    <article class="mechanism-card" tabindex="0">
+      <div class="mechanism-number"></div>
+      <div>
+        <h3 class="mechanism-title"></h3>
+        <p class="mechanism-summary"></p>
       </div>
-      <h3 class="card-title"></h3>
-      <p class="card-summary"></p>
-      <div class="card-tags"></div>
-      <div class="card-footer">
-        <span class="card-domain"></span>
-        <span class="card-open" aria-hidden="true">↗</span>
-      </div>
+      <span class="mechanism-open">Try ↗</span>
     </article>
   </template>
 
