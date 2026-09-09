@@ -7,17 +7,19 @@ INDEX = ROOT / "index.html"
 BOOT_JS = ROOT / "web" / "boot.js"
 JS = ROOT / "web" / "board.js"
 WORKBENCH_JS = ROOT / "web" / "mechanism-workbench.js"
+DECISION_JS = ROOT / "web" / "decision-board.js"
 CSS = ROOT / "web" / "board.css"
 
 errors: list[str] = []
 
-for path in (INDEX, BOOT_JS, JS, WORKBENCH_JS, CSS):
+for path in (INDEX, BOOT_JS, JS, WORKBENCH_JS, DECISION_JS, CSS):
     if not path.exists():
         errors.append(f"missing board asset: {path.relative_to(ROOT)}")
 
 if INDEX.exists():
     html = INDEX.read_text(encoding="utf-8")
     for required in (
+        'id="decisionView"',
         'id="exploreView"',
         'id="indexView"',
         'id="searchInput"',
@@ -28,7 +30,7 @@ if INDEX.exists():
         './web/boot.js',
         './web/board.js',
         './web/mechanism-workbench.js',
-        'Subject → mechanism → demo → tool',
+        'Curriculum → relationship → representation → tool',
     ):
         if required not in html:
             errors.append(f"index.html missing required board contract: {required}")
@@ -57,6 +59,8 @@ if BOOT_JS.exists():
             errors.append(f"web/boot.js missing fast-start behavior: {required}")
     if 'cache: "no-store"' in boot:
         errors.append("web/boot.js must not disable HTTP caching")
+    if 'decision-board.js' in boot or 'subject-atlas.json' in boot:
+        errors.append("web/boot.js must keep the subject decision system out of the critical startup path")
 
 if JS.exists():
     js = JS.read_text(encoding="utf-8")
@@ -67,6 +71,7 @@ if JS.exists():
         'demoElectron',
         'demoFocus',
         'prefers-reduced-motion',
+        'import("./decision-board.js")',
     ):
         if required not in js:
             errors.append(f"web/board.js missing expected behavior/path: {required}")
@@ -105,6 +110,8 @@ if CSS.exists():
         '.demo-stage',
         '.drawer',
         '.index-view',
+        '.decision-view',
+        '.decision-workspace',
         '@media (max-width: 560px)',
         '@media (prefers-reduced-motion: reduce)',
     ):
@@ -124,6 +131,8 @@ for data_path in (
     ROOT / "registries" / "frontend-mechanisms.yaml",
     ROOT / "registries" / "frontend-tools.yaml",
     ROOT / "registries" / "reference-galleries.yaml",
+    ROOT / "registries" / "curriculum-subjects.yaml",
+    ROOT / "registries" / "subject-visualization-families.yaml",
     ROOT / "catalog.yaml",
 ):
     if not data_path.exists():
