@@ -97,7 +97,8 @@ function rankMechanismsForGrammar(grammarId, limit = 5) {
     .map((item, index) => {
       const text = [item.id, item.name, item.summary, item.use_when, ...(item.primitives || [])]
         .filter(Boolean).join(" ").toLowerCase().replace(/[-_/]+/g, " ");
-      const score = signals.reduce((total, signal) => total + (text.includes(signal) ? 1 : 0), 0);
+      const score = signals.reduce((total, signal, signalIndex) =>
+        total + (text.includes(signal) ? signals.length - signalIndex : 0), 0);
       return { item, score, index };
     })
     .filter(({ score }) => score > 0)
@@ -348,7 +349,7 @@ function grammarDetailHtml(grammarId, grammar) {
   const familyIds = familyIdsForGrammar(grammarId);
   const families = familyIds.map((id) => ({ id, ...familyById(id) })).filter((item) => item.label);
   const tools = (grammar.default_tools || []).map(toolById).filter(Boolean);
-  const mechanisms = rankMechanismsForGrammar(grammarId, 5);
+  const mechanisms = rankMechanismsForGrammar(grammarId, 3);
   const subjectExamples = (data?.subjects?.subjects || [])
     .filter((subject) => familyIds.includes(subject.family))
     .slice(0, 10);
