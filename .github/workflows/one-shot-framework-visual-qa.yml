@@ -1,0 +1,99 @@
+name: One-shot framework visual QA
+
+on:
+  push:
+    branches:
+      - feat/framework-backed-demos
+
+permissions:
+  contents: read
+
+jobs:
+  visual-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/framework-backed-demos
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+      - name: Build preview
+        run: |
+          npm ci --no-audit --no-fund
+          npm install --no-save --package-lock=false playwright@1.63.0
+          npx playwright install --with-deps chromium firefox
+          python -m pip install --disable-pip-version-check --quiet pyyaml
+          mkdir -p _preview/data
+          python scripts/build_board_data.py --output _preview/data/board.json
+          cp index.html _preview/index.html
+          cp catalog.yaml _preview/catalog.yaml
+          cp -R web _preview/web
+          cp -R registries _preview/registries
+          BOARD_FRAMEWORK_OUTDIR=_preview/web/framework npm run build:framework-demos
+      - name: Browser smoke and screenshots
+        run: |
+          python -m http.server 4173 --directory _preview >/tmp/resource-bank-server.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID || true' EXIT
+          mkdir -p qa-screenshots
+          cat > /tmp/framework-qa.mjs <<'JS'
+          import { chromium, firefox } from 'playwright';
+
+          const cases = [
+            ['camera-dolly', 'three', '55'],
+            ['orbital-overlap', 'three', '82'],
+            ['explode-assemble', 'three', '62'],
+            ['anchored-callout', 'three', '68'],
+            ['graph-relayout', 'd3', null],
+          ];
+          const base = 'http://127.0.0.1:4173/';
+
+          async function runBrowser(browserType, name, screenshots) {
+            const browser = await browserType.launch({ headless: true });
+            const page = await browser.newPage({ viewport: { width: 1365, height: 900 } });
+            const errors = [];
+            page.on('console', (msg) => { if (msg.type() === 'error') errors.push(msg.text()); });
+            page.on('pageerror', (error) => errors.push(error.message));
+
+            for (const [id, runtime, value] of cases) {
+              await page.goto(`${base}#mechanism:${id}`, { waitUntil: 'networkidle' });
+              await page.waitForSelector('.drawer.is-open');
+              await page.waitForSelector('.framework-badge', { timeout: 10000 });
+              const badge = (await page.locator('.framework-badge').innerText()).toLowerCase();
+              if (!badge.includes(runtime === 'three' ? 'three' : 'd3')) throw new Error(`${name}/${id}: wrong runtime badge ${badge}`);
+
+              if (value) {
+                const range = page.locator('.drawer .demo-stage input[type="range"]');
+                await range.evaluate((element, nextValue) => {
+                  element.value = nextValue;
+                  element.dispatchEvent(new Event('input', { bubbles: true }));
+                }, value);
+              } else {
+                await page.locator('.drawer .demo-stage button').click();
+              }
+
+              await page.waitForTimeout(250);
+              if (runtime === 'three') {
+                const canvas = page.locator('.drawer .framework-stage canvas');
+                const box = await canvas.boundingBox();
+                if (!box || box.width < 250 || box.height < 180) throw new Error(`${name}/${id}: invalid WebGL canvas size`);
+              }
+              await page.evaluate(() => new Promise((resolve) => requestAnimationFrame(() => resolve(true))));
+              if (screenshots) await page.screenshot({ path: `qa-screenshots/${id}.png` });
+            }
+
+            if (errors.length) throw new Error(`${name} console errors:\n${errors.join('\n')}`);
+            await browser.close();
+          }
+
+          await runBrowser(chromium, 'chromium', true);
+          await runBrowser(firefox, 'firefox', false);
+          JS
+          node /tmp/framework-qa.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: framework-demo-screenshots
+          path: qa-screenshots/*.png
+          if-no-files-found: error
