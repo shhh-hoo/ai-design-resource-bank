@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/shhh-hoo/ai-design-resource-bank/schemas/resource.schema.json",
+  "title": "AI Design Resource Package Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "domain",
+    "status",
+    "source",
+    "selection_reason",
+    "mechanism",
+    "fidelity",
+    "artifacts",
+    "rights"
+  ],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "title": {"type": "string", "minLength": 1},
+    "domain": {"type": "string", "minLength": 1},
+    "tags": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "status": {
+      "enum": ["raw", "distilled", "implemented", "verified", "deprecated"]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "locator", "captured_at"],
+      "properties": {
+        "type": {"enum": ["url", "file", "image", "video", "repository", "paper", "prompt", "other"]},
+        "locator": {"type": "string", "minLength": 1},
+        "title": {"type": "string"},
+        "author": {"type": "string"},
+        "captured_at": {"type": "string", "format": "date"},
+        "notes": {"type": "string"}
+      }
+    },
+    "selection_reason": {"type": "string", "minLength": 1},
+    "mechanism": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["summary", "primitives"],
+      "properties": {
+        "summary": {"type": "string", "minLength": 1},
+        "primitives": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "states": {"type": "array", "items": {"type": "string"}},
+        "parameters": {"type": "array", "items": {"type": "string"}},
+        "failure_modes": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "fidelity": {
+      "type": "array",
+      "items": {"enum": ["concept", "behavior", "geometry", "visual", "implementation"]},
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "kind", "purpose"],
+        "properties": {
+          "path": {"type": "string", "minLength": 1},
+          "kind": {"enum": ["prompt", "skill", "code", "svg", "png", "tokens", "motion", "spec", "example", "test", "other"]},
+          "purpose": {"type": "string", "minLength": 1},
+          "generated": {"type": "boolean"},
+          "validated": {"type": "boolean"}
+        }
+      }
+    },
+    "rights": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_assets_stored", "basis"],
+      "properties": {
+        "source_assets_stored": {"type": "boolean"},
+        "license": {"type": "string"},
+        "basis": {"type": "string", "minLength": 1},
+        "restrictions": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "related": {"type": "array", "items": {"type": "string"}},
+    "notes": {"type": "string"}
+  }
+}
