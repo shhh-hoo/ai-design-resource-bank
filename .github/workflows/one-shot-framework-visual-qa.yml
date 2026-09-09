@@ -38,7 +38,7 @@ jobs:
           SERVER_PID=$!
           trap 'kill $SERVER_PID || true' EXIT
           mkdir -p qa-screenshots
-          cat > /tmp/framework-qa.mjs <<'JS'
+          cat > .framework-qa.mjs <<'JS'
           import { chromium, firefox } from 'playwright';
 
           const cases = [
@@ -91,7 +91,7 @@ jobs:
           await runBrowser(chromium, 'chromium', true);
           await runBrowser(firefox, 'firefox', false);
           JS
-          node /tmp/framework-qa.mjs
+          node .framework-qa.mjs
       - uses: actions/upload-artifact@v4
         with:
           name: framework-demo-screenshots
