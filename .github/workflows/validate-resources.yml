@@ -48,7 +48,12 @@ jobs:
         run: python scripts/validate_board.py
 
       - name: Compile runtime board data
-        run: python scripts/build_board_data.py --output .board-test/data/board.json
+        run: |
+          python scripts/build_board_data.py --output .board-test/data/board.json
+          python scripts/build_subject_atlas_data.py --output .board-test/data/subject-atlas.json
+
+      - name: Validate master decision board
+        run: python scripts/validate_decision_board.py --data .board-test/data/subject-atlas.json
 
       - name: Bundle lazy framework demos
         env:
@@ -66,5 +71,6 @@ jobs:
           node --check web/boot.js
           node --check web/board.js
           node --check web/mechanism-workbench.js
+          node --check web/decision-board.js
           node --check web/framework/three-demos.js
           node --check web/framework/d3-demos.js
