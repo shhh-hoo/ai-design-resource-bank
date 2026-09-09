@@ -2,32 +2,34 @@
 
 A reusable design-resource bank optimized for **AI-assisted production**, not passive bookmarking.
 
-The repository stores two complementary layers:
+The repository stores three complementary layers:
 
-1. **Capability registries** — curated upstream libraries, engines, tools, APIs, and reference galleries that tell an AI agent what mature capability to inspect before reinventing it.
-2. **Resource Packages** — mechanisms that have actually been distilled into reusable prompts, skills, code, SVG, PNG, tokens, motion specs, structured notes, examples, or tests.
+1. **Capability registries** — mature libraries, engines, tools, APIs, and reference galleries worth checking before reinventing a frontend capability.
+2. **Mechanisms** — human-facing interaction/explanation patterns with small runnable proofs and recommended production tools.
+3. **Resource Packages** — concrete techniques that have actually been distilled into reusable prompts, skills, code, SVG, PNG, tokens, motion specs, structured notes, examples, or tests.
 
-## Capability Board
+## Editorial Workbench
 
-The repository root now contains a data-driven web board for navigating both layers. It reads `registries/frontend-tools.yaml`, `registries/reference-galleries.yaml`, and `catalog.yaml` directly, so the UI grows with the bank instead of maintaining a second manual dataset.
+The repository root is a data-driven web workbench. It reads:
 
-Board features:
+- `registries/frontend-mechanisms.yaml`
+- `registries/frontend-tools.yaml`
+- `registries/reference-galleries.yaml`
+- `catalog.yaml`
 
-- horizontal capability/domain lanes for exploratory browsing
-- compact **Board / Index** view switch
-- full-text search across names, capabilities, tags, domains, ecosystem, and agent notes
-- resource-type and priority filters
-- domain jump/filter navigation
-- detail drawer with `use_when`, `avoid_when`, reference method, capabilities, ecosystem, license/rights notes, and official links
-- copyable AI brief for using a selected resource in another task
-- hash-based deep links to individual tools, references, and Resource Packages
-- responsive narrow-screen layout and reduced-motion support
+The default **Explore** view is intentionally human-readable rather than metadata-heavy. It follows:
 
-The site source is `index.html` + `web/`. `.github/workflows/deploy-board.yml` is prepared to publish the board through GitHub Pages after the repository's Pages source is set to **GitHub Actions**.
+`subject → mechanism → live demo → recommended tool → technical detail`
 
-## The workflow
+Explore shows only a mechanism title, one sentence, and a quiet action. Tool tiers, tags, ecosystems, rights/licensing, maintenance notes, and other machine-useful metadata stay in Search, Index, or progressive detail views.
 
-The intended interaction is deliberately simple:
+The visual contract is defined in `docs/EDITORIAL-UI-CONTRACT.md`: black/white/neutral interface, editorial hierarchy, no rainbow domain system, and color reserved for restrained interaction/demo accents.
+
+Current first-pass live mechanisms cover mathematics, physics, chemistry, motion, and graph/spatial interaction.
+
+The site source is `index.html` + `web/`. `.github/workflows/deploy-board.yml` is prepared to publish the workbench through GitHub Pages after the repository's Pages source is set to **GitHub Actions**.
+
+## The ingestion workflow
 
 ```text
 You find something worth keeping
@@ -51,16 +53,9 @@ A minimal instruction can be as short as:
 
 Agents working in this repository should follow `skills/resource-ingest/SKILL.md` and `AGENTS.md`.
 
-## Frontend capability discovery
+## Frontend capability selection
 
-Before hand-building a visual or interaction, agents should first inspect the bank's capability layer:
-
-- `registries/frontend-tools.yaml` — machine-readable selection registry across mathematics, data visualization, chemistry, physics/simulation, SVG/Canvas, 2D GPU, 3D, animation, diagrams/graphs, and maps.
-- `registries/reference-galleries.yaml` — high-signal official example galleries, interactive-science references, and UI-effect pattern sources.
-- `docs/FRONTEND-CAPABILITY-MAP.md` — task → default tool decision map and domain-first selection rules.
-- `skills/select-frontend-resource/SKILL.md` — procedure for turning a visual request into capabilities, comparing candidates, proving the hard behavior, and promoting durable techniques into Resource Packages.
-
-The intended selection loop is:
+Before hand-building a visual or interaction, agents should inspect the bank in this order:
 
 ```text
 request/reference
@@ -68,6 +63,8 @@ request/reference
 name the semantic capability
       ↓
 check verified Resource Packages
+      ↓
+check existing mechanism patterns
       ↓
 check frontend capability registry
       ↓
@@ -82,9 +79,17 @@ implement
 if reusable → bank the mechanism as a Resource Package
 ```
 
-The registry is intentionally **not** a claim that every listed tool has been locally validated. It is a curated upstream capability map. Concrete techniques become trusted bank assets only after ingestion/implementation evidence exists.
+Key files:
 
-## What gets stored
+- `registries/frontend-mechanisms.yaml` — reusable human-facing mechanisms and their recommended tools.
+- `registries/frontend-tools.yaml` — implementation capability registry across mathematics, data visualization, chemistry, physics/simulation, SVG/Canvas, 2D GPU, 3D, animation, diagrams/graphs, and maps.
+- `registries/reference-galleries.yaml` — high-signal official example galleries, interactive-science references, and UI-effect pattern sources.
+- `docs/FRONTEND-CAPABILITY-MAP.md` — task → default tool decision map and domain-first selection rules.
+- `skills/select-frontend-resource/SKILL.md` — frontend capability/tool selection procedure.
+
+The registries are discovery infrastructure, not a claim that every upstream tool has been locally validated. Concrete techniques become trusted bank assets only after ingestion/implementation evidence exists.
+
+## Resource Packages
 
 ```text
 resources/<domain>/<slug>/
@@ -123,16 +128,15 @@ Vague tags such as `premium`, `modern`, or `clean` are not enough. Geometry, hie
 ## Repository contracts
 
 - `AGENTS.md` — behavior expected from agents operating on the bank
+- `docs/EDITORIAL-UI-CONTRACT.md` — human-facing workbench density and visual rules
 - `skills/resource-ingest/SKILL.md` — end-to-end ingestion procedure
 - `skills/select-frontend-resource/SKILL.md` — frontend capability/tool selection procedure
 - `docs/RESOURCE-PACKAGE.md` — package structure and fidelity model
 - `docs/FRONTEND-CAPABILITY-MAP.md` — frontend task/capability decision map
 - `schemas/resource.schema.json` — machine-readable Resource Package manifest schema
 - `templates/` — package starting templates
-- `registries/frontend-tools.yaml` — curated implementation capability registry
-- `registries/reference-galleries.yaml` — curated example/reference surfaces
 - `catalog.yaml` — lightweight Resource Package retrieval index
-- `index.html` + `web/` — navigable capability board
+- `index.html` + `web/` — navigable editorial workbench
 
 ## Status levels
 
