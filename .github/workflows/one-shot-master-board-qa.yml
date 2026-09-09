@@ -42,6 +42,7 @@ jobs:
           import { chromium, firefox } from 'playwright';
 
           const base = 'http://127.0.0.1:4173/';
+          const isDecisionAsset = (url) => url.includes('decision-board.js') || url.includes('decision-board.css') || url.includes('subject-atlas.json');
 
           async function exercise(browserType, name, screenshots = false) {
             const browser = await browserType.launch({ headless: true });
@@ -53,15 +54,16 @@ jobs:
             page.on('request', (request) => requests.push(request.url()));
 
             await page.goto(base, { waitUntil: 'networkidle' });
-            if (requests.some((url) => url.includes('decision-board.js') || url.includes('subject-atlas.json'))) {
-              throw new Error(`${name}: decision assets loaded on the critical startup path`);
-            }
+            if (requests.some(isDecisionAsset)) throw new Error(`${name}: decision assets loaded on the critical startup path`);
 
             await page.getByRole('button', { name: 'Decide', exact: true }).click();
             await page.getByRole('heading', { name: 'Start from what you know.' }).waitFor();
             await page.waitForFunction(() => performance.getEntriesByType('resource').some((entry) => entry.name.includes('subject-atlas.json')));
-            if (!requests.some((url) => url.includes('decision-board.js'))) throw new Error(`${name}: lazy decision JS was not requested`);
-            if (!requests.some((url) => url.includes('subject-atlas.json'))) throw new Error(`${name}: lazy subject atlas was not requested`);
+            for (const asset of ['decision-board.js', 'decision-board.css', 'subject-atlas.json']) {
+              if (!requests.some((url) => url.includes(asset))) throw new Error(`${name}: lazy ${asset} was not requested`);
+            }
+            const introHidden = await page.locator('.intro').evaluate((element) => element.hidden);
+            if (!introHidden) throw new Error(`${name}: editorial hero remained visible inside Decide`);
             if (screenshots) await page.screenshot({ path: 'qa-screenshots/decision-landing.png', fullPage: true });
 
             await page.getByRole('button', { name: /I know the subject/ }).click();
@@ -73,6 +75,7 @@ jobs:
             await page.getByText('Recommended representation routes').waitFor();
             if (await page.locator('.decision-route-row').count() < 2) throw new Error(`${name}: subject route did not produce representation options`);
             if (await page.locator('.decision-bank-row').count() < 2) throw new Error(`${name}: subject route did not connect back to the bank`);
+            if (await page.locator('.decision-bank-row').count() > 8) throw new Error(`${name}: subject route is too dense`);
             if (screenshots) await page.screenshot({ path: 'qa-screenshots/ap-chemistry-decision.png', fullPage: true });
 
             const firstMechanism = page.locator('[data-bank-uid^="mechanism:"]').first();
