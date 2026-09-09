@@ -7,6 +7,24 @@ The repository stores two complementary layers:
 1. **Capability registries** — curated upstream libraries, engines, tools, APIs, and reference galleries that tell an AI agent what mature capability to inspect before reinventing it.
 2. **Resource Packages** — mechanisms that have actually been distilled into reusable prompts, skills, code, SVG, PNG, tokens, motion specs, structured notes, examples, or tests.
 
+## Capability Board
+
+The repository root now contains a data-driven web board for navigating both layers. It reads `registries/frontend-tools.yaml`, `registries/reference-galleries.yaml`, and `catalog.yaml` directly, so the UI grows with the bank instead of maintaining a second manual dataset.
+
+Board features:
+
+- horizontal capability/domain lanes for exploratory browsing
+- compact **Board / Index** view switch
+- full-text search across names, capabilities, tags, domains, ecosystem, and agent notes
+- resource-type and priority filters
+- domain jump/filter navigation
+- detail drawer with `use_when`, `avoid_when`, reference method, capabilities, ecosystem, license/rights notes, and official links
+- copyable AI brief for using a selected resource in another task
+- hash-based deep links to individual tools, references, and Resource Packages
+- responsive narrow-screen layout and reduced-motion support
+
+The site source is `index.html` + `web/`. `.github/workflows/deploy-board.yml` is prepared to publish the board through GitHub Pages after the repository's Pages source is set to **GitHub Actions**.
+
 ## The workflow
 
 The intended interaction is deliberately simple:
@@ -114,6 +132,7 @@ Vague tags such as `premium`, `modern`, or `clean` are not enough. Geometry, hie
 - `registries/frontend-tools.yaml` — curated implementation capability registry
 - `registries/reference-galleries.yaml` — curated example/reference surfaces
 - `catalog.yaml` — lightweight Resource Package retrieval index
+- `index.html` + `web/` — navigable capability board
 
 ## Status levels
 

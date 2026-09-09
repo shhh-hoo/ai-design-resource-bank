@@ -1,0 +1,57 @@
+name: Deploy capability board
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - index.html
+      - web/**
+      - registries/**
+      - catalog.yaml
+      - .github/workflows/deploy-board.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Build static board artifact
+        run: |
+          mkdir -p _site
+          cp index.html _site/index.html
+          cp catalog.yaml _site/catalog.yaml
+          cp -R web _site/web
+          cp -R registries _site/registries
+          touch _site/.nojekyll
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

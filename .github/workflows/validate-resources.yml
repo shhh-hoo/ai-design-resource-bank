@@ -29,3 +29,9 @@ jobs:
 
       - name: Validate capability registries
         run: python scripts/validate_registries.py
+
+      - name: Validate capability board contract
+        run: python scripts/validate_board.py
+
+      - name: Validate capability board JavaScript
+        run: node --check web/board.js
