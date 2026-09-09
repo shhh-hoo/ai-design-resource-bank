@@ -16,46 +16,70 @@ for path in (INDEX, JS, CSS):
 if INDEX.exists():
     html = INDEX.read_text(encoding="utf-8")
     for required in (
-        'id="boardView"',
+        'id="exploreView"',
         'id="indexView"',
         'id="searchInput"',
-        'id="domainNav"',
+        'id="chapterNav"',
         'id="detailDrawer"',
+        'id="mechanismCardTemplate"',
         './web/board.css',
         './web/board.js',
         'js-yaml@4.1.0',
     ):
         if required not in html:
             errors.append(f"index.html missing required board contract: {required}")
+    for removed in (
+        'id="heroStats"',
+        'id="typeFilters"',
+        'id="tierSelect"',
+        'id="boardView"',
+        'class="card-tags"',
+    ):
+        if removed in html:
+            errors.append(f"index.html reintroduced dense legacy surface: {removed}")
 
 if JS.exists():
     js = JS.read_text(encoding="utf-8")
     for required in (
+        './registries/frontend-mechanisms.yaml',
         './registries/frontend-tools.yaml',
         './registries/reference-galleries.yaml',
         './catalog.yaml',
         'Copy AI brief',
         'history.pushState',
+        'demoMovableTangent',
+        'demoElectron',
+        'demoFocus',
         'prefers-reduced-motion',
     ):
-        if required == 'prefers-reduced-motion':
-            continue
         if required not in js:
             errors.append(f"web/board.js missing expected behavior/path: {required}")
 
 if CSS.exists():
     css = CSS.read_text(encoding="utf-8")
     for required in (
-        '.board-view',
+        '.chapter',
+        '.mechanism-card',
+        '.demo-stage',
         '.drawer',
         '.index-view',
-        '@media (max-width: 640px)',
+        '@media (max-width: 560px)',
         '@media (prefers-reduced-motion: reduce)',
     ):
         if required not in css:
             errors.append(f"web/board.css missing required style contract: {required}")
+    for banned in (
+        'linear-gradient(',
+        'radial-gradient(',
+        '.domain-chip::before',
+        '.card-tag',
+        '.hero-stats',
+    ):
+        if banned in css:
+            errors.append(f"web/board.css violates editorial surface contract: {banned}")
 
 for data_path in (
+    ROOT / "registries" / "frontend-mechanisms.yaml",
     ROOT / "registries" / "frontend-tools.yaml",
     ROOT / "registries" / "reference-galleries.yaml",
     ROOT / "catalog.yaml",
