@@ -10,7 +10,7 @@ function syntheticResponse(body = "") {
 
 async function boot() {
   const dataUrl = new URL("../data/board.json", import.meta.url);
-  const response = await nativeFetch(dataUrl, { cache: "force-cache" });
+  const response = await nativeFetch(dataUrl, { cache: "default" });
   if (!response.ok) throw new Error(`Board data: HTTP ${response.status}`);
 
   const data = await response.json();
