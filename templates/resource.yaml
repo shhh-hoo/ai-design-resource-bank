@@ -1,0 +1,32 @@
+id: example-resource
+title: Example Resource
+domain: interaction
+tags:
+  - example
+status: distilled
+source:
+  type: url
+  locator: https://example.com
+  title: Example Source
+  author: Unknown
+  captured_at: 2026-09-09
+  notes: "Replace with observed source notes."
+selection_reason: "What specific thing was worth saving."
+mechanism:
+  summary: "Describe the transferable mechanism precisely."
+  primitives:
+    - "Primitive or rule 1"
+    - "Primitive or rule 2"
+  states: []
+  parameters: []
+  failure_modes: []
+fidelity:
+  - concept
+artifacts: []
+rights:
+  source_assets_stored: false
+  license: unknown
+  basis: "Only provenance and transformed analysis are stored until rights are known."
+  restrictions: []
+related: []
+notes: ""
