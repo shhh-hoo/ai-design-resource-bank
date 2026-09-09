@@ -6,8 +6,9 @@
   <meta name="theme-color" content="#f6f6f2" />
   <title>AI Design Resource Bank</title>
   <meta name="description" content="A human-readable workbench for frontend mechanisms, tools, references, and reusable resources." />
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="stylesheet" href="./web/board.css" />
+  <link rel="modulepreload" href="./web/board.js" />
+  <link rel="modulepreload" href="./web/mechanism-workbench.js" />
 </head>
 <body>
   <header class="site-header">
@@ -62,7 +63,7 @@
 
     <section class="load-error" id="loadError" hidden>
       <p class="eyebrow">Data unavailable</p>
-      <h2>The workbench could not load its registry files.</h2>
+      <h2>The workbench could not load its compiled data.</h2>
       <p id="loadErrorMessage"></p>
     </section>
   </main>
@@ -87,8 +88,6 @@
     </article>
   </template>
 
-  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
-  <script src="./web/board.js" defer></script>
-  <script src="./web/mechanism-workbench.js" defer></script>
+  <script type="module" src="./web/boot.js"></script>
 </body>
 </html>
