@@ -1,0 +1,65 @@
+{
+  "record": {
+    "canonical_path": "registries/subject-visualization-families.yaml",
+    "id": "concept:grammar-field-flow",
+    "source_refs": [
+      "source:legacy-families"
+    ],
+    "subtypes": [
+      "grammar"
+    ],
+    "summary": "Continuous flow, transport, gradient, circulation, or spatially varying field.",
+    "title": "Field Flow",
+    "tool_ids": [
+      "tool:deckgl",
+      "tool:threejs",
+      "tool:p5js",
+      "tool:d3"
+    ],
+    "type": "Concept"
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-field-flow",
+      "target": "tool:d3",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-field-flow",
+      "target": "tool:deckgl",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-field-flow",
+      "target": "tool:p5js",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-field-flow",
+      "target": "tool:threejs",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/subject-visualization-families.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:legacy-families",
+      "locator": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/main/registries/subject-visualization-families.yaml",
+      "locator_type": "url",
+      "publisher": "AIDRB",
+      "title": "Legacy subject family seeds",
+      "type": "Source"
+    }
+  ]
+}

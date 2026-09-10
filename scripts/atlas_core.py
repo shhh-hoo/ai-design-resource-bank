@@ -2,11 +2,16 @@
 from pathlib import Path
 import hashlib
 import json
+import re
+from datetime import date
+from jsonschema import Draft202012Validator, FormatChecker
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT_TYPES = {'Concept', 'Example', 'Tool', 'Resource'}
 TYPES = CONTENT_TYPES | {'Intent', 'Collection', 'SubjectTopic', 'Source'}
+ID_PREFIX = {'Concept':'concept','Example':'ex','Resource':'resource','Tool':'tool',
+             'SubjectTopic':'topic','Intent':'intent','Collection':'collection','Source':'source'}
 RELATIONS = {
  'demonstrates': ('Example', 'Concept'), 'intended_to_demonstrate': ('Example', 'Concept'), 'implemented_with': (('Example', 'Concept'), 'Tool'),
  'yields': ('Example', 'Resource'), 'implements': ('Resource', 'Concept'),
@@ -17,13 +22,40 @@ RELATIONS = {
 }
 
 def read(path):
-    return yaml.safe_load((ROOT / path).read_text())
+    return yaml.safe_load((ROOT / path).read_text(encoding='utf-8'))
 
 def encoded(value):
     return (json.dumps(value, ensure_ascii=False, sort_keys=True, indent=2) + '\n').encode()
 
-def source(id, title, publisher, url, path, checked=None, scope='Legacy discovery evidence; upstream implementation not validated locally.'):
-    return dict(id=id, type='Source', title=title, publisher=publisher, url=url,
+def record_path(id):
+    """Catalog-relative POSIX path, independent of the stable ID's punctuation.
+
+    Escape Windows device basenames with an underscore (not allowed in IDs),
+    keeping this mapping injective, including ex:con and tool:com1.
+    """
+    if not isinstance(id,str) or not re.fullmatch(r'[a-z]+:[a-z0-9-]+',id):
+        raise ValueError('Invalid stable ID')
+    namespace,slug=id.split(':')
+    if namespace not in ID_PREFIX.values():raise ValueError('Invalid stable ID namespace')
+    reserved={'con','prn','aux','nul'} | {f'{p}{i}' for p in ['com','lpt'] for i in range(1,10)}
+    if slug in reserved:slug='_'+slug
+    return f'records/{namespace}/{slug}.json'
+
+def validate_shapes(records):
+    """Reject malformed inputs before semantic validation or projection generation."""
+    schema=json.loads((ROOT/'schemas/core.schema.json').read_text(encoding='utf-8'))
+    Draft202012Validator.check_schema(schema)
+    validator=Draft202012Validator(schema,format_checker=FormatChecker())
+    errors=[]
+    for record in records:
+        for error in validator.iter_errors(record):
+            id=record.get('id','<unknown>') if isinstance(record,dict) else '<non-record>'
+            path='/'.join(map(str,error.absolute_path)) or '<record>'
+            errors.append(f'{id}: schema {path}: {error.message}')
+    if errors:raise ValueError('\n'.join(errors))
+
+def source(id, title, publisher, locator, path, checked=None, scope='Legacy discovery evidence; upstream implementation not validated locally.', locator_type='url'):
+    return dict(id=id, type='Source', title=title, publisher=publisher, locator_type=locator_type, locator=locator,
                 captured_at='2026-09-10', checked_at=checked, check_scope=scope, canonical_path=path)
 
 def inputs():
@@ -32,9 +64,9 @@ def inputs():
         for path in sorted((ROOT / base).rglob('*.json')):
             if path.name == 'adapter.json' or 'curriculum' in path.parts:
                 continue
-            data = json.loads(path.read_text())
+            data = json.loads(path.read_text(encoding='utf-8'))
             for r in data if isinstance(data, list) else [data]:
-                records.append(dict(r, canonical_path=str(path.relative_to(ROOT))))
+                records.append(dict(r, canonical_path=path.relative_to(ROOT).as_posix()))
     def add(r, alias=None):
         records.append(r)
         if alias:
@@ -85,21 +117,25 @@ def inputs():
         migration['curriculum_subjects'].append(dict(legacy_id=old['id'],legacy_record=old,source_ids=refs,
             canonical_path=curriculum_path,disposition='provenance-only; requires curated canonical topic mapping'))
     for path in sorted((ROOT/'resources').glob('**/resource.yaml')):
-        old=read(path); rel=str(path.relative_to(ROOT)); sid='source:resource-'+old['id']
+        old=read(path); rel=path.relative_to(ROOT).as_posix(); sid='source:resource-'+old['id']
         legacy_source=old.get('source')
         if legacy_source:
-            add(source(sid,legacy_source.get('title',old['title']),legacy_source.get('author','Legacy package source'),
-                       legacy_source['locator'],rel,scope=legacy_source.get('notes','Legacy package provenance.')))
-            records[-1]['captured_at']=str(legacy_source['captured_at'])
+            add(source(sid,legacy_source.get('title') or old['title'],legacy_source.get('author') or 'Legacy package source',
+                       legacy_source['locator'],rel,locator_type=legacy_source['type'],
+                       scope='Legacy package provenance; not independently checked.'))
+            for key in ['author', 'notes']:
+                if key in legacy_source: records[-1][key]=legacy_source[key]
+            captured=legacy_source['captured_at']
+            records[-1]['captured_at']=captured.isoformat() if isinstance(captured,date) else captured
             refs=[sid]
         else: refs=old['source_refs']
         r={k:v for k,v in old.items() if k!='source'}
         r.update(id='resource:'+old['id'],type='Resource',legacy_id=old['id'],canonical_path=rel,
-                 package_path=str(path.parent.relative_to(ROOT)),summary=old['mechanism']['summary'],source_refs=refs)
+                 package_path=path.parent.relative_to(ROOT).as_posix(),summary=old['mechanism']['summary'],source_refs=refs)
         add(r,old['id']); migration['resources'].append(r['id'])
     crosswalks=[]
     for path in sorted((ROOT/'subjects').glob('*/curriculum/*.json')):
-        crosswalks.extend(json.loads(path.read_text()))
+        crosswalks.extend(json.loads(path.read_text(encoding='utf-8')))
     return records,aliases,migration,crosswalks
 
 def generate_relations(records):
@@ -142,5 +178,6 @@ def fingerprint():
         paths.extend(p for p in (ROOT/d).rglob('*') if p.is_file())
     paths.extend([ROOT/'scripts/atlas_core.py',ROOT/'scripts/build_catalog.py'])
     h=hashlib.sha256()
-    for p in sorted(paths):h.update(str(p.relative_to(ROOT)).encode()+b'\0'+p.read_bytes())
+    for p in sorted(paths,key=lambda p:p.relative_to(ROOT).as_posix()):
+        h.update(p.relative_to(ROOT).as_posix().encode()+b'\0'+p.read_bytes())
     return h.hexdigest()

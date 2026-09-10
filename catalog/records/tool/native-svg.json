@@ -1,0 +1,202 @@
+{
+  "record": {
+    "alternatives": [
+      "tool:svgjs",
+      "tool:d3",
+      "tool:plotly-js"
+    ],
+    "avoid_when": "Molecular structure semantics, arbitrary plot engines, large datasets or numerical simulations.",
+    "canonical_path": "knowledge/tools/native-svg.json",
+    "capabilities": [
+      "svg-dom",
+      "paths",
+      "text",
+      "range-input",
+      "diagram"
+    ],
+    "id": "tool:native-svg",
+    "source_refs": [
+      "source:svg-standard"
+    ],
+    "subtype": "renderer",
+    "summary": "Small accessible vector diagrams with ordinary form controls.",
+    "title": "Native SVG + HTML controls",
+    "type": "Tool",
+    "use_when": "A small schematic with explicit fixed semantics and no chemistry structure solver."
+  },
+  "relations": [
+    {
+      "evidence": "observed",
+      "reason": "The local diagram is rendered with native SVG and HTML controls.",
+      "source": "ex:chemistry-catalyst-profile",
+      "target": "tool:native-svg",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "observed",
+      "reason": "The local diagram is rendered with native SVG and HTML controls.",
+      "source": "ex:chemistry-chromatography",
+      "target": "tool:native-svg",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "observed",
+      "reason": "The local diagram is rendered with native SVG and HTML controls.",
+      "source": "ex:chemistry-conjugate-pairs",
+      "target": "tool:native-svg",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "observed",
+      "reason": "The local diagram is rendered with native SVG and HTML controls.",
+      "source": "ex:chemistry-dynamic-equilibrium",
+      "target": "tool:native-svg",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "observed",
+      "reason": "The local diagram is rendered with native SVG and HTML controls.",
+      "source": "ex:chemistry-electron-configuration",
+      "target": "tool:native-svg",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "observed",
+      "reason": "The local diagram is rendered with native SVG and HTML controls.",
+      "source": "ex:chemistry-equilibrium-expression",
+      "target": "tool:native-svg",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "observed",
+      "reason": "The local diagram is rendered with native SVG and HTML controls.",
+      "source": "ex:chemistry-first-order",
+      "target": "tool:native-svg",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "observed",
+      "reason": "The local diagram is rendered with native SVG and HTML controls.",
+      "source": "ex:chemistry-functional-groups",
+      "target": "tool:native-svg",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "observed",
+      "reason": "The local diagram is rendered with native SVG and HTML controls.",
+      "source": "ex:chemistry-galvanic-cell",
+      "target": "tool:native-svg",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "observed",
+      "reason": "The local diagram is rendered with native SVG and HTML controls.",
+      "source": "ex:chemistry-gibbs-energy",
+      "target": "tool:native-svg",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "observed",
+      "reason": "The local diagram is rendered with native SVG and HTML controls.",
+      "source": "ex:chemistry-hess-cycle",
+      "target": "tool:native-svg",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "observed",
+      "reason": "The local diagram is rendered with native SVG and HTML controls.",
+      "source": "ex:chemistry-hydrogen-bond",
+      "target": "tool:native-svg",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "observed",
+      "reason": "The local diagram is rendered with native SVG and HTML controls.",
+      "source": "ex:chemistry-ideal-gas",
+      "target": "tool:native-svg",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "observed",
+      "reason": "The local diagram is rendered with native SVG and HTML controls.",
+      "source": "ex:chemistry-ionic-lattice",
+      "target": "tool:native-svg",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "observed",
+      "reason": "The local diagram is rendered with native SVG and HTML controls.",
+      "source": "ex:chemistry-isotope-spectrum",
+      "target": "tool:native-svg",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "observed",
+      "reason": "The local diagram is rendered with native SVG and HTML controls.",
+      "source": "ex:chemistry-limiting-reagent",
+      "target": "tool:native-svg",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "observed",
+      "reason": "The local diagram is rendered with native SVG and HTML controls.",
+      "source": "ex:chemistry-mole-conversion",
+      "target": "tool:native-svg",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "observed",
+      "reason": "The local diagram is rendered with native SVG and HTML controls.",
+      "source": "ex:chemistry-oxidation-state",
+      "target": "tool:native-svg",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "observed",
+      "reason": "The local diagram is rendered with native SVG and HTML controls.",
+      "source": "ex:chemistry-periodic-trends",
+      "target": "tool:native-svg",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "observed",
+      "reason": "The local diagram is rendered with native SVG and HTML controls.",
+      "source": "ex:chemistry-reaction-profile",
+      "target": "tool:native-svg",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "observed",
+      "reason": "The local diagram is rendered with native SVG and HTML controls.",
+      "source": "ex:chemistry-titration-curve",
+      "target": "tool:native-svg",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "observed",
+      "reason": "The local diagram is rendered with native SVG and HTML controls.",
+      "source": "ex:chemistry-water-geometry",
+      "target": "tool:native-svg",
+      "type": "implemented_with"
+    },
+    {
+      "source": "resource:reaction-profile",
+      "target": "tool:native-svg",
+      "type": "requires"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-10",
+      "check_scope": "Native platform rendering capability; not chemical validation.",
+      "checked_at": "2026-09-10",
+      "id": "source:svg-standard",
+      "locator": "https://www.w3.org/TR/SVG2/",
+      "locator_type": "url",
+      "publisher": "W3C",
+      "title": "SVG 2",
+      "type": "Source"
+    }
+  ]
+}

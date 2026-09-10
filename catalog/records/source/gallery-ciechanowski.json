@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "registries/reference-galleries.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:gallery-ciechanowski",
+    "locator": "https://ciechanow.ski/",
+    "locator_type": "url",
+    "publisher": "Bartosz Ciechanowski Interactive Essays",
+    "title": "Bartosz Ciechanowski Interactive Essays",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

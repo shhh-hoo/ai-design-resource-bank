@@ -5,6 +5,8 @@ const json = async (path) => {
   if (!r.ok) throw new Error(`Unable to load ${path}`);
   return r.json();
 };
+let indexPromise;
+const indexRecords = () => (indexPromise ||= json("catalog/index.json"));
 const data = await json("catalog/web-index.json");
 const examples = new Map(data.examples.map((e) => [e.id, e]));
 const topics = new Map(data.topics.map((t) => [t.id, t]));
@@ -93,6 +95,15 @@ function explore() {
     .forEach((s) => s.addEventListener("change", update));
   update();
 }
+function sourceLabel(source) {
+  // Locator types describe provenance; local filenames and prompts are plain text.
+  const linkable = ["url", "repository", "paper", "image", "video"].includes(source.locator_type)
+    && /^https?:\/\//i.test(source.locator);
+  const label = linkable
+    ? `<a class="external" href="${esc(source.locator)}" target="_blank" rel="noreferrer">${esc(source.title)} ↗</a>`
+    : `<strong>${esc(source.title)}</strong>`;
+  return `${label}<br><span class="source-locator">${esc(source.locator_type)} · ${esc(source.locator)}</span>`;
+}
 async function detail(id, version) {
   const e = examples.get(id);
   if (!e) throw new Error("Unknown Example");
@@ -111,7 +122,7 @@ async function detail(id, version) {
     if (version !== routeVersion) return;
     mountLive(document.getElementById("stage"), e.preview.renderer, e.title);
   }
-  const resolved = await json(`catalog/records/${id}.json`);
+  const resolved = await json(e.resolve_path);
   if (version !== routeVersion) return;
   const r = resolved.record,
     b = resolved.ai_build;
@@ -125,7 +136,7 @@ async function detail(id, version) {
       .map(([k, v]) => `${k}: ${v ? "yes" : "no"}`)
       .join(" · ")}</p>`;
   document.querySelector("#provenance .details-body").innerHTML =
-    `<p>Canonical topic → curriculum node. These editorial mappings describe scope, not approval by a curriculum board.</p>${resolved.crosswalks.map((c) => `<p><strong>${esc(c.node.label)}</strong> · ${esc(c.node.section)}<br>Canonical topic is <strong>${c.relation}</strong> relative to this source node.<br>${esc(c.rationale)}</p>`).join("")}<h3>Sources</h3>${resolved.sources.map((s) => `<p><a class="external" href="${esc(s.url)}" target="_blank" rel="noreferrer">${esc(s.title)} ↗</a><br>${esc(s.publisher)} · checked ${esc(s.checked_at || "not independently checked")}<br><span class="gap-note">${esc(s.check_scope)}</span></p>`).join("")}`;
+    `<p>Canonical topic → curriculum node. These editorial mappings describe scope, not approval by a curriculum board.</p>${resolved.crosswalks.map((c) => `<p><strong>${esc(c.node.label)}</strong> · ${esc(c.node.section)}<br>Canonical topic is <strong>${c.relation}</strong> relative to this source node.<br>${esc(c.rationale)}</p>`).join("")}<h3>Sources</h3>${resolved.sources.map((s) => `<p>${sourceLabel(s)}<br>${esc(s.publisher)} · checked ${esc(s.checked_at || "not independently checked")}<br><span class="gap-note">${esc(s.check_scope)}</span></p>`).join("")}`;
 }
 async function dictionary(version) {
   main.innerHTML =
@@ -181,7 +192,7 @@ async function index(version) {
       .map((t) => `<option>${t}</option>`)
       .join("") +
     '</select></label></div><table class="index-table"><thead><tr><th>Type</th><th>Name</th><th>Stable ID</th></tr></thead><tbody id="index-results"></tbody></table>';
-  const records = await json("catalog/index.json");
+  const records = await indexRecords();
   if (version !== routeVersion) return;
   const render = () => {
     const q = document.getElementById("index-search").value.toLowerCase(),
@@ -300,7 +311,9 @@ async function selection(version) {
 async function record(id, version) {
   if (!/^[a-z]+:[a-z0-9-]+$/.test(id)) throw new Error("Invalid stable ID");
   main.innerHTML = busy();
-  const r = await json(`catalog/records/${id}.json`);
+  const entry = (await indexRecords()).find((r) => r.id === id);
+  if (!entry) throw new Error("Unknown stable ID");
+  const r = await json(entry.resolve_path);
   if (version !== routeVersion) return;
   main.innerHTML = `<article class="record"><a class="back" href="#index">← Index</a><p class="eyebrow">${r.record.type}</p><h1>${esc(r.record.title)}</h1><p class="intro">${esc(r.record.summary || r.record.scope || "")}</p><p class="data-id">${r.record.id}</p><pre>${esc(JSON.stringify(r, null, 2))}</pre></article>`;
 }

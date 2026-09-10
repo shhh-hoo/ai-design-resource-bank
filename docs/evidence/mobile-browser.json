@@ -12,15 +12,15 @@
     },
     {
       "url": "/app/atlas.css",
-      "encodedBodySize": 11728,
-      "decodedBodySize": 11728,
-      "transferSize": 12028
+      "encodedBodySize": 11776,
+      "decodedBodySize": 11776,
+      "transferSize": 12076
     },
     {
       "url": "/app/atlas.js",
-      "encodedBodySize": 17803,
-      "decodedBodySize": 17803,
-      "transferSize": 18103
+      "encodedBodySize": 18462,
+      "decodedBodySize": 18462,
+      "transferSize": 18762
     },
     {
       "url": "/app/visuals.js",
@@ -30,13 +30,13 @@
     },
     {
       "url": "/catalog/web-index.json",
-      "encodedBodySize": 43308,
-      "decodedBodySize": 43308,
-      "transferSize": 43608
+      "encodedBodySize": 46868,
+      "decodedBodySize": 46868,
+      "transferSize": 47168
     }
   ],
-  "bodyBytes": 83107,
-  "transferBytes": 84607,
+  "bodyBytes": 87374,
+  "transferBytes": 88874,
   "errors": [],
   "failed": [],
   "checks": [

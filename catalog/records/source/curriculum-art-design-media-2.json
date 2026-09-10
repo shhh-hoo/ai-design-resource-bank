@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "registries/curriculum-research-sources.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:curriculum-art-design-media-2",
+    "locator": "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-media-studies-9607/",
+    "locator_type": "url",
+    "publisher": "cambridge-international-as-a-level",
+    "title": "Media Studies 9607",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

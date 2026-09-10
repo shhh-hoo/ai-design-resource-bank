@@ -7,21 +7,22 @@ import re
 import sqlite3
 from contextlib import closing
 from pathlib import Path
-from atlas_core import ROOT, encoded
+from atlas_core import ROOT, encoded, record_path
 CAT=ROOT/'catalog'
 
-def load(name): return json.loads((CAT/name).read_text())
+def load(name): return json.loads((CAT/name).read_text(encoding='utf-8'))
 def resolve(id):
     id=load('aliases.json').get(id,id)
-    if not re.fullmatch(r'[a-z]+:[a-z0-9-]+',id):raise ValueError('Invalid stable ID')
-    path=CAT/'records'/f'{id}.json'
+    path=CAT/record_path(id)
     if not path.is_file():raise ValueError(f'Unknown stable ID: {id}')
-    return json.loads(path.read_text())
+    return json.loads(path.read_text(encoding='utf-8'))
 
 def query(brief,kind=None,limit=8):
     if not 1<=limit<=8:raise ValueError('Candidate limit must be 1–8')
     known=load('aliases.json').get(brief,brief)
-    if re.fullmatch(r'[a-z]+:[a-z0-9-]+',known) and (CAT/'records'/f'{known}.json').exists():
+    try:known_path=CAT/record_path(known)
+    except ValueError:known_path=None
+    if known_path is not None and known_path.is_file():
         r=resolve(known)['record']
         return [dict(id=r['id'],type=r['type'],kind=r.get('kind',''),title=r['title'])] if kind is None or r['type']==kind else []
     terms=re.findall(r'[^\W_]+',brief,flags=re.UNICODE)
@@ -76,8 +77,8 @@ def deep_fetch(locked):
             for name in ['resource.yaml','README.md']+[a['path'] for a in resource['artifacts']]:
                 path=(package/name).resolve();path.relative_to(package)
                 if path.stat().st_size>1_000_000:raise ValueError('Artifact exceeds inline fetch budget')
-                try:files[name]=path.read_text()
-                except UnicodeDecodeError:files[name]={'path':str(path.relative_to(ROOT)),'encoding':'binary','sha256':hashlib.sha256(path.read_bytes()).hexdigest()}
+                try:files[name]=path.read_text(encoding='utf-8')
+                except UnicodeDecodeError:files[name]={'path':path.relative_to(ROOT).as_posix(),'encoding':'binary','sha256':hashlib.sha256(path.read_bytes()).hexdigest()}
             packages.append(dict(id=resource['id'],files=files))
         results.append(dict(selection=selected,resolved=result,packages=packages))
     return dict(locked_ids=locked['locked_ids'],contexts=results)
@@ -92,6 +93,6 @@ if __name__=='__main__':
     try:
         if a.stage=='query':result=query(a.brief,a.type,a.limit)
         elif a.stage=='resolve':result=resolve(a.id)
-        else:result={'commit':commit,'lock':lock,'fetch':deep_fetch}[a.stage](json.loads(a.file.read_text()))
+        else:result={'commit':commit,'lock':lock,'fetch':deep_fetch}[a.stage](json.loads(a.file.read_text(encoding='utf-8')))
         print(json.dumps(result,ensure_ascii=False,indent=2))
     except (ValueError,KeyError,FileNotFoundError,sqlite3.Error) as e:p.exit(1,f'{e}\n')

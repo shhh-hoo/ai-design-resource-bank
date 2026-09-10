@@ -1,2 +1,4 @@
+# Stable UTF-8 text bytes and fingerprints across Windows and Unix checkouts.
+* text=auto eol=lf
 catalog/** linguist-generated=true
 catalog.yaml linguist-generated=true

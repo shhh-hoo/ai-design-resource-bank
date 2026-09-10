@@ -24,6 +24,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-bond-polarity.json",
       "subject_id": "topic:chemistry",
       "title": "Bond dipole and molecular polarity · CO₂",
       "topic_ids": [
@@ -49,6 +50,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-born-haber.json",
       "subject_id": "topic:chemistry",
       "title": "Born–Haber cycle · sodium chloride",
       "topic_ids": [
@@ -74,6 +76,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-buffer.json",
       "subject_id": "topic:chemistry",
       "title": "Buffer response · ethanoic acid / ethanoate",
       "topic_ids": [
@@ -103,6 +106,7 @@
         "renderer": "catalyst",
         "url": "#example/ex:chemistry-catalyst-profile"
       },
+      "resolve_path": "catalog/records/ex/chemistry-catalyst-profile.json",
       "subject_id": "topic:chemistry",
       "title": "Catalysed vs uncatalysed energy path",
       "topic_ids": [
@@ -132,6 +136,7 @@
         "renderer": "chromatography",
         "url": "#example/ex:chemistry-chromatography"
       },
+      "resolve_path": "catalog/records/ex/chemistry-chromatography.json",
       "subject_id": "topic:chemistry",
       "title": "Chromatography · Rf measurement",
       "topic_ids": [
@@ -157,6 +162,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-composition-shift.json",
       "subject_id": "topic:chemistry",
       "title": "Equilibrium composition shift · N₂O₄ / NO₂",
       "topic_ids": [
@@ -186,6 +192,7 @@
         "renderer": "acid-base",
         "url": "#example/ex:chemistry-conjugate-pairs"
       },
+      "resolve_path": "catalog/records/ex/chemistry-conjugate-pairs.json",
       "subject_id": "topic:chemistry",
       "title": "Conjugate pairs · ammonia and water",
       "topic_ids": [
@@ -213,6 +220,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-curly-arrow.json",
       "subject_id": "topic:chemistry",
       "title": "Curly-arrow mechanism · SN2 substitution",
       "topic_ids": [
@@ -238,6 +246,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-dilution.json",
       "subject_id": "topic:chemistry",
       "title": "Volumetric dilution · conserved solute",
       "topic_ids": [
@@ -263,6 +272,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-dissolution.json",
       "subject_id": "topic:chemistry",
       "title": "NaCl dissolution and hydration shells",
       "topic_ids": [
@@ -292,6 +302,7 @@
         "renderer": "equilibrium",
         "url": "#example/ex:chemistry-dynamic-equilibrium"
       },
+      "resolve_path": "catalog/records/ex/chemistry-dynamic-equilibrium.json",
       "subject_id": "topic:chemistry",
       "title": "Dynamic equilibrium · equal rates",
       "topic_ids": [
@@ -317,6 +328,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-electrolysis.json",
       "subject_id": "topic:chemistry",
       "title": "Copper electrolysis · charge to mass",
       "topic_ids": [
@@ -346,6 +358,7 @@
         "renderer": "orbital-boxes",
         "url": "#example/ex:chemistry-electron-configuration"
       },
+      "resolve_path": "catalog/records/ex/chemistry-electron-configuration.json",
       "subject_id": "topic:chemistry",
       "title": "Electron configuration · nitrogen",
       "topic_ids": [
@@ -371,6 +384,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-empirical-formula.json",
       "subject_id": "topic:chemistry",
       "title": "Combustion data → empirical formula",
       "topic_ids": [
@@ -400,6 +414,7 @@
         "renderer": "haber",
         "url": "#example/ex:chemistry-equilibrium-expression"
       },
+      "resolve_path": "catalog/records/ex/chemistry-equilibrium-expression.json",
       "subject_id": "topic:chemistry",
       "title": "Equilibrium expression · Haber reaction",
       "topic_ids": [
@@ -429,6 +444,7 @@
         "renderer": "kinetics",
         "url": "#example/ex:chemistry-first-order"
       },
+      "resolve_path": "catalog/records/ex/chemistry-first-order.json",
       "subject_id": "topic:chemistry",
       "title": "First-order concentration decay",
       "topic_ids": [
@@ -458,6 +474,7 @@
         "renderer": "organic",
         "url": "#example/ex:chemistry-functional-groups"
       },
+      "resolve_path": "catalog/records/ex/chemistry-functional-groups.json",
       "subject_id": "topic:chemistry",
       "title": "Functional groups · ethanol and ethanoic acid",
       "topic_ids": [
@@ -487,6 +504,7 @@
         "renderer": "cell",
         "url": "#example/ex:chemistry-galvanic-cell"
       },
+      "resolve_path": "catalog/records/ex/chemistry-galvanic-cell.json",
       "subject_id": "topic:chemistry",
       "title": "Galvanic cell · zinc and copper",
       "topic_ids": [
@@ -516,6 +534,7 @@
         "renderer": "gibbs",
         "url": "#example/ex:chemistry-gibbs-energy"
       },
+      "resolve_path": "catalog/records/ex/chemistry-gibbs-energy.json",
       "subject_id": "topic:chemistry",
       "title": "Gibbs energy · temperature crossover",
       "topic_ids": [
@@ -541,6 +560,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-group-two.json",
       "subject_id": "topic:chemistry",
       "title": "Group 2 hydroxide solubility trend",
       "topic_ids": [
@@ -566,6 +586,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-halogen-displacement.json",
       "subject_id": "topic:chemistry",
       "title": "Halogen displacement · chlorine and bromide",
       "topic_ids": [
@@ -595,6 +616,7 @@
         "renderer": "hess",
         "url": "#example/ex:chemistry-hess-cycle"
       },
+      "resolve_path": "catalog/records/ex/chemistry-hess-cycle.json",
       "subject_id": "topic:chemistry",
       "title": "Hess cycle · carbon monoxide formation",
       "topic_ids": [
@@ -624,6 +646,7 @@
         "renderer": "hydrogen-bond",
         "url": "#example/ex:chemistry-hydrogen-bond"
       },
+      "resolve_path": "catalog/records/ex/chemistry-hydrogen-bond.json",
       "subject_id": "topic:chemistry",
       "title": "Hydrogen bonding · water pair",
       "topic_ids": [
@@ -649,6 +672,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-hydrogen-emission.json",
       "subject_id": "topic:chemistry",
       "title": "Hydrogen emission line transitions",
       "topic_ids": [
@@ -678,6 +702,7 @@
         "renderer": "gas",
         "url": "#example/ex:chemistry-ideal-gas"
       },
+      "resolve_path": "catalog/records/ex/chemistry-ideal-gas.json",
       "subject_id": "topic:chemistry",
       "title": "Boyle’s law · pressure and volume",
       "topic_ids": [
@@ -707,6 +732,7 @@
         "renderer": "lattice",
         "url": "#example/ex:chemistry-ionic-lattice"
       },
+      "resolve_path": "catalog/records/ex/chemistry-ionic-lattice.json",
       "subject_id": "topic:chemistry",
       "title": "Ionic lattice · sodium chloride",
       "topic_ids": [
@@ -732,6 +758,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-ir-spectrum.json",
       "subject_id": "topic:chemistry",
       "title": "IR spectrum · carbonyl identification",
       "topic_ids": [
@@ -761,6 +788,7 @@
         "renderer": "isotopes",
         "url": "#example/ex:chemistry-isotope-spectrum"
       },
+      "resolve_path": "catalog/records/ex/chemistry-isotope-spectrum.json",
       "subject_id": "topic:chemistry",
       "title": "Chlorine isotope mass spectrum",
       "topic_ids": [
@@ -786,6 +814,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-ligand-exchange.json",
       "subject_id": "topic:chemistry",
       "title": "Copper(II) ligand exchange",
       "topic_ids": [
@@ -815,6 +844,7 @@
         "renderer": "stoichiometry",
         "url": "#example/ex:chemistry-limiting-reagent"
       },
+      "resolve_path": "catalog/records/ex/chemistry-limiting-reagent.json",
       "subject_id": "topic:chemistry",
       "title": "Limiting reagent · making water",
       "topic_ids": [
@@ -840,6 +870,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-mass-fragmentation.json",
       "subject_id": "topic:chemistry",
       "title": "Mass spectrum · fragmentation assignment",
       "topic_ids": [
@@ -865,6 +896,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-maxwell-boltzmann.json",
       "subject_id": "topic:chemistry",
       "title": "Maxwell–Boltzmann distribution",
       "topic_ids": [
@@ -894,6 +926,7 @@
         "renderer": "moles",
         "url": "#example/ex:chemistry-mole-conversion"
       },
+      "resolve_path": "catalog/records/ex/chemistry-mole-conversion.json",
       "subject_id": "topic:chemistry",
       "title": "Mass ↔ amount ↔ particles",
       "topic_ids": [
@@ -919,6 +952,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-nernst.json",
       "subject_id": "topic:chemistry",
       "title": "Cell potential vs concentration · Nernst",
       "topic_ids": [
@@ -944,6 +978,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-nmr-mapping.json",
       "subject_id": "topic:chemistry",
       "title": "NMR spectrum → structure · ethanol",
       "topic_ids": [
@@ -970,6 +1005,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-orbital-overlap.json",
       "subject_id": "topic:chemistry",
       "title": "σ / π orbital overlap",
       "topic_ids": [
@@ -999,6 +1035,7 @@
         "renderer": "oxidation",
         "url": "#example/ex:chemistry-oxidation-state"
       },
+      "resolve_path": "catalog/records/ex/chemistry-oxidation-state.json",
       "subject_id": "topic:chemistry",
       "title": "Oxidation states · permanganate",
       "topic_ids": [
@@ -1028,6 +1065,7 @@
         "renderer": "periodic",
         "url": "#example/ex:chemistry-periodic-trends"
       },
+      "resolve_path": "catalog/records/ex/chemistry-periodic-trends.json",
       "subject_id": "topic:chemistry",
       "title": "Period 3 · first ionisation energy",
       "topic_ids": [
@@ -1053,6 +1091,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-phase-diagram.json",
       "subject_id": "topic:chemistry",
       "title": "Pressure–temperature phase diagram · water",
       "topic_ids": [
@@ -1078,6 +1117,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-rate-orders.json",
       "subject_id": "topic:chemistry",
       "title": "Initial-rate table → reaction orders",
       "topic_ids": [
@@ -1108,6 +1148,7 @@
         "renderer": "reaction",
         "url": "#example/ex:chemistry-reaction-profile"
       },
+      "resolve_path": "catalog/records/ex/chemistry-reaction-profile.json",
       "subject_id": "topic:chemistry",
       "title": "Reaction profile",
       "topic_ids": [
@@ -1133,6 +1174,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-solubility-product.json",
       "subject_id": "topic:chemistry",
       "title": "Solubility product · precipitation threshold",
       "topic_ids": [
@@ -1158,6 +1200,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-stereoisomers.json",
       "subject_id": "topic:chemistry",
       "title": "E/Z isomerism · but-2-ene",
       "topic_ids": [
@@ -1183,6 +1226,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-successive-ionisation.json",
       "subject_id": "topic:chemistry",
       "title": "Successive ionisation energies · magnesium",
       "topic_ids": [
@@ -1208,6 +1252,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-synthesis-map.json",
       "subject_id": "topic:chemistry",
       "title": "Organic synthesis · functional-group route",
       "topic_ids": [
@@ -1237,6 +1282,7 @@
         "renderer": "titration",
         "url": "#example/ex:chemistry-titration-curve"
       },
+      "resolve_path": "catalog/records/ex/chemistry-titration-curve.json",
       "subject_id": "topic:chemistry",
       "title": "Strong acid–base titration curve",
       "topic_ids": [
@@ -1266,6 +1312,7 @@
         "renderer": "water",
         "url": "#example/ex:chemistry-water-geometry"
       },
+      "resolve_path": "catalog/records/ex/chemistry-water-geometry.json",
       "subject_id": "topic:chemistry",
       "title": "VSEPR geometry · water",
       "topic_ids": [
@@ -1291,6 +1338,7 @@
       "interaction": "inspect",
       "kind": "GAP",
       "medium": "diagram",
+      "resolve_path": "catalog/records/ex/chemistry-weak-acid-titration.json",
       "subject_id": "topic:chemistry",
       "title": "Weak-acid titration · half equivalence",
       "topic_ids": [

@@ -1,7 +1,4 @@
-
-> validate
-> python3 scripts/validate_atlas.py && python3 scripts/build_catalog.py --check && python3 scripts/validate_resources.py
-
+$ python3 scripts/validate_atlas.py
 {
   "records": 332,
   "content": {
@@ -28,21 +25,39 @@
     "resources": 1
   }
 }
-{"records": 332, "relations": 368, "examples": 48, "crosswalks": 31, "drift": "clean"}
+
+$ python3 scripts/validate_resources.py
 Resource validation passed: 1 package(s), 1 catalog entry/entries.
 
-> test
-> python3 -m unittest discover -s tests -p "test_*.py" && node --test tests/models.test.mjs
+$ python3 scripts/validate_registries.py
+Registry validation passed: 47 frontend tools, 23 reference galleries.
 
-...............
+$ python3 scripts/validate_mechanisms.py
+Mechanism validation passed: 24 mechanism(s), 9 chapter(s).
+
+$ python3 scripts/validate_subject_atlas.py
+Subject visualization atlas validation passed: 57 Cambridge entries, 42 AP subjects, 17 families, 20 visualization grammars, 45 official provenance anchors.
+
+$ python3 scripts/validate_grammar_mechanisms.py
+Grammar-mechanism routing validation passed: 20 grammars, 49 curated links.
+
+$ python3 scripts/build_catalog.py --check
+{"records": 332, "relations": 368, "examples": 48, "crosswalks": 31, "drift": "clean"}
+
+$ python3 -m unittest discover -s tests -p test_*.py
+....................
 ----------------------------------------------------------------------
-Ran 15 tests in 1.906s
+Ran 20 tests in 4.036s
 
 OK
-✔ Reaction endpoints, unique maximum, signs and exact transition state (0.833292ms)
-✔ Boyle invariant and first order half life (0.071333ms)
-✔ Hess route closure and Gibbs crossover (0.047041ms)
-✔ Titration dilution, water equilibrium and monotonicity (0.191959ms)
+{"records": 348, "relations": 392, "examples": 48, "crosswalks": 31, "drift": "generated"}
+{"records": 348, "relations": 392, "examples": 48, "crosswalks": 31, "drift": "clean"}
+
+$ node --test tests/models.test.mjs
+✔ Reaction endpoints, unique maximum, signs and exact transition state (0.719125ms)
+✔ Boyle invariant and first order half life (0.072541ms)
+✔ Hess route closure and Gibbs crossover (0.046041ms)
+✔ Titration dilution, water equilibrium and monotonicity (0.194417ms)
 ℹ tests 4
 ℹ suites 0
 ℹ pass 4
@@ -50,10 +65,12 @@ OK
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 34.955583
-Registry validation passed: 47 frontend tools, 23 reference galleries.
-Mechanism validation passed: 24 mechanism(s), 9 chapter(s).
-Subject visualization atlas validation passed: 57 Cambridge entries, 42 AP subjects, 17 families, 20 visualization grammars, 45 official provenance anchors.
-Grammar-mechanism routing validation passed: 20 grammars, 49 curated links.
+ℹ duration_ms 36.174125
+
+$ node --check app/atlas.js
+
+$ node --check app/live.js
+
+$ python3 scripts/build_site.py
 {"records": 332, "relations": 368, "examples": 48, "crosswalks": 31, "drift": "clean"}
 Atlas staged in _site; legacy board is retained in Git but excluded from Pages startup/deployment.

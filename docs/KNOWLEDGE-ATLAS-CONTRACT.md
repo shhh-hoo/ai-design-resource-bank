@@ -12,6 +12,8 @@ Example kinds: LIVE (local runnable instance), REFERENCE (specific inspectable d
 
 Hand-edit knowledge/, subjects/ and resources/. Existing registries remain authoritative compatibility inputs until explicitly migrated; adapters do not copy them into a second editable record set. knowledge/tools/adapter.json declares normalization, not duplicate tool content. Existing resource.yaml manifests remain authoritative. catalog/ and the legacy catalog.yaml compatibility export are generated only. A deterministic build and byte drift check protect all generated text; SQLite is rebuilt from generated FTS input and checked logically because SQLite bytes vary by version.
 
+Stable IDs are identities, never filenames. `scripts/atlas_core.py::record_path(id)` is the single filesystem mapping: `ex:chemistry-reaction-profile` → `records/ex/chemistry-reaction-profile.json` relative to catalog/. Windows device basenames (`con`, `nul`, `com1`, etc.) receive an underscore prefix; underscores are excluded from IDs, so the mapping stays collision-free. Generated Web/AI/index entries publish `resolve_path`; browser consumers follow these pointers and CLI resolve uses the same helper. Old colon filenames are removed on regeneration; IDs and aliases are unchanged. Canonical paths and fingerprints use POSIX separators and UTF-8; Git text files use LF on all platforms.
+
 ## Two parallel projections and selection
 
 Web and machine retrieval are actor-neutral and can independently discover/compare candidates in parallel. Default navigation: **Atlas | Explore | Dictionary | Index**. Atlas starts at subject → canonical knowledge point → concrete examples. Explore filters examples by medium, interaction, intent and collection. Dictionary explains Concepts through examples. Index is the exhaustive compact entity browser. No primary Examples or curriculum-board navigation.
@@ -22,7 +24,11 @@ Candidate query → stable-ID resolve/compare → explicit selection commit → 
 
 ## Provenance and crosswalk direction
 
-Source records retain stable ID, title, publisher/authority, document/URL or repository locator, captured date, checked date (null when not checked), and checking scope. Claims/mappings reference Source IDs and explicit section/objective locators. Legacy mini-source objects are normalized by adapters, preserving the original record inside the legacy input only.
+Source records require `locator_type` and a nonempty string `locator`, alongside stable ID, title, publisher/authority, captured date, checked date (null when not checked), and checking scope. Locator types preserve the Resource manifest vocabulary: `url`, `file`, `image`, `video`, `repository`, `paper`, `prompt`, `other`; `user-upload` also supports normalized uploads. A locator is not necessarily a URL or an accessible local path: filenames, screenshot paths, repository paths, DOI strings and prompt text retain their original semantics. No synthetic URL is introduced. `Source.url` is retired and rejected by the Core schema.
+
+Legacy `source.type` → `locator_type` and `source.locator` → `locator` without rewriting. Captured dates are retained (YAML date scalars serialize as ISO dates); optional author/notes are retained, and publisher derives from author when supplied. An imported Source remains unchecked (`checked_at: null`); notes do not imply verification. Original embedded provenance remains authoritative inside its Resource manifest. Claims/mappings reference generated Source IDs and explicit section/objective locators. The web links HTTP(S) locators only for URL/repository/paper/image/video sources; local paths, uploads and prompt text are escaped plain text. Locator content is never fetched or executed during normalization.
+
+`source:atlas-studies` is pinned to the immutable implementation commit `9506274daec7c3dcfa7c9ecda2ecb5f7461d011c`, which contains the referenced diagram studies. It no longer depends on the feature branch surviving.
 
 Every crosswalk reads **canonical SubjectTopic RELATION curriculum node**:
 
@@ -55,4 +61,8 @@ Reuse reaction-coordinate mechanism's shared progress/marker state. The legacy s
 
 ## Validation contract
 
+`schemas/core.schema.json` types every required canonical field, including ID arrays, orthogonal booleans, interaction/state objects, bounded numeric or enumerated state parameters, constraints, tool choices with evidence, artifact records, topic references and ISO dates/nullability. Known structured objects reject unknown fields; top-level legacy extension metadata remains permitted. JSON Schema format checking is enabled. Schema preflight runs before semantic validation and catalog generation, so malformed containers fail as validation errors before relation code can consume them. Resource artifact/mechanism/rights/fidelity shapes match the authoritative manifest schema, enforced by regression tests.
+
 Validate schemas/IDs, type-directed relations, provenance, topic cycles and inventory, crosswalk scope/rationale, adapter completeness, resource paths, generated drift, FTS retrieval and identity-preserving lock/deep fetch (including rejection tests). Browser tests exercise all four views, actual interactions, mobile overflow, collapsed details, explicit GAPs, startup requests and console errors. Capture and visually inspect desktop/mobile screenshots. CI validates this contract and retains legacy **data** validators; old board UI/route validators are retired from required CI.
+
+Windows CI performs a real checkout, catalog byte-drift check, Resource/schema/adapter regression tests, stable-ID and FTS retrieval, and static artifact staging. Linux CI additionally runs model and browser checks. The provenance regression creates actual temporary Resource Packages for all eight legacy source types and validates generation and resolve end to end; fixtures are not Chemistry coverage.

@@ -1,0 +1,284 @@
+{
+  "ai_build": {
+    "availability": "available",
+    "example_id": "ex:chemistry-ionic-lattice",
+    "method": {
+      "concepts": [
+        "concept:chemistry-ionic-lattice"
+      ],
+      "failure_modes": [
+        "Do not describe a schematic as measured data or a molecular simulation."
+      ],
+      "fidelity_constraints": [
+        "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+      ],
+      "grammar": [
+        "symbolic-notation"
+      ],
+      "interaction_model": {
+        "response": "Static schematic; no simulated behavior.",
+        "trigger": "inspect"
+      },
+      "mechanisms": [],
+      "state_model": {
+        "deterministic": true,
+        "model": "lattice"
+      },
+      "transfer_constraints": [
+        "A 2D slice of alternating ions; not the full six-coordinate 3D lattice."
+      ]
+    },
+    "resources": [],
+    "tools": [
+      {
+        "evidence": "observed",
+        "reason": "The local diagram is rendered with native SVG and HTML controls.",
+        "record": {
+          "alternatives": [
+            "tool:svgjs",
+            "tool:d3",
+            "tool:plotly-js"
+          ],
+          "avoid_when": "Molecular structure semantics, arbitrary plot engines, large datasets or numerical simulations.",
+          "canonical_path": "knowledge/tools/native-svg.json",
+          "capabilities": [
+            "svg-dom",
+            "paths",
+            "text",
+            "range-input",
+            "diagram"
+          ],
+          "id": "tool:native-svg",
+          "source_refs": [
+            "source:svg-standard"
+          ],
+          "subtype": "renderer",
+          "summary": "Small accessible vector diagrams with ordinary form controls.",
+          "title": "Native SVG + HTML controls",
+          "type": "Tool",
+          "use_when": "A small schematic with explicit fixed semantics and no chemistry structure solver."
+        }
+      },
+      {
+        "evidence": "proposed",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+        "record": {
+          "agent_notes": "Strong default for explanatory vector diagrams with controllable DOM geometry.",
+          "avoid_when": "Thousands of continuously moving sprites or 3D scenes are required.",
+          "canonical_path": "registries/frontend-tools.yaml",
+          "capabilities": [
+            "svg-dom",
+            "animation",
+            "gradients",
+            "masks",
+            "clipping",
+            "paths",
+            "text"
+          ],
+          "docs": "https://svgjs.dev/docs/3.2/",
+          "domains": [
+            "graphics",
+            "diagrams",
+            "education"
+          ],
+          "ecosystem": [
+            "JavaScript",
+            "SVG"
+          ],
+          "homepage": "https://svgjs.dev/",
+          "id": "tool:svgjs",
+          "legacy_kind": "graphics-library",
+          "license": "MIT",
+          "source_refs": [
+            "source:tool-svgjs"
+          ],
+          "subtype": "library",
+          "summary": "Direct SVG construction/manipulation is needed without D3's data-centric model.",
+          "tags": [
+            "svg",
+            "vector",
+            "diagram"
+          ],
+          "tier": "core",
+          "title": "SVG.js",
+          "type": "Tool",
+          "use_when": "Direct SVG construction/manipulation is needed without D3's data-centric model."
+        }
+      }
+    ]
+  },
+  "crosswalks": [
+    {
+      "canonical_scope": "Ionic, covalent and metallic bonding; shape, polarity and orbital overlap.",
+      "node": {
+        "id": "ap:Unit 2",
+        "label": "Compound Structure and Properties",
+        "section": "Unit 2"
+      },
+      "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+      "relation": "partial",
+      "source_id": "source:ap-chemistry-2024",
+      "topic_id": "topic:chemistry-bonding"
+    },
+    {
+      "canonical_scope": "Ionic, covalent and metallic bonding; shape, polarity and orbital overlap.",
+      "node": {
+        "id": "cambridge:3",
+        "label": "Chemical bonding",
+        "section": "3"
+      },
+      "rationale": "Matching major topic scope; this does not assert that the example inventory fulfills every objective.",
+      "relation": "exact",
+      "source_id": "source:cambridge-9701-2025",
+      "topic_id": "topic:chemistry-bonding"
+    }
+  ],
+  "record": {
+    "canonical_path": "knowledge/examples/chemistry.json",
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "concept_ids": [
+      "concept:chemistry-ionic-lattice"
+    ],
+    "failure_modes": [
+      "Do not describe a schematic as measured data or a molecular simulation."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "id": "ex:chemistry-ionic-lattice",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "interaction": "inspect",
+    "interaction_model": {
+      "response": "Static schematic; no simulated behavior.",
+      "trigger": "inspect"
+    },
+    "kind": "REFERENCE",
+    "lifecycle": {
+      "collected": true,
+      "reusable": false,
+      "showable": true,
+      "verified": false
+    },
+    "medium": "diagram",
+    "preview": {
+      "description": "A 2D slice of alternating ions; not the full six-coordinate 3D lattice.",
+      "renderer": "lattice",
+      "url": "#example/ex:chemistry-ionic-lattice"
+    },
+    "resource_ids": [],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "state_model": {
+      "deterministic": true,
+      "model": "lattice"
+    },
+    "subject_id": "topic:chemistry",
+    "summary": "A 2D slice of alternating ions; not the full six-coordinate 3D lattice.",
+    "title": "Ionic lattice · sodium chloride",
+    "tool_choices": [
+      {
+        "evidence": "observed",
+        "id": "tool:native-svg",
+        "reason": "The local diagram is rendered with native SVG and HTML controls."
+      },
+      {
+        "evidence": "proposed",
+        "id": "tool:svgjs",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+      }
+    ],
+    "topic_ids": [
+      "topic:chemistry-bonding"
+    ],
+    "transfer_constraints": [
+      "A 2D slice of alternating ions; not the full six-coordinate 3D lattice."
+    ],
+    "type": "Example",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ]
+  },
+  "relations": [
+    {
+      "source": "ex:chemistry-ionic-lattice",
+      "target": "concept:chemistry-ionic-lattice",
+      "type": "demonstrates"
+    },
+    {
+      "evidence": "observed",
+      "reason": "The local diagram is rendered with native SVG and HTML controls.",
+      "source": "ex:chemistry-ionic-lattice",
+      "target": "tool:native-svg",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+      "source": "ex:chemistry-ionic-lattice",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "source": "ex:chemistry-ionic-lattice",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-ionic-lattice",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "topic:chemistry-bonding",
+      "target": "ex:chemistry-ionic-lattice",
+      "type": "has_example"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-10",
+      "check_scope": "Original schematic studies; model equations and limitations recorded per Example. No third-party illustrations copied.",
+      "checked_at": "2026-09-10",
+      "id": "source:atlas-studies",
+      "locator": "https://github.com/shhh-hoo/ai-design-resource-bank/tree/9506274daec7c3dcfa7c9ecda2ecb5f7461d011c/app",
+      "locator_type": "repository",
+      "publisher": "AIDRB",
+      "title": "Original Chemistry diagram studies",
+      "type": "Source"
+    },
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-10",
+      "check_scope": "Official linked CED read; unit scope and course-at-a-glance verified. Mapping is editorial, not board endorsement.",
+      "checked_at": "2026-09-10",
+      "id": "source:ap-chemistry-2024",
+      "locator": "https://apcentral.collegeboard.org/media/pdf/ap-chemistry-course-and-exam-description.pdf",
+      "locator_type": "url",
+      "publisher": "College Board",
+      "title": "AP Chemistry Course and Exam Description, effective Fall 2024",
+      "type": "Source"
+    },
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-10",
+      "check_scope": "Official PDF downloaded and text inspected; content overview p10 and mapped sections. Scope mapping is editorial, not board endorsement.",
+      "checked_at": "2026-09-10",
+      "id": "source:cambridge-9701-2025",
+      "locator": "https://www.cambridgeinternational.org/Images/664563-2025-2027-syllabus.pdf",
+      "locator_type": "url",
+      "publisher": "Cambridge International Education",
+      "title": "Chemistry 9701 syllabus 2025–2027",
+      "type": "Source"
+    }
+  ]
+}

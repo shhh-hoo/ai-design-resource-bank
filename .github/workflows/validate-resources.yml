@@ -50,3 +50,19 @@ jobs:
           name: atlas-browser-evidence
           include-hidden-files: true
           path: .browser-test/
+  windows-contract:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install contract dependencies
+        run: python -m pip install --disable-pip-version-check --quiet pyyaml jsonschema
+      - name: Validate Windows checkout, catalog reproducibility and retrieval
+        run: |
+          python scripts/validate_atlas.py
+          python scripts/validate_resources.py
+          python scripts/build_catalog.py --check
+          python -m unittest discover -s tests -p 'test_*.py'
+          python scripts/build_site.py

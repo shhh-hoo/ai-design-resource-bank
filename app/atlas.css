@@ -701,3 +701,7 @@ a.external {
     transition: none !important;
   }
 }
+
+.source-locator {
+  overflow-wrap: anywhere;
+}

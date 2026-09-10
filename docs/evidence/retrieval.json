@@ -37,115 +37,852 @@
       "score": -2.8937890381391784
     }
   ],
-  "chosen_stable_id": "ex:chemistry-reaction-profile",
-  "method": {
-    "concepts": [
-      "concept:chemistry-reaction-profile",
-      "concept:reaction-coordinate"
-    ],
-    "failure_modes": [
-      "Do not describe a schematic as measured data or a molecular simulation."
-    ],
-    "fidelity_constraints": [
-      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
-    ],
-    "grammar": [
-      "functional-graph"
-    ],
-    "interaction_model": {
-      "response": "Dependent visual updates from the same state.",
-      "trigger": "range input"
-    },
-    "mechanisms": [
-      {
-        "evidence": "seed",
-        "id": "concept:reaction-coordinate",
-        "implementation_note": "Keep the progress marker and chemical-state annotation tied to the same normalized reaction coordinate.",
-        "primitives": [
-          "energy-curve",
-          "scrubber",
-          "state-marker",
-          "energy-difference"
+  "resolved": {
+    "ai_build": {
+      "availability": "available",
+      "example_id": "ex:chemistry-reaction-profile",
+      "method": {
+        "concepts": [
+          "concept:chemistry-reaction-profile",
+          "concept:reaction-coordinate"
+        ],
+        "failure_modes": [
+          "Do not describe a schematic as measured data or a molecular simulation."
+        ],
+        "fidelity_constraints": [
+          "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+        ],
+        "grammar": [
+          "functional-graph"
+        ],
+        "interaction_model": {
+          "response": "Dependent visual updates from the same state.",
+          "trigger": "range input"
+        },
+        "mechanisms": [
+          {
+            "evidence": "seed",
+            "id": "concept:reaction-coordinate",
+            "implementation_note": "Keep the progress marker and chemical-state annotation tied to the same normalized reaction coordinate.",
+            "primitives": [
+              "energy-curve",
+              "scrubber",
+              "state-marker",
+              "energy-difference"
+            ]
+          }
+        ],
+        "state_model": {
+          "derived": [
+            "energy",
+            "state-label"
+          ],
+          "deterministic": true,
+          "invariants": [
+            "unique maximum at 0.5",
+            "reactants 20; peak 90; products -20",
+            "reaction coordinate is not time"
+          ],
+          "model": "reaction",
+          "parameters": {
+            "progress": {
+              "initial": 0.5,
+              "max": 1,
+              "min": 0
+            }
+          },
+          "units": {
+            "energy": "kJ mol^-1"
+          }
+        },
+        "transfer_constraints": [
+          "Compare the activation barrier with the reactant–product enthalpy difference."
         ]
+      },
+      "resources": [
+        {
+          "id": "resource:reaction-profile",
+          "package_path": "resources/chemistry/reaction-profile",
+          "status": "verified",
+          "title": "Reaction profile with linked coordinate marker"
+        }
+      ],
+      "tools": [
+        {
+          "evidence": "observed",
+          "reason": "The local diagram is rendered with native SVG and HTML controls.",
+          "record": {
+            "alternatives": [
+              "tool:svgjs",
+              "tool:d3",
+              "tool:plotly-js"
+            ],
+            "avoid_when": "Molecular structure semantics, arbitrary plot engines, large datasets or numerical simulations.",
+            "canonical_path": "knowledge/tools/native-svg.json",
+            "capabilities": [
+              "svg-dom",
+              "paths",
+              "text",
+              "range-input",
+              "diagram"
+            ],
+            "id": "tool:native-svg",
+            "source_refs": [
+              "source:svg-standard"
+            ],
+            "subtype": "renderer",
+            "summary": "Small accessible vector diagrams with ordinary form controls.",
+            "title": "Native SVG + HTML controls",
+            "type": "Tool",
+            "use_when": "A small schematic with explicit fixed semantics and no chemistry structure solver."
+          }
+        },
+        {
+          "evidence": "proposed",
+          "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+          "record": {
+            "agent_notes": "Strong default for explanatory vector diagrams with controllable DOM geometry.",
+            "avoid_when": "Thousands of continuously moving sprites or 3D scenes are required.",
+            "canonical_path": "registries/frontend-tools.yaml",
+            "capabilities": [
+              "svg-dom",
+              "animation",
+              "gradients",
+              "masks",
+              "clipping",
+              "paths",
+              "text"
+            ],
+            "docs": "https://svgjs.dev/docs/3.2/",
+            "domains": [
+              "graphics",
+              "diagrams",
+              "education"
+            ],
+            "ecosystem": [
+              "JavaScript",
+              "SVG"
+            ],
+            "homepage": "https://svgjs.dev/",
+            "id": "tool:svgjs",
+            "legacy_kind": "graphics-library",
+            "license": "MIT",
+            "source_refs": [
+              "source:tool-svgjs"
+            ],
+            "subtype": "library",
+            "summary": "Direct SVG construction/manipulation is needed without D3's data-centric model.",
+            "tags": [
+              "svg",
+              "vector",
+              "diagram"
+            ],
+            "tier": "core",
+            "title": "SVG.js",
+            "type": "Tool",
+            "use_when": "Direct SVG construction/manipulation is needed without D3's data-centric model."
+          }
+        }
+      ]
+    },
+    "crosswalks": [
+      {
+        "canonical_scope": "Enthalpy changes, cycles, lattice energetics, entropy and Gibbs energy.",
+        "node": {
+          "id": "ap:Unit 6",
+          "label": "Thermochemistry",
+          "section": "Unit 6"
+        },
+        "rationale": "Canonical scope includes this source section and additional areas specified in the topic scope.",
+        "relation": "broader",
+        "source_id": "source:ap-chemistry-2024",
+        "topic_id": "topic:chemistry-energetics"
+      },
+      {
+        "canonical_scope": "Enthalpy changes, cycles, lattice energetics, entropy and Gibbs energy.",
+        "node": {
+          "id": "ap:Unit 9",
+          "label": "Thermodynamics and Electrochemistry",
+          "section": "Unit 9"
+        },
+        "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+        "relation": "partial",
+        "source_id": "source:ap-chemistry-2024",
+        "topic_id": "topic:chemistry-energetics"
+      },
+      {
+        "canonical_scope": "Enthalpy changes, cycles, lattice energetics, entropy and Gibbs energy.",
+        "node": {
+          "id": "cambridge:5",
+          "label": "Chemical energetics",
+          "section": "5"
+        },
+        "rationale": "Canonical scope includes this source section and additional areas specified in the topic scope.",
+        "relation": "broader",
+        "source_id": "source:cambridge-9701-2025",
+        "topic_id": "topic:chemistry-energetics"
+      },
+      {
+        "canonical_scope": "Enthalpy changes, cycles, lattice energetics, entropy and Gibbs energy.",
+        "node": {
+          "id": "cambridge:23",
+          "label": "Chemical energetics",
+          "section": "23"
+        },
+        "rationale": "Canonical scope includes this source section and additional areas specified in the topic scope.",
+        "relation": "broader",
+        "source_id": "source:cambridge-9701-2025",
+        "topic_id": "topic:chemistry-energetics"
       }
     ],
-    "state_model": {
-      "derived": [
-        "energy",
-        "state-label"
+    "record": {
+      "canonical_path": "knowledge/examples/chemistry.json",
+      "collection_ids": [
+        "collection:chemistry-studies"
       ],
-      "deterministic": true,
-      "invariants": [
-        "unique maximum at 0.5",
-        "reactants 20; peak 90; products -20",
-        "reaction coordinate is not time"
+      "concept_ids": [
+        "concept:chemistry-reaction-profile",
+        "concept:reaction-coordinate"
       ],
-      "model": "reaction",
-      "parameters": {
-        "progress": {
-          "initial": 0.5,
-          "max": 1,
-          "min": 0
+      "failure_modes": [
+        "Do not describe a schematic as measured data or a molecular simulation."
+      ],
+      "fidelity_constraints": [
+        "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+      ],
+      "grammar": [
+        "functional-graph"
+      ],
+      "id": "ex:chemistry-reaction-profile",
+      "intent_ids": [
+        "intent:predict"
+      ],
+      "interaction": "parameter-control",
+      "interaction_model": {
+        "response": "Dependent visual updates from the same state.",
+        "trigger": "range input"
+      },
+      "kind": "LIVE",
+      "lifecycle": {
+        "collected": true,
+        "reusable": true,
+        "showable": true,
+        "verified": true
+      },
+      "medium": "interactive-diagram",
+      "preview": {
+        "description": "Compare the activation barrier with the reactant–product enthalpy difference.",
+        "renderer": "reaction",
+        "url": "#example/ex:chemistry-reaction-profile"
+      },
+      "resource_ids": [
+        "resource:reaction-profile"
+      ],
+      "source_refs": [
+        "source:atlas-studies"
+      ],
+      "state_model": {
+        "derived": [
+          "energy",
+          "state-label"
+        ],
+        "deterministic": true,
+        "invariants": [
+          "unique maximum at 0.5",
+          "reactants 20; peak 90; products -20",
+          "reaction coordinate is not time"
+        ],
+        "model": "reaction",
+        "parameters": {
+          "progress": {
+            "initial": 0.5,
+            "max": 1,
+            "min": 0
+          }
+        },
+        "units": {
+          "energy": "kJ mol^-1"
         }
       },
-      "units": {
-        "energy": "kJ mol^-1"
+      "subject_id": "topic:chemistry",
+      "summary": "Compare the activation barrier with the reactant–product enthalpy difference.",
+      "title": "Reaction profile",
+      "tool_choices": [
+        {
+          "evidence": "observed",
+          "id": "tool:native-svg",
+          "reason": "The local diagram is rendered with native SVG and HTML controls."
+        },
+        {
+          "evidence": "proposed",
+          "id": "tool:svgjs",
+          "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+        }
+      ],
+      "topic_ids": [
+        "topic:chemistry-energetics"
+      ],
+      "transfer_constraints": [
+        "Compare the activation barrier with the reactant–product enthalpy difference."
+      ],
+      "type": "Example",
+      "verification": {
+        "checked_at": "2026-09-10",
+        "evidence": [
+          "tests/models.test.mjs",
+          "tests/browser/atlas.spec.mjs",
+          "docs/evidence/desktop-example.png",
+          "docs/evidence/mobile-example.png"
+        ],
+        "scope": "Local energy endpoint/maxima/sign tests, keyboard scrubbing, responsive SVG and desktop/mobile browser review. Not external chemistry peer review."
+      },
+      "visual_traits": [
+        "labeled",
+        "quantitative"
+      ]
+    },
+    "relations": [
+      {
+        "source": "ex:chemistry-reaction-profile",
+        "target": "concept:chemistry-reaction-profile",
+        "type": "demonstrates"
+      },
+      {
+        "source": "ex:chemistry-reaction-profile",
+        "target": "concept:reaction-coordinate",
+        "type": "demonstrates"
+      },
+      {
+        "evidence": "observed",
+        "reason": "The local diagram is rendered with native SVG and HTML controls.",
+        "source": "ex:chemistry-reaction-profile",
+        "target": "tool:native-svg",
+        "type": "implemented_with"
+      },
+      {
+        "evidence": "proposed",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+        "source": "ex:chemistry-reaction-profile",
+        "target": "tool:svgjs",
+        "type": "implemented_with"
+      },
+      {
+        "source": "ex:chemistry-reaction-profile",
+        "target": "collection:chemistry-studies",
+        "type": "in_collection"
+      },
+      {
+        "source": "ex:chemistry-reaction-profile",
+        "target": "intent:predict",
+        "type": "supports_intent"
+      },
+      {
+        "source": "ex:chemistry-reaction-profile",
+        "target": "resource:reaction-profile",
+        "type": "yields"
+      },
+      {
+        "source": "topic:chemistry-energetics",
+        "target": "ex:chemistry-reaction-profile",
+        "type": "has_example"
       }
-    },
-    "transfer_constraints": [
-      "Compare the activation barrier with the reactant–product enthalpy difference."
+    ],
+    "sources": [
+      {
+        "canonical_path": "knowledge/provenance/sources.json",
+        "captured_at": "2026-09-10",
+        "check_scope": "Original schematic studies; model equations and limitations recorded per Example. No third-party illustrations copied.",
+        "checked_at": "2026-09-10",
+        "id": "source:atlas-studies",
+        "locator": "https://github.com/shhh-hoo/ai-design-resource-bank/tree/9506274daec7c3dcfa7c9ecda2ecb5f7461d011c/app",
+        "locator_type": "repository",
+        "publisher": "AIDRB",
+        "title": "Original Chemistry diagram studies",
+        "type": "Source"
+      },
+      {
+        "canonical_path": "knowledge/provenance/sources.json",
+        "captured_at": "2026-09-10",
+        "check_scope": "Official linked CED read; unit scope and course-at-a-glance verified. Mapping is editorial, not board endorsement.",
+        "checked_at": "2026-09-10",
+        "id": "source:ap-chemistry-2024",
+        "locator": "https://apcentral.collegeboard.org/media/pdf/ap-chemistry-course-and-exam-description.pdf",
+        "locator_type": "url",
+        "publisher": "College Board",
+        "title": "AP Chemistry Course and Exam Description, effective Fall 2024",
+        "type": "Source"
+      },
+      {
+        "canonical_path": "knowledge/provenance/sources.json",
+        "captured_at": "2026-09-10",
+        "check_scope": "Official PDF downloaded and text inspected; content overview p10 and mapped sections. Scope mapping is editorial, not board endorsement.",
+        "checked_at": "2026-09-10",
+        "id": "source:cambridge-9701-2025",
+        "locator": "https://www.cambridgeinternational.org/Images/664563-2025-2027-syllabus.pdf",
+        "locator_type": "url",
+        "publisher": "Cambridge International Education",
+        "title": "Chemistry 9701 syllabus 2025–2027",
+        "type": "Source"
+      }
     ]
   },
-  "tools": [
-    {
-      "id": "tool:native-svg",
-      "evidence": "observed",
-      "capabilities": [
-        "svg-dom",
-        "paths",
-        "text",
-        "range-input",
-        "diagram"
+  "committed": {
+    "version": 1,
+    "state": "committed",
+    "selection": {
+      "selector": "mixed",
+      "selections": [
+        {
+          "id": "ex:chemistry-reaction-profile",
+          "aspect_notes": "Keep the linked coordinate marker and ΔH labels.",
+          "constraints": [
+            "Coordinate is not time."
+          ]
+        }
       ]
     },
-    {
-      "id": "tool:svgjs",
-      "evidence": "proposed",
-      "capabilities": [
-        "svg-dom",
-        "animation",
-        "gradients",
-        "masks",
-        "clipping",
-        "paths",
-        "text"
-      ]
-    }
-  ],
-  "resources": [
-    {
-      "id": "resource:reaction-profile",
-      "package_path": "resources/chemistry/reaction-profile",
-      "status": "verified",
-      "title": "Reaction profile with linked coordinate marker"
-    }
-  ],
-  "locked_ids": [
-    "ex:chemistry-reaction-profile"
-  ],
-  "preserved_selection": {
-    "id": "ex:chemistry-reaction-profile",
-    "aspect_notes": "Borrow the linked coordinate marker.",
-    "constraints": [
-      "Keep activation energy and ΔH distinct.",
-      "Coordinate is not time."
-    ]
+    "catalog_fingerprint": "e62a70af8e446ab0518e7670fd05fc004dfb6974136136023ae71bec0dd9b4ae",
+    "commit_digest": "7f65f27726c1d07f6cfa34857bbfc30234e0e48bc77841be6c6f0f9150c1f02a"
   },
-  "fetched_artifacts": [
-    "resource.yaml",
-    "README.md",
-    "artifacts/profile.js"
-  ],
-  "fts_rows": 207,
-  "catalog_fingerprint": "461f31927a3b7987f3708c17f1f4206252313277263ec242486215b05db35233"
+  "locked": {
+    "version": 1,
+    "state": "locked",
+    "committed": {
+      "version": 1,
+      "state": "committed",
+      "selection": {
+        "selector": "mixed",
+        "selections": [
+          {
+            "id": "ex:chemistry-reaction-profile",
+            "aspect_notes": "Keep the linked coordinate marker and ΔH labels.",
+            "constraints": [
+              "Coordinate is not time."
+            ]
+          }
+        ]
+      },
+      "catalog_fingerprint": "e62a70af8e446ab0518e7670fd05fc004dfb6974136136023ae71bec0dd9b4ae",
+      "commit_digest": "7f65f27726c1d07f6cfa34857bbfc30234e0e48bc77841be6c6f0f9150c1f02a"
+    },
+    "locked_ids": [
+      "ex:chemistry-reaction-profile"
+    ],
+    "lock_digest": "41d502a92aa91275ebf8eb69b62f0d69fd1647ffd7b3d8f24203722430249889"
+  },
+  "fetched": {
+    "locked_ids": [
+      "ex:chemistry-reaction-profile"
+    ],
+    "contexts": [
+      {
+        "selection": {
+          "id": "ex:chemistry-reaction-profile",
+          "aspect_notes": "Keep the linked coordinate marker and ΔH labels.",
+          "constraints": [
+            "Coordinate is not time."
+          ]
+        },
+        "resolved": {
+          "ai_build": {
+            "availability": "available",
+            "example_id": "ex:chemistry-reaction-profile",
+            "method": {
+              "concepts": [
+                "concept:chemistry-reaction-profile",
+                "concept:reaction-coordinate"
+              ],
+              "failure_modes": [
+                "Do not describe a schematic as measured data or a molecular simulation."
+              ],
+              "fidelity_constraints": [
+                "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+              ],
+              "grammar": [
+                "functional-graph"
+              ],
+              "interaction_model": {
+                "response": "Dependent visual updates from the same state.",
+                "trigger": "range input"
+              },
+              "mechanisms": [
+                {
+                  "evidence": "seed",
+                  "id": "concept:reaction-coordinate",
+                  "implementation_note": "Keep the progress marker and chemical-state annotation tied to the same normalized reaction coordinate.",
+                  "primitives": [
+                    "energy-curve",
+                    "scrubber",
+                    "state-marker",
+                    "energy-difference"
+                  ]
+                }
+              ],
+              "state_model": {
+                "derived": [
+                  "energy",
+                  "state-label"
+                ],
+                "deterministic": true,
+                "invariants": [
+                  "unique maximum at 0.5",
+                  "reactants 20; peak 90; products -20",
+                  "reaction coordinate is not time"
+                ],
+                "model": "reaction",
+                "parameters": {
+                  "progress": {
+                    "initial": 0.5,
+                    "max": 1,
+                    "min": 0
+                  }
+                },
+                "units": {
+                  "energy": "kJ mol^-1"
+                }
+              },
+              "transfer_constraints": [
+                "Compare the activation barrier with the reactant–product enthalpy difference."
+              ]
+            },
+            "resources": [
+              {
+                "id": "resource:reaction-profile",
+                "package_path": "resources/chemistry/reaction-profile",
+                "status": "verified",
+                "title": "Reaction profile with linked coordinate marker"
+              }
+            ],
+            "tools": [
+              {
+                "evidence": "observed",
+                "reason": "The local diagram is rendered with native SVG and HTML controls.",
+                "record": {
+                  "alternatives": [
+                    "tool:svgjs",
+                    "tool:d3",
+                    "tool:plotly-js"
+                  ],
+                  "avoid_when": "Molecular structure semantics, arbitrary plot engines, large datasets or numerical simulations.",
+                  "canonical_path": "knowledge/tools/native-svg.json",
+                  "capabilities": [
+                    "svg-dom",
+                    "paths",
+                    "text",
+                    "range-input",
+                    "diagram"
+                  ],
+                  "id": "tool:native-svg",
+                  "source_refs": [
+                    "source:svg-standard"
+                  ],
+                  "subtype": "renderer",
+                  "summary": "Small accessible vector diagrams with ordinary form controls.",
+                  "title": "Native SVG + HTML controls",
+                  "type": "Tool",
+                  "use_when": "A small schematic with explicit fixed semantics and no chemistry structure solver."
+                }
+              },
+              {
+                "evidence": "proposed",
+                "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+                "record": {
+                  "agent_notes": "Strong default for explanatory vector diagrams with controllable DOM geometry.",
+                  "avoid_when": "Thousands of continuously moving sprites or 3D scenes are required.",
+                  "canonical_path": "registries/frontend-tools.yaml",
+                  "capabilities": [
+                    "svg-dom",
+                    "animation",
+                    "gradients",
+                    "masks",
+                    "clipping",
+                    "paths",
+                    "text"
+                  ],
+                  "docs": "https://svgjs.dev/docs/3.2/",
+                  "domains": [
+                    "graphics",
+                    "diagrams",
+                    "education"
+                  ],
+                  "ecosystem": [
+                    "JavaScript",
+                    "SVG"
+                  ],
+                  "homepage": "https://svgjs.dev/",
+                  "id": "tool:svgjs",
+                  "legacy_kind": "graphics-library",
+                  "license": "MIT",
+                  "source_refs": [
+                    "source:tool-svgjs"
+                  ],
+                  "subtype": "library",
+                  "summary": "Direct SVG construction/manipulation is needed without D3's data-centric model.",
+                  "tags": [
+                    "svg",
+                    "vector",
+                    "diagram"
+                  ],
+                  "tier": "core",
+                  "title": "SVG.js",
+                  "type": "Tool",
+                  "use_when": "Direct SVG construction/manipulation is needed without D3's data-centric model."
+                }
+              }
+            ]
+          },
+          "crosswalks": [
+            {
+              "canonical_scope": "Enthalpy changes, cycles, lattice energetics, entropy and Gibbs energy.",
+              "node": {
+                "id": "ap:Unit 6",
+                "label": "Thermochemistry",
+                "section": "Unit 6"
+              },
+              "rationale": "Canonical scope includes this source section and additional areas specified in the topic scope.",
+              "relation": "broader",
+              "source_id": "source:ap-chemistry-2024",
+              "topic_id": "topic:chemistry-energetics"
+            },
+            {
+              "canonical_scope": "Enthalpy changes, cycles, lattice energetics, entropy and Gibbs energy.",
+              "node": {
+                "id": "ap:Unit 9",
+                "label": "Thermodynamics and Electrochemistry",
+                "section": "Unit 9"
+              },
+              "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+              "relation": "partial",
+              "source_id": "source:ap-chemistry-2024",
+              "topic_id": "topic:chemistry-energetics"
+            },
+            {
+              "canonical_scope": "Enthalpy changes, cycles, lattice energetics, entropy and Gibbs energy.",
+              "node": {
+                "id": "cambridge:5",
+                "label": "Chemical energetics",
+                "section": "5"
+              },
+              "rationale": "Canonical scope includes this source section and additional areas specified in the topic scope.",
+              "relation": "broader",
+              "source_id": "source:cambridge-9701-2025",
+              "topic_id": "topic:chemistry-energetics"
+            },
+            {
+              "canonical_scope": "Enthalpy changes, cycles, lattice energetics, entropy and Gibbs energy.",
+              "node": {
+                "id": "cambridge:23",
+                "label": "Chemical energetics",
+                "section": "23"
+              },
+              "rationale": "Canonical scope includes this source section and additional areas specified in the topic scope.",
+              "relation": "broader",
+              "source_id": "source:cambridge-9701-2025",
+              "topic_id": "topic:chemistry-energetics"
+            }
+          ],
+          "record": {
+            "canonical_path": "knowledge/examples/chemistry.json",
+            "collection_ids": [
+              "collection:chemistry-studies"
+            ],
+            "concept_ids": [
+              "concept:chemistry-reaction-profile",
+              "concept:reaction-coordinate"
+            ],
+            "failure_modes": [
+              "Do not describe a schematic as measured data or a molecular simulation."
+            ],
+            "fidelity_constraints": [
+              "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+            ],
+            "grammar": [
+              "functional-graph"
+            ],
+            "id": "ex:chemistry-reaction-profile",
+            "intent_ids": [
+              "intent:predict"
+            ],
+            "interaction": "parameter-control",
+            "interaction_model": {
+              "response": "Dependent visual updates from the same state.",
+              "trigger": "range input"
+            },
+            "kind": "LIVE",
+            "lifecycle": {
+              "collected": true,
+              "reusable": true,
+              "showable": true,
+              "verified": true
+            },
+            "medium": "interactive-diagram",
+            "preview": {
+              "description": "Compare the activation barrier with the reactant–product enthalpy difference.",
+              "renderer": "reaction",
+              "url": "#example/ex:chemistry-reaction-profile"
+            },
+            "resource_ids": [
+              "resource:reaction-profile"
+            ],
+            "source_refs": [
+              "source:atlas-studies"
+            ],
+            "state_model": {
+              "derived": [
+                "energy",
+                "state-label"
+              ],
+              "deterministic": true,
+              "invariants": [
+                "unique maximum at 0.5",
+                "reactants 20; peak 90; products -20",
+                "reaction coordinate is not time"
+              ],
+              "model": "reaction",
+              "parameters": {
+                "progress": {
+                  "initial": 0.5,
+                  "max": 1,
+                  "min": 0
+                }
+              },
+              "units": {
+                "energy": "kJ mol^-1"
+              }
+            },
+            "subject_id": "topic:chemistry",
+            "summary": "Compare the activation barrier with the reactant–product enthalpy difference.",
+            "title": "Reaction profile",
+            "tool_choices": [
+              {
+                "evidence": "observed",
+                "id": "tool:native-svg",
+                "reason": "The local diagram is rendered with native SVG and HTML controls."
+              },
+              {
+                "evidence": "proposed",
+                "id": "tool:svgjs",
+                "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+              }
+            ],
+            "topic_ids": [
+              "topic:chemistry-energetics"
+            ],
+            "transfer_constraints": [
+              "Compare the activation barrier with the reactant–product enthalpy difference."
+            ],
+            "type": "Example",
+            "verification": {
+              "checked_at": "2026-09-10",
+              "evidence": [
+                "tests/models.test.mjs",
+                "tests/browser/atlas.spec.mjs",
+                "docs/evidence/desktop-example.png",
+                "docs/evidence/mobile-example.png"
+              ],
+              "scope": "Local energy endpoint/maxima/sign tests, keyboard scrubbing, responsive SVG and desktop/mobile browser review. Not external chemistry peer review."
+            },
+            "visual_traits": [
+              "labeled",
+              "quantitative"
+            ]
+          },
+          "relations": [
+            {
+              "source": "ex:chemistry-reaction-profile",
+              "target": "concept:chemistry-reaction-profile",
+              "type": "demonstrates"
+            },
+            {
+              "source": "ex:chemistry-reaction-profile",
+              "target": "concept:reaction-coordinate",
+              "type": "demonstrates"
+            },
+            {
+              "evidence": "observed",
+              "reason": "The local diagram is rendered with native SVG and HTML controls.",
+              "source": "ex:chemistry-reaction-profile",
+              "target": "tool:native-svg",
+              "type": "implemented_with"
+            },
+            {
+              "evidence": "proposed",
+              "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+              "source": "ex:chemistry-reaction-profile",
+              "target": "tool:svgjs",
+              "type": "implemented_with"
+            },
+            {
+              "source": "ex:chemistry-reaction-profile",
+              "target": "collection:chemistry-studies",
+              "type": "in_collection"
+            },
+            {
+              "source": "ex:chemistry-reaction-profile",
+              "target": "intent:predict",
+              "type": "supports_intent"
+            },
+            {
+              "source": "ex:chemistry-reaction-profile",
+              "target": "resource:reaction-profile",
+              "type": "yields"
+            },
+            {
+              "source": "topic:chemistry-energetics",
+              "target": "ex:chemistry-reaction-profile",
+              "type": "has_example"
+            }
+          ],
+          "sources": [
+            {
+              "canonical_path": "knowledge/provenance/sources.json",
+              "captured_at": "2026-09-10",
+              "check_scope": "Original schematic studies; model equations and limitations recorded per Example. No third-party illustrations copied.",
+              "checked_at": "2026-09-10",
+              "id": "source:atlas-studies",
+              "locator": "https://github.com/shhh-hoo/ai-design-resource-bank/tree/9506274daec7c3dcfa7c9ecda2ecb5f7461d011c/app",
+              "locator_type": "repository",
+              "publisher": "AIDRB",
+              "title": "Original Chemistry diagram studies",
+              "type": "Source"
+            },
+            {
+              "canonical_path": "knowledge/provenance/sources.json",
+              "captured_at": "2026-09-10",
+              "check_scope": "Official linked CED read; unit scope and course-at-a-glance verified. Mapping is editorial, not board endorsement.",
+              "checked_at": "2026-09-10",
+              "id": "source:ap-chemistry-2024",
+              "locator": "https://apcentral.collegeboard.org/media/pdf/ap-chemistry-course-and-exam-description.pdf",
+              "locator_type": "url",
+              "publisher": "College Board",
+              "title": "AP Chemistry Course and Exam Description, effective Fall 2024",
+              "type": "Source"
+            },
+            {
+              "canonical_path": "knowledge/provenance/sources.json",
+              "captured_at": "2026-09-10",
+              "check_scope": "Official PDF downloaded and text inspected; content overview p10 and mapped sections. Scope mapping is editorial, not board endorsement.",
+              "checked_at": "2026-09-10",
+              "id": "source:cambridge-9701-2025",
+              "locator": "https://www.cambridgeinternational.org/Images/664563-2025-2027-syllabus.pdf",
+              "locator_type": "url",
+              "publisher": "Cambridge International Education",
+              "title": "Chemistry 9701 syllabus 2025–2027",
+              "type": "Source"
+            }
+          ]
+        },
+        "packages": [
+          {
+            "id": "resource:reaction-profile",
+            "files": {
+              "resource.yaml": "id: reaction-profile\ntitle: Reaction profile with linked coordinate marker\ndomain: chemistry\nstatus: verified\ntags: [chemistry, energetics, activation-energy, reaction-coordinate, svg]\nsource_refs: [source:legacy-mechanisms, source:atlas-studies, source:cambridge-9701-2025, source:ap-chemistry-2024]\nselection_reason: Preserve the existing reaction-coordinate mechanism while correcting transition-state identification and exposing energy constraints.\nmechanism:\n  summary: One coordinate drives a marker on a single-step energy profile; activation energy and enthalpy share explicit endpoints.\n  primitives: [energy-curve, scrubber, state-marker, energy-difference]\n  states: [reactants, reaction-path, transition-state, products]\n  parameters: [progress, reactant-energy, product-energy, barrier-height]\n  failure_modes: [Treating reaction coordinate as time, Treating the whole barrier region as transition state, Inferring a rate from a schematic barrier, Changing endpoints when comparing catalysts]\nfidelity: [concept, behavior, geometry, implementation]\nimplements: [concept:reaction-coordinate, concept:chemistry-reaction-profile]\nrequires: [tool:native-svg]\nartifacts:\n  - {path: artifacts/profile.js, kind: code, purpose: Pure bounded energy/state model used by the live preview, generated: false, validated: true}\nrights:\n  source_assets_stored: false\n  license: MIT\n  basis: Original implementation of a general teaching mechanism; existing registry evidence is attributed. No third-party binary assets.\nnotes: Qualitative single-step profile with illustrative energies. Local automated checks are not external chemistry peer review.\n",
+              "README.md": "# Reaction profile\n\n## Use this when\nConnect activation energy, reaction progress and reaction enthalpy without claiming a kinetic simulation.\n\n## Why it works\nThe marker and labels read one state. Smooth monotonic halves meet at the only maximum at coordinate 0.5. The endpoints are explicit: 20 and −20 kJ mol⁻¹; peak 90 kJ mol⁻¹. ΔH = −40 and forward Ea = 70 kJ mol⁻¹. These are illustrative values, not a named measured reaction.\n\n## Implementation\nImport `profile` and `profileState` from `artifacts/profile.js`. SVG screen coordinates must be derived from returned energy. The Atlas loads this small preview runtime when showing the live instance; machine Resource Package deep fetch still requires a committed lock. No plotting or molecular solver is implied. Tests live in `tests/models.test.mjs` and browser interaction tests.\n\n## Controls\nProgress is a normalized reaction coordinate in [0, 1], not elapsed time. At 0: reactants; at 0.5: transition state; at 1: products. All other positions read reaction path.\n\n## Do not copy\nDo not copy an entire broad transition-state region from the legacy demo. Do not infer chemical intermediates, rates or a real pathway from this schematic. Preserve enthalpy endpoints when making catalyst comparisons.\n\n## Source\n`registries/frontend-mechanisms.yaml#reaction-coordinate`; original implementation uses its shared progress/marker rule. Curriculum support: Cambridge 9701 sections 5.1 and 8; AP Chemistry units 5 and 6. Source records live under `knowledge/provenance/` and normalized adapters.\n",
+              "artifacts/profile.js": "// Original qualitative energy model. MIT. Coordinate is not time.\nexport function profile(t) {\n  if (!Number.isFinite(t) || t < 0 || t > 1)\n    throw new RangeError(\"Progress must be in [0, 1]\");\n  const smooth = (x) => x * x * (3 - 2 * x);\n  return t <= 0.5 ? 20 + 70 * smooth(t * 2) : 90 - 110 * smooth((t - 0.5) * 2);\n}\nexport function profileState(t) {\n  const energy = profile(t);\n  return {\n    progress: t,\n    energy,\n    deltaH: -40,\n    activationEnergy: 70,\n    label:\n      t === 0\n        ? \"Reactants\"\n        : t === 0.5\n          ? \"Transition state\"\n          : t === 1\n            ? \"Products\"\n            : \"Reaction path\",\n  };\n}\n"
+            }
+          }
+        ]
+      }
+    ]
+  }
 }

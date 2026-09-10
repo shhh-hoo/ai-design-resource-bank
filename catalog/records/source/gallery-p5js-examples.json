@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "registries/reference-galleries.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:gallery-p5js-examples",
+    "locator": "https://p5js.org/examples/",
+    "locator_type": "url",
+    "publisher": "p5.js Examples",
+    "title": "p5.js Examples",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

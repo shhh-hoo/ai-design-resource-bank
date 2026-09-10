@@ -4,10 +4,11 @@ import argparse
 import json
 import sqlite3
 from pathlib import Path
-from atlas_core import ROOT, inputs, generate_relations, build_view, encoded, fingerprint
+from atlas_core import ROOT, inputs, generate_relations, build_view, encoded, fingerprint, record_path, validate_shapes
 
 def build(output=ROOT/'catalog', check=False):
     records,aliases,migration,crosswalks=inputs()
+    validate_shapes(records)
     records=sorted(records,key=lambda r:r['id'])
     by_id={r['id']:r for r in records}
     if len(by_id)!=len(records):raise ValueError('Duplicate canonical ID')
@@ -16,7 +17,7 @@ def build(output=ROOT/'catalog', check=False):
     examples=[r for r in records if r['type']=='Example']
     topics=[r for r in records if r['type']=='SubjectTopic']
     web_fields=['id','title','kind','subject_id','topic_ids','concept_ids','medium','visual_traits','interaction','intent_ids','collection_ids','preview','gap_reason']
-    web=dict(version=1,examples=[{k:r[k] for k in web_fields if k in r} for r in examples],
+    web=dict(version=1,examples=[dict({k:r[k] for k in web_fields if k in r},resolve_path='catalog/'+record_path(r['id'])) for r in examples],
              topics=topics,intents=[r for r in records if r['type']=='Intent'],collections=[r for r in records if r['type']=='Collection'])
     ai=[]
     for r in records:
@@ -26,12 +27,12 @@ def build(output=ROOT/'catalog', check=False):
         if r['type']=='Example':
             a['tool_ids']=[t['id'] for t in r['tool_choices']]
             a['avoid_when']=' '.join(r['failure_modes'])
-        a['resolve_path']='catalog/records/'+r['id']+'.json'
+        a['resolve_path']='catalog/'+record_path(r['id'])
         a['aliases']=[alias for alias,target in aliases.items() if target==r['id']]
         ai.append(a)
     outputs={'web-index.json':encoded(web),'relations.json':encoded(relations),'aliases.json':encoded(aliases),
              'migration.json':encoded(migration),'crosswalks.json':encoded(crosswalks),
-             'index.json':encoded([dict(id=r['id'],type=r['type'],title=r['title']) for r in records]),
+             'index.json':encoded([dict(id=r['id'],type=r['type'],title=r['title'],resolve_path='catalog/'+record_path(r['id'])) for r in records]),
              'dictionary.json':encoded([dict(id=r['id'],title=r['title'],summary=r.get('summary',''),
                example_ids=[e['id'] for e in examples if r['id'] in e['concept_ids']],
                adjacent_ids=sorted({c for e in examples if r['id'] in e['concept_ids'] for c in e['concept_ids'] if c!=r['id']})) for r in records if r['type']=='Concept']),
@@ -49,7 +50,7 @@ def build(output=ROOT/'catalog', check=False):
             result['ai_build']=build_view(r,by_id)
             result['crosswalks']=[x for x in crosswalks if x['topic_id'] in r['topic_ids']]
             result['sources']+= [by_id[s] for s in sorted({x['source_id'] for x in result['crosswalks']}) if s not in r['source_refs']]
-        outputs['records/'+r['id']+'.json']=encoded(result)
+        outputs[record_path(r['id'])]=encoded(result)
     outputs['manifest.json']=encoded(dict(version=1,fingerprint=stamp,record_count=len(records),relation_count=len(relations),
         example_counts={k:sum(e['kind']==k for e in examples) for k in ['LIVE','REFERENCE','GAP']},
         crosswalk_count=len(crosswalks),major_topics=sum(t['parent'] is not None for t in topics)))
@@ -60,13 +61,13 @@ def build(output=ROOT/'catalog', check=False):
         for name,data in outputs.items():
             path=output/name
             if not path.exists() or path.read_bytes()!=data:raise ValueError(f'Generated drift: {path.relative_to(ROOT)}')
-        actual={str(p.relative_to(output)) for p in output.rglob('*') if p.is_file() and p.name!='search.sqlite'}
+        actual={p.relative_to(output).as_posix() for p in output.rglob('*') if p.is_file() and p.name!='search.sqlite'}
         if actual!=set(outputs):raise ValueError(f'Unexpected catalog files: {actual-set(outputs)}')
         if (ROOT/'catalog.yaml').read_bytes()!=encoded(legacy):raise ValueError('Generated drift: catalog.yaml')
     else:
         output.mkdir(parents=True,exist_ok=True)
         for p in output.rglob('*'):
-            if p.is_file() and str(p.relative_to(output)) not in outputs and p.name!='search.sqlite':p.unlink()
+            if p.is_file() and p.relative_to(output).as_posix() not in outputs and p.name!='search.sqlite':p.unlink()
         for name,data in outputs.items():
             p=output/name;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(data)
         (ROOT/'catalog.yaml').write_bytes(encoded(legacy))

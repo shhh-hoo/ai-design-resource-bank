@@ -98,6 +98,7 @@ for (const [name, width, height] of [
     );
     await page.locator("#provenance summary").click();
     await expect(page.locator("#provenance")).toContainText("Cambridge");
+    await noOverflow();
     await page.getByRole("button", { name: "Add to selection" }).click();
     await page.getByRole("link", { name: "Selections 1" }).click();
     await page
@@ -199,6 +200,9 @@ for (const [name, width, height] of [
       await page.keyboard.press("End");
       await expect(page.locator("output")).not.toHaveText(before);
     }
+    expect(requests.filter((path) => path.includes("/records/"))).not.toEqual(
+      expect.arrayContaining([expect.stringMatching(/:|%3a/i)]),
+    );
     expect(errors).toEqual([]);
     expect(failed).toEqual([]);
     fs.writeFileSync(
@@ -227,4 +231,31 @@ for (const [name, width, height] of [
       ) + "\n",
     );
   });
+  test(`${name}: lossless local provenance is text and web provenance remains linked`, async ({ page }) => {
+    await page.setViewportSize({ width, height });
+    const path = JSON.parse(fs.readFileSync("catalog/web-index.json", "utf8")).examples
+      .find((e) => e.id === "ex:chemistry-reaction-profile").resolve_path;
+    const resolved = JSON.parse(fs.readFileSync(path, "utf8"));
+    const base = resolved.sources[0];
+    resolved.sources.push(
+      { ...base, id: "source:test-file", title: "Uploaded diagram", locator_type: "file", locator: "uploads/反应 profile.pdf" },
+      { ...base, id: "source:test-image", title: "Local screenshot", locator_type: "image", locator: "screenshots/reaction.png" },
+      { ...base, id: "source:test-prompt", title: "Original prompt", locator_type: "prompt", locator: "<img src=x onerror=alert(1)> Draw ΔH" },
+    );
+    await page.route(`**/${path}`, (route) => route.fulfill({ json: resolved }));
+    await page.goto("/#example/ex:chemistry-reaction-profile");
+    await page.locator("#provenance summary").click();
+    const provenance = page.locator("#provenance");
+    await expect(provenance).toContainText("uploads/反应 profile.pdf");
+    await expect(provenance).toContainText("screenshots/reaction.png");
+    await expect(provenance).toContainText("<img src=x onerror=alert(1)> Draw ΔH");
+    await expect(provenance.locator("img")).toHaveCount(0);
+    await expect(provenance.getByRole("link", { name: /Uploaded diagram|Local screenshot|Original prompt/ })).toHaveCount(0);
+    const links = await provenance.locator("a").evaluateAll((as) => as.map((a) => a.getAttribute("href")));
+    expect(links.length).toBeGreaterThan(0);
+    expect(links.every((url) => /^https?:\/\//.test(url))).toBe(true);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    await page.screenshot({ path: `${evidence}/${name}-provenance-fixture.png`, fullPage: true });
+  });
+
 }

@@ -1,35 +1,25 @@
 #!/usr/bin/env python3
 import json
 import re
-from datetime import date
 from pathlib import Path
 from collections import Counter
-from jsonschema import Draft202012Validator
-from atlas_core import ROOT, TYPES, RELATIONS, inputs, generate_relations, build_view, read
+from atlas_core import ROOT, TYPES, RELATIONS, inputs, generate_relations, build_view, read, validate_shapes, ID_PREFIX
 
 
 def validate(records, aliases, migration, crosswalks):
+    validate_shapes(records)
     errors=[]
     def require(ok,message):
         if not ok:errors.append(message)
     ids=[r.get('id') for r in records];by_id={r.get('id'):r for r in records}
     require(len(ids)==len(set(ids)),'Duplicate canonical ID')
-    prefix={'Concept':'concept','Example':'ex','Resource':'resource','Tool':'tool','SubjectTopic':'topic','Intent':'intent','Collection':'collection','Source':'source'}
-    schema=json.loads((ROOT/'schemas/core.schema.json').read_text())
+    prefix=ID_PREFIX
     for r in records:
         id=r.get('id','');type=r.get('type')
-        for e in Draft202012Validator(schema).iter_errors(r):errors.append(f'{id}: {e.message}')
         require(type in TYPES,f'{id}: invalid content/overlay type')
         require(bool(re.fullmatch(prefix.get(type,'INVALID')+r':[a-z0-9-]+',id)),f'{id}: invalid ID prefix')
         require((ROOT/r.get('canonical_path','MISSING')).is_file(),f'{id}: missing authoritative path')
         for sid in r.get('source_refs',[]):require(by_id.get(sid,{}).get('type')=='Source',f'{id}: invalid Source {sid}')
-        if type=='Source':
-            require(bool(r.get('publisher')) and bool(r.get('check_scope')),f'{id}: missing Source scope/authority')
-            require(isinstance(r.get('url'),str) and r['url'].startswith(('https://','http://')),f'{id}: invalid source locator')
-            for d in ['captured_at','checked_at']:
-                if r.get(d):
-                    try:date.fromisoformat(r[d])
-                    except (ValueError,TypeError):errors.append(f'{id}: invalid date')
         if type=='Tool':
             require(r.get('subtype') in set(read('knowledge/tools/adapter.json')['subtype_map'].values()),f'{id}: unknown tool subtype')
             require(bool(r.get('use_when')) and bool(r.get('avoid_when')) and bool(r.get('capabilities')),f'{id}: incomplete capability evidence')

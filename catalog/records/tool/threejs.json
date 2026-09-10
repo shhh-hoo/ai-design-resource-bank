@@ -1,0 +1,155 @@
+{
+  "record": {
+    "agent_notes": "Check official examples before inventing shader/camera/loader patterns.",
+    "avoid_when": "A domain-specific viewer such as Mol* or Cesium already solves the hard semantics.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "webgl",
+      "webgpu",
+      "geometry",
+      "materials",
+      "shaders",
+      "cameras",
+      "postprocessing",
+      "animation"
+    ],
+    "docs": "https://threejs.org/docs/",
+    "domains": [
+      "3d",
+      "scientific-visualization",
+      "creative-coding"
+    ],
+    "ecosystem": [
+      "JavaScript",
+      "WebGL",
+      "WebGPU"
+    ],
+    "examples": "https://threejs.org/examples/",
+    "homepage": "https://threejs.org/",
+    "id": "tool:threejs",
+    "legacy_kind": "rendering-engine",
+    "license": "MIT",
+    "source_refs": [
+      "source:tool-threejs"
+    ],
+    "subtype": "renderer",
+    "summary": "Custom 3D scenes, shaders, spatial visualizations, WebGL/WebGPU rendering, or nontrivial camera work is needed.",
+    "tags": [
+      "3d",
+      "webgl",
+      "webgpu",
+      "shaders"
+    ],
+    "tier": "core",
+    "title": "Three.js",
+    "type": "Tool",
+    "use_when": "Custom 3D scenes, shaders, spatial visualizations, WebGL/WebGPU rendering, or nontrivial camera work is needed."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:anchored-callout",
+      "target": "tool:threejs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:camera-dolly",
+      "target": "tool:threejs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:depth-parallax",
+      "target": "tool:threejs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:explode-assemble",
+      "target": "tool:threejs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-3d-spatial",
+      "target": "tool:threejs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-composition-layer",
+      "target": "tool:threejs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-dynamic-system",
+      "target": "tool:threejs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-field-flow",
+      "target": "tool:threejs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-micro-macro-bridge",
+      "target": "tool:threejs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-structure-anatomy",
+      "target": "tool:threejs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-vector-field",
+      "target": "tool:threejs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:noise-threshold-wipe",
+      "target": "tool:threejs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:orbital-overlap",
+      "target": "tool:threejs",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-threejs",
+      "locator": "https://threejs.org/docs/",
+      "locator_type": "url",
+      "publisher": "Three.js",
+      "title": "Three.js official documentation",
+      "type": "Source"
+    }
+  ]
+}

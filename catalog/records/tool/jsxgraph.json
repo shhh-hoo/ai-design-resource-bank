@@ -1,0 +1,104 @@
+{
+  "record": {
+    "agent_notes": "Prefer over generic SVG when geometric dependency rules are the hard part.",
+    "avoid_when": "Pure decorative animation or generic app UI.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "function-plot",
+      "dynamic-geometry",
+      "calculus",
+      "statistics",
+      "interaction"
+    ],
+    "docs": "https://jsxgraph.org/docs/",
+    "domains": [
+      "math",
+      "geometry",
+      "education"
+    ],
+    "ecosystem": [
+      "JavaScript",
+      "SVG",
+      "Canvas"
+    ],
+    "examples": "https://jsxgraph.org/showcase/",
+    "homepage": "https://jsxgraph.org/",
+    "id": "tool:jsxgraph",
+    "legacy_kind": "library",
+    "license": "LGPL-3.0-or-later OR MIT",
+    "rights_note": "Verify the license option and distribution obligations for the chosen version.",
+    "source_refs": [
+      "source:tool-jsxgraph"
+    ],
+    "subtype": "library",
+    "summary": "Dynamic geometry, constructions, loci, functions, sliders, and mathematically constrained interactions.",
+    "tags": [
+      "math",
+      "geometry",
+      "plotting",
+      "education"
+    ],
+    "tier": "core",
+    "title": "JSXGraph",
+    "type": "Tool",
+    "use_when": "Dynamic geometry, constructions, loci, functions, sliders, and mathematically constrained interactions."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:area-under-curve",
+      "target": "tool:jsxgraph",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-dynamic-geometry",
+      "target": "tool:jsxgraph",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-functional-graph",
+      "target": "tool:jsxgraph",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-optimization-tradeoff",
+      "target": "tool:jsxgraph",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:movable-tangent",
+      "target": "tool:jsxgraph",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:vector-decomposition",
+      "target": "tool:jsxgraph",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-jsxgraph",
+      "locator": "https://jsxgraph.org/docs/",
+      "locator_type": "url",
+      "publisher": "JSXGraph",
+      "title": "JSXGraph official documentation",
+      "type": "Source"
+    }
+  ]
+}

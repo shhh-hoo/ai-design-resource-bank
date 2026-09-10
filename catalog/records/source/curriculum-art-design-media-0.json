@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "registries/curriculum-research-sources.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:curriculum-art-design-media-0",
+    "locator": "https://apstudents.collegeboard.org/courses/ap-art-history",
+    "locator_type": "url",
+    "publisher": "ap",
+    "title": "AP Art History",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

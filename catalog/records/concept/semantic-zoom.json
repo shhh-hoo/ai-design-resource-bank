@@ -1,0 +1,50 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-mechanisms.yaml",
+    "evidence": "seed",
+    "id": "concept:semantic-zoom",
+    "implementation_note": "Define semantic thresholds explicitly so added detail corresponds to a real information level.",
+    "primitives": [
+      "zoom-level",
+      "label-threshold",
+      "detail-threshold",
+      "aggregation"
+    ],
+    "source_refs": [
+      "source:legacy-mechanisms"
+    ],
+    "subtypes": [
+      "mechanism"
+    ],
+    "summary": "Reveal more meaning as the user zooms in instead of merely scaling pixels.",
+    "title": "Semantic zoom",
+    "tool_ids": [
+      "tool:antv-g6"
+    ],
+    "type": "Concept",
+    "use_when": "Large graphs, maps, concept spaces, timelines, or dense spatial canvases."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:semantic-zoom",
+      "target": "tool:antv-g6",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-mechanisms.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:legacy-mechanisms",
+      "locator": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/main/registries/frontend-mechanisms.yaml",
+      "locator_type": "url",
+      "publisher": "AIDRB",
+      "title": "Legacy mechanism registry",
+      "type": "Source"
+    }
+  ]
+}

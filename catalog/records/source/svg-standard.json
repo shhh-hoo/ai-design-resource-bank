@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "knowledge/provenance/sources.json",
+    "captured_at": "2026-09-10",
+    "check_scope": "Native platform rendering capability; not chemical validation.",
+    "checked_at": "2026-09-10",
+    "id": "source:svg-standard",
+    "locator": "https://www.w3.org/TR/SVG2/",
+    "locator_type": "url",
+    "publisher": "W3C",
+    "title": "SVG 2",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

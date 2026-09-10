@@ -39,7 +39,7 @@ See [retrieval.json](retrieval.json) for actual outputs. `query 'reaction profil
 
 Actual Chrome browser automation at **1440×1000** and **390×844**, with screenshots visually inspected. Both complete flows pass: all four views, all 12 topic inventories, all six live control changes, GAP detail, collapsed AI Build/provenance, no document-wide horizontal overflow, and Web commit → CLI lock → full package fetch. Browser console/page errors and failed HTTP responses: **0**.
 
-Final cold-load measurement, uncompressed local static server: **83,107 response-body bytes / 84,607 browser-reported transferred bytes, 5 requests**. Both viewport runs agree. Loaded: root HTML, atlas.css, atlas.js, visuals.js and web-index.json (43,308 bytes). No AI index, canonical resolve records, relation graph, SQLite, Resource artifacts or old board scripts at startup. Full browser request evidence: [desktop-browser.json](desktop-browser.json), [mobile-browser.json](mobile-browser.json).
+Final cold-load measurement, uncompressed local static server: **87,374 response-body bytes / 88,874 browser-reported transferred bytes, 5 requests**. Both viewport runs agree. Loaded: root HTML, atlas.css, atlas.js, visuals.js and web-index.json (46,868 bytes). No AI index, canonical resolve records, relation graph, SQLite, Resource artifacts or old board scripts at startup. Full browser request evidence: [desktop-browser.json](desktop-browser.json), [mobile-browser.json](mobile-browser.json).
 
 Live preview runtime is lazy after opening an Example. Machine deep fetch of full Resource Packages requires a valid lock; this is workflow integrity, not a web access-control mechanism. Public catalog files are directly addressable.
 
@@ -53,7 +53,7 @@ Reviewed screenshots:
 
 ## Local checks and CI contract
 
-[local-validation.txt](local-validation.txt): canonical/schema/ID/source/crosswalk/topic validation, byte-reproducible generated text, Resource schema, all legacy **data** validators, 15 Python tests, 4 model tests, JS syntax and static publish artifact staging passed. Two full browser flows passed. Tests verify energy endpoints/maxima, Boyle invariance, first-order half-life, Hess closure, Gibbs crossover and dilution/water-equilibrium titration behavior.
+[local-validation.txt](local-validation.txt): canonical/schema/ID/source/crosswalk/topic validation, byte-reproducible generated text, Resource schema, all legacy **data** validators, 20 Python tests, 4 model tests, JS syntax and static publish artifact staging passed. Two full browser flows and two local-provenance browser regressions passed. Tests verify energy endpoints/maxima, Boyle invariance, first-order half-life, Hess closure, Gibbs crossover and dilution/water-equilibrium titration behavior.
 
 Required CI now validates this architecture and runs fresh Chromium browser tests. It uploads screenshots, request measurements and selection artifacts. Old decision-board UI/route/performance validators are excluded from required workflows. Pages deploys the Atlas artifact only when main changes; this PR is not merged. Exact PR CI status is reported on GitHub and in the delivery response.
 
@@ -67,3 +67,17 @@ Required CI now validates this architecture and runs fresh Chromium browser test
 - Startup numbers are cold local uncompressed bytes, not deployed CDN transfer/compression/latency. Production Pages deployment has not been exercised because the PR remains unmerged.
 - Browser selection is tab-local; download before reloading. Locks detect contract/catalog changes but are not authentication signatures.
 - Legacy demos are preserved as migration evidence and are not revalidated as the new Human experience. Existing upstream tool docs, licenses and every external link were not all freshly verified.
+
+## PR #12 focused contract corrections (2026-09-11)
+
+Review-fix starting HEAD: `9506274daec7c3dcfa7c9ecda2ecb5f7461d011c`; local worktree and remote were verified clean and identical. All changes remain in the same PR, without merge or auto-merge.
+
+- Stable IDs now map through `record_path(id)` to filesystem-safe catalog subdirectories. All 332 records and every legacy alias resolve. Web/AI/index consumers follow generated `resolve_path` values. Windows reserved device names, path traversal and invalid namespaces have regression coverage. Git LF text normalization, UTF-8 reads and POSIX serialized paths keep catalog fingerprints portable.
+- Canonical Sources retain `locator_type` + `locator`; all eight legacy manifest source types are exercised by real temporary Resource Packages through manifest validation → adapter → Core validation → build/drift check → stable-ID resolve. Unicode filenames, Windows screenshot paths, local repository paths, DOI and prompt text survive unchanged. These fixtures do not add production resources or Chemistry coverage. Captured dates and author/notes are retained; imported provenance stays unchecked. Old `Source.url` is explicitly rejected. The diagram-study Source now points to the immutable starting commit.
+- Core required fields have concrete types and structured shapes, with format-checked dates and explicit nullability. Schema validation happens before semantic validation and generation. Negative cases cover malformed interaction/state containers and values, tool choices and evidence, ID/constraint arrays, artifact records, topic fields, numeric dates and invalid calendar dates. Resource structured fields are checked against the manifest schema to prevent contract drift.
+
+Desktop/mobile screenshots were captured again and visually inspected, including Atlas, Example detail and expanded local provenance. [Desktop provenance fixture](desktop-provenance-fixture.png) and [mobile provenance fixture](mobile-provenance-fixture.png) show filenames and prompt text as escaped text, alongside working HTTP(S) source links. Mobile expanded provenance has no horizontal overflow. Original four primary views, collapsed initial details, six live controls and exact-ID selection workflow still pass. Console/page errors and failed responses remain zero. The 4,267-byte startup body increase is the compact per-Example resolve pointers plus source-rendering code/styles; no deep metadata is loaded initially.
+
+Local checks: 20 Python tests, 4 model tests, 4 browser tests, all retained data validators, generated drift checks and publish staging pass. Windows CI now independently checks actual checkout, generation/reproducibility, all Python regressions and publish staging. Exact-HEAD CI results are recorded by GitHub after push.
+
+Retrieval evidence was regenerated: `reaction profile` still ranks `ex:chemistry-reaction-profile` first and resolves Method `concept:reaction-coordinate`, observed Tool `tool:native-svg`, and Resource `resource:reaction-profile`; commit/lock/deep fetch succeeds. Counts remain 332 records / 207 AI and FTS rows / 368 typed relations, 12 major Chemistry topics / 48 examples / 31 crosswalks. Broad retrieval quality benchmarking remains unperformed and is not claimed.
