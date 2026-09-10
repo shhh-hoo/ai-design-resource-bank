@@ -11,6 +11,7 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 TOOLS_PATH = ROOT / "registries" / "frontend-tools.yaml"
 GALLERIES_PATH = ROOT / "registries" / "reference-galleries.yaml"
+ILLUSTRATION_SOURCES_PATH = ROOT / "registries" / "illustration-sources.yaml"
 ID_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 
 
@@ -136,13 +137,56 @@ def main() -> int:
         if isinstance(entry, dict) and entry.get("priority") not in allowed_priorities:
             fail(errors, f"reference-galleries.galleries[{index}]: unsupported priority {entry.get('priority')!r}")
 
+    illustration_doc = load_yaml(ILLUSTRATION_SOURCES_PATH) or {}
+    if illustration_doc.get("version") != 1:
+        fail(errors, "registries/illustration-sources.yaml: version must be 1")
+    illustration_count = validate_common_list(
+        errors,
+        illustration_doc.get("sources"),
+        label="illustration-sources.sources",
+        required=(
+            "id",
+            "name",
+            "url",
+            "source_type",
+            "license",
+            "reuse_policy",
+            "useful_for",
+            "borrow",
+            "avoid",
+            "notes",
+        ),
+        list_fields=("useful_for", "borrow", "avoid"),
+        url_fields=("url",),
+    )
+
+    allowed_reuse_policies = {
+        "ideas-only",
+        "code-with-attribution",
+        "mechanism-and-code-with-attribution",
+    }
+    for index, entry in enumerate(
+        illustration_doc.get("sources", []) if isinstance(illustration_doc.get("sources"), list) else []
+    ):
+        if not isinstance(entry, dict):
+            continue
+        policy = entry.get("reuse_policy")
+        if policy not in allowed_reuse_policies:
+            fail(errors, f"illustration-sources.sources[{index}]: unsupported reuse_policy {policy!r}")
+        if entry.get("license") == "no-license-detected" and policy != "ideas-only":
+            fail(errors, f"illustration-sources.sources[{index}]: no-license-detected sources must use ideas-only")
+
     if errors:
         print("Registry validation failed:\n", file=sys.stderr)
         for error in errors:
             print(f"- {error}", file=sys.stderr)
         return 1
 
-    print(f"Registry validation passed: {tool_count} frontend tools, {gallery_count} reference galleries.")
+    print(
+        "Registry validation passed: "
+        f"{tool_count} frontend tools, {gallery_count} reference galleries, "
+        f"{illustration_count} illustration research sources."
+    )
     return 0
 
 

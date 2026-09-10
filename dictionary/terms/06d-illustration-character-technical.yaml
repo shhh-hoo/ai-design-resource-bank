@@ -1,0 +1,132 @@
+version: '0.1'
+purpose: Illustration vocabulary for character production and explanatory technical drawing.
+terms:
+- id: line-of-action
+  term: {en: Line of Action, zh: 动作线 / 动势线}
+  aliases: [action line]
+  naming: established
+  entry_status: seed
+  domains: [animation, character-design, drawing, illustration]
+  kinds: [composition, motion, drawing-principle]
+  definition: {zh: 用于概括角色或姿态整体动势的一条主导方向线，帮助组织脊柱、重心和动作张力，而不是实际出现在成稿中的轮廓。}
+  recognition:
+  - 角色整体姿态可被一条弧线、斜线或 S/C 形主方向概括
+  - 四肢和躯干围绕这条主导动势组织，而非各自僵硬独立
+  looks_like: [先画一条弯曲大线就能感觉角色往哪里冲、弯或倒，动作气势先于身体细节被决定]
+  not_to_confuse_with: [gesture drawing, motion path, contour line]
+  examples:
+  - {title: animation gesture and pose-design studies, annotation: 动画训练常先用主动作线确认姿态方向与力度，再挂接躯干和四肢。, asset_policy: text-reference-only}
+  related: [gesture-drawing, blocking, anticipation]
+  preview: {type: action-line, note: Original mnemonic showing pose organized around one dominant directional curve.}
+  resource_refs: []
+- id: character-turnaround
+  term: {en: Character Turnaround, zh: 角色转面图}
+  aliases: [turnaround sheet, character rotation]
+  naming: established
+  entry_status: seed
+  domains: [character-design, animation, game, illustration]
+  kinds: [production-reference, character-design]
+  definition: {zh: 以统一尺度和中性姿态从多个标准角度展示同一角色，用于确认比例、体积和设计细节在旋转时保持一致。}
+  recognition:
+  - 同一角色按正面、侧面、背面和四分之三等角度排列
+  - 关键高度与比例通过水平基准线保持一致
+  looks_like: [同一个角色站着不动，从正面一路转到背面给你看，像角色的 360 度设计说明书]
+  not_to_confuse_with: [model sheet, expression sheet, sprite sheet]
+  examples:
+  - title: Character Turnarounds — Understanding Form in 2D Space
+    annotation: 多角度统一尺度的转面图用于解决比例、体积和设计细节在不同视角下保持一致。
+    url: https://binus.ac.id/bandung/dkv/2025/11/04/character-turnarounds-understanding-form-in-2d-space/
+    asset_policy: linked-external
+  related: [model-sheet, expression-sheet, shape-language]
+  preview: {type: turnaround, note: Original mnemonic showing one design rotated through standardized views.}
+  resource_refs: []
+- id: model-sheet
+  term: {en: Model Sheet, zh: 角色设定表 / 标准设定表}
+  aliases: [character model sheet, character sheet]
+  naming: established
+  entry_status: seed
+  domains: [animation, character-design, game, comics]
+  kinds: [production-reference, character-design]
+  definition: {zh: 为制作团队统一角色外观而建立的标准参考页，可组合比例、转面、关键姿态、手部、服装、道具和设计规则。}
+  recognition:
+  - 同一页聚合多个与角色一致性有关的标准视图或细节
+  - 目的不是讲故事，而是规定后续制作怎样保持 on-model
+  looks_like: [像给所有画师看的角色说明书，比例、姿势和细节集中在一张生产参考页]
+  not_to_confuse_with: [character turnaround, expression sheet, concept art]
+  examples:
+  - {title: studio animation model sheets, annotation: 传统动画制作通过标准设定表让不同动画师在不同镜头中维持统一角色设计。, asset_policy: text-reference-only}
+  related: [character-turnaround, expression-sheet, shape-language]
+  preview: {type: model-sheet, note: Original mnemonic combining standardized character views and detail callouts.}
+  resource_refs: []
+- id: expression-sheet
+  term: {en: Expression Sheet, zh: 角色表情设定表}
+  aliases: [facial expression sheet, expression chart]
+  naming: established
+  entry_status: seed
+  domains: [character-design, animation, comics, illustration]
+  kinds: [production-reference, character-design, acting]
+  definition: {zh: 用同一角色展示一组关键情绪和面部变化，定义脸部在不同表演状态下如何变化且仍保持角色一致性。}
+  recognition:
+  - 同一角色头部或半身重复出现，表情明显不同
+  - 眼、眉、嘴、脸型变化有范围，但关键识别特征保持稳定
+  looks_like: [同一张脸旁边排着开心、愤怒、害怕、怀疑等很多表情，重点是这个角色怎么表演]
+  not_to_confuse_with: [character turnaround, model sheet, emoji sheet]
+  examples:
+  - {title: animation character expression sheets, annotation: 一组极端和中间表情用于检验角色在不同情绪下是否仍保持 on-model。, asset_policy: text-reference-only}
+  related: [model-sheet, character-turnaround, squash-and-stretch]
+  preview: {type: expressions, note: Original mnemonic comparing multiple facial states of one character.}
+  resource_refs: []
+- id: shape-language
+  term: {en: Shape Language, zh: 形状语言}
+  aliases: [shape design language]
+  naming: established
+  entry_status: seed
+  domains: [character-design, illustration, animation, game]
+  kinds: [design-principle, shape-language, character-design]
+  definition: {zh: 通过圆、方、三角、尖锐或柔软等基础形状及其比例反复组织角色与物件，让性格、功能、阵营或情绪在细节之前先被读到。}
+  recognition:
+  - 某类基础几何倾向在角色轮廓和内部结构中持续重复
+  - 不同角色可通过圆润、方正、尖锐等形态倾向形成清晰对比
+  looks_like: [一个角色从头到脚都偏圆，另一个全是尖角，看轮廓就感觉性格不同]
+  not_to_confuse_with: [silhouette, geometric style, visual motif]
+  examples:
+  - {title: animation and game character shape-language studies, annotation: 角色设计常用圆、方、三角等形状倾向在草图阶段快速建立性格与功能差异。, asset_policy: text-reference-only}
+  related: [silhouette, character-turnaround, art-nouveau]
+  preview: {type: shape-language, note: "Original mnemonic comparing round, square, and triangular character masses."}
+  resource_refs: []
+- id: cutaway-illustration
+  term: {en: Cutaway Illustration, zh: 剖切插图}
+  aliases: [cutaway drawing]
+  naming: established
+  entry_status: seed
+  domains: [technical-illustration, illustration, architecture, product-design]
+  kinds: [technical-illustration, explanatory, spatial]
+  definition: {zh: 假想移除物体或建筑的一部分外壳，让内部结构与外部整体同时可见，以解释空间关系和组成。}
+  recognition:
+  - 外壳局部像被切走，内部结构因此暴露
+  - 仍保留足够外部形体帮助理解内部位于整体的什么位置
+  looks_like: [像把房子或机器的一块墙切掉，让你直接看见里面]
+  not_to_confuse_with: [cross-section, exploded view, x-ray view]
+  examples:
+  - {title: David Macaulay — architectural cutaway illustrations, annotation: 建筑图解通过移除墙体或结构片段同时呈现整体与内部空间关系。, asset_policy: text-reference-only}
+  related: [exploded-view, trompe-loeil]
+  preview: {type: cutaway, note: Original mnemonic showing an outer shell partially removed to expose interior structure.}
+  resource_refs: []
+- id: exploded-view
+  term: {en: Exploded View, zh: 爆炸图 / 分解视图}
+  aliases: [exploded diagram, exploded perspective]
+  naming: established
+  entry_status: seed
+  domains: [technical-illustration, product-design, engineering, illustration]
+  kinds: [technical-illustration, explanatory, spatial]
+  definition: {zh: 沿装配关系把部件有秩序地拉开，同时保持相对方向和对应位置，让观众看见组成、顺序与连接关系。}
+  recognition:
+  - 零件彼此分离但沿装配轴或空间逻辑有序排列
+  - 可以从分开的状态推回它们如何组合成完整对象
+  looks_like: [一个产品像在空中拆开，每个零件悬在本来位置附近，但不是随便散架]
+  not_to_confuse_with: [cutaway illustration, parts list, assembly animation]
+  examples:
+  - {title: technical manuals and product exploded diagrams, annotation: 机械、家具与产品说明常把组件沿装配方向拉开，以说明层级与安装关系。, asset_policy: text-reference-only}
+  related: [cutaway-illustration, direct-manipulation]
+  preview: {type: exploded, note: Original mnemonic separating components along a shared assembly axis.}
+  resource_refs: []

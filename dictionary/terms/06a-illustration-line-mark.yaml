@@ -1,0 +1,114 @@
+version: '0.1'
+purpose: Illustration vocabulary for line, gesture, and value marks.
+terms:
+- id: contour-line
+  term: {en: Contour Line, zh: 轮廓线}
+  aliases: [contour drawing]
+  naming: established
+  entry_status: seed
+  domains: [drawing, illustration, art]
+  kinds: [line-technique, drawing-technique]
+  definition: {zh: 沿物体可见边缘或关键形体转折描绘线条，用线界定形状、边界与体积，而不依赖完整明暗塑造。}
+  recognition:
+  - 线主要沿对象外缘或关键内部转折运行
+  - 即使几乎没有阴影，形体仍能靠边界线成立
+  looks_like: [像用一根清楚的线把物体边缘描出来，没有太多明暗但轮廓一眼能读懂]
+  not_to_confuse_with: [outline icon, continuous-line drawing, cross-contour]
+  examples:
+  - {title: Henri Matisse — line drawings, annotation: 极少量线条仍能通过轮廓和关键内部线索建立人物与物体形态。, asset_policy: text-reference-only}
+  related: [continuous-line, ligne-claire, silhouette]
+  preview: {type: contour, note: Original mnemonic showing form defined primarily by contour.}
+  resource_refs: []
+- id: continuous-line
+  term: {en: Continuous-Line Drawing, zh: 连续线描}
+  aliases: [one-line drawing, single-line drawing]
+  naming: established
+  entry_status: seed
+  domains: [drawing, illustration, graphic-design]
+  kinds: [line-technique, drawing-technique]
+  definition: {zh: 尽量让笔尖持续接触纸面，以一条连续路径构成主体；线的行进顺序本身成为画面结构。}
+  recognition:
+  - 大部分形体能追踪为一条不断开的路径
+  - 重复经过、回折和跨越常被保留为画面特征
+  looks_like: [像一笔从头画到尾，中途几乎没有抬笔，线会绕回来穿过自己]
+  not_to_confuse_with: [contour line, monoline icon, scribble]
+  examples:
+  - {title: Pablo Picasso — single-line animal drawings, annotation: 高度压缩的一条连续线概括动物形态，是理解 one-line drawing 的常见入口。, asset_policy: text-reference-only}
+  related: [contour-line, gesture-drawing]
+  preview: {type: continuous-line, note: Original mnemonic emphasizing one uninterrupted path.}
+  resource_refs: []
+- id: gesture-drawing
+  term: {en: Gesture Drawing, zh: 动态速写 / 姿态速写}
+  aliases: [gestural drawing, croquis]
+  naming: established
+  entry_status: seed
+  domains: [drawing, animation, illustration, character-design]
+  kinds: [drawing-technique, motion, study]
+  definition: {zh: 用快速、概括性的线和形抓取姿态、重心、方向与动作势能，优先记录整体运动而不是局部细节。}
+  recognition:
+  - 线条快速概括，局部可能不闭合
+  - 重心、脊柱方向和四肢动势比五官或服装细节更重要
+  looks_like: [像几十秒内抓住一个人的动作，不追求画完整，但姿势和重量感很清楚]
+  not_to_confuse_with: [contour drawing, finished sketch, line of action]
+  examples:
+  - {title: life-drawing gesture studies, annotation: 短时人体写生通常用几十秒到数分钟捕捉整体姿态和重心，而非完成细节。, asset_policy: text-reference-only}
+  related: [line-of-action, continuous-line, blocking]
+  preview: {type: gesture, note: "Original mnemonic focusing on pose, weight, and directional flow."}
+  resource_refs: []
+- id: hatching
+  term: {en: Hatching, zh: 排线}
+  aliases: [parallel hatching]
+  naming: established
+  entry_status: seed
+  domains: [drawing, illustration, printmaking]
+  kinds: [mark-making, shading, texture]
+  definition: {zh: 用一组大致平行的线条建立阴影、明度或表面方向；密度、粗细和间距共同控制暗度。}
+  recognition:
+  - 阴影由成组近似平行线构成
+  - 线越密通常读起来越暗，方向可顺着形体变化
+  looks_like: [不是涂黑，而是一排排线把阴影铺出来]
+  not_to_confuse_with: [cross-hatching, scribble shading, stippling]
+  examples:
+  - {title: Albrecht Dürer — engraved prints, annotation: 版画中大量使用方向明确的排线塑造体积、材质与光影。, asset_policy: text-reference-only}
+  related: [cross-hatching, stippling, linocut]
+  preview: {type: hatching, note: Original mnemonic showing value built from parallel marks.}
+  resource_refs: []
+- id: cross-hatching
+  term: {en: Cross-Hatching, zh: 交叉排线}
+  aliases: [crosshatching]
+  naming: established
+  entry_status: seed
+  domains: [drawing, illustration, printmaking]
+  kinds: [mark-making, shading, texture]
+  definition: {zh: 在已有排线之上叠加一个或多个不同方向的线组，用交叉密度进一步加深明度并塑造体积。}
+  recognition:
+  - 至少两组不同方向的排线相互交叉
+  - 较暗区域通常拥有更多层或更密的交叉网
+  looks_like: [两层甚至多层斜线交叉成网来压暗]
+  not_to_confuse_with: [hatching, grid pattern, scribble shading]
+  examples:
+  - {title: Rembrandt — etchings, annotation: 蚀刻作品常通过多方向交叉线组把人物、布料和空间压出不同明度。, asset_policy: text-reference-only}
+  related: [hatching, stippling]
+  preview: {type: cross-hatching, note: Original mnemonic showing layered directional line fields.}
+  resource_refs: []
+- id: stippling
+  term: {en: Stippling, zh: 点描排点}
+  aliases: [dot shading]
+  naming: established
+  entry_status: seed
+  domains: [drawing, illustration, printmaking]
+  kinds: [mark-making, shading, texture]
+  definition: {zh: 用大量离散点的密度、大小或聚散关系建立明暗与纹理，而不是使用连续线条。}
+  recognition:
+  - 明暗区域由独立小点而非连续线构成
+  - 暗部点更密，亮部留出更多空白
+  looks_like: [靠一颗颗小点慢慢把阴影点出来，远看像明暗近看全是点]
+  not_to_confuse_with: [halftone, pointillism, hatching]
+  examples:
+  - title: John William Hill — The Palisades
+    annotation: 作品结合细密 hatching 与 stippling，能观察到点和细线如何共同建立细节与调子。
+    url: https://www.metmuseum.org/art/collection/search/12953
+    asset_policy: linked-external
+  related: [hatching, cross-hatching, halftone]
+  preview: {type: stippling, note: Original mnemonic showing density-based dot shading.}
+  resource_refs: []

@@ -1,0 +1,310 @@
+version: '0.1'
+terms:
+- id: hit-stop
+  term:
+    en: Hit Stop
+    zh: 打击停顿
+  aliases:
+  - hitstop
+  - hit freeze
+  naming: established
+  entry_status: seed
+  domains:
+  - game
+  - animation
+  kinds:
+  - game-feel
+  - timing
+  definition:
+    zh: 在攻击命中瞬间短暂停止或显著减慢相关运动，用时间上的“卡顿”强化冲击与接触感。
+  recognition:
+  - 停顿精确发生在命中帧附近
+  - 持续时间通常很短
+  - 恢复运动后打击显得更有重量
+  looks_like:
+  - 拳头打中那一瞬间画面像卡住几帧
+  - 不是掉帧，而是故意让命中多停一下
+  not_to_confuse_with:
+  - slow-motion
+  - frame-drop
+  examples:
+  - title: fighting-game impact timing
+    annotation: 格斗和动作游戏常在命中瞬间冻结攻击者与受击者若干帧，制造重量和确认感。
+    asset_policy: text-reference-only
+  related:
+  - screen-shake
+  - anticipation
+  preview:
+    type: hit-stop
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: screen-shake
+  term:
+    en: Screen Shake
+    zh: 屏幕震动
+  aliases:
+  - camera shake
+  naming: established
+  entry_status: seed
+  domains:
+  - game
+  - cinema
+  - animation
+  kinds:
+  - game-feel
+  - camera
+  - feedback
+  definition:
+    zh: 在冲击、爆炸、移动或受击时短暂扰动相机位置或旋转，把事件强度传递到整个画面。
+  recognition:
+  - 震动与特定事件同步
+  - 相机围绕原位置产生短暂偏移
+  - 振幅和衰减决定事件的重量感
+  looks_like:
+  - 爆炸时整个画面跟着抖一下
+  - 不是对象自己动，而是相机把冲击传给整个屏幕
+  not_to_confuse_with:
+  - handheld-camera
+  - motion-blur
+  examples:
+  - title: impact camera shake in action games
+    annotation: 爆炸、重击或落地时让相机短暂偏移并快速衰减，是常见 game-feel 手段。
+    asset_policy: text-reference-only
+  related:
+  - hit-stop
+  preview:
+    type: shake
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: coyote-time
+  term:
+    en: Coyote Time
+    zh: 土狼时间 / 宽容跳跃窗口
+  aliases:
+  - jump grace period
+  naming: established
+  entry_status: seed
+  domains:
+  - game
+  - hci
+  kinds:
+  - gameplay-mechanic
+  - input-forgiveness
+  definition:
+    zh: 角色已经离开平台边缘后的极短时间内仍允许玩家起跳，用输入宽容补偿人类时机误差。
+  recognition:
+  - 视觉上已离地但跳跃输入仍可成功
+  - 宽容窗口通常只有几十到一百多毫秒
+  - 机制主要改善操作感而不直接展示给玩家
+  looks_like:
+  - 明明已经跑出平台一点点，按跳还是能跳起来
+  - 游戏偷偷替你把“差一点按晚了”算成成功
+  not_to_confuse_with:
+  - input-buffering
+  - auto-jump
+  examples:
+  - title: platformer jump grace windows
+    annotation: 现代平台游戏常保留离地后极短跳跃资格，使视觉判断与按钮时机更贴合玩家感知。
+    asset_policy: text-reference-only
+  related:
+  - direct-manipulation
+  - affordance
+  preview:
+    type: coyote
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: direct-manipulation
+  term:
+    en: Direct Manipulation
+    zh: 直接操纵
+  aliases:
+  - direct manipulation interface
+  naming: established
+  entry_status: seed
+  domains:
+  - hci
+  - ui
+  - game
+  kinds:
+  - hci-principle
+  - interaction
+  definition:
+    zh: 让用户直接操作可见对象，并获得连续、快速、可逆的反馈，而不是通过抽象命令间接控制它。
+  recognition:
+  - 操作对象持续可见
+  - 拖动、缩放等输入直接改变对象
+  - 反馈及时，动作通常可增量调整或撤销
+  looks_like:
+  - 想移动一个东西就直接抓住它拖，而不是输入坐标
+  - 你的手势和屏幕里的对象像连在一起
+  not_to_confuse_with:
+  - command-line-interface
+  - indirect-manipulation
+  examples:
+  - title: dragging files or graphical objects with a pointer
+    annotation: 直接抓取可见对象、连续移动并立即看到结果，是 direct manipulation 的典型形态。
+    asset_policy: text-reference-only
+  related:
+  - affordance
+  - radial-menu
+  - coyote-time
+  preview:
+    type: drag
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: affordance
+  term:
+    en: Affordance
+    zh: 可供性
+  aliases:
+  - perceived affordance
+  naming: established
+  entry_status: seed
+  domains:
+  - hci
+  - product-design
+  - industrial-design
+  - architecture
+  kinds:
+  - hci-principle
+  - perception
+  definition:
+    zh: 环境或对象与行动者能力之间所提供的行动可能性；界面设计中常关注用户能否感知“这里可以怎么操作”。
+  recognition:
+  - 形状、位置或反馈暗示可执行动作
+  - 用户不必先阅读说明也可能推断用途
+  - 可供性本身与“看起来可操作”的 signifier 需要区分
+  looks_like:
+  - 把手的形状让你自然想去拉
+  - 一个东西看起来就像能按、能拖或能抓
+  not_to_confuse_with:
+  - signifier
+  - discoverability
+  examples:
+  - title: door handle versus push plate
+    annotation: 拉手与推板通过不同结构支持并暗示不同身体动作，是讨论 affordance 的常用例子。
+    asset_policy: text-reference-only
+  related:
+  - direct-manipulation
+  - environmental-guidance
+  preview:
+    type: affordance
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: diegetic-ui
+  term:
+    en: Diegetic UI
+    zh: 世界内界面 / 叙事内 UI
+  aliases:
+  - diegetic interface
+  - in-world UI
+  naming: established
+  entry_status: seed
+  domains:
+  - game
+  - cinema
+  - hci
+  kinds:
+  - interface
+  - narrative-device
+  definition:
+    zh: 把信息界面放进虚构世界本身，使角色理论上也能看到或使用，而不是只悬浮给玩家/观众看。
+  recognition:
+  - UI 有明确的世界内物理或叙事归属
+  - 信息显示在装备、环境或角色装置上
+  - 界面能同时承担叙事与信息功能
+  looks_like:
+  - 血量不是角落里的 HUD，而是角色装备上的灯
+  - 菜单像真的存在于游戏世界里的设备
+  not_to_confuse_with:
+  - spatial-ui
+  - non-diegetic-hud
+  examples:
+  - title: Dead Space — suit health indicator
+    annotation: 角色背部装甲上的光条把生命状态直接嵌入世界内装备，是经典 diegetic UI 案例。
+    asset_policy: text-reference-only
+  related:
+  - environmental-guidance
+  - radial-menu
+  preview:
+    type: diegetic
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: environmental-guidance
+  term:
+    en: Environmental Guidance
+    zh: 环境引导
+  aliases:
+  - environmental wayfinding
+  - level guidance
+  naming: descriptive
+  entry_status: seed
+  domains:
+  - game
+  - spatial
+  - architecture
+  kinds:
+  - level-design
+  - wayfinding
+  definition:
+    zh: 利用光线、构图、地标、颜色、路径宽度和空间关系引导行动方向，而不是主要依赖箭头或文字提示。
+  recognition:
+  - 玩家/行人自然朝某个方向移动
+  - 引导线索嵌入环境而非覆盖在界面上
+  - 视觉焦点与可通行路径相互配合
+  looks_like:
+  - 没有大箭头，但你就是会朝那扇亮着的门走
+  - 建筑和灯光悄悄告诉你“这边走”
+  not_to_confuse_with:
+  - signage
+  - waypoint-marker
+  examples:
+  - title: light and landmark guidance in level design
+    annotation: 通过高亮入口、远处地标和路径构图建立方向感，是游戏关卡中常见的无文字引导。
+    asset_policy: text-reference-only
+  related:
+  - affordance
+  - diegetic-ui
+  preview:
+    type: guidance
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: radial-menu
+  term:
+    en: Radial Menu
+    zh: 径向菜单
+  aliases:
+  - pie menu
+  - marking menu
+  naming: established
+  entry_status: seed
+  domains:
+  - hci
+  - game
+  - ui
+  kinds:
+  - component
+  - interaction
+  definition:
+    zh: 把选项围绕中心点按方向分布，使用户通过方向性移动快速选择；熟练后可减少视觉搜索。
+  recognition:
+  - 选项围绕中心呈扇形或圆周布局
+  - 方向本身承载选项位置记忆
+  - 常从指针、摇杆或触摸起点向外选择
+  looks_like:
+  - 长按后菜单像轮盘一样围着手指出现
+  - 熟练以后甚至不用看文字，往某个方向一划就能选
+  not_to_confuse_with:
+  - circular-navigation
+  - command-palette
+  examples:
+  - title: weapon wheels and marking menus
+    annotation: 游戏武器轮盘与 HCI 中的 marking menu 都利用方向记忆降低重复选择成本。
+    asset_policy: text-reference-only
+  related:
+  - direct-manipulation
+  - diegetic-ui
+  preview:
+    type: radial
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []

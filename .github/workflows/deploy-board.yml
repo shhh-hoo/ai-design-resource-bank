@@ -6,6 +6,8 @@ on:
       - main
     paths:
       - index.html
+      - dictionary.html
+      - dictionary/**
       - web/**
       - registries/**
       - catalog.yaml
@@ -52,7 +54,9 @@ jobs:
       - name: Build static board artifact
         run: |
           cp index.html _site/index.html
+          cp dictionary.html _site/dictionary.html
           cp catalog.yaml _site/catalog.yaml
+          cp -R dictionary _site/dictionary
           cp -R web _site/web
           cp -R registries _site/registries
           touch _site/.nojekyll

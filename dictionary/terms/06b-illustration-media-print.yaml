@@ -1,0 +1,120 @@
+version: '0.1'
+purpose: Illustration vocabulary for physical media, paint behavior, and print character.
+terms:
+- id: dry-brush
+  term: {en: Dry Brush, zh: 干笔 / 干刷}
+  aliases: [drybrush]
+  naming: established
+  entry_status: seed
+  domains: [painting, drawing, illustration, texture]
+  kinds: [painting-technique, mark-making, texture]
+  definition: {zh: 用含水或含颜料量较少的笔刷掠过表面，让凸起处抓住颜料、低处留白，形成断裂、粗粝的刷痕。}
+  recognition:
+  - 笔触边缘破碎，纸纹或底材在笔触中露出
+  - 纹理来自刷毛与表面摩擦，而不是均匀透明铺色
+  looks_like: [刷子像快没颜料了，扫过去会断断续续露底]
+  not_to_confuse_with: [watercolor wash, ink wash, digital grain]
+  examples:
+  - {title: Andrew Wyeth — drybrush watercolor studies, annotation: drybrush 作品常利用较干颜料和细碎笔触建立高密度表面与细节。, asset_policy: text-reference-only}
+  related: [watercolor-wash, ink-wash, paper-grain]
+  preview: {type: dry-brush, note: Original mnemonic using broken brush contact and exposed ground.}
+  resource_refs: []
+- id: ink-wash
+  term: {en: Ink Wash, zh: 水墨晕染 / 墨洗}
+  aliases: [ink wash painting, wash ink]
+  naming: established
+  entry_status: seed
+  domains: [painting, illustration, drawing]
+  kinds: [painting-technique, medium, value]
+  definition: {zh: 把墨以不同含水量铺成透明或半透明的灰阶层次，通过渗化、叠洗和留白组织体积与空间。}
+  recognition:
+  - 主要明度来自稀释墨的浓淡层次
+  - 边缘可出现渗化、晕开或水痕，留白常主动参与构图
+  looks_like: [黑墨加很多水以后从深灰晕到几乎透明，不是一根根线而是一层层墨色]
+  not_to_confuse_with: [watercolor wash, solid ink fill, dry brush]
+  examples:
+  - {title: Sesshū Tōyō — Splashed-ink Landscape, annotation: 浓淡墨、留白和边缘扩散共同组织山水空间，是理解 ink wash 的经典入口。, asset_policy: text-reference-only}
+  related: [watercolor-wash, dry-brush, chiaroscuro]
+  preview: {type: wash, note: Original mnemonic showing transparent tonal wash and edge diffusion.}
+  resource_refs: []
+- id: watercolor-wash
+  term: {en: Watercolor Wash, zh: 水彩平涂 / 渐层洗色}
+  aliases: [watercolour wash, graded wash, flat wash]
+  naming: established
+  entry_status: seed
+  domains: [painting, illustration]
+  kinds: [painting-technique, medium, color]
+  definition: {zh: 用稀释水彩在较大区域连续铺色，形成平整色层、渐变或湿画湿扩散；纸白通常透过颜料参与亮度。}
+  recognition:
+  - 色层具有明显透明性，纸白从下方发亮
+  - 大面积色彩由连续湿润铺色形成，可出现软边、回流或渐层
+  looks_like: [像把很稀的透明颜色一层铺开，白纸还透得出来]
+  not_to_confuse_with: [gouache, ink wash, airbrush gradient]
+  examples:
+  - {title: J. M. W. Turner — watercolor studies, annotation: 透明层叠、湿边和纸白共同形成发光感，是 watercolor wash 的典型学习对象。, asset_policy: text-reference-only}
+  related: [gouache, ink-wash, dry-brush]
+  preview: {type: wash, note: Original mnemonic emphasizing translucent wash over white ground.}
+  resource_refs: []
+- id: gouache
+  term: {en: Gouache, zh: 水粉 / 不透明水彩}
+  aliases: [opaque watercolor, opaque watercolour]
+  naming: established
+  entry_status: seed
+  domains: [painting, illustration, graphic-design]
+  kinds: [medium, painting-technique, color]
+  definition: {zh: 一种水性但更不透明、哑光的颜料媒介，通常比水彩覆盖力强，可形成平整色块和可叠盖笔触。}
+  recognition:
+  - 色层多呈哑光、不透明或半不透明
+  - 浅色可以覆盖较深色，色块边界通常比透明水彩更实
+  looks_like: [像水彩但更厚更哑光，白色能直接盖到深色上]
+  not_to_confuse_with: [watercolor, poster paint, acrylic gouache]
+  examples:
+  - title: MoMA — Gouache
+    annotation: MoMA 将 gouache 作为水性、哑光且不透明度较高的绘画媒介收录。
+    url: https://www.moma.org/collection/terms/gouache
+    asset_policy: linked-external
+  related: [watercolor-wash, ink-wash, impasto]
+  preview: {type: gouache, note: Original mnemonic contrasting opaque matte shapes with translucent wash.}
+  resource_refs: []
+- id: linocut
+  term: {en: Linocut, zh: 油毡版画}
+  aliases: [linoleum cut, lino cut]
+  naming: established
+  entry_status: seed
+  domains: [printmaking, illustration, graphic-design]
+  kinds: [printmaking, mark-making, texture]
+  definition: {zh: 在油毡板上刻去不印刷的部分，再给凸起表面上墨转印；常形成清晰块面、刀刻痕和强烈正负形。}
+  recognition:
+  - 大色块或黑白块面边界带有刻刀形成的节奏
+  - 被刻掉的区域不着墨，留下明显负形和手工切削痕
+  looks_like: [像把图案刻进软板里再盖印，大块颜色直接，细节像被刀一刀刀削出来]
+  not_to_confuse_with: [woodcut, screen-printing, risograph]
+  examples:
+  - title: "Claude Flight — Lino-cuts: A Hand-book of Linoleum-Cut Colour Printing"
+    annotation: 简化形、大块色面和方向性切削线展示了 linocut 的视觉优势。
+    url: https://www.metmuseum.org/art/collection/search/832699
+    asset_policy: linked-external
+  related: [risograph, hatching, silhouette]
+  preview: {type: linocut, note: Original mnemonic emphasizing carved negative marks and bold relief-print shapes.}
+  resource_refs: []
+- id: ligne-claire
+  term: {en: Ligne Claire, zh: 清线派 / 清晰线条风格}
+  aliases: [clear line, klare lijn]
+  naming: established
+  entry_status: seed
+  domains: [comics, illustration, graphic-design]
+  kinds: [style, line-technique]
+  definition: {zh: 漫画与插画中的清晰线条体系：轮廓干净稳定、阴影和交叉排线克制，常配合清楚的平涂色块与高可读细节。}
+  recognition:
+  - 轮廓线整洁连续，较少依赖阴影或密集排线
+  - 人物和背景都保持较高线性清晰度，色彩多为明确平涂
+  looks_like: [每个东西都用干净清楚的线圈出来，几乎没有脏阴影，人物漫画化但背景也很清楚]
+  not_to_confuse_with: [generic clean line art, minimalist outline, cel shading]
+  examples:
+  - title: Cité internationale de la bande dessinée — ligne claire
+    annotation: 该机构将 ligne claire 概括为追求简洁、可读性、清晰轮廓与平涂色彩的漫画传统。
+    url: https://www.citebd.org/neuvieme-art/ligne-claire
+    asset_policy: linked-external
+  related: [contour-line, swiss-style, halftone]
+  preview: {type: clear-line, note: "Original mnemonic showing clean contour, flat color, and minimal hatching."}
+  resource_refs: []

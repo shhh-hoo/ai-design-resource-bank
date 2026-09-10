@@ -1,0 +1,169 @@
+version: 1
+purpose: >-
+  Provenance-aware sources for illustration vocabulary, prompting, production, and rendering mechanisms.
+  These are research inputs, not a preset catalogue and not permission to copy source assets or prompts wholesale.
+sources:
+  - id: handraw-style
+    name: yang0/handraw-style
+    url: https://github.com/yang0/handraw-style
+    source_type: style-gallery-skill
+    license: no-license-detected
+    reuse_policy: ideas-only
+    useful_for:
+      - numbered visual browsing
+      - concise generated style names
+      - visible-trait summaries
+      - style-reference isolation
+      - model-capability-aware reference fallback
+    borrow:
+      - separate style recognition from requested subject matter
+      - index visual references so a user can browse before knowing terminology
+      - describe a look with concrete visible traits rather than vague adjectives
+      - use a reference image only when text/style-name activation is insufficient
+    avoid:
+      - treating a numbered preset list as the ontology of illustration
+      - importing author-linked presets or reference images into this bank
+      - copying prompt text or source assets when reuse rights are unclear
+      - collapsing illustration into hand-drawn character styles
+    notes: >-
+      No LICENSE file or license declaration was found during the 2026-09-10 review. Study the information architecture and
+      mechanisms, but do not redistribute its text or image library without clearer permission.
+
+  - id: hand-drawn-styles
+    name: threerocks/hand-drawn-styles
+    url: https://github.com/threerocks/hand-drawn-styles
+    source_type: style-recipe-skill
+    license: MIT
+    reuse_policy: mechanism-and-code-with-attribution
+    useful_for:
+      - style recipes
+      - deterministic prompt rendering
+      - style anchors
+      - staged correction passes
+      - validation
+    borrow:
+      - keep reusable style recipes separate from project content
+      - preserve style-only anchors separately from character/subject references
+      - use staged correction when a fragile visual property cannot be reliably achieved in one generation
+      - validate production contracts instead of relying only on visual intuition
+    avoid:
+      - forcing every illustration through one fixed recipe
+      - forbidding useful cross-style composition when the task genuinely needs synthesis
+      - treating one stable family as the default aesthetic for the entire bank
+    notes: >-
+      Particularly useful as a production-reliability reference rather than as a taxonomy.
+
+  - id: kunaal-illustrations
+    name: Yuvakunaal/kunaal-illustrations
+    url: https://github.com/Yuvakunaal/kunaal-illustrations
+    source_type: editorial-illustration-skill
+    license: MIT
+    reuse_policy: mechanism-and-code-with-attribution
+    useful_for:
+      - style DNA decomposition
+      - cognitive-anchor selection
+      - composition families
+      - visual metaphor generation
+      - post-generation QA
+    borrow:
+      - choose illustration opportunities by cognitive value rather than evenly illustrating every paragraph
+      - separate style DNA, character rules, composition patterns, prompt templates, and QA
+      - require the character or object to participate in the explanatory action instead of decorating the scene
+      - use anti-repetition rules so examples calibrate quality without freezing future composition
+    avoid:
+      - inheriting its white-background/black-line house style as a universal default
+      - fixing all illustration around one mascot/IP
+      - assuming sparse explanatory illustration is the only useful illustration role
+    notes: >-
+      Strong reference for editorial illustration workflow and QA architecture.
+
+  - id: handdraw-skill
+    name: ToBeWin/HandDraw-Skill
+    url: https://github.com/ToBeWin/HandDraw-Skill
+    source_type: deterministic-animation-skill
+    license: MIT
+    reuse_policy: mechanism-and-code-with-attribution
+    useful_for:
+      - hand-drawn animation DSL
+      - scene decomposition
+      - explicit object animation
+      - deterministic SVG rendering
+      - validation and render verification
+    borrow:
+      - one visual concept per short scene
+      - make timing and object animation explicit data rather than prose only
+      - separate editable source assets from rendered video output
+      - validate the project representation before rendering
+    avoid:
+      - using deterministic SVG animation for painterly/material concepts that need raster evidence
+      - assuming whiteboard explainer motion covers cinematic or character animation
+    notes: >-
+      Useful for the motion/sequence branch of illustration rather than still-image style selection.
+
+  - id: rough-js
+    name: rough-stuff/rough
+    url: https://github.com/rough-stuff/rough
+    source_type: procedural-rendering-library
+    license: MIT
+    reuse_policy: code-with-attribution
+    useful_for:
+      - roughness
+      - bowing
+      - hachure
+      - cross-hatch
+      - dots
+      - dashed and zigzag fills
+      - seeded procedural sketch rendering
+    borrow:
+      - treat hand-drawn irregularity as controllable parameters instead of one binary style switch
+      - expose line roughness, bowing, fill grammar, stroke weight, and seed independently
+      - keep procedural randomness reproducible when a stable artefact is needed
+    avoid:
+      - equating procedural wobble with actual drawing media
+      - applying the same rough filter to text, imagery, and geometry indiscriminately
+    notes: >-
+      Core implementation reference for code-native sketch marks and diagrammatic illustration.
+
+  - id: perfect-freehand
+    name: steveruizok/perfect-freehand
+    url: https://github.com/steveruizok/perfect-freehand
+    source_type: procedural-rendering-library
+    license: MIT
+    reuse_policy: code-with-attribution
+    useful_for:
+      - pressure-sensitive strokes
+      - variable-width lines
+      - freehand input smoothing
+      - stroke geometry
+    borrow:
+      - represent stroke width and pressure as first-class properties
+      - separate captured pointer points from the rendered stroke outline
+      - allow a hand-drawn mark to be expressive without adding fake random wobble
+    avoid:
+      - assuming variable width alone creates a convincing medium
+      - using pressure simulation where a deliberately mechanical or monoline mark is intended
+    notes: >-
+      Complements Rough.js: one models human stroke shape/pressure, the other models sketchy geometric irregularity.
+
+  - id: baoyu-comic
+    name: NousResearch/hermes-agent / baoyu-comic
+    url: https://github.com/NousResearch/hermes-agent/blob/main/optional-skills/creative/baoyu-comic/SKILL.md
+    source_type: comic-production-skill
+    license: MIT
+    reuse_policy: mechanism-and-code-with-attribution
+    useful_for:
+      - independent art/tone/layout dimensions
+      - storyboard-first production
+      - character bible
+      - reference-role separation
+      - partial regeneration
+    borrow:
+      - split art technique, tone, layout, aspect, and language instead of naming one giant style preset
+      - give each reference a role such as style, palette, or scene rather than treating all images as undifferentiated inspiration
+      - preserve prompt/source records before generation for reproducibility
+      - support targeted regeneration instead of rebuilding an entire series
+    avoid:
+      - importing its limited six-art-style menu as our illustration vocabulary
+      - treating comics as the default structural form for illustration
+    notes: >-
+      Useful mainly for dimensional decomposition and multi-image continuity.

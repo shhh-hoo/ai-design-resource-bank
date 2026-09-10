@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://shhh-hoo.github.io/ai-design-resource-bank/schemas/dictionary-representation.schema.json",
+  "title": "AI Design Resource Bank dictionary representation registry",
+  "type": "object",
+  "required": ["version", "representations"],
+  "properties": {
+    "version": {"type": "string", "minLength": 1},
+    "purpose": {"type": "string"},
+    "representations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/representation"}
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "medium": {
+      "type": "string",
+      "enum": ["diagram", "live-demo", "sequence", "generated-study", "real-reference"]
+    },
+    "study": {
+      "type": "object",
+      "required": ["status", "priority", "target", "avoid"],
+      "properties": {
+        "status": {"type": "string", "enum": ["planned", "available", "retired"]},
+        "priority": {"type": "string", "enum": ["first-wave", "later"]},
+        "label": {"type": "string", "const": "GENERATED STUDY"},
+        "asset": {"type": "string", "pattern": "^\\./dictionary/artifacts/[a-z0-9][a-z0-9-]*/[^/]+\\.(png|jpg|jpeg|webp)$"},
+        "alt": {"type": "string", "minLength": 1},
+        "target": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "avoid": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      },
+      "additionalProperties": false
+    },
+    "representation": {
+      "type": "object",
+      "required": ["id", "preferred", "fallbacks", "rationale"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+        "preferred": {"$ref": "#/$defs/medium"},
+        "fallbacks": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/medium"},
+          "uniqueItems": true
+        },
+        "rationale": {"type": "string", "minLength": 1},
+        "study": {"$ref": "#/$defs/study"}
+      },
+      "additionalProperties": false
+    }
+  }
+}

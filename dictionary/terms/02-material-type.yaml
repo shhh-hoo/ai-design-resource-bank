@@ -1,0 +1,311 @@
+version: '0.1'
+terms:
+- id: halftone
+  term:
+    en: Halftone
+    zh: 半色调网点
+  aliases:
+  - 网点
+  naming: established
+  entry_status: seed
+  domains:
+  - graphic-design
+  - print
+  - texture
+  kinds:
+  - printing
+  - texture
+  - technique
+  definition:
+    zh: 用大小或密度不同的规则网点模拟连续明暗，是印刷复制图像的基础方法之一。
+  recognition:
+  - 放大后能看到规则圆点或网屏
+  - 暗部点更大/更密，亮部更小/更疏
+  - 纹理具有印刷机械性
+  looks_like:
+  - 照片放大后变成一颗颗印刷圆点
+  - 像老报纸或漫画的网点阴影
+  not_to_confuse_with:
+  - dithering
+  - stippling
+  examples:
+  - title: newspaper photo reproduction
+    annotation: 传统报纸照片在放大后会显露规则半色调网点。
+    asset_policy: text-reference-only
+  related:
+  - risograph
+  - film-grain
+  preview:
+    type: dots
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: risograph
+  term:
+    en: Risograph
+    zh: 孔版速印 / Riso
+  aliases:
+  - Riso print
+  - Riso
+  naming: established
+  entry_status: seed
+  domains:
+  - graphic-design
+  - print
+  - texture
+  kinds:
+  - printing
+  - style
+  - texture
+  definition:
+    zh: 基于孔版印刷的数字速印方法，常见专色叠印、轻微套印偏差和颗粒墨层。
+  recognition:
+  - 专色而非连续全彩
+  - 颜色叠印区域产生新的混色
+  - 轻微错位、颗粒和不完全均匀属于典型质感
+  looks_like:
+  - 像丝网印刷和复印机之间的感觉
+  - 两三种颜色叠起来，边缘有一点故意的套印错位
+  not_to_confuse_with:
+  - screen-printing
+  - halftone
+  examples:
+  - title: contemporary Riso zines and posters
+    annotation: 少量专色、叠印与轻微套色偏差最容易辨认 Riso 质感。
+    asset_policy: text-reference-only
+  related:
+  - halftone
+  - collage
+  preview:
+    type: overprint
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: film-grain
+  term:
+    en: Film Grain
+    zh: 胶片颗粒
+  aliases:
+  - grain
+  naming: established
+  entry_status: seed
+  domains:
+  - cinema
+  - photography
+  - texture
+  kinds:
+  - texture
+  - rendering
+  definition:
+    zh: 由感光材料颗粒结构形成的随机视觉噪声；数字作品也常模拟它来改变画面的表面与感知锐度。
+  recognition:
+  - 颗粒随机而非规则网格
+  - 颗粒会随画面和曝光感知变化
+  - 不像压缩噪点那样呈块状或数字伪影
+  looks_like:
+  - 画面表面有活着的细小颗粒
+  - 不像干净数码图，暗部尤其有颗粒感
+  not_to_confuse_with:
+  - digital-noise
+  - halftone
+  examples:
+  - title: 35mm motion-picture film scans
+    annotation: 高分辨扫描可直接看到胶片材料产生的随机颗粒结构。
+    asset_policy: text-reference-only
+  related:
+  - paper-grain
+  - motion-blur
+  preview:
+    type: grain
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: paper-grain
+  term:
+    en: Paper Grain
+    zh: 纸张纹理
+  aliases:
+  - paper texture
+  naming: descriptive
+  entry_status: seed
+  domains:
+  - material
+  - texture
+  - graphic-design
+  kinds:
+  - material
+  - texture
+  definition:
+    zh: 纸纤维、压纹、涂布和制造方式在表面留下的微观方向性与粗糙度。
+  recognition:
+  - 纹理跟材料纤维或压纹有关
+  - 侧光会改变表面读感
+  - 重复贴图若太规整会暴露为数字模拟
+  looks_like:
+  - 能看见纸纤维和轻微起伏
+  - 像把手指摸到纸面的触感搬进画面
+  not_to_confuse_with:
+  - film-grain
+  - noise-texture
+  examples:
+  - title: uncoated cotton paper under raking light
+    annotation: 侧光能清楚看到纸纤维和微小起伏。
+    asset_policy: text-reference-only
+  related:
+  - embossing
+  - foil-stamping
+  - film-grain
+  preview:
+    type: paper
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: embossing
+  term:
+    en: Embossing
+    zh: 压凸 / 浮雕压印
+  aliases:
+  - blind emboss
+  - 压凸
+  naming: established
+  entry_status: seed
+  domains:
+  - print
+  - material
+  - graphic-design
+  kinds:
+  - printing
+  - material
+  - technique
+  definition:
+    zh: 通过模具和压力让纸张或其他材料局部凸起；不加墨/箔时常称 blind emboss。
+  recognition:
+  - 图形通过物理高度而非颜色出现
+  - 侧光下边缘最明显
+  - 纸背通常能感到对应压痕
+  looks_like:
+  - 纸上没有印颜色，但 logo 从纸里凸出来
+  - 主要靠阴影和触摸读到图案
+  not_to_confuse_with:
+  - debossing
+  - letterpress
+  examples:
+  - title: blind-embossed stationery
+    annotation: 无油墨的压凸名片最能显示“结构本身就是图形”。
+    asset_policy: text-reference-only
+  related:
+  - paper-grain
+  - foil-stamping
+  preview:
+    type: emboss
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: foil-stamping
+  term:
+    en: Foil Stamping
+    zh: 烫箔 / 烫金
+  aliases:
+  - hot foil stamping
+  - 烫金
+  naming: established
+  entry_status: seed
+  domains:
+  - print
+  - material
+  - graphic-design
+  kinds:
+  - printing
+  - material
+  - technique
+  definition:
+    zh: 通过热压或其他转印工艺把金属或色彩箔膜局部转移到材料表面。
+  recognition:
+  - 高反射或特殊色箔只出现在局部图形
+  - 反光随观察角度明显变化
+  - 边界通常非常清晰
+  looks_like:
+  - 书封上的字会随着角度闪金属光
+  - 不是普通黄色，而是真正反射环境光
+  not_to_confuse_with:
+  - metallic-ink
+  - embossing
+  examples:
+  - title: foil-stamped book covers
+    annotation: 移动封面时局部金属反射会显著变化，是烫箔的关键辨识特征。
+    asset_policy: text-reference-only
+  related:
+  - embossing
+  - paper-grain
+  preview:
+    type: foil
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: condensed-type
+  term:
+    en: Condensed Type
+    zh: 窄体字
+  aliases:
+  - condensed font
+  naming: established
+  entry_status: seed
+  domains:
+  - typography
+  - graphic-design
+  kinds:
+  - typography
+  definition:
+    zh: 字面宽度相对常规字体明显收窄的字形类别，用更小水平空间承载更高视觉密度。
+  recognition:
+  - 字符横向被系统性压窄而非简单缩放
+  - 笔画比例仍保持字体设计逻辑
+  - 常用于标题、海报和受限宽度场景
+  looks_like:
+  - 字很高但很瘦，标题能塞进很窄的栏
+  - 不是把普通字体硬压扁，而是专门设计的窄体
+  not_to_confuse_with:
+  - horizontal-scaling
+  - compressed-type
+  examples:
+  - title: Helvetica Neue Condensed / DIN Condensed
+    annotation: 常见窄体家族能直接比较 regular 与 condensed 的字宽差异。
+    asset_policy: text-reference-only
+  related:
+  - variable-font
+  - swiss-style
+  preview:
+    type: condensed
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: variable-font
+  term:
+    en: Variable Font
+    zh: 可变字体
+  aliases:
+  - OpenType variable font
+  naming: established
+  entry_status: seed
+  domains:
+  - typography
+  - ui
+  - graphic-design
+  kinds:
+  - typography
+  - technique
+  definition:
+    zh: 在一个字体文件中通过连续设计轴控制 weight、width、optical size 等字形参数。
+  recognition:
+  - 字重或字宽可以连续变化而不是几个离散档位
+  - 不同轴可组合变化
+  - 变化保持同一字体设计空间中的一致性
+  looks_like:
+  - 拖一个滑杆，字体会连续变粗、变宽或改变光学尺寸
+  - 不是在 Bold/Regular 两个文件之间跳
+  not_to_confuse_with:
+  - font-family-weights
+  - font-interpolation
+  examples:
+  - title: Roboto Flex axis playground
+    annotation: 通过多个 axis 连续调整字形，是理解 variable font 最直观的例子。
+    asset_policy: text-reference-only
+  related:
+  - condensed-type
+  preview:
+    type: variable-type
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []

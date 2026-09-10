@@ -1,0 +1,69 @@
+version: '0.1'
+purpose: Best teaching media for the first illustration vocabulary tranche.
+representations:
+- {id: contour-line, preferred: diagram, fallbacks: [real-reference], rationale: Contour is a structural line relationship and is clearer in a controlled minimal diagram.}
+- {id: continuous-line, preferred: diagram, fallbacks: [real-reference], rationale: A single traceable path can be demonstrated deterministically without stylistic noise.}
+- {id: gesture-drawing, preferred: sequence, fallbacks: [diagram, real-reference], rationale: Gesture is best learned by seeing a pose rapidly reduced from mass and action into a few directional marks.}
+- {id: hatching, preferred: diagram, fallbacks: [real-reference], rationale: Parallel mark direction and density can be isolated precisely in a small controlled value study.}
+- {id: cross-hatching, preferred: diagram, fallbacks: [real-reference], rationale: Layered directional line fields are easiest to compare side by side.}
+- {id: stippling, preferred: diagram, fallbacks: [real-reference], rationale: Dot density and value can be shown exactly and compared directly with halftone.}
+- id: dry-brush
+  preferred: generated-study
+  fallbacks: [real-reference, diagram]
+  rationale: Broken contact between bristles, pigment, and paper surface is materially specific and benefits from a convincing raster study.
+  study:
+    status: planned
+    priority: later
+    target: [broken bristle marks, exposed paper between marks, directional drag, visible surface tooth]
+    avoid: [uniform digital noise, watercolor wash, imitation of a named artist]
+- id: ink-wash
+  preferred: generated-study
+  fallbacks: [real-reference, diagram]
+  rationale: Dilution, edge bloom, pooling, and reserved paper are better perceived in an image than in symbolic geometry.
+  study:
+    status: planned
+    priority: later
+    target: [multiple ink dilutions, soft bloom edge, pooled dark, reserved white ground]
+    avoid: [flat grey gradient, watercolor color palette, copying a named painting]
+- id: watercolor-wash
+  preferred: generated-study
+  fallbacks: [real-reference, diagram]
+  rationale: Transparency, wet edges, blooms, and paper luminosity are defining material behaviors.
+  study:
+    status: planned
+    priority: later
+    target: [transparent pigment, visible white paper, graded wash, soft wet edge]
+    avoid: [opaque gouache look, airbrush gradient, glossy digital rendering]
+- id: gouache
+  preferred: generated-study
+  fallbacks: [real-reference, diagram]
+  rationale: Matte opacity and overpainting behavior are easier to recognize in a painted surface study than a flat SVG.
+  study:
+    status: planned
+    priority: later
+    target: [matte opaque pigment, flat shape coverage, visible brush edge, light paint over dark paint]
+    avoid: [transparent watercolor, thick impasto relief, glossy acrylic]
+- id: linocut
+  preferred: generated-study
+  fallbacks: [real-reference, diagram]
+  rationale: Carved negative marks, ink transfer irregularity, and relief-print edge character benefit from a raster study.
+  study:
+    status: planned
+    priority: later
+    target: [bold positive negative shapes, carved gouge marks, slight ink irregularity, relief-print texture]
+    avoid: [smooth vector icon, wood grain pretending to be linoleum, copying a named print]
+- {id: ligne-claire, preferred: real-reference, fallbacks: [diagram], rationale: Ligne claire is a historical comics style and is best understood through authentic works plus a structural mnemonic.}
+- {id: spot-illustration, preferred: diagram, fallbacks: [real-reference], rationale: The key property is the illustration's relationship to surrounding page space rather than rendering style.}
+- {id: vignette-illustration, preferred: diagram, fallbacks: [real-reference], rationale: Edge dissolution into page space is a layout relationship that can be isolated clearly.}
+- {id: full-bleed-illustration, preferred: diagram, fallbacks: [real-reference], rationale: Bleed is fundamentally a trim and layout relationship and should be taught with page geometry.}
+- {id: editorial-illustration, preferred: real-reference, fallbacks: [generated-study, diagram], rationale: Editorial illustration is a role and discourse practice; real published examples matter more than one synthetic style.}
+- {id: visual-metaphor, preferred: diagram, fallbacks: [generated-study, real-reference], rationale: The transferable mechanism is the mapping between an abstract concept and a concrete visible situation.}
+- {id: silhouette, preferred: diagram, fallbacks: [real-reference], rationale: Silhouette readability is best tested by deliberately removing internal detail.}
+- {id: line-of-action, preferred: diagram, fallbacks: [sequence, real-reference], rationale: The dominant action curve should be isolated before anatomy or rendering adds noise.}
+- {id: character-turnaround, preferred: diagram, fallbacks: [real-reference], rationale: Standardized multi-view alignment and proportion consistency are spatial production rules.}
+- {id: model-sheet, preferred: real-reference, fallbacks: [diagram], rationale: Model sheets are production documents whose value comes from seeing how multiple consistency problems are gathered on one reference page.}
+- {id: expression-sheet, preferred: diagram, fallbacks: [real-reference], rationale: A controlled same-character comparison makes expression range and identity preservation easy to inspect.}
+- {id: shape-language, preferred: diagram, fallbacks: [real-reference], rationale: Round square and triangular mass tendencies become obvious when detail is stripped away.}
+- {id: cutaway-illustration, preferred: diagram, fallbacks: [real-reference], rationale: The explanatory mechanism is the selective removal of an outer shell while preserving whole-to-part context.}
+- {id: exploded-view, preferred: diagram, fallbacks: [live-demo, real-reference], rationale: Assembly axes and part correspondence can be demonstrated precisely with controlled geometry.}
+- {id: naive-perspective, preferred: real-reference, fallbacks: [generated-study, diagram], rationale: Non-academic perspective is a broad descriptive family; authentic folk and naïve works prevent one synthetic distortion recipe from becoming the definition.}
