@@ -2,11 +2,19 @@ name: Regenerate catalog on preservation branch
 on:
   push:
     branches: [fix/restore-resource-bank-examples]
+    paths:
+      - 'knowledge/**'
+      - 'subjects/**'
+      - 'resources/**'
+      - 'registries/**'
+      - 'schemas/**'
+      - 'scripts/atlas_core.py'
+      - 'scripts/build_catalog.py'
+      - '.github/workflows/regenerate-catalog.yml'
 permissions:
   contents: write
 jobs:
   regenerate:
-    if: ${{ !startsWith(github.event.head_commit.message, 'catalog: regenerate') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
