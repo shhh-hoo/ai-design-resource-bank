@@ -39,6 +39,11 @@
       "source": "concept:scroll-scrub",
       "target": "tool:motion",
       "type": "implemented_with"
+    },
+    {
+      "source": "ex:scroll-scrub-interactive-study",
+      "target": "concept:scroll-scrub",
+      "type": "demonstrates"
     }
   ],
   "sources": [

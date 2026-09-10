@@ -39,6 +39,11 @@
       "source": "concept:graph-relayout",
       "target": "tool:cytoscapejs",
       "type": "implemented_with"
+    },
+    {
+      "source": "ex:graph-relayout-interactive-study",
+      "target": "concept:graph-relayout",
+      "type": "demonstrates"
     }
   ],
   "sources": [

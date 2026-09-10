@@ -47,6 +47,11 @@
       "source": "concept:stage-spotlight",
       "target": "tool:svgjs",
       "type": "implemented_with"
+    },
+    {
+      "source": "ex:stage-spotlight-interactive-study",
+      "target": "concept:stage-spotlight",
+      "type": "demonstrates"
     }
   ],
   "sources": [

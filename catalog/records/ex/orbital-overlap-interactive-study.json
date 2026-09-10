@@ -1,0 +1,132 @@
+{
+  "ai_build": {
+    "availability": "available",
+    "example_id": "ex:orbital-overlap-interactive-study",
+    "method": {
+      "concepts": [
+        "concept:orbital-overlap"
+      ],
+      "failure_modes": [
+        "Do not reduce the example to a taxonomy label or static metadata-only record."
+      ],
+      "fidelity_constraints": [
+        "This is a preserved AIDRB interactive study; the original implementation remains the visual/behavior reference."
+      ],
+      "grammar": [
+        "3d-spatial"
+      ],
+      "interaction_model": {
+        "response": "Preserved interactive behavior from the pre-Atlas AIDRB mechanism workbench.",
+        "trigger": "parameter-control"
+      },
+      "mechanisms": [
+        {
+          "evidence": "seed",
+          "id": "concept:orbital-overlap",
+          "implementation_note": "Use color only to distinguish phase or overlap; geometry should carry the primary explanation.",
+          "primitives": [
+            "lobes",
+            "separation-control",
+            "overlap-region",
+            "phase"
+          ]
+        }
+      ],
+      "state_model": {
+        "deterministic": true,
+        "model": "orbital-overlap"
+      },
+      "transfer_constraints": [
+        "Preserve the demonstrated interaction relationship rather than copying only the static appearance."
+      ]
+    },
+    "resources": [],
+    "tools": []
+  },
+  "crosswalks": [],
+  "record": {
+    "canonical_path": "knowledge/examples/interactive-mechanisms.json",
+    "collection_ids": [
+      "collection:interactive-mechanism-studies"
+    ],
+    "concept_ids": [
+      "concept:orbital-overlap"
+    ],
+    "demo_url": "legacy.html#mechanism:orbital-overlap",
+    "failure_modes": [
+      "Do not reduce the example to a taxonomy label or static metadata-only record."
+    ],
+    "fidelity_constraints": [
+      "This is a preserved AIDRB interactive study; the original implementation remains the visual/behavior reference."
+    ],
+    "grammar": [
+      "3d-spatial"
+    ],
+    "id": "ex:orbital-overlap-interactive-study",
+    "intent_ids": [],
+    "interaction": "parameter-control",
+    "interaction_model": {
+      "response": "Preserved interactive behavior from the pre-Atlas AIDRB mechanism workbench.",
+      "trigger": "parameter-control"
+    },
+    "kind": "LIVE",
+    "lifecycle": {
+      "collected": true,
+      "reusable": false,
+      "showable": true,
+      "verified": false
+    },
+    "medium": "interactive-demo",
+    "preview": {
+      "description": "A preserved Three.js study for inspecting spatial overlap as a live mechanism example.",
+      "renderer": "preserved-interactive",
+      "url": "#example/ex:orbital-overlap-interactive-study"
+    },
+    "resource_ids": [],
+    "source_refs": [
+      "source:legacy-mechanism-workbench"
+    ],
+    "state_model": {
+      "deterministic": true,
+      "model": "orbital-overlap"
+    },
+    "summary": "A preserved Three.js study for inspecting spatial overlap as a live mechanism example.",
+    "title": "Orbital overlap — interactive study",
+    "tool_choices": [],
+    "transfer_constraints": [
+      "Preserve the demonstrated interaction relationship rather than copying only the static appearance."
+    ],
+    "type": "Example",
+    "visual_traits": [
+      "spatial",
+      "3d",
+      "scientific"
+    ]
+  },
+  "relations": [
+    {
+      "source": "ex:orbital-overlap-interactive-study",
+      "target": "concept:orbital-overlap",
+      "type": "demonstrates"
+    },
+    {
+      "source": "ex:orbital-overlap-interactive-study",
+      "target": "collection:interactive-mechanism-studies",
+      "type": "in_collection"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-11",
+      "check_scope": "Direct inspection of the pre-PR12 workbench code confirmed thirteen named interactive demos. The immutable commit is preserved as implementation provenance.",
+      "checked_at": "2026-09-11",
+      "id": "source:legacy-mechanism-workbench",
+      "locator": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/a6cbfc55d1c8facb69ccaf765fcc6d0159dfcc19/web/mechanism-workbench.js",
+      "locator_type": "repository",
+      "publisher": "AIDRB",
+      "title": "Pre-Atlas AIDRB interactive mechanism workbench",
+      "type": "Source"
+    }
+  ]
+}

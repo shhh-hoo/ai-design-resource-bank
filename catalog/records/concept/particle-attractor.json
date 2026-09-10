@@ -39,6 +39,11 @@
       "source": "concept:particle-attractor",
       "target": "tool:pixijs",
       "type": "implemented_with"
+    },
+    {
+      "source": "ex:particle-attractor-interactive-study",
+      "target": "concept:particle-attractor",
+      "type": "demonstrates"
     }
   ],
   "sources": [

@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "knowledge/provenance/sources.json",
+    "captured_at": "2026-09-11",
+    "check_scope": "Direct inspection of the pre-PR12 workbench code confirmed thirteen named interactive demos. The immutable commit is preserved as implementation provenance.",
+    "checked_at": "2026-09-11",
+    "id": "source:legacy-mechanism-workbench",
+    "locator": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/a6cbfc55d1c8facb69ccaf765fcc6d0159dfcc19/web/mechanism-workbench.js",
+    "locator_type": "repository",
+    "publisher": "AIDRB",
+    "title": "Pre-Atlas AIDRB interactive mechanism workbench",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

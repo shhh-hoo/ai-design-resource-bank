@@ -784,6 +784,46 @@
     "type": "implemented_with"
   },
   {
+    "source": "ex:anchored-callout-interactive-study",
+    "target": "concept:anchored-callout",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:anchored-callout-interactive-study",
+    "target": "collection:interactive-mechanism-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:bond-morph-interactive-study",
+    "target": "concept:bond-morph",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:bond-morph-interactive-study",
+    "target": "collection:interactive-mechanism-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:camera-dolly-interactive-study",
+    "target": "concept:camera-dolly",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:camera-dolly-interactive-study",
+    "target": "collection:interactive-mechanism-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:canvas-focus-lens-interactive-study",
+    "target": "concept:canvas-focus-lens",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:canvas-focus-lens-interactive-study",
+    "target": "collection:interactive-mechanism-studies",
+    "type": "in_collection"
+  },
+  {
     "source": "ex:chemistry-bond-polarity",
     "target": "collection:chemistry-studies",
     "type": "in_collection"
@@ -1835,6 +1875,96 @@
     "source": "ex:chemistry-weak-acid-titration",
     "target": "intent:identify",
     "type": "supports_intent"
+  },
+  {
+    "source": "ex:depth-parallax-interactive-study",
+    "target": "concept:depth-parallax",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:depth-parallax-interactive-study",
+    "target": "collection:interactive-mechanism-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:explode-assemble-interactive-study",
+    "target": "concept:explode-assemble",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:explode-assemble-interactive-study",
+    "target": "collection:interactive-mechanism-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:graph-relayout-interactive-study",
+    "target": "concept:graph-relayout",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:graph-relayout-interactive-study",
+    "target": "collection:interactive-mechanism-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:noise-threshold-wipe-interactive-study",
+    "target": "concept:noise-threshold-wipe",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:noise-threshold-wipe-interactive-study",
+    "target": "collection:interactive-mechanism-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:orbital-overlap-interactive-study",
+    "target": "concept:orbital-overlap",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:orbital-overlap-interactive-study",
+    "target": "collection:interactive-mechanism-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:particle-attractor-interactive-study",
+    "target": "concept:particle-attractor",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:particle-attractor-interactive-study",
+    "target": "collection:interactive-mechanism-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:scroll-scrub-interactive-study",
+    "target": "concept:scroll-scrub",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:scroll-scrub-interactive-study",
+    "target": "collection:interactive-mechanism-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:split-text-reveal-interactive-study",
+    "target": "concept:split-text-reveal",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:split-text-reveal-interactive-study",
+    "target": "collection:interactive-mechanism-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:stage-spotlight-interactive-study",
+    "target": "concept:stage-spotlight",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:stage-spotlight-interactive-study",
+    "target": "collection:interactive-mechanism-studies",
+    "type": "in_collection"
   },
   {
     "source": "resource:reaction-profile",

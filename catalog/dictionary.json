@@ -1,7 +1,9 @@
 [
   {
     "adjacent_ids": [],
-    "example_ids": [],
+    "example_ids": [
+      "ex:anchored-callout-interactive-study"
+    ],
     "id": "concept:anchored-callout",
     "summary": "Keep a label attached to the same feature while the object or camera moves.",
     "title": "Anchored callout"
@@ -19,6 +21,7 @@
       "concept:electron-pushing"
     ],
     "example_ids": [
+      "ex:bond-morph-interactive-study",
       "ex:chemistry-curly-arrow"
     ],
     "id": "concept:bond-morph",
@@ -27,14 +30,18 @@
   },
   {
     "adjacent_ids": [],
-    "example_ids": [],
+    "example_ids": [
+      "ex:camera-dolly-interactive-study"
+    ],
     "id": "concept:camera-dolly",
     "summary": "Move the viewpoint through depth so foreground and background change relationship, not just size.",
     "title": "Camera dolly"
   },
   {
     "adjacent_ids": [],
-    "example_ids": [],
+    "example_ids": [
+      "ex:canvas-focus-lens-interactive-study"
+    ],
     "id": "concept:canvas-focus-lens",
     "summary": "Move a local lens across a dense canvas to reveal detail without committing to a full zoom.",
     "title": "Canvas focus lens"
@@ -480,7 +487,9 @@
   },
   {
     "adjacent_ids": [],
-    "example_ids": [],
+    "example_ids": [
+      "ex:depth-parallax-interactive-study"
+    ],
     "id": "concept:depth-parallax",
     "summary": "Move visual layers at different rates so depth emerges from relative motion.",
     "title": "Depth parallax"
@@ -499,7 +508,9 @@
   },
   {
     "adjacent_ids": [],
-    "example_ids": [],
+    "example_ids": [
+      "ex:explode-assemble-interactive-study"
+    ],
     "id": "concept:explode-assemble",
     "summary": "Separate a system into identifiable parts, then bring the same parts back into one whole.",
     "title": "Explode / assemble"
@@ -660,7 +671,9 @@
   },
   {
     "adjacent_ids": [],
-    "example_ids": [],
+    "example_ids": [
+      "ex:graph-relayout-interactive-study"
+    ],
     "id": "concept:graph-relayout",
     "summary": "Change the graph layout while keeping node identity visually continuous.",
     "title": "Graph re-layout continuity"
@@ -681,7 +694,9 @@
   },
   {
     "adjacent_ids": [],
-    "example_ids": [],
+    "example_ids": [
+      "ex:noise-threshold-wipe-interactive-study"
+    ],
     "id": "concept:noise-threshold-wipe",
     "summary": "Reveal the next state through a spatial noise threshold rather than a clean geometric edge.",
     "title": "Noise-threshold wipe"
@@ -691,7 +706,8 @@
       "concept:chemistry-orbital-overlap"
     ],
     "example_ids": [
-      "ex:chemistry-orbital-overlap"
+      "ex:chemistry-orbital-overlap",
+      "ex:orbital-overlap-interactive-study"
     ],
     "id": "concept:orbital-overlap",
     "summary": "Move orbitals together and make overlap appear as a spatial relationship.",
@@ -699,7 +715,9 @@
   },
   {
     "adjacent_ids": [],
-    "example_ids": [],
+    "example_ids": [
+      "ex:particle-attractor-interactive-study"
+    ],
     "id": "concept:particle-attractor",
     "summary": "Let many small elements reveal an invisible field by moving toward a controllable attractor.",
     "title": "Particle attractor"
@@ -724,7 +742,9 @@
   },
   {
     "adjacent_ids": [],
-    "example_ids": [],
+    "example_ids": [
+      "ex:scroll-scrub-interactive-study"
+    ],
     "id": "concept:scroll-scrub",
     "summary": "Map scroll position to one deterministic playhead instead of firing disconnected enter animations.",
     "title": "Scroll-scrub timeline"
@@ -738,14 +758,18 @@
   },
   {
     "adjacent_ids": [],
-    "example_ids": [],
+    "example_ids": [
+      "ex:split-text-reveal-interactive-study"
+    ],
     "id": "concept:split-text-reveal",
     "summary": "Reveal words or lines in reading order so motion reinforces phrasing instead of fragmenting it.",
     "title": "Split-text reveal"
   },
   {
     "adjacent_ids": [],
-    "example_ids": [],
+    "example_ids": [
+      "ex:stage-spotlight-interactive-study"
+    ],
     "id": "concept:stage-spotlight",
     "summary": "Move one pool of attention across a scene while everything else remains present.",
     "title": "Stage spotlight"
