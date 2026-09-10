@@ -53,7 +53,7 @@ terms:
   examples:
   - {title: life-drawing gesture studies, annotation: 短时人体写生通常用几十秒到数分钟捕捉整体姿态和重心，而非完成细节。, asset_policy: text-reference-only}
   related: [line-of-action, continuous-line, blocking]
-  preview: {type: gesture, note: Original mnemonic focusing on pose, weight, and directional flow.}
+  preview: {type: gesture, note: "Original mnemonic focusing on pose, weight, and directional flow."}
   resource_refs: []
 - id: hatching
   term: {en: Hatching, zh: 排线}
