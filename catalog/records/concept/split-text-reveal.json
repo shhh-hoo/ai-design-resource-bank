@@ -39,6 +39,11 @@
       "source": "concept:split-text-reveal",
       "target": "tool:motion",
       "type": "implemented_with"
+    },
+    {
+      "source": "ex:split-text-reveal-interactive-study",
+      "target": "concept:split-text-reveal",
+      "type": "demonstrates"
     }
   ],
   "sources": [

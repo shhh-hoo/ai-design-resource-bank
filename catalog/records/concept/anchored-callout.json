@@ -39,6 +39,11 @@
       "source": "concept:anchored-callout",
       "target": "tool:threejs",
       "type": "implemented_with"
+    },
+    {
+      "source": "ex:anchored-callout-interactive-study",
+      "target": "concept:anchored-callout",
+      "type": "demonstrates"
     }
   ],
   "sources": [

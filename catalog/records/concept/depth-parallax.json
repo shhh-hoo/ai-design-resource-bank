@@ -47,6 +47,11 @@
       "source": "concept:depth-parallax",
       "target": "tool:threejs",
       "type": "implemented_with"
+    },
+    {
+      "source": "ex:depth-parallax-interactive-study",
+      "target": "concept:depth-parallax",
+      "type": "demonstrates"
     }
   ],
   "sources": [

@@ -1,8 +1,1 @@
-[
-  {
-    "id": "collection:chemistry-studies",
-    "type": "Collection",
-    "title": "Chemistry · diagram studies",
-    "summary": "Original bounded studies and named coverage gaps."
-  }
-]
+[{"id":"collection:interactive-mechanism-studies","type":"Collection","title":"Interactive mechanism studies","summary":"Preserved live studies from the original AIDRB workbench: motion, stagecraft, spatial interaction, typography, graph behavior and explanatory transitions."},{"id":"collection:chemistry-studies","type":"Collection","title":"Chemistry · diagram studies","summary":"Original bounded studies and named coverage gaps."}]

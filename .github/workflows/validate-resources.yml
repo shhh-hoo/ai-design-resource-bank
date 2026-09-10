@@ -1,4 +1,4 @@
-name: Validate Knowledge Atlas
+name: Validate AIDRB
 on:
   pull_request:
   push:
@@ -31,7 +31,7 @@ jobs:
           python scripts/validate_grammar_mechanisms.py
       - name: Detect generated drift and create SQLite FTS
         run: python scripts/build_catalog.py --check
-      - name: Exercise retrieval, locking and chemical models
+      - name: Exercise retrieval, locking and models
         run: |
           python -m unittest discover -s tests -p 'test_*.py'
           node --test tests/models.test.mjs
@@ -39,7 +39,7 @@ jobs:
           node --check app/live.js
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
-      - name: Browser navigation, mobile, selection and startup budget
+      - name: Browser resource bank, subject pack, selection and startup checks
         run: npm run test:browser
       - name: Validate publish artifact
         run: python scripts/build_site.py
@@ -47,7 +47,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: atlas-browser-evidence
+          name: aidrb-browser-evidence
           include-hidden-files: true
           path: .browser-test/
   windows-contract:

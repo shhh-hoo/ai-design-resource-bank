@@ -1,0 +1,132 @@
+{
+  "ai_build": {
+    "availability": "available",
+    "example_id": "ex:scroll-scrub-interactive-study",
+    "method": {
+      "concepts": [
+        "concept:scroll-scrub"
+      ],
+      "failure_modes": [
+        "Do not reduce the example to a taxonomy label or static metadata-only record."
+      ],
+      "fidelity_constraints": [
+        "This is a preserved AIDRB interactive study; the original implementation remains the visual/behavior reference."
+      ],
+      "grammar": [
+        "time-sequence"
+      ],
+      "interaction_model": {
+        "response": "Preserved interactive behavior from the pre-Atlas AIDRB mechanism workbench.",
+        "trigger": "scroll-scrub"
+      },
+      "mechanisms": [
+        {
+          "evidence": "seed",
+          "id": "concept:scroll-scrub",
+          "implementation_note": "Make scroll position the source of truth; derived visual states should be reversible at any point in the timeline.",
+          "primitives": [
+            "scroll-progress",
+            "playhead",
+            "reversible-state",
+            "progress-indicator"
+          ]
+        }
+      ],
+      "state_model": {
+        "deterministic": true,
+        "model": "scroll-scrub"
+      },
+      "transfer_constraints": [
+        "Preserve the demonstrated interaction relationship rather than copying only the static appearance."
+      ]
+    },
+    "resources": [],
+    "tools": []
+  },
+  "crosswalks": [],
+  "record": {
+    "canonical_path": "knowledge/examples/interactive-mechanisms.json",
+    "collection_ids": [
+      "collection:interactive-mechanism-studies"
+    ],
+    "concept_ids": [
+      "concept:scroll-scrub"
+    ],
+    "demo_url": "legacy.html#mechanism:scroll-scrub",
+    "failure_modes": [
+      "Do not reduce the example to a taxonomy label or static metadata-only record."
+    ],
+    "fidelity_constraints": [
+      "This is a preserved AIDRB interactive study; the original implementation remains the visual/behavior reference."
+    ],
+    "grammar": [
+      "time-sequence"
+    ],
+    "id": "ex:scroll-scrub-interactive-study",
+    "intent_ids": [],
+    "interaction": "scroll-scrub",
+    "interaction_model": {
+      "response": "Preserved interactive behavior from the pre-Atlas AIDRB mechanism workbench.",
+      "trigger": "scroll-scrub"
+    },
+    "kind": "LIVE",
+    "lifecycle": {
+      "collected": true,
+      "reusable": false,
+      "showable": true,
+      "verified": false
+    },
+    "medium": "interactive-demo",
+    "preview": {
+      "description": "Scroll position directly controls translation, rotation and a progress indicator inside a sticky stage.",
+      "renderer": "preserved-interactive",
+      "url": "#example/ex:scroll-scrub-interactive-study"
+    },
+    "resource_ids": [],
+    "source_refs": [
+      "source:legacy-mechanism-workbench"
+    ],
+    "state_model": {
+      "deterministic": true,
+      "model": "scroll-scrub"
+    },
+    "summary": "Scroll position directly controls translation, rotation and a progress indicator inside a sticky stage.",
+    "title": "Scroll scrub — interactive study",
+    "tool_choices": [],
+    "transfer_constraints": [
+      "Preserve the demonstrated interaction relationship rather than copying only the static appearance."
+    ],
+    "type": "Example",
+    "visual_traits": [
+      "scroll",
+      "scrub",
+      "motion"
+    ]
+  },
+  "relations": [
+    {
+      "source": "ex:scroll-scrub-interactive-study",
+      "target": "concept:scroll-scrub",
+      "type": "demonstrates"
+    },
+    {
+      "source": "ex:scroll-scrub-interactive-study",
+      "target": "collection:interactive-mechanism-studies",
+      "type": "in_collection"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-11",
+      "check_scope": "Direct inspection of the pre-PR12 workbench code confirmed thirteen named interactive demos. The immutable commit is preserved as implementation provenance.",
+      "checked_at": "2026-09-11",
+      "id": "source:legacy-mechanism-workbench",
+      "locator": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/a6cbfc55d1c8facb69ccaf765fcc6d0159dfcc19/web/mechanism-workbench.js",
+      "locator_type": "repository",
+      "publisher": "AIDRB",
+      "title": "Pre-Atlas AIDRB interactive mechanism workbench",
+      "type": "Source"
+    }
+  ]
+}

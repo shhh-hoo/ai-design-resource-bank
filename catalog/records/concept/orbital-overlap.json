@@ -36,6 +36,11 @@
       "source": "ex:chemistry-orbital-overlap",
       "target": "concept:orbital-overlap",
       "type": "intended_to_demonstrate"
+    },
+    {
+      "source": "ex:orbital-overlap-interactive-study",
+      "target": "concept:orbital-overlap",
+      "type": "demonstrates"
     }
   ],
   "sources": [

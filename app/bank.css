@@ -1,0 +1,9 @@
+/* Resource-bank corrections layered over the Chemistry vertical-slice stylesheet. */
+.bank-intro {display:grid;grid-template-columns:minmax(0,1fr) minmax(16rem,32rem);gap:2rem;align-items:end;padding:2rem 0 1.25rem;border-bottom:1px solid var(--line,#d7d7d0)}
+.bank-intro h1{max-width:13ch}.bank-intro .intro{max-width:48rem}.resource-label{color:var(--muted,#6f6f6a);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+.preserved-preview{min-height:12rem;display:grid;place-items:center;background:linear-gradient(135deg,transparent 0 49.5%,rgba(17,17,17,.08) 49.5% 50.5%,transparent 50.5% 100%),#f2f2ed;border-bottom:1px solid var(--line,#d7d7d0)}
+.preserved-preview span{border:1px solid currentColor;padding:.55rem .75rem;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+.legacy-demo-frame{width:100%;height:min(76vh,780px);min-height:560px;border:0;background:#f6f6f2;display:block}
+.collection-section,.subject-section{margin:2.25rem 0 4rem}.collection-section>header,.subject-section>header{display:flex;justify-content:space-between;gap:1.5rem;align-items:end;border-bottom:1px solid var(--line,#d7d7d0);padding-bottom:.8rem;margin-bottom:1rem}.collection-section>header p,.subject-section>header p{max-width:46rem;margin:0;color:var(--muted,#6f6f6a)}
+.subject-card{display:block;padding:1.25rem 0;border-bottom:1px solid var(--line,#d7d7d0);text-decoration:none;color:inherit}.subject-card h2{margin:0 0 .35rem}.subject-card p{margin:0;color:var(--muted,#6f6f6a)}.masthead nav{flex-wrap:wrap}
+@media(max-width:760px){.bank-intro{grid-template-columns:1fr;gap:.5rem}.legacy-demo-frame{min-height:640px;height:78vh}.collection-section>header,.subject-section>header{display:block}}

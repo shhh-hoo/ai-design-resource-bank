@@ -1,8 +1,8 @@
-name: Deploy Knowledge Atlas
+name: Deploy AIDRB
 on:
   push:
     branches: [main]
-    paths: ['index.html', 'app/**', 'knowledge/**', 'subjects/**', 'resources/**', 'registries/**', 'catalog/**', 'catalog.yaml', 'schemas/**', 'scripts/**', '.github/workflows/deploy-board.yml']
+    paths: ['index.html', 'legacy.html', 'app/**', 'web/**', 'knowledge/**', 'subjects/**', 'resources/**', 'registries/**', 'catalog/**', 'catalog.yaml', 'schemas/**', 'scripts/**', 'package.json', 'package-lock.json', '.github/workflows/deploy-board.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -19,12 +19,20 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Validate and stage generated Atlas
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install dependencies
         run: |
           python -m pip install --disable-pip-version-check --quiet pyyaml jsonschema
+          npm ci --no-audit --no-fund
+      - name: Validate and stage resource bank
+        run: |
           python scripts/validate_atlas.py
           python scripts/validate_resources.py
           python scripts/build_site.py
+          BOARD_FRAMEWORK_OUTDIR=_site/web/framework npm run build:framework-demos
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:

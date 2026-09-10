@@ -39,6 +39,11 @@
       "source": "concept:noise-threshold-wipe",
       "target": "tool:threejs",
       "type": "implemented_with"
+    },
+    {
+      "source": "ex:noise-threshold-wipe-interactive-study",
+      "target": "concept:noise-threshold-wipe",
+      "type": "demonstrates"
     }
   ],
   "sources": [

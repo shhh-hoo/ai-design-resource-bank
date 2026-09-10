@@ -49,6 +49,11 @@
       "type": "implemented_with"
     },
     {
+      "source": "ex:bond-morph-interactive-study",
+      "target": "concept:bond-morph",
+      "type": "demonstrates"
+    },
+    {
       "source": "ex:chemistry-curly-arrow",
       "target": "concept:bond-morph",
       "type": "intended_to_demonstrate"

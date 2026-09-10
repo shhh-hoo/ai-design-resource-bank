@@ -39,6 +39,11 @@
       "source": "concept:canvas-focus-lens",
       "target": "tool:tldraw",
       "type": "implemented_with"
+    },
+    {
+      "source": "ex:canvas-focus-lens-interactive-study",
+      "target": "concept:canvas-focus-lens",
+      "type": "demonstrates"
     }
   ],
   "sources": [

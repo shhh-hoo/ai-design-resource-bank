@@ -2,12 +2,12 @@
   "crosswalk_count": 31,
   "example_counts": {
     "GAP": 26,
-    "LIVE": 6,
+    "LIVE": 19,
     "REFERENCE": 16
   },
-  "fingerprint": "e62a70af8e446ab0518e7670fd05fc004dfb6974136136023ae71bec0dd9b4ae",
+  "fingerprint": "5e1a07a4b36f9fb8e5343c9e8fe2ca9eb7251480f749697b535c62ce96ab6d60",
   "major_topics": 12,
-  "record_count": 332,
-  "relation_count": 368,
+  "record_count": 347,
+  "relation_count": 394,
   "version": 1
 }

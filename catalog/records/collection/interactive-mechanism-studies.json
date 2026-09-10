@@ -1,0 +1,77 @@
+{
+  "record": {
+    "canonical_path": "knowledge/collections/collections.json",
+    "id": "collection:interactive-mechanism-studies",
+    "summary": "Preserved live studies from the original AIDRB workbench: motion, stagecraft, spatial interaction, typography, graph behavior and explanatory transitions.",
+    "title": "Interactive mechanism studies",
+    "type": "Collection"
+  },
+  "relations": [
+    {
+      "source": "ex:anchored-callout-interactive-study",
+      "target": "collection:interactive-mechanism-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:bond-morph-interactive-study",
+      "target": "collection:interactive-mechanism-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:camera-dolly-interactive-study",
+      "target": "collection:interactive-mechanism-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:canvas-focus-lens-interactive-study",
+      "target": "collection:interactive-mechanism-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:depth-parallax-interactive-study",
+      "target": "collection:interactive-mechanism-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:explode-assemble-interactive-study",
+      "target": "collection:interactive-mechanism-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:graph-relayout-interactive-study",
+      "target": "collection:interactive-mechanism-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:noise-threshold-wipe-interactive-study",
+      "target": "collection:interactive-mechanism-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:orbital-overlap-interactive-study",
+      "target": "collection:interactive-mechanism-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:particle-attractor-interactive-study",
+      "target": "collection:interactive-mechanism-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:scroll-scrub-interactive-study",
+      "target": "collection:interactive-mechanism-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:split-text-reveal-interactive-study",
+      "target": "collection:interactive-mechanism-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:stage-spotlight-interactive-study",
+      "target": "collection:interactive-mechanism-studies",
+      "type": "in_collection"
+    }
+  ],
+  "sources": []
+}

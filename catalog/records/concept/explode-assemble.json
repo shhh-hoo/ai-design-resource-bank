@@ -39,6 +39,11 @@
       "source": "concept:explode-assemble",
       "target": "tool:threejs",
       "type": "implemented_with"
+    },
+    {
+      "source": "ex:explode-assemble-interactive-study",
+      "target": "concept:explode-assemble",
+      "type": "demonstrates"
     }
   ],
   "sources": [

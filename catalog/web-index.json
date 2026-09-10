@@ -6,9 +6,120 @@
       "summary": "Original bounded studies and named coverage gaps.",
       "title": "Chemistry · diagram studies",
       "type": "Collection"
+    },
+    {
+      "canonical_path": "knowledge/collections/collections.json",
+      "id": "collection:interactive-mechanism-studies",
+      "summary": "Preserved live studies from the original AIDRB workbench: motion, stagecraft, spatial interaction, typography, graph behavior and explanatory transitions.",
+      "title": "Interactive mechanism studies",
+      "type": "Collection"
     }
   ],
   "examples": [
+    {
+      "collection_ids": [
+        "collection:interactive-mechanism-studies"
+      ],
+      "concept_ids": [
+        "concept:anchored-callout"
+      ],
+      "demo_url": "legacy.html#mechanism:anchored-callout",
+      "id": "ex:anchored-callout-interactive-study",
+      "intent_ids": [],
+      "interaction": "parameter-control",
+      "kind": "LIVE",
+      "medium": "interactive-demo",
+      "preview": {
+        "description": "A callout remains visually attached to a spatial target while the scene changes.",
+        "renderer": "preserved-interactive",
+        "url": "#example/ex:anchored-callout-interactive-study"
+      },
+      "resolve_path": "catalog/records/ex/anchored-callout-interactive-study.json",
+      "title": "Anchored callout — interactive study",
+      "visual_traits": [
+        "annotation",
+        "anchor",
+        "spatial"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:interactive-mechanism-studies"
+      ],
+      "concept_ids": [
+        "concept:bond-morph"
+      ],
+      "demo_url": "legacy.html#mechanism:bond-morph",
+      "id": "ex:bond-morph-interactive-study",
+      "intent_ids": [],
+      "interaction": "parameter-control",
+      "kind": "LIVE",
+      "medium": "interactive-demo",
+      "preview": {
+        "description": "One bond fades while another forms, preserving atoms while visualizing a state transition.",
+        "renderer": "preserved-interactive",
+        "url": "#example/ex:bond-morph-interactive-study"
+      },
+      "resolve_path": "catalog/records/ex/bond-morph-interactive-study.json",
+      "title": "Bond morph — interactive study",
+      "visual_traits": [
+        "morph",
+        "state-change",
+        "chemistry"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:interactive-mechanism-studies"
+      ],
+      "concept_ids": [
+        "concept:camera-dolly"
+      ],
+      "demo_url": "legacy.html#mechanism:camera-dolly",
+      "id": "ex:camera-dolly-interactive-study",
+      "intent_ids": [],
+      "interaction": "parameter-control",
+      "kind": "LIVE",
+      "medium": "interactive-demo",
+      "preview": {
+        "description": "Camera movement changes apparent depth relationships by scaling foreground and background at different rates.",
+        "renderer": "preserved-interactive",
+        "url": "#example/ex:camera-dolly-interactive-study"
+      },
+      "resolve_path": "catalog/records/ex/camera-dolly-interactive-study.json",
+      "title": "Camera dolly — interactive study",
+      "visual_traits": [
+        "spatial",
+        "depth",
+        "motion"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:interactive-mechanism-studies"
+      ],
+      "concept_ids": [
+        "concept:canvas-focus-lens"
+      ],
+      "demo_url": "legacy.html#mechanism:canvas-focus-lens",
+      "id": "ex:canvas-focus-lens-interactive-study",
+      "intent_ids": [],
+      "interaction": "pointer-reactive",
+      "kind": "LIVE",
+      "medium": "interactive-demo",
+      "preview": {
+        "description": "A focus lens isolates local detail while retaining surrounding context on the canvas.",
+        "renderer": "preserved-interactive",
+        "url": "#example/ex:canvas-focus-lens-interactive-study"
+      },
+      "resolve_path": "catalog/records/ex/canvas-focus-lens-interactive-study.json",
+      "title": "Canvas focus lens — interactive study",
+      "visual_traits": [
+        "focus",
+        "context",
+        "canvas"
+      ]
+    },
     {
       "collection_ids": [
         "collection:chemistry-studies"
@@ -1347,6 +1458,240 @@
       "visual_traits": [
         "labeled",
         "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:interactive-mechanism-studies"
+      ],
+      "concept_ids": [
+        "concept:depth-parallax"
+      ],
+      "demo_url": "legacy.html#mechanism:depth-parallax",
+      "id": "ex:depth-parallax-interactive-study",
+      "intent_ids": [],
+      "interaction": "parameter-control",
+      "kind": "LIVE",
+      "medium": "interactive-demo",
+      "preview": {
+        "description": "Layer groups translate at different rates as viewpoint changes, producing depth from relative motion.",
+        "renderer": "preserved-interactive",
+        "url": "#example/ex:depth-parallax-interactive-study"
+      },
+      "resolve_path": "catalog/records/ex/depth-parallax-interactive-study.json",
+      "title": "Depth parallax — interactive study",
+      "visual_traits": [
+        "spatial",
+        "depth",
+        "layered"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:interactive-mechanism-studies"
+      ],
+      "concept_ids": [
+        "concept:explode-assemble"
+      ],
+      "demo_url": "legacy.html#mechanism:explode-assemble",
+      "id": "ex:explode-assemble-interactive-study",
+      "intent_ids": [],
+      "interaction": "parameter-control",
+      "kind": "LIVE",
+      "medium": "interactive-demo",
+      "preview": {
+        "description": "Separated parts interpolate toward shared assembled positions, preserving part identity across the transition.",
+        "renderer": "preserved-interactive",
+        "url": "#example/ex:explode-assemble-interactive-study"
+      },
+      "resolve_path": "catalog/records/ex/explode-assemble-interactive-study.json",
+      "title": "Explode / assemble — interactive study",
+      "visual_traits": [
+        "assembly",
+        "parts",
+        "spatial"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:interactive-mechanism-studies"
+      ],
+      "concept_ids": [
+        "concept:graph-relayout"
+      ],
+      "demo_url": "legacy.html#mechanism:graph-relayout",
+      "id": "ex:graph-relayout-interactive-study",
+      "intent_ids": [],
+      "interaction": "parameter-control",
+      "kind": "LIVE",
+      "medium": "interactive-demo",
+      "preview": {
+        "description": "Nodes retain identity while positions and connecting edges transition between graph layouts.",
+        "renderer": "preserved-interactive",
+        "url": "#example/ex:graph-relayout-interactive-study"
+      },
+      "resolve_path": "catalog/records/ex/graph-relayout-interactive-study.json",
+      "title": "Graph relayout — interactive study",
+      "visual_traits": [
+        "graph",
+        "layout",
+        "identity"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:interactive-mechanism-studies"
+      ],
+      "concept_ids": [
+        "concept:noise-threshold-wipe"
+      ],
+      "demo_url": "legacy.html#mechanism:noise-threshold-wipe",
+      "id": "ex:noise-threshold-wipe-interactive-study",
+      "intent_ids": [],
+      "interaction": "parameter-control",
+      "kind": "LIVE",
+      "medium": "interactive-demo",
+      "preview": {
+        "description": "A deterministic noise field reveals cells below a threshold, turning one scalar control into an irregular wipe.",
+        "renderer": "preserved-interactive",
+        "url": "#example/ex:noise-threshold-wipe-interactive-study"
+      },
+      "resolve_path": "catalog/records/ex/noise-threshold-wipe-interactive-study.json",
+      "title": "Noise threshold wipe — interactive study",
+      "visual_traits": [
+        "transition",
+        "mask",
+        "procedural"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:interactive-mechanism-studies"
+      ],
+      "concept_ids": [
+        "concept:orbital-overlap"
+      ],
+      "demo_url": "legacy.html#mechanism:orbital-overlap",
+      "id": "ex:orbital-overlap-interactive-study",
+      "intent_ids": [],
+      "interaction": "parameter-control",
+      "kind": "LIVE",
+      "medium": "interactive-demo",
+      "preview": {
+        "description": "A preserved Three.js study for inspecting spatial overlap as a live mechanism example.",
+        "renderer": "preserved-interactive",
+        "url": "#example/ex:orbital-overlap-interactive-study"
+      },
+      "resolve_path": "catalog/records/ex/orbital-overlap-interactive-study.json",
+      "title": "Orbital overlap — interactive study",
+      "visual_traits": [
+        "spatial",
+        "3d",
+        "scientific"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:interactive-mechanism-studies"
+      ],
+      "concept_ids": [
+        "concept:particle-attractor"
+      ],
+      "demo_url": "legacy.html#mechanism:particle-attractor",
+      "id": "ex:particle-attractor-interactive-study",
+      "intent_ids": [],
+      "interaction": "pointer-reactive",
+      "kind": "LIVE",
+      "medium": "interactive-demo",
+      "preview": {
+        "description": "Particles accelerate toward a pointer-controlled attractor while preserving simple inertial motion.",
+        "renderer": "preserved-interactive",
+        "url": "#example/ex:particle-attractor-interactive-study"
+      },
+      "resolve_path": "catalog/records/ex/particle-attractor-interactive-study.json",
+      "title": "Particle attractor — interactive study",
+      "visual_traits": [
+        "particles",
+        "pointer",
+        "dynamic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:interactive-mechanism-studies"
+      ],
+      "concept_ids": [
+        "concept:scroll-scrub"
+      ],
+      "demo_url": "legacy.html#mechanism:scroll-scrub",
+      "id": "ex:scroll-scrub-interactive-study",
+      "intent_ids": [],
+      "interaction": "scroll-scrub",
+      "kind": "LIVE",
+      "medium": "interactive-demo",
+      "preview": {
+        "description": "Scroll position directly controls translation, rotation and a progress indicator inside a sticky stage.",
+        "renderer": "preserved-interactive",
+        "url": "#example/ex:scroll-scrub-interactive-study"
+      },
+      "resolve_path": "catalog/records/ex/scroll-scrub-interactive-study.json",
+      "title": "Scroll scrub — interactive study",
+      "visual_traits": [
+        "scroll",
+        "scrub",
+        "motion"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:interactive-mechanism-studies"
+      ],
+      "concept_ids": [
+        "concept:split-text-reveal"
+      ],
+      "demo_url": "legacy.html#mechanism:split-text-reveal",
+      "id": "ex:split-text-reveal-interactive-study",
+      "intent_ids": [],
+      "interaction": "play-toggle",
+      "kind": "LIVE",
+      "medium": "interactive-demo",
+      "preview": {
+        "description": "Words enter with staggered opacity and vertical motion, then reset as one reversible reveal sequence.",
+        "renderer": "preserved-interactive",
+        "url": "#example/ex:split-text-reveal-interactive-study"
+      },
+      "resolve_path": "catalog/records/ex/split-text-reveal-interactive-study.json",
+      "title": "Split text reveal — interactive study",
+      "visual_traits": [
+        "typography",
+        "reveal",
+        "staggered"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:interactive-mechanism-studies"
+      ],
+      "concept_ids": [
+        "concept:stage-spotlight"
+      ],
+      "demo_url": "legacy.html#mechanism:stage-spotlight",
+      "id": "ex:stage-spotlight-interactive-study",
+      "intent_ids": [],
+      "interaction": "parameter-control",
+      "kind": "LIVE",
+      "medium": "interactive-demo",
+      "preview": {
+        "description": "A movable light cone and focus ring direct attention across a staged composition.",
+        "renderer": "preserved-interactive",
+        "url": "#example/ex:stage-spotlight-interactive-study"
+      },
+      "resolve_path": "catalog/records/ex/stage-spotlight-interactive-study.json",
+      "title": "Stage spotlight — interactive study",
+      "visual_traits": [
+        "stagecraft",
+        "focus",
+        "lighting"
       ]
     }
   ],

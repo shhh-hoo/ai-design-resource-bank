@@ -1,61 +1,51 @@
 # AI Design Resource Bank
 
-A visual knowledge atlas and a machine retrieval projection over one canonical Core. Both can explore candidates in parallel; explicit selection commit comes before AI lock and deep Resource fetch.
+AIDRB is a **design resource bank** with one canonical Core and two parallel access layers: a Visual / Interactive projection for seeing, trying and comparing resources, and a Machine Retrieval projection for structured search and AI use.
 
-**Atlas | Explore | Dictionary | Index**
+The bank contains concrete **Examples**, reusable **Concepts**, implementation **Tools**, executable/reusable **Resources**, relations and provenance. Subject Packs such as Chemistry are domain overlays inside the same bank; they do not define the whole product.
 
-The first Subject Pack is Chemistry: 12 canonical knowledge areas, 48 concrete example slots (6 LIVE, 16 REFERENCE, 26 honest GAPs). The inventory is explicit coverage planning, not a claim that every syllabus objective has a completed visualization. Cambridge 9701 and AP Chemistry are provenance inputs, not Human taxonomy.
+**Explore | Examples | Dictionary | Subjects | Collections | Index**
+
+## Current content
+The current bank includes the Chemistry Subject Pack plus the preserved interactive mechanism studies that predate PR #12. Those earlier demos are first-class Examples again rather than hidden legacy files: camera dolly, orbital overlap, depth parallax, split-text reveal, particle attractor, noise-threshold wipe, explode/assemble, scroll scrub, stage spotlight, bond morph, graph relayout, canvas focus lens and anchored callout.
+
+Chemistry remains a vertical slice: 12 canonical knowledge areas and 48 mapped example slots (6 Chemistry LIVE, 16 REFERENCE, 26 explicit GAPs). The global bank also contains non-subject Examples; an Example does not need to belong to a Subject Pack.
 
 ## Run
-
 Requires Python 3.12+, PyYAML, jsonschema, and Node 24+ for tests.
-
 ```sh
 python3 -m pip install pyyaml jsonschema
 npm ci
 npm run build
 npm run dev
 ```
-
-Open `http://127.0.0.1:4173`. Root loads the Atlas from generated `catalog/web-index.json`. No old decision-board scripts, AI index, relation graph or full build records load at startup. Example detail loads its own compact resolve record and, for LIVE, the shared preview runtime. That preview code is distinct from machine-side full Resource Package fetch.
+Open `http://127.0.0.1:4173`. The default view is Examples. The current projection loads the generated web index; deeper records remain lazy. Preserved pre-Atlas demos are loaded only when their Example is opened.
 
 ## Source of truth
+The product-level authority is the Google Doc **AIDRB — North Star, Architecture v2**. Repository implementation contracts are subordinate to it and may not silently redefine the product.
 
 | Location | Responsibility |
 | --- | --- |
-| knowledge/ | Concept, Example, new Tool, Intent, Collection and normalized Source records |
-| subjects/ | Canonical subject/topic maps and directed curriculum crosswalks |
-| resources/ | Authoritative Resource Packages; extracted only where useful |
-| registries/ | Preserved legacy inputs, adapted by stable ID; no competing editable copies |
-| catalog/ | Generated web/AI indexes, resolve records, typed relations, FTS input and SQLite |
-| app/ | Lightweight visual projection |
-| catalog.yaml | Generated Resource compatibility export |
+| `knowledge/` | Concepts, Examples, new Tools, Intents, Collections and normalized Sources |
+| `subjects/` | Domain/Subject Pack knowledge maps and curriculum provenance |
+| `resources/` | Authoritative Resource Packages, extracted only where useful |
+| `registries/` | Preserved compatibility/discovery inputs |
+| `catalog/` | Generated web/AI indexes, resolve records, relations and FTS input |
+| `app/` | Current Visual / Interactive resource-bank projection |
+| `web/` + `legacy.html` | Preserved interactive implementations still used by first-class Examples during migration |
 
-Canonical **content** types are Concept, Example, Tool and Resource. Method is a generated per-Example AI Build view. Lifecycle properties `collected`, `showable`, `reusable`, `verified` are independent. REFERENCE does not imply reuse rights; GAP never pretends to be implemented.
+## Preservation contract
+Architecture migration must not make existing good examples disappear. Before replacing a presentation layer, inventory visible/interactive content and retain it as canonical Examples. A file that remains in Git but is absent from the generated bank or Pages deployment is considered lost from the product. The thirteen pre-PR12 mechanism demos are covered by preservation regressions and remain deployable through their original implementation while newer presentation components can be developed incrementally.
 
 ## Retrieve and select
-
 ```sh
+python3 scripts/retrieve.py query 'stage spotlight' --type Example
+python3 scripts/retrieve.py resolve ex:stage-spotlight-interactive-study
 python3 scripts/retrieve.py query 'reaction profile' --type Example
-python3 scripts/retrieve.py resolve ex:chemistry-reaction-profile
 ```
-
-Create selection.json:
-
-```json
-{"selector":"agent","selections":[{"id":"ex:chemistry-reaction-profile","aspect_notes":"Borrow the linked marker.","constraints":["Coordinate is not time."]}]}
-```
-
-```sh
-python3 scripts/retrieve.py commit selection.json > committed.json
-python3 scripts/retrieve.py lock committed.json > locked.json
-python3 scripts/retrieve.py fetch locked.json
-```
-
-The Web selection screen exports the same committed format; continue with `lock` directly. Browser selections remain in the current tab and are not persisted across reloads. Locks freeze exact identities, notes and the catalog fingerprint; stale/tampered locks fail instead of substituting references. Legacy aliases such as `reaction-coordinate` still resolve but commits require canonical Example IDs.
+Selections preserve exact Example IDs, aspect notes and constraints before AI lock/deep fetch. Visual and machine retrieval may explore independently before commit.
 
 ## Validate
-
 ```sh
 npm run validate
 npm test
@@ -63,17 +53,11 @@ npx playwright install chromium
 npm run test:browser
 npm run build:site
 ```
+Browser tests exercise the staged Pages artifact, including the global resource-bank views, preserved interactive demos, Chemistry Subject Pack, selection/lock behavior, mobile overflow and provenance escaping. Generated catalog drift is rejected.
 
-On a machine using installed Chrome, set `AIDRB_CHROME=1` for browser tests. Screenshots/results default to `.browser-test/`; CI uploads them as an artifact. Reviewed evidence for this PR lives under `docs/evidence/`. SQLite is generated from committed `fts-input.jsonl`, not committed as a version-dependent binary. `build_catalog.py --check` rejects text catalog drift and unexpected generated files.
-
-CI validates the corrected Core, compatibility data, generated drift, retrieval/lock failures, scientific model constraints and actual browser behavior/startup budget. Pages stages `_site/` on main; no deployment or merge is required to review a PR. Legacy UI files remain under `web/` and `legacy.html`, outside startup. To run legacy evidence locally, generate `data/board.json`, `data/subject-atlas.json` with the old builders and run `npm run build:framework-demos` first.
-
-## Contracts and limits
-
-- [Corrected North Star v2.1](docs/KNOWLEDGE-ATLAS-CONTRACT.md): architecture, semantics, migration and tool decision.
-- [Visual contract](docs/EDITORIAL-UI-CONTRACT.md): visual-first views and progressive disclosure.
-- [Retrieval skill](skills/aidrb-retrieve/SKILL.md): machine workflow and identity discipline.
-- [Resource ingestion](skills/resource-ingest/SKILL.md): optional extraction and rights.
-- [Validation evidence](docs/evidence/REVIEW.md): measured results and unresolved scope.
-
-This is a Chemistry vertical slice. Original diagrams are bounded teaching studies; scientific behavior checks do not imply external chemistry peer review. 26 slots are explicitly missing. Legacy tool recommendations preserve evidence/rights caveats and do not mean upstream tools were locally installed or validated. No third-party binary reference art is copied.
+## Contracts
+- Google Doc **AIDRB — North Star, Architecture v2** — authoritative product definition and architecture.
+- [`docs/KNOWLEDGE-ATLAS-CONTRACT.md`](docs/KNOWLEDGE-ATLAS-CONTRACT.md) — subordinate Chemistry Subject Pack implementation contract.
+- [`docs/EDITORIAL-UI-CONTRACT.md`](docs/EDITORIAL-UI-CONTRACT.md) — presentation quality and progressive disclosure.
+- [`skills/aidrb-retrieve/SKILL.md`](skills/aidrb-retrieve/SKILL.md) — machine retrieval and identity discipline.
+- [`skills/resource-ingest/SKILL.md`](skills/resource-ingest/SKILL.md) — ingestion and optional Resource extraction.

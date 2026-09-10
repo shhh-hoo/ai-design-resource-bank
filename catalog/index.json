@@ -6,6 +6,12 @@
     "type": "Collection"
   },
   {
+    "id": "collection:interactive-mechanism-studies",
+    "resolve_path": "catalog/records/collection/interactive-mechanism-studies.json",
+    "title": "Interactive mechanism studies",
+    "type": "Collection"
+  },
+  {
     "id": "concept:anchored-callout",
     "resolve_path": "catalog/records/concept/anchored-callout.json",
     "title": "Anchored callout",
@@ -558,6 +564,30 @@
     "type": "Concept"
   },
   {
+    "id": "ex:anchored-callout-interactive-study",
+    "resolve_path": "catalog/records/ex/anchored-callout-interactive-study.json",
+    "title": "Anchored callout — interactive study",
+    "type": "Example"
+  },
+  {
+    "id": "ex:bond-morph-interactive-study",
+    "resolve_path": "catalog/records/ex/bond-morph-interactive-study.json",
+    "title": "Bond morph — interactive study",
+    "type": "Example"
+  },
+  {
+    "id": "ex:camera-dolly-interactive-study",
+    "resolve_path": "catalog/records/ex/camera-dolly-interactive-study.json",
+    "title": "Camera dolly — interactive study",
+    "type": "Example"
+  },
+  {
+    "id": "ex:canvas-focus-lens-interactive-study",
+    "resolve_path": "catalog/records/ex/canvas-focus-lens-interactive-study.json",
+    "title": "Canvas focus lens — interactive study",
+    "type": "Example"
+  },
+  {
     "id": "ex:chemistry-bond-polarity",
     "resolve_path": "catalog/records/ex/chemistry-bond-polarity.json",
     "title": "Bond dipole and molecular polarity · CO₂",
@@ -843,6 +873,60 @@
     "id": "ex:chemistry-weak-acid-titration",
     "resolve_path": "catalog/records/ex/chemistry-weak-acid-titration.json",
     "title": "Weak-acid titration · half equivalence",
+    "type": "Example"
+  },
+  {
+    "id": "ex:depth-parallax-interactive-study",
+    "resolve_path": "catalog/records/ex/depth-parallax-interactive-study.json",
+    "title": "Depth parallax — interactive study",
+    "type": "Example"
+  },
+  {
+    "id": "ex:explode-assemble-interactive-study",
+    "resolve_path": "catalog/records/ex/explode-assemble-interactive-study.json",
+    "title": "Explode / assemble — interactive study",
+    "type": "Example"
+  },
+  {
+    "id": "ex:graph-relayout-interactive-study",
+    "resolve_path": "catalog/records/ex/graph-relayout-interactive-study.json",
+    "title": "Graph relayout — interactive study",
+    "type": "Example"
+  },
+  {
+    "id": "ex:noise-threshold-wipe-interactive-study",
+    "resolve_path": "catalog/records/ex/noise-threshold-wipe-interactive-study.json",
+    "title": "Noise threshold wipe — interactive study",
+    "type": "Example"
+  },
+  {
+    "id": "ex:orbital-overlap-interactive-study",
+    "resolve_path": "catalog/records/ex/orbital-overlap-interactive-study.json",
+    "title": "Orbital overlap — interactive study",
+    "type": "Example"
+  },
+  {
+    "id": "ex:particle-attractor-interactive-study",
+    "resolve_path": "catalog/records/ex/particle-attractor-interactive-study.json",
+    "title": "Particle attractor — interactive study",
+    "type": "Example"
+  },
+  {
+    "id": "ex:scroll-scrub-interactive-study",
+    "resolve_path": "catalog/records/ex/scroll-scrub-interactive-study.json",
+    "title": "Scroll scrub — interactive study",
+    "type": "Example"
+  },
+  {
+    "id": "ex:split-text-reveal-interactive-study",
+    "resolve_path": "catalog/records/ex/split-text-reveal-interactive-study.json",
+    "title": "Split text reveal — interactive study",
+    "type": "Example"
+  },
+  {
+    "id": "ex:stage-spotlight-interactive-study",
+    "resolve_path": "catalog/records/ex/stage-spotlight-interactive-study.json",
+    "title": "Stage spotlight — interactive study",
     "type": "Example"
   },
   {
@@ -1323,6 +1407,12 @@
     "id": "source:legacy-families",
     "resolve_path": "catalog/records/source/legacy-families.json",
     "title": "Legacy subject family seeds",
+    "type": "Source"
+  },
+  {
+    "id": "source:legacy-mechanism-workbench",
+    "resolve_path": "catalog/records/source/legacy-mechanism-workbench.json",
+    "title": "Pre-Atlas AIDRB interactive mechanism workbench",
     "type": "Source"
   },
   {
