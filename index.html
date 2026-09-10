@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#f6f6f2" />
   <title>AI Design Resource Bank</title>
-  <meta name="description" content="A human-readable workbench for frontend mechanisms, tools, references, and reusable resources." />
+  <meta name="description" content="A human-readable decision system for subject visualization, frontend mechanisms, tools, references, and reusable resources." />
   <link rel="stylesheet" href="./web/board.css" />
   <link rel="modulepreload" href="./web/board.js" />
   <link rel="modulepreload" href="./web/mechanism-workbench.js" />
@@ -17,7 +17,8 @@
       <span>AI Design Resource Bank</span>
     </a>
     <nav class="site-nav" aria-label="Primary">
-      <button class="nav-link is-active" type="button" data-view="explore">Explore</button>
+      <button class="nav-link" type="button" data-view="decide">Decide</button>
+      <button class="nav-link is-active" type="button" data-view="explore">Mechanisms</button>
       <button class="nav-link" type="button" data-view="index">Index</button>
       <a class="nav-link" href="https://github.com/shhh-hoo/ai-design-resource-bank" target="_blank" rel="noreferrer">GitHub ↗</a>
     </nav>
@@ -25,17 +26,25 @@
 
   <main>
     <section class="intro" aria-labelledby="page-title">
-      <p class="eyebrow">Subject → mechanism → demo → tool</p>
+      <p class="eyebrow">Curriculum → relationship → representation → tool</p>
       <div class="intro-grid">
-        <h1 id="page-title">Find a mechanism.<br />Try it. Then build.</h1>
-        <p class="intro-note">A working index of frontend ideas worth reusing. Start with the behavior, not the library.</p>
+        <h1 id="page-title">Make the idea<br />visible.</h1>
+        <p class="intro-note">Start with a subject, a visual problem, or a mechanism. The bank routes you toward the narrowest truthful representation before it names a library.</p>
       </div>
-      <label class="search" for="searchInput">
+      <div class="intro-actions">
+        <button class="intro-action" type="button" data-view="decide">Start a decision →</button>
+        <span>or browse the mechanism library below</span>
+      </div>
+      <label class="search" id="globalSearch" for="searchInput">
         <span aria-hidden="true">⌕</span>
-        <input id="searchInput" type="search" autocomplete="off" placeholder="Search a behavior, subject, or tool" />
+        <input id="searchInput" type="search" autocomplete="off" placeholder="Search mechanisms, tools, or references" />
         <kbd>/</kbd>
       </label>
       <nav class="chapter-nav" id="chapterNav" aria-label="Subjects"></nav>
+    </section>
+
+    <section class="decision-view" id="decisionView" aria-label="Visualization decision system" hidden>
+      <div id="decisionRoot"></div>
     </section>
 
     <section class="explore-view" id="exploreView" aria-label="Mechanism workbench">

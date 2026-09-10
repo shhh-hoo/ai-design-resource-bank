@@ -1,0 +1,76 @@
+version: 1
+purpose: >-
+  Curated routing from visualization grammars to mechanisms that are already banked.
+  Empty lists are intentional capability gaps, not missing data. This mapping is human-reviewed
+  and should stay stricter than fuzzy subject-family association.
+
+grammar_mechanisms:
+  functional-graph:
+    - movable-tangent
+    - area-under-curve
+    - reaction-coordinate
+  dynamic-geometry:
+    - vector-decomposition
+    - movable-tangent
+  statistical-distribution:
+    - area-under-curve
+  vector-field:
+    - force-vector-overlay
+    - vector-decomposition
+    - particle-attractor
+  dynamic-system:
+    - force-vector-overlay
+    - wave-propagation
+    - particle-attractor
+  state-process:
+    - electron-pushing
+    - bond-morph
+    - reaction-coordinate
+    - scroll-scrub
+  3d-spatial:
+    - anchored-callout
+    - explode-assemble
+    - camera-dolly
+    - orbital-overlap
+  structure-anatomy:
+    - anchored-callout
+    - explode-assemble
+    - orbital-overlap
+  micro-macro-bridge:
+    - semantic-zoom
+  field-flow:
+    - particle-attractor
+    - wave-propagation
+    - vector-decomposition
+  spatial-map:
+    - semantic-zoom
+    - canvas-focus-lens
+    - anchored-callout
+  network-relation:
+    - focus-context
+    - graph-relayout
+    - semantic-zoom
+    - canvas-focus-lens
+  time-sequence:
+    - scroll-scrub
+    - pinned-reveal
+  evidence-comparison:
+    - focus-context
+  image-comparison:
+    - mask-transition
+    - stage-spotlight
+  composition-layer:
+    - explode-assemble
+    - anchored-callout
+    - mask-transition
+  symbolic-notation:
+    - split-text-reveal
+  audio-time:
+    - wave-propagation
+  optimization-tradeoff:
+    - movable-tangent
+    - area-under-curve
+  code-execution:
+    - graph-relayout
+    - focus-context
+    - scroll-scrub

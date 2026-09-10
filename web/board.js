@@ -14,7 +14,11 @@
 
   const els = {
     search: document.getElementById("searchInput"),
+    intro: document.querySelector(".intro"),
+    globalSearch: document.getElementById("globalSearch"),
     chapterNav: document.getElementById("chapterNav"),
+    decide: document.getElementById("decisionView"),
+    decisionRoot: document.getElementById("decisionRoot"),
     explore: document.getElementById("exploreView"),
     chapters: document.getElementById("mechanismChapters"),
     searchResults: document.getElementById("searchResults"),
@@ -305,9 +309,20 @@
     state.view = view;
     els.explore.hidden = view !== "explore";
     els.index.hidden = view !== "index";
+    els.decide.hidden = view !== "decide";
+    els.intro.hidden = view === "decide";
+    els.globalSearch.hidden = view === "decide";
+    els.chapterNav.hidden = view !== "explore";
     els.viewButtons.forEach((button) => button.classList.toggle("is-active", button.dataset.view === view));
     if (view === "index") renderIndex();
-    else renderExplore();
+    else if (view === "decide") {
+      import("./decision-board.js")
+        .then(({ mountDecisionBoard }) => mountDecisionBoard(els.decisionRoot))
+        .catch((error) => {
+          console.error("Decision board failed to load", error);
+          els.decisionRoot.innerHTML = `<div class="decision-empty"><p class="decision-kicker">Decision system unavailable</p><h2>The subject atlas could not load.</h2></div>`;
+        });
+    } else renderExplore();
   }
 
   function getItem(uid) {
@@ -687,13 +702,19 @@
   function handleHash() {
     const hash = decodeURIComponent(location.hash.replace(/^#/, ""));
     if (!hash || !hash.includes(":")) return;
+    if (hash.startsWith("subject:") || hash.startsWith("grammar:")) {
+      if (state.openUid) closeDrawer(false);
+      setView("decide");
+      return;
+    }
     if (getItem(hash)) openDrawer(hash, false);
   }
 
   function bindEvents() {
     els.search.addEventListener("input", () => {
       state.query = els.search.value;
-      if (state.view === "index") renderIndex(); else renderExplore();
+      if (state.view === "index") renderIndex();
+      else if (state.view === "explore") renderExplore();
     });
     els.clearSearch.addEventListener("click", () => {
       state.query = ""; els.search.value = ""; renderExplore(); els.search.focus();
@@ -704,7 +725,7 @@
     els.drawerBackdrop.addEventListener("click", () => closeDrawer(true));
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape" && state.openUid) closeDrawer(true);
-      if (event.key === "/" && document.activeElement !== els.search && !state.openUid) { event.preventDefault(); els.search.focus(); }
+      if (event.key === "/" && state.view !== "decide" && document.activeElement !== els.search && !state.openUid) { event.preventDefault(); els.search.focus(); }
     });
     window.addEventListener("popstate", () => {
       if (!location.hash) closeDrawer(false); else handleHash();
@@ -724,6 +745,7 @@
       console.error(error);
       els.explore.hidden = true;
       els.index.hidden = true;
+      els.decide.hidden = true;
       els.loadError.hidden = false;
       els.loadErrorMessage.textContent = error instanceof Error ? error.message : String(error);
     }
