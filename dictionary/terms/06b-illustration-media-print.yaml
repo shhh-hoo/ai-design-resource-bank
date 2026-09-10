@@ -116,5 +116,5 @@ terms:
     url: https://www.citebd.org/neuvieme-art/ligne-claire
     asset_policy: linked-external
   related: [contour-line, swiss-style, halftone]
-  preview: {type: clear-line, note: Original mnemonic showing clean contour, flat color, and minimal hatching.}
+  preview: {type: clear-line, note: "Original mnemonic showing clean contour, flat color, and minimal hatching."}
   resource_refs: []
