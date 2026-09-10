@@ -60,6 +60,7 @@ jobs:
       - name: Install contract dependencies
         run: python -m pip install --disable-pip-version-check --quiet pyyaml jsonschema
       - name: Validate Windows checkout, catalog reproducibility and retrieval
+        shell: bash
         run: |
           python scripts/validate_atlas.py
           python scripts/validate_resources.py
