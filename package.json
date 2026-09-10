@@ -3,13 +3,21 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build:framework-demos": "node scripts/build_framework_demos.mjs"
+    "build:framework-demos": "node scripts/build_framework_demos.mjs",
+    "build": "python3 scripts/build_catalog.py",
+    "dev": "python3 -m http.server 4173 --bind 127.0.0.1",
+    "validate": "python3 scripts/validate_atlas.py && python3 scripts/build_catalog.py --check && python3 scripts/validate_resources.py",
+    "test": "python3 -m unittest discover -s tests -p \"test_*.py\" && node --test tests/models.test.mjs",
+    "test:browser": "playwright test",
+    "build:site": "python3 scripts/build_site.py"
   },
   "dependencies": {
     "d3-force": "3.0.0",
     "three": "0.186.0"
   },
   "devDependencies": {
+    "@playwright/test": "1.58.2",
+    "agent-browser": "0.20.0",
     "esbuild": "0.28.2"
   }
 }

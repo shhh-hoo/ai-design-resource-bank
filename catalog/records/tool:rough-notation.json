@@ -1,0 +1,57 @@
+{
+  "record": {
+    "agent_notes": "Useful micro-primitive for teaching emphasis.",
+    "avoid_when": "Dense persistent annotations or exact technical overlays are needed.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "underline",
+      "highlight",
+      "box",
+      "circle",
+      "strike-through",
+      "animated-annotation"
+    ],
+    "docs": "https://roughnotation.com/",
+    "domains": [
+      "education",
+      "text",
+      "presentation"
+    ],
+    "ecosystem": [
+      "JavaScript",
+      "SVG"
+    ],
+    "homepage": "https://roughnotation.com/",
+    "id": "tool:rough-notation",
+    "legacy_kind": "annotation-library",
+    "license": "MIT",
+    "source_refs": [
+      "source:tool-rough-notation"
+    ],
+    "subtype": "library",
+    "summary": "Animated emphasis around text/formulas should look hand-annotated rather than like generic CSS highlighting.",
+    "tags": [
+      "annotation",
+      "highlight",
+      "education"
+    ],
+    "tier": "specialized",
+    "title": "Rough Notation",
+    "type": "Tool",
+    "use_when": "Animated emphasis around text/formulas should look hand-annotated rather than like generic CSS highlighting."
+  },
+  "relations": [],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-rough-notation",
+      "publisher": "Rough Notation",
+      "title": "Rough Notation official documentation",
+      "type": "Source",
+      "url": "https://roughnotation.com/"
+    }
+  ]
+}

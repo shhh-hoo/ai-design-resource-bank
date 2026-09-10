@@ -1,2 +1,20 @@
-version: 1
-resources: []
+{
+  "resources": [
+    {
+      "domain": "chemistry",
+      "hint": "One coordinate drives a marker on a single-step energy profile; activation energy and enthalpy share explicit endpoints.",
+      "id": "reaction-profile",
+      "path": "resources/chemistry/reaction-profile",
+      "status": "verified",
+      "tags": [
+        "chemistry",
+        "energetics",
+        "activation-energy",
+        "reaction-coordinate",
+        "svg"
+      ],
+      "title": "Reaction profile with linked coordinate marker"
+    }
+  ],
+  "version": 1
+}

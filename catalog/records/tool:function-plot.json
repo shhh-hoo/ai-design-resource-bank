@@ -1,0 +1,55 @@
+{
+  "record": {
+    "agent_notes": "Good small dependency for conventional Cartesian plots.",
+    "avoid_when": "Rich dynamic geometry, complex symbolic manipulation, or 3D.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "function-plot",
+      "scatter",
+      "zoom",
+      "annotations"
+    ],
+    "docs": "https://mauriciopoppe.github.io/function-plot/",
+    "domains": [
+      "math"
+    ],
+    "ecosystem": [
+      "JavaScript",
+      "D3",
+      "SVG"
+    ],
+    "examples": "https://mauriciopoppe.github.io/function-plot/",
+    "homepage": "https://github.com/mauriciopoppe/function-plot",
+    "id": "tool:function-plot",
+    "legacy_kind": "library",
+    "license": "MIT",
+    "source_refs": [
+      "source:tool-function-plot"
+    ],
+    "subtype": "library",
+    "summary": "A compact embeddable 2D function plotter is enough and a full math environment would be excessive.",
+    "tags": [
+      "math",
+      "function",
+      "plot"
+    ],
+    "tier": "specialized",
+    "title": "function-plot",
+    "type": "Tool",
+    "use_when": "A compact embeddable 2D function plotter is enough and a full math environment would be excessive."
+  },
+  "relations": [],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-function-plot",
+      "publisher": "function-plot",
+      "title": "function-plot official documentation",
+      "type": "Source",
+      "url": "https://mauriciopoppe.github.io/function-plot/"
+    }
+  ]
+}

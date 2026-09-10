@@ -1,0 +1,15 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-tools.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:tool-mathbox",
+    "publisher": "MathBox",
+    "title": "MathBox official documentation",
+    "type": "Source",
+    "url": "https://github.com/unconed/mathbox"
+  },
+  "relations": [],
+  "sources": []
+}

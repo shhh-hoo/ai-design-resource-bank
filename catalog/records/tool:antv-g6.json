@@ -1,0 +1,91 @@
+{
+  "record": {
+    "agent_notes": "Compare with React Flow — G6 for graph visualization; React Flow for node-editor product interaction.",
+    "avoid_when": "The user is editing a workflow/node canvas rather than analyzing or viewing a graph.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "graph-layout",
+      "network-analysis",
+      "interaction",
+      "animation",
+      "large-graphs",
+      "webgpu"
+    ],
+    "docs": "https://g6.antv.antgroup.com/en/manual/introduction",
+    "domains": [
+      "graphs",
+      "networks",
+      "data-visualization"
+    ],
+    "ecosystem": [
+      "JavaScript",
+      "Canvas",
+      "SVG",
+      "WebGL",
+      "WebGPU"
+    ],
+    "examples": "https://g6.antv.antgroup.com/en/examples",
+    "homepage": "https://g6.antv.antgroup.com/en",
+    "id": "tool:antv-g6",
+    "legacy_kind": "graph-engine",
+    "license": "MIT",
+    "source_refs": [
+      "source:tool-antv-g6"
+    ],
+    "subtype": "renderer",
+    "summary": "Relationship/network visualization needs graph layouts, many nodes/edges, graph-specific behaviors, or large-data performance.",
+    "tags": [
+      "graph",
+      "network",
+      "layout",
+      "large-data"
+    ],
+    "tier": "core",
+    "title": "AntV G6",
+    "type": "Tool",
+    "use_when": "Relationship/network visualization needs graph layouts, many nodes/edges, graph-specific behaviors, or large-data performance."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:focus-context",
+      "target": "tool:antv-g6",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-network-relation",
+      "target": "tool:antv-g6",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:graph-relayout",
+      "target": "tool:antv-g6",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:semantic-zoom",
+      "target": "tool:antv-g6",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-antv-g6",
+      "publisher": "AntV G6",
+      "title": "AntV G6 official documentation",
+      "type": "Source",
+      "url": "https://g6.antv.antgroup.com/en/manual/introduction"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "state": "locked",
+  "committed": {
+    "version": 1,
+    "state": "committed",
+    "selection": {
+      "selector": "human",
+      "selections": [
+        {
+          "id": "ex:chemistry-reaction-profile",
+          "aspect_notes": "Keep ΔH and coordinate marker; avoid time claims.",
+          "constraints": [
+            "Do not replace the stable ID."
+          ]
+        }
+      ]
+    },
+    "catalog_fingerprint": "461f31927a3b7987f3708c17f1f4206252313277263ec242486215b05db35233",
+    "commit_digest": "81d7e0862283f34252d1e63bc32c88abcb9aadf143f6d89faa3405996141d3a5"
+  },
+  "locked_ids": [
+    "ex:chemistry-reaction-profile"
+  ],
+  "lock_digest": "f05a56f1dde2680fca31f8bd6c603040b946c2616616a480d1093881672fb1dd"
+}

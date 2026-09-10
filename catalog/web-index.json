@@ -1,0 +1,1536 @@
+{
+  "collections": [
+    {
+      "canonical_path": "knowledge/collections/collections.json",
+      "id": "collection:chemistry-studies",
+      "summary": "Original bounded studies and named coverage gaps.",
+      "title": "Chemistry · diagram studies",
+      "type": "Collection"
+    }
+  ],
+  "examples": [
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-bond-polarity"
+      ],
+      "gap_reason": "Needs signed bond dipoles and a geometry-linked vector sum.",
+      "id": "ex:chemistry-bond-polarity",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "Bond dipole and molecular polarity · CO₂",
+      "topic_ids": [
+        "topic:chemistry-bonding"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-born-haber"
+      ],
+      "gap_reason": "Needs all atomisation, ionisation, electron-affinity and lattice steps with an explicit lattice sign convention.",
+      "id": "ex:chemistry-born-haber",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "Born–Haber cycle · sodium chloride",
+      "topic_ids": [
+        "topic:chemistry-energetics"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-buffer"
+      ],
+      "gap_reason": "Needs mass balance and equilibrium response to added acid/base.",
+      "id": "ex:chemistry-buffer",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "Buffer response · ethanoic acid / ethanoate",
+      "topic_ids": [
+        "topic:chemistry-acids-bases"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-catalyst-profile"
+      ],
+      "id": "ex:chemistry-catalyst-profile",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "REFERENCE",
+      "medium": "diagram",
+      "preview": {
+        "description": "Schematic alternative pathway has a lower barrier and unchanged endpoint enthalpies.",
+        "renderer": "catalyst",
+        "url": "#example/ex:chemistry-catalyst-profile"
+      },
+      "subject_id": "topic:chemistry",
+      "title": "Catalysed vs uncatalysed energy path",
+      "topic_ids": [
+        "topic:chemistry-kinetics"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-chromatography"
+      ],
+      "id": "ex:chemistry-chromatography",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "REFERENCE",
+      "medium": "diagram",
+      "preview": {
+        "description": "Rf = distance traveled by spot / distance traveled by solvent front, both from the baseline.",
+        "renderer": "chromatography",
+        "url": "#example/ex:chemistry-chromatography"
+      },
+      "subject_id": "topic:chemistry",
+      "title": "Chromatography · Rf measurement",
+      "topic_ids": [
+        "topic:chemistry-analytical"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-composition-shift"
+      ],
+      "gap_reason": "Needs a mass-balanced equilibrium model and temperature-specific K.",
+      "id": "ex:chemistry-composition-shift",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "Equilibrium composition shift · N₂O₄ / NO₂",
+      "topic_ids": [
+        "topic:chemistry-equilibrium"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-conjugate-pairs"
+      ],
+      "id": "ex:chemistry-conjugate-pairs",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "REFERENCE",
+      "medium": "diagram",
+      "preview": {
+        "description": "NH₃ accepts a proton from H₂O, giving NH₄⁺ and OH⁻.",
+        "renderer": "acid-base",
+        "url": "#example/ex:chemistry-conjugate-pairs"
+      },
+      "subject_id": "topic:chemistry",
+      "title": "Conjugate pairs · ammonia and water",
+      "topic_ids": [
+        "topic:chemistry-acids-bases"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-curly-arrow",
+        "concept:electron-pushing",
+        "concept:bond-morph"
+      ],
+      "gap_reason": "Legacy electron-pushing and bond-morph seeds lack a fully specified chemical reaction and charge accounting.",
+      "id": "ex:chemistry-curly-arrow",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "Curly-arrow mechanism · SN2 substitution",
+      "topic_ids": [
+        "topic:chemistry-organic"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-dilution"
+      ],
+      "gap_reason": "Needs a calibrated flask sequence and explicit concentration/volume units.",
+      "id": "ex:chemistry-dilution",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "Volumetric dilution · conserved solute",
+      "topic_ids": [
+        "topic:chemistry-stoichiometry"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-dissolution"
+      ],
+      "gap_reason": "Needs solvent orientation around each ion, not generic moving particles.",
+      "id": "ex:chemistry-dissolution",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "NaCl dissolution and hydration shells",
+      "topic_ids": [
+        "topic:chemistry-states-solutions"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-dynamic-equilibrium"
+      ],
+      "id": "ex:chemistry-dynamic-equilibrium",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "REFERENCE",
+      "medium": "diagram",
+      "preview": {
+        "description": "Forward and reverse rates become equal; concentrations need not be equal.",
+        "renderer": "equilibrium",
+        "url": "#example/ex:chemistry-dynamic-equilibrium"
+      },
+      "subject_id": "topic:chemistry",
+      "title": "Dynamic equilibrium · equal rates",
+      "topic_ids": [
+        "topic:chemistry-equilibrium"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-electrolysis"
+      ],
+      "gap_reason": "Needs charge integration, Faraday stoichiometry and electrode conditions.",
+      "id": "ex:chemistry-electrolysis",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "Copper electrolysis · charge to mass",
+      "topic_ids": [
+        "topic:chemistry-redox"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-electron-configuration"
+      ],
+      "id": "ex:chemistry-electron-configuration",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "REFERENCE",
+      "medium": "diagram",
+      "preview": {
+        "description": "Nitrogen: 1s² 2s² 2p³; singly occupy degenerate 2p orbitals before pairing.",
+        "renderer": "orbital-boxes",
+        "url": "#example/ex:chemistry-electron-configuration"
+      },
+      "subject_id": "topic:chemistry",
+      "title": "Electron configuration · nitrogen",
+      "topic_ids": [
+        "topic:chemistry-atomic-structure"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-empirical-formula"
+      ],
+      "gap_reason": "Needs a concrete mass dataset with conserved carbon and hydrogen.",
+      "id": "ex:chemistry-empirical-formula",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "Combustion data → empirical formula",
+      "topic_ids": [
+        "topic:chemistry-stoichiometry"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-equilibrium-expression"
+      ],
+      "id": "ex:chemistry-equilibrium-expression",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "REFERENCE",
+      "medium": "diagram",
+      "preview": {
+        "description": "N₂ + 3H₂ ⇌ 2NH₃; exponents follow stoichiometry in the concentration form.",
+        "renderer": "haber",
+        "url": "#example/ex:chemistry-equilibrium-expression"
+      },
+      "subject_id": "topic:chemistry",
+      "title": "Equilibrium expression · Haber reaction",
+      "topic_ids": [
+        "topic:chemistry-equilibrium"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-first-order"
+      ],
+      "id": "ex:chemistry-first-order",
+      "intent_ids": [
+        "intent:predict"
+      ],
+      "interaction": "parameter-control",
+      "kind": "LIVE",
+      "medium": "interactive-diagram",
+      "preview": {
+        "description": "A → products: [A] = [A]₀ exp(−kt), constant temperature and one first-order pathway.",
+        "renderer": "kinetics",
+        "url": "#example/ex:chemistry-first-order"
+      },
+      "subject_id": "topic:chemistry",
+      "title": "First-order concentration decay",
+      "topic_ids": [
+        "topic:chemistry-kinetics"
+      ],
+      "visual_traits": [
+        "labeled",
+        "quantitative"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-functional-groups"
+      ],
+      "id": "ex:chemistry-functional-groups",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "REFERENCE",
+      "medium": "diagram",
+      "preview": {
+        "description": "Condensed structural formulas compare alcohol and carboxylic acid groups.",
+        "renderer": "organic",
+        "url": "#example/ex:chemistry-functional-groups"
+      },
+      "subject_id": "topic:chemistry",
+      "title": "Functional groups · ethanol and ethanoic acid",
+      "topic_ids": [
+        "topic:chemistry-organic"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-galvanic-cell"
+      ],
+      "id": "ex:chemistry-galvanic-cell",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "REFERENCE",
+      "medium": "diagram",
+      "preview": {
+        "description": "Zn anode oxidizes; electrons flow externally to the Cu cathode; salt bridge closes the ionic circuit.",
+        "renderer": "cell",
+        "url": "#example/ex:chemistry-galvanic-cell"
+      },
+      "subject_id": "topic:chemistry",
+      "title": "Galvanic cell · zinc and copper",
+      "topic_ids": [
+        "topic:chemistry-redox"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-gibbs-energy"
+      ],
+      "id": "ex:chemistry-gibbs-energy",
+      "intent_ids": [
+        "intent:predict"
+      ],
+      "interaction": "parameter-control",
+      "kind": "LIVE",
+      "medium": "interactive-diagram",
+      "preview": {
+        "description": "Illustrative constant ΔH / ΔS model: ΔG = ΔH − TΔS; not a prediction across phase transitions.",
+        "renderer": "gibbs",
+        "url": "#example/ex:chemistry-gibbs-energy"
+      },
+      "subject_id": "topic:chemistry",
+      "title": "Gibbs energy · temperature crossover",
+      "topic_ids": [
+        "topic:chemistry-energetics"
+      ],
+      "visual_traits": [
+        "labeled",
+        "quantitative"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-group-two"
+      ],
+      "gap_reason": "Needs sourced solubility values and stated temperature.",
+      "id": "ex:chemistry-group-two",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "Group 2 hydroxide solubility trend",
+      "topic_ids": [
+        "topic:chemistry-periodicity"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-halogen-displacement"
+      ],
+      "gap_reason": "Needs actual species, observations and a balanced ionic equation.",
+      "id": "ex:chemistry-halogen-displacement",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "Halogen displacement · chlorine and bromide",
+      "topic_ids": [
+        "topic:chemistry-periodicity"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-hess-cycle"
+      ],
+      "id": "ex:chemistry-hess-cycle",
+      "intent_ids": [
+        "intent:predict"
+      ],
+      "interaction": "parameter-control",
+      "kind": "LIVE",
+      "medium": "interactive-diagram",
+      "preview": {
+        "description": "ΔH(C→CO) = ΔH(C→CO₂) − ΔH(CO→CO₂), with all equations balanced.",
+        "renderer": "hess",
+        "url": "#example/ex:chemistry-hess-cycle"
+      },
+      "subject_id": "topic:chemistry",
+      "title": "Hess cycle · carbon monoxide formation",
+      "topic_ids": [
+        "topic:chemistry-energetics"
+      ],
+      "visual_traits": [
+        "labeled",
+        "quantitative"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-hydrogen-bond"
+      ],
+      "id": "ex:chemistry-hydrogen-bond",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "REFERENCE",
+      "medium": "diagram",
+      "preview": {
+        "description": "Dashed O···H interaction is distinct from a solid intramolecular O–H bond.",
+        "renderer": "hydrogen-bond",
+        "url": "#example/ex:chemistry-hydrogen-bond"
+      },
+      "subject_id": "topic:chemistry",
+      "title": "Hydrogen bonding · water pair",
+      "topic_ids": [
+        "topic:chemistry-states-solutions"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-hydrogen-emission"
+      ],
+      "gap_reason": "Needs wavelength-calibrated Balmer lines linked to quantized levels.",
+      "id": "ex:chemistry-hydrogen-emission",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "Hydrogen emission line transitions",
+      "topic_ids": [
+        "topic:chemistry-atomic-structure"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-ideal-gas"
+      ],
+      "id": "ex:chemistry-ideal-gas",
+      "intent_ids": [
+        "intent:predict"
+      ],
+      "interaction": "parameter-control",
+      "kind": "LIVE",
+      "medium": "interactive-diagram",
+      "preview": {
+        "description": "At fixed amount and temperature, PV is constant; ideal-gas model only.",
+        "renderer": "gas",
+        "url": "#example/ex:chemistry-ideal-gas"
+      },
+      "subject_id": "topic:chemistry",
+      "title": "Boyle’s law · pressure and volume",
+      "topic_ids": [
+        "topic:chemistry-states-solutions"
+      ],
+      "visual_traits": [
+        "labeled",
+        "quantitative"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-ionic-lattice"
+      ],
+      "id": "ex:chemistry-ionic-lattice",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "REFERENCE",
+      "medium": "diagram",
+      "preview": {
+        "description": "A 2D slice of alternating ions; not the full six-coordinate 3D lattice.",
+        "renderer": "lattice",
+        "url": "#example/ex:chemistry-ionic-lattice"
+      },
+      "subject_id": "topic:chemistry",
+      "title": "Ionic lattice · sodium chloride",
+      "topic_ids": [
+        "topic:chemistry-bonding"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-ir-spectrum"
+      ],
+      "gap_reason": "Needs a sourced spectrum with wavenumber axis and labeled absorption convention.",
+      "id": "ex:chemistry-ir-spectrum",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "IR spectrum · carbonyl identification",
+      "topic_ids": [
+        "topic:chemistry-analytical"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-isotope-spectrum"
+      ],
+      "id": "ex:chemistry-isotope-spectrum",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "REFERENCE",
+      "medium": "diagram",
+      "preview": {
+        "description": "Schematic atomic 35Cl / 37Cl peaks at approximately 3:1; not the Cl₂ molecular-ion spectrum.",
+        "renderer": "isotopes",
+        "url": "#example/ex:chemistry-isotope-spectrum"
+      },
+      "subject_id": "topic:chemistry",
+      "title": "Chlorine isotope mass spectrum",
+      "topic_ids": [
+        "topic:chemistry-atomic-structure"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-ligand-exchange"
+      ],
+      "gap_reason": "Needs coordination number, charge and solvent-dependent color evidence.",
+      "id": "ex:chemistry-ligand-exchange",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "Copper(II) ligand exchange",
+      "topic_ids": [
+        "topic:chemistry-periodicity"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-limiting-reagent"
+      ],
+      "id": "ex:chemistry-limiting-reagent",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "REFERENCE",
+      "medium": "diagram",
+      "preview": {
+        "description": "Three H₂ plus one O₂ yield two H₂O with one H₂ left over; amounts are molecular ratios.",
+        "renderer": "stoichiometry",
+        "url": "#example/ex:chemistry-limiting-reagent"
+      },
+      "subject_id": "topic:chemistry",
+      "title": "Limiting reagent · making water",
+      "topic_ids": [
+        "topic:chemistry-stoichiometry"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-mass-fragmentation"
+      ],
+      "gap_reason": "Needs a specific spectrum and chemically valid fragment masses.",
+      "id": "ex:chemistry-mass-fragmentation",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "Mass spectrum · fragmentation assignment",
+      "topic_ids": [
+        "topic:chemistry-analytical"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-maxwell-boltzmann"
+      ],
+      "gap_reason": "Needs normalized distributions and an activation-energy tail; generic waves do not qualify.",
+      "id": "ex:chemistry-maxwell-boltzmann",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "Maxwell–Boltzmann distribution",
+      "topic_ids": [
+        "topic:chemistry-kinetics"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-mole-conversion"
+      ],
+      "id": "ex:chemistry-mole-conversion",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "REFERENCE",
+      "medium": "diagram",
+      "preview": {
+        "description": "For 18.0 g water using M = 18.0 g mol⁻¹: 1.00 mol and approximately 6.02 × 10²³ molecules.",
+        "renderer": "moles",
+        "url": "#example/ex:chemistry-mole-conversion"
+      },
+      "subject_id": "topic:chemistry",
+      "title": "Mass ↔ amount ↔ particles",
+      "topic_ids": [
+        "topic:chemistry-stoichiometry"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-nernst"
+      ],
+      "gap_reason": "Needs specified reaction quotient, electron number and temperature.",
+      "id": "ex:chemistry-nernst",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "Cell potential vs concentration · Nernst",
+      "topic_ids": [
+        "topic:chemistry-redox"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-nmr-mapping"
+      ],
+      "gap_reason": "Needs sourced chemical shifts, integration and splitting; no invented spectrum.",
+      "id": "ex:chemistry-nmr-mapping",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "NMR spectrum → structure · ethanol",
+      "topic_ids": [
+        "topic:chemistry-analytical"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-orbital-overlap",
+        "concept:orbital-overlap"
+      ],
+      "gap_reason": "Legacy overlap seed lacks orbital phase and symmetry fidelity; a domain-correct example is needed.",
+      "id": "ex:chemistry-orbital-overlap",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "σ / π orbital overlap",
+      "topic_ids": [
+        "topic:chemistry-bonding"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-oxidation-state"
+      ],
+      "id": "ex:chemistry-oxidation-state",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "REFERENCE",
+      "medium": "diagram",
+      "preview": {
+        "description": "In MnO₄⁻, four O at −2 require Mn at +7 to sum to −1.",
+        "renderer": "oxidation",
+        "url": "#example/ex:chemistry-oxidation-state"
+      },
+      "subject_id": "topic:chemistry",
+      "title": "Oxidation states · permanganate",
+      "topic_ids": [
+        "topic:chemistry-redox"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-periodic-trends"
+      ],
+      "id": "ex:chemistry-periodic-trends",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "REFERENCE",
+      "medium": "diagram",
+      "preview": {
+        "description": "Qualitative trend includes the Mg→Al and P→S exceptions; no fabricated measurements.",
+        "renderer": "periodic",
+        "url": "#example/ex:chemistry-periodic-trends"
+      },
+      "subject_id": "topic:chemistry",
+      "title": "Period 3 · first ionisation energy",
+      "topic_ids": [
+        "topic:chemistry-periodicity"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-phase-diagram"
+      ],
+      "gap_reason": "Needs sourced phase boundaries with correctly signed solid–liquid slope.",
+      "id": "ex:chemistry-phase-diagram",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "Pressure–temperature phase diagram · water",
+      "topic_ids": [
+        "topic:chemistry-states-solutions"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-rate-orders"
+      ],
+      "gap_reason": "Needs an experimental table with independently varied reactants and stated uncertainty.",
+      "id": "ex:chemistry-rate-orders",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "Initial-rate table → reaction orders",
+      "topic_ids": [
+        "topic:chemistry-kinetics"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-reaction-profile",
+        "concept:reaction-coordinate"
+      ],
+      "id": "ex:chemistry-reaction-profile",
+      "intent_ids": [
+        "intent:predict"
+      ],
+      "interaction": "parameter-control",
+      "kind": "LIVE",
+      "medium": "interactive-diagram",
+      "preview": {
+        "description": "Compare the activation barrier with the reactant–product enthalpy difference.",
+        "renderer": "reaction",
+        "url": "#example/ex:chemistry-reaction-profile"
+      },
+      "subject_id": "topic:chemistry",
+      "title": "Reaction profile",
+      "topic_ids": [
+        "topic:chemistry-energetics"
+      ],
+      "visual_traits": [
+        "labeled",
+        "quantitative"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-solubility-product"
+      ],
+      "gap_reason": "Needs ion product versus Ksp with dilution and stoichiometry preserved.",
+      "id": "ex:chemistry-solubility-product",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "Solubility product · precipitation threshold",
+      "topic_ids": [
+        "topic:chemistry-equilibrium"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-stereoisomers"
+      ],
+      "gap_reason": "Needs correct priority assignment and explicit double-bond geometry.",
+      "id": "ex:chemistry-stereoisomers",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "E/Z isomerism · but-2-ene",
+      "topic_ids": [
+        "topic:chemistry-organic"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-successive-ionisation"
+      ],
+      "gap_reason": "Needs sourced successive ionisation data and the shell-boundary jump.",
+      "id": "ex:chemistry-successive-ionisation",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "Successive ionisation energies · magnesium",
+      "topic_ids": [
+        "topic:chemistry-atomic-structure"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-synthesis-map"
+      ],
+      "gap_reason": "Needs a specific route with reagents, conditions and competing pathways.",
+      "id": "ex:chemistry-synthesis-map",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "Organic synthesis · functional-group route",
+      "topic_ids": [
+        "topic:chemistry-organic"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-titration-curve"
+      ],
+      "id": "ex:chemistry-titration-curve",
+      "intent_ids": [
+        "intent:predict"
+      ],
+      "interaction": "parameter-control",
+      "kind": "LIVE",
+      "medium": "interactive-diagram",
+      "preview": {
+        "description": "25.0 mL 0.100 M HCl titrated with 0.100 M NaOH at 25 °C; ideal activities.",
+        "renderer": "titration",
+        "url": "#example/ex:chemistry-titration-curve"
+      },
+      "subject_id": "topic:chemistry",
+      "title": "Strong acid–base titration curve",
+      "topic_ids": [
+        "topic:chemistry-acids-bases"
+      ],
+      "visual_traits": [
+        "labeled",
+        "quantitative"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-water-geometry"
+      ],
+      "id": "ex:chemistry-water-geometry",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "REFERENCE",
+      "medium": "diagram",
+      "preview": {
+        "description": "Bent H₂O, approximately 104.5°; planar schematic omits the 3D lone-pair arrangement.",
+        "renderer": "water",
+        "url": "#example/ex:chemistry-water-geometry"
+      },
+      "subject_id": "topic:chemistry",
+      "title": "VSEPR geometry · water",
+      "topic_ids": [
+        "topic:chemistry-bonding"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    },
+    {
+      "collection_ids": [
+        "collection:chemistry-studies"
+      ],
+      "concept_ids": [
+        "concept:chemistry-weak-acid-titration"
+      ],
+      "gap_reason": "Needs a calibrated curve, buffer region and pH = pKa at half equivalence.",
+      "id": "ex:chemistry-weak-acid-titration",
+      "intent_ids": [
+        "intent:identify"
+      ],
+      "interaction": "inspect",
+      "kind": "GAP",
+      "medium": "diagram",
+      "subject_id": "topic:chemistry",
+      "title": "Weak-acid titration · half equivalence",
+      "topic_ids": [
+        "topic:chemistry-acids-bases"
+      ],
+      "visual_traits": [
+        "labeled",
+        "schematic"
+      ]
+    }
+  ],
+  "intents": [
+    {
+      "canonical_path": "knowledge/intents/intents.json",
+      "id": "intent:compare",
+      "title": "Compare relationships",
+      "type": "Intent"
+    },
+    {
+      "canonical_path": "knowledge/intents/intents.json",
+      "id": "intent:identify",
+      "title": "Identify a structure",
+      "type": "Intent"
+    },
+    {
+      "canonical_path": "knowledge/intents/intents.json",
+      "id": "intent:predict",
+      "title": "Predict a response",
+      "type": "Intent"
+    },
+    {
+      "canonical_path": "knowledge/intents/intents.json",
+      "id": "intent:trace",
+      "title": "Trace a change",
+      "type": "Intent"
+    }
+  ],
+  "topics": [
+    {
+      "canonical_path": "subjects/chemistry/subject.json",
+      "example_ids": [],
+      "id": "topic:chemistry",
+      "parent": null,
+      "prerequisites": [],
+      "scope": "Canonical chemistry knowledge with an explicit visual-example inventory.",
+      "title": "Chemistry",
+      "type": "SubjectTopic"
+    },
+    {
+      "canonical_path": "subjects/chemistry/topics.json",
+      "example_ids": [
+        "ex:chemistry-titration-curve",
+        "ex:chemistry-conjugate-pairs",
+        "ex:chemistry-buffer",
+        "ex:chemistry-weak-acid-titration"
+      ],
+      "id": "topic:chemistry-acids-bases",
+      "order": 7,
+      "parent": "topic:chemistry",
+      "prerequisites": [],
+      "scope": "Proton transfer, acid strength, pH, buffers and titration.",
+      "title": "Acids and Bases",
+      "type": "SubjectTopic"
+    },
+    {
+      "canonical_path": "subjects/chemistry/topics.json",
+      "example_ids": [
+        "ex:chemistry-chromatography",
+        "ex:chemistry-ir-spectrum",
+        "ex:chemistry-nmr-mapping",
+        "ex:chemistry-mass-fragmentation"
+      ],
+      "id": "topic:chemistry-analytical",
+      "order": 11,
+      "parent": "topic:chemistry",
+      "prerequisites": [],
+      "scope": "Separation, identification, spectroscopy and structure inference.",
+      "title": "Analytical and Spectroscopic Chemistry",
+      "type": "SubjectTopic"
+    },
+    {
+      "canonical_path": "subjects/chemistry/topics.json",
+      "example_ids": [
+        "ex:chemistry-electron-configuration",
+        "ex:chemistry-isotope-spectrum",
+        "ex:chemistry-successive-ionisation",
+        "ex:chemistry-hydrogen-emission"
+      ],
+      "id": "topic:chemistry-atomic-structure",
+      "order": 0,
+      "parent": "topic:chemistry",
+      "prerequisites": [],
+      "scope": "Nuclear composition, isotopes, electron arrangement and atomic spectra.",
+      "title": "Atomic Structure",
+      "type": "SubjectTopic"
+    },
+    {
+      "canonical_path": "subjects/chemistry/topics.json",
+      "example_ids": [
+        "ex:chemistry-water-geometry",
+        "ex:chemistry-ionic-lattice",
+        "ex:chemistry-orbital-overlap",
+        "ex:chemistry-bond-polarity"
+      ],
+      "id": "topic:chemistry-bonding",
+      "order": 1,
+      "parent": "topic:chemistry",
+      "prerequisites": [],
+      "scope": "Ionic, covalent and metallic bonding; shape, polarity and orbital overlap.",
+      "title": "Bonding",
+      "type": "SubjectTopic"
+    },
+    {
+      "canonical_path": "subjects/chemistry/topics.json",
+      "example_ids": [
+        "ex:chemistry-reaction-profile",
+        "ex:chemistry-hess-cycle",
+        "ex:chemistry-born-haber",
+        "ex:chemistry-gibbs-energy"
+      ],
+      "id": "topic:chemistry-energetics",
+      "order": 4,
+      "parent": "topic:chemistry",
+      "prerequisites": [],
+      "scope": "Enthalpy changes, cycles, lattice energetics, entropy and Gibbs energy.",
+      "title": "Energetics",
+      "type": "SubjectTopic"
+    },
+    {
+      "canonical_path": "subjects/chemistry/topics.json",
+      "example_ids": [
+        "ex:chemistry-dynamic-equilibrium",
+        "ex:chemistry-equilibrium-expression",
+        "ex:chemistry-composition-shift",
+        "ex:chemistry-solubility-product"
+      ],
+      "id": "topic:chemistry-equilibrium",
+      "order": 6,
+      "parent": "topic:chemistry",
+      "prerequisites": [],
+      "scope": "Dynamic balance, equilibrium expressions, reaction quotient and composition shifts.",
+      "title": "Equilibrium",
+      "type": "SubjectTopic"
+    },
+    {
+      "canonical_path": "subjects/chemistry/topics.json",
+      "example_ids": [
+        "ex:chemistry-first-order",
+        "ex:chemistry-catalyst-profile",
+        "ex:chemistry-maxwell-boltzmann",
+        "ex:chemistry-rate-orders"
+      ],
+      "id": "topic:chemistry-kinetics",
+      "order": 5,
+      "parent": "topic:chemistry",
+      "prerequisites": [],
+      "scope": "Rates, rate laws, collision distributions, mechanisms and catalysis.",
+      "title": "Kinetics",
+      "type": "SubjectTopic"
+    },
+    {
+      "canonical_path": "subjects/chemistry/topics.json",
+      "example_ids": [
+        "ex:chemistry-functional-groups",
+        "ex:chemistry-curly-arrow",
+        "ex:chemistry-stereoisomers",
+        "ex:chemistry-synthesis-map"
+      ],
+      "id": "topic:chemistry-organic",
+      "order": 10,
+      "parent": "topic:chemistry",
+      "prerequisites": [],
+      "scope": "Structure, stereochemistry, functional groups, mechanisms, synthesis and polymers.",
+      "title": "Organic Chemistry",
+      "type": "SubjectTopic"
+    },
+    {
+      "canonical_path": "subjects/chemistry/topics.json",
+      "example_ids": [
+        "ex:chemistry-periodic-trends",
+        "ex:chemistry-group-two",
+        "ex:chemistry-halogen-displacement",
+        "ex:chemistry-ligand-exchange"
+      ],
+      "id": "topic:chemistry-periodicity",
+      "order": 9,
+      "parent": "topic:chemistry",
+      "prerequisites": [],
+      "scope": "Periodic trends, group chemistry, coordination and transition elements.",
+      "title": "Periodicity and Inorganic Chemistry",
+      "type": "SubjectTopic"
+    },
+    {
+      "canonical_path": "subjects/chemistry/topics.json",
+      "example_ids": [
+        "ex:chemistry-galvanic-cell",
+        "ex:chemistry-oxidation-state",
+        "ex:chemistry-nernst",
+        "ex:chemistry-electrolysis"
+      ],
+      "id": "topic:chemistry-redox",
+      "order": 8,
+      "parent": "topic:chemistry",
+      "prerequisites": [],
+      "scope": "Electron transfer, oxidation states, cells, electrode potentials and electrolysis.",
+      "title": "Redox and Electrochemistry",
+      "type": "SubjectTopic"
+    },
+    {
+      "canonical_path": "subjects/chemistry/topics.json",
+      "example_ids": [
+        "ex:chemistry-ideal-gas",
+        "ex:chemistry-hydrogen-bond",
+        "ex:chemistry-phase-diagram",
+        "ex:chemistry-dissolution"
+      ],
+      "id": "topic:chemistry-states-solutions",
+      "order": 3,
+      "parent": "topic:chemistry",
+      "prerequisites": [],
+      "scope": "Phase, intermolecular forces, ideal gases, mixtures and solubility.",
+      "title": "States, Gases and Solutions",
+      "type": "SubjectTopic"
+    },
+    {
+      "canonical_path": "subjects/chemistry/topics.json",
+      "example_ids": [
+        "ex:chemistry-limiting-reagent",
+        "ex:chemistry-mole-conversion",
+        "ex:chemistry-empirical-formula",
+        "ex:chemistry-dilution"
+      ],
+      "id": "topic:chemistry-stoichiometry",
+      "order": 2,
+      "parent": "topic:chemistry",
+      "prerequisites": [],
+      "scope": "Amounts, composition, conservation, equations and limiting reagents.",
+      "title": "Stoichiometry",
+      "type": "SubjectTopic"
+    }
+  ],
+  "version": 1
+}

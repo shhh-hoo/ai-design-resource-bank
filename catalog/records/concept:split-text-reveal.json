@@ -1,0 +1,57 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-mechanisms.yaml",
+    "evidence": "seed",
+    "id": "concept:split-text-reveal",
+    "implementation_note": "Segment at meaningful phrase boundaries and preserve legibility when reduced motion is requested.",
+    "primitives": [
+      "text-segmentation",
+      "stagger",
+      "clipping",
+      "reading-order"
+    ],
+    "source_refs": [
+      "source:legacy-mechanisms"
+    ],
+    "subtypes": [
+      "mechanism"
+    ],
+    "summary": "Reveal words or lines in reading order so motion reinforces phrasing instead of fragmenting it.",
+    "title": "Split-text reveal",
+    "tool_ids": [
+      "tool:motion",
+      "tool:gsap"
+    ],
+    "type": "Concept",
+    "use_when": "Editorial headlines, chapter changes, emphasis, or short instructional statements where textual rhythm matters."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:split-text-reveal",
+      "target": "tool:gsap",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:split-text-reveal",
+      "target": "tool:motion",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-mechanisms.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:legacy-mechanisms",
+      "publisher": "AIDRB",
+      "title": "Legacy mechanism registry",
+      "type": "Source",
+      "url": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/main/registries/frontend-mechanisms.yaml"
+    }
+  ]
+}

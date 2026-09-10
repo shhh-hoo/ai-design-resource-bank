@@ -1,0 +1,46 @@
+{
+  "record": {
+    "canonical_path": "subjects/chemistry/topics.json",
+    "example_ids": [
+      "ex:chemistry-functional-groups",
+      "ex:chemistry-curly-arrow",
+      "ex:chemistry-stereoisomers",
+      "ex:chemistry-synthesis-map"
+    ],
+    "id": "topic:chemistry-organic",
+    "order": 10,
+    "parent": "topic:chemistry",
+    "prerequisites": [],
+    "scope": "Structure, stereochemistry, functional groups, mechanisms, synthesis and polymers.",
+    "title": "Organic Chemistry",
+    "type": "SubjectTopic"
+  },
+  "relations": [
+    {
+      "source": "topic:chemistry-organic",
+      "target": "ex:chemistry-curly-arrow",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-organic",
+      "target": "ex:chemistry-functional-groups",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-organic",
+      "target": "ex:chemistry-stereoisomers",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-organic",
+      "target": "ex:chemistry-synthesis-map",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-organic",
+      "target": "topic:chemistry",
+      "type": "part_of"
+    }
+  ],
+  "sources": []
+}

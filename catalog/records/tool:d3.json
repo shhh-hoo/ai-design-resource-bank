@@ -1,0 +1,132 @@
+{
+  "record": {
+    "agent_notes": "Do not reach for D3 just because a visualization exists; use it when its primitives are actually needed.",
+    "avoid_when": "A standard chart can be expressed much faster with Plot, Vega-Lite, Plotly, or ECharts.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "scales",
+      "axes",
+      "shapes",
+      "transitions",
+      "force-layout",
+      "hierarchy",
+      "geography",
+      "interaction"
+    ],
+    "docs": "https://d3js.org/getting-started",
+    "domains": [
+      "data-visualization",
+      "scientific-visualization"
+    ],
+    "ecosystem": [
+      "JavaScript",
+      "SVG",
+      "Canvas"
+    ],
+    "examples": "https://observablehq.com/@d3/gallery",
+    "homepage": "https://d3js.org/",
+    "id": "tool:d3",
+    "legacy_kind": "library",
+    "license": "ISC",
+    "source_refs": [
+      "source:tool-d3"
+    ],
+    "subtype": "library",
+    "summary": "The visualization grammar or interaction is bespoke and low-level control is valuable.",
+    "tags": [
+      "data-viz",
+      "bespoke",
+      "svg",
+      "layout"
+    ],
+    "tier": "core",
+    "title": "D3",
+    "type": "Tool",
+    "use_when": "The visualization grammar or interaction is bespoke and low-level control is valuable."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:area-under-curve",
+      "target": "tool:d3",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-audio-time",
+      "target": "tool:d3",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-code-execution",
+      "target": "tool:d3",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-evidence-comparison",
+      "target": "tool:d3",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-field-flow",
+      "target": "tool:d3",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-network-relation",
+      "target": "tool:d3",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-state-process",
+      "target": "tool:d3",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-symbolic-notation",
+      "target": "tool:d3",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-time-sequence",
+      "target": "tool:d3",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:reaction-coordinate",
+      "target": "tool:d3",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-d3",
+      "publisher": "D3",
+      "title": "D3 official documentation",
+      "type": "Source",
+      "url": "https://d3js.org/getting-started"
+    }
+  ]
+}

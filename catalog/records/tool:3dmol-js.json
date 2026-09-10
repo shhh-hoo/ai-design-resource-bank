@@ -1,0 +1,62 @@
+{
+  "record": {
+    "agent_notes": "Compare with Mol* on dataset size, UX, and required domain features.",
+    "avoid_when": "Mol*'s richer structural-biology ecosystem is required.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "molecular-3d",
+      "surfaces",
+      "styles",
+      "selections"
+    ],
+    "docs": "https://3dmol.csb.pitt.edu/doc/",
+    "domains": [
+      "chemistry",
+      "structural-biology"
+    ],
+    "ecosystem": [
+      "JavaScript",
+      "WebGL"
+    ],
+    "homepage": "https://3dmol.csb.pitt.edu/",
+    "id": "tool:3dmol-js",
+    "legacy_kind": "domain-viewer",
+    "license": "BSD-3-Clause",
+    "source_refs": [
+      "source:tool-3dmol-js"
+    ],
+    "subtype": "domain-viewer",
+    "summary": "A focused browser molecular viewer is needed with a relatively direct JavaScript API.",
+    "tags": [
+      "chemistry",
+      "molecule",
+      "webgl"
+    ],
+    "tier": "specialized",
+    "title": "3Dmol.js",
+    "type": "Tool",
+    "use_when": "A focused browser molecular viewer is needed with a relatively direct JavaScript API."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-structure-anatomy",
+      "target": "tool:3dmol-js",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-3dmol-js",
+      "publisher": "3Dmol.js",
+      "title": "3Dmol.js official documentation",
+      "type": "Source",
+      "url": "https://3dmol.csb.pitt.edu/doc/"
+    }
+  ]
+}

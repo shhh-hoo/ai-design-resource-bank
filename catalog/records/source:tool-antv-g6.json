@@ -1,0 +1,15 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-tools.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:tool-antv-g6",
+    "publisher": "AntV G6",
+    "title": "AntV G6 official documentation",
+    "type": "Source",
+    "url": "https://g6.antv.antgroup.com/en/manual/introduction"
+  },
+  "relations": [],
+  "sources": []
+}

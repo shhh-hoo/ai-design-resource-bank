@@ -1,0 +1,15 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-tools.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:tool-desmos-api",
+    "publisher": "Desmos Graphing Calculator API",
+    "title": "Desmos Graphing Calculator API official documentation",
+    "type": "Source",
+    "url": "https://www.desmos.com/api/v1.11/docs/index.html"
+  },
+  "relations": [],
+  "sources": []
+}

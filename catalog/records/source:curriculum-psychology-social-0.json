@@ -1,0 +1,15 @@
+{
+  "record": {
+    "canonical_path": "registries/curriculum-research-sources.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:curriculum-psychology-social-0",
+    "publisher": "ap",
+    "title": "AP Psychology",
+    "type": "Source",
+    "url": "https://apstudents.collegeboard.org/courses/ap-psychology"
+  },
+  "relations": [],
+  "sources": []
+}

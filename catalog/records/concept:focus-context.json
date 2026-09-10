@@ -1,0 +1,57 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-mechanisms.yaml",
+    "evidence": "seed",
+    "id": "concept:focus-context",
+    "implementation_note": "Preserve enough context for orientation; de-emphasize unrelated nodes instead of removing them.",
+    "primitives": [
+      "focus-node",
+      "neighbors",
+      "faded-context",
+      "edge-emphasis"
+    ],
+    "source_refs": [
+      "source:legacy-mechanisms"
+    ],
+    "subtypes": [
+      "mechanism"
+    ],
+    "summary": "Emphasize one node and its neighborhood without erasing the rest of the network.",
+    "title": "Focus + context",
+    "tool_ids": [
+      "tool:antv-g6",
+      "tool:cytoscapejs"
+    ],
+    "type": "Concept",
+    "use_when": "Knowledge graphs, concept networks, dependency maps, or graph exploration."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:focus-context",
+      "target": "tool:antv-g6",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:focus-context",
+      "target": "tool:cytoscapejs",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-mechanisms.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:legacy-mechanisms",
+      "publisher": "AIDRB",
+      "title": "Legacy mechanism registry",
+      "type": "Source",
+      "url": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/main/registries/frontend-mechanisms.yaml"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "record": {
+    "agent_notes": "Prefer R3F for React integration; still consult Three.js examples for underlying rendering techniques.",
+    "avoid_when": "A standalone imperative Three.js scene is simpler or React is absent.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "react-threejs",
+      "declarative-scene",
+      "hooks",
+      "composition"
+    ],
+    "docs": "https://r3f.docs.pmnd.rs/getting-started/introduction",
+    "domains": [
+      "3d",
+      "react"
+    ],
+    "ecosystem": [
+      "React",
+      "Three.js"
+    ],
+    "homepage": "https://r3f.docs.pmnd.rs/",
+    "id": "tool:react-three-fiber",
+    "legacy_kind": "framework-adapter",
+    "license": "MIT",
+    "source_refs": [
+      "source:tool-react-three-fiber"
+    ],
+    "subtype": "framework",
+    "summary": "A Three.js scene lives inside a React product and component/state composition is valuable.",
+    "tags": [
+      "3d",
+      "react",
+      "threejs"
+    ],
+    "tier": "core",
+    "title": "React Three Fiber",
+    "type": "Tool",
+    "use_when": "A Three.js scene lives inside a React product and component/state composition is valuable."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:anchored-callout",
+      "target": "tool:react-three-fiber",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-3d-spatial",
+      "target": "tool:react-three-fiber",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-react-three-fiber",
+      "publisher": "React Three Fiber",
+      "title": "React Three Fiber official documentation",
+      "type": "Source",
+      "url": "https://r3f.docs.pmnd.rs/getting-started/introduction"
+    }
+  ]
+}

@@ -1,0 +1,1662 @@
+[
+  {
+    "id": "collection:chemistry-studies",
+    "title": "Chemistry · diagram studies",
+    "type": "Collection"
+  },
+  {
+    "id": "concept:anchored-callout",
+    "title": "Anchored callout",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:area-under-curve",
+    "title": "Area under a curve",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:bond-morph",
+    "title": "Bond morph",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:camera-dolly",
+    "title": "Camera dolly",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:canvas-focus-lens",
+    "title": "Canvas focus lens",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-bond-polarity",
+    "title": "Bond dipole and molecular polarity",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-born-haber",
+    "title": "Born–Haber cycle",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-buffer",
+    "title": "Buffer response",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-catalyst-profile",
+    "title": "Catalysed vs uncatalysed energy path",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-chromatography",
+    "title": "Chromatography",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-composition-shift",
+    "title": "Equilibrium composition shift",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-conjugate-pairs",
+    "title": "Conjugate pairs",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-curly-arrow",
+    "title": "Curly-arrow mechanism",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-dilution",
+    "title": "Volumetric dilution",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-dissolution",
+    "title": "NaCl dissolution and hydration shells",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-dynamic-equilibrium",
+    "title": "Dynamic equilibrium",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-electrolysis",
+    "title": "Copper electrolysis",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-electron-configuration",
+    "title": "Electron configuration",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-empirical-formula",
+    "title": "Combustion data → empirical formula",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-equilibrium-expression",
+    "title": "Equilibrium expression",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-first-order",
+    "title": "First-order concentration decay",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-functional-groups",
+    "title": "Functional groups",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-galvanic-cell",
+    "title": "Galvanic cell",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-gibbs-energy",
+    "title": "Gibbs energy",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-group-two",
+    "title": "Group 2 hydroxide solubility trend",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-halogen-displacement",
+    "title": "Halogen displacement",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-hess-cycle",
+    "title": "Hess cycle",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-hydrogen-bond",
+    "title": "Hydrogen bonding",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-hydrogen-emission",
+    "title": "Hydrogen emission line transitions",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-ideal-gas",
+    "title": "Boyle’s law",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-ionic-lattice",
+    "title": "Ionic lattice",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-ir-spectrum",
+    "title": "IR spectrum",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-isotope-spectrum",
+    "title": "Chlorine isotope mass spectrum",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-ligand-exchange",
+    "title": "Copper(II) ligand exchange",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-limiting-reagent",
+    "title": "Limiting reagent",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-mass-fragmentation",
+    "title": "Mass spectrum",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-maxwell-boltzmann",
+    "title": "Maxwell–Boltzmann distribution",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-mole-conversion",
+    "title": "Mass ↔ amount ↔ particles",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-nernst",
+    "title": "Cell potential vs concentration",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-nmr-mapping",
+    "title": "NMR spectrum → structure",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-orbital-overlap",
+    "title": "σ / π orbital overlap",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-oxidation-state",
+    "title": "Oxidation states",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-periodic-trends",
+    "title": "Period 3",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-phase-diagram",
+    "title": "Pressure–temperature phase diagram",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-rate-orders",
+    "title": "Initial-rate table → reaction orders",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-reaction-profile",
+    "title": "Reaction profile",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-solubility-product",
+    "title": "Solubility product",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-stereoisomers",
+    "title": "E/Z isomerism",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-successive-ionisation",
+    "title": "Successive ionisation energies",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-synthesis-map",
+    "title": "Organic synthesis",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-titration-curve",
+    "title": "Strong acid–base titration curve",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-water-geometry",
+    "title": "VSEPR geometry",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-weak-acid-titration",
+    "title": "Weak-acid titration",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:depth-parallax",
+    "title": "Depth parallax",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:electron-pushing",
+    "title": "Electron pushing",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:explode-assemble",
+    "title": "Explode / assemble",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:focus-context",
+    "title": "Focus + context",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:force-vector-overlay",
+    "title": "Force vector overlay",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-3d-spatial",
+    "title": "3D Spatial",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-audio-time",
+    "title": "Audio Time",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-code-execution",
+    "title": "Code Execution",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-composition-layer",
+    "title": "Composition Layer",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-dynamic-geometry",
+    "title": "Dynamic Geometry",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-dynamic-system",
+    "title": "Dynamic System",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-evidence-comparison",
+    "title": "Evidence Comparison",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-field-flow",
+    "title": "Field Flow",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-functional-graph",
+    "title": "Functional Graph",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-image-comparison",
+    "title": "Image Comparison",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-micro-macro-bridge",
+    "title": "Micro Macro Bridge",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-network-relation",
+    "title": "Network Relation",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-optimization-tradeoff",
+    "title": "Optimization Tradeoff",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-spatial-map",
+    "title": "Spatial Map",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-state-process",
+    "title": "State Process",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-statistical-distribution",
+    "title": "Statistical Distribution",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-structure-anatomy",
+    "title": "Structure Anatomy",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-symbolic-notation",
+    "title": "Symbolic Notation",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-time-sequence",
+    "title": "Time Sequence",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-vector-field",
+    "title": "Vector Field",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:graph-relayout",
+    "title": "Graph re-layout continuity",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:mask-transition",
+    "title": "Mask transition",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:movable-tangent",
+    "title": "Movable tangent",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:noise-threshold-wipe",
+    "title": "Noise-threshold wipe",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:orbital-overlap",
+    "title": "Orbital overlap",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:particle-attractor",
+    "title": "Particle attractor",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:pinned-reveal",
+    "title": "Pinned reveal",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:reaction-coordinate",
+    "title": "Reaction coordinate",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:scroll-scrub",
+    "title": "Scroll-scrub timeline",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:semantic-zoom",
+    "title": "Semantic zoom",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:split-text-reveal",
+    "title": "Split-text reveal",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:stage-spotlight",
+    "title": "Stage spotlight",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:vector-decomposition",
+    "title": "Vector decomposition",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:wave-propagation",
+    "title": "Wave propagation",
+    "type": "Concept"
+  },
+  {
+    "id": "ex:chemistry-bond-polarity",
+    "title": "Bond dipole and molecular polarity · CO₂",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-born-haber",
+    "title": "Born–Haber cycle · sodium chloride",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-buffer",
+    "title": "Buffer response · ethanoic acid / ethanoate",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-catalyst-profile",
+    "title": "Catalysed vs uncatalysed energy path",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-chromatography",
+    "title": "Chromatography · Rf measurement",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-composition-shift",
+    "title": "Equilibrium composition shift · N₂O₄ / NO₂",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-conjugate-pairs",
+    "title": "Conjugate pairs · ammonia and water",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-curly-arrow",
+    "title": "Curly-arrow mechanism · SN2 substitution",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-dilution",
+    "title": "Volumetric dilution · conserved solute",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-dissolution",
+    "title": "NaCl dissolution and hydration shells",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-dynamic-equilibrium",
+    "title": "Dynamic equilibrium · equal rates",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-electrolysis",
+    "title": "Copper electrolysis · charge to mass",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-electron-configuration",
+    "title": "Electron configuration · nitrogen",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-empirical-formula",
+    "title": "Combustion data → empirical formula",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-equilibrium-expression",
+    "title": "Equilibrium expression · Haber reaction",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-first-order",
+    "title": "First-order concentration decay",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-functional-groups",
+    "title": "Functional groups · ethanol and ethanoic acid",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-galvanic-cell",
+    "title": "Galvanic cell · zinc and copper",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-gibbs-energy",
+    "title": "Gibbs energy · temperature crossover",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-group-two",
+    "title": "Group 2 hydroxide solubility trend",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-halogen-displacement",
+    "title": "Halogen displacement · chlorine and bromide",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-hess-cycle",
+    "title": "Hess cycle · carbon monoxide formation",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-hydrogen-bond",
+    "title": "Hydrogen bonding · water pair",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-hydrogen-emission",
+    "title": "Hydrogen emission line transitions",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-ideal-gas",
+    "title": "Boyle’s law · pressure and volume",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-ionic-lattice",
+    "title": "Ionic lattice · sodium chloride",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-ir-spectrum",
+    "title": "IR spectrum · carbonyl identification",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-isotope-spectrum",
+    "title": "Chlorine isotope mass spectrum",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-ligand-exchange",
+    "title": "Copper(II) ligand exchange",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-limiting-reagent",
+    "title": "Limiting reagent · making water",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-mass-fragmentation",
+    "title": "Mass spectrum · fragmentation assignment",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-maxwell-boltzmann",
+    "title": "Maxwell–Boltzmann distribution",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-mole-conversion",
+    "title": "Mass ↔ amount ↔ particles",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-nernst",
+    "title": "Cell potential vs concentration · Nernst",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-nmr-mapping",
+    "title": "NMR spectrum → structure · ethanol",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-orbital-overlap",
+    "title": "σ / π orbital overlap",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-oxidation-state",
+    "title": "Oxidation states · permanganate",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-periodic-trends",
+    "title": "Period 3 · first ionisation energy",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-phase-diagram",
+    "title": "Pressure–temperature phase diagram · water",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-rate-orders",
+    "title": "Initial-rate table → reaction orders",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-reaction-profile",
+    "title": "Reaction profile",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-solubility-product",
+    "title": "Solubility product · precipitation threshold",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-stereoisomers",
+    "title": "E/Z isomerism · but-2-ene",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-successive-ionisation",
+    "title": "Successive ionisation energies · magnesium",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-synthesis-map",
+    "title": "Organic synthesis · functional-group route",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-titration-curve",
+    "title": "Strong acid–base titration curve",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-water-geometry",
+    "title": "VSEPR geometry · water",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-weak-acid-titration",
+    "title": "Weak-acid titration · half equivalence",
+    "type": "Example"
+  },
+  {
+    "id": "intent:compare",
+    "title": "Compare relationships",
+    "type": "Intent"
+  },
+  {
+    "id": "intent:identify",
+    "title": "Identify a structure",
+    "type": "Intent"
+  },
+  {
+    "id": "intent:predict",
+    "title": "Predict a response",
+    "type": "Intent"
+  },
+  {
+    "id": "intent:trace",
+    "title": "Trace a change",
+    "type": "Intent"
+  },
+  {
+    "id": "resource:reaction-profile",
+    "title": "Reaction profile with linked coordinate marker",
+    "type": "Resource"
+  },
+  {
+    "id": "source:ap-chemistry-2024",
+    "title": "AP Chemistry Course and Exam Description, effective Fall 2024",
+    "type": "Source"
+  },
+  {
+    "id": "source:atlas-studies",
+    "title": "Original Chemistry diagram studies",
+    "type": "Source"
+  },
+  {
+    "id": "source:cambridge-9701-2025",
+    "title": "Chemistry 9701 syllabus 2025–2027",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-art-design-media-0",
+    "title": "AP Art History",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-art-design-media-1",
+    "title": "Design & Technology 9705",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-art-design-media-2",
+    "title": "Media Studies 9607",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-biology-0",
+    "title": "AP Biology",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-biology-1",
+    "title": "Biology 9700",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-chemistry-0",
+    "title": "AP Chemistry",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-chemistry-1",
+    "title": "Chemistry 9701",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-computer-science-0",
+    "title": "AP Computer Science A",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-computer-science-1",
+    "title": "AP Computer Science Principles",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-computer-science-2",
+    "title": "AP Cybersecurity",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-computer-science-3",
+    "title": "Computer Science 9618",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-directory-0",
+    "title": "cambridge subject catalog",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-directory-1",
+    "title": "cambridge curriculum",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-directory-2",
+    "title": "ap course catalog",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-earth-environment-0",
+    "title": "AP Environmental Science",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-earth-environment-1",
+    "title": "Marine Science 9693",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-earth-environment-2",
+    "title": "Environmental Management 8291",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-economics-business-0",
+    "title": "AP Microeconomics",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-economics-business-1",
+    "title": "AP Macroeconomics",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-economics-business-2",
+    "title": "AP Business with Personal Finance",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-economics-business-3",
+    "title": "Economics 9708",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-geography-0",
+    "title": "AP Human Geography",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-geography-1",
+    "title": "Geography 9696",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-history-government-0",
+    "title": "AP World History: Modern",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-history-government-1",
+    "title": "AP United States Government and Politics",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-history-government-2",
+    "title": "History 9489",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-language-literature-0",
+    "title": "AP English Language and Composition",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-language-literature-1",
+    "title": "English Language 9093",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-language-literature-2",
+    "title": "English Language and Literature 8695",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-law-religion-thinking-0",
+    "title": "Law 9084",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-law-religion-thinking-1",
+    "title": "Thinking Skills 9694",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-law-religion-thinking-2",
+    "title": "Islamic Studies 9488",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-mathematics-0",
+    "title": "AP Calculus AB",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-mathematics-1",
+    "title": "AP Statistics",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-mathematics-2",
+    "title": "Mathematics 9709",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-music-0",
+    "title": "AP Music Theory",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-music-1",
+    "title": "Music 9483",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-physical-education-0",
+    "title": "Sport & Physical Education 8386",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-physics-0",
+    "title": "AP Physics 1",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-physics-1",
+    "title": "AP Physics C: Electricity and Magnetism",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-physics-2",
+    "title": "Physics 9702",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-psychology-social-0",
+    "title": "AP Psychology",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-psychology-social-1",
+    "title": "Psychology 9990",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-psychology-social-2",
+    "title": "Sociology 9699",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-research-interdisciplinary-0",
+    "title": "AP Research",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-research-interdisciplinary-1",
+    "title": "AP Seminar",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-research-interdisciplinary-2",
+    "title": "Global Perspectives & Research 9239",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-travel-tourism-0",
+    "title": "Travel & Tourism 9395",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-aceternity-ui",
+    "title": "Aceternity UI",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-animista",
+    "title": "Animista",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-cesium-sandcastle",
+    "title": "Cesium Sandcastle",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-ciechanowski",
+    "title": "Bartosz Ciechanowski Interactive Essays",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-codrops-demos",
+    "title": "Codrops Demos Hub",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-codrops-playground",
+    "title": "Codrops Playground",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-distill",
+    "title": "Distill",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-echarts-examples",
+    "title": "Apache ECharts Examples",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-explorable-explanations",
+    "title": "Explorable Explanations",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-g6-examples",
+    "title": "AntV G6 Examples",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-magic-ui",
+    "title": "Magic UI",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-maplibre-examples",
+    "title": "MapLibre GL JS Examples",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-mathigon",
+    "title": "Mathigon / Polypad",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-motion-examples",
+    "title": "Motion Examples",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-p5js-examples",
+    "title": "p5.js Examples",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-phet",
+    "title": "PhET Interactive Simulations",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-pixijs-examples",
+    "title": "PixiJS Examples",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-react-bits",
+    "title": "React Bits",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-react-flow-examples",
+    "title": "React Flow Examples",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-threejs-examples",
+    "title": "Three.js Examples",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-threejs-resources",
+    "title": "Three.js Resources",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-uiverse",
+    "title": "Uiverse",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-vega-lite-gallery",
+    "title": "Vega-Lite Example Gallery",
+    "type": "Source"
+  },
+  {
+    "id": "source:legacy-families",
+    "title": "Legacy subject family seeds",
+    "type": "Source"
+  },
+  {
+    "id": "source:legacy-mechanisms",
+    "title": "Legacy mechanism registry",
+    "type": "Source"
+  },
+  {
+    "id": "source:north-star",
+    "title": "AIDRB — North Star v2",
+    "type": "Source"
+  },
+  {
+    "id": "source:svg-standard",
+    "title": "SVG 2",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-3dmol-js",
+    "title": "3Dmol.js official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-animejs",
+    "title": "Anime.js official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-antv-g6",
+    "title": "AntV G6 official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-cesiumjs",
+    "title": "CesiumJS official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-cindyjs",
+    "title": "CindyJS official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-cytoscapejs",
+    "title": "Cytoscape.js official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-d3",
+    "title": "D3 official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-deckgl",
+    "title": "deck.gl official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-desmos-api",
+    "title": "Desmos Graphing Calculator API official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-echarts",
+    "title": "Apache ECharts official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-falstad-circuitjs",
+    "title": "CircuitJS / Falstad Circuit Simulator official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-function-plot",
+    "title": "function-plot official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-geogebra",
+    "title": "GeoGebra Apps Embedding official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-globe-gl",
+    "title": "Globe.GL official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-gsap",
+    "title": "GSAP official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-jsxgraph",
+    "title": "JSXGraph official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-katex",
+    "title": "KaTeX official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-ketcher",
+    "title": "Ketcher official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-konva",
+    "title": "Konva official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-leaflet",
+    "title": "Leaflet official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-mafs",
+    "title": "Mafs official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-maplibre-gl-js",
+    "title": "MapLibre GL JS official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-mathbox",
+    "title": "MathBox official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-mathjax",
+    "title": "MathJax official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-mathlive",
+    "title": "MathLive official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-matter-js",
+    "title": "Matter.js official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-mermaid",
+    "title": "Mermaid official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-molstar",
+    "title": "Mol* official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-motion",
+    "title": "Motion official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-motion-canvas",
+    "title": "Motion Canvas official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-observable-plot",
+    "title": "Observable Plot official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-p5js",
+    "title": "p5.js official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-paperjs",
+    "title": "Paper.js official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-pixijs",
+    "title": "PixiJS official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-plotly-js",
+    "title": "Plotly.js official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-rapier",
+    "title": "Rapier official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-rdkit-js",
+    "title": "RDKit.js official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-react-flow",
+    "title": "React Flow official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-react-three-fiber",
+    "title": "React Three Fiber official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-remotion",
+    "title": "Remotion official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-rough-notation",
+    "title": "Rough Notation official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-roughjs",
+    "title": "Rough.js official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-svgjs",
+    "title": "SVG.js official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-theatrejs",
+    "title": "Theatre.js official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-threejs",
+    "title": "Three.js official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-tldraw",
+    "title": "tldraw official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-vega-lite",
+    "title": "Vega-Lite official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "tool:3dmol-js",
+    "title": "3Dmol.js",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:animejs",
+    "title": "Anime.js",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:antv-g6",
+    "title": "AntV G6",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:cesiumjs",
+    "title": "CesiumJS",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:cindyjs",
+    "title": "CindyJS",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:cytoscapejs",
+    "title": "Cytoscape.js",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:d3",
+    "title": "D3",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:deckgl",
+    "title": "deck.gl",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:desmos-api",
+    "title": "Desmos Graphing Calculator API",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:echarts",
+    "title": "Apache ECharts",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:falstad-circuitjs",
+    "title": "CircuitJS / Falstad Circuit Simulator",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:function-plot",
+    "title": "function-plot",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:geogebra",
+    "title": "GeoGebra Apps Embedding",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:globe-gl",
+    "title": "Globe.GL",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:gsap",
+    "title": "GSAP",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:jsxgraph",
+    "title": "JSXGraph",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:katex",
+    "title": "KaTeX",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:ketcher",
+    "title": "Ketcher",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:konva",
+    "title": "Konva",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:leaflet",
+    "title": "Leaflet",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:mafs",
+    "title": "Mafs",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:maplibre-gl-js",
+    "title": "MapLibre GL JS",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:mathbox",
+    "title": "MathBox",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:mathjax",
+    "title": "MathJax",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:mathlive",
+    "title": "MathLive",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:matter-js",
+    "title": "Matter.js",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:mermaid",
+    "title": "Mermaid",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:molstar",
+    "title": "Mol*",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:motion",
+    "title": "Motion",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:motion-canvas",
+    "title": "Motion Canvas",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:native-svg",
+    "title": "Native SVG + HTML controls",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:observable-plot",
+    "title": "Observable Plot",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:p5js",
+    "title": "p5.js",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:paperjs",
+    "title": "Paper.js",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:pixijs",
+    "title": "PixiJS",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:plotly-js",
+    "title": "Plotly.js",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:rapier",
+    "title": "Rapier",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:rdkit-js",
+    "title": "RDKit.js",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:react-flow",
+    "title": "React Flow",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:react-three-fiber",
+    "title": "React Three Fiber",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:remotion",
+    "title": "Remotion",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:rough-notation",
+    "title": "Rough Notation",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:roughjs",
+    "title": "Rough.js",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:svgjs",
+    "title": "SVG.js",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:theatrejs",
+    "title": "Theatre.js",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:threejs",
+    "title": "Three.js",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:tldraw",
+    "title": "tldraw",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:vega-lite",
+    "title": "Vega-Lite",
+    "type": "Tool"
+  },
+  {
+    "id": "topic:chemistry",
+    "title": "Chemistry",
+    "type": "SubjectTopic"
+  },
+  {
+    "id": "topic:chemistry-acids-bases",
+    "title": "Acids and Bases",
+    "type": "SubjectTopic"
+  },
+  {
+    "id": "topic:chemistry-analytical",
+    "title": "Analytical and Spectroscopic Chemistry",
+    "type": "SubjectTopic"
+  },
+  {
+    "id": "topic:chemistry-atomic-structure",
+    "title": "Atomic Structure",
+    "type": "SubjectTopic"
+  },
+  {
+    "id": "topic:chemistry-bonding",
+    "title": "Bonding",
+    "type": "SubjectTopic"
+  },
+  {
+    "id": "topic:chemistry-energetics",
+    "title": "Energetics",
+    "type": "SubjectTopic"
+  },
+  {
+    "id": "topic:chemistry-equilibrium",
+    "title": "Equilibrium",
+    "type": "SubjectTopic"
+  },
+  {
+    "id": "topic:chemistry-kinetics",
+    "title": "Kinetics",
+    "type": "SubjectTopic"
+  },
+  {
+    "id": "topic:chemistry-organic",
+    "title": "Organic Chemistry",
+    "type": "SubjectTopic"
+  },
+  {
+    "id": "topic:chemistry-periodicity",
+    "title": "Periodicity and Inorganic Chemistry",
+    "type": "SubjectTopic"
+  },
+  {
+    "id": "topic:chemistry-redox",
+    "title": "Redox and Electrochemistry",
+    "type": "SubjectTopic"
+  },
+  {
+    "id": "topic:chemistry-states-solutions",
+    "title": "States, Gases and Solutions",
+    "type": "SubjectTopic"
+  },
+  {
+    "id": "topic:chemistry-stoichiometry",
+    "title": "Stoichiometry",
+    "type": "SubjectTopic"
+  }
+]

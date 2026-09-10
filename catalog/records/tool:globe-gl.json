@@ -1,0 +1,57 @@
+{
+  "record": {
+    "agent_notes": "Good expressive globe primitive; not a GIS engine.",
+    "avoid_when": "Accurate terrain/3D Tiles/geospatial engineering is required.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "interactive-globe",
+      "arcs",
+      "points",
+      "polygons",
+      "labels",
+      "custom-objects"
+    ],
+    "docs": "https://github.com/vasturiano/globe.gl",
+    "domains": [
+      "geospatial",
+      "3d",
+      "data-visualization"
+    ],
+    "ecosystem": [
+      "Three.js",
+      "WebGL"
+    ],
+    "homepage": "https://globe.gl/",
+    "id": "tool:globe-gl",
+    "legacy_kind": "visualization-component",
+    "license": "MIT",
+    "source_refs": [
+      "source:tool-globe-gl"
+    ],
+    "subtype": "library",
+    "summary": "A visually compelling data globe is needed without Cesium's full geospatial platform complexity.",
+    "tags": [
+      "globe",
+      "3d",
+      "data-viz"
+    ],
+    "tier": "specialized",
+    "title": "Globe.GL",
+    "type": "Tool",
+    "use_when": "A visually compelling data globe is needed without Cesium's full geospatial platform complexity."
+  },
+  "relations": [],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-globe-gl",
+      "publisher": "Globe.GL",
+      "title": "Globe.GL official documentation",
+      "type": "Source",
+      "url": "https://github.com/vasturiano/globe.gl"
+    }
+  ]
+}

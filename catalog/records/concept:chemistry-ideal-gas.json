@@ -1,0 +1,38 @@
+{
+  "record": {
+    "canonical_path": "knowledge/concepts/chemistry.json",
+    "grammar": [
+      "functional-graph"
+    ],
+    "id": "concept:chemistry-ideal-gas",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "At fixed amount and temperature, PV is constant; ideal-gas model only.",
+    "title": "Boyle’s law",
+    "type": "Concept"
+  },
+  "relations": [
+    {
+      "source": "ex:chemistry-ideal-gas",
+      "target": "concept:chemistry-ideal-gas",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-10",
+      "check_scope": "Original schematic studies; model equations and limitations recorded per Example. No third-party illustrations copied.",
+      "checked_at": "2026-09-10",
+      "id": "source:atlas-studies",
+      "publisher": "AIDRB",
+      "title": "Original Chemistry diagram studies",
+      "type": "Source",
+      "url": "https://github.com/shhh-hoo/ai-design-resource-bank/tree/feat/knowledge-example-atlas/app"
+    }
+  ]
+}

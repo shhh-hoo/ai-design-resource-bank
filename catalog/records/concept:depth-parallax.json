@@ -1,0 +1,65 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-mechanisms.yaml",
+    "evidence": "seed",
+    "id": "concept:depth-parallax",
+    "implementation_note": "Tie movement amplitude to semantic depth; random layer speeds quickly become decorative noise.",
+    "primitives": [
+      "layer-depth",
+      "viewpoint",
+      "relative-motion",
+      "foreground-background"
+    ],
+    "source_refs": [
+      "source:legacy-mechanisms"
+    ],
+    "subtypes": [
+      "mechanism"
+    ],
+    "summary": "Move visual layers at different rates so depth emerges from relative motion.",
+    "title": "Depth parallax",
+    "tool_ids": [
+      "tool:motion",
+      "tool:gsap",
+      "tool:threejs"
+    ],
+    "type": "Concept",
+    "use_when": "Hero scenes, spatial diagrams, galleries, or teaching visuals where near/far relationships should be felt immediately."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:depth-parallax",
+      "target": "tool:gsap",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:depth-parallax",
+      "target": "tool:motion",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:depth-parallax",
+      "target": "tool:threejs",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-mechanisms.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:legacy-mechanisms",
+      "publisher": "AIDRB",
+      "title": "Legacy mechanism registry",
+      "type": "Source",
+      "url": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/main/registries/frontend-mechanisms.yaml"
+    }
+  ]
+}

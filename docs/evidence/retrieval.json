@@ -1,0 +1,151 @@
+{
+  "query": "reaction profile",
+  "candidates": [
+    {
+      "id": "ex:chemistry-reaction-profile",
+      "type": "Example",
+      "kind": "LIVE",
+      "title": "Reaction profile",
+      "score": -12.705045480339598
+    },
+    {
+      "id": "ex:chemistry-rate-orders",
+      "type": "Example",
+      "kind": "GAP",
+      "title": "Initial-rate table → reaction orders",
+      "score": -4.971179386525213
+    },
+    {
+      "id": "ex:chemistry-equilibrium-expression",
+      "type": "Example",
+      "kind": "REFERENCE",
+      "title": "Equilibrium expression · Haber reaction",
+      "score": -4.946011168965355
+    },
+    {
+      "id": "ex:chemistry-nernst",
+      "type": "Example",
+      "kind": "GAP",
+      "title": "Cell potential vs concentration · Nernst",
+      "score": -3.3926827850478842
+    },
+    {
+      "id": "ex:chemistry-curly-arrow",
+      "type": "Example",
+      "kind": "GAP",
+      "title": "Curly-arrow mechanism · SN2 substitution",
+      "score": -2.8937890381391784
+    }
+  ],
+  "chosen_stable_id": "ex:chemistry-reaction-profile",
+  "method": {
+    "concepts": [
+      "concept:chemistry-reaction-profile",
+      "concept:reaction-coordinate"
+    ],
+    "failure_modes": [
+      "Do not describe a schematic as measured data or a molecular simulation."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "grammar": [
+      "functional-graph"
+    ],
+    "interaction_model": {
+      "response": "Dependent visual updates from the same state.",
+      "trigger": "range input"
+    },
+    "mechanisms": [
+      {
+        "evidence": "seed",
+        "id": "concept:reaction-coordinate",
+        "implementation_note": "Keep the progress marker and chemical-state annotation tied to the same normalized reaction coordinate.",
+        "primitives": [
+          "energy-curve",
+          "scrubber",
+          "state-marker",
+          "energy-difference"
+        ]
+      }
+    ],
+    "state_model": {
+      "derived": [
+        "energy",
+        "state-label"
+      ],
+      "deterministic": true,
+      "invariants": [
+        "unique maximum at 0.5",
+        "reactants 20; peak 90; products -20",
+        "reaction coordinate is not time"
+      ],
+      "model": "reaction",
+      "parameters": {
+        "progress": {
+          "initial": 0.5,
+          "max": 1,
+          "min": 0
+        }
+      },
+      "units": {
+        "energy": "kJ mol^-1"
+      }
+    },
+    "transfer_constraints": [
+      "Compare the activation barrier with the reactant–product enthalpy difference."
+    ]
+  },
+  "tools": [
+    {
+      "id": "tool:native-svg",
+      "evidence": "observed",
+      "capabilities": [
+        "svg-dom",
+        "paths",
+        "text",
+        "range-input",
+        "diagram"
+      ]
+    },
+    {
+      "id": "tool:svgjs",
+      "evidence": "proposed",
+      "capabilities": [
+        "svg-dom",
+        "animation",
+        "gradients",
+        "masks",
+        "clipping",
+        "paths",
+        "text"
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "id": "resource:reaction-profile",
+      "package_path": "resources/chemistry/reaction-profile",
+      "status": "verified",
+      "title": "Reaction profile with linked coordinate marker"
+    }
+  ],
+  "locked_ids": [
+    "ex:chemistry-reaction-profile"
+  ],
+  "preserved_selection": {
+    "id": "ex:chemistry-reaction-profile",
+    "aspect_notes": "Borrow the linked coordinate marker.",
+    "constraints": [
+      "Keep activation energy and ΔH distinct.",
+      "Coordinate is not time."
+    ]
+  },
+  "fetched_artifacts": [
+    "resource.yaml",
+    "README.md",
+    "artifacts/profile.js"
+  ],
+  "fts_rows": 207,
+  "catalog_fingerprint": "461f31927a3b7987f3708c17f1f4206252313277263ec242486215b05db35233"
+}

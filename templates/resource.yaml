@@ -4,13 +4,8 @@ domain: interaction
 tags:
   - example
 status: distilled
-source:
-  type: url
-  locator: https://example.com
-  title: Example Source
-  author: Unknown
-  captured_at: 2026-09-09
-  notes: "Replace with observed source notes."
+# Create this normalized Source in knowledge/provenance/ before validation.
+source_refs: [source:replace-with-source-id]
 selection_reason: "What specific thing was worth saving."
 mechanism:
   summary: "Describe the transferable mechanism precisely."

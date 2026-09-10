@@ -1,0 +1,59 @@
+{
+  "record": {
+    "agent_notes": "Prefer when accessibility and standards interoperability are explicit requirements.",
+    "avoid_when": "KaTeX already covers a simple static TeX use case.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "tex",
+      "mathml",
+      "asciimath",
+      "html-output",
+      "svg-output",
+      "accessibility"
+    ],
+    "docs": "https://docs.mathjax.org/",
+    "domains": [
+      "math",
+      "accessibility",
+      "education"
+    ],
+    "ecosystem": [
+      "JavaScript",
+      "TeX",
+      "MathML",
+      "SVG"
+    ],
+    "homepage": "https://www.mathjax.org/",
+    "id": "tool:mathjax",
+    "legacy_kind": "renderer",
+    "license": "Apache-2.0",
+    "source_refs": [
+      "source:tool-mathjax"
+    ],
+    "subtype": "renderer",
+    "summary": "Input-format breadth, accessibility, or MathML support matters more than minimal runtime simplicity.",
+    "tags": [
+      "math",
+      "accessibility",
+      "mathml"
+    ],
+    "tier": "specialized",
+    "title": "MathJax",
+    "type": "Tool",
+    "use_when": "Input-format breadth, accessibility, or MathML support matters more than minimal runtime simplicity."
+  },
+  "relations": [],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-mathjax",
+      "publisher": "MathJax",
+      "title": "MathJax official documentation",
+      "type": "Source",
+      "url": "https://docs.mathjax.org/"
+    }
+  ]
+}

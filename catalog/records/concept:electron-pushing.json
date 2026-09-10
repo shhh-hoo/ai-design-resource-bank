@@ -1,0 +1,62 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-mechanisms.yaml",
+    "evidence": "seed",
+    "id": "concept:electron-pushing",
+    "implementation_note": "The arrow should trigger a deterministic structure change so the causal relation stays explicit.",
+    "primitives": [
+      "curved-arrow",
+      "electron-source",
+      "destination",
+      "before-after-state"
+    ],
+    "source_refs": [
+      "source:legacy-mechanisms"
+    ],
+    "subtypes": [
+      "mechanism"
+    ],
+    "summary": "Animate a curved arrow as a state change, not as decoration on a static scheme.",
+    "title": "Electron pushing",
+    "tool_ids": [
+      "tool:svgjs",
+      "tool:motion"
+    ],
+    "type": "Concept",
+    "use_when": "Teaching reaction mechanisms, electron pairs, bond making, or bond breaking."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:electron-pushing",
+      "target": "tool:motion",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:electron-pushing",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "source": "ex:chemistry-curly-arrow",
+      "target": "concept:electron-pushing",
+      "type": "intended_to_demonstrate"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-mechanisms.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:legacy-mechanisms",
+      "publisher": "AIDRB",
+      "title": "Legacy mechanism registry",
+      "type": "Source",
+      "url": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/main/registries/frontend-mechanisms.yaml"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-mechanisms.yaml",
+    "evidence": "seed",
+    "id": "concept:scroll-scrub",
+    "implementation_note": "Make scroll position the source of truth; derived visual states should be reversible at any point in the timeline.",
+    "primitives": [
+      "scroll-progress",
+      "playhead",
+      "reversible-state",
+      "progress-indicator"
+    ],
+    "source_refs": [
+      "source:legacy-mechanisms"
+    ],
+    "subtypes": [
+      "mechanism"
+    ],
+    "summary": "Map scroll position to one deterministic playhead instead of firing disconnected enter animations.",
+    "title": "Scroll-scrub timeline",
+    "tool_ids": [
+      "tool:gsap",
+      "tool:motion"
+    ],
+    "type": "Concept",
+    "use_when": "Scrollytelling, product walkthroughs, progressive diagrams, or sequences where users should be able to move backward as naturally as forward."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:scroll-scrub",
+      "target": "tool:gsap",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:scroll-scrub",
+      "target": "tool:motion",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-mechanisms.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:legacy-mechanisms",
+      "publisher": "AIDRB",
+      "title": "Legacy mechanism registry",
+      "type": "Source",
+      "url": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/main/registries/frontend-mechanisms.yaml"
+    }
+  ]
+}

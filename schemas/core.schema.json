@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AIDRB Core record",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "title",
+    "canonical_path"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z]+:[a-z0-9-]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "type": {
+      "enum": [
+        "Concept",
+        "Example",
+        "Tool",
+        "Resource",
+        "Intent",
+        "Collection",
+        "SubjectTopic",
+        "Source"
+      ]
+    },
+    "source_refs": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^source:"
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "Example"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "kind",
+          "summary",
+          "lifecycle",
+          "concept_ids",
+          "topic_ids",
+          "interaction_model",
+          "state_model",
+          "grammar",
+          "transfer_constraints",
+          "fidelity_constraints",
+          "failure_modes",
+          "tool_choices",
+          "resource_ids",
+          "source_refs"
+        ],
+        "properties": {
+          "kind": {
+            "enum": [
+              "LIVE",
+              "REFERENCE",
+              "GAP"
+            ]
+          },
+          "lifecycle": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "collected",
+              "showable",
+              "reusable",
+              "verified"
+            ],
+            "properties": {
+              "collected": {
+                "type": "boolean"
+              },
+              "showable": {
+                "type": "boolean"
+              },
+              "reusable": {
+                "type": "boolean"
+              },
+              "verified": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "Source"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "publisher",
+          "url",
+          "captured_at",
+          "checked_at",
+          "check_scope"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "Concept"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "subtypes",
+          "summary",
+          "source_refs"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "Tool"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "subtype",
+          "capabilities",
+          "use_when",
+          "avoid_when",
+          "source_refs"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "Resource"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "package_path",
+          "artifacts",
+          "source_refs"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "SubjectTopic"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "parent",
+          "scope",
+          "prerequisites",
+          "example_ids"
+        ]
+      }
+    }
+  ]
+}

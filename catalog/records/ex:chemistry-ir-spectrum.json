@@ -1,0 +1,176 @@
+{
+  "ai_build": {
+    "availability": "missing",
+    "example_id": "ex:chemistry-ir-spectrum",
+    "method": {
+      "concepts": [
+        "concept:chemistry-ir-spectrum"
+      ],
+      "failure_modes": [
+        "Needs a sourced spectrum with wavenumber axis and labeled absorption convention."
+      ],
+      "fidelity_constraints": [
+        "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+      ],
+      "grammar": [
+        "symbolic-notation"
+      ],
+      "interaction_model": {
+        "response": "Static schematic; no simulated behavior.",
+        "trigger": "inspect"
+      },
+      "mechanisms": [],
+      "state_model": {
+        "deterministic": true,
+        "model": "missing"
+      },
+      "transfer_constraints": [
+        "Needs a sourced spectrum with wavenumber axis and labeled absorption convention."
+      ]
+    },
+    "resources": [],
+    "tools": []
+  },
+  "crosswalks": [
+    {
+      "canonical_scope": "Separation, identification, spectroscopy and structure inference.",
+      "node": {
+        "id": "ap:Unit 3",
+        "label": "Properties of Substances and Mixtures",
+        "section": "Unit 3"
+      },
+      "rationale": "AP Unit 3 includes spectroscopy and separation; this does not claim AP coverage of NMR or organic structure elucidation.",
+      "relation": "partial",
+      "source_id": "source:ap-chemistry-2024",
+      "topic_id": "topic:chemistry-analytical"
+    },
+    {
+      "canonical_scope": "Separation, identification, spectroscopy and structure inference.",
+      "node": {
+        "id": "cambridge:22, 37",
+        "label": "Analytical techniques",
+        "section": "22, 37"
+      },
+      "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+      "relation": "partial",
+      "source_id": "source:cambridge-9701-2025",
+      "topic_id": "topic:chemistry-analytical"
+    }
+  ],
+  "record": {
+    "canonical_path": "knowledge/examples/chemistry.json",
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "concept_ids": [
+      "concept:chemistry-ir-spectrum"
+    ],
+    "failure_modes": [
+      "Needs a sourced spectrum with wavenumber axis and labeled absorption convention."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "gap_reason": "Needs a sourced spectrum with wavenumber axis and labeled absorption convention.",
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "id": "ex:chemistry-ir-spectrum",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "interaction": "inspect",
+    "interaction_model": {
+      "response": "Static schematic; no simulated behavior.",
+      "trigger": "inspect"
+    },
+    "kind": "GAP",
+    "lifecycle": {
+      "collected": false,
+      "reusable": false,
+      "showable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "resource_ids": [],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "state_model": {
+      "deterministic": true,
+      "model": "missing"
+    },
+    "subject_id": "topic:chemistry",
+    "summary": "Needs a sourced spectrum with wavenumber axis and labeled absorption convention.",
+    "title": "IR spectrum · carbonyl identification",
+    "tool_choices": [],
+    "topic_ids": [
+      "topic:chemistry-analytical"
+    ],
+    "transfer_constraints": [
+      "Needs a sourced spectrum with wavenumber axis and labeled absorption convention."
+    ],
+    "type": "Example",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ]
+  },
+  "relations": [
+    {
+      "source": "ex:chemistry-ir-spectrum",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-ir-spectrum",
+      "target": "concept:chemistry-ir-spectrum",
+      "type": "intended_to_demonstrate"
+    },
+    {
+      "source": "ex:chemistry-ir-spectrum",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "topic:chemistry-analytical",
+      "target": "ex:chemistry-ir-spectrum",
+      "type": "has_example"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-10",
+      "check_scope": "Original schematic studies; model equations and limitations recorded per Example. No third-party illustrations copied.",
+      "checked_at": "2026-09-10",
+      "id": "source:atlas-studies",
+      "publisher": "AIDRB",
+      "title": "Original Chemistry diagram studies",
+      "type": "Source",
+      "url": "https://github.com/shhh-hoo/ai-design-resource-bank/tree/feat/knowledge-example-atlas/app"
+    },
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-10",
+      "check_scope": "Official linked CED read; unit scope and course-at-a-glance verified. Mapping is editorial, not board endorsement.",
+      "checked_at": "2026-09-10",
+      "id": "source:ap-chemistry-2024",
+      "publisher": "College Board",
+      "title": "AP Chemistry Course and Exam Description, effective Fall 2024",
+      "type": "Source",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-chemistry-course-and-exam-description.pdf"
+    },
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-10",
+      "check_scope": "Official PDF downloaded and text inspected; content overview p10 and mapped sections. Scope mapping is editorial, not board endorsement.",
+      "checked_at": "2026-09-10",
+      "id": "source:cambridge-9701-2025",
+      "publisher": "Cambridge International Education",
+      "title": "Chemistry 9701 syllabus 2025–2027",
+      "type": "Source",
+      "url": "https://www.cambridgeinternational.org/Images/664563-2025-2027-syllabus.pdf"
+    }
+  ]
+}

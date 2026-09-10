@@ -1,0 +1,46 @@
+{
+  "record": {
+    "canonical_path": "subjects/chemistry/topics.json",
+    "example_ids": [
+      "ex:chemistry-limiting-reagent",
+      "ex:chemistry-mole-conversion",
+      "ex:chemistry-empirical-formula",
+      "ex:chemistry-dilution"
+    ],
+    "id": "topic:chemistry-stoichiometry",
+    "order": 2,
+    "parent": "topic:chemistry",
+    "prerequisites": [],
+    "scope": "Amounts, composition, conservation, equations and limiting reagents.",
+    "title": "Stoichiometry",
+    "type": "SubjectTopic"
+  },
+  "relations": [
+    {
+      "source": "topic:chemistry-stoichiometry",
+      "target": "ex:chemistry-dilution",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-stoichiometry",
+      "target": "ex:chemistry-empirical-formula",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-stoichiometry",
+      "target": "ex:chemistry-limiting-reagent",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-stoichiometry",
+      "target": "ex:chemistry-mole-conversion",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-stoichiometry",
+      "target": "topic:chemistry",
+      "type": "part_of"
+    }
+  ],
+  "sources": []
+}

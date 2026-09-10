@@ -1,0 +1,41 @@
+{
+  "record": {
+    "canonical_path": "knowledge/intents/intents.json",
+    "id": "intent:predict",
+    "title": "Predict a response",
+    "type": "Intent"
+  },
+  "relations": [
+    {
+      "source": "ex:chemistry-first-order",
+      "target": "intent:predict",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-gibbs-energy",
+      "target": "intent:predict",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-hess-cycle",
+      "target": "intent:predict",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-ideal-gas",
+      "target": "intent:predict",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-reaction-profile",
+      "target": "intent:predict",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-titration-curve",
+      "target": "intent:predict",
+      "type": "supports_intent"
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,190 @@
+{
+  "ai_build": {
+    "availability": "missing",
+    "example_id": "ex:chemistry-curly-arrow",
+    "method": {
+      "concepts": [
+        "concept:chemistry-curly-arrow",
+        "concept:electron-pushing",
+        "concept:bond-morph"
+      ],
+      "failure_modes": [
+        "Legacy electron-pushing and bond-morph seeds lack a fully specified chemical reaction and charge accounting."
+      ],
+      "fidelity_constraints": [
+        "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+      ],
+      "grammar": [
+        "symbolic-notation"
+      ],
+      "interaction_model": {
+        "response": "Static schematic; no simulated behavior.",
+        "trigger": "inspect"
+      },
+      "mechanisms": [
+        {
+          "evidence": "seed",
+          "id": "concept:electron-pushing",
+          "implementation_note": "The arrow should trigger a deterministic structure change so the causal relation stays explicit.",
+          "primitives": [
+            "curved-arrow",
+            "electron-source",
+            "destination",
+            "before-after-state"
+          ]
+        },
+        {
+          "evidence": "seed",
+          "id": "concept:bond-morph",
+          "implementation_note": "Preserve atom identity while bond state changes; do not morph whole structures so aggressively that correspondence is lost.",
+          "primitives": [
+            "bond-state",
+            "bond-opacity",
+            "atom-identity",
+            "reaction-progress"
+          ]
+        }
+      ],
+      "state_model": {
+        "deterministic": true,
+        "model": "missing"
+      },
+      "transfer_constraints": [
+        "Legacy electron-pushing and bond-morph seeds lack a fully specified chemical reaction and charge accounting."
+      ]
+    },
+    "resources": [],
+    "tools": []
+  },
+  "crosswalks": [
+    {
+      "canonical_scope": "Structure, stereochemistry, functional groups, mechanisms, synthesis and polymers.",
+      "node": {
+        "id": "cambridge:13–21, 29–36",
+        "label": "Organic chemistry topics",
+        "section": "13–21, 29–36"
+      },
+      "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+      "relation": "partial",
+      "source_id": "source:cambridge-9701-2025",
+      "topic_id": "topic:chemistry-organic"
+    }
+  ],
+  "record": {
+    "canonical_path": "knowledge/examples/chemistry.json",
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "concept_ids": [
+      "concept:chemistry-curly-arrow",
+      "concept:electron-pushing",
+      "concept:bond-morph"
+    ],
+    "failure_modes": [
+      "Legacy electron-pushing and bond-morph seeds lack a fully specified chemical reaction and charge accounting."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "gap_reason": "Legacy electron-pushing and bond-morph seeds lack a fully specified chemical reaction and charge accounting.",
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "id": "ex:chemistry-curly-arrow",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "interaction": "inspect",
+    "interaction_model": {
+      "response": "Static schematic; no simulated behavior.",
+      "trigger": "inspect"
+    },
+    "kind": "GAP",
+    "lifecycle": {
+      "collected": false,
+      "reusable": false,
+      "showable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "resource_ids": [],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "state_model": {
+      "deterministic": true,
+      "model": "missing"
+    },
+    "subject_id": "topic:chemistry",
+    "summary": "Legacy electron-pushing and bond-morph seeds lack a fully specified chemical reaction and charge accounting.",
+    "title": "Curly-arrow mechanism · SN2 substitution",
+    "tool_choices": [],
+    "topic_ids": [
+      "topic:chemistry-organic"
+    ],
+    "transfer_constraints": [
+      "Legacy electron-pushing and bond-morph seeds lack a fully specified chemical reaction and charge accounting."
+    ],
+    "type": "Example",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ]
+  },
+  "relations": [
+    {
+      "source": "ex:chemistry-curly-arrow",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-curly-arrow",
+      "target": "concept:bond-morph",
+      "type": "intended_to_demonstrate"
+    },
+    {
+      "source": "ex:chemistry-curly-arrow",
+      "target": "concept:chemistry-curly-arrow",
+      "type": "intended_to_demonstrate"
+    },
+    {
+      "source": "ex:chemistry-curly-arrow",
+      "target": "concept:electron-pushing",
+      "type": "intended_to_demonstrate"
+    },
+    {
+      "source": "ex:chemistry-curly-arrow",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "topic:chemistry-organic",
+      "target": "ex:chemistry-curly-arrow",
+      "type": "has_example"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-10",
+      "check_scope": "Original schematic studies; model equations and limitations recorded per Example. No third-party illustrations copied.",
+      "checked_at": "2026-09-10",
+      "id": "source:atlas-studies",
+      "publisher": "AIDRB",
+      "title": "Original Chemistry diagram studies",
+      "type": "Source",
+      "url": "https://github.com/shhh-hoo/ai-design-resource-bank/tree/feat/knowledge-example-atlas/app"
+    },
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-10",
+      "check_scope": "Official PDF downloaded and text inspected; content overview p10 and mapped sections. Scope mapping is editorial, not board endorsement.",
+      "checked_at": "2026-09-10",
+      "id": "source:cambridge-9701-2025",
+      "publisher": "Cambridge International Education",
+      "title": "Chemistry 9701 syllabus 2025–2027",
+      "type": "Source",
+      "url": "https://www.cambridgeinternational.org/Images/664563-2025-2027-syllabus.pdf"
+    }
+  ]
+}

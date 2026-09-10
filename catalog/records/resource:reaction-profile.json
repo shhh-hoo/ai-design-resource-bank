@@ -1,0 +1,150 @@
+{
+  "record": {
+    "artifacts": [
+      {
+        "generated": false,
+        "kind": "code",
+        "path": "artifacts/profile.js",
+        "purpose": "Pure bounded energy/state model used by the live preview",
+        "validated": true
+      }
+    ],
+    "canonical_path": "resources/chemistry/reaction-profile/resource.yaml",
+    "domain": "chemistry",
+    "fidelity": [
+      "concept",
+      "behavior",
+      "geometry",
+      "implementation"
+    ],
+    "id": "resource:reaction-profile",
+    "implements": [
+      "concept:reaction-coordinate",
+      "concept:chemistry-reaction-profile"
+    ],
+    "legacy_id": "reaction-profile",
+    "mechanism": {
+      "failure_modes": [
+        "Treating reaction coordinate as time",
+        "Treating the whole barrier region as transition state",
+        "Inferring a rate from a schematic barrier",
+        "Changing endpoints when comparing catalysts"
+      ],
+      "parameters": [
+        "progress",
+        "reactant-energy",
+        "product-energy",
+        "barrier-height"
+      ],
+      "primitives": [
+        "energy-curve",
+        "scrubber",
+        "state-marker",
+        "energy-difference"
+      ],
+      "states": [
+        "reactants",
+        "reaction-path",
+        "transition-state",
+        "products"
+      ],
+      "summary": "One coordinate drives a marker on a single-step energy profile; activation energy and enthalpy share explicit endpoints."
+    },
+    "notes": "Qualitative single-step profile with illustrative energies. Local automated checks are not external chemistry peer review.",
+    "package_path": "resources/chemistry/reaction-profile",
+    "requires": [
+      "tool:native-svg"
+    ],
+    "rights": {
+      "basis": "Original implementation of a general teaching mechanism; existing registry evidence is attributed. No third-party binary assets.",
+      "license": "MIT",
+      "source_assets_stored": false
+    },
+    "selection_reason": "Preserve the existing reaction-coordinate mechanism while correcting transition-state identification and exposing energy constraints.",
+    "source_refs": [
+      "source:legacy-mechanisms",
+      "source:atlas-studies",
+      "source:cambridge-9701-2025",
+      "source:ap-chemistry-2024"
+    ],
+    "status": "verified",
+    "summary": "One coordinate drives a marker on a single-step energy profile; activation energy and enthalpy share explicit endpoints.",
+    "tags": [
+      "chemistry",
+      "energetics",
+      "activation-energy",
+      "reaction-coordinate",
+      "svg"
+    ],
+    "title": "Reaction profile with linked coordinate marker",
+    "type": "Resource"
+  },
+  "relations": [
+    {
+      "source": "ex:chemistry-reaction-profile",
+      "target": "resource:reaction-profile",
+      "type": "yields"
+    },
+    {
+      "source": "resource:reaction-profile",
+      "target": "concept:chemistry-reaction-profile",
+      "type": "implements"
+    },
+    {
+      "source": "resource:reaction-profile",
+      "target": "concept:reaction-coordinate",
+      "type": "implements"
+    },
+    {
+      "source": "resource:reaction-profile",
+      "target": "tool:native-svg",
+      "type": "requires"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-mechanisms.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:legacy-mechanisms",
+      "publisher": "AIDRB",
+      "title": "Legacy mechanism registry",
+      "type": "Source",
+      "url": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/main/registries/frontend-mechanisms.yaml"
+    },
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-10",
+      "check_scope": "Original schematic studies; model equations and limitations recorded per Example. No third-party illustrations copied.",
+      "checked_at": "2026-09-10",
+      "id": "source:atlas-studies",
+      "publisher": "AIDRB",
+      "title": "Original Chemistry diagram studies",
+      "type": "Source",
+      "url": "https://github.com/shhh-hoo/ai-design-resource-bank/tree/feat/knowledge-example-atlas/app"
+    },
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-10",
+      "check_scope": "Official PDF downloaded and text inspected; content overview p10 and mapped sections. Scope mapping is editorial, not board endorsement.",
+      "checked_at": "2026-09-10",
+      "id": "source:cambridge-9701-2025",
+      "publisher": "Cambridge International Education",
+      "title": "Chemistry 9701 syllabus 2025–2027",
+      "type": "Source",
+      "url": "https://www.cambridgeinternational.org/Images/664563-2025-2027-syllabus.pdf"
+    },
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-10",
+      "check_scope": "Official linked CED read; unit scope and course-at-a-glance verified. Mapping is editorial, not board endorsement.",
+      "checked_at": "2026-09-10",
+      "id": "source:ap-chemistry-2024",
+      "publisher": "College Board",
+      "title": "AP Chemistry Course and Exam Description, effective Fall 2024",
+      "type": "Source",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-chemistry-course-and-exam-description.pdf"
+    }
+  ]
+}

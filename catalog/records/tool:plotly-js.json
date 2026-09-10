@@ -1,0 +1,97 @@
+{
+  "record": {
+    "agent_notes": "Default first check for scientific chart types before implementing them manually.",
+    "avoid_when": "Tiny bundles, a strongly bespoke visual identity, or custom scene semantics are the priority.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "charts",
+      "3d-surfaces",
+      "contour",
+      "heatmap",
+      "ternary",
+      "scientific-plots",
+      "interaction"
+    ],
+    "docs": "https://plotly.com/javascript/reference/",
+    "domains": [
+      "data-visualization",
+      "scientific-visualization",
+      "engineering"
+    ],
+    "ecosystem": [
+      "JavaScript",
+      "SVG",
+      "WebGL"
+    ],
+    "examples": "https://plotly.com/javascript/",
+    "homepage": "https://plotly.com/javascript/",
+    "id": "tool:plotly-js",
+    "legacy_kind": "library",
+    "license": "MIT",
+    "source_refs": [
+      "source:tool-plotly-js"
+    ],
+    "subtype": "library",
+    "summary": "Scientific/engineering charts, especially 3D surfaces, contours, ternary plots, heatmaps, and rich built-in interactions.",
+    "tags": [
+      "scientific",
+      "charts",
+      "3d",
+      "engineering"
+    ],
+    "tier": "core",
+    "title": "Plotly.js",
+    "type": "Tool",
+    "use_when": "Scientific/engineering charts, especially 3D surfaces, contours, ternary plots, heatmaps, and rich built-in interactions."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-functional-graph",
+      "target": "tool:plotly-js",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-micro-macro-bridge",
+      "target": "tool:plotly-js",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-statistical-distribution",
+      "target": "tool:plotly-js",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-vector-field",
+      "target": "tool:plotly-js",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:reaction-coordinate",
+      "target": "tool:plotly-js",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-plotly-js",
+      "publisher": "Plotly.js",
+      "title": "Plotly.js official documentation",
+      "type": "Source",
+      "url": "https://plotly.com/javascript/reference/"
+    }
+  ]
+}

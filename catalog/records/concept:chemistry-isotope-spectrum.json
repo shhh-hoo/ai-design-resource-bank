@@ -1,0 +1,38 @@
+{
+  "record": {
+    "canonical_path": "knowledge/concepts/chemistry.json",
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "id": "concept:chemistry-isotope-spectrum",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Schematic atomic 35Cl / 37Cl peaks at approximately 3:1; not the Cl₂ molecular-ion spectrum.",
+    "title": "Chlorine isotope mass spectrum",
+    "type": "Concept"
+  },
+  "relations": [
+    {
+      "source": "ex:chemistry-isotope-spectrum",
+      "target": "concept:chemistry-isotope-spectrum",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-10",
+      "check_scope": "Original schematic studies; model equations and limitations recorded per Example. No third-party illustrations copied.",
+      "checked_at": "2026-09-10",
+      "id": "source:atlas-studies",
+      "publisher": "AIDRB",
+      "title": "Original Chemistry diagram studies",
+      "type": "Source",
+      "url": "https://github.com/shhh-hoo/ai-design-resource-bank/tree/feat/knowledge-example-atlas/app"
+    }
+  ]
+}

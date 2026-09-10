@@ -1,0 +1,70 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-mechanisms.yaml",
+    "evidence": "seed",
+    "id": "concept:bond-morph",
+    "implementation_note": "Preserve atom identity while bond state changes; do not morph whole structures so aggressively that correspondence is lost.",
+    "primitives": [
+      "bond-state",
+      "bond-opacity",
+      "atom-identity",
+      "reaction-progress"
+    ],
+    "source_refs": [
+      "source:legacy-mechanisms"
+    ],
+    "subtypes": [
+      "mechanism"
+    ],
+    "summary": "Show one bond weakening as another forms so structure change reads as one continuous event.",
+    "title": "Bond morph",
+    "tool_ids": [
+      "tool:svgjs",
+      "tool:motion",
+      "tool:rdkit-js"
+    ],
+    "type": "Concept",
+    "use_when": "Explaining substitution, addition, elimination, resonance changes, or concerted bond-making and bond-breaking."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:bond-morph",
+      "target": "tool:motion",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:bond-morph",
+      "target": "tool:rdkit-js",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:bond-morph",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "source": "ex:chemistry-curly-arrow",
+      "target": "concept:bond-morph",
+      "type": "intended_to_demonstrate"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-mechanisms.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:legacy-mechanisms",
+      "publisher": "AIDRB",
+      "title": "Legacy mechanism registry",
+      "type": "Source",
+      "url": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/main/registries/frontend-mechanisms.yaml"
+    }
+  ]
+}

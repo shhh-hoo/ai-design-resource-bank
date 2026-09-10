@@ -1,0 +1,13 @@
+{
+  "crosswalk_count": 31,
+  "example_counts": {
+    "GAP": 26,
+    "LIVE": 6,
+    "REFERENCE": 16
+  },
+  "fingerprint": "461f31927a3b7987f3708c17f1f4206252313277263ec242486215b05db35233",
+  "major_topics": 12,
+  "record_count": 332,
+  "relation_count": 368,
+  "version": 1
+}

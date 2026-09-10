@@ -1,0 +1,15 @@
+{
+  "record": {
+    "canonical_path": "knowledge/provenance/sources.json",
+    "captured_at": "2026-09-10",
+    "check_scope": "Full document read; v2.1 corrections recorded in docs/KNOWLEDGE-ATLAS-CONTRACT.md",
+    "checked_at": "2026-09-10",
+    "id": "source:north-star",
+    "publisher": "AIDRB",
+    "title": "AIDRB — North Star v2",
+    "type": "Source",
+    "url": "https://docs.google.com/document/d/1oFwGGkhMwVhMacZUzXdqhHyflb5DA3gQrRFn0iGw-CA/edit"
+  },
+  "relations": [],
+  "sources": []
+}

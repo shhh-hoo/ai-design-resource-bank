@@ -1,0 +1,57 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-mechanisms.yaml",
+    "evidence": "seed",
+    "id": "concept:vector-decomposition",
+    "implementation_note": "Preserve geometric dependency so the components cannot drift from the parent vector.",
+    "primitives": [
+      "draggable-vector",
+      "component-arrows",
+      "projections",
+      "labels"
+    ],
+    "source_refs": [
+      "source:legacy-mechanisms"
+    ],
+    "subtypes": [
+      "mechanism"
+    ],
+    "summary": "Drag one vector and keep its horizontal and vertical components attached.",
+    "title": "Vector decomposition",
+    "tool_ids": [
+      "tool:mafs",
+      "tool:jsxgraph"
+    ],
+    "type": "Concept",
+    "use_when": "Teaching components, resultant vectors, forces, velocity, or coordinate projections."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:vector-decomposition",
+      "target": "tool:jsxgraph",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:vector-decomposition",
+      "target": "tool:mafs",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-mechanisms.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:legacy-mechanisms",
+      "publisher": "AIDRB",
+      "title": "Legacy mechanism registry",
+      "type": "Source",
+      "url": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/main/registries/frontend-mechanisms.yaml"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "record": {
+    "agent_notes": "Default first check for performant 3D physics on the web.",
+    "avoid_when": "A tiny 2D interaction is simpler with Matter.js or deterministic bespoke motion.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "rigid-body-2d",
+      "rigid-body-3d",
+      "collision",
+      "joints",
+      "raycasting"
+    ],
+    "docs": "https://rapier.rs/docs/",
+    "domains": [
+      "physics",
+      "simulation",
+      "3d"
+    ],
+    "ecosystem": [
+      "Rust",
+      "WebAssembly",
+      "JavaScript"
+    ],
+    "homepage": "https://rapier.rs/",
+    "id": "tool:rapier",
+    "legacy_kind": "physics-engine",
+    "license": "Apache-2.0",
+    "source_refs": [
+      "source:tool-rapier"
+    ],
+    "subtype": "simulation-engine",
+    "summary": "High-performance 2D/3D rigid-body physics is required, especially with Three.js/R3F.",
+    "tags": [
+      "physics",
+      "wasm",
+      "3d"
+    ],
+    "tier": "core",
+    "title": "Rapier",
+    "type": "Tool",
+    "use_when": "High-performance 2D/3D rigid-body physics is required, especially with Three.js/R3F."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-dynamic-system",
+      "target": "tool:rapier",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-rapier",
+      "publisher": "Rapier",
+      "title": "Rapier official documentation",
+      "type": "Source",
+      "url": "https://rapier.rs/docs/"
+    }
+  ]
+}

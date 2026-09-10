@@ -1,0 +1,57 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-mechanisms.yaml",
+    "evidence": "seed",
+    "id": "concept:mask-transition",
+    "implementation_note": "Keep the mask geometry simple enough that the transition reads before the ornament does.",
+    "primitives": [
+      "mask",
+      "reveal-progress",
+      "foreground",
+      "background"
+    ],
+    "source_refs": [
+      "source:legacy-mechanisms"
+    ],
+    "subtypes": [
+      "mechanism"
+    ],
+    "summary": "Reveal the next state through a controlled moving window instead of cross-fading everything.",
+    "title": "Mask transition",
+    "tool_ids": [
+      "tool:motion",
+      "tool:gsap"
+    ],
+    "type": "Concept",
+    "use_when": "Comparing two states, scene changes, before/after explanations, or editorial transitions."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:mask-transition",
+      "target": "tool:gsap",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:mask-transition",
+      "target": "tool:motion",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-mechanisms.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:legacy-mechanisms",
+      "publisher": "AIDRB",
+      "title": "Legacy mechanism registry",
+      "type": "Source",
+      "url": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/main/registries/frontend-mechanisms.yaml"
+    }
+  ]
+}

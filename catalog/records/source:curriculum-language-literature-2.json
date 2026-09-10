@@ -1,0 +1,15 @@
+{
+  "record": {
+    "canonical_path": "registries/curriculum-research-sources.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:curriculum-language-literature-2",
+    "publisher": "cambridge-international-as-a-level",
+    "title": "English Language and Literature 8695",
+    "type": "Source",
+    "url": "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-english-language-and-literature-as-level-only-8695/"
+  },
+  "relations": [],
+  "sources": []
+}

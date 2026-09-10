@@ -1,3 +1,5 @@
+> Atlas v2.1: Resource Packages are optional extraction from Examples. New manifests use `source_refs` to normalized Source records in knowledge/provenance/. Legacy embedded `source` remains supported by adapters. Generate catalog.yaml with `python3 scripts/build_catalog.py`; do not hand-edit it.
+
 # Resource Package Specification
 
 A **Resource Package** is the atomic unit of this repository. It converts a reference into something a future AI agent can retrieve, understand, adapt, and implement without rediscovering the source from scratch.

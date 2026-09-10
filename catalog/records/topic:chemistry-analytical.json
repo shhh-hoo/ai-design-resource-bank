@@ -1,0 +1,46 @@
+{
+  "record": {
+    "canonical_path": "subjects/chemistry/topics.json",
+    "example_ids": [
+      "ex:chemistry-chromatography",
+      "ex:chemistry-ir-spectrum",
+      "ex:chemistry-nmr-mapping",
+      "ex:chemistry-mass-fragmentation"
+    ],
+    "id": "topic:chemistry-analytical",
+    "order": 11,
+    "parent": "topic:chemistry",
+    "prerequisites": [],
+    "scope": "Separation, identification, spectroscopy and structure inference.",
+    "title": "Analytical and Spectroscopic Chemistry",
+    "type": "SubjectTopic"
+  },
+  "relations": [
+    {
+      "source": "topic:chemistry-analytical",
+      "target": "ex:chemistry-chromatography",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-analytical",
+      "target": "ex:chemistry-ir-spectrum",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-analytical",
+      "target": "ex:chemistry-mass-fragmentation",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-analytical",
+      "target": "ex:chemistry-nmr-mapping",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-analytical",
+      "target": "topic:chemistry",
+      "type": "part_of"
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,57 @@
+{
+  "record": {
+    "agent_notes": "Reference its expressive model even when implementing with Three.js/R3F instead.",
+    "avoid_when": "A new long-lived app needs the most active modern ecosystem or only simple 2D plots.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "3d-math",
+      "webgl-plot",
+      "vectors",
+      "surfaces",
+      "animated-relations"
+    ],
+    "docs": "https://github.com/unconed/mathbox",
+    "domains": [
+      "math",
+      "scientific-visualization"
+    ],
+    "ecosystem": [
+      "Three.js",
+      "WebGL"
+    ],
+    "examples": "https://mathbox.io/",
+    "homepage": "https://github.com/unconed/mathbox",
+    "id": "tool:mathbox",
+    "legacy_kind": "library",
+    "license": "MIT",
+    "maintenance_note": "Powerful but not the default modern choice; check current compatibility before committing to it.",
+    "source_refs": [
+      "source:tool-mathbox"
+    ],
+    "subtype": "library",
+    "summary": "Presentation-like animated 3D mathematical relationships map naturally to MathBox primitives.",
+    "tags": [
+      "math",
+      "webgl",
+      "3d"
+    ],
+    "tier": "secondary",
+    "title": "MathBox",
+    "type": "Tool",
+    "use_when": "Presentation-like animated 3D mathematical relationships map naturally to MathBox primitives."
+  },
+  "relations": [],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-mathbox",
+      "publisher": "MathBox",
+      "title": "MathBox official documentation",
+      "type": "Source",
+      "url": "https://github.com/unconed/mathbox"
+    }
+  ]
+}

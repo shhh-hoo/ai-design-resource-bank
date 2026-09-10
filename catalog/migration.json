@@ -1,0 +1,2608 @@
+{
+  "curriculum_subjects": [
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9706-accounting",
+      "legacy_record": {
+        "code": "9706",
+        "family": "economics-business",
+        "id": "cambridge-9706-accounting",
+        "name": "Accounting",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-economics-business-0",
+        "source:curriculum-economics-business-1",
+        "source:curriculum-economics-business-2",
+        "source:curriculum-economics-business-3"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-8679-afrikaans-language",
+      "legacy_record": {
+        "code": "8679",
+        "family": "language-literature",
+        "id": "cambridge-8679-afrikaans-language",
+        "name": "Afrikaans - Language (AS Level only)",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9680-arabic",
+      "legacy_record": {
+        "code": "9680",
+        "family": "language-literature",
+        "id": "cambridge-9680-arabic",
+        "name": "Arabic",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-8680-arabic-language",
+      "legacy_record": {
+        "code": "8680",
+        "family": "language-literature",
+        "id": "cambridge-8680-arabic-language",
+        "name": "Arabic - Language (AS Level only)",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9479-art-design",
+      "legacy_record": {
+        "code": "9479",
+        "family": "art-design-media",
+        "id": "cambridge-9479-art-design",
+        "name": "Art & Design",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-art-design-media-0",
+        "source:curriculum-art-design-media-1",
+        "source:curriculum-art-design-media-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9484-biblical-studies",
+      "legacy_record": {
+        "code": "9484",
+        "family": "law-religion-thinking",
+        "id": "cambridge-9484-biblical-studies",
+        "name": "Biblical Studies",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-law-religion-thinking-0",
+        "source:curriculum-law-religion-thinking-1",
+        "source:curriculum-law-religion-thinking-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9700-biology",
+      "legacy_record": {
+        "code": "9700",
+        "family": "biology",
+        "id": "cambridge-9700-biology",
+        "name": "Biology",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-biology-0",
+        "source:curriculum-biology-1"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9609-business",
+      "legacy_record": {
+        "code": "9609",
+        "family": "economics-business",
+        "id": "cambridge-9609-business",
+        "name": "Business",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-economics-business-0",
+        "source:curriculum-economics-business-1",
+        "source:curriculum-economics-business-2",
+        "source:curriculum-economics-business-3"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9701-chemistry",
+      "legacy_record": {
+        "code": "9701",
+        "family": "chemistry",
+        "id": "cambridge-9701-chemistry",
+        "name": "Chemistry",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-chemistry-0",
+        "source:curriculum-chemistry-1"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9868-chinese-language-literature",
+      "legacy_record": {
+        "code": "9868",
+        "family": "language-literature",
+        "id": "cambridge-9868-chinese-language-literature",
+        "name": "Chinese - Language & Literature (A Level only)",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-8238-chinese-language",
+      "legacy_record": {
+        "code": "8238",
+        "family": "language-literature",
+        "id": "cambridge-8238-chinese-language",
+        "name": "Chinese Language (AS Level only)",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9274-classical-studies",
+      "legacy_record": {
+        "code": "9274",
+        "family": "law-religion-thinking",
+        "id": "cambridge-9274-classical-studies",
+        "name": "Classical Studies",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-law-religion-thinking-0",
+        "source:curriculum-law-religion-thinking-1",
+        "source:curriculum-law-religion-thinking-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9618-computer-science",
+      "legacy_record": {
+        "code": "9618",
+        "family": "computer-science",
+        "id": "cambridge-9618-computer-science",
+        "name": "Computer Science",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-computer-science-0",
+        "source:curriculum-computer-science-1",
+        "source:curriculum-computer-science-2",
+        "source:curriculum-computer-science-3"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9705-design-technology",
+      "legacy_record": {
+        "code": "9705",
+        "family": "art-design-media",
+        "id": "cambridge-9705-design-technology",
+        "name": "Design & Technology",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-art-design-media-0",
+        "source:curriculum-art-design-media-1",
+        "source:curriculum-art-design-media-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9481-digital-media-design",
+      "legacy_record": {
+        "code": "9481",
+        "family": "art-design-media",
+        "id": "cambridge-9481-digital-media-design",
+        "name": "Digital Media & Design",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-art-design-media-0",
+        "source:curriculum-art-design-media-1",
+        "source:curriculum-art-design-media-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9482-drama",
+      "legacy_record": {
+        "code": "9482",
+        "family": "art-design-media",
+        "id": "cambridge-9482-drama",
+        "name": "Drama",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-art-design-media-0",
+        "source:curriculum-art-design-media-1",
+        "source:curriculum-art-design-media-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9708-economics",
+      "legacy_record": {
+        "code": "9708",
+        "family": "economics-business",
+        "id": "cambridge-9708-economics",
+        "name": "Economics",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-economics-business-0",
+        "source:curriculum-economics-business-1",
+        "source:curriculum-economics-business-2",
+        "source:curriculum-economics-business-3"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-8695-english-language-literature",
+      "legacy_record": {
+        "code": "8695",
+        "family": "language-literature",
+        "id": "cambridge-8695-english-language-literature",
+        "name": "English - Language and Literature (AS Level only)",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9695-literature-english",
+      "legacy_record": {
+        "code": "9695",
+        "family": "language-literature",
+        "id": "cambridge-9695-literature-english",
+        "name": "English - Literature",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-8021-english-general-paper",
+      "legacy_record": {
+        "code": "8021",
+        "family": "research-interdisciplinary",
+        "id": "cambridge-8021-english-general-paper",
+        "name": "English General Paper (AS Level only)",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-research-interdisciplinary-0",
+        "source:curriculum-research-interdisciplinary-1",
+        "source:curriculum-research-interdisciplinary-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9093-english-language",
+      "legacy_record": {
+        "code": "9093",
+        "family": "language-literature",
+        "id": "cambridge-9093-english-language",
+        "name": "English Language",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-8291-environmental-management",
+      "legacy_record": {
+        "code": "8291",
+        "family": "earth-environment",
+        "id": "cambridge-8291-environmental-management",
+        "name": "Environmental Management (AS only)",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-earth-environment-0",
+        "source:curriculum-earth-environment-1",
+        "source:curriculum-earth-environment-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9981-european-history",
+      "legacy_record": {
+        "code": "9981",
+        "family": "history-government",
+        "id": "cambridge-9981-european-history",
+        "name": "European History",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-history-government-0",
+        "source:curriculum-history-government-1",
+        "source:curriculum-history-government-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9898-french-language-literature",
+      "legacy_record": {
+        "code": "9898",
+        "family": "language-literature",
+        "id": "cambridge-9898-french-language-literature",
+        "name": "French Language & Literature",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-8028-french-language",
+      "legacy_record": {
+        "code": "8028",
+        "family": "language-literature",
+        "id": "cambridge-8028-french-language",
+        "name": "French Language (AS Level only)",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9696-geography",
+      "legacy_record": {
+        "code": "9696",
+        "family": "geography",
+        "id": "cambridge-9696-geography",
+        "name": "Geography",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-geography-0",
+        "source:curriculum-geography-1"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-8027-german-language",
+      "legacy_record": {
+        "code": "8027",
+        "family": "language-literature",
+        "id": "cambridge-8027-german-language",
+        "name": "German - Language (AS Level only)",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9897-german-language-literature",
+      "legacy_record": {
+        "code": "9897",
+        "family": "language-literature",
+        "id": "cambridge-9897-german-language-literature",
+        "name": "German Language & Literature (A Level only)",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9239-global-perspectives-research",
+      "legacy_record": {
+        "code": "9239",
+        "family": "research-interdisciplinary",
+        "id": "cambridge-9239-global-perspectives-research",
+        "name": "Global Perspectives & Research",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-research-interdisciplinary-0",
+        "source:curriculum-research-interdisciplinary-1",
+        "source:curriculum-research-interdisciplinary-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9487-hinduism",
+      "legacy_record": {
+        "code": "9487",
+        "family": "law-religion-thinking",
+        "id": "cambridge-9487-hinduism",
+        "name": "Hinduism",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-law-religion-thinking-0",
+        "source:curriculum-law-religion-thinking-1",
+        "source:curriculum-law-religion-thinking-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9489-history",
+      "legacy_record": {
+        "code": "9489",
+        "family": "history-government",
+        "id": "cambridge-9489-history",
+        "name": "History",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-history-government-0",
+        "source:curriculum-history-government-1",
+        "source:curriculum-history-government-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9626-information-technology",
+      "legacy_record": {
+        "code": "9626",
+        "family": "computer-science",
+        "id": "cambridge-9626-information-technology",
+        "name": "Information Technology",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-computer-science-0",
+        "source:curriculum-computer-science-1",
+        "source:curriculum-computer-science-2",
+        "source:curriculum-computer-science-3"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9982-international-history",
+      "legacy_record": {
+        "code": "9982",
+        "family": "history-government",
+        "id": "cambridge-9982-international-history",
+        "name": "International History",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-history-government-0",
+        "source:curriculum-history-government-1",
+        "source:curriculum-history-government-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9488-islamic-studies",
+      "legacy_record": {
+        "code": "9488",
+        "family": "law-religion-thinking",
+        "id": "cambridge-9488-islamic-studies",
+        "name": "Islamic Studies",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-law-religion-thinking-0",
+        "source:curriculum-law-religion-thinking-1",
+        "source:curriculum-law-religion-thinking-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9084-law",
+      "legacy_record": {
+        "code": "9084",
+        "family": "law-religion-thinking",
+        "id": "cambridge-9084-law",
+        "name": "Law",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-law-religion-thinking-0",
+        "source:curriculum-law-religion-thinking-1",
+        "source:curriculum-law-religion-thinking-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9693-marine-science",
+      "legacy_record": {
+        "code": "9693",
+        "family": "earth-environment",
+        "id": "cambridge-9693-marine-science",
+        "name": "Marine Science",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-earth-environment-0",
+        "source:curriculum-earth-environment-1",
+        "source:curriculum-earth-environment-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9709-mathematics",
+      "legacy_record": {
+        "code": "9709",
+        "family": "mathematics",
+        "id": "cambridge-9709-mathematics",
+        "name": "Mathematics",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-mathematics-0",
+        "source:curriculum-mathematics-1",
+        "source:curriculum-mathematics-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9231-further-mathematics",
+      "legacy_record": {
+        "code": "9231",
+        "family": "mathematics",
+        "id": "cambridge-9231-further-mathematics",
+        "name": "Mathematics - Further",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-mathematics-0",
+        "source:curriculum-mathematics-1",
+        "source:curriculum-mathematics-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9607-media-studies",
+      "legacy_record": {
+        "code": "9607",
+        "family": "art-design-media",
+        "id": "cambridge-9607-media-studies",
+        "name": "Media Studies",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-art-design-media-0",
+        "source:curriculum-art-design-media-1",
+        "source:curriculum-art-design-media-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9483-music",
+      "legacy_record": {
+        "code": "9483",
+        "family": "music",
+        "id": "cambridge-9483-music",
+        "name": "Music",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-music-0",
+        "source:curriculum-music-1"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9702-physics",
+      "legacy_record": {
+        "code": "9702",
+        "family": "physics",
+        "id": "cambridge-9702-physics",
+        "name": "Physics",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-physics-0",
+        "source:curriculum-physics-1",
+        "source:curriculum-physics-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-8684-portuguese-language",
+      "legacy_record": {
+        "code": "8684",
+        "family": "language-literature",
+        "id": "cambridge-8684-portuguese-language",
+        "name": "Portuguese - Language (AS Level only)",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9718-portuguese",
+      "legacy_record": {
+        "code": "9718",
+        "family": "language-literature",
+        "id": "cambridge-9718-portuguese",
+        "name": "Portuguese (A Level only)",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9990-psychology",
+      "legacy_record": {
+        "code": "9990",
+        "family": "psychology-social",
+        "id": "cambridge-9990-psychology",
+        "name": "Psychology",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-psychology-social-0",
+        "source:curriculum-psychology-social-1",
+        "source:curriculum-psychology-social-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9699-sociology",
+      "legacy_record": {
+        "code": "9699",
+        "family": "psychology-social",
+        "id": "cambridge-9699-sociology",
+        "name": "Sociology",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-psychology-social-0",
+        "source:curriculum-psychology-social-1",
+        "source:curriculum-psychology-social-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9844-spanish-language-literature",
+      "legacy_record": {
+        "code": "9844",
+        "family": "language-literature",
+        "id": "cambridge-9844-spanish-language-literature",
+        "name": "Spanish - Language & Literature (A Level only)",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-8022-spanish-language",
+      "legacy_record": {
+        "code": "8022",
+        "family": "language-literature",
+        "id": "cambridge-8022-spanish-language",
+        "name": "Spanish Language (AS Level only)",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-8386-sport-physical-education",
+      "legacy_record": {
+        "code": "8386",
+        "family": "physical-education",
+        "id": "cambridge-8386-sport-physical-education",
+        "name": "Sport & Physical Education (AS Level only)",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-physical-education-0"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9689-tamil",
+      "legacy_record": {
+        "code": "9689",
+        "family": "language-literature",
+        "id": "cambridge-9689-tamil",
+        "name": "Tamil (A Level only)",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-8689-tamil-language",
+      "legacy_record": {
+        "code": "8689",
+        "family": "language-literature",
+        "id": "cambridge-8689-tamil-language",
+        "name": "Tamil - Language (AS Level only)",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9694-thinking-skills",
+      "legacy_record": {
+        "code": "9694",
+        "family": "law-religion-thinking",
+        "id": "cambridge-9694-thinking-skills",
+        "name": "Thinking Skills",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-law-religion-thinking-0",
+        "source:curriculum-law-religion-thinking-1",
+        "source:curriculum-law-religion-thinking-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9395-travel-tourism",
+      "legacy_record": {
+        "code": "9395",
+        "family": "travel-tourism",
+        "id": "cambridge-9395-travel-tourism",
+        "name": "Travel & Tourism",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-travel-tourism-0"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-8686-urdu-language",
+      "legacy_record": {
+        "code": "8686",
+        "family": "language-literature",
+        "id": "cambridge-8686-urdu-language",
+        "name": "Urdu - Language (AS Level only)",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9686-urdu-pakistan",
+      "legacy_record": {
+        "code": "9686",
+        "family": "language-literature",
+        "id": "cambridge-9686-urdu-pakistan",
+        "name": "Urdu - Pakistan only (A Level only)",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-9866-urdu-language-literature",
+      "legacy_record": {
+        "code": "9866",
+        "family": "language-literature",
+        "id": "cambridge-9866-urdu-language-literature",
+        "name": "Urdu Language & Literature (Pakistan)",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-8102-us-history-since-1877",
+      "legacy_record": {
+        "code": "8102",
+        "family": "history-government",
+        "id": "cambridge-8102-us-history-since-1877",
+        "name": "US History since 1877",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-history-government-0",
+        "source:curriculum-history-government-1",
+        "source:curriculum-history-government-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "cambridge-8101-us-history-to-1877",
+      "legacy_record": {
+        "code": "8101",
+        "family": "history-government",
+        "id": "cambridge-8101-us-history-to-1877",
+        "name": "US History to 1877",
+        "program": "cambridge-international-as-a-level"
+      },
+      "source_ids": [
+        "source:curriculum-history-government-0",
+        "source:curriculum-history-government-1",
+        "source:curriculum-history-government-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-2d-art-design",
+      "legacy_record": {
+        "family": "art-design-media",
+        "id": "ap-2d-art-design",
+        "name": "AP 2-D Art and Design",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-art-design-media-0",
+        "source:curriculum-art-design-media-1",
+        "source:curriculum-art-design-media-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-3d-art-design",
+      "legacy_record": {
+        "family": "art-design-media",
+        "id": "ap-3d-art-design",
+        "name": "AP 3-D Art and Design",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-art-design-media-0",
+        "source:curriculum-art-design-media-1",
+        "source:curriculum-art-design-media-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-drawing",
+      "legacy_record": {
+        "family": "art-design-media",
+        "id": "ap-drawing",
+        "name": "AP Drawing",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-art-design-media-0",
+        "source:curriculum-art-design-media-1",
+        "source:curriculum-art-design-media-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-art-history",
+      "legacy_record": {
+        "family": "art-design-media",
+        "id": "ap-art-history",
+        "name": "AP Art History",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-art-design-media-0",
+        "source:curriculum-art-design-media-1",
+        "source:curriculum-art-design-media-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-music-theory",
+      "legacy_record": {
+        "family": "music",
+        "id": "ap-music-theory",
+        "name": "AP Music Theory",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-music-0",
+        "source:curriculum-music-1"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-english-language-composition",
+      "legacy_record": {
+        "family": "language-literature",
+        "id": "ap-english-language-composition",
+        "name": "AP English Language and Composition",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-english-literature-composition",
+      "legacy_record": {
+        "family": "language-literature",
+        "id": "ap-english-literature-composition",
+        "name": "AP English Literature and Composition",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-african-american-studies",
+      "legacy_record": {
+        "family": "history-government",
+        "id": "ap-african-american-studies",
+        "name": "AP African American Studies",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-history-government-0",
+        "source:curriculum-history-government-1",
+        "source:curriculum-history-government-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-comparative-government-politics",
+      "legacy_record": {
+        "family": "history-government",
+        "id": "ap-comparative-government-politics",
+        "name": "AP Comparative Government and Politics",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-history-government-0",
+        "source:curriculum-history-government-1",
+        "source:curriculum-history-government-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-european-history",
+      "legacy_record": {
+        "family": "history-government",
+        "id": "ap-european-history",
+        "name": "AP European History",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-history-government-0",
+        "source:curriculum-history-government-1",
+        "source:curriculum-history-government-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-human-geography",
+      "legacy_record": {
+        "family": "geography",
+        "id": "ap-human-geography",
+        "name": "AP Human Geography",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-geography-0",
+        "source:curriculum-geography-1"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-macroeconomics",
+      "legacy_record": {
+        "family": "economics-business",
+        "id": "ap-macroeconomics",
+        "name": "AP Macroeconomics",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-economics-business-0",
+        "source:curriculum-economics-business-1",
+        "source:curriculum-economics-business-2",
+        "source:curriculum-economics-business-3"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-microeconomics",
+      "legacy_record": {
+        "family": "economics-business",
+        "id": "ap-microeconomics",
+        "name": "AP Microeconomics",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-economics-business-0",
+        "source:curriculum-economics-business-1",
+        "source:curriculum-economics-business-2",
+        "source:curriculum-economics-business-3"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-psychology",
+      "legacy_record": {
+        "family": "psychology-social",
+        "id": "ap-psychology",
+        "name": "AP Psychology",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-psychology-social-0",
+        "source:curriculum-psychology-social-1",
+        "source:curriculum-psychology-social-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-us-government-politics",
+      "legacy_record": {
+        "family": "history-government",
+        "id": "ap-us-government-politics",
+        "name": "AP United States Government and Politics",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-history-government-0",
+        "source:curriculum-history-government-1",
+        "source:curriculum-history-government-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-us-history",
+      "legacy_record": {
+        "family": "history-government",
+        "id": "ap-us-history",
+        "name": "AP United States History",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-history-government-0",
+        "source:curriculum-history-government-1",
+        "source:curriculum-history-government-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-world-history-modern",
+      "legacy_record": {
+        "family": "history-government",
+        "id": "ap-world-history-modern",
+        "name": "AP World History: Modern",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-history-government-0",
+        "source:curriculum-history-government-1",
+        "source:curriculum-history-government-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-calculus-ab",
+      "legacy_record": {
+        "family": "mathematics",
+        "id": "ap-calculus-ab",
+        "name": "AP Calculus AB",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-mathematics-0",
+        "source:curriculum-mathematics-1",
+        "source:curriculum-mathematics-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-calculus-bc",
+      "legacy_record": {
+        "family": "mathematics",
+        "id": "ap-calculus-bc",
+        "name": "AP Calculus BC",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-mathematics-0",
+        "source:curriculum-mathematics-1",
+        "source:curriculum-mathematics-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-computer-science-a",
+      "legacy_record": {
+        "family": "computer-science",
+        "id": "ap-computer-science-a",
+        "name": "AP Computer Science A",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-computer-science-0",
+        "source:curriculum-computer-science-1",
+        "source:curriculum-computer-science-2",
+        "source:curriculum-computer-science-3"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-computer-science-principles",
+      "legacy_record": {
+        "family": "computer-science",
+        "id": "ap-computer-science-principles",
+        "name": "AP Computer Science Principles",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-computer-science-0",
+        "source:curriculum-computer-science-1",
+        "source:curriculum-computer-science-2",
+        "source:curriculum-computer-science-3"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-precalculus",
+      "legacy_record": {
+        "family": "mathematics",
+        "id": "ap-precalculus",
+        "name": "AP Precalculus",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-mathematics-0",
+        "source:curriculum-mathematics-1",
+        "source:curriculum-mathematics-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-statistics",
+      "legacy_record": {
+        "family": "mathematics",
+        "id": "ap-statistics",
+        "name": "AP Statistics",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-mathematics-0",
+        "source:curriculum-mathematics-1",
+        "source:curriculum-mathematics-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-biology",
+      "legacy_record": {
+        "family": "biology",
+        "id": "ap-biology",
+        "name": "AP Biology",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-biology-0",
+        "source:curriculum-biology-1"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-chemistry",
+      "legacy_record": {
+        "family": "chemistry",
+        "id": "ap-chemistry",
+        "name": "AP Chemistry",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-chemistry-0",
+        "source:curriculum-chemistry-1"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-environmental-science",
+      "legacy_record": {
+        "family": "earth-environment",
+        "id": "ap-environmental-science",
+        "name": "AP Environmental Science",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-earth-environment-0",
+        "source:curriculum-earth-environment-1",
+        "source:curriculum-earth-environment-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-physics-1",
+      "legacy_record": {
+        "family": "physics",
+        "id": "ap-physics-1",
+        "name": "AP Physics 1: Algebra-Based",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-physics-0",
+        "source:curriculum-physics-1",
+        "source:curriculum-physics-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-physics-2",
+      "legacy_record": {
+        "family": "physics",
+        "id": "ap-physics-2",
+        "name": "AP Physics 2: Algebra-Based",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-physics-0",
+        "source:curriculum-physics-1",
+        "source:curriculum-physics-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-physics-c-electricity-magnetism",
+      "legacy_record": {
+        "family": "physics",
+        "id": "ap-physics-c-electricity-magnetism",
+        "name": "AP Physics C: Electricity and Magnetism",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-physics-0",
+        "source:curriculum-physics-1",
+        "source:curriculum-physics-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-physics-c-mechanics",
+      "legacy_record": {
+        "family": "physics",
+        "id": "ap-physics-c-mechanics",
+        "name": "AP Physics C: Mechanics",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-physics-0",
+        "source:curriculum-physics-1",
+        "source:curriculum-physics-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-chinese-language-culture",
+      "legacy_record": {
+        "family": "language-literature",
+        "id": "ap-chinese-language-culture",
+        "name": "AP Chinese Language and Culture",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-french-language-culture",
+      "legacy_record": {
+        "family": "language-literature",
+        "id": "ap-french-language-culture",
+        "name": "AP French Language and Culture",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-german-language-culture",
+      "legacy_record": {
+        "family": "language-literature",
+        "id": "ap-german-language-culture",
+        "name": "AP German Language and Culture",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-italian-language-culture",
+      "legacy_record": {
+        "family": "language-literature",
+        "id": "ap-italian-language-culture",
+        "name": "AP Italian Language and Culture",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-japanese-language-culture",
+      "legacy_record": {
+        "family": "language-literature",
+        "id": "ap-japanese-language-culture",
+        "name": "AP Japanese Language and Culture",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-latin",
+      "legacy_record": {
+        "family": "language-literature",
+        "id": "ap-latin",
+        "name": "AP Latin",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-spanish-language-culture",
+      "legacy_record": {
+        "family": "language-literature",
+        "id": "ap-spanish-language-culture",
+        "name": "AP Spanish Language and Culture",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-spanish-literature-culture",
+      "legacy_record": {
+        "family": "language-literature",
+        "id": "ap-spanish-literature-culture",
+        "name": "AP Spanish Literature and Culture",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-language-literature-0",
+        "source:curriculum-language-literature-1",
+        "source:curriculum-language-literature-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-research",
+      "legacy_record": {
+        "family": "research-interdisciplinary",
+        "id": "ap-research",
+        "name": "AP Research",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-research-interdisciplinary-0",
+        "source:curriculum-research-interdisciplinary-1",
+        "source:curriculum-research-interdisciplinary-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-seminar",
+      "legacy_record": {
+        "family": "research-interdisciplinary",
+        "id": "ap-seminar",
+        "name": "AP Seminar",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-research-interdisciplinary-0",
+        "source:curriculum-research-interdisciplinary-1",
+        "source:curriculum-research-interdisciplinary-2"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-business-personal-finance",
+      "legacy_record": {
+        "family": "economics-business",
+        "id": "ap-business-personal-finance",
+        "name": "AP Business with Personal Finance",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-economics-business-0",
+        "source:curriculum-economics-business-1",
+        "source:curriculum-economics-business-2",
+        "source:curriculum-economics-business-3"
+      ]
+    },
+    {
+      "canonical_path": "registries/curriculum-subjects.yaml",
+      "disposition": "provenance-only; requires curated canonical topic mapping",
+      "legacy_id": "ap-cybersecurity",
+      "legacy_record": {
+        "family": "computer-science",
+        "id": "ap-cybersecurity",
+        "name": "AP Cybersecurity",
+        "program": "ap"
+      },
+      "source_ids": [
+        "source:curriculum-computer-science-0",
+        "source:curriculum-computer-science-1",
+        "source:curriculum-computer-science-2",
+        "source:curriculum-computer-science-3"
+      ]
+    }
+  ],
+  "families": [
+    {
+      "id": "mathematics",
+      "legacy_record": {
+        "grammars": [
+          "functional-graph",
+          "dynamic-geometry",
+          "statistical-distribution",
+          "vector-field",
+          "optimization-tradeoff"
+        ],
+        "label": "Mathematics",
+        "mechanisms": [
+          "movable-tangent",
+          "area-under-curve",
+          "vector-decomposition"
+        ],
+        "tools": [
+          "mafs",
+          "jsxgraph",
+          "plotly-js",
+          "observable-plot",
+          "vega-lite"
+        ],
+        "topic_seeds": [
+          {
+            "topic": "Functions, transformations, inverse relationships, and modelling",
+            "visualize_as": "Linked graphs, parameter controls, domain/range emphasis, and multiple representations tied to one state."
+          },
+          {
+            "topic": "Limits, derivatives, local linearity, and rates of change",
+            "visualize_as": "Secant-to-tangent transitions, movable tangent, slope field, derivative comparison."
+          },
+          {
+            "topic": "Integration and accumulation",
+            "visualize_as": "Signed area, moving bounds, Riemann sums, accumulation function, area-to-rate linkage."
+          },
+          {
+            "topic": "Vectors, complex numbers, coordinates, and geometry",
+            "visualize_as": "Draggable vectors, projections, Argand plane, transformations, loci, and constrained constructions."
+          },
+          {
+            "topic": "Probability, distributions, sampling, and inference",
+            "visualize_as": "Distribution morphs, sampling simulations, confidence/uncertainty bands, residual and regression views."
+          },
+          {
+            "topic": "Mathematical mechanics",
+            "visualize_as": "State-linked trajectories, force/vector overlays, momentum and energy representations."
+          }
+        ],
+        "visual_priority": "high"
+      },
+      "source_id": "source:legacy-families"
+    },
+    {
+      "id": "physics",
+      "legacy_record": {
+        "grammars": [
+          "vector-field",
+          "dynamic-system",
+          "functional-graph",
+          "field-flow",
+          "3d-spatial",
+          "state-process"
+        ],
+        "label": "Physics",
+        "mechanisms": [
+          "force-vector-overlay",
+          "wave-propagation",
+          "vector-decomposition",
+          "particle-attractor"
+        ],
+        "tools": [
+          "matter-js",
+          "rapier",
+          "mafs",
+          "plotly-js",
+          "threejs",
+          "p5js",
+          "falstad-circuitjs"
+        ],
+        "topic_seeds": [
+          {
+            "topic": "Kinematics and reference frames",
+            "visualize_as": "Position/velocity/acceleration linked to the same moving object and synchronized graphs."
+          },
+          {
+            "topic": "Forces and dynamics",
+            "visualize_as": "Free-body vectors attached to simulated bodies, resultant force, acceleration, friction, constraints."
+          },
+          {
+            "topic": "Work, energy, momentum, and collisions",
+            "visualize_as": "Energy bars and phase plots linked to motion; collision before/after states with conserved quantities."
+          },
+          {
+            "topic": "Rotation, torque, angular momentum, and gravitation",
+            "visualize_as": "Lever arms, angular vectors, rotational state, orbits and potential relationships."
+          },
+          {
+            "topic": "Oscillations and waves",
+            "visualize_as": "Oscillator state, phase, propagation, superposition, standing waves, interference and resonance."
+          },
+          {
+            "topic": "Fluids and thermal physics",
+            "visualize_as": "Pressure/velocity fields, particle-to-bulk bridge, cycles, state diagrams, flow and buoyancy."
+          },
+          {
+            "topic": "Electricity, magnetism, fields, and induction",
+            "visualize_as": "Field vectors/lines, equipotential surfaces, flux, charge motion, induction and circuit state."
+          },
+          {
+            "topic": "Circuits and electronics",
+            "visualize_as": "Validated circuit simulation with synchronized current, voltage, charge and component state."
+          }
+        ],
+        "visual_priority": "high"
+      },
+      "source_id": "source:legacy-families"
+    },
+    {
+      "id": "chemistry",
+      "legacy_record": {
+        "grammars": [
+          "structure-anatomy",
+          "micro-macro-bridge",
+          "3d-spatial",
+          "functional-graph",
+          "state-process",
+          "statistical-distribution"
+        ],
+        "label": "Chemistry",
+        "mechanisms": [
+          "reaction-coordinate",
+          "orbital-overlap",
+          "electron-pushing",
+          "bond-morph",
+          "anchored-callout"
+        ],
+        "tools": [
+          "rdkit-js",
+          "molstar",
+          "3dmol-js",
+          "ketcher",
+          "plotly-js",
+          "threejs",
+          "svgjs"
+        ],
+        "topic_seeds": [
+          {
+            "topic": "Atomic structure, spectra, orbitals, and periodicity",
+            "visualize_as": "Energy levels, spectra, orbital geometry, periodic trends and electron configuration linked across representations."
+          },
+          {
+            "topic": "Bonding, molecular shape, intermolecular forces, and structure",
+            "visualize_as": "Chemically correct 2D structure plus rotatable 3D geometry, orbital overlap, polarity and packing."
+          },
+          {
+            "topic": "States, gases, solutions, and particle models",
+            "visualize_as": "Micro-to-macro particle behavior linked to pressure, concentration, phase and measurable properties."
+          },
+          {
+            "topic": "Energetics and thermodynamics",
+            "visualize_as": "Reaction coordinate, energy cycles, state functions, entropy/free-energy comparisons."
+          },
+          {
+            "topic": "Kinetics and mechanisms",
+            "visualize_as": "Collision/energy distributions, rate graphs, reaction coordinate, elementary steps and causal electron movement."
+          },
+          {
+            "topic": "Equilibrium, acids, bases, and solubility",
+            "visualize_as": "Dynamic opposing processes, composition vs condition, titration/speciation curves and equilibrium shifts."
+          },
+          {
+            "topic": "Redox and electrochemistry",
+            "visualize_as": "Electron/ion flow, electrode processes, cell potential, concentration effects and electrolysis state."
+          },
+          {
+            "topic": "Organic reactions and synthesis",
+            "visualize_as": "Atom identity preserved through mechanisms, electron-pushing, bond morphing, stereochemical and pathway views."
+          },
+          {
+            "topic": "Spectroscopy and analytical chemistry",
+            "visualize_as": "Spectrum-to-structure linkage, peak annotation, fragmentation and evidence comparison."
+          }
+        ],
+        "visual_priority": "high"
+      },
+      "source_id": "source:legacy-families"
+    },
+    {
+      "id": "biology",
+      "legacy_record": {
+        "grammars": [
+          "structure-anatomy",
+          "micro-macro-bridge",
+          "state-process",
+          "network-relation",
+          "statistical-distribution",
+          "field-flow"
+        ],
+        "label": "Biology",
+        "mechanisms": [
+          "focus-context",
+          "semantic-zoom",
+          "anchored-callout",
+          "graph-relayout"
+        ],
+        "tools": [
+          "molstar",
+          "3dmol-js",
+          "d3",
+          "observable-plot",
+          "threejs",
+          "cytoscapejs"
+        ],
+        "topic_seeds": [
+          {
+            "topic": "Biomolecules and molecular interactions",
+            "visualize_as": "Protein/nucleic-acid structure, binding sites, molecular recognition and structure-function relationships."
+          },
+          {
+            "topic": "Cells, membranes, transport, and organelles",
+            "visualize_as": "Layered anatomy, selective transport, gradients, compartment relationships and scale transitions."
+          },
+          {
+            "topic": "Enzymes, respiration, and photosynthesis",
+            "visualize_as": "Reaction/state networks, energy transfer, limiting factors and linked molecular-to-system views."
+          },
+          {
+            "topic": "DNA, gene expression, inheritance, and biotechnology",
+            "visualize_as": "Sequence-to-process views, chromosome/gene structure, probability and pedigree/inheritance models."
+          },
+          {
+            "topic": "Signalling, immunity, coordination, and homeostasis",
+            "visualize_as": "Feedback loops, receptor pathways, system anatomy and changing internal state."
+          },
+          {
+            "topic": "Evolution and population genetics",
+            "visualize_as": "Allele-frequency change, selection/drift simulations, phylogenetic relationships and variation distributions."
+          },
+          {
+            "topic": "Ecology, populations, communities, and cycles",
+            "visualize_as": "Food/network graphs, abundance distributions, sampling uncertainty, nutrient flows and population dynamics."
+          }
+        ],
+        "visual_priority": "high"
+      },
+      "source_id": "source:legacy-families"
+    },
+    {
+      "id": "earth-environment",
+      "legacy_record": {
+        "grammars": [
+          "spatial-map",
+          "field-flow",
+          "dynamic-system",
+          "time-sequence",
+          "statistical-distribution",
+          "network-relation"
+        ],
+        "label": "Earth, Environmental & Marine Science",
+        "mechanisms": [
+          "wave-propagation",
+          "particle-attractor",
+          "semantic-zoom",
+          "focus-context"
+        ],
+        "tools": [
+          "maplibre-gl-js",
+          "deckgl",
+          "cesiumjs",
+          "d3",
+          "plotly-js",
+          "p5js"
+        ],
+        "topic_seeds": [
+          {
+            "topic": "Atmosphere, weather, climate, ocean circulation, and coupled Earth systems",
+            "visualize_as": "Vector/flow fields, layers, circulation cells, time series, anomaly maps and coupled-system diagrams."
+          },
+          {
+            "topic": "Biogeochemical, water, carbon, and nutrient cycles",
+            "visualize_as": "Stock-flow systems tied to geography and time rather than decorative circular arrows."
+          },
+          {
+            "topic": "Ecosystems, productivity, biodiversity, and fisheries",
+            "visualize_as": "Food/network relationships, spatial distributions, population dynamics, trophic transfer and uncertainty."
+          },
+          {
+            "topic": "Earth processes, hazards, coasts, and marine systems",
+            "visualize_as": "Terrain/cross-sections, hazard propagation, plate/process animation, bathymetry and shoreline change."
+          },
+          {
+            "topic": "Pollution, resource use, energy, and sustainability",
+            "visualize_as": "Source-pathway-receptor flows, spatial exposure, scenarios, trade-offs and impact comparisons."
+          }
+        ],
+        "visual_priority": "high"
+      },
+      "source_id": "source:legacy-families"
+    },
+    {
+      "id": "geography",
+      "legacy_record": {
+        "grammars": [
+          "spatial-map",
+          "field-flow",
+          "statistical-distribution",
+          "time-sequence",
+          "network-relation"
+        ],
+        "label": "Geography",
+        "mechanisms": [
+          "semantic-zoom",
+          "canvas-focus-lens",
+          "focus-context",
+          "graph-relayout"
+        ],
+        "tools": [
+          "maplibre-gl-js",
+          "deckgl",
+          "cesiumjs",
+          "leaflet",
+          "d3",
+          "observable-plot"
+        ],
+        "topic_seeds": [
+          {
+            "topic": "Hydrology, rivers, water resources, and hazards",
+            "visualize_as": "Catchment maps, longitudinal/cross profiles, hydrographs, flow networks, flood extent and management scenarios."
+          },
+          {
+            "topic": "Atmosphere, climate, and climate change",
+            "visualize_as": "Global/local maps, pressure/wind fields, climate graphs, anomalies and time-linked spatial change."
+          },
+          {
+            "topic": "Earth processes, mass movement, and environments",
+            "visualize_as": "Cross-sections, terrain, process sequences, risk layers and spatial comparisons."
+          },
+          {
+            "topic": "Population, migration, and demographic change",
+            "visualize_as": "Choropleths/dot maps, flow maps, age structures, migration networks and time-series transitions."
+          },
+          {
+            "topic": "Urban areas, land use, infrastructure, and management",
+            "visualize_as": "Layered city maps, accessibility, land-use patterns, network flows and scenario comparison."
+          },
+          {
+            "topic": "Global environments and themes",
+            "visualize_as": "Multi-scale maps and linked evidence panels preserving case-study location, time and uncertainty."
+          }
+        ],
+        "visual_priority": "high"
+      },
+      "source_id": "source:legacy-families"
+    },
+    {
+      "id": "computer-science",
+      "legacy_record": {
+        "grammars": [
+          "code-execution",
+          "state-process",
+          "network-relation",
+          "structure-anatomy",
+          "time-sequence",
+          "statistical-distribution"
+        ],
+        "label": "Computer Science, IT & Cybersecurity",
+        "mechanisms": [
+          "focus-context",
+          "graph-relayout",
+          "semantic-zoom",
+          "canvas-focus-lens"
+        ],
+        "tools": [
+          "react-flow",
+          "antv-g6",
+          "cytoscapejs",
+          "d3",
+          "mermaid",
+          "tldraw"
+        ],
+        "topic_seeds": [
+          {
+            "topic": "Data representation, encoding, compression, and information",
+            "visualize_as": "Bit/byte layouts, transforms, encoding pipelines, compression state and error representations."
+          },
+          {
+            "topic": "Logic, processors, computer architecture, and operating systems",
+            "visualize_as": "Data-path diagrams, register/memory state, fetch-decode-execute, scheduling and layered system anatomy."
+          },
+          {
+            "topic": "Algorithms and data structures",
+            "visualize_as": "Step-through execution with stable item identity, complexity plots, tree/graph state and invariant highlighting."
+          },
+          {
+            "topic": "Programming, objects, recursion, and memory",
+            "visualize_as": "Source line linked to call stack, heap/object graph, variable state and control flow."
+          },
+          {
+            "topic": "Networks and distributed communication",
+            "visualize_as": "Packet routes, protocol layers, latency/throughput, topology and failure propagation."
+          },
+          {
+            "topic": "Databases and information systems",
+            "visualize_as": "Entity relationships, tables/keys, query transformation, indexing and transaction state."
+          },
+          {
+            "topic": "AI, robotics, and computational models",
+            "visualize_as": "State/action loops, search trees, model inputs/outputs and sensor-to-actuator pipelines without anthropomorphic decoration."
+          },
+          {
+            "topic": "Cybersecurity",
+            "visualize_as": "Trust boundaries, attack paths, protocol/state diagrams, threat surfaces and defense-in-depth layers."
+          }
+        ],
+        "visual_priority": "high"
+      },
+      "source_id": "source:legacy-families"
+    },
+    {
+      "id": "economics-business",
+      "legacy_record": {
+        "grammars": [
+          "functional-graph",
+          "optimization-tradeoff",
+          "statistical-distribution",
+          "state-process",
+          "network-relation",
+          "time-sequence"
+        ],
+        "label": "Economics, Business, Accounting & Finance",
+        "mechanisms": [
+          "area-under-curve",
+          "graph-relayout",
+          "focus-context"
+        ],
+        "tools": [
+          "mafs",
+          "jsxgraph",
+          "observable-plot",
+          "vega-lite",
+          "echarts",
+          "d3"
+        ],
+        "topic_seeds": [
+          {
+            "topic": "Scarcity, production possibilities, opportunity cost, and trade-offs",
+            "visualize_as": "Feasible frontiers, marginal trade-offs, constrained choice and scenario shifts."
+          },
+          {
+            "topic": "Demand, supply, elasticity, intervention, and welfare",
+            "visualize_as": "Interactive curves, equilibrium shifts, incidence, surplus/deadweight areas and parameter sensitivity."
+          },
+          {
+            "topic": "Firms, costs, revenue, market structure, and competition",
+            "visualize_as": "Linked cost/revenue curves, scale, profit regions, game/market structure comparisons."
+          },
+          {
+            "topic": "Macroeconomic flows and indicators",
+            "visualize_as": "Stock-flow/circular-flow views, inflation/unemployment/output time series and decomposition."
+          },
+          {
+            "topic": "Aggregate demand/supply, money, policy, and growth",
+            "visualize_as": "Linked macro models, policy scenarios, transmission pathways and uncertainty around outcomes."
+          },
+          {
+            "topic": "International trade, exchange rates, development, and global issues",
+            "visualize_as": "Trade/network flows, comparative advantage, FX graphs, development distributions and country comparisons."
+          },
+          {
+            "topic": "Accounting, finance, budgeting, and personal finance",
+            "visualize_as": "Statement flows, cash/working-capital timelines, break-even, compounding, loan/investment scenarios and risk-return."
+          },
+          {
+            "topic": "Marketing, operations, management, and strategy",
+            "visualize_as": "Process flows, capacity/bottlenecks, segmentation maps, portfolio/trade-off matrices and causal assumptions."
+          }
+        ],
+        "visual_priority": "high"
+      },
+      "source_id": "source:legacy-families"
+    },
+    {
+      "id": "psychology-social",
+      "legacy_record": {
+        "grammars": [
+          "statistical-distribution",
+          "network-relation",
+          "state-process",
+          "evidence-comparison",
+          "time-sequence"
+        ],
+        "label": "Psychology & Sociology",
+        "mechanisms": [
+          "focus-context",
+          "graph-relayout"
+        ],
+        "tools": [
+          "observable-plot",
+          "vega-lite",
+          "d3",
+          "react-flow"
+        ],
+        "topic_seeds": [
+          {
+            "topic": "Biological, cognitive, learning, and social approaches",
+            "visualize_as": "Competing models, process diagrams, study designs and evidence alignment rather than literal brain cartoons."
+          },
+          {
+            "topic": "Research methods, data, reliability, validity, and inference",
+            "visualize_as": "Experimental design, sampling, distributions, uncertainty, correlation and evidence-quality comparison."
+          },
+          {
+            "topic": "Clinical, health, consumer, and organisational psychology",
+            "visualize_as": "Pathways, study comparisons, interventions, outcomes and context-sensitive causal models."
+          },
+          {
+            "topic": "Social structures, institutions, inequality, identity, and change",
+            "visualize_as": "Networks, distributions, cohort/time comparisons and multi-level relationships with source context retained."
+          }
+        ],
+        "visual_priority": "medium"
+      },
+      "source_id": "source:legacy-families"
+    },
+    {
+      "id": "history-government",
+      "legacy_record": {
+        "grammars": [
+          "time-sequence",
+          "spatial-map",
+          "network-relation",
+          "evidence-comparison",
+          "statistical-distribution"
+        ],
+        "label": "History, Government & Politics",
+        "mechanisms": [
+          "focus-context",
+          "graph-relayout",
+          "semantic-zoom"
+        ],
+        "tools": [
+          "d3",
+          "observable-plot",
+          "maplibre-gl-js",
+          "react-flow"
+        ],
+        "topic_seeds": [
+          {
+            "topic": "Chronology and periodisation",
+            "visualize_as": "Multi-track timelines that distinguish event date, duration, region and thematic strand."
+          },
+          {
+            "topic": "War, migration, expansion, trade, and exchange",
+            "visualize_as": "Time-aware maps and flow networks with uncertainty/provenance rather than decorative arrows."
+          },
+          {
+            "topic": "Causes, consequences, continuity, and change",
+            "visualize_as": "Evidence-linked causal graphs or matrices that preserve competing interpretations."
+          },
+          {
+            "topic": "Institutions, constitutions, elections, states, and political systems",
+            "visualize_as": "Institutional relationships, process/state diagrams, jurisdiction maps and comparative structures."
+          },
+          {
+            "topic": "Primary and secondary source analysis",
+            "visualize_as": "Aligned source/evidence panels showing provenance, claim, corroboration, contradiction and missing evidence."
+          }
+        ],
+        "visual_priority": "medium"
+      },
+      "source_id": "source:legacy-families"
+    },
+    {
+      "id": "art-design-media",
+      "legacy_record": {
+        "grammars": [
+          "image-comparison",
+          "composition-layer",
+          "3d-spatial",
+          "structure-anatomy",
+          "time-sequence",
+          "evidence-comparison"
+        ],
+        "label": "Art, Design, Media & Drama",
+        "mechanisms": [
+          "explode-assemble",
+          "anchored-callout",
+          "stage-spotlight",
+          "camera-dolly",
+          "mask-transition",
+          "pinned-reveal"
+        ],
+        "tools": [
+          "threejs",
+          "react-three-fiber",
+          "svgjs",
+          "paperjs",
+          "roughjs",
+          "motion",
+          "gsap"
+        ],
+        "topic_seeds": [
+          {
+            "topic": "Composition, form, colour, texture, typography, and visual hierarchy",
+            "visualize_as": "Layer isolation, crop/alignment comparison, compositional overlays and controllable transformations."
+          },
+          {
+            "topic": "Materials, fabrication, product structure, and design technology",
+            "visualize_as": "Exploded assemblies, material layers, manufacturing sequences, tolerances and annotated 3D structure."
+          },
+          {
+            "topic": "Perspective, space, light, staging, movement, and performance",
+            "visualize_as": "Camera/light controls, blocking, stage plans, viewpoint comparison and time-based scene development."
+          },
+          {
+            "topic": "Media language, editing, sequence, and representation",
+            "visualize_as": "Shot/timeline structure, composition comparison, edit rhythm, information layers and evidence-backed annotation."
+          },
+          {
+            "topic": "Design process, iteration, critique, and contextual research",
+            "visualize_as": "Version/decision trails, alternatives, constraints, references and evidence rather than a generic double-diamond diagram."
+          }
+        ],
+        "visual_priority": "high"
+      },
+      "source_id": "source:legacy-families"
+    },
+    {
+      "id": "music",
+      "legacy_record": {
+        "gaps": [
+          "Dedicated Web Audio/music scheduling engine such as Tone.js.",
+          "Music-notation renderer such as VexFlow or OpenSheetMusicDisplay.",
+          "Waveform/spectrum tooling where audio inspection is itself the task."
+        ],
+        "grammars": [
+          "audio-time",
+          "symbolic-notation",
+          "time-sequence",
+          "network-relation",
+          "statistical-distribution"
+        ],
+        "label": "Music",
+        "mechanisms": [
+          "scroll-scrub",
+          "focus-context"
+        ],
+        "tools": [
+          "d3",
+          "svgjs"
+        ],
+        "topic_seeds": [
+          {
+            "topic": "Pitch, scales, keys, intervals, and tuning relationships",
+            "visualize_as": "Staff/keyboard/pitch-class views synchronized with sound and interval geometry."
+          },
+          {
+            "topic": "Rhythm, meter, tempo, syncopation, and polyrhythm",
+            "visualize_as": "Beat grid, onset timeline, meter hierarchy and playback cursor."
+          },
+          {
+            "topic": "Harmony, chords, function, cadence, and voice leading",
+            "visualize_as": "Score-linked harmonic function, voice trajectories, chord graph and playable before/after comparisons."
+          },
+          {
+            "topic": "Melody, motive, sequence, texture, orchestration, and timbre",
+            "visualize_as": "Contour, motif correspondence, layered parts, orchestration layers and audio-aligned annotations."
+          },
+          {
+            "topic": "Form, phrase, set works, performance, and composition",
+            "visualize_as": "Time-aligned formal sections, score/audio navigation, comparative interpretations and version layers."
+          }
+        ],
+        "visual_priority": "high"
+      },
+      "source_id": "source:legacy-families"
+    },
+    {
+      "id": "language-literature",
+      "legacy_record": {
+        "grammars": [
+          "symbolic-notation",
+          "network-relation",
+          "time-sequence",
+          "evidence-comparison",
+          "statistical-distribution"
+        ],
+        "label": "Languages & Literature",
+        "mechanisms": [
+          "focus-context",
+          "split-text-reveal"
+        ],
+        "tools": [
+          "d3",
+          "react-flow",
+          "svgjs",
+          "observable-plot"
+        ],
+        "topic_seeds": [
+          {
+            "topic": "Grammar, syntax, morphology, and sentence structure",
+            "visualize_as": "Dependency/constituency relationships, transformations and aligned examples only when structure is the learning target."
+          },
+          {
+            "topic": "Phonology, pronunciation, prosody, and listening",
+            "visualize_as": "Stress/intonation contours, timing and phonetic contrasts synchronized with audio when warranted."
+          },
+          {
+            "topic": "Vocabulary, semantics, register, and discourse relationships",
+            "visualize_as": "Semantic networks, collocation patterns, register continua and corpus distributions with examples attached."
+          },
+          {
+            "topic": "Narrative, argument, rhetoric, and textual structure",
+            "visualize_as": "Argument/evidence maps, narrative time, motif recurrence and paragraph/claim structure as optional analytic lenses."
+          },
+          {
+            "topic": "Literary comparison and historical/cultural context",
+            "visualize_as": "Evidence-aligned comparison, chronology and context maps; close reading remains primary."
+          }
+        ],
+        "visual_priority": "selective"
+      },
+      "source_id": "source:legacy-families"
+    },
+    {
+      "id": "law-religion-thinking",
+      "legacy_record": {
+        "grammars": [
+          "state-process",
+          "network-relation",
+          "time-sequence",
+          "evidence-comparison"
+        ],
+        "label": "Law, Religion, Classics & Thinking Skills",
+        "mechanisms": [
+          "focus-context",
+          "graph-relayout"
+        ],
+        "tools": [
+          "react-flow",
+          "d3",
+          "mermaid"
+        ],
+        "topic_seeds": [
+          {
+            "topic": "Legal rules, doctrines, tests, procedure, and precedent",
+            "visualize_as": "Decision trees, process/state diagrams, precedent networks and rule-to-fact application while preserving exceptions."
+          },
+          {
+            "topic": "Arguments, assumptions, evidence, counterclaims, and reasoning",
+            "visualize_as": "Argument maps that distinguish premise, inference, evidence, objection and uncertainty."
+          },
+          {
+            "topic": "Religious, philosophical, and classical texts or traditions",
+            "visualize_as": "Chronology, textual relationships, schools/traditions and historical context; interpretation itself should not be reduced to a graph."
+          }
+        ],
+        "visual_priority": "selective"
+      },
+      "source_id": "source:legacy-families"
+    },
+    {
+      "id": "physical-education",
+      "legacy_record": {
+        "grammars": [
+          "structure-anatomy",
+          "dynamic-system",
+          "vector-field",
+          "statistical-distribution",
+          "time-sequence"
+        ],
+        "label": "Sport & Physical Education",
+        "mechanisms": [
+          "vector-decomposition",
+          "force-vector-overlay",
+          "anchored-callout"
+        ],
+        "tools": [
+          "threejs",
+          "rapier",
+          "mafs",
+          "observable-plot"
+        ],
+        "topic_seeds": [
+          {
+            "topic": "Biomechanics and movement analysis",
+            "visualize_as": "Joint/segment kinematics, force vectors, centre of mass, projectile motion and technique comparison."
+          },
+          {
+            "topic": "Anatomy, physiology, and body systems",
+            "visualize_as": "Layered anatomy, circulation/respiration pathways and physiological response over exercise intensity/time."
+          },
+          {
+            "topic": "Energy systems, training, fatigue, and recovery",
+            "visualize_as": "Contribution over intensity/time, training-load curves, adaptation timelines and performance data."
+          },
+          {
+            "topic": "Skill acquisition, tactics, and performance analysis",
+            "visualize_as": "Movement trajectories, spatial occupancy, decision networks and annotated video-derived events when data is available."
+          }
+        ],
+        "visual_priority": "high"
+      },
+      "source_id": "source:legacy-families"
+    },
+    {
+      "id": "research-interdisciplinary",
+      "legacy_record": {
+        "grammars": [
+          "evidence-comparison",
+          "network-relation",
+          "statistical-distribution",
+          "time-sequence",
+          "state-process"
+        ],
+        "label": "Research, Seminar & Interdisciplinary Inquiry",
+        "mechanisms": [
+          "focus-context",
+          "graph-relayout"
+        ],
+        "tools": [
+          "d3",
+          "observable-plot",
+          "react-flow",
+          "vega-lite"
+        ],
+        "topic_seeds": [
+          {
+            "topic": "Research question, claims, evidence, sources, and perspectives",
+            "visualize_as": "Evidence maps, provenance, claim-source matrices and competing-perspective relationships."
+          },
+          {
+            "topic": "Methods, variables, sampling, data, and limitations",
+            "visualize_as": "Study design, data pipeline, distribution/uncertainty and limitation annotations."
+          },
+          {
+            "topic": "Synthesis, argument development, and communication",
+            "visualize_as": "Argument structure and evidence coverage as planning/debugging aids rather than replacements for writing."
+          }
+        ],
+        "visual_priority": "medium"
+      },
+      "source_id": "source:legacy-families"
+    },
+    {
+      "id": "travel-tourism",
+      "legacy_record": {
+        "grammars": [
+          "spatial-map",
+          "network-relation",
+          "statistical-distribution",
+          "time-sequence",
+          "optimization-tradeoff"
+        ],
+        "label": "Travel & Tourism",
+        "mechanisms": [
+          "semantic-zoom",
+          "focus-context"
+        ],
+        "tools": [
+          "maplibre-gl-js",
+          "deckgl",
+          "d3",
+          "observable-plot"
+        ],
+        "topic_seeds": [
+          {
+            "topic": "Destinations, accessibility, visitor flows, and transport",
+            "visualize_as": "Real maps, origin-destination flows, travel-time/accessibility and seasonality."
+          },
+          {
+            "topic": "Tourism systems, stakeholders, products, and operations",
+            "visualize_as": "Stakeholder/network relationships, service process, capacity and dependency diagrams."
+          },
+          {
+            "topic": "Demand, impacts, sustainability, and destination management",
+            "visualize_as": "Time series, distributions, spatial pressure, trade-offs and scenario comparisons tied to real cases."
+          }
+        ],
+        "visual_priority": "medium"
+      },
+      "source_id": "source:legacy-families"
+    }
+  ],
+  "mechanisms": [
+    "concept:movable-tangent",
+    "concept:area-under-curve",
+    "concept:vector-decomposition",
+    "concept:force-vector-overlay",
+    "concept:wave-propagation",
+    "concept:reaction-coordinate",
+    "concept:orbital-overlap",
+    "concept:electron-pushing",
+    "concept:bond-morph",
+    "concept:mask-transition",
+    "concept:pinned-reveal",
+    "concept:scroll-scrub",
+    "concept:camera-dolly",
+    "concept:stage-spotlight",
+    "concept:split-text-reveal",
+    "concept:depth-parallax",
+    "concept:particle-attractor",
+    "concept:noise-threshold-wipe",
+    "concept:explode-assemble",
+    "concept:anchored-callout",
+    "concept:focus-context",
+    "concept:semantic-zoom",
+    "concept:graph-relayout",
+    "concept:canvas-focus-lens"
+  ],
+  "resources": [
+    "resource:reaction-profile"
+  ],
+  "tools": [
+    "tool:mafs",
+    "tool:jsxgraph",
+    "tool:function-plot",
+    "tool:desmos-api",
+    "tool:geogebra",
+    "tool:mathbox",
+    "tool:cindyjs",
+    "tool:d3",
+    "tool:observable-plot",
+    "tool:vega-lite",
+    "tool:plotly-js",
+    "tool:echarts",
+    "tool:mathlive",
+    "tool:katex",
+    "tool:mathjax",
+    "tool:molstar",
+    "tool:rdkit-js",
+    "tool:3dmol-js",
+    "tool:ketcher",
+    "tool:matter-js",
+    "tool:rapier",
+    "tool:p5js",
+    "tool:falstad-circuitjs",
+    "tool:svgjs",
+    "tool:paperjs",
+    "tool:roughjs",
+    "tool:rough-notation",
+    "tool:konva",
+    "tool:pixijs",
+    "tool:threejs",
+    "tool:react-three-fiber",
+    "tool:motion",
+    "tool:gsap",
+    "tool:animejs",
+    "tool:theatrejs",
+    "tool:motion-canvas",
+    "tool:remotion",
+    "tool:react-flow",
+    "tool:antv-g6",
+    "tool:cytoscapejs",
+    "tool:mermaid",
+    "tool:tldraw",
+    "tool:maplibre-gl-js",
+    "tool:cesiumjs",
+    "tool:deckgl",
+    "tool:leaflet",
+    "tool:globe-gl"
+  ]
+}

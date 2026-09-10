@@ -1,0 +1,55 @@
+{
+  "record": {
+    "agent_notes": "Prefer validated simulation over faking electrical behavior with animation.",
+    "avoid_when": "Only a static circuit diagram is needed.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "circuit-simulation",
+      "interactive-electronics",
+      "embedding"
+    ],
+    "docs": "https://www.falstad.com/circuit/doc/js-interface.html",
+    "domains": [
+      "physics",
+      "electronics",
+      "education"
+    ],
+    "ecosystem": [
+      "JavaScript",
+      "embed"
+    ],
+    "homepage": "https://www.falstad.com/circuit/",
+    "id": "tool:falstad-circuitjs",
+    "legacy_kind": "simulator",
+    "license": "GPL-family-and-project-terms",
+    "rights_note": "Verify the exact CircuitJS source/license and embedding constraints before redistribution.",
+    "source_refs": [
+      "source:tool-falstad-circuitjs"
+    ],
+    "subtype": "simulation-engine",
+    "summary": "Interactive circuit behavior is the subject matter and an existing simulator can be embedded or studied.",
+    "tags": [
+      "physics",
+      "circuits",
+      "simulation"
+    ],
+    "tier": "specialized",
+    "title": "CircuitJS / Falstad Circuit Simulator",
+    "type": "Tool",
+    "use_when": "Interactive circuit behavior is the subject matter and an existing simulator can be embedded or studied."
+  },
+  "relations": [],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-falstad-circuitjs",
+      "publisher": "CircuitJS / Falstad Circuit Simulator",
+      "title": "CircuitJS / Falstad Circuit Simulator official documentation",
+      "type": "Source",
+      "url": "https://www.falstad.com/circuit/doc/js-interface.html"
+    }
+  ]
+}

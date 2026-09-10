@@ -1,0 +1,269 @@
+{
+  "record": {
+    "agent_notes": "Strong default for explanatory vector diagrams with controllable DOM geometry.",
+    "avoid_when": "Thousands of continuously moving sprites or 3D scenes are required.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "svg-dom",
+      "animation",
+      "gradients",
+      "masks",
+      "clipping",
+      "paths",
+      "text"
+    ],
+    "docs": "https://svgjs.dev/docs/3.2/",
+    "domains": [
+      "graphics",
+      "diagrams",
+      "education"
+    ],
+    "ecosystem": [
+      "JavaScript",
+      "SVG"
+    ],
+    "homepage": "https://svgjs.dev/",
+    "id": "tool:svgjs",
+    "legacy_kind": "graphics-library",
+    "license": "MIT",
+    "source_refs": [
+      "source:tool-svgjs"
+    ],
+    "subtype": "library",
+    "summary": "Direct SVG construction/manipulation is needed without D3's data-centric model.",
+    "tags": [
+      "svg",
+      "vector",
+      "diagram"
+    ],
+    "tier": "core",
+    "title": "SVG.js",
+    "type": "Tool",
+    "use_when": "Direct SVG construction/manipulation is needed without D3's data-centric model."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:bond-morph",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:electron-pushing",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-audio-time",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-composition-layer",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-image-comparison",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-structure-anatomy",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-symbolic-notation",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:stage-spotlight",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+      "source": "ex:chemistry-catalyst-profile",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+      "source": "ex:chemistry-chromatography",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+      "source": "ex:chemistry-conjugate-pairs",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+      "source": "ex:chemistry-dynamic-equilibrium",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+      "source": "ex:chemistry-electron-configuration",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+      "source": "ex:chemistry-equilibrium-expression",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+      "source": "ex:chemistry-first-order",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+      "source": "ex:chemistry-functional-groups",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+      "source": "ex:chemistry-galvanic-cell",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+      "source": "ex:chemistry-gibbs-energy",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+      "source": "ex:chemistry-hess-cycle",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+      "source": "ex:chemistry-hydrogen-bond",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+      "source": "ex:chemistry-ideal-gas",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+      "source": "ex:chemistry-ionic-lattice",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+      "source": "ex:chemistry-isotope-spectrum",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+      "source": "ex:chemistry-limiting-reagent",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+      "source": "ex:chemistry-mole-conversion",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+      "source": "ex:chemistry-oxidation-state",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+      "source": "ex:chemistry-periodic-trends",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+      "source": "ex:chemistry-reaction-profile",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+      "source": "ex:chemistry-titration-curve",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+      "source": "ex:chemistry-water-geometry",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-svgjs",
+      "publisher": "SVG.js",
+      "title": "SVG.js official documentation",
+      "type": "Source",
+      "url": "https://svgjs.dev/docs/3.2/"
+    }
+  ]
+}

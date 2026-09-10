@@ -1,0 +1,38 @@
+{
+  "record": {
+    "canonical_path": "knowledge/concepts/chemistry.json",
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "id": "concept:chemistry-bond-polarity",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs signed bond dipoles and a geometry-linked vector sum.",
+    "title": "Bond dipole and molecular polarity",
+    "type": "Concept"
+  },
+  "relations": [
+    {
+      "source": "ex:chemistry-bond-polarity",
+      "target": "concept:chemistry-bond-polarity",
+      "type": "intended_to_demonstrate"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-10",
+      "check_scope": "Original schematic studies; model equations and limitations recorded per Example. No third-party illustrations copied.",
+      "checked_at": "2026-09-10",
+      "id": "source:atlas-studies",
+      "publisher": "AIDRB",
+      "title": "Original Chemistry diagram studies",
+      "type": "Source",
+      "url": "https://github.com/shhh-hoo/ai-design-resource-bank/tree/feat/knowledge-example-atlas/app"
+    }
+  ]
+}

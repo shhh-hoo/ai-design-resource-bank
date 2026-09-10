@@ -1,0 +1,147 @@
+{
+  "record": {
+    "agent_notes": "Default first check for component-level UI motion.",
+    "avoid_when": "A timeline authoring UI or deep shader/scene choreography is the core requirement.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "spring",
+      "gesture",
+      "layout-animation",
+      "scroll",
+      "presence",
+      "svg",
+      "threejs"
+    ],
+    "docs": "https://motion.dev/docs",
+    "domains": [
+      "animation",
+      "ui",
+      "react"
+    ],
+    "ecosystem": [
+      "JavaScript",
+      "React",
+      "Vue"
+    ],
+    "examples": "https://motion.dev/examples",
+    "homepage": "https://motion.dev/",
+    "id": "tool:motion",
+    "legacy_kind": "animation-library",
+    "license": "MIT-core-with-paid-content",
+    "rights_note": "Core library is open source; examples/templates may have their own access or product terms.",
+    "source_refs": [
+      "source:tool-motion"
+    ],
+    "subtype": "library",
+    "summary": "Product UI animation, gestures, layout transitions, springs, scroll-linked motion, and React composition.",
+    "tags": [
+      "animation",
+      "motion",
+      "react",
+      "ui"
+    ],
+    "tier": "core",
+    "title": "Motion",
+    "type": "Tool",
+    "use_when": "Product UI animation, gestures, layout transitions, springs, scroll-linked motion, and React composition."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:bond-morph",
+      "target": "tool:motion",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:depth-parallax",
+      "target": "tool:motion",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:electron-pushing",
+      "target": "tool:motion",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-composition-layer",
+      "target": "tool:motion",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-image-comparison",
+      "target": "tool:motion",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-state-process",
+      "target": "tool:motion",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-time-sequence",
+      "target": "tool:motion",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:mask-transition",
+      "target": "tool:motion",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:pinned-reveal",
+      "target": "tool:motion",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:scroll-scrub",
+      "target": "tool:motion",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:split-text-reveal",
+      "target": "tool:motion",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:stage-spotlight",
+      "target": "tool:motion",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-motion",
+      "publisher": "Motion",
+      "title": "Motion official documentation",
+      "type": "Source",
+      "url": "https://motion.dev/docs"
+    }
+  ]
+}

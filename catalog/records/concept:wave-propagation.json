@@ -1,0 +1,49 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-mechanisms.yaml",
+    "evidence": "seed",
+    "id": "concept:wave-propagation",
+    "implementation_note": "Animate phase rather than translating a static curve; controls should change the model, not only the drawing.",
+    "primitives": [
+      "wave-path",
+      "phase",
+      "amplitude-control",
+      "wavelength-control"
+    ],
+    "source_refs": [
+      "source:legacy-mechanisms"
+    ],
+    "subtypes": [
+      "mechanism"
+    ],
+    "summary": "Animate phase through space while keeping amplitude and wavelength legible.",
+    "title": "Wave propagation",
+    "tool_ids": [
+      "tool:p5js"
+    ],
+    "type": "Concept",
+    "use_when": "Teaching waves, phase, wavelength, frequency, interference, or oscillation."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:wave-propagation",
+      "target": "tool:p5js",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-mechanisms.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:legacy-mechanisms",
+      "publisher": "AIDRB",
+      "title": "Legacy mechanism registry",
+      "type": "Source",
+      "url": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/main/registries/frontend-mechanisms.yaml"
+    }
+  ]
+}

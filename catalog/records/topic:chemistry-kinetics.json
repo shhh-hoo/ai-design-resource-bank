@@ -1,0 +1,46 @@
+{
+  "record": {
+    "canonical_path": "subjects/chemistry/topics.json",
+    "example_ids": [
+      "ex:chemistry-first-order",
+      "ex:chemistry-catalyst-profile",
+      "ex:chemistry-maxwell-boltzmann",
+      "ex:chemistry-rate-orders"
+    ],
+    "id": "topic:chemistry-kinetics",
+    "order": 5,
+    "parent": "topic:chemistry",
+    "prerequisites": [],
+    "scope": "Rates, rate laws, collision distributions, mechanisms and catalysis.",
+    "title": "Kinetics",
+    "type": "SubjectTopic"
+  },
+  "relations": [
+    {
+      "source": "topic:chemistry-kinetics",
+      "target": "ex:chemistry-catalyst-profile",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-kinetics",
+      "target": "ex:chemistry-first-order",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-kinetics",
+      "target": "ex:chemistry-maxwell-boltzmann",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-kinetics",
+      "target": "ex:chemistry-rate-orders",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-kinetics",
+      "target": "topic:chemistry",
+      "type": "part_of"
+    }
+  ],
+  "sources": []
+}

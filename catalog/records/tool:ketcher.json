@@ -1,0 +1,54 @@
+{
+  "record": {
+    "agent_notes": "Treat chemical editing as a domain editor problem, not generic SVG dragging.",
+    "avoid_when": "Read-only depiction or simple formula rendering is enough.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "chemical-structure-editor",
+      "reactions",
+      "templates",
+      "smiles"
+    ],
+    "docs": "https://lifescience.opensource.epam.com/ketcher/",
+    "domains": [
+      "chemistry",
+      "cheminformatics"
+    ],
+    "ecosystem": [
+      "React",
+      "TypeScript"
+    ],
+    "homepage": "https://lifescience.opensource.epam.com/ketcher/",
+    "id": "tool:ketcher",
+    "legacy_kind": "domain-editor",
+    "license": "Apache-2.0",
+    "source_refs": [
+      "source:tool-ketcher"
+    ],
+    "subtype": "authoring-editor",
+    "summary": "Users must draw or edit chemical structures/reactions interactively.",
+    "tags": [
+      "chemistry",
+      "editor",
+      "structure"
+    ],
+    "tier": "specialized",
+    "title": "Ketcher",
+    "type": "Tool",
+    "use_when": "Users must draw or edit chemical structures/reactions interactively."
+  },
+  "relations": [],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-ketcher",
+      "publisher": "Ketcher",
+      "title": "Ketcher official documentation",
+      "type": "Source",
+      "url": "https://lifescience.opensource.epam.com/ketcher/"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "record": {
+    "canonical_path": "registries/reference-galleries.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:gallery-threejs-examples",
+    "publisher": "Three.js Examples",
+    "title": "Three.js Examples",
+    "type": "Source",
+    "url": "https://threejs.org/examples/"
+  },
+  "relations": [],
+  "sources": []
+}

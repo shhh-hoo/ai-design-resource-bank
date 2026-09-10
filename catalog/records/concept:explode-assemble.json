@@ -1,0 +1,57 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-mechanisms.yaml",
+    "evidence": "seed",
+    "id": "concept:explode-assemble",
+    "implementation_note": "Every part must keep identity across the transition; an exploded view is explanatory only if users can map pieces back to the whole.",
+    "primitives": [
+      "part-identity",
+      "local-offset",
+      "assembly-progress",
+      "correspondence"
+    ],
+    "source_refs": [
+      "source:legacy-mechanisms"
+    ],
+    "subtypes": [
+      "mechanism"
+    ],
+    "summary": "Separate a system into identifiable parts, then bring the same parts back into one whole.",
+    "title": "Explode / assemble",
+    "tool_ids": [
+      "tool:threejs",
+      "tool:theatrejs"
+    ],
+    "type": "Concept",
+    "use_when": "Exploded diagrams, mechanical assemblies, molecular structures, layered systems, or product construction stories."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:explode-assemble",
+      "target": "tool:theatrejs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:explode-assemble",
+      "target": "tool:threejs",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-mechanisms.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:legacy-mechanisms",
+      "publisher": "AIDRB",
+      "title": "Legacy mechanism registry",
+      "type": "Source",
+      "url": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/main/registries/frontend-mechanisms.yaml"
+    }
+  ]
+}

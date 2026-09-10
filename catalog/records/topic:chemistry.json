@@ -1,0 +1,75 @@
+{
+  "record": {
+    "canonical_path": "subjects/chemistry/subject.json",
+    "example_ids": [],
+    "id": "topic:chemistry",
+    "parent": null,
+    "prerequisites": [],
+    "scope": "Canonical chemistry knowledge with an explicit visual-example inventory.",
+    "title": "Chemistry",
+    "type": "SubjectTopic"
+  },
+  "relations": [
+    {
+      "source": "topic:chemistry-acids-bases",
+      "target": "topic:chemistry",
+      "type": "part_of"
+    },
+    {
+      "source": "topic:chemistry-analytical",
+      "target": "topic:chemistry",
+      "type": "part_of"
+    },
+    {
+      "source": "topic:chemistry-atomic-structure",
+      "target": "topic:chemistry",
+      "type": "part_of"
+    },
+    {
+      "source": "topic:chemistry-bonding",
+      "target": "topic:chemistry",
+      "type": "part_of"
+    },
+    {
+      "source": "topic:chemistry-energetics",
+      "target": "topic:chemistry",
+      "type": "part_of"
+    },
+    {
+      "source": "topic:chemistry-equilibrium",
+      "target": "topic:chemistry",
+      "type": "part_of"
+    },
+    {
+      "source": "topic:chemistry-kinetics",
+      "target": "topic:chemistry",
+      "type": "part_of"
+    },
+    {
+      "source": "topic:chemistry-organic",
+      "target": "topic:chemistry",
+      "type": "part_of"
+    },
+    {
+      "source": "topic:chemistry-periodicity",
+      "target": "topic:chemistry",
+      "type": "part_of"
+    },
+    {
+      "source": "topic:chemistry-redox",
+      "target": "topic:chemistry",
+      "type": "part_of"
+    },
+    {
+      "source": "topic:chemistry-states-solutions",
+      "target": "topic:chemistry",
+      "type": "part_of"
+    },
+    {
+      "source": "topic:chemistry-stoichiometry",
+      "target": "topic:chemistry",
+      "type": "part_of"
+    }
+  ],
+  "sources": []
+}

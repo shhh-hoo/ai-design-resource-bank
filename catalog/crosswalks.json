@@ -1,0 +1,374 @@
+[
+  {
+    "canonical_scope": "Nuclear composition, isotopes, electron arrangement and atomic spectra.",
+    "node": {
+      "id": "ap:Unit 1",
+      "label": "Atomic Structure and Properties",
+      "section": "Unit 1"
+    },
+    "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+    "relation": "partial",
+    "source_id": "source:ap-chemistry-2024",
+    "topic_id": "topic:chemistry-atomic-structure"
+  },
+  {
+    "canonical_scope": "Ionic, covalent and metallic bonding; shape, polarity and orbital overlap.",
+    "node": {
+      "id": "ap:Unit 2",
+      "label": "Compound Structure and Properties",
+      "section": "Unit 2"
+    },
+    "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+    "relation": "partial",
+    "source_id": "source:ap-chemistry-2024",
+    "topic_id": "topic:chemistry-bonding"
+  },
+  {
+    "canonical_scope": "Amounts, composition, conservation, equations and limiting reagents.",
+    "node": {
+      "id": "ap:Unit 1",
+      "label": "Atomic Structure and Properties",
+      "section": "Unit 1"
+    },
+    "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+    "relation": "partial",
+    "source_id": "source:ap-chemistry-2024",
+    "topic_id": "topic:chemistry-stoichiometry"
+  },
+  {
+    "canonical_scope": "Amounts, composition, conservation, equations and limiting reagents.",
+    "node": {
+      "id": "ap:Unit 4",
+      "label": "Chemical Reactions",
+      "section": "Unit 4"
+    },
+    "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+    "relation": "partial",
+    "source_id": "source:ap-chemistry-2024",
+    "topic_id": "topic:chemistry-stoichiometry"
+  },
+  {
+    "canonical_scope": "Phase, intermolecular forces, ideal gases, mixtures and solubility.",
+    "node": {
+      "id": "ap:Unit 3",
+      "label": "Properties of Substances and Mixtures",
+      "section": "Unit 3"
+    },
+    "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+    "relation": "partial",
+    "source_id": "source:ap-chemistry-2024",
+    "topic_id": "topic:chemistry-states-solutions"
+  },
+  {
+    "canonical_scope": "Enthalpy changes, cycles, lattice energetics, entropy and Gibbs energy.",
+    "node": {
+      "id": "ap:Unit 6",
+      "label": "Thermochemistry",
+      "section": "Unit 6"
+    },
+    "rationale": "Canonical scope includes this source section and additional areas specified in the topic scope.",
+    "relation": "broader",
+    "source_id": "source:ap-chemistry-2024",
+    "topic_id": "topic:chemistry-energetics"
+  },
+  {
+    "canonical_scope": "Enthalpy changes, cycles, lattice energetics, entropy and Gibbs energy.",
+    "node": {
+      "id": "ap:Unit 9",
+      "label": "Thermodynamics and Electrochemistry",
+      "section": "Unit 9"
+    },
+    "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+    "relation": "partial",
+    "source_id": "source:ap-chemistry-2024",
+    "topic_id": "topic:chemistry-energetics"
+  },
+  {
+    "canonical_scope": "Rates, rate laws, collision distributions, mechanisms and catalysis.",
+    "node": {
+      "id": "ap:Unit 5",
+      "label": "Kinetics",
+      "section": "Unit 5"
+    },
+    "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+    "relation": "partial",
+    "source_id": "source:ap-chemistry-2024",
+    "topic_id": "topic:chemistry-kinetics"
+  },
+  {
+    "canonical_scope": "Dynamic balance, equilibrium expressions, reaction quotient and composition shifts.",
+    "node": {
+      "id": "ap:Unit 7",
+      "label": "Equilibrium",
+      "section": "Unit 7"
+    },
+    "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+    "relation": "partial",
+    "source_id": "source:ap-chemistry-2024",
+    "topic_id": "topic:chemistry-equilibrium"
+  },
+  {
+    "canonical_scope": "Proton transfer, acid strength, pH, buffers and titration.",
+    "node": {
+      "id": "ap:Unit 8",
+      "label": "Acids and Bases",
+      "section": "Unit 8"
+    },
+    "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+    "relation": "partial",
+    "source_id": "source:ap-chemistry-2024",
+    "topic_id": "topic:chemistry-acids-bases"
+  },
+  {
+    "canonical_scope": "Electron transfer, oxidation states, cells, electrode potentials and electrolysis.",
+    "node": {
+      "id": "ap:Unit 4",
+      "label": "Chemical Reactions",
+      "section": "Unit 4"
+    },
+    "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+    "relation": "partial",
+    "source_id": "source:ap-chemistry-2024",
+    "topic_id": "topic:chemistry-redox"
+  },
+  {
+    "canonical_scope": "Electron transfer, oxidation states, cells, electrode potentials and electrolysis.",
+    "node": {
+      "id": "ap:Unit 9",
+      "label": "Thermodynamics and Electrochemistry",
+      "section": "Unit 9"
+    },
+    "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+    "relation": "partial",
+    "source_id": "source:ap-chemistry-2024",
+    "topic_id": "topic:chemistry-redox"
+  },
+  {
+    "canonical_scope": "Periodic trends, group chemistry, coordination and transition elements.",
+    "node": {
+      "id": "ap:Unit 1",
+      "label": "Atomic Structure and Properties",
+      "section": "Unit 1"
+    },
+    "rationale": "Overlap is periodic trends in Unit 1; no claim that AP covers the Cambridge group or transition-element syllabus.",
+    "relation": "partial",
+    "source_id": "source:ap-chemistry-2024",
+    "topic_id": "topic:chemistry-periodicity"
+  },
+  {
+    "canonical_scope": "Separation, identification, spectroscopy and structure inference.",
+    "node": {
+      "id": "ap:Unit 3",
+      "label": "Properties of Substances and Mixtures",
+      "section": "Unit 3"
+    },
+    "rationale": "AP Unit 3 includes spectroscopy and separation; this does not claim AP coverage of NMR or organic structure elucidation.",
+    "relation": "partial",
+    "source_id": "source:ap-chemistry-2024",
+    "topic_id": "topic:chemistry-analytical"
+  },
+  {
+    "canonical_scope": "Nuclear composition, isotopes, electron arrangement and atomic spectra.",
+    "node": {
+      "id": "cambridge:1",
+      "label": "Atomic structure",
+      "section": "1"
+    },
+    "rationale": "Canonical atomic structure additionally reserves atomic emission spectra; Cambridge section 1 supplies nuclear/electronic structure and isotopes. This is not a claim that section 1 includes Balmer spectra.",
+    "relation": "broader",
+    "source_id": "source:cambridge-9701-2025",
+    "topic_id": "topic:chemistry-atomic-structure"
+  },
+  {
+    "canonical_scope": "Ionic, covalent and metallic bonding; shape, polarity and orbital overlap.",
+    "node": {
+      "id": "cambridge:3",
+      "label": "Chemical bonding",
+      "section": "3"
+    },
+    "rationale": "Matching major topic scope; this does not assert that the example inventory fulfills every objective.",
+    "relation": "exact",
+    "source_id": "source:cambridge-9701-2025",
+    "topic_id": "topic:chemistry-bonding"
+  },
+  {
+    "canonical_scope": "Amounts, composition, conservation, equations and limiting reagents.",
+    "node": {
+      "id": "cambridge:2",
+      "label": "Atoms, molecules and stoichiometry",
+      "section": "2"
+    },
+    "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+    "relation": "partial",
+    "source_id": "source:cambridge-9701-2025",
+    "topic_id": "topic:chemistry-stoichiometry"
+  },
+  {
+    "canonical_scope": "Phase, intermolecular forces, ideal gases, mixtures and solubility.",
+    "node": {
+      "id": "cambridge:4",
+      "label": "States of matter",
+      "section": "4"
+    },
+    "rationale": "Canonical scope includes this source section and additional areas specified in the topic scope.",
+    "relation": "broader",
+    "source_id": "source:cambridge-9701-2025",
+    "topic_id": "topic:chemistry-states-solutions"
+  },
+  {
+    "canonical_scope": "Enthalpy changes, cycles, lattice energetics, entropy and Gibbs energy.",
+    "node": {
+      "id": "cambridge:5",
+      "label": "Chemical energetics",
+      "section": "5"
+    },
+    "rationale": "Canonical scope includes this source section and additional areas specified in the topic scope.",
+    "relation": "broader",
+    "source_id": "source:cambridge-9701-2025",
+    "topic_id": "topic:chemistry-energetics"
+  },
+  {
+    "canonical_scope": "Enthalpy changes, cycles, lattice energetics, entropy and Gibbs energy.",
+    "node": {
+      "id": "cambridge:23",
+      "label": "Chemical energetics",
+      "section": "23"
+    },
+    "rationale": "Canonical scope includes this source section and additional areas specified in the topic scope.",
+    "relation": "broader",
+    "source_id": "source:cambridge-9701-2025",
+    "topic_id": "topic:chemistry-energetics"
+  },
+  {
+    "canonical_scope": "Rates, rate laws, collision distributions, mechanisms and catalysis.",
+    "node": {
+      "id": "cambridge:8",
+      "label": "Reaction kinetics",
+      "section": "8"
+    },
+    "rationale": "Canonical scope includes this source section and additional areas specified in the topic scope.",
+    "relation": "broader",
+    "source_id": "source:cambridge-9701-2025",
+    "topic_id": "topic:chemistry-kinetics"
+  },
+  {
+    "canonical_scope": "Rates, rate laws, collision distributions, mechanisms and catalysis.",
+    "node": {
+      "id": "cambridge:26",
+      "label": "Reaction kinetics",
+      "section": "26"
+    },
+    "rationale": "Canonical scope includes this source section and additional areas specified in the topic scope.",
+    "relation": "broader",
+    "source_id": "source:cambridge-9701-2025",
+    "topic_id": "topic:chemistry-kinetics"
+  },
+  {
+    "canonical_scope": "Dynamic balance, equilibrium expressions, reaction quotient and composition shifts.",
+    "node": {
+      "id": "cambridge:7",
+      "label": "Equilibria",
+      "section": "7"
+    },
+    "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+    "relation": "partial",
+    "source_id": "source:cambridge-9701-2025",
+    "topic_id": "topic:chemistry-equilibrium"
+  },
+  {
+    "canonical_scope": "Dynamic balance, equilibrium expressions, reaction quotient and composition shifts.",
+    "node": {
+      "id": "cambridge:25",
+      "label": "Equilibria",
+      "section": "25"
+    },
+    "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+    "relation": "partial",
+    "source_id": "source:cambridge-9701-2025",
+    "topic_id": "topic:chemistry-equilibrium"
+  },
+  {
+    "canonical_scope": "Proton transfer, acid strength, pH, buffers and titration.",
+    "node": {
+      "id": "cambridge:7.2",
+      "label": "Brønsted–Lowry theory of acids and bases",
+      "section": "7.2"
+    },
+    "rationale": "Canonical scope includes this source section and additional areas specified in the topic scope.",
+    "relation": "broader",
+    "source_id": "source:cambridge-9701-2025",
+    "topic_id": "topic:chemistry-acids-bases"
+  },
+  {
+    "canonical_scope": "Proton transfer, acid strength, pH, buffers and titration.",
+    "node": {
+      "id": "cambridge:25.1",
+      "label": "Acids and bases",
+      "section": "25.1"
+    },
+    "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+    "relation": "partial",
+    "source_id": "source:cambridge-9701-2025",
+    "topic_id": "topic:chemistry-acids-bases"
+  },
+  {
+    "canonical_scope": "Electron transfer, oxidation states, cells, electrode potentials and electrolysis.",
+    "node": {
+      "id": "cambridge:6",
+      "label": "Electrochemistry",
+      "section": "6"
+    },
+    "rationale": "Canonical scope includes this source section and additional areas specified in the topic scope.",
+    "relation": "broader",
+    "source_id": "source:cambridge-9701-2025",
+    "topic_id": "topic:chemistry-redox"
+  },
+  {
+    "canonical_scope": "Electron transfer, oxidation states, cells, electrode potentials and electrolysis.",
+    "node": {
+      "id": "cambridge:24",
+      "label": "Electrochemistry",
+      "section": "24"
+    },
+    "rationale": "Canonical scope includes this source section and additional areas specified in the topic scope.",
+    "relation": "broader",
+    "source_id": "source:cambridge-9701-2025",
+    "topic_id": "topic:chemistry-redox"
+  },
+  {
+    "canonical_scope": "Periodic trends, group chemistry, coordination and transition elements.",
+    "node": {
+      "id": "cambridge:9–12, 27–28",
+      "label": "Inorganic chemistry topics",
+      "section": "9–12, 27–28"
+    },
+    "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+    "relation": "partial",
+    "source_id": "source:cambridge-9701-2025",
+    "topic_id": "topic:chemistry-periodicity"
+  },
+  {
+    "canonical_scope": "Structure, stereochemistry, functional groups, mechanisms, synthesis and polymers.",
+    "node": {
+      "id": "cambridge:13–21, 29–36",
+      "label": "Organic chemistry topics",
+      "section": "13–21, 29–36"
+    },
+    "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+    "relation": "partial",
+    "source_id": "source:cambridge-9701-2025",
+    "topic_id": "topic:chemistry-organic"
+  },
+  {
+    "canonical_scope": "Separation, identification, spectroscopy and structure inference.",
+    "node": {
+      "id": "cambridge:22, 37",
+      "label": "Analytical techniques",
+      "section": "22, 37"
+    },
+    "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+    "relation": "partial",
+    "source_id": "source:cambridge-9701-2025",
+    "topic_id": "topic:chemistry-analytical"
+  }
+]

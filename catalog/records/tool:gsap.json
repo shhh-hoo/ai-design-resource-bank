@@ -1,0 +1,113 @@
+{
+  "record": {
+    "agent_notes": "Default first check for complex timeline/scroll choreography.",
+    "avoid_when": "A few simple component transitions are clearer with Motion or CSS.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "timeline",
+      "scrolltrigger",
+      "svg",
+      "transforms",
+      "sequencing",
+      "scrub",
+      "pin"
+    ],
+    "docs": "https://gsap.com/docs/v3/",
+    "domains": [
+      "animation",
+      "ui",
+      "creative-web"
+    ],
+    "ecosystem": [
+      "JavaScript",
+      "DOM",
+      "SVG",
+      "Canvas",
+      "WebGL"
+    ],
+    "examples": "https://gsap.com/demos/",
+    "homepage": "https://gsap.com/",
+    "id": "tool:gsap",
+    "legacy_kind": "animation-library",
+    "license": "standard-no-charge-license-with-terms",
+    "rights_note": "GSAP licensing changed after Webflow acquisition; verify current terms for the intended use rather than assuming MIT.",
+    "source_refs": [
+      "source:tool-gsap"
+    ],
+    "subtype": "library",
+    "summary": "Precise multi-step choreography, timelines, scroll-driven sequences, or cross-renderer animation orchestration is needed.",
+    "tags": [
+      "animation",
+      "timeline",
+      "scroll"
+    ],
+    "tier": "core",
+    "title": "GSAP",
+    "type": "Tool",
+    "use_when": "Precise multi-step choreography, timelines, scroll-driven sequences, or cross-renderer animation orchestration is needed."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:depth-parallax",
+      "target": "tool:gsap",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:mask-transition",
+      "target": "tool:gsap",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:noise-threshold-wipe",
+      "target": "tool:gsap",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:pinned-reveal",
+      "target": "tool:gsap",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:scroll-scrub",
+      "target": "tool:gsap",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:split-text-reveal",
+      "target": "tool:gsap",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:stage-spotlight",
+      "target": "tool:gsap",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-gsap",
+      "publisher": "GSAP",
+      "title": "GSAP official documentation",
+      "type": "Source",
+      "url": "https://gsap.com/docs/v3/"
+    }
+  ]
+}

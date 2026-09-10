@@ -1,0 +1,15 @@
+{
+  "record": {
+    "canonical_path": "registries/curriculum-research-sources.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:curriculum-history-government-2",
+    "publisher": "cambridge-international-as-a-level",
+    "title": "History 9489",
+    "type": "Source",
+    "url": "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-history-9489/"
+  },
+  "relations": [],
+  "sources": []
+}
