@@ -92,7 +92,7 @@ terms:
   examples:
   - {title: animation and game character shape-language studies, annotation: 角色设计常用圆、方、三角等形状倾向在草图阶段快速建立性格与功能差异。, asset_policy: text-reference-only}
   related: [silhouette, character-turnaround, art-nouveau]
-  preview: {type: shape-language, note: Original mnemonic comparing round, square, and triangular character masses.}
+  preview: {type: shape-language, note: "Original mnemonic comparing round, square, and triangular character masses."}
   resource_refs: []
 - id: cutaway-illustration
   term: {en: Cutaway Illustration, zh: 剖切插图}
