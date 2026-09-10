@@ -1,0 +1,304 @@
+version: '0.1'
+terms:
+- id: dolly-zoom
+  term:
+    en: Dolly Zoom
+    zh: 滑动变焦
+  aliases:
+  - Vertigo effect
+  - Hitchcock zoom
+  naming: established
+  entry_status: seed
+  domains:
+  - cinema
+  - photography
+  - game
+  kinds:
+  - camera
+  - motion
+  definition:
+    zh: 摄像机向主体靠近或远离的同时反向改变焦距，使主体尺寸近似不变、背景透视却明显变化。
+  recognition:
+  - 主体大小大致稳定
+  - 背景被压缩或拉伸
+  - 空间感产生强烈但非自然的变化
+  looks_like:
+  - 人物没怎么变大，但背景突然被吸近或拉远
+  - 空间像在角色身后伸缩
+  not_to_confuse_with:
+  - zoom
+  - dolly-in
+  - lens-compression
+  examples:
+  - title: Vertigo (1958) — staircase shot
+    annotation: 该镜头让主体尺度稳定而纵深关系剧烈改变，成为这种手法的经典范例。
+    asset_policy: text-reference-only
+  related:
+  - rack-focus
+  - trompe-loeil
+  preview:
+    type: perspective
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: match-cut
+  term:
+    en: Match Cut
+    zh: 匹配剪辑
+  aliases:
+  - graphic match
+  naming: established
+  entry_status: seed
+  domains:
+  - cinema
+  - animation
+  kinds:
+  - editing
+  - transition
+  definition:
+    zh: 通过形状、动作、构图或概念相似性，把两个不同镜头在切点上连接起来。
+  recognition:
+  - 切换前后的核心形状/动作有明显对应
+  - 两个时空可以完全不同
+  - 连续感来自视觉或概念匹配而非真实时间连续
+  looks_like:
+  - 一个圆形物体一切就变成另一个场景里的圆
+  - 前一个动作在后一个镜头里以相似动作接上
+  not_to_confuse_with:
+  - match-on-action
+  - cross-dissolve
+  examples:
+  - title: '2001: A Space Odyssey — bone to spacecraft'
+    annotation: 物体形态与概念跨度共同完成了极具辨识度的匹配剪辑。
+    asset_policy: text-reference-only
+  related:
+  - jump-cut
+  - morphing
+  preview:
+    type: match
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: whip-pan
+  term:
+    en: Whip Pan
+    zh: 甩镜
+  aliases:
+  - swish pan
+  naming: established
+  entry_status: seed
+  domains:
+  - cinema
+  - animation
+  kinds:
+  - camera
+  - transition
+  - motion
+  definition:
+    zh: 以非常快的水平或垂直摇摄制造强烈运动模糊，可作为强调、遮蔽切点或连接空间的手段。
+  recognition:
+  - 画面短暂被方向性模糊占据
+  - 相机旋转速度很高
+  - 常在模糊峰值附近完成切换
+  looks_like:
+  - 镜头像猛地甩到旁边，画面中间变成一条条模糊线
+  - 转场像被一个快速甩动藏起来
+  not_to_confuse_with:
+  - fast-dolly
+  - motion-blur
+  examples:
+  - title: whip-pan transition in action/comedy editing
+    annotation: 利用甩镜最模糊的瞬间隐藏剪辑，是最常见的应用。
+    asset_policy: text-reference-only
+  related:
+  - motion-blur
+  - match-cut
+  preview:
+    type: whip
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: rack-focus
+  term:
+    en: Rack Focus
+    zh: 移焦
+  aliases:
+  - focus pull
+  naming: established
+  entry_status: seed
+  domains:
+  - cinema
+  - photography
+  kinds:
+  - camera
+  - focus
+  definition:
+    zh: 在同一镜头中把焦点从一个景深平面转移到另一个景深平面，用清晰度变化改变注意对象。
+  recognition:
+  - 镜头不必切换，清晰主体却发生改变
+  - 前景和背景之间常出现焦点交接
+  - 注意力由焦平面而非运动主导
+  looks_like:
+  - 前景人物慢慢糊掉，后面的人突然变清楚
+  - 不用剪辑就把观众注意力交给另一个对象
+  not_to_confuse_with:
+  - zoom
+  - depth-of-field
+  examples:
+  - title: foreground-to-background focus pull in dialogue scenes
+    annotation: 同一画面内从前景角色移焦到背景角色，是移焦最典型的教学例。
+    asset_policy: text-reference-only
+  related:
+  - dolly-zoom
+  preview:
+    type: focus
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: dutch-angle
+  term:
+    en: Dutch Angle
+    zh: 荷兰角 / 倾斜机位
+  aliases:
+  - Dutch tilt
+  - canted angle
+  naming: established
+  entry_status: seed
+  domains:
+  - cinema
+  - photography
+  - game
+  kinds:
+  - camera
+  - composition
+  definition:
+    zh: 让摄影机滚转，使水平线和垂直线相对画框倾斜，用来制造不稳定、异常或主观张力。
+  recognition:
+  - 地平线明显不水平
+  - 建筑垂直线变成斜线
+  - 倾斜来自机位旋转而非透视本身
+  looks_like:
+  - 整个世界像歪了
+  - 画面没有水平站稳，产生不安感
+  not_to_confuse_with:
+  - keystone-distortion
+  - tilted-subject
+  examples:
+  - title: The Third Man (1949)
+    annotation: 大量倾斜机位让维也纳空间持续呈现不稳定和偏斜感。
+    asset_policy: text-reference-only
+  related:
+  - blocking
+  preview:
+    type: tilt
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: long-take
+  term:
+    en: Long Take
+    zh: 长镜头
+  aliases:
+  - oner
+  - long shot (duration)
+  naming: established
+  entry_status: seed
+  domains:
+  - cinema
+  - game
+  kinds:
+  - editing
+  - camera
+  definition:
+    zh: 让一个镜头持续显著长于常规剪辑节奏，在连续时间和空间中完成复杂动作或信息组织。
+  recognition:
+  - 长时间没有显性切点
+  - 调度和摄影机运动承担原本由剪辑完成的组织工作
+  - 观众持续感知真实时间或连续空间
+  looks_like:
+  - 镜头一直不切，却把多个地点或动作串起来
+  - 复杂场面靠走位和镜头运动完成而不是靠剪辑
+  not_to_confuse_with:
+  - single-take-film
+  - slow-cinema
+  examples:
+  - title: Children of Men — extended action takes
+    annotation: 长时间连续摄影把动作、空间和紧张感保持在同一时间流里。
+    asset_policy: text-reference-only
+  related:
+  - blocking
+  preview:
+    type: timeline-long
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: jump-cut
+  term:
+    en: Jump Cut
+    zh: 跳切
+  aliases:
+  - 跳接
+  naming: established
+  entry_status: seed
+  domains:
+  - cinema
+  - video
+  kinds:
+  - editing
+  definition:
+    zh: 在高度相似的构图或同一连续动作中删去时间片段，使主体位置或状态发生可见跳跃。
+  recognition:
+  - 机位/构图相近但动作突然前跳
+  - 时间连续性被刻意打断
+  - 切点本身被观众感知
+  looks_like:
+  - 同一个人在同一个位置说话，但动作一下一下往前跳
+  - 剪辑没有藏起来，反而故意让你看到时间被删掉
+  not_to_confuse_with:
+  - match-cut
+  - continuity-cut
+  examples:
+  - title: Breathless (1960)
+    annotation: 车内对话中的跳切让连续时间被明显压缩并暴露剪辑本身。
+    asset_policy: text-reference-only
+  related:
+  - match-cut
+  - long-take
+  preview:
+    type: timeline-jump
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []
+- id: blocking
+  term:
+    en: Blocking
+    zh: 场面调度中的走位
+  aliases:
+  - actor blocking
+  - staging
+  naming: established
+  entry_status: seed
+  domains:
+  - cinema
+  - stage
+  - animation
+  - game
+  kinds:
+  - blocking
+  - composition
+  definition:
+    zh: 安排角色、物体与摄影机在空间中的位置和移动，使关系、视线、权力和叙事信息通过空间组织呈现。
+  recognition:
+  - 角色位置变化本身改变关系
+  - 前后景、距离和朝向具有叙事含义
+  - 不依赖台词也能读出谁掌控场面
+  looks_like:
+  - 角色只是换了站位，权力关系就变了
+  - 一个群戏里每个人的位置都像被精确设计过
+  not_to_confuse_with:
+  - mise-en-scene
+  - camera-blocking
+  examples:
+  - title: Akira Kurosawa — High and Low
+    annotation: 多人在有限室内空间中的位置、距离与高度持续表达关系变化。
+    asset_policy: text-reference-only
+  related:
+  - long-take
+  - dutch-angle
+  preview:
+    type: stage
+    note: Original diagrammatic mnemonic; not a reproduction of the referenced work.
+  resource_refs: []

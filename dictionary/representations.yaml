@@ -1,0 +1,218 @@
+version: '0.1'
+purpose: Route each Dictionary term to the medium that teaches it best; generated studies are explanatory artefacts, never source evidence.
+representations:
+- id: chiaroscuro
+  preferred: generated-study
+  fallbacks: [diagram, real-reference]
+  rationale: Tonal falloff, surface response, and directional lighting are learned better from a convincing rendered image than from abstract geometry alone.
+  study:
+    status: planned
+    priority: first-wave
+    target: [single dominant light direction, deep shadow mass, concentrated highlight, sculptural volume]
+    avoid: [flat fill lighting, generic moody grading, imitation of a named artwork]
+- id: impasto
+  preferred: generated-study
+  fallbacks: [real-reference, diagram]
+  rationale: Physical paint thickness and side-lit brush ridges are materially specific and collapse in a simple SVG mnemonic.
+  study:
+    status: planned
+    priority: first-wave
+    target: [thick paint ridges, visible brush or knife relief, raking light, tactile surface depth]
+    avoid: [smooth digital painting, fake flat bump-map look, copying a named painting]
+- id: negative-space
+  preferred: diagram
+  fallbacks: [real-reference]
+  rationale: Figure/void relationships are clearer when simplified to a controlled two-shape composition.
+- id: trompe-loeil
+  preferred: generated-study
+  fallbacks: [real-reference, diagram]
+  rationale: The concept depends on a momentary misreading of a flat surface as plausible physical depth.
+  study:
+    status: planned
+    priority: later
+    target: [flat wall or panel, convincing false opening or object, coherent perspective, believable cast light]
+    avoid: [surreal impossibility, obvious fantasy portal, reference-specific recreation]
+- id: collage
+  preferred: generated-study
+  fallbacks: [real-reference, diagram]
+  rationale: Edge quality, paper overlap, source heterogeneity, and material discontinuity are richer in an image study.
+  study:
+    status: planned
+    priority: later
+    target: [cut paper edges, mixed image sources, overlap, scale discontinuity, visible assembly]
+    avoid: [single-style illustration, seamless photomontage, imitation of a named collage]
+- id: figure-ground
+  preferred: diagram
+  fallbacks: [real-reference]
+  rationale: A minimal reversible silhouette demonstrates foreground/background competition directly.
+- id: swiss-style
+  preferred: real-reference
+  fallbacks: [diagram]
+  rationale: Grid discipline is easy to diagram, but the movement is best understood through actual typographic work and historical context.
+- id: art-nouveau
+  preferred: real-reference
+  fallbacks: [diagram]
+  rationale: The style is a historical visual system whose ornamental integration is better learned from authentic works than synthetic imitation.
+- id: halftone
+  preferred: diagram
+  fallbacks: [real-reference]
+  rationale: Dot size and density can be shown deterministically and precisely without a generated image.
+- id: risograph
+  preferred: generated-study
+  fallbacks: [real-reference, diagram]
+  rationale: Overprint, ink grain, and slight registration drift are surface qualities that benefit from a raster study.
+  study:
+    status: planned
+    priority: first-wave
+    target: [two or three spot colors, visible overprint, slight registration drift, porous ink texture]
+    avoid: [CMYK photorealism, perfectly registered vectors, copying an existing poster]
+- id: film-grain
+  preferred: generated-study
+  fallbacks: [real-reference, diagram]
+  rationale: Grain is perceived in relation to luminance and image content; a textured image study conveys that interaction better than isolated dots.
+  study:
+    status: planned
+    priority: later
+    target: [organic stochastic grain, stronger perceptual presence in darker regions, coherent photographic image beneath]
+    avoid: [block compression noise, regular dot pattern, excessive digital sharpening]
+- id: paper-grain
+  preferred: generated-study
+  fallbacks: [real-reference, diagram]
+  rationale: Fiber direction, raking-light relief, and subtle roughness are fundamentally material and tactile.
+  study:
+    status: planned
+    priority: first-wave
+    target: [uncoated paper fibers, shallow relief, raking light, irregular non-tiled surface]
+    avoid: [obvious seamless texture tile, film-like random noise, glossy coated stock]
+- id: embossing
+  preferred: generated-study
+  fallbacks: [real-reference, diagram]
+  rationale: Relief is read primarily through physical shadow and highlight along raised edges.
+  study:
+    status: planned
+    priority: first-wave
+    target: [blind emboss on paper, no printed ink, raised geometry, side-light shadow]
+    avoid: [printed drop shadow, debossed indentation, metallic foil]
+- id: foil-stamping
+  preferred: generated-study
+  fallbacks: [real-reference, diagram]
+  rationale: Angle-dependent metallic reflection is the defining visual signal and cannot be represented honestly by a flat gold fill.
+  study:
+    status: planned
+    priority: first-wave
+    target: [localized metallic foil, crisp transfer edge, directional reflection, paper substrate visible]
+    avoid: [flat yellow ink, glitter, embossed-only effect]
+- id: condensed-type
+  preferred: diagram
+  fallbacks: [real-reference]
+  rationale: Side-by-side character-width comparison communicates the structural difference precisely.
+- id: variable-font
+  preferred: live-demo
+  fallbacks: [diagram, real-reference]
+  rationale: Continuous axis interpolation is the concept; a slider is more truthful than static endpoints.
+- id: dolly-zoom
+  preferred: live-demo
+  fallbacks: [sequence, diagram]
+  rationale: The defining effect is simultaneous camera translation and inverse focal-length change over time.
+- id: match-cut
+  preferred: sequence
+  fallbacks: [real-reference, diagram]
+  rationale: Meaning comes from the cut between two matched frames, so at least a before/after sequence is required.
+- id: whip-pan
+  preferred: sequence
+  fallbacks: [live-demo, real-reference]
+  rationale: The technique depends on directional motion blur peaking around a cut or camera swing.
+- id: rack-focus
+  preferred: live-demo
+  fallbacks: [sequence, diagram]
+  rationale: Attention transfers through changing focus planes inside one shot.
+- id: dutch-angle
+  preferred: diagram
+  fallbacks: [real-reference]
+  rationale: Camera roll and horizon tilt are geometrically legible in a static comparison.
+- id: long-take
+  preferred: sequence
+  fallbacks: [real-reference, diagram]
+  rationale: Duration and continuous spatial choreography cannot be taught by a single still.
+- id: jump-cut
+  preferred: sequence
+  fallbacks: [real-reference, diagram]
+  rationale: The visible discontinuity is created by removing a time interval between similar framings.
+- id: blocking
+  preferred: sequence
+  fallbacks: [diagram, real-reference]
+  rationale: Character relationships change through movement and spatial reconfiguration over time.
+- id: squash-and-stretch
+  preferred: live-demo
+  fallbacks: [sequence, diagram]
+  rationale: Shape deformation only makes sense relative to force, timing, and preserved volume across motion.
+- id: anticipation
+  preferred: sequence
+  fallbacks: [live-demo, diagram]
+  rationale: The preparatory pose must be seen immediately before the primary action.
+- id: smear-frame
+  preferred: sequence
+  fallbacks: [real-reference, diagram]
+  rationale: A smear looks wrong in isolation and correct in motion; adjacent frames are essential context.
+- id: motion-blur
+  preferred: live-demo
+  fallbacks: [sequence, real-reference]
+  rationale: Directional blur strength is best understood while velocity or exposure changes.
+- id: secondary-action
+  preferred: sequence
+  fallbacks: [live-demo, diagram]
+  rationale: The learner must compare primary and subordinate motion across the same performance.
+- id: stagger
+  preferred: live-demo
+  fallbacks: [sequence, diagram]
+  rationale: The concept is a temporal offset between otherwise similar element motions.
+- id: morphing
+  preferred: live-demo
+  fallbacks: [sequence, diagram]
+  rationale: Continuous intermediate states are the mechanism, not just the start and end shapes.
+- id: looping-animation
+  preferred: live-demo
+  fallbacks: [sequence, diagram]
+  rationale: Seam quality is only judgeable across repeated playback and the wrap point.
+- id: hit-stop
+  preferred: live-demo
+  fallbacks: [sequence, diagram]
+  rationale: The perceptual weight comes from a precisely timed pause around impact.
+- id: screen-shake
+  preferred: live-demo
+  fallbacks: [sequence, diagram]
+  rationale: Amplitude, frequency, and decay are temporal camera behaviors.
+- id: coyote-time
+  preferred: live-demo
+  fallbacks: [diagram]
+  rationale: Input forgiveness is best learned by trying jumps just before and just after the visual edge.
+- id: direct-manipulation
+  preferred: live-demo
+  fallbacks: [real-reference, diagram]
+  rationale: Continuous visible coupling between pointer/gesture and object state is the core principle.
+- id: affordance
+  preferred: real-reference
+  fallbacks: [diagram]
+  rationale: Affordance is relational and benefits from comparing actual objects and the actions they support.
+- id: diegetic-ui
+  preferred: generated-study
+  fallbacks: [real-reference, diagram]
+  rationale: A convincing original fictional scene can show interface information embedded in world objects without copying a known game.
+  study:
+    status: planned
+    priority: first-wave
+    target: [fictional in-world device, status information physically integrated into object, readable function, scene context]
+    avoid: [copying Dead Space or another named game, floating HUD chrome, generic sci-fi overlay]
+- id: environmental-guidance
+  preferred: generated-study
+  fallbacks: [real-reference, diagram]
+  rationale: Guidance emerges from a whole spatial composition of light, landmark, path, and contrast; a scene study makes those cues legible together.
+  study:
+    status: planned
+    priority: first-wave
+    target: [clear traversable scene, light-led destination, landmark hierarchy, path framing without arrows or text]
+    avoid: [explicit waypoint icon, signage doing all the work, copied game level]
+- id: radial-menu
+  preferred: live-demo
+  fallbacks: [diagram, real-reference]
+  rationale: Directional selection speed and muscle memory only appear when the menu is actually operated.

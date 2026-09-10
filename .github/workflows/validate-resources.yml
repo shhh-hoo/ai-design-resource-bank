@@ -47,6 +47,9 @@ jobs:
       - name: Validate curated grammar mechanism routes
         run: python scripts/validate_grammar_mechanisms.py
 
+      - name: Validate design dictionary
+        run: python scripts/validate_dictionary.py
+
       - name: Validate capability board contract
         run: python scripts/validate_board.py
 
@@ -77,3 +80,8 @@ jobs:
           node --check web/decision-board.js
           node --check web/framework/three-demos.js
           node --check web/framework/d3-demos.js
+          node --check web/dictionary-previews.js
+          node --check web/dictionary-illustration-previews.js
+          node --check web/dictionary.js
+          node --check web/dictionary-representations.js
+          node --check web/dictionary-artifacts.js

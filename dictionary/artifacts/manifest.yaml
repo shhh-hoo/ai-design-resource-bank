@@ -1,0 +1,59 @@
+version: '0.1'
+purpose: Generated teaching artefacts that passed visual review and are safe to display as explanatory studies, never as source evidence.
+assets:
+  - id: chiaroscuro
+    kind: generated-study
+    status: available
+    asset: ./dictionary/artifacts/chiaroscuro/generated-study-v1.webp
+    label: GENERATED STUDY
+    alt: Original generated study showing a face emerging from deep shadow under one dominant directional light, with concentrated highlights and sculptural volume.
+    note: AI-generated teaching artefact; not a reproduction of a named artwork and not source evidence.
+  - id: impasto
+    kind: generated-study
+    status: available
+    asset: ./dictionary/artifacts/impasto/generated-study-v1.webp
+    label: GENERATED STUDY
+    alt: Original generated close study of thick paint ridges and palette-knife relief under side light, making physical paint thickness visible.
+    note: AI-generated teaching artefact; not a reproduction of a named painting and not source evidence.
+  - id: risograph
+    kind: generated-study
+    status: available
+    asset: ./dictionary/artifacts/risograph/generated-study-v1.webp
+    label: GENERATED STUDY
+    alt: Original generated Riso-like print study using a small spot-color palette, visible overprint, porous ink grain, and slight registration drift.
+    note: AI-generated teaching artefact; not copied from an existing poster and not source evidence.
+  - id: paper-grain
+    kind: generated-study
+    status: available
+    asset: ./dictionary/artifacts/paper-grain/generated-study-v1.webp
+    label: GENERATED STUDY
+    alt: Original generated macro study of uncoated paper with visible fibers, shallow irregular relief, and raking light across the surface.
+    note: AI-generated teaching artefact; not a photograph of a real commercial paper sample and not source evidence.
+  - id: embossing
+    kind: generated-study
+    status: available
+    asset: ./dictionary/artifacts/embossing/generated-study-v1.webp
+    label: GENERATED STUDY
+    alt: Original generated study of blind embossing on unprinted paper, where raised letterforms and relief are revealed by raking side light.
+    note: AI-generated teaching artefact; not a photograph of a real commercial print sample and not source evidence.
+  - id: foil-stamping
+    kind: generated-study
+    status: available
+    asset: ./dictionary/artifacts/foil-stamping/generated-study-v1.webp
+    label: GENERATED STUDY
+    alt: Original generated print study with crisp localized metallic foil reflecting directional light against a visible paper substrate.
+    note: AI-generated teaching artefact; not a photograph of a real commercial foil sample and not source evidence.
+  - id: diegetic-ui
+    kind: generated-study
+    status: available
+    asset: ./dictionary/artifacts/diegetic-ui/generated-study-v1.webp
+    label: GENERATED STUDY
+    alt: Original generated study of a fictional in-world map held inside a game environment, demonstrating interface information that belongs to the world rather than floating as HUD chrome.
+    note: AI-generated teaching artefact; not copied from a named game and not source evidence.
+  - id: environmental-guidance
+    kind: generated-study
+    status: available
+    asset: ./dictionary/artifacts/environmental-guidance/generated-study-v1.webp
+    label: GENERATED STUDY
+    alt: Original generated traversable game-space study where path framing, light, a distant arch, and selective color accents guide movement without arrows, text, or waypoint UI.
+    note: AI-generated teaching artefact; not copied from a named level and not source evidence.

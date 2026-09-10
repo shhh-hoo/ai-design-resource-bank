@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://shhh-hoo.github.io/ai-design-resource-bank/schemas/dictionary-term.schema.json",
+  "title": "AI Design Resource Bank dictionary registry",
+  "type": "object",
+  "required": ["version", "terms"],
+  "properties": {
+    "version": {"type": "string", "minLength": 1},
+    "purpose": {"type": "string"},
+    "terms": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/term"}}
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "localizedTerm": {
+      "type": "object",
+      "required": ["en", "zh"],
+      "properties": {
+        "en": {"type": "string", "minLength": 1},
+        "zh": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "definition": {
+      "type": "object",
+      "required": ["zh"],
+      "properties": {
+        "zh": {"type": "string", "minLength": 1},
+        "en": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "example": {
+      "type": "object",
+      "required": ["title", "annotation", "asset_policy"],
+      "properties": {
+        "title": {"type": "string", "minLength": 1},
+        "annotation": {"type": "string", "minLength": 1},
+        "url": {"type": "string", "format": "uri"},
+        "asset_policy": {"type": "string", "enum": ["text-reference-only", "linked-external", "owned", "licensed"]}
+      },
+      "additionalProperties": false
+    },
+    "preview": {
+      "type": "object",
+      "required": ["type", "note"],
+      "properties": {
+        "type": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "note": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "term": {
+      "type": "object",
+      "required": ["id", "term", "naming", "entry_status", "domains", "kinds", "definition", "recognition", "looks_like", "not_to_confuse_with", "examples", "related", "preview", "resource_refs"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+        "term": {"$ref": "#/$defs/localizedTerm"},
+        "aliases": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+        "naming": {"type": "string", "enum": ["established", "descriptive", "vernacular"]},
+        "entry_status": {"type": "string", "enum": ["seed", "reviewed", "verified", "deprecated"]},
+        "domains": {"type": "array", "minItems": 1, "items": {"type": "string", "pattern": "^[a-z0-9-]+$"}, "uniqueItems": true},
+        "kinds": {"type": "array", "minItems": 1, "items": {"type": "string", "pattern": "^[a-z0-9-]+$"}, "uniqueItems": true},
+        "definition": {"$ref": "#/$defs/definition"},
+        "recognition": {"type": "array", "minItems": 2, "items": {"type": "string", "minLength": 1}},
+        "looks_like": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "not_to_confuse_with": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+        "examples": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/example"}},
+        "related": {"type": "array", "items": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"}, "uniqueItems": true},
+        "preview": {"$ref": "#/$defs/preview"},
+        "resource_refs": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true}
+      },
+      "additionalProperties": false
+    }
+  }
+}

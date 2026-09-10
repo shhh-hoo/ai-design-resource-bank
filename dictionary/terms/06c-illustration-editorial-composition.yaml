@@ -1,0 +1,132 @@
+version: '0.1'
+purpose: Illustration vocabulary for editorial roles, page relationships, visual metaphor, silhouette, and non-academic spatial treatment.
+terms:
+- id: spot-illustration
+  term: {en: Spot Illustration, zh: 点状插图 / 小型独立插图}
+  aliases: [spot art]
+  naming: established
+  entry_status: seed
+  domains: [illustration, editorial, publishing, graphic-design]
+  kinds: [illustration-format, composition]
+  definition: {zh: 在版面中独立出现的小型插图，通常不铺满页面，也不依赖完整背景场景，用来强调一个概念、细节或节奏节点。}
+  recognition:
+  - 插图四周通常保留明显版面空白
+  - 主体可独立成立，不需要完整矩形场景或全页背景
+  looks_like: [文章中间放一个小小的独立插画，周围还是白底，不像整页场景]
+  not_to_confuse_with: [icon, vignette illustration, full-bleed illustration]
+  examples:
+  - title: IllustrationSpot — What Is Spot Illustration
+    annotation: 行业用法强调它作为可独立放置、用于打断或补充正文的小型插画。
+    url: https://illustrationspot.com/what-is-spot-illustration/
+    asset_policy: linked-external
+  related: [vignette-illustration, editorial-illustration, negative-space]
+  preview: {type: spot, note: Original mnemonic showing a small self-contained illustration within surrounding page space.}
+  resource_refs: []
+- id: vignette-illustration
+  term: {en: Vignette Illustration, zh: 晕边式插图 / 无框小景插图}
+  aliases: [vignette art]
+  naming: established
+  entry_status: seed
+  domains: [illustration, publishing, book-design]
+  kinds: [illustration-format, composition]
+  definition: {zh: 边缘不形成完整矩形画框、而是逐渐消失进纸面或留白中的插图；常作为章节、页面或小场景的轻量视觉单元。}
+  recognition:
+  - 图像边缘部分自然淡出、留白或被形状打散
+  - 插图不像照片框或满版矩形那样拥有完整硬边界
+  looks_like: [画面像从白纸里长出来，小场景四周慢慢消失进页面留白]
+  not_to_confuse_with: [spot illustration, photographic vignette, full-bleed illustration]
+  examples:
+  - {title: 19th-century book illustration vignettes, annotation: 书籍章节小插图常以无硬矩形边界的方式融入纸面。, asset_policy: text-reference-only}
+  related: [spot-illustration, full-bleed-illustration, negative-space]
+  preview: {type: vignette, note: Original mnemonic showing an illustration dissolving into surrounding page space.}
+  resource_refs: []
+- id: full-bleed-illustration
+  term: {en: Full-Bleed Illustration, zh: 满版出血插图}
+  aliases: [bleed illustration, full bleed]
+  naming: established
+  entry_status: seed
+  domains: [illustration, publishing, editorial, book-design]
+  kinds: [illustration-format, layout]
+  definition: {zh: 图像延伸到成品裁切边缘之外，不保留页面白边，使插图视觉上铺满一页或跨页。}
+  recognition:
+  - 图像触及页面所有或多个裁切边缘
+  - 重要内容通常避开裁切危险区，而背景延伸到 bleed 区
+  looks_like: [整页都被插画占满，边缘没有白框，图像像继续延伸到纸张外面]
+  not_to_confuse_with: [full-page illustration with margins, spot illustration, vignette illustration]
+  examples:
+  - {title: picture-book full-bleed spreads, annotation: 图画书常用跨页满版场景建立沉浸空间并控制翻页节奏。, asset_policy: text-reference-only}
+  related: [spot-illustration, vignette-illustration, blocking]
+  preview: {type: bleed, note: Original mnemonic showing artwork extending beyond trim edges.}
+  resource_refs: []
+- id: editorial-illustration
+  term: {en: Editorial Illustration, zh: 编辑插画}
+  aliases: [editorial art]
+  naming: established
+  entry_status: seed
+  domains: [illustration, editorial, publishing, journalism]
+  kinds: [illustration-role, narrative-device, communication]
+  definition: {zh: 为文章、观点、新闻或评论而创作的插画，通过视觉解释、隐喻、立场或情绪补充文字，而不只是装饰版面。}
+  recognition:
+  - 画面与特定文章主题或观点存在语义对应
+  - 常通过隐喻、夸张、并置或概念化场景压缩复杂议题
+  looks_like: [不是把文章内容照着画，而是用一个聪明的视觉概念说同一件事]
+  not_to_confuse_with: [decorative illustration, spot illustration, infographic]
+  examples:
+  - {title: magazine and newspaper opinion illustration traditions, annotation: 报刊长期使用概念插画为评论、社会议题和文化文章建立视觉论点。, asset_policy: text-reference-only}
+  related: [visual-metaphor, spot-illustration, collage]
+  preview: {type: editorial, note: Original mnemonic showing a written idea transformed into a conceptual image.}
+  resource_refs: []
+- id: visual-metaphor
+  term: {en: Visual Metaphor, zh: 视觉隐喻}
+  aliases: [pictorial metaphor]
+  naming: established
+  entry_status: seed
+  domains: [illustration, graphic-design, advertising, editorial]
+  kinds: [narrative-device, communication, concept]
+  definition: {zh: 把一个抽象概念或关系映射成另一个可见对象、动作或空间结构，让观众通过视觉对应理解原意。}
+  recognition:
+  - 画面中的对象同时承担字面意义与第二层概念意义
+  - 理解关键来自两个概念域之间的对应，而非单纯装饰相似
+  looks_like: [把信息过载画成一个人被文件洪水淹没，用看得见的物理情境表达抽象概念]
+  not_to_confuse_with: [symbol, visual pun, literal illustration]
+  examples:
+  - {title: editorial illustrations using maze, weight, bridge, funnel, or weather as conceptual mappings, annotation: 编辑插画经常把抽象制度、心理或流程关系转译成具体物理情境。, asset_policy: text-reference-only}
+  related: [editorial-illustration, trompe-loeil, collage]
+  preview: {type: metaphor, note: Original mnemonic mapping an abstract idea into a concrete physical scene.}
+  resource_refs: []
+- id: silhouette
+  term: {en: Silhouette, zh: 剪影}
+  aliases: [silhouette drawing]
+  naming: established
+  entry_status: seed
+  domains: [illustration, animation, character-design, art]
+  kinds: [shape-language, composition, value]
+  definition: {zh: 把主体压缩为单一外轮廓和近乎统一的明暗块，使识别主要依赖整体形状而非内部细节。}
+  recognition:
+  - 内部细节极少或完全消失
+  - 主体仍能仅凭外轮廓被识别，正负形关系很重要
+  looks_like: [人物全黑也能看出是谁、在做什么，只剩外形但姿势和设计仍然读得出来]
+  not_to_confuse_with: [shadow, contour drawing, cutout collage]
+  examples:
+  - {title: Kara Walker — cut-paper silhouette installations, annotation: 大面积黑色剪影通过高度可读的外轮廓承载人物、动作与叙事关系。, asset_policy: text-reference-only}
+  related: [contour-line, shape-language, figure-ground]
+  preview: {type: silhouette, note: Original mnemonic testing readability from outer shape alone.}
+  resource_refs: []
+- id: naive-perspective
+  term: {en: Naïve Perspective, zh: 朴素透视 / 非学院式透视}
+  aliases: [naive perspective, folk perspective]
+  naming: descriptive
+  entry_status: seed
+  domains: [illustration, folk-art, painting]
+  kinds: [perspective, style, composition]
+  definition: {zh: 不严格遵守学院式线性透视的一类空间表达；尺度、角度和视点可按叙事重要性或直觉组织，使空间显得扁平、倾斜或多视点并存。}
+  recognition:
+  - 平行线不一定稳定汇聚到统一消失点
+  - 对象尺度和视角可能服务叙事清晰度而非几何一致性
+  looks_like: [房子、桌子、人物都看得懂，但不像照相机那样遵守统一透视，空间有点歪有点平]
+  not_to_confuse_with: [bad perspective, isometric projection, forced perspective]
+  examples:
+  - {title: Grandma Moses — rural scenes, annotation: 民间绘画式场景常以叙事清晰和整体铺陈优先，而不是严格统一的摄影式透视。, asset_policy: text-reference-only}
+  related: [trompe-loeil, blocking, collage]
+  preview: {type: naive-perspective, note: Original mnemonic intentionally showing readable space without a single consistent vanishing system.}
+  resource_refs: []
