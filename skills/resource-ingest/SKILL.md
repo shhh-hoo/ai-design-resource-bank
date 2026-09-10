@@ -7,6 +7,8 @@ description: Convert a useful design/development reference into a self-contained
 
 Use this skill whenever the user provides a file, image, screenshot, URL, repository, article, video, prompt, component, visual effect, interaction, or other reference and wants it retained for future design/production use.
 
+The corrected Core contract is `docs/KNOWLEDGE-ATLAS-CONTRACT.md`. First distinguish an Example from reusable implementation material. A perceivable reference can remain an Example and yield zero Resources; a missing subject instance is GAP. The package steps below apply only when extraction is justified.
+
 The target repository is `shhh-hoo/ai-design-resource-bank` unless the user explicitly says otherwise.
 
 ## Objective
@@ -131,17 +133,7 @@ Check all applicable items:
 
 ### 8. Update catalog
 
-Add or update an entry in `catalog.yaml` containing at least:
-
-- id
-- title
-- domain
-- tags
-- path
-- status
-- one-sentence retrieval hint
-
-Avoid duplicate packages. If an existing package captures the same mechanism, enrich it or add a related variant instead.
+Do not hand-edit catalog.yaml or catalog/. Run `python3 scripts/build_catalog.py` after editing canonical inputs or Resource manifests, then `python3 scripts/build_catalog.py --check`. The legacy catalog.yaml is a generated compatibility export. New packages use `source_refs` pointing to normalized Source records; existing embedded legacy source metadata is supported through the adapter.
 
 ### 9. Commit discipline
 

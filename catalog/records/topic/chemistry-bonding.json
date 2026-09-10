@@ -1,0 +1,46 @@
+{
+  "record": {
+    "canonical_path": "subjects/chemistry/topics.json",
+    "example_ids": [
+      "ex:chemistry-water-geometry",
+      "ex:chemistry-ionic-lattice",
+      "ex:chemistry-orbital-overlap",
+      "ex:chemistry-bond-polarity"
+    ],
+    "id": "topic:chemistry-bonding",
+    "order": 1,
+    "parent": "topic:chemistry",
+    "prerequisites": [],
+    "scope": "Ionic, covalent and metallic bonding; shape, polarity and orbital overlap.",
+    "title": "Bonding",
+    "type": "SubjectTopic"
+  },
+  "relations": [
+    {
+      "source": "topic:chemistry-bonding",
+      "target": "ex:chemistry-bond-polarity",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-bonding",
+      "target": "ex:chemistry-ionic-lattice",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-bonding",
+      "target": "ex:chemistry-orbital-overlap",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-bonding",
+      "target": "ex:chemistry-water-geometry",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-bonding",
+      "target": "topic:chemistry",
+      "type": "part_of"
+    }
+  ],
+  "sources": []
+}

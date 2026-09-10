@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "state": "committed",
+  "selection": {
+    "selector": "human",
+    "selections": [
+      {
+        "id": "ex:chemistry-reaction-profile",
+        "aspect_notes": "Keep ΔH and coordinate marker; avoid time claims.",
+        "constraints": [
+          "Do not replace the stable ID."
+        ]
+      }
+    ]
+  },
+  "catalog_fingerprint": "e62a70af8e446ab0518e7670fd05fc004dfb6974136136023ae71bec0dd9b4ae",
+  "commit_digest": "60b567ca5a374afa4cbc6bdbd301dcf30b2c00581a6131f22bb7260e9f48f48b"
+}

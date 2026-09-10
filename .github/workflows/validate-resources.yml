@@ -1,79 +1,69 @@
-name: Validate resources
-
+name: Validate Knowledge Atlas
 on:
   pull_request:
   push:
-    branches:
-      - main
-
+    branches: [main]
 permissions:
   contents: read
-
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
-
-      - name: Set up Node
-        uses: actions/setup-node@v4
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
         with:
-          node-version: "24"
+          node-version: '24'
           cache: npm
-
-      - name: Install validator dependencies
+      - name: Install validation dependencies
         run: |
           python -m pip install --disable-pip-version-check --quiet pyyaml jsonschema
           npm ci --no-audit --no-fund
-
-      - name: Validate resource packages
-        run: python scripts/validate_resources.py
-
-      - name: Validate capability registries
-        run: python scripts/validate_registries.py
-
-      - name: Validate mechanism registry
-        run: python scripts/validate_mechanisms.py
-
-      - name: Validate subject visualization atlas
-        run: python scripts/validate_subject_atlas.py
-
-      - name: Validate curated grammar mechanism routes
-        run: python scripts/validate_grammar_mechanisms.py
-
-      - name: Validate capability board contract
-        run: python scripts/validate_board.py
-
-      - name: Compile runtime board data
+      - name: Validate authoritative Core and compatibility inputs
         run: |
-          python scripts/build_board_data.py --output .board-test/data/board.json
-          python scripts/build_subject_atlas_data.py --output .board-test/data/subject-atlas.json
-
-      - name: Validate master decision board
-        run: python scripts/validate_decision_board.py --data .board-test/data/subject-atlas.json
-
-      - name: Bundle lazy framework demos
-        env:
-          BOARD_FRAMEWORK_OUTDIR: .board-test/framework
-        run: npm run build:framework-demos
-
-      - name: Validate board performance budget
-        run: python scripts/validate_board_perf.py --data .board-test/data/board.json
-
-      - name: Validate lazy framework bundles
-        run: python scripts/validate_framework_demos.py --dir .board-test/framework
-
-      - name: Validate capability board JavaScript
+          python scripts/validate_atlas.py
+          python scripts/validate_resources.py
+          python scripts/validate_registries.py
+          python scripts/validate_mechanisms.py
+          python scripts/validate_subject_atlas.py
+          python scripts/validate_grammar_mechanisms.py
+      - name: Detect generated drift and create SQLite FTS
+        run: python scripts/build_catalog.py --check
+      - name: Exercise retrieval, locking and chemical models
         run: |
-          node --check web/boot.js
-          node --check web/board.js
-          node --check web/mechanism-workbench.js
-          node --check web/decision-board.js
-          node --check web/framework/three-demos.js
-          node --check web/framework/d3-demos.js
+          python -m unittest discover -s tests -p 'test_*.py'
+          node --test tests/models.test.mjs
+          node --check app/atlas.js
+          node --check app/live.js
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Browser navigation, mobile, selection and startup budget
+        run: npm run test:browser
+      - name: Validate publish artifact
+        run: python scripts/build_site.py
+      - name: Upload browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: atlas-browser-evidence
+          include-hidden-files: true
+          path: .browser-test/
+  windows-contract:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install contract dependencies
+        run: python -m pip install --disable-pip-version-check --quiet pyyaml jsonschema
+      - name: Validate Windows checkout, catalog reproducibility and retrieval
+        shell: bash
+        run: |
+          python scripts/validate_atlas.py
+          python scripts/validate_resources.py
+          python scripts/build_catalog.py --check
+          python -m unittest discover -s tests -p 'test_*.py'
+          python scripts/build_site.py

@@ -1,0 +1,60 @@
+{
+  "record": {
+    "agent_notes": "Good general alternative to GSAP/Motion; select based on required primitives, not preference.",
+    "avoid_when": "Deep React layout/presence semantics or a visual keyframe editor is required.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "timeline",
+      "svg",
+      "text",
+      "draggable",
+      "layout",
+      "easing",
+      "waapi"
+    ],
+    "docs": "https://animejs.com/documentation/",
+    "domains": [
+      "animation",
+      "ui"
+    ],
+    "ecosystem": [
+      "JavaScript",
+      "DOM",
+      "SVG",
+      "WAAPI"
+    ],
+    "homepage": "https://animejs.com/",
+    "id": "tool:animejs",
+    "legacy_kind": "animation-library",
+    "license": "MIT",
+    "source_refs": [
+      "source:tool-animejs"
+    ],
+    "subtype": "library",
+    "summary": "Framework-agnostic timeline/SVG/text animation with a compact API fits better than React-specific motion.",
+    "tags": [
+      "animation",
+      "svg",
+      "timeline"
+    ],
+    "tier": "specialized",
+    "title": "Anime.js",
+    "type": "Tool",
+    "use_when": "Framework-agnostic timeline/SVG/text animation with a compact API fits better than React-specific motion."
+  },
+  "relations": [],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-animejs",
+      "locator": "https://animejs.com/documentation/",
+      "locator_type": "url",
+      "publisher": "Anime.js",
+      "title": "Anime.js official documentation",
+      "type": "Source"
+    }
+  ]
+}

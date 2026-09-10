@@ -1,0 +1,1994 @@
+[
+  {
+    "id": "collection:chemistry-studies",
+    "resolve_path": "catalog/records/collection/chemistry-studies.json",
+    "title": "Chemistry · diagram studies",
+    "type": "Collection"
+  },
+  {
+    "id": "concept:anchored-callout",
+    "resolve_path": "catalog/records/concept/anchored-callout.json",
+    "title": "Anchored callout",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:area-under-curve",
+    "resolve_path": "catalog/records/concept/area-under-curve.json",
+    "title": "Area under a curve",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:bond-morph",
+    "resolve_path": "catalog/records/concept/bond-morph.json",
+    "title": "Bond morph",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:camera-dolly",
+    "resolve_path": "catalog/records/concept/camera-dolly.json",
+    "title": "Camera dolly",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:canvas-focus-lens",
+    "resolve_path": "catalog/records/concept/canvas-focus-lens.json",
+    "title": "Canvas focus lens",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-bond-polarity",
+    "resolve_path": "catalog/records/concept/chemistry-bond-polarity.json",
+    "title": "Bond dipole and molecular polarity",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-born-haber",
+    "resolve_path": "catalog/records/concept/chemistry-born-haber.json",
+    "title": "Born–Haber cycle",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-buffer",
+    "resolve_path": "catalog/records/concept/chemistry-buffer.json",
+    "title": "Buffer response",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-catalyst-profile",
+    "resolve_path": "catalog/records/concept/chemistry-catalyst-profile.json",
+    "title": "Catalysed vs uncatalysed energy path",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-chromatography",
+    "resolve_path": "catalog/records/concept/chemistry-chromatography.json",
+    "title": "Chromatography",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-composition-shift",
+    "resolve_path": "catalog/records/concept/chemistry-composition-shift.json",
+    "title": "Equilibrium composition shift",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-conjugate-pairs",
+    "resolve_path": "catalog/records/concept/chemistry-conjugate-pairs.json",
+    "title": "Conjugate pairs",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-curly-arrow",
+    "resolve_path": "catalog/records/concept/chemistry-curly-arrow.json",
+    "title": "Curly-arrow mechanism",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-dilution",
+    "resolve_path": "catalog/records/concept/chemistry-dilution.json",
+    "title": "Volumetric dilution",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-dissolution",
+    "resolve_path": "catalog/records/concept/chemistry-dissolution.json",
+    "title": "NaCl dissolution and hydration shells",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-dynamic-equilibrium",
+    "resolve_path": "catalog/records/concept/chemistry-dynamic-equilibrium.json",
+    "title": "Dynamic equilibrium",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-electrolysis",
+    "resolve_path": "catalog/records/concept/chemistry-electrolysis.json",
+    "title": "Copper electrolysis",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-electron-configuration",
+    "resolve_path": "catalog/records/concept/chemistry-electron-configuration.json",
+    "title": "Electron configuration",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-empirical-formula",
+    "resolve_path": "catalog/records/concept/chemistry-empirical-formula.json",
+    "title": "Combustion data → empirical formula",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-equilibrium-expression",
+    "resolve_path": "catalog/records/concept/chemistry-equilibrium-expression.json",
+    "title": "Equilibrium expression",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-first-order",
+    "resolve_path": "catalog/records/concept/chemistry-first-order.json",
+    "title": "First-order concentration decay",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-functional-groups",
+    "resolve_path": "catalog/records/concept/chemistry-functional-groups.json",
+    "title": "Functional groups",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-galvanic-cell",
+    "resolve_path": "catalog/records/concept/chemistry-galvanic-cell.json",
+    "title": "Galvanic cell",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-gibbs-energy",
+    "resolve_path": "catalog/records/concept/chemistry-gibbs-energy.json",
+    "title": "Gibbs energy",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-group-two",
+    "resolve_path": "catalog/records/concept/chemistry-group-two.json",
+    "title": "Group 2 hydroxide solubility trend",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-halogen-displacement",
+    "resolve_path": "catalog/records/concept/chemistry-halogen-displacement.json",
+    "title": "Halogen displacement",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-hess-cycle",
+    "resolve_path": "catalog/records/concept/chemistry-hess-cycle.json",
+    "title": "Hess cycle",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-hydrogen-bond",
+    "resolve_path": "catalog/records/concept/chemistry-hydrogen-bond.json",
+    "title": "Hydrogen bonding",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-hydrogen-emission",
+    "resolve_path": "catalog/records/concept/chemistry-hydrogen-emission.json",
+    "title": "Hydrogen emission line transitions",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-ideal-gas",
+    "resolve_path": "catalog/records/concept/chemistry-ideal-gas.json",
+    "title": "Boyle’s law",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-ionic-lattice",
+    "resolve_path": "catalog/records/concept/chemistry-ionic-lattice.json",
+    "title": "Ionic lattice",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-ir-spectrum",
+    "resolve_path": "catalog/records/concept/chemistry-ir-spectrum.json",
+    "title": "IR spectrum",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-isotope-spectrum",
+    "resolve_path": "catalog/records/concept/chemistry-isotope-spectrum.json",
+    "title": "Chlorine isotope mass spectrum",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-ligand-exchange",
+    "resolve_path": "catalog/records/concept/chemistry-ligand-exchange.json",
+    "title": "Copper(II) ligand exchange",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-limiting-reagent",
+    "resolve_path": "catalog/records/concept/chemistry-limiting-reagent.json",
+    "title": "Limiting reagent",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-mass-fragmentation",
+    "resolve_path": "catalog/records/concept/chemistry-mass-fragmentation.json",
+    "title": "Mass spectrum",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-maxwell-boltzmann",
+    "resolve_path": "catalog/records/concept/chemistry-maxwell-boltzmann.json",
+    "title": "Maxwell–Boltzmann distribution",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-mole-conversion",
+    "resolve_path": "catalog/records/concept/chemistry-mole-conversion.json",
+    "title": "Mass ↔ amount ↔ particles",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-nernst",
+    "resolve_path": "catalog/records/concept/chemistry-nernst.json",
+    "title": "Cell potential vs concentration",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-nmr-mapping",
+    "resolve_path": "catalog/records/concept/chemistry-nmr-mapping.json",
+    "title": "NMR spectrum → structure",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-orbital-overlap",
+    "resolve_path": "catalog/records/concept/chemistry-orbital-overlap.json",
+    "title": "σ / π orbital overlap",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-oxidation-state",
+    "resolve_path": "catalog/records/concept/chemistry-oxidation-state.json",
+    "title": "Oxidation states",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-periodic-trends",
+    "resolve_path": "catalog/records/concept/chemistry-periodic-trends.json",
+    "title": "Period 3",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-phase-diagram",
+    "resolve_path": "catalog/records/concept/chemistry-phase-diagram.json",
+    "title": "Pressure–temperature phase diagram",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-rate-orders",
+    "resolve_path": "catalog/records/concept/chemistry-rate-orders.json",
+    "title": "Initial-rate table → reaction orders",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-reaction-profile",
+    "resolve_path": "catalog/records/concept/chemistry-reaction-profile.json",
+    "title": "Reaction profile",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-solubility-product",
+    "resolve_path": "catalog/records/concept/chemistry-solubility-product.json",
+    "title": "Solubility product",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-stereoisomers",
+    "resolve_path": "catalog/records/concept/chemistry-stereoisomers.json",
+    "title": "E/Z isomerism",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-successive-ionisation",
+    "resolve_path": "catalog/records/concept/chemistry-successive-ionisation.json",
+    "title": "Successive ionisation energies",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-synthesis-map",
+    "resolve_path": "catalog/records/concept/chemistry-synthesis-map.json",
+    "title": "Organic synthesis",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-titration-curve",
+    "resolve_path": "catalog/records/concept/chemistry-titration-curve.json",
+    "title": "Strong acid–base titration curve",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-water-geometry",
+    "resolve_path": "catalog/records/concept/chemistry-water-geometry.json",
+    "title": "VSEPR geometry",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:chemistry-weak-acid-titration",
+    "resolve_path": "catalog/records/concept/chemistry-weak-acid-titration.json",
+    "title": "Weak-acid titration",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:depth-parallax",
+    "resolve_path": "catalog/records/concept/depth-parallax.json",
+    "title": "Depth parallax",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:electron-pushing",
+    "resolve_path": "catalog/records/concept/electron-pushing.json",
+    "title": "Electron pushing",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:explode-assemble",
+    "resolve_path": "catalog/records/concept/explode-assemble.json",
+    "title": "Explode / assemble",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:focus-context",
+    "resolve_path": "catalog/records/concept/focus-context.json",
+    "title": "Focus + context",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:force-vector-overlay",
+    "resolve_path": "catalog/records/concept/force-vector-overlay.json",
+    "title": "Force vector overlay",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-3d-spatial",
+    "resolve_path": "catalog/records/concept/grammar-3d-spatial.json",
+    "title": "3D Spatial",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-audio-time",
+    "resolve_path": "catalog/records/concept/grammar-audio-time.json",
+    "title": "Audio Time",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-code-execution",
+    "resolve_path": "catalog/records/concept/grammar-code-execution.json",
+    "title": "Code Execution",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-composition-layer",
+    "resolve_path": "catalog/records/concept/grammar-composition-layer.json",
+    "title": "Composition Layer",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-dynamic-geometry",
+    "resolve_path": "catalog/records/concept/grammar-dynamic-geometry.json",
+    "title": "Dynamic Geometry",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-dynamic-system",
+    "resolve_path": "catalog/records/concept/grammar-dynamic-system.json",
+    "title": "Dynamic System",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-evidence-comparison",
+    "resolve_path": "catalog/records/concept/grammar-evidence-comparison.json",
+    "title": "Evidence Comparison",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-field-flow",
+    "resolve_path": "catalog/records/concept/grammar-field-flow.json",
+    "title": "Field Flow",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-functional-graph",
+    "resolve_path": "catalog/records/concept/grammar-functional-graph.json",
+    "title": "Functional Graph",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-image-comparison",
+    "resolve_path": "catalog/records/concept/grammar-image-comparison.json",
+    "title": "Image Comparison",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-micro-macro-bridge",
+    "resolve_path": "catalog/records/concept/grammar-micro-macro-bridge.json",
+    "title": "Micro Macro Bridge",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-network-relation",
+    "resolve_path": "catalog/records/concept/grammar-network-relation.json",
+    "title": "Network Relation",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-optimization-tradeoff",
+    "resolve_path": "catalog/records/concept/grammar-optimization-tradeoff.json",
+    "title": "Optimization Tradeoff",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-spatial-map",
+    "resolve_path": "catalog/records/concept/grammar-spatial-map.json",
+    "title": "Spatial Map",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-state-process",
+    "resolve_path": "catalog/records/concept/grammar-state-process.json",
+    "title": "State Process",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-statistical-distribution",
+    "resolve_path": "catalog/records/concept/grammar-statistical-distribution.json",
+    "title": "Statistical Distribution",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-structure-anatomy",
+    "resolve_path": "catalog/records/concept/grammar-structure-anatomy.json",
+    "title": "Structure Anatomy",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-symbolic-notation",
+    "resolve_path": "catalog/records/concept/grammar-symbolic-notation.json",
+    "title": "Symbolic Notation",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-time-sequence",
+    "resolve_path": "catalog/records/concept/grammar-time-sequence.json",
+    "title": "Time Sequence",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:grammar-vector-field",
+    "resolve_path": "catalog/records/concept/grammar-vector-field.json",
+    "title": "Vector Field",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:graph-relayout",
+    "resolve_path": "catalog/records/concept/graph-relayout.json",
+    "title": "Graph re-layout continuity",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:mask-transition",
+    "resolve_path": "catalog/records/concept/mask-transition.json",
+    "title": "Mask transition",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:movable-tangent",
+    "resolve_path": "catalog/records/concept/movable-tangent.json",
+    "title": "Movable tangent",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:noise-threshold-wipe",
+    "resolve_path": "catalog/records/concept/noise-threshold-wipe.json",
+    "title": "Noise-threshold wipe",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:orbital-overlap",
+    "resolve_path": "catalog/records/concept/orbital-overlap.json",
+    "title": "Orbital overlap",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:particle-attractor",
+    "resolve_path": "catalog/records/concept/particle-attractor.json",
+    "title": "Particle attractor",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:pinned-reveal",
+    "resolve_path": "catalog/records/concept/pinned-reveal.json",
+    "title": "Pinned reveal",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:reaction-coordinate",
+    "resolve_path": "catalog/records/concept/reaction-coordinate.json",
+    "title": "Reaction coordinate",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:scroll-scrub",
+    "resolve_path": "catalog/records/concept/scroll-scrub.json",
+    "title": "Scroll-scrub timeline",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:semantic-zoom",
+    "resolve_path": "catalog/records/concept/semantic-zoom.json",
+    "title": "Semantic zoom",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:split-text-reveal",
+    "resolve_path": "catalog/records/concept/split-text-reveal.json",
+    "title": "Split-text reveal",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:stage-spotlight",
+    "resolve_path": "catalog/records/concept/stage-spotlight.json",
+    "title": "Stage spotlight",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:vector-decomposition",
+    "resolve_path": "catalog/records/concept/vector-decomposition.json",
+    "title": "Vector decomposition",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:wave-propagation",
+    "resolve_path": "catalog/records/concept/wave-propagation.json",
+    "title": "Wave propagation",
+    "type": "Concept"
+  },
+  {
+    "id": "ex:chemistry-bond-polarity",
+    "resolve_path": "catalog/records/ex/chemistry-bond-polarity.json",
+    "title": "Bond dipole and molecular polarity · CO₂",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-born-haber",
+    "resolve_path": "catalog/records/ex/chemistry-born-haber.json",
+    "title": "Born–Haber cycle · sodium chloride",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-buffer",
+    "resolve_path": "catalog/records/ex/chemistry-buffer.json",
+    "title": "Buffer response · ethanoic acid / ethanoate",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-catalyst-profile",
+    "resolve_path": "catalog/records/ex/chemistry-catalyst-profile.json",
+    "title": "Catalysed vs uncatalysed energy path",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-chromatography",
+    "resolve_path": "catalog/records/ex/chemistry-chromatography.json",
+    "title": "Chromatography · Rf measurement",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-composition-shift",
+    "resolve_path": "catalog/records/ex/chemistry-composition-shift.json",
+    "title": "Equilibrium composition shift · N₂O₄ / NO₂",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-conjugate-pairs",
+    "resolve_path": "catalog/records/ex/chemistry-conjugate-pairs.json",
+    "title": "Conjugate pairs · ammonia and water",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-curly-arrow",
+    "resolve_path": "catalog/records/ex/chemistry-curly-arrow.json",
+    "title": "Curly-arrow mechanism · SN2 substitution",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-dilution",
+    "resolve_path": "catalog/records/ex/chemistry-dilution.json",
+    "title": "Volumetric dilution · conserved solute",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-dissolution",
+    "resolve_path": "catalog/records/ex/chemistry-dissolution.json",
+    "title": "NaCl dissolution and hydration shells",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-dynamic-equilibrium",
+    "resolve_path": "catalog/records/ex/chemistry-dynamic-equilibrium.json",
+    "title": "Dynamic equilibrium · equal rates",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-electrolysis",
+    "resolve_path": "catalog/records/ex/chemistry-electrolysis.json",
+    "title": "Copper electrolysis · charge to mass",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-electron-configuration",
+    "resolve_path": "catalog/records/ex/chemistry-electron-configuration.json",
+    "title": "Electron configuration · nitrogen",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-empirical-formula",
+    "resolve_path": "catalog/records/ex/chemistry-empirical-formula.json",
+    "title": "Combustion data → empirical formula",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-equilibrium-expression",
+    "resolve_path": "catalog/records/ex/chemistry-equilibrium-expression.json",
+    "title": "Equilibrium expression · Haber reaction",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-first-order",
+    "resolve_path": "catalog/records/ex/chemistry-first-order.json",
+    "title": "First-order concentration decay",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-functional-groups",
+    "resolve_path": "catalog/records/ex/chemistry-functional-groups.json",
+    "title": "Functional groups · ethanol and ethanoic acid",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-galvanic-cell",
+    "resolve_path": "catalog/records/ex/chemistry-galvanic-cell.json",
+    "title": "Galvanic cell · zinc and copper",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-gibbs-energy",
+    "resolve_path": "catalog/records/ex/chemistry-gibbs-energy.json",
+    "title": "Gibbs energy · temperature crossover",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-group-two",
+    "resolve_path": "catalog/records/ex/chemistry-group-two.json",
+    "title": "Group 2 hydroxide solubility trend",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-halogen-displacement",
+    "resolve_path": "catalog/records/ex/chemistry-halogen-displacement.json",
+    "title": "Halogen displacement · chlorine and bromide",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-hess-cycle",
+    "resolve_path": "catalog/records/ex/chemistry-hess-cycle.json",
+    "title": "Hess cycle · carbon monoxide formation",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-hydrogen-bond",
+    "resolve_path": "catalog/records/ex/chemistry-hydrogen-bond.json",
+    "title": "Hydrogen bonding · water pair",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-hydrogen-emission",
+    "resolve_path": "catalog/records/ex/chemistry-hydrogen-emission.json",
+    "title": "Hydrogen emission line transitions",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-ideal-gas",
+    "resolve_path": "catalog/records/ex/chemistry-ideal-gas.json",
+    "title": "Boyle’s law · pressure and volume",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-ionic-lattice",
+    "resolve_path": "catalog/records/ex/chemistry-ionic-lattice.json",
+    "title": "Ionic lattice · sodium chloride",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-ir-spectrum",
+    "resolve_path": "catalog/records/ex/chemistry-ir-spectrum.json",
+    "title": "IR spectrum · carbonyl identification",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-isotope-spectrum",
+    "resolve_path": "catalog/records/ex/chemistry-isotope-spectrum.json",
+    "title": "Chlorine isotope mass spectrum",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-ligand-exchange",
+    "resolve_path": "catalog/records/ex/chemistry-ligand-exchange.json",
+    "title": "Copper(II) ligand exchange",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-limiting-reagent",
+    "resolve_path": "catalog/records/ex/chemistry-limiting-reagent.json",
+    "title": "Limiting reagent · making water",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-mass-fragmentation",
+    "resolve_path": "catalog/records/ex/chemistry-mass-fragmentation.json",
+    "title": "Mass spectrum · fragmentation assignment",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-maxwell-boltzmann",
+    "resolve_path": "catalog/records/ex/chemistry-maxwell-boltzmann.json",
+    "title": "Maxwell–Boltzmann distribution",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-mole-conversion",
+    "resolve_path": "catalog/records/ex/chemistry-mole-conversion.json",
+    "title": "Mass ↔ amount ↔ particles",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-nernst",
+    "resolve_path": "catalog/records/ex/chemistry-nernst.json",
+    "title": "Cell potential vs concentration · Nernst",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-nmr-mapping",
+    "resolve_path": "catalog/records/ex/chemistry-nmr-mapping.json",
+    "title": "NMR spectrum → structure · ethanol",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-orbital-overlap",
+    "resolve_path": "catalog/records/ex/chemistry-orbital-overlap.json",
+    "title": "σ / π orbital overlap",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-oxidation-state",
+    "resolve_path": "catalog/records/ex/chemistry-oxidation-state.json",
+    "title": "Oxidation states · permanganate",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-periodic-trends",
+    "resolve_path": "catalog/records/ex/chemistry-periodic-trends.json",
+    "title": "Period 3 · first ionisation energy",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-phase-diagram",
+    "resolve_path": "catalog/records/ex/chemistry-phase-diagram.json",
+    "title": "Pressure–temperature phase diagram · water",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-rate-orders",
+    "resolve_path": "catalog/records/ex/chemistry-rate-orders.json",
+    "title": "Initial-rate table → reaction orders",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-reaction-profile",
+    "resolve_path": "catalog/records/ex/chemistry-reaction-profile.json",
+    "title": "Reaction profile",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-solubility-product",
+    "resolve_path": "catalog/records/ex/chemistry-solubility-product.json",
+    "title": "Solubility product · precipitation threshold",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-stereoisomers",
+    "resolve_path": "catalog/records/ex/chemistry-stereoisomers.json",
+    "title": "E/Z isomerism · but-2-ene",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-successive-ionisation",
+    "resolve_path": "catalog/records/ex/chemistry-successive-ionisation.json",
+    "title": "Successive ionisation energies · magnesium",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-synthesis-map",
+    "resolve_path": "catalog/records/ex/chemistry-synthesis-map.json",
+    "title": "Organic synthesis · functional-group route",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-titration-curve",
+    "resolve_path": "catalog/records/ex/chemistry-titration-curve.json",
+    "title": "Strong acid–base titration curve",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-water-geometry",
+    "resolve_path": "catalog/records/ex/chemistry-water-geometry.json",
+    "title": "VSEPR geometry · water",
+    "type": "Example"
+  },
+  {
+    "id": "ex:chemistry-weak-acid-titration",
+    "resolve_path": "catalog/records/ex/chemistry-weak-acid-titration.json",
+    "title": "Weak-acid titration · half equivalence",
+    "type": "Example"
+  },
+  {
+    "id": "intent:compare",
+    "resolve_path": "catalog/records/intent/compare.json",
+    "title": "Compare relationships",
+    "type": "Intent"
+  },
+  {
+    "id": "intent:identify",
+    "resolve_path": "catalog/records/intent/identify.json",
+    "title": "Identify a structure",
+    "type": "Intent"
+  },
+  {
+    "id": "intent:predict",
+    "resolve_path": "catalog/records/intent/predict.json",
+    "title": "Predict a response",
+    "type": "Intent"
+  },
+  {
+    "id": "intent:trace",
+    "resolve_path": "catalog/records/intent/trace.json",
+    "title": "Trace a change",
+    "type": "Intent"
+  },
+  {
+    "id": "resource:reaction-profile",
+    "resolve_path": "catalog/records/resource/reaction-profile.json",
+    "title": "Reaction profile with linked coordinate marker",
+    "type": "Resource"
+  },
+  {
+    "id": "source:ap-chemistry-2024",
+    "resolve_path": "catalog/records/source/ap-chemistry-2024.json",
+    "title": "AP Chemistry Course and Exam Description, effective Fall 2024",
+    "type": "Source"
+  },
+  {
+    "id": "source:atlas-studies",
+    "resolve_path": "catalog/records/source/atlas-studies.json",
+    "title": "Original Chemistry diagram studies",
+    "type": "Source"
+  },
+  {
+    "id": "source:cambridge-9701-2025",
+    "resolve_path": "catalog/records/source/cambridge-9701-2025.json",
+    "title": "Chemistry 9701 syllabus 2025–2027",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-art-design-media-0",
+    "resolve_path": "catalog/records/source/curriculum-art-design-media-0.json",
+    "title": "AP Art History",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-art-design-media-1",
+    "resolve_path": "catalog/records/source/curriculum-art-design-media-1.json",
+    "title": "Design & Technology 9705",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-art-design-media-2",
+    "resolve_path": "catalog/records/source/curriculum-art-design-media-2.json",
+    "title": "Media Studies 9607",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-biology-0",
+    "resolve_path": "catalog/records/source/curriculum-biology-0.json",
+    "title": "AP Biology",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-biology-1",
+    "resolve_path": "catalog/records/source/curriculum-biology-1.json",
+    "title": "Biology 9700",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-chemistry-0",
+    "resolve_path": "catalog/records/source/curriculum-chemistry-0.json",
+    "title": "AP Chemistry",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-chemistry-1",
+    "resolve_path": "catalog/records/source/curriculum-chemistry-1.json",
+    "title": "Chemistry 9701",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-computer-science-0",
+    "resolve_path": "catalog/records/source/curriculum-computer-science-0.json",
+    "title": "AP Computer Science A",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-computer-science-1",
+    "resolve_path": "catalog/records/source/curriculum-computer-science-1.json",
+    "title": "AP Computer Science Principles",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-computer-science-2",
+    "resolve_path": "catalog/records/source/curriculum-computer-science-2.json",
+    "title": "AP Cybersecurity",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-computer-science-3",
+    "resolve_path": "catalog/records/source/curriculum-computer-science-3.json",
+    "title": "Computer Science 9618",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-directory-0",
+    "resolve_path": "catalog/records/source/curriculum-directory-0.json",
+    "title": "cambridge subject catalog",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-directory-1",
+    "resolve_path": "catalog/records/source/curriculum-directory-1.json",
+    "title": "cambridge curriculum",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-directory-2",
+    "resolve_path": "catalog/records/source/curriculum-directory-2.json",
+    "title": "ap course catalog",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-earth-environment-0",
+    "resolve_path": "catalog/records/source/curriculum-earth-environment-0.json",
+    "title": "AP Environmental Science",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-earth-environment-1",
+    "resolve_path": "catalog/records/source/curriculum-earth-environment-1.json",
+    "title": "Marine Science 9693",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-earth-environment-2",
+    "resolve_path": "catalog/records/source/curriculum-earth-environment-2.json",
+    "title": "Environmental Management 8291",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-economics-business-0",
+    "resolve_path": "catalog/records/source/curriculum-economics-business-0.json",
+    "title": "AP Microeconomics",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-economics-business-1",
+    "resolve_path": "catalog/records/source/curriculum-economics-business-1.json",
+    "title": "AP Macroeconomics",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-economics-business-2",
+    "resolve_path": "catalog/records/source/curriculum-economics-business-2.json",
+    "title": "AP Business with Personal Finance",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-economics-business-3",
+    "resolve_path": "catalog/records/source/curriculum-economics-business-3.json",
+    "title": "Economics 9708",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-geography-0",
+    "resolve_path": "catalog/records/source/curriculum-geography-0.json",
+    "title": "AP Human Geography",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-geography-1",
+    "resolve_path": "catalog/records/source/curriculum-geography-1.json",
+    "title": "Geography 9696",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-history-government-0",
+    "resolve_path": "catalog/records/source/curriculum-history-government-0.json",
+    "title": "AP World History: Modern",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-history-government-1",
+    "resolve_path": "catalog/records/source/curriculum-history-government-1.json",
+    "title": "AP United States Government and Politics",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-history-government-2",
+    "resolve_path": "catalog/records/source/curriculum-history-government-2.json",
+    "title": "History 9489",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-language-literature-0",
+    "resolve_path": "catalog/records/source/curriculum-language-literature-0.json",
+    "title": "AP English Language and Composition",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-language-literature-1",
+    "resolve_path": "catalog/records/source/curriculum-language-literature-1.json",
+    "title": "English Language 9093",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-language-literature-2",
+    "resolve_path": "catalog/records/source/curriculum-language-literature-2.json",
+    "title": "English Language and Literature 8695",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-law-religion-thinking-0",
+    "resolve_path": "catalog/records/source/curriculum-law-religion-thinking-0.json",
+    "title": "Law 9084",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-law-religion-thinking-1",
+    "resolve_path": "catalog/records/source/curriculum-law-religion-thinking-1.json",
+    "title": "Thinking Skills 9694",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-law-religion-thinking-2",
+    "resolve_path": "catalog/records/source/curriculum-law-religion-thinking-2.json",
+    "title": "Islamic Studies 9488",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-mathematics-0",
+    "resolve_path": "catalog/records/source/curriculum-mathematics-0.json",
+    "title": "AP Calculus AB",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-mathematics-1",
+    "resolve_path": "catalog/records/source/curriculum-mathematics-1.json",
+    "title": "AP Statistics",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-mathematics-2",
+    "resolve_path": "catalog/records/source/curriculum-mathematics-2.json",
+    "title": "Mathematics 9709",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-music-0",
+    "resolve_path": "catalog/records/source/curriculum-music-0.json",
+    "title": "AP Music Theory",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-music-1",
+    "resolve_path": "catalog/records/source/curriculum-music-1.json",
+    "title": "Music 9483",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-physical-education-0",
+    "resolve_path": "catalog/records/source/curriculum-physical-education-0.json",
+    "title": "Sport & Physical Education 8386",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-physics-0",
+    "resolve_path": "catalog/records/source/curriculum-physics-0.json",
+    "title": "AP Physics 1",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-physics-1",
+    "resolve_path": "catalog/records/source/curriculum-physics-1.json",
+    "title": "AP Physics C: Electricity and Magnetism",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-physics-2",
+    "resolve_path": "catalog/records/source/curriculum-physics-2.json",
+    "title": "Physics 9702",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-psychology-social-0",
+    "resolve_path": "catalog/records/source/curriculum-psychology-social-0.json",
+    "title": "AP Psychology",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-psychology-social-1",
+    "resolve_path": "catalog/records/source/curriculum-psychology-social-1.json",
+    "title": "Psychology 9990",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-psychology-social-2",
+    "resolve_path": "catalog/records/source/curriculum-psychology-social-2.json",
+    "title": "Sociology 9699",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-research-interdisciplinary-0",
+    "resolve_path": "catalog/records/source/curriculum-research-interdisciplinary-0.json",
+    "title": "AP Research",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-research-interdisciplinary-1",
+    "resolve_path": "catalog/records/source/curriculum-research-interdisciplinary-1.json",
+    "title": "AP Seminar",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-research-interdisciplinary-2",
+    "resolve_path": "catalog/records/source/curriculum-research-interdisciplinary-2.json",
+    "title": "Global Perspectives & Research 9239",
+    "type": "Source"
+  },
+  {
+    "id": "source:curriculum-travel-tourism-0",
+    "resolve_path": "catalog/records/source/curriculum-travel-tourism-0.json",
+    "title": "Travel & Tourism 9395",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-aceternity-ui",
+    "resolve_path": "catalog/records/source/gallery-aceternity-ui.json",
+    "title": "Aceternity UI",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-animista",
+    "resolve_path": "catalog/records/source/gallery-animista.json",
+    "title": "Animista",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-cesium-sandcastle",
+    "resolve_path": "catalog/records/source/gallery-cesium-sandcastle.json",
+    "title": "Cesium Sandcastle",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-ciechanowski",
+    "resolve_path": "catalog/records/source/gallery-ciechanowski.json",
+    "title": "Bartosz Ciechanowski Interactive Essays",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-codrops-demos",
+    "resolve_path": "catalog/records/source/gallery-codrops-demos.json",
+    "title": "Codrops Demos Hub",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-codrops-playground",
+    "resolve_path": "catalog/records/source/gallery-codrops-playground.json",
+    "title": "Codrops Playground",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-distill",
+    "resolve_path": "catalog/records/source/gallery-distill.json",
+    "title": "Distill",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-echarts-examples",
+    "resolve_path": "catalog/records/source/gallery-echarts-examples.json",
+    "title": "Apache ECharts Examples",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-explorable-explanations",
+    "resolve_path": "catalog/records/source/gallery-explorable-explanations.json",
+    "title": "Explorable Explanations",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-g6-examples",
+    "resolve_path": "catalog/records/source/gallery-g6-examples.json",
+    "title": "AntV G6 Examples",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-magic-ui",
+    "resolve_path": "catalog/records/source/gallery-magic-ui.json",
+    "title": "Magic UI",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-maplibre-examples",
+    "resolve_path": "catalog/records/source/gallery-maplibre-examples.json",
+    "title": "MapLibre GL JS Examples",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-mathigon",
+    "resolve_path": "catalog/records/source/gallery-mathigon.json",
+    "title": "Mathigon / Polypad",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-motion-examples",
+    "resolve_path": "catalog/records/source/gallery-motion-examples.json",
+    "title": "Motion Examples",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-p5js-examples",
+    "resolve_path": "catalog/records/source/gallery-p5js-examples.json",
+    "title": "p5.js Examples",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-phet",
+    "resolve_path": "catalog/records/source/gallery-phet.json",
+    "title": "PhET Interactive Simulations",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-pixijs-examples",
+    "resolve_path": "catalog/records/source/gallery-pixijs-examples.json",
+    "title": "PixiJS Examples",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-react-bits",
+    "resolve_path": "catalog/records/source/gallery-react-bits.json",
+    "title": "React Bits",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-react-flow-examples",
+    "resolve_path": "catalog/records/source/gallery-react-flow-examples.json",
+    "title": "React Flow Examples",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-threejs-examples",
+    "resolve_path": "catalog/records/source/gallery-threejs-examples.json",
+    "title": "Three.js Examples",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-threejs-resources",
+    "resolve_path": "catalog/records/source/gallery-threejs-resources.json",
+    "title": "Three.js Resources",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-uiverse",
+    "resolve_path": "catalog/records/source/gallery-uiverse.json",
+    "title": "Uiverse",
+    "type": "Source"
+  },
+  {
+    "id": "source:gallery-vega-lite-gallery",
+    "resolve_path": "catalog/records/source/gallery-vega-lite-gallery.json",
+    "title": "Vega-Lite Example Gallery",
+    "type": "Source"
+  },
+  {
+    "id": "source:legacy-families",
+    "resolve_path": "catalog/records/source/legacy-families.json",
+    "title": "Legacy subject family seeds",
+    "type": "Source"
+  },
+  {
+    "id": "source:legacy-mechanisms",
+    "resolve_path": "catalog/records/source/legacy-mechanisms.json",
+    "title": "Legacy mechanism registry",
+    "type": "Source"
+  },
+  {
+    "id": "source:north-star",
+    "resolve_path": "catalog/records/source/north-star.json",
+    "title": "AIDRB — North Star v2",
+    "type": "Source"
+  },
+  {
+    "id": "source:svg-standard",
+    "resolve_path": "catalog/records/source/svg-standard.json",
+    "title": "SVG 2",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-3dmol-js",
+    "resolve_path": "catalog/records/source/tool-3dmol-js.json",
+    "title": "3Dmol.js official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-animejs",
+    "resolve_path": "catalog/records/source/tool-animejs.json",
+    "title": "Anime.js official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-antv-g6",
+    "resolve_path": "catalog/records/source/tool-antv-g6.json",
+    "title": "AntV G6 official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-cesiumjs",
+    "resolve_path": "catalog/records/source/tool-cesiumjs.json",
+    "title": "CesiumJS official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-cindyjs",
+    "resolve_path": "catalog/records/source/tool-cindyjs.json",
+    "title": "CindyJS official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-cytoscapejs",
+    "resolve_path": "catalog/records/source/tool-cytoscapejs.json",
+    "title": "Cytoscape.js official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-d3",
+    "resolve_path": "catalog/records/source/tool-d3.json",
+    "title": "D3 official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-deckgl",
+    "resolve_path": "catalog/records/source/tool-deckgl.json",
+    "title": "deck.gl official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-desmos-api",
+    "resolve_path": "catalog/records/source/tool-desmos-api.json",
+    "title": "Desmos Graphing Calculator API official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-echarts",
+    "resolve_path": "catalog/records/source/tool-echarts.json",
+    "title": "Apache ECharts official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-falstad-circuitjs",
+    "resolve_path": "catalog/records/source/tool-falstad-circuitjs.json",
+    "title": "CircuitJS / Falstad Circuit Simulator official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-function-plot",
+    "resolve_path": "catalog/records/source/tool-function-plot.json",
+    "title": "function-plot official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-geogebra",
+    "resolve_path": "catalog/records/source/tool-geogebra.json",
+    "title": "GeoGebra Apps Embedding official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-globe-gl",
+    "resolve_path": "catalog/records/source/tool-globe-gl.json",
+    "title": "Globe.GL official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-gsap",
+    "resolve_path": "catalog/records/source/tool-gsap.json",
+    "title": "GSAP official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-jsxgraph",
+    "resolve_path": "catalog/records/source/tool-jsxgraph.json",
+    "title": "JSXGraph official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-katex",
+    "resolve_path": "catalog/records/source/tool-katex.json",
+    "title": "KaTeX official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-ketcher",
+    "resolve_path": "catalog/records/source/tool-ketcher.json",
+    "title": "Ketcher official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-konva",
+    "resolve_path": "catalog/records/source/tool-konva.json",
+    "title": "Konva official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-leaflet",
+    "resolve_path": "catalog/records/source/tool-leaflet.json",
+    "title": "Leaflet official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-mafs",
+    "resolve_path": "catalog/records/source/tool-mafs.json",
+    "title": "Mafs official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-maplibre-gl-js",
+    "resolve_path": "catalog/records/source/tool-maplibre-gl-js.json",
+    "title": "MapLibre GL JS official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-mathbox",
+    "resolve_path": "catalog/records/source/tool-mathbox.json",
+    "title": "MathBox official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-mathjax",
+    "resolve_path": "catalog/records/source/tool-mathjax.json",
+    "title": "MathJax official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-mathlive",
+    "resolve_path": "catalog/records/source/tool-mathlive.json",
+    "title": "MathLive official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-matter-js",
+    "resolve_path": "catalog/records/source/tool-matter-js.json",
+    "title": "Matter.js official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-mermaid",
+    "resolve_path": "catalog/records/source/tool-mermaid.json",
+    "title": "Mermaid official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-molstar",
+    "resolve_path": "catalog/records/source/tool-molstar.json",
+    "title": "Mol* official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-motion",
+    "resolve_path": "catalog/records/source/tool-motion.json",
+    "title": "Motion official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-motion-canvas",
+    "resolve_path": "catalog/records/source/tool-motion-canvas.json",
+    "title": "Motion Canvas official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-observable-plot",
+    "resolve_path": "catalog/records/source/tool-observable-plot.json",
+    "title": "Observable Plot official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-p5js",
+    "resolve_path": "catalog/records/source/tool-p5js.json",
+    "title": "p5.js official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-paperjs",
+    "resolve_path": "catalog/records/source/tool-paperjs.json",
+    "title": "Paper.js official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-pixijs",
+    "resolve_path": "catalog/records/source/tool-pixijs.json",
+    "title": "PixiJS official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-plotly-js",
+    "resolve_path": "catalog/records/source/tool-plotly-js.json",
+    "title": "Plotly.js official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-rapier",
+    "resolve_path": "catalog/records/source/tool-rapier.json",
+    "title": "Rapier official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-rdkit-js",
+    "resolve_path": "catalog/records/source/tool-rdkit-js.json",
+    "title": "RDKit.js official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-react-flow",
+    "resolve_path": "catalog/records/source/tool-react-flow.json",
+    "title": "React Flow official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-react-three-fiber",
+    "resolve_path": "catalog/records/source/tool-react-three-fiber.json",
+    "title": "React Three Fiber official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-remotion",
+    "resolve_path": "catalog/records/source/tool-remotion.json",
+    "title": "Remotion official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-rough-notation",
+    "resolve_path": "catalog/records/source/tool-rough-notation.json",
+    "title": "Rough Notation official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-roughjs",
+    "resolve_path": "catalog/records/source/tool-roughjs.json",
+    "title": "Rough.js official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-svgjs",
+    "resolve_path": "catalog/records/source/tool-svgjs.json",
+    "title": "SVG.js official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-theatrejs",
+    "resolve_path": "catalog/records/source/tool-theatrejs.json",
+    "title": "Theatre.js official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-threejs",
+    "resolve_path": "catalog/records/source/tool-threejs.json",
+    "title": "Three.js official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-tldraw",
+    "resolve_path": "catalog/records/source/tool-tldraw.json",
+    "title": "tldraw official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:tool-vega-lite",
+    "resolve_path": "catalog/records/source/tool-vega-lite.json",
+    "title": "Vega-Lite official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "tool:3dmol-js",
+    "resolve_path": "catalog/records/tool/3dmol-js.json",
+    "title": "3Dmol.js",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:animejs",
+    "resolve_path": "catalog/records/tool/animejs.json",
+    "title": "Anime.js",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:antv-g6",
+    "resolve_path": "catalog/records/tool/antv-g6.json",
+    "title": "AntV G6",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:cesiumjs",
+    "resolve_path": "catalog/records/tool/cesiumjs.json",
+    "title": "CesiumJS",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:cindyjs",
+    "resolve_path": "catalog/records/tool/cindyjs.json",
+    "title": "CindyJS",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:cytoscapejs",
+    "resolve_path": "catalog/records/tool/cytoscapejs.json",
+    "title": "Cytoscape.js",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:d3",
+    "resolve_path": "catalog/records/tool/d3.json",
+    "title": "D3",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:deckgl",
+    "resolve_path": "catalog/records/tool/deckgl.json",
+    "title": "deck.gl",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:desmos-api",
+    "resolve_path": "catalog/records/tool/desmos-api.json",
+    "title": "Desmos Graphing Calculator API",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:echarts",
+    "resolve_path": "catalog/records/tool/echarts.json",
+    "title": "Apache ECharts",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:falstad-circuitjs",
+    "resolve_path": "catalog/records/tool/falstad-circuitjs.json",
+    "title": "CircuitJS / Falstad Circuit Simulator",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:function-plot",
+    "resolve_path": "catalog/records/tool/function-plot.json",
+    "title": "function-plot",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:geogebra",
+    "resolve_path": "catalog/records/tool/geogebra.json",
+    "title": "GeoGebra Apps Embedding",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:globe-gl",
+    "resolve_path": "catalog/records/tool/globe-gl.json",
+    "title": "Globe.GL",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:gsap",
+    "resolve_path": "catalog/records/tool/gsap.json",
+    "title": "GSAP",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:jsxgraph",
+    "resolve_path": "catalog/records/tool/jsxgraph.json",
+    "title": "JSXGraph",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:katex",
+    "resolve_path": "catalog/records/tool/katex.json",
+    "title": "KaTeX",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:ketcher",
+    "resolve_path": "catalog/records/tool/ketcher.json",
+    "title": "Ketcher",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:konva",
+    "resolve_path": "catalog/records/tool/konva.json",
+    "title": "Konva",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:leaflet",
+    "resolve_path": "catalog/records/tool/leaflet.json",
+    "title": "Leaflet",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:mafs",
+    "resolve_path": "catalog/records/tool/mafs.json",
+    "title": "Mafs",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:maplibre-gl-js",
+    "resolve_path": "catalog/records/tool/maplibre-gl-js.json",
+    "title": "MapLibre GL JS",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:mathbox",
+    "resolve_path": "catalog/records/tool/mathbox.json",
+    "title": "MathBox",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:mathjax",
+    "resolve_path": "catalog/records/tool/mathjax.json",
+    "title": "MathJax",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:mathlive",
+    "resolve_path": "catalog/records/tool/mathlive.json",
+    "title": "MathLive",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:matter-js",
+    "resolve_path": "catalog/records/tool/matter-js.json",
+    "title": "Matter.js",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:mermaid",
+    "resolve_path": "catalog/records/tool/mermaid.json",
+    "title": "Mermaid",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:molstar",
+    "resolve_path": "catalog/records/tool/molstar.json",
+    "title": "Mol*",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:motion",
+    "resolve_path": "catalog/records/tool/motion.json",
+    "title": "Motion",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:motion-canvas",
+    "resolve_path": "catalog/records/tool/motion-canvas.json",
+    "title": "Motion Canvas",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:native-svg",
+    "resolve_path": "catalog/records/tool/native-svg.json",
+    "title": "Native SVG + HTML controls",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:observable-plot",
+    "resolve_path": "catalog/records/tool/observable-plot.json",
+    "title": "Observable Plot",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:p5js",
+    "resolve_path": "catalog/records/tool/p5js.json",
+    "title": "p5.js",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:paperjs",
+    "resolve_path": "catalog/records/tool/paperjs.json",
+    "title": "Paper.js",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:pixijs",
+    "resolve_path": "catalog/records/tool/pixijs.json",
+    "title": "PixiJS",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:plotly-js",
+    "resolve_path": "catalog/records/tool/plotly-js.json",
+    "title": "Plotly.js",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:rapier",
+    "resolve_path": "catalog/records/tool/rapier.json",
+    "title": "Rapier",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:rdkit-js",
+    "resolve_path": "catalog/records/tool/rdkit-js.json",
+    "title": "RDKit.js",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:react-flow",
+    "resolve_path": "catalog/records/tool/react-flow.json",
+    "title": "React Flow",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:react-three-fiber",
+    "resolve_path": "catalog/records/tool/react-three-fiber.json",
+    "title": "React Three Fiber",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:remotion",
+    "resolve_path": "catalog/records/tool/remotion.json",
+    "title": "Remotion",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:rough-notation",
+    "resolve_path": "catalog/records/tool/rough-notation.json",
+    "title": "Rough Notation",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:roughjs",
+    "resolve_path": "catalog/records/tool/roughjs.json",
+    "title": "Rough.js",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:svgjs",
+    "resolve_path": "catalog/records/tool/svgjs.json",
+    "title": "SVG.js",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:theatrejs",
+    "resolve_path": "catalog/records/tool/theatrejs.json",
+    "title": "Theatre.js",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:threejs",
+    "resolve_path": "catalog/records/tool/threejs.json",
+    "title": "Three.js",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:tldraw",
+    "resolve_path": "catalog/records/tool/tldraw.json",
+    "title": "tldraw",
+    "type": "Tool"
+  },
+  {
+    "id": "tool:vega-lite",
+    "resolve_path": "catalog/records/tool/vega-lite.json",
+    "title": "Vega-Lite",
+    "type": "Tool"
+  },
+  {
+    "id": "topic:chemistry",
+    "resolve_path": "catalog/records/topic/chemistry.json",
+    "title": "Chemistry",
+    "type": "SubjectTopic"
+  },
+  {
+    "id": "topic:chemistry-acids-bases",
+    "resolve_path": "catalog/records/topic/chemistry-acids-bases.json",
+    "title": "Acids and Bases",
+    "type": "SubjectTopic"
+  },
+  {
+    "id": "topic:chemistry-analytical",
+    "resolve_path": "catalog/records/topic/chemistry-analytical.json",
+    "title": "Analytical and Spectroscopic Chemistry",
+    "type": "SubjectTopic"
+  },
+  {
+    "id": "topic:chemistry-atomic-structure",
+    "resolve_path": "catalog/records/topic/chemistry-atomic-structure.json",
+    "title": "Atomic Structure",
+    "type": "SubjectTopic"
+  },
+  {
+    "id": "topic:chemistry-bonding",
+    "resolve_path": "catalog/records/topic/chemistry-bonding.json",
+    "title": "Bonding",
+    "type": "SubjectTopic"
+  },
+  {
+    "id": "topic:chemistry-energetics",
+    "resolve_path": "catalog/records/topic/chemistry-energetics.json",
+    "title": "Energetics",
+    "type": "SubjectTopic"
+  },
+  {
+    "id": "topic:chemistry-equilibrium",
+    "resolve_path": "catalog/records/topic/chemistry-equilibrium.json",
+    "title": "Equilibrium",
+    "type": "SubjectTopic"
+  },
+  {
+    "id": "topic:chemistry-kinetics",
+    "resolve_path": "catalog/records/topic/chemistry-kinetics.json",
+    "title": "Kinetics",
+    "type": "SubjectTopic"
+  },
+  {
+    "id": "topic:chemistry-organic",
+    "resolve_path": "catalog/records/topic/chemistry-organic.json",
+    "title": "Organic Chemistry",
+    "type": "SubjectTopic"
+  },
+  {
+    "id": "topic:chemistry-periodicity",
+    "resolve_path": "catalog/records/topic/chemistry-periodicity.json",
+    "title": "Periodicity and Inorganic Chemistry",
+    "type": "SubjectTopic"
+  },
+  {
+    "id": "topic:chemistry-redox",
+    "resolve_path": "catalog/records/topic/chemistry-redox.json",
+    "title": "Redox and Electrochemistry",
+    "type": "SubjectTopic"
+  },
+  {
+    "id": "topic:chemistry-states-solutions",
+    "resolve_path": "catalog/records/topic/chemistry-states-solutions.json",
+    "title": "States, Gases and Solutions",
+    "type": "SubjectTopic"
+  },
+  {
+    "id": "topic:chemistry-stoichiometry",
+    "resolve_path": "catalog/records/topic/chemistry-stoichiometry.json",
+    "title": "Stoichiometry",
+    "type": "SubjectTopic"
+  }
+]

@@ -1,0 +1,221 @@
+{
+  "record": {
+    "canonical_path": "knowledge/intents/intents.json",
+    "id": "intent:identify",
+    "title": "Identify a structure",
+    "type": "Intent"
+  },
+  "relations": [
+    {
+      "source": "ex:chemistry-bond-polarity",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-born-haber",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-buffer",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-catalyst-profile",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-chromatography",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-composition-shift",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-conjugate-pairs",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-curly-arrow",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-dilution",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-dissolution",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-dynamic-equilibrium",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-electrolysis",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-electron-configuration",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-empirical-formula",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-equilibrium-expression",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-functional-groups",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-galvanic-cell",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-group-two",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-halogen-displacement",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-hydrogen-bond",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-hydrogen-emission",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-ionic-lattice",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-ir-spectrum",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-isotope-spectrum",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-ligand-exchange",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-limiting-reagent",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-mass-fragmentation",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-maxwell-boltzmann",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-mole-conversion",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-nernst",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-nmr-mapping",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-orbital-overlap",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-oxidation-state",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-periodic-trends",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-phase-diagram",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-rate-orders",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-solubility-product",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-stereoisomers",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-successive-ionisation",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-synthesis-map",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-water-geometry",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "ex:chemistry-weak-acid-titration",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    }
+  ],
+  "sources": []
+}

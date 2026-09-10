@@ -1,0 +1,46 @@
+{
+  "record": {
+    "canonical_path": "subjects/chemistry/topics.json",
+    "example_ids": [
+      "ex:chemistry-ideal-gas",
+      "ex:chemistry-hydrogen-bond",
+      "ex:chemistry-phase-diagram",
+      "ex:chemistry-dissolution"
+    ],
+    "id": "topic:chemistry-states-solutions",
+    "order": 3,
+    "parent": "topic:chemistry",
+    "prerequisites": [],
+    "scope": "Phase, intermolecular forces, ideal gases, mixtures and solubility.",
+    "title": "States, Gases and Solutions",
+    "type": "SubjectTopic"
+  },
+  "relations": [
+    {
+      "source": "topic:chemistry-states-solutions",
+      "target": "ex:chemistry-dissolution",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-states-solutions",
+      "target": "ex:chemistry-hydrogen-bond",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-states-solutions",
+      "target": "ex:chemistry-ideal-gas",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-states-solutions",
+      "target": "ex:chemistry-phase-diagram",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-states-solutions",
+      "target": "topic:chemistry",
+      "type": "part_of"
+    }
+  ],
+  "sources": []
+}

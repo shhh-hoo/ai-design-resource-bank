@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "registries/curriculum-research-sources.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:curriculum-economics-business-2",
+    "locator": "https://apstudents.collegeboard.org/courses/ap-business-personal-finance",
+    "locator_type": "url",
+    "publisher": "ap",
+    "title": "AP Business with Personal Finance",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

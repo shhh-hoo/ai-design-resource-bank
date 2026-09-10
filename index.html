@@ -1,102 +1,18 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#f6f6f2" />
-  <title>AI Design Resource Bank</title>
-  <meta name="description" content="A human-readable decision system for subject visualization, frontend mechanisms, tools, references, and reusable resources." />
-  <link rel="stylesheet" href="./web/board.css" />
-  <link rel="modulepreload" href="./web/board.js" />
-  <link rel="modulepreload" href="./web/mechanism-workbench.js" />
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A visual atlas of knowledge. Find concrete examples, explore concepts, and select references for building.">
+<title>AIDRB — Knowledge Atlas</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="app/atlas.css">
+<script type="module" src="app/atlas.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="./" aria-label="AI Design Resource Bank home">
-      <span class="brand-mark">RB</span>
-      <span>AI Design Resource Bank</span>
-    </a>
-    <nav class="site-nav" aria-label="Primary">
-      <button class="nav-link" type="button" data-view="decide">Decide</button>
-      <button class="nav-link is-active" type="button" data-view="explore">Mechanisms</button>
-      <button class="nav-link" type="button" data-view="index">Index</button>
-      <a class="nav-link" href="https://github.com/shhh-hoo/ai-design-resource-bank" target="_blank" rel="noreferrer">GitHub ↗</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="intro" aria-labelledby="page-title">
-      <p class="eyebrow">Curriculum → relationship → representation → tool</p>
-      <div class="intro-grid">
-        <h1 id="page-title">Make the idea<br />visible.</h1>
-        <p class="intro-note">Start with a subject, a visual problem, or a mechanism. The bank routes you toward the narrowest truthful representation before it names a library.</p>
-      </div>
-      <div class="intro-actions">
-        <button class="intro-action" type="button" data-view="decide">Start a decision →</button>
-        <span>or browse the mechanism library below</span>
-      </div>
-      <label class="search" id="globalSearch" for="searchInput">
-        <span aria-hidden="true">⌕</span>
-        <input id="searchInput" type="search" autocomplete="off" placeholder="Search mechanisms, tools, or references" />
-        <kbd>/</kbd>
-      </label>
-      <nav class="chapter-nav" id="chapterNav" aria-label="Subjects"></nav>
-    </section>
-
-    <section class="decision-view" id="decisionView" aria-label="Visualization decision system" hidden>
-      <div id="decisionRoot"></div>
-    </section>
-
-    <section class="explore-view" id="exploreView" aria-label="Mechanism workbench">
-      <div class="section-lead">
-        <p id="resultSummary">Loading the workbench…</p>
-        <button class="text-button" id="clearSearch" type="button" hidden>Clear search</button>
-      </div>
-      <div id="mechanismChapters"></div>
-      <div id="searchResults" hidden></div>
-    </section>
-
-    <section class="index-view" id="indexView" aria-label="Resource index" hidden>
-      <div class="index-toolbar">
-        <p>Everything in the bank, kept deliberately terse.</p>
-        <select id="indexType" aria-label="Index type">
-          <option value="all">All</option>
-          <option value="mechanism">Mechanisms</option>
-          <option value="tool">Tools</option>
-          <option value="reference">References</option>
-          <option value="package">Packages</option>
-        </select>
-      </div>
-      <div id="indexList"></div>
-    </section>
-
-    <section class="load-error" id="loadError" hidden>
-      <p class="eyebrow">Data unavailable</p>
-      <h2>The workbench could not load its compiled data.</h2>
-      <p id="loadErrorMessage"></p>
-    </section>
-  </main>
-
-  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
-  <aside class="drawer" id="detailDrawer" aria-hidden="true" aria-labelledby="drawerTitle">
-    <div class="drawer-bar">
-      <span id="drawerKind">Resource</span>
-      <button class="drawer-close" id="drawerClose" type="button" aria-label="Close details">×</button>
-    </div>
-    <div class="drawer-content" id="drawerContent"></div>
-  </aside>
-
-  <template id="mechanismCardTemplate">
-    <article class="mechanism-card" tabindex="0">
-      <div class="mechanism-number"></div>
-      <div>
-        <h3 class="mechanism-title"></h3>
-        <p class="mechanism-summary"></p>
-      </div>
-      <span class="mechanism-open">Try ↗</span>
-    </article>
-  </template>
-
-  <script type="module" src="./web/boot.js"></script>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead"><a class="wordmark" href="#atlas">AIDRB<span>DESIGN RESOURCE BANK</span></a><nav aria-label="Primary"><a href="#atlas">Atlas</a><a href="#explore">Explore</a><a href="#dictionary">Dictionary</a><a href="#index">Index</a></nav><a class="selection-link" href="#selection">Selections <span id="selection-count">0</span></a></header>
+<main id="main" tabindex="-1"><p class="loading">Opening the atlas…</p></main>
+<footer><span>AIDRB / Knowledge in view</span><span>See a relationship. Find a reference. Build with intent.</span></footer>
+<noscript>This interactive atlas requires JavaScript. Canonical records and the machine retrieval CLI remain available in the repository.</noscript>
 </body>
 </html>

@@ -1,51 +1,23 @@
-# Editorial UI Contract
+# Visual / Interactive Web contract
 
-The web board is for humans first. Machine-readable density belongs in registries, manifests, and detail views—not on the browsing surface.
+The actor-neutral visual projection serves people and browser/vision-capable agents. The governing architecture is [the corrected North Star](KNOWLEDGE-ATLAS-CONTRACT.md).
 
-## Default visual language
+## Navigation
 
-- Black, white, off-white, and neutral grey are the interface palette.
-- Do not assign rainbow colors to domains.
-- Color is an accent for interactive state, live demos, or one genuinely meaningful semantic distinction.
-- Prefer editorial typography, rules, spacing, and hierarchy over dashboard cards, pills, shadows, gradients, and ornamental chrome.
-- The interface should feel readable as a publication/index even before any interaction occurs.
+**Atlas | Explore | Dictionary | Index**
 
-## Visible information budget
+Atlas: subject → major canonical knowledge point → concrete visual inventory. Explore: discovery by intent, interaction, medium, trait and collection. Dictionary: Concept name, concise explanation and actual Examples. Index: dense, exhaustive browse/resolve including provenance entities.
 
-On the default Explore surface, a mechanism may show only:
+Curriculum boards and the old subject → grammar → engine → mechanism decision board do not own this navigation. No redundant primary Examples page.
 
-1. sequence number;
-2. title;
-3. one sentence explaining the behavior;
-4. one quiet action cue.
+## Presentation
 
-Do not show licenses, ecosystems, tags, tool tiers, status, rights notes, long descriptions, or multiple badges on the default card. These remain searchable and available through progressive disclosure.
+Cards: preview first, short title, honest LIVE / REFERENCE / GAP. A GAP uses an explicit missing-example placeholder, never a plausible generic effect. Example detail: visual first, brief identification next, collapsed AI Build / implementation / provenance below. Metadata does not load in the critical startup path.
 
-Chapter headers contain a subject name and at most one short sentence.
+Use neutral chrome, typography, spacing and rules. Reserve accent color for meaningful diagram distinctions or state. Diagram labels may carry explanatory content; paragraphs must not replace a visual reference. Do not confuse a schematic study with measured data or a numerical simulation.
 
-Do not show totals or vanity statistics unless they help a real decision.
+Keyboard controls, meaningful labels, responsive SVG viewboxes, reduced-motion support, no document-wide mobile horizontal overflow. Tables belong in Index, not the initial Atlas. Both projections may explore simultaneously; selection remains editable until explicitly committed.
 
-## Progressive disclosure
+## Evidence
 
-Use this order:
-
-`subject → mechanism → live demo → recommended tool → technical detail`
-
-The first click should answer: *what does this mechanism do?*
-
-The live demo should be visible before implementation metadata. Recommended tools come next. License, rights, avoid-when, ecosystem, primitives, maintenance notes, and agent notes belong under a secondary details control.
-
-Search and Index may expose more material because the user has explicitly asked to retrieve rather than browse.
-
-## Interaction
-
-- Keep the primary navigation small: Explore, Index, repository link.
-- Search is the main retrieval control. Avoid persistent stacks of filters on the Explore surface.
-- Deep links must continue to work for mechanisms, tools, references, and packages.
-- Every live demo should teach one behavior only; it is a mechanism proof, not a miniature product.
-- Prefer direct manipulation when the concept is spatial; prefer a single slider when the mechanism is one-dimensional.
-- Respect reduced-motion preferences.
-
-## Writing
-
-Use short, concrete descriptions. Name the behavior and the learning/design job it does. Avoid adjectives such as “premium”, “beautiful”, “clean”, or “modern” unless a measurable property follows.
+`tests/browser/atlas.spec.mjs` exercises actual desktop/mobile browser rendering and requests. Screenshots are visually reviewed and stored in `docs/evidence/`; CI uploads fresh browser evidence. Legacy static board validators do not count as browser validation.

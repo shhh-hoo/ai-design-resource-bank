@@ -1,151 +1,79 @@
 # AI Design Resource Bank
 
-A reusable design-resource bank optimized for **AI-assisted production**, not passive bookmarking.
+A visual knowledge atlas and a machine retrieval projection over one canonical Core. Both can explore candidates in parallel; explicit selection commit comes before AI lock and deep Resource fetch.
 
-The repository stores three complementary layers:
+**Atlas | Explore | Dictionary | Index**
 
-1. **Capability registries** — mature libraries, engines, tools, APIs, and reference galleries worth checking before reinventing a frontend capability.
-2. **Mechanisms** — human-facing interaction/explanation patterns with small runnable proofs and recommended production tools.
-3. **Resource Packages** — concrete techniques that have actually been distilled into reusable prompts, skills, code, SVG, PNG, tokens, motion specs, structured notes, examples, or tests.
+The first Subject Pack is Chemistry: 12 canonical knowledge areas, 48 concrete example slots (6 LIVE, 16 REFERENCE, 26 honest GAPs). The inventory is explicit coverage planning, not a claim that every syllabus objective has a completed visualization. Cambridge 9701 and AP Chemistry are provenance inputs, not Human taxonomy.
 
-## Editorial Workbench
+## Run
 
-The repository root is a data-driven web workbench. It reads:
+Requires Python 3.12+, PyYAML, jsonschema, and Node 24+ for tests.
 
-- `registries/frontend-mechanisms.yaml`
-- `registries/frontend-tools.yaml`
-- `registries/reference-galleries.yaml`
-- `catalog.yaml`
-
-The default **Explore** view is intentionally human-readable rather than metadata-heavy. It follows:
-
-`subject → mechanism → live demo → recommended tool → technical detail`
-
-Explore shows only a mechanism title, one sentence, and a quiet action. Tool tiers, tags, ecosystems, rights/licensing, maintenance notes, and other machine-useful metadata stay in Search, Index, or progressive detail views.
-
-The visual contract is defined in `docs/EDITORIAL-UI-CONTRACT.md`: black/white/neutral interface, editorial hierarchy, no rainbow domain system, and color reserved for restrained interaction/demo accents.
-
-Current first-pass live mechanisms cover mathematics, physics, chemistry, motion, and graph/spatial interaction.
-
-The site source is `index.html` + `web/`. `.github/workflows/deploy-board.yml` is prepared to publish the workbench through GitHub Pages after the repository's Pages source is set to **GitHub Actions**.
-
-## The ingestion workflow
-
-```text
-You find something worth keeping
-        ↓
-Send the file / screenshot / link / repo / prompt to an AI agent
-        ↓
-Agent inspects the source and identifies the transferable mechanism
-        ↓
-Agent chooses the best representation(s)
-        ↓
-Resource Package is created and validated
-        ↓
-Package + catalog entry are committed here
+```sh
+python3 -m pip install pyyaml jsonschema
+npm ci
+npm run build
+npm run dev
 ```
 
-You should **not** have to decide in advance whether the output should be a prompt, skill, SVG, code demo, token file, or something else. Representation choice is part of ingestion.
+Open `http://127.0.0.1:4173`. Root loads the Atlas from generated `catalog/web-index.json`. No old decision-board scripts, AI index, relation graph or full build records load at startup. Example detail loads its own compact resolve record and, for LIVE, the shared preview runtime. That preview code is distinct from machine-side full Resource Package fetch.
 
-A minimal instruction can be as short as:
+## Source of truth
 
-> Bank this resource: <link/file>. I care about <optional reason>.
-
-Agents working in this repository should follow `skills/resource-ingest/SKILL.md` and `AGENTS.md`.
-
-## Frontend capability selection
-
-Before hand-building a visual or interaction, agents should inspect the bank in this order:
-
-```text
-request/reference
-      ↓
-name the semantic capability
-      ↓
-check verified Resource Packages
-      ↓
-check existing mechanism patterns
-      ↓
-check frontend capability registry
-      ↓
-inspect first-party examples + selected references
-      ↓
-choose narrowest sufficient engine/library
-      ↓
-prove hard behavior in a minimal spike
-      ↓
-implement
-      ↓
-if reusable → bank the mechanism as a Resource Package
-```
-
-Key files:
-
-- `registries/frontend-mechanisms.yaml` — reusable human-facing mechanisms and their recommended tools.
-- `registries/frontend-tools.yaml` — implementation capability registry across mathematics, data visualization, chemistry, physics/simulation, SVG/Canvas, 2D GPU, 3D, animation, diagrams/graphs, and maps.
-- `registries/reference-galleries.yaml` — high-signal official example galleries, interactive-science references, and UI-effect pattern sources.
-- `docs/FRONTEND-CAPABILITY-MAP.md` — task → default tool decision map and domain-first selection rules.
-- `skills/select-frontend-resource/SKILL.md` — frontend capability/tool selection procedure.
-
-The registries are discovery infrastructure, not a claim that every upstream tool has been locally validated. Concrete techniques become trusted bank assets only after ingestion/implementation evidence exists.
-
-## Resource Packages
-
-```text
-resources/<domain>/<slug>/
-├── resource.yaml            # machine-readable provenance + mechanism + artifact index
-├── README.md                # compact usage guide
-├── source/                  # optional; only when rights allow
-├── artifacts/               # selected derived assets/code/prompts/skills/specs
-├── examples/                # optional
-└── tests/                   # optional
-```
-
-Typical transformations:
-
-| Input worth saving | Useful bank output |
+| Location | Responsibility |
 | --- | --- |
-| striking UI interaction | runnable HTML/TSX + state/timing spec |
-| stage transition / motion effect | minimal demo + motion parameters |
-| icon / geometric visual primitive | clean SVG + usage notes |
-| layout / component pattern | component code + CSS/tokens |
-| useful prompting pattern | prompt template + examples |
-| repeatable AI procedure | `SKILL.md` + acceptance checks |
-| article / paper / talk | distilled mechanism notes + citations, optionally code/spec |
-| visual reference with unclear reuse rights | URL + structured visual analysis + recreated/generalized primitives, not copied source assets |
+| knowledge/ | Concept, Example, new Tool, Intent, Collection and normalized Source records |
+| subjects/ | Canonical subject/topic maps and directed curriculum crosswalks |
+| resources/ | Authoritative Resource Packages; extracted only where useful |
+| registries/ | Preserved legacy inputs, adapted by stable ID; no competing editable copies |
+| catalog/ | Generated web/AI indexes, resolve records, typed relations, FTS input and SQLite |
+| app/ | Lightweight visual projection |
+| catalog.yaml | Generated Resource compatibility export |
 
-## Retrieval principle
+Canonical **content** types are Concept, Example, Tool and Resource. Method is a generated per-Example AI Build view. Lifecycle properties `collected`, `showable`, `reusable`, `verified` are independent. REFERENCE does not imply reuse rights; GAP never pretends to be implemented.
 
-A saved resource should answer four questions without reopening the original source:
+## Retrieve and select
 
-1. What is it?
-2. What exactly is worth reusing?
-3. How do I instantiate that mechanism in a new design?
-4. What constraints, fidelity limits, and rights issues apply?
+```sh
+python3 scripts/retrieve.py query 'reaction profile' --type Example
+python3 scripts/retrieve.py resolve ex:chemistry-reaction-profile
+```
 
-Vague tags such as `premium`, `modern`, or `clean` are not enough. Geometry, hierarchy, spacing, typography behavior, compositing, state transitions, timing, implementation methods, prompt contracts, and failure modes are the useful layer.
+Create selection.json:
 
-## Repository contracts
+```json
+{"selector":"agent","selections":[{"id":"ex:chemistry-reaction-profile","aspect_notes":"Borrow the linked marker.","constraints":["Coordinate is not time."]}]}
+```
 
-- `AGENTS.md` — behavior expected from agents operating on the bank
-- `docs/EDITORIAL-UI-CONTRACT.md` — human-facing workbench density and visual rules
-- `skills/resource-ingest/SKILL.md` — end-to-end ingestion procedure
-- `skills/select-frontend-resource/SKILL.md` — frontend capability/tool selection procedure
-- `docs/RESOURCE-PACKAGE.md` — package structure and fidelity model
-- `docs/FRONTEND-CAPABILITY-MAP.md` — frontend task/capability decision map
-- `schemas/resource.schema.json` — machine-readable Resource Package manifest schema
-- `templates/` — package starting templates
-- `catalog.yaml` — lightweight Resource Package retrieval index
-- `index.html` + `web/` — navigable editorial workbench
+```sh
+python3 scripts/retrieve.py commit selection.json > committed.json
+python3 scripts/retrieve.py lock committed.json > locked.json
+python3 scripts/retrieve.py fetch locked.json
+```
 
-## Status levels
+The Web selection screen exports the same committed format; continue with `lock` directly. Browser selections remain in the current tab and are not persisted across reloads. Locks freeze exact identities, notes and the catalog fingerprint; stale/tampered locks fail instead of substituting references. Legacy aliases such as `reaction-coordinate` still resolve but commits require canonical Example IDs.
 
-`raw` → `distilled` → `implemented` → `verified`
+## Validate
 
-Use the strongest status actually supported by evidence. `deprecated` resources remain searchable for provenance but should not be reused.
+```sh
+npm run validate
+npm test
+npx playwright install chromium
+npm run test:browser
+npm run build:site
+```
 
-## Rights rule
+On a machine using installed Chrome, set `AIDRB_CHROME=1` for browser tests. Screenshots/results default to `.browser-test/`; CI uploads them as an artifact. Reviewed evidence for this PR lives under `docs/evidence/`. SQLite is generated from committed `fts-input.jsonl`, not committed as a version-dependent binary. `build_catalog.py --check` rejects text catalog drift and unexpected generated files.
 
-Third-party sources are references, not an invitation to mirror their assets. Unless permission/license is clear, store provenance plus transformed analysis, generalized implementations, recreated primitives, or original diagrams rather than copying third-party binary assets into this public repository.
+CI validates the corrected Core, compatibility data, generated drift, retrieval/lock failures, scientific model constraints and actual browser behavior/startup budget. Pages stages `_site/` on main; no deployment or merge is required to review a PR. Legacy UI files remain under `web/` and `legacy.html`, outside startup. To run legacy evidence locally, generate `data/board.json`, `data/subject-atlas.json` with the old builders and run `npm run build:framework-demos` first.
 
-Registry entries also record licensing/API/embed caveats where relevant. Always verify the specific tool/version/demo and third-party assets before redistribution or production use.
+## Contracts and limits
+
+- [Corrected North Star v2.1](docs/KNOWLEDGE-ATLAS-CONTRACT.md): architecture, semantics, migration and tool decision.
+- [Visual contract](docs/EDITORIAL-UI-CONTRACT.md): visual-first views and progressive disclosure.
+- [Retrieval skill](skills/aidrb-retrieve/SKILL.md): machine workflow and identity discipline.
+- [Resource ingestion](skills/resource-ingest/SKILL.md): optional extraction and rights.
+- [Validation evidence](docs/evidence/REVIEW.md): measured results and unresolved scope.
+
+This is a Chemistry vertical slice. Original diagrams are bounded teaching studies; scientific behavior checks do not imply external chemistry peer review. 26 slots are explicitly missing. Legacy tool recommendations preserve evidence/rights caveats and do not mean upstream tools were locally installed or validated. No third-party binary reference art is copied.

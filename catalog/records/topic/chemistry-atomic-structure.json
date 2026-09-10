@@ -1,0 +1,46 @@
+{
+  "record": {
+    "canonical_path": "subjects/chemistry/topics.json",
+    "example_ids": [
+      "ex:chemistry-electron-configuration",
+      "ex:chemistry-isotope-spectrum",
+      "ex:chemistry-successive-ionisation",
+      "ex:chemistry-hydrogen-emission"
+    ],
+    "id": "topic:chemistry-atomic-structure",
+    "order": 0,
+    "parent": "topic:chemistry",
+    "prerequisites": [],
+    "scope": "Nuclear composition, isotopes, electron arrangement and atomic spectra.",
+    "title": "Atomic Structure",
+    "type": "SubjectTopic"
+  },
+  "relations": [
+    {
+      "source": "topic:chemistry-atomic-structure",
+      "target": "ex:chemistry-electron-configuration",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-atomic-structure",
+      "target": "ex:chemistry-hydrogen-emission",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-atomic-structure",
+      "target": "ex:chemistry-isotope-spectrum",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-atomic-structure",
+      "target": "ex:chemistry-successive-ionisation",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-atomic-structure",
+      "target": "topic:chemistry",
+      "type": "part_of"
+    }
+  ],
+  "sources": []
+}

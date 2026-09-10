@@ -1,0 +1,9 @@
+{
+  "id": "topic:chemistry",
+  "type": "SubjectTopic",
+  "title": "Chemistry",
+  "parent": null,
+  "scope": "Canonical chemistry knowledge with an explicit visual-example inventory.",
+  "example_ids": [],
+  "prerequisites": []
+}

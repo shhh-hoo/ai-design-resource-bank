@@ -1,0 +1,206 @@
+[
+  {
+    "topic_id": "topic:chemistry-atomic-structure",
+    "source_id": "source:cambridge-9701-2025",
+    "node": {
+      "id": "cambridge:1",
+      "label": "Atomic structure",
+      "section": "1"
+    },
+    "relation": "broader",
+    "rationale": "Canonical atomic structure additionally reserves atomic emission spectra; Cambridge section 1 supplies nuclear/electronic structure and isotopes. This is not a claim that section 1 includes Balmer spectra.",
+    "canonical_scope": "Nuclear composition, isotopes, electron arrangement and atomic spectra."
+  },
+  {
+    "topic_id": "topic:chemistry-bonding",
+    "source_id": "source:cambridge-9701-2025",
+    "node": {
+      "id": "cambridge:3",
+      "label": "Chemical bonding",
+      "section": "3"
+    },
+    "relation": "exact",
+    "rationale": "Matching major topic scope; this does not assert that the example inventory fulfills every objective.",
+    "canonical_scope": "Ionic, covalent and metallic bonding; shape, polarity and orbital overlap."
+  },
+  {
+    "topic_id": "topic:chemistry-stoichiometry",
+    "source_id": "source:cambridge-9701-2025",
+    "node": {
+      "id": "cambridge:2",
+      "label": "Atoms, molecules and stoichiometry",
+      "section": "2"
+    },
+    "relation": "partial",
+    "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+    "canonical_scope": "Amounts, composition, conservation, equations and limiting reagents."
+  },
+  {
+    "topic_id": "topic:chemistry-states-solutions",
+    "source_id": "source:cambridge-9701-2025",
+    "node": {
+      "id": "cambridge:4",
+      "label": "States of matter",
+      "section": "4"
+    },
+    "relation": "broader",
+    "rationale": "Canonical scope includes this source section and additional areas specified in the topic scope.",
+    "canonical_scope": "Phase, intermolecular forces, ideal gases, mixtures and solubility."
+  },
+  {
+    "topic_id": "topic:chemistry-energetics",
+    "source_id": "source:cambridge-9701-2025",
+    "node": {
+      "id": "cambridge:5",
+      "label": "Chemical energetics",
+      "section": "5"
+    },
+    "relation": "broader",
+    "rationale": "Canonical scope includes this source section and additional areas specified in the topic scope.",
+    "canonical_scope": "Enthalpy changes, cycles, lattice energetics, entropy and Gibbs energy."
+  },
+  {
+    "topic_id": "topic:chemistry-energetics",
+    "source_id": "source:cambridge-9701-2025",
+    "node": {
+      "id": "cambridge:23",
+      "label": "Chemical energetics",
+      "section": "23"
+    },
+    "relation": "broader",
+    "rationale": "Canonical scope includes this source section and additional areas specified in the topic scope.",
+    "canonical_scope": "Enthalpy changes, cycles, lattice energetics, entropy and Gibbs energy."
+  },
+  {
+    "topic_id": "topic:chemistry-kinetics",
+    "source_id": "source:cambridge-9701-2025",
+    "node": {
+      "id": "cambridge:8",
+      "label": "Reaction kinetics",
+      "section": "8"
+    },
+    "relation": "broader",
+    "rationale": "Canonical scope includes this source section and additional areas specified in the topic scope.",
+    "canonical_scope": "Rates, rate laws, collision distributions, mechanisms and catalysis."
+  },
+  {
+    "topic_id": "topic:chemistry-kinetics",
+    "source_id": "source:cambridge-9701-2025",
+    "node": {
+      "id": "cambridge:26",
+      "label": "Reaction kinetics",
+      "section": "26"
+    },
+    "relation": "broader",
+    "rationale": "Canonical scope includes this source section and additional areas specified in the topic scope.",
+    "canonical_scope": "Rates, rate laws, collision distributions, mechanisms and catalysis."
+  },
+  {
+    "topic_id": "topic:chemistry-equilibrium",
+    "source_id": "source:cambridge-9701-2025",
+    "node": {
+      "id": "cambridge:7",
+      "label": "Equilibria",
+      "section": "7"
+    },
+    "relation": "partial",
+    "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+    "canonical_scope": "Dynamic balance, equilibrium expressions, reaction quotient and composition shifts."
+  },
+  {
+    "topic_id": "topic:chemistry-equilibrium",
+    "source_id": "source:cambridge-9701-2025",
+    "node": {
+      "id": "cambridge:25",
+      "label": "Equilibria",
+      "section": "25"
+    },
+    "relation": "partial",
+    "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+    "canonical_scope": "Dynamic balance, equilibrium expressions, reaction quotient and composition shifts."
+  },
+  {
+    "topic_id": "topic:chemistry-acids-bases",
+    "source_id": "source:cambridge-9701-2025",
+    "node": {
+      "id": "cambridge:7.2",
+      "label": "Brønsted–Lowry theory of acids and bases",
+      "section": "7.2"
+    },
+    "relation": "broader",
+    "rationale": "Canonical scope includes this source section and additional areas specified in the topic scope.",
+    "canonical_scope": "Proton transfer, acid strength, pH, buffers and titration."
+  },
+  {
+    "topic_id": "topic:chemistry-acids-bases",
+    "source_id": "source:cambridge-9701-2025",
+    "node": {
+      "id": "cambridge:25.1",
+      "label": "Acids and bases",
+      "section": "25.1"
+    },
+    "relation": "partial",
+    "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+    "canonical_scope": "Proton transfer, acid strength, pH, buffers and titration."
+  },
+  {
+    "topic_id": "topic:chemistry-redox",
+    "source_id": "source:cambridge-9701-2025",
+    "node": {
+      "id": "cambridge:6",
+      "label": "Electrochemistry",
+      "section": "6"
+    },
+    "relation": "broader",
+    "rationale": "Canonical scope includes this source section and additional areas specified in the topic scope.",
+    "canonical_scope": "Electron transfer, oxidation states, cells, electrode potentials and electrolysis."
+  },
+  {
+    "topic_id": "topic:chemistry-redox",
+    "source_id": "source:cambridge-9701-2025",
+    "node": {
+      "id": "cambridge:24",
+      "label": "Electrochemistry",
+      "section": "24"
+    },
+    "relation": "broader",
+    "rationale": "Canonical scope includes this source section and additional areas specified in the topic scope.",
+    "canonical_scope": "Electron transfer, oxidation states, cells, electrode potentials and electrolysis."
+  },
+  {
+    "topic_id": "topic:chemistry-periodicity",
+    "source_id": "source:cambridge-9701-2025",
+    "node": {
+      "id": "cambridge:9–12, 27–28",
+      "label": "Inorganic chemistry topics",
+      "section": "9–12, 27–28"
+    },
+    "relation": "partial",
+    "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+    "canonical_scope": "Periodic trends, group chemistry, coordination and transition elements."
+  },
+  {
+    "topic_id": "topic:chemistry-organic",
+    "source_id": "source:cambridge-9701-2025",
+    "node": {
+      "id": "cambridge:13–21, 29–36",
+      "label": "Organic chemistry topics",
+      "section": "13–21, 29–36"
+    },
+    "relation": "partial",
+    "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+    "canonical_scope": "Structure, stereochemistry, functional groups, mechanisms, synthesis and polymers."
+  },
+  {
+    "topic_id": "topic:chemistry-analytical",
+    "source_id": "source:cambridge-9701-2025",
+    "node": {
+      "id": "cambridge:22, 37",
+      "label": "Analytical techniques",
+      "section": "22, 37"
+    },
+    "relation": "partial",
+    "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+    "canonical_scope": "Separation, identification, spectroscopy and structure inference."
+  }
+]

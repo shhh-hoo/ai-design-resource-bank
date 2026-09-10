@@ -1,0 +1,2154 @@
+[
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:anchored-callout",
+    "target": "tool:react-three-fiber",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:anchored-callout",
+    "target": "tool:threejs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:area-under-curve",
+    "target": "tool:d3",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:area-under-curve",
+    "target": "tool:jsxgraph",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:area-under-curve",
+    "target": "tool:mafs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:bond-morph",
+    "target": "tool:motion",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:bond-morph",
+    "target": "tool:rdkit-js",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:bond-morph",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:camera-dolly",
+    "target": "tool:theatrejs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:camera-dolly",
+    "target": "tool:threejs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:canvas-focus-lens",
+    "target": "tool:konva",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:canvas-focus-lens",
+    "target": "tool:tldraw",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:depth-parallax",
+    "target": "tool:gsap",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:depth-parallax",
+    "target": "tool:motion",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:depth-parallax",
+    "target": "tool:threejs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:electron-pushing",
+    "target": "tool:motion",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:electron-pushing",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:explode-assemble",
+    "target": "tool:theatrejs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:explode-assemble",
+    "target": "tool:threejs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:focus-context",
+    "target": "tool:antv-g6",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:focus-context",
+    "target": "tool:cytoscapejs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:force-vector-overlay",
+    "target": "tool:matter-js",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-3d-spatial",
+    "target": "tool:react-three-fiber",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-3d-spatial",
+    "target": "tool:threejs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-audio-time",
+    "target": "tool:d3",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-audio-time",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-code-execution",
+    "target": "tool:d3",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-code-execution",
+    "target": "tool:react-flow",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-code-execution",
+    "target": "tool:tldraw",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-composition-layer",
+    "target": "tool:motion",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-composition-layer",
+    "target": "tool:paperjs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-composition-layer",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-composition-layer",
+    "target": "tool:threejs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-dynamic-geometry",
+    "target": "tool:jsxgraph",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-dynamic-geometry",
+    "target": "tool:mafs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-dynamic-system",
+    "target": "tool:matter-js",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-dynamic-system",
+    "target": "tool:p5js",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-dynamic-system",
+    "target": "tool:rapier",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-dynamic-system",
+    "target": "tool:threejs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-evidence-comparison",
+    "target": "tool:d3",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-evidence-comparison",
+    "target": "tool:observable-plot",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-evidence-comparison",
+    "target": "tool:react-flow",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-field-flow",
+    "target": "tool:d3",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-field-flow",
+    "target": "tool:deckgl",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-field-flow",
+    "target": "tool:p5js",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-field-flow",
+    "target": "tool:threejs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-functional-graph",
+    "target": "tool:jsxgraph",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-functional-graph",
+    "target": "tool:mafs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-functional-graph",
+    "target": "tool:plotly-js",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-image-comparison",
+    "target": "tool:motion",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-image-comparison",
+    "target": "tool:paperjs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-image-comparison",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-micro-macro-bridge",
+    "target": "tool:molstar",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-micro-macro-bridge",
+    "target": "tool:plotly-js",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-micro-macro-bridge",
+    "target": "tool:rdkit-js",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-micro-macro-bridge",
+    "target": "tool:threejs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-network-relation",
+    "target": "tool:antv-g6",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-network-relation",
+    "target": "tool:cytoscapejs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-network-relation",
+    "target": "tool:d3",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-network-relation",
+    "target": "tool:react-flow",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-optimization-tradeoff",
+    "target": "tool:jsxgraph",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-optimization-tradeoff",
+    "target": "tool:mafs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-optimization-tradeoff",
+    "target": "tool:observable-plot",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-spatial-map",
+    "target": "tool:cesiumjs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-spatial-map",
+    "target": "tool:deckgl",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-spatial-map",
+    "target": "tool:leaflet",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-spatial-map",
+    "target": "tool:maplibre-gl-js",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-state-process",
+    "target": "tool:d3",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-state-process",
+    "target": "tool:motion",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-state-process",
+    "target": "tool:react-flow",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-statistical-distribution",
+    "target": "tool:observable-plot",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-statistical-distribution",
+    "target": "tool:plotly-js",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-statistical-distribution",
+    "target": "tool:vega-lite",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-structure-anatomy",
+    "target": "tool:3dmol-js",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-structure-anatomy",
+    "target": "tool:molstar",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-structure-anatomy",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-structure-anatomy",
+    "target": "tool:threejs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-symbolic-notation",
+    "target": "tool:d3",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-symbolic-notation",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-time-sequence",
+    "target": "tool:d3",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-time-sequence",
+    "target": "tool:motion",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-time-sequence",
+    "target": "tool:observable-plot",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-vector-field",
+    "target": "tool:mafs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-vector-field",
+    "target": "tool:p5js",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-vector-field",
+    "target": "tool:plotly-js",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:grammar-vector-field",
+    "target": "tool:threejs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:graph-relayout",
+    "target": "tool:antv-g6",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:graph-relayout",
+    "target": "tool:cytoscapejs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:mask-transition",
+    "target": "tool:gsap",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:mask-transition",
+    "target": "tool:motion",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:movable-tangent",
+    "target": "tool:jsxgraph",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:movable-tangent",
+    "target": "tool:mafs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:noise-threshold-wipe",
+    "target": "tool:gsap",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:noise-threshold-wipe",
+    "target": "tool:threejs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:orbital-overlap",
+    "target": "tool:threejs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:particle-attractor",
+    "target": "tool:p5js",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:particle-attractor",
+    "target": "tool:pixijs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:pinned-reveal",
+    "target": "tool:gsap",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:pinned-reveal",
+    "target": "tool:motion",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:reaction-coordinate",
+    "target": "tool:d3",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:reaction-coordinate",
+    "target": "tool:plotly-js",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:scroll-scrub",
+    "target": "tool:gsap",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:scroll-scrub",
+    "target": "tool:motion",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:semantic-zoom",
+    "target": "tool:antv-g6",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:split-text-reveal",
+    "target": "tool:gsap",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:split-text-reveal",
+    "target": "tool:motion",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:stage-spotlight",
+    "target": "tool:gsap",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:stage-spotlight",
+    "target": "tool:motion",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:stage-spotlight",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:vector-decomposition",
+    "target": "tool:jsxgraph",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:vector-decomposition",
+    "target": "tool:mafs",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Legacy registry recommendation, not observed implementation.",
+    "source": "concept:wave-propagation",
+    "target": "tool:p5js",
+    "type": "implemented_with"
+  },
+  {
+    "source": "ex:chemistry-bond-polarity",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-bond-polarity",
+    "target": "concept:chemistry-bond-polarity",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-bond-polarity",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-born-haber",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-born-haber",
+    "target": "concept:chemistry-born-haber",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-born-haber",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-buffer",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-buffer",
+    "target": "concept:chemistry-buffer",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-buffer",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-catalyst-profile",
+    "target": "concept:chemistry-catalyst-profile",
+    "type": "demonstrates"
+  },
+  {
+    "evidence": "observed",
+    "reason": "The local diagram is rendered with native SVG and HTML controls.",
+    "source": "ex:chemistry-catalyst-profile",
+    "target": "tool:native-svg",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+    "source": "ex:chemistry-catalyst-profile",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "source": "ex:chemistry-catalyst-profile",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-catalyst-profile",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-chromatography",
+    "target": "concept:chemistry-chromatography",
+    "type": "demonstrates"
+  },
+  {
+    "evidence": "observed",
+    "reason": "The local diagram is rendered with native SVG and HTML controls.",
+    "source": "ex:chemistry-chromatography",
+    "target": "tool:native-svg",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+    "source": "ex:chemistry-chromatography",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "source": "ex:chemistry-chromatography",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-chromatography",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-composition-shift",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-composition-shift",
+    "target": "concept:chemistry-composition-shift",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-composition-shift",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-conjugate-pairs",
+    "target": "concept:chemistry-conjugate-pairs",
+    "type": "demonstrates"
+  },
+  {
+    "evidence": "observed",
+    "reason": "The local diagram is rendered with native SVG and HTML controls.",
+    "source": "ex:chemistry-conjugate-pairs",
+    "target": "tool:native-svg",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+    "source": "ex:chemistry-conjugate-pairs",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "source": "ex:chemistry-conjugate-pairs",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-conjugate-pairs",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-curly-arrow",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-curly-arrow",
+    "target": "concept:bond-morph",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-curly-arrow",
+    "target": "concept:chemistry-curly-arrow",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-curly-arrow",
+    "target": "concept:electron-pushing",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-curly-arrow",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-dilution",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-dilution",
+    "target": "concept:chemistry-dilution",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-dilution",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-dissolution",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-dissolution",
+    "target": "concept:chemistry-dissolution",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-dissolution",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-dynamic-equilibrium",
+    "target": "concept:chemistry-dynamic-equilibrium",
+    "type": "demonstrates"
+  },
+  {
+    "evidence": "observed",
+    "reason": "The local diagram is rendered with native SVG and HTML controls.",
+    "source": "ex:chemistry-dynamic-equilibrium",
+    "target": "tool:native-svg",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+    "source": "ex:chemistry-dynamic-equilibrium",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "source": "ex:chemistry-dynamic-equilibrium",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-dynamic-equilibrium",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-electrolysis",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-electrolysis",
+    "target": "concept:chemistry-electrolysis",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-electrolysis",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-electron-configuration",
+    "target": "concept:chemistry-electron-configuration",
+    "type": "demonstrates"
+  },
+  {
+    "evidence": "observed",
+    "reason": "The local diagram is rendered with native SVG and HTML controls.",
+    "source": "ex:chemistry-electron-configuration",
+    "target": "tool:native-svg",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+    "source": "ex:chemistry-electron-configuration",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "source": "ex:chemistry-electron-configuration",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-electron-configuration",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-empirical-formula",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-empirical-formula",
+    "target": "concept:chemistry-empirical-formula",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-empirical-formula",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-equilibrium-expression",
+    "target": "concept:chemistry-equilibrium-expression",
+    "type": "demonstrates"
+  },
+  {
+    "evidence": "observed",
+    "reason": "The local diagram is rendered with native SVG and HTML controls.",
+    "source": "ex:chemistry-equilibrium-expression",
+    "target": "tool:native-svg",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+    "source": "ex:chemistry-equilibrium-expression",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "source": "ex:chemistry-equilibrium-expression",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-equilibrium-expression",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-first-order",
+    "target": "concept:chemistry-first-order",
+    "type": "demonstrates"
+  },
+  {
+    "evidence": "observed",
+    "reason": "The local diagram is rendered with native SVG and HTML controls.",
+    "source": "ex:chemistry-first-order",
+    "target": "tool:native-svg",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+    "source": "ex:chemistry-first-order",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "source": "ex:chemistry-first-order",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-first-order",
+    "target": "intent:predict",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-functional-groups",
+    "target": "concept:chemistry-functional-groups",
+    "type": "demonstrates"
+  },
+  {
+    "evidence": "observed",
+    "reason": "The local diagram is rendered with native SVG and HTML controls.",
+    "source": "ex:chemistry-functional-groups",
+    "target": "tool:native-svg",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+    "source": "ex:chemistry-functional-groups",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "source": "ex:chemistry-functional-groups",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-functional-groups",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-galvanic-cell",
+    "target": "concept:chemistry-galvanic-cell",
+    "type": "demonstrates"
+  },
+  {
+    "evidence": "observed",
+    "reason": "The local diagram is rendered with native SVG and HTML controls.",
+    "source": "ex:chemistry-galvanic-cell",
+    "target": "tool:native-svg",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+    "source": "ex:chemistry-galvanic-cell",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "source": "ex:chemistry-galvanic-cell",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-galvanic-cell",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-gibbs-energy",
+    "target": "concept:chemistry-gibbs-energy",
+    "type": "demonstrates"
+  },
+  {
+    "evidence": "observed",
+    "reason": "The local diagram is rendered with native SVG and HTML controls.",
+    "source": "ex:chemistry-gibbs-energy",
+    "target": "tool:native-svg",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+    "source": "ex:chemistry-gibbs-energy",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "source": "ex:chemistry-gibbs-energy",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-gibbs-energy",
+    "target": "intent:predict",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-group-two",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-group-two",
+    "target": "concept:chemistry-group-two",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-group-two",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-halogen-displacement",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-halogen-displacement",
+    "target": "concept:chemistry-halogen-displacement",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-halogen-displacement",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-hess-cycle",
+    "target": "concept:chemistry-hess-cycle",
+    "type": "demonstrates"
+  },
+  {
+    "evidence": "observed",
+    "reason": "The local diagram is rendered with native SVG and HTML controls.",
+    "source": "ex:chemistry-hess-cycle",
+    "target": "tool:native-svg",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+    "source": "ex:chemistry-hess-cycle",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "source": "ex:chemistry-hess-cycle",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-hess-cycle",
+    "target": "intent:predict",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-hydrogen-bond",
+    "target": "concept:chemistry-hydrogen-bond",
+    "type": "demonstrates"
+  },
+  {
+    "evidence": "observed",
+    "reason": "The local diagram is rendered with native SVG and HTML controls.",
+    "source": "ex:chemistry-hydrogen-bond",
+    "target": "tool:native-svg",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+    "source": "ex:chemistry-hydrogen-bond",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "source": "ex:chemistry-hydrogen-bond",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-hydrogen-bond",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-hydrogen-emission",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-hydrogen-emission",
+    "target": "concept:chemistry-hydrogen-emission",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-hydrogen-emission",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-ideal-gas",
+    "target": "concept:chemistry-ideal-gas",
+    "type": "demonstrates"
+  },
+  {
+    "evidence": "observed",
+    "reason": "The local diagram is rendered with native SVG and HTML controls.",
+    "source": "ex:chemistry-ideal-gas",
+    "target": "tool:native-svg",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+    "source": "ex:chemistry-ideal-gas",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "source": "ex:chemistry-ideal-gas",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-ideal-gas",
+    "target": "intent:predict",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-ionic-lattice",
+    "target": "concept:chemistry-ionic-lattice",
+    "type": "demonstrates"
+  },
+  {
+    "evidence": "observed",
+    "reason": "The local diagram is rendered with native SVG and HTML controls.",
+    "source": "ex:chemistry-ionic-lattice",
+    "target": "tool:native-svg",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+    "source": "ex:chemistry-ionic-lattice",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "source": "ex:chemistry-ionic-lattice",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-ionic-lattice",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-ir-spectrum",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-ir-spectrum",
+    "target": "concept:chemistry-ir-spectrum",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-ir-spectrum",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-isotope-spectrum",
+    "target": "concept:chemistry-isotope-spectrum",
+    "type": "demonstrates"
+  },
+  {
+    "evidence": "observed",
+    "reason": "The local diagram is rendered with native SVG and HTML controls.",
+    "source": "ex:chemistry-isotope-spectrum",
+    "target": "tool:native-svg",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+    "source": "ex:chemistry-isotope-spectrum",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "source": "ex:chemistry-isotope-spectrum",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-isotope-spectrum",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-ligand-exchange",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-ligand-exchange",
+    "target": "concept:chemistry-ligand-exchange",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-ligand-exchange",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-limiting-reagent",
+    "target": "concept:chemistry-limiting-reagent",
+    "type": "demonstrates"
+  },
+  {
+    "evidence": "observed",
+    "reason": "The local diagram is rendered with native SVG and HTML controls.",
+    "source": "ex:chemistry-limiting-reagent",
+    "target": "tool:native-svg",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+    "source": "ex:chemistry-limiting-reagent",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "source": "ex:chemistry-limiting-reagent",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-limiting-reagent",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-mass-fragmentation",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-mass-fragmentation",
+    "target": "concept:chemistry-mass-fragmentation",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-mass-fragmentation",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-maxwell-boltzmann",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-maxwell-boltzmann",
+    "target": "concept:chemistry-maxwell-boltzmann",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-maxwell-boltzmann",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-mole-conversion",
+    "target": "concept:chemistry-mole-conversion",
+    "type": "demonstrates"
+  },
+  {
+    "evidence": "observed",
+    "reason": "The local diagram is rendered with native SVG and HTML controls.",
+    "source": "ex:chemistry-mole-conversion",
+    "target": "tool:native-svg",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+    "source": "ex:chemistry-mole-conversion",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "source": "ex:chemistry-mole-conversion",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-mole-conversion",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-nernst",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-nernst",
+    "target": "concept:chemistry-nernst",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-nernst",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-nmr-mapping",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-nmr-mapping",
+    "target": "concept:chemistry-nmr-mapping",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-nmr-mapping",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-orbital-overlap",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-orbital-overlap",
+    "target": "concept:chemistry-orbital-overlap",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-orbital-overlap",
+    "target": "concept:orbital-overlap",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-orbital-overlap",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-oxidation-state",
+    "target": "concept:chemistry-oxidation-state",
+    "type": "demonstrates"
+  },
+  {
+    "evidence": "observed",
+    "reason": "The local diagram is rendered with native SVG and HTML controls.",
+    "source": "ex:chemistry-oxidation-state",
+    "target": "tool:native-svg",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+    "source": "ex:chemistry-oxidation-state",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "source": "ex:chemistry-oxidation-state",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-oxidation-state",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-periodic-trends",
+    "target": "concept:chemistry-periodic-trends",
+    "type": "demonstrates"
+  },
+  {
+    "evidence": "observed",
+    "reason": "The local diagram is rendered with native SVG and HTML controls.",
+    "source": "ex:chemistry-periodic-trends",
+    "target": "tool:native-svg",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+    "source": "ex:chemistry-periodic-trends",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "source": "ex:chemistry-periodic-trends",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-periodic-trends",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-phase-diagram",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-phase-diagram",
+    "target": "concept:chemistry-phase-diagram",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-phase-diagram",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-rate-orders",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-rate-orders",
+    "target": "concept:chemistry-rate-orders",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-rate-orders",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-reaction-profile",
+    "target": "concept:chemistry-reaction-profile",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:chemistry-reaction-profile",
+    "target": "concept:reaction-coordinate",
+    "type": "demonstrates"
+  },
+  {
+    "evidence": "observed",
+    "reason": "The local diagram is rendered with native SVG and HTML controls.",
+    "source": "ex:chemistry-reaction-profile",
+    "target": "tool:native-svg",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+    "source": "ex:chemistry-reaction-profile",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "source": "ex:chemistry-reaction-profile",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-reaction-profile",
+    "target": "intent:predict",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-reaction-profile",
+    "target": "resource:reaction-profile",
+    "type": "yields"
+  },
+  {
+    "source": "ex:chemistry-solubility-product",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-solubility-product",
+    "target": "concept:chemistry-solubility-product",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-solubility-product",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-stereoisomers",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-stereoisomers",
+    "target": "concept:chemistry-stereoisomers",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-stereoisomers",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-successive-ionisation",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-successive-ionisation",
+    "target": "concept:chemistry-successive-ionisation",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-successive-ionisation",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-synthesis-map",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-synthesis-map",
+    "target": "concept:chemistry-synthesis-map",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-synthesis-map",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-titration-curve",
+    "target": "concept:chemistry-titration-curve",
+    "type": "demonstrates"
+  },
+  {
+    "evidence": "observed",
+    "reason": "The local diagram is rendered with native SVG and HTML controls.",
+    "source": "ex:chemistry-titration-curve",
+    "target": "tool:native-svg",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+    "source": "ex:chemistry-titration-curve",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "source": "ex:chemistry-titration-curve",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-titration-curve",
+    "target": "intent:predict",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-water-geometry",
+    "target": "concept:chemistry-water-geometry",
+    "type": "demonstrates"
+  },
+  {
+    "evidence": "observed",
+    "reason": "The local diagram is rendered with native SVG and HTML controls.",
+    "source": "ex:chemistry-water-geometry",
+    "target": "tool:native-svg",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "proposed",
+    "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+    "source": "ex:chemistry-water-geometry",
+    "target": "tool:svgjs",
+    "type": "implemented_with"
+  },
+  {
+    "source": "ex:chemistry-water-geometry",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-water-geometry",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "ex:chemistry-weak-acid-titration",
+    "target": "collection:chemistry-studies",
+    "type": "in_collection"
+  },
+  {
+    "source": "ex:chemistry-weak-acid-titration",
+    "target": "concept:chemistry-weak-acid-titration",
+    "type": "intended_to_demonstrate"
+  },
+  {
+    "source": "ex:chemistry-weak-acid-titration",
+    "target": "intent:identify",
+    "type": "supports_intent"
+  },
+  {
+    "source": "resource:reaction-profile",
+    "target": "concept:chemistry-reaction-profile",
+    "type": "implements"
+  },
+  {
+    "source": "resource:reaction-profile",
+    "target": "concept:reaction-coordinate",
+    "type": "implements"
+  },
+  {
+    "source": "resource:reaction-profile",
+    "target": "tool:native-svg",
+    "type": "requires"
+  },
+  {
+    "source": "topic:chemistry-acids-bases",
+    "target": "ex:chemistry-buffer",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-acids-bases",
+    "target": "ex:chemistry-conjugate-pairs",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-acids-bases",
+    "target": "ex:chemistry-titration-curve",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-acids-bases",
+    "target": "ex:chemistry-weak-acid-titration",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-acids-bases",
+    "target": "topic:chemistry",
+    "type": "part_of"
+  },
+  {
+    "source": "topic:chemistry-analytical",
+    "target": "ex:chemistry-chromatography",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-analytical",
+    "target": "ex:chemistry-ir-spectrum",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-analytical",
+    "target": "ex:chemistry-mass-fragmentation",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-analytical",
+    "target": "ex:chemistry-nmr-mapping",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-analytical",
+    "target": "topic:chemistry",
+    "type": "part_of"
+  },
+  {
+    "source": "topic:chemistry-atomic-structure",
+    "target": "ex:chemistry-electron-configuration",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-atomic-structure",
+    "target": "ex:chemistry-hydrogen-emission",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-atomic-structure",
+    "target": "ex:chemistry-isotope-spectrum",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-atomic-structure",
+    "target": "ex:chemistry-successive-ionisation",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-atomic-structure",
+    "target": "topic:chemistry",
+    "type": "part_of"
+  },
+  {
+    "source": "topic:chemistry-bonding",
+    "target": "ex:chemistry-bond-polarity",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-bonding",
+    "target": "ex:chemistry-ionic-lattice",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-bonding",
+    "target": "ex:chemistry-orbital-overlap",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-bonding",
+    "target": "ex:chemistry-water-geometry",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-bonding",
+    "target": "topic:chemistry",
+    "type": "part_of"
+  },
+  {
+    "source": "topic:chemistry-energetics",
+    "target": "ex:chemistry-born-haber",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-energetics",
+    "target": "ex:chemistry-gibbs-energy",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-energetics",
+    "target": "ex:chemistry-hess-cycle",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-energetics",
+    "target": "ex:chemistry-reaction-profile",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-energetics",
+    "target": "topic:chemistry",
+    "type": "part_of"
+  },
+  {
+    "source": "topic:chemistry-equilibrium",
+    "target": "ex:chemistry-composition-shift",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-equilibrium",
+    "target": "ex:chemistry-dynamic-equilibrium",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-equilibrium",
+    "target": "ex:chemistry-equilibrium-expression",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-equilibrium",
+    "target": "ex:chemistry-solubility-product",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-equilibrium",
+    "target": "topic:chemistry",
+    "type": "part_of"
+  },
+  {
+    "source": "topic:chemistry-kinetics",
+    "target": "ex:chemistry-catalyst-profile",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-kinetics",
+    "target": "ex:chemistry-first-order",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-kinetics",
+    "target": "ex:chemistry-maxwell-boltzmann",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-kinetics",
+    "target": "ex:chemistry-rate-orders",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-kinetics",
+    "target": "topic:chemistry",
+    "type": "part_of"
+  },
+  {
+    "source": "topic:chemistry-organic",
+    "target": "ex:chemistry-curly-arrow",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-organic",
+    "target": "ex:chemistry-functional-groups",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-organic",
+    "target": "ex:chemistry-stereoisomers",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-organic",
+    "target": "ex:chemistry-synthesis-map",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-organic",
+    "target": "topic:chemistry",
+    "type": "part_of"
+  },
+  {
+    "source": "topic:chemistry-periodicity",
+    "target": "ex:chemistry-group-two",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-periodicity",
+    "target": "ex:chemistry-halogen-displacement",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-periodicity",
+    "target": "ex:chemistry-ligand-exchange",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-periodicity",
+    "target": "ex:chemistry-periodic-trends",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-periodicity",
+    "target": "topic:chemistry",
+    "type": "part_of"
+  },
+  {
+    "source": "topic:chemistry-redox",
+    "target": "ex:chemistry-electrolysis",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-redox",
+    "target": "ex:chemistry-galvanic-cell",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-redox",
+    "target": "ex:chemistry-nernst",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-redox",
+    "target": "ex:chemistry-oxidation-state",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-redox",
+    "target": "topic:chemistry",
+    "type": "part_of"
+  },
+  {
+    "source": "topic:chemistry-states-solutions",
+    "target": "ex:chemistry-dissolution",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-states-solutions",
+    "target": "ex:chemistry-hydrogen-bond",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-states-solutions",
+    "target": "ex:chemistry-ideal-gas",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-states-solutions",
+    "target": "ex:chemistry-phase-diagram",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-states-solutions",
+    "target": "topic:chemistry",
+    "type": "part_of"
+  },
+  {
+    "source": "topic:chemistry-stoichiometry",
+    "target": "ex:chemistry-dilution",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-stoichiometry",
+    "target": "ex:chemistry-empirical-formula",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-stoichiometry",
+    "target": "ex:chemistry-limiting-reagent",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-stoichiometry",
+    "target": "ex:chemistry-mole-conversion",
+    "type": "has_example"
+  },
+  {
+    "source": "topic:chemistry-stoichiometry",
+    "target": "topic:chemistry",
+    "type": "part_of"
+  }
+]

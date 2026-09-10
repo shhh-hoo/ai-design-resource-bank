@@ -1,0 +1,76 @@
+{
+  "record": {
+    "agent_notes": "Strong bridge between code and timeline authoring.",
+    "avoid_when": "Motion must remain entirely code-generated or only simple transitions exist.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "keyframes",
+      "sequencing",
+      "visual-editor",
+      "threejs",
+      "react-three-fiber",
+      "html",
+      "svg"
+    ],
+    "docs": "https://www.theatrejs.com/docs/latest",
+    "domains": [
+      "animation",
+      "3d",
+      "creative-web"
+    ],
+    "ecosystem": [
+      "JavaScript",
+      "Three.js",
+      "React"
+    ],
+    "homepage": "https://www.theatrejs.com/",
+    "id": "tool:theatrejs",
+    "legacy_kind": "animation-authoring-tool",
+    "license": "Apache-2.0",
+    "source_refs": [
+      "source:tool-theatrejs"
+    ],
+    "subtype": "authoring-editor",
+    "summary": "Designers/developers benefit from visually authoring keyframes and tuning complex web/3D sequences.",
+    "tags": [
+      "animation",
+      "keyframes",
+      "3d",
+      "editor"
+    ],
+    "tier": "specialized",
+    "title": "Theatre.js",
+    "type": "Tool",
+    "use_when": "Designers/developers benefit from visually authoring keyframes and tuning complex web/3D sequences."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:camera-dolly",
+      "target": "tool:theatrejs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:explode-assemble",
+      "target": "tool:theatrejs",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-theatrejs",
+      "locator": "https://www.theatrejs.com/docs/latest",
+      "locator_type": "url",
+      "publisher": "Theatre.js",
+      "title": "Theatre.js official documentation",
+      "type": "Source"
+    }
+  ]
+}

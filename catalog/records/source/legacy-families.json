@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "registries/subject-visualization-families.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:legacy-families",
+    "locator": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/main/registries/subject-visualization-families.yaml",
+    "locator_type": "url",
+    "publisher": "AIDRB",
+    "title": "Legacy subject family seeds",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

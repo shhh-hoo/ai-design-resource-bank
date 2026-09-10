@@ -1,0 +1,26 @@
+[
+  {
+    "id": "tool:native-svg",
+    "type": "Tool",
+    "title": "Native SVG + HTML controls",
+    "subtype": "renderer",
+    "summary": "Small accessible vector diagrams with ordinary form controls.",
+    "capabilities": [
+      "svg-dom",
+      "paths",
+      "text",
+      "range-input",
+      "diagram"
+    ],
+    "use_when": "A small schematic with explicit fixed semantics and no chemistry structure solver.",
+    "avoid_when": "Molecular structure semantics, arbitrary plot engines, large datasets or numerical simulations.",
+    "alternatives": [
+      "tool:svgjs",
+      "tool:d3",
+      "tool:plotly-js"
+    ],
+    "source_refs": [
+      "source:svg-standard"
+    ]
+  }
+]

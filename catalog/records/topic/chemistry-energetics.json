@@ -1,0 +1,46 @@
+{
+  "record": {
+    "canonical_path": "subjects/chemistry/topics.json",
+    "example_ids": [
+      "ex:chemistry-reaction-profile",
+      "ex:chemistry-hess-cycle",
+      "ex:chemistry-born-haber",
+      "ex:chemistry-gibbs-energy"
+    ],
+    "id": "topic:chemistry-energetics",
+    "order": 4,
+    "parent": "topic:chemistry",
+    "prerequisites": [],
+    "scope": "Enthalpy changes, cycles, lattice energetics, entropy and Gibbs energy.",
+    "title": "Energetics",
+    "type": "SubjectTopic"
+  },
+  "relations": [
+    {
+      "source": "topic:chemistry-energetics",
+      "target": "ex:chemistry-born-haber",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-energetics",
+      "target": "ex:chemistry-gibbs-energy",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-energetics",
+      "target": "ex:chemistry-hess-cycle",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-energetics",
+      "target": "ex:chemistry-reaction-profile",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-energetics",
+      "target": "topic:chemistry",
+      "type": "part_of"
+    }
+  ],
+  "sources": []
+}

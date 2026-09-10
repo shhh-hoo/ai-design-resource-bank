@@ -1,0 +1,65 @@
+{
+  "record": {
+    "canonical_path": "registries/subject-visualization-families.yaml",
+    "id": "concept:grammar-spatial-map",
+    "source_refs": [
+      "source:legacy-families"
+    ],
+    "subtypes": [
+      "grammar"
+    ],
+    "summary": "Authentic geographic location, scale, distribution, movement, terrain, or spatial comparison.",
+    "title": "Spatial Map",
+    "tool_ids": [
+      "tool:maplibre-gl-js",
+      "tool:deckgl",
+      "tool:cesiumjs",
+      "tool:leaflet"
+    ],
+    "type": "Concept"
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-spatial-map",
+      "target": "tool:cesiumjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-spatial-map",
+      "target": "tool:deckgl",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-spatial-map",
+      "target": "tool:leaflet",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-spatial-map",
+      "target": "tool:maplibre-gl-js",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/subject-visualization-families.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:legacy-families",
+      "locator": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/main/registries/subject-visualization-families.yaml",
+      "locator_type": "url",
+      "publisher": "AIDRB",
+      "title": "Legacy subject family seeds",
+      "type": "Source"
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "ai_build": {
+    "availability": "available",
+    "example_id": "ex:chemistry-hydrogen-bond",
+    "method": {
+      "concepts": [
+        "concept:chemistry-hydrogen-bond"
+      ],
+      "failure_modes": [
+        "Do not describe a schematic as measured data or a molecular simulation."
+      ],
+      "fidelity_constraints": [
+        "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+      ],
+      "grammar": [
+        "symbolic-notation"
+      ],
+      "interaction_model": {
+        "response": "Static schematic; no simulated behavior.",
+        "trigger": "inspect"
+      },
+      "mechanisms": [],
+      "state_model": {
+        "deterministic": true,
+        "model": "hydrogen-bond"
+      },
+      "transfer_constraints": [
+        "Dashed O···H interaction is distinct from a solid intramolecular O–H bond."
+      ]
+    },
+    "resources": [],
+    "tools": [
+      {
+        "evidence": "observed",
+        "reason": "The local diagram is rendered with native SVG and HTML controls.",
+        "record": {
+          "alternatives": [
+            "tool:svgjs",
+            "tool:d3",
+            "tool:plotly-js"
+          ],
+          "avoid_when": "Molecular structure semantics, arbitrary plot engines, large datasets or numerical simulations.",
+          "canonical_path": "knowledge/tools/native-svg.json",
+          "capabilities": [
+            "svg-dom",
+            "paths",
+            "text",
+            "range-input",
+            "diagram"
+          ],
+          "id": "tool:native-svg",
+          "source_refs": [
+            "source:svg-standard"
+          ],
+          "subtype": "renderer",
+          "summary": "Small accessible vector diagrams with ordinary form controls.",
+          "title": "Native SVG + HTML controls",
+          "type": "Tool",
+          "use_when": "A small schematic with explicit fixed semantics and no chemistry structure solver."
+        }
+      },
+      {
+        "evidence": "proposed",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+        "record": {
+          "agent_notes": "Strong default for explanatory vector diagrams with controllable DOM geometry.",
+          "avoid_when": "Thousands of continuously moving sprites or 3D scenes are required.",
+          "canonical_path": "registries/frontend-tools.yaml",
+          "capabilities": [
+            "svg-dom",
+            "animation",
+            "gradients",
+            "masks",
+            "clipping",
+            "paths",
+            "text"
+          ],
+          "docs": "https://svgjs.dev/docs/3.2/",
+          "domains": [
+            "graphics",
+            "diagrams",
+            "education"
+          ],
+          "ecosystem": [
+            "JavaScript",
+            "SVG"
+          ],
+          "homepage": "https://svgjs.dev/",
+          "id": "tool:svgjs",
+          "legacy_kind": "graphics-library",
+          "license": "MIT",
+          "source_refs": [
+            "source:tool-svgjs"
+          ],
+          "subtype": "library",
+          "summary": "Direct SVG construction/manipulation is needed without D3's data-centric model.",
+          "tags": [
+            "svg",
+            "vector",
+            "diagram"
+          ],
+          "tier": "core",
+          "title": "SVG.js",
+          "type": "Tool",
+          "use_when": "Direct SVG construction/manipulation is needed without D3's data-centric model."
+        }
+      }
+    ]
+  },
+  "crosswalks": [
+    {
+      "canonical_scope": "Phase, intermolecular forces, ideal gases, mixtures and solubility.",
+      "node": {
+        "id": "ap:Unit 3",
+        "label": "Properties of Substances and Mixtures",
+        "section": "Unit 3"
+      },
+      "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+      "relation": "partial",
+      "source_id": "source:ap-chemistry-2024",
+      "topic_id": "topic:chemistry-states-solutions"
+    },
+    {
+      "canonical_scope": "Phase, intermolecular forces, ideal gases, mixtures and solubility.",
+      "node": {
+        "id": "cambridge:4",
+        "label": "States of matter",
+        "section": "4"
+      },
+      "rationale": "Canonical scope includes this source section and additional areas specified in the topic scope.",
+      "relation": "broader",
+      "source_id": "source:cambridge-9701-2025",
+      "topic_id": "topic:chemistry-states-solutions"
+    }
+  ],
+  "record": {
+    "canonical_path": "knowledge/examples/chemistry.json",
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "concept_ids": [
+      "concept:chemistry-hydrogen-bond"
+    ],
+    "failure_modes": [
+      "Do not describe a schematic as measured data or a molecular simulation."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "id": "ex:chemistry-hydrogen-bond",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "interaction": "inspect",
+    "interaction_model": {
+      "response": "Static schematic; no simulated behavior.",
+      "trigger": "inspect"
+    },
+    "kind": "REFERENCE",
+    "lifecycle": {
+      "collected": true,
+      "reusable": false,
+      "showable": true,
+      "verified": false
+    },
+    "medium": "diagram",
+    "preview": {
+      "description": "Dashed O···H interaction is distinct from a solid intramolecular O–H bond.",
+      "renderer": "hydrogen-bond",
+      "url": "#example/ex:chemistry-hydrogen-bond"
+    },
+    "resource_ids": [],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "state_model": {
+      "deterministic": true,
+      "model": "hydrogen-bond"
+    },
+    "subject_id": "topic:chemistry",
+    "summary": "Dashed O···H interaction is distinct from a solid intramolecular O–H bond.",
+    "title": "Hydrogen bonding · water pair",
+    "tool_choices": [
+      {
+        "evidence": "observed",
+        "id": "tool:native-svg",
+        "reason": "The local diagram is rendered with native SVG and HTML controls."
+      },
+      {
+        "evidence": "proposed",
+        "id": "tool:svgjs",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+      }
+    ],
+    "topic_ids": [
+      "topic:chemistry-states-solutions"
+    ],
+    "transfer_constraints": [
+      "Dashed O···H interaction is distinct from a solid intramolecular O–H bond."
+    ],
+    "type": "Example",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ]
+  },
+  "relations": [
+    {
+      "source": "ex:chemistry-hydrogen-bond",
+      "target": "concept:chemistry-hydrogen-bond",
+      "type": "demonstrates"
+    },
+    {
+      "evidence": "observed",
+      "reason": "The local diagram is rendered with native SVG and HTML controls.",
+      "source": "ex:chemistry-hydrogen-bond",
+      "target": "tool:native-svg",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance.",
+      "source": "ex:chemistry-hydrogen-bond",
+      "target": "tool:svgjs",
+      "type": "implemented_with"
+    },
+    {
+      "source": "ex:chemistry-hydrogen-bond",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-hydrogen-bond",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "topic:chemistry-states-solutions",
+      "target": "ex:chemistry-hydrogen-bond",
+      "type": "has_example"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-10",
+      "check_scope": "Original schematic studies; model equations and limitations recorded per Example. No third-party illustrations copied.",
+      "checked_at": "2026-09-10",
+      "id": "source:atlas-studies",
+      "locator": "https://github.com/shhh-hoo/ai-design-resource-bank/tree/9506274daec7c3dcfa7c9ecda2ecb5f7461d011c/app",
+      "locator_type": "repository",
+      "publisher": "AIDRB",
+      "title": "Original Chemistry diagram studies",
+      "type": "Source"
+    },
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-10",
+      "check_scope": "Official linked CED read; unit scope and course-at-a-glance verified. Mapping is editorial, not board endorsement.",
+      "checked_at": "2026-09-10",
+      "id": "source:ap-chemistry-2024",
+      "locator": "https://apcentral.collegeboard.org/media/pdf/ap-chemistry-course-and-exam-description.pdf",
+      "locator_type": "url",
+      "publisher": "College Board",
+      "title": "AP Chemistry Course and Exam Description, effective Fall 2024",
+      "type": "Source"
+    },
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-10",
+      "check_scope": "Official PDF downloaded and text inspected; content overview p10 and mapped sections. Scope mapping is editorial, not board endorsement.",
+      "checked_at": "2026-09-10",
+      "id": "source:cambridge-9701-2025",
+      "locator": "https://www.cambridgeinternational.org/Images/664563-2025-2027-syllabus.pdf",
+      "locator_type": "url",
+      "publisher": "Cambridge International Education",
+      "title": "Chemistry 9701 syllabus 2025–2027",
+      "type": "Source"
+    }
+  ]
+}

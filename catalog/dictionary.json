@@ -1,0 +1,767 @@
+[
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:anchored-callout",
+    "summary": "Keep a label attached to the same feature while the object or camera moves.",
+    "title": "Anchored callout"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:area-under-curve",
+    "summary": "Move a boundary and watch accumulated area grow with it.",
+    "title": "Area under a curve"
+  },
+  {
+    "adjacent_ids": [
+      "concept:chemistry-curly-arrow",
+      "concept:electron-pushing"
+    ],
+    "example_ids": [
+      "ex:chemistry-curly-arrow"
+    ],
+    "id": "concept:bond-morph",
+    "summary": "Show one bond weakening as another forms so structure change reads as one continuous event.",
+    "title": "Bond morph"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:camera-dolly",
+    "summary": "Move the viewpoint through depth so foreground and background change relationship, not just size.",
+    "title": "Camera dolly"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:canvas-focus-lens",
+    "summary": "Move a local lens across a dense canvas to reveal detail without committing to a full zoom.",
+    "title": "Canvas focus lens"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-bond-polarity"
+    ],
+    "id": "concept:chemistry-bond-polarity",
+    "summary": "Needs signed bond dipoles and a geometry-linked vector sum.",
+    "title": "Bond dipole and molecular polarity"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-born-haber"
+    ],
+    "id": "concept:chemistry-born-haber",
+    "summary": "Needs all atomisation, ionisation, electron-affinity and lattice steps with an explicit lattice sign convention.",
+    "title": "Born–Haber cycle"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-buffer"
+    ],
+    "id": "concept:chemistry-buffer",
+    "summary": "Needs mass balance and equilibrium response to added acid/base.",
+    "title": "Buffer response"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-catalyst-profile"
+    ],
+    "id": "concept:chemistry-catalyst-profile",
+    "summary": "Schematic alternative pathway has a lower barrier and unchanged endpoint enthalpies.",
+    "title": "Catalysed vs uncatalysed energy path"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-chromatography"
+    ],
+    "id": "concept:chemistry-chromatography",
+    "summary": "Rf = distance traveled by spot / distance traveled by solvent front, both from the baseline.",
+    "title": "Chromatography"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-composition-shift"
+    ],
+    "id": "concept:chemistry-composition-shift",
+    "summary": "Needs a mass-balanced equilibrium model and temperature-specific K.",
+    "title": "Equilibrium composition shift"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-conjugate-pairs"
+    ],
+    "id": "concept:chemistry-conjugate-pairs",
+    "summary": "NH₃ accepts a proton from H₂O, giving NH₄⁺ and OH⁻.",
+    "title": "Conjugate pairs"
+  },
+  {
+    "adjacent_ids": [
+      "concept:bond-morph",
+      "concept:electron-pushing"
+    ],
+    "example_ids": [
+      "ex:chemistry-curly-arrow"
+    ],
+    "id": "concept:chemistry-curly-arrow",
+    "summary": "Legacy electron-pushing and bond-morph seeds lack a fully specified chemical reaction and charge accounting.",
+    "title": "Curly-arrow mechanism"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-dilution"
+    ],
+    "id": "concept:chemistry-dilution",
+    "summary": "Needs a calibrated flask sequence and explicit concentration/volume units.",
+    "title": "Volumetric dilution"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-dissolution"
+    ],
+    "id": "concept:chemistry-dissolution",
+    "summary": "Needs solvent orientation around each ion, not generic moving particles.",
+    "title": "NaCl dissolution and hydration shells"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-dynamic-equilibrium"
+    ],
+    "id": "concept:chemistry-dynamic-equilibrium",
+    "summary": "Forward and reverse rates become equal; concentrations need not be equal.",
+    "title": "Dynamic equilibrium"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-electrolysis"
+    ],
+    "id": "concept:chemistry-electrolysis",
+    "summary": "Needs charge integration, Faraday stoichiometry and electrode conditions.",
+    "title": "Copper electrolysis"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-electron-configuration"
+    ],
+    "id": "concept:chemistry-electron-configuration",
+    "summary": "Nitrogen: 1s² 2s² 2p³; singly occupy degenerate 2p orbitals before pairing.",
+    "title": "Electron configuration"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-empirical-formula"
+    ],
+    "id": "concept:chemistry-empirical-formula",
+    "summary": "Needs a concrete mass dataset with conserved carbon and hydrogen.",
+    "title": "Combustion data → empirical formula"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-equilibrium-expression"
+    ],
+    "id": "concept:chemistry-equilibrium-expression",
+    "summary": "N₂ + 3H₂ ⇌ 2NH₃; exponents follow stoichiometry in the concentration form.",
+    "title": "Equilibrium expression"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-first-order"
+    ],
+    "id": "concept:chemistry-first-order",
+    "summary": "A → products: [A] = [A]₀ exp(−kt), constant temperature and one first-order pathway.",
+    "title": "First-order concentration decay"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-functional-groups"
+    ],
+    "id": "concept:chemistry-functional-groups",
+    "summary": "Condensed structural formulas compare alcohol and carboxylic acid groups.",
+    "title": "Functional groups"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-galvanic-cell"
+    ],
+    "id": "concept:chemistry-galvanic-cell",
+    "summary": "Zn anode oxidizes; electrons flow externally to the Cu cathode; salt bridge closes the ionic circuit.",
+    "title": "Galvanic cell"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-gibbs-energy"
+    ],
+    "id": "concept:chemistry-gibbs-energy",
+    "summary": "Illustrative constant ΔH / ΔS model: ΔG = ΔH − TΔS; not a prediction across phase transitions.",
+    "title": "Gibbs energy"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-group-two"
+    ],
+    "id": "concept:chemistry-group-two",
+    "summary": "Needs sourced solubility values and stated temperature.",
+    "title": "Group 2 hydroxide solubility trend"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-halogen-displacement"
+    ],
+    "id": "concept:chemistry-halogen-displacement",
+    "summary": "Needs actual species, observations and a balanced ionic equation.",
+    "title": "Halogen displacement"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-hess-cycle"
+    ],
+    "id": "concept:chemistry-hess-cycle",
+    "summary": "ΔH(C→CO) = ΔH(C→CO₂) − ΔH(CO→CO₂), with all equations balanced.",
+    "title": "Hess cycle"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-hydrogen-bond"
+    ],
+    "id": "concept:chemistry-hydrogen-bond",
+    "summary": "Dashed O···H interaction is distinct from a solid intramolecular O–H bond.",
+    "title": "Hydrogen bonding"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-hydrogen-emission"
+    ],
+    "id": "concept:chemistry-hydrogen-emission",
+    "summary": "Needs wavelength-calibrated Balmer lines linked to quantized levels.",
+    "title": "Hydrogen emission line transitions"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-ideal-gas"
+    ],
+    "id": "concept:chemistry-ideal-gas",
+    "summary": "At fixed amount and temperature, PV is constant; ideal-gas model only.",
+    "title": "Boyle’s law"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-ionic-lattice"
+    ],
+    "id": "concept:chemistry-ionic-lattice",
+    "summary": "A 2D slice of alternating ions; not the full six-coordinate 3D lattice.",
+    "title": "Ionic lattice"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-ir-spectrum"
+    ],
+    "id": "concept:chemistry-ir-spectrum",
+    "summary": "Needs a sourced spectrum with wavenumber axis and labeled absorption convention.",
+    "title": "IR spectrum"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-isotope-spectrum"
+    ],
+    "id": "concept:chemistry-isotope-spectrum",
+    "summary": "Schematic atomic 35Cl / 37Cl peaks at approximately 3:1; not the Cl₂ molecular-ion spectrum.",
+    "title": "Chlorine isotope mass spectrum"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-ligand-exchange"
+    ],
+    "id": "concept:chemistry-ligand-exchange",
+    "summary": "Needs coordination number, charge and solvent-dependent color evidence.",
+    "title": "Copper(II) ligand exchange"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-limiting-reagent"
+    ],
+    "id": "concept:chemistry-limiting-reagent",
+    "summary": "Three H₂ plus one O₂ yield two H₂O with one H₂ left over; amounts are molecular ratios.",
+    "title": "Limiting reagent"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-mass-fragmentation"
+    ],
+    "id": "concept:chemistry-mass-fragmentation",
+    "summary": "Needs a specific spectrum and chemically valid fragment masses.",
+    "title": "Mass spectrum"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-maxwell-boltzmann"
+    ],
+    "id": "concept:chemistry-maxwell-boltzmann",
+    "summary": "Needs normalized distributions and an activation-energy tail; generic waves do not qualify.",
+    "title": "Maxwell–Boltzmann distribution"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-mole-conversion"
+    ],
+    "id": "concept:chemistry-mole-conversion",
+    "summary": "For 18.0 g water using M = 18.0 g mol⁻¹: 1.00 mol and approximately 6.02 × 10²³ molecules.",
+    "title": "Mass ↔ amount ↔ particles"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-nernst"
+    ],
+    "id": "concept:chemistry-nernst",
+    "summary": "Needs specified reaction quotient, electron number and temperature.",
+    "title": "Cell potential vs concentration"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-nmr-mapping"
+    ],
+    "id": "concept:chemistry-nmr-mapping",
+    "summary": "Needs sourced chemical shifts, integration and splitting; no invented spectrum.",
+    "title": "NMR spectrum → structure"
+  },
+  {
+    "adjacent_ids": [
+      "concept:orbital-overlap"
+    ],
+    "example_ids": [
+      "ex:chemistry-orbital-overlap"
+    ],
+    "id": "concept:chemistry-orbital-overlap",
+    "summary": "Legacy overlap seed lacks orbital phase and symmetry fidelity; a domain-correct example is needed.",
+    "title": "σ / π orbital overlap"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-oxidation-state"
+    ],
+    "id": "concept:chemistry-oxidation-state",
+    "summary": "In MnO₄⁻, four O at −2 require Mn at +7 to sum to −1.",
+    "title": "Oxidation states"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-periodic-trends"
+    ],
+    "id": "concept:chemistry-periodic-trends",
+    "summary": "Qualitative trend includes the Mg→Al and P→S exceptions; no fabricated measurements.",
+    "title": "Period 3"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-phase-diagram"
+    ],
+    "id": "concept:chemistry-phase-diagram",
+    "summary": "Needs sourced phase boundaries with correctly signed solid–liquid slope.",
+    "title": "Pressure–temperature phase diagram"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-rate-orders"
+    ],
+    "id": "concept:chemistry-rate-orders",
+    "summary": "Needs an experimental table with independently varied reactants and stated uncertainty.",
+    "title": "Initial-rate table → reaction orders"
+  },
+  {
+    "adjacent_ids": [
+      "concept:reaction-coordinate"
+    ],
+    "example_ids": [
+      "ex:chemistry-reaction-profile"
+    ],
+    "id": "concept:chemistry-reaction-profile",
+    "summary": "Compare the activation barrier with the reactant–product enthalpy difference.",
+    "title": "Reaction profile"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-solubility-product"
+    ],
+    "id": "concept:chemistry-solubility-product",
+    "summary": "Needs ion product versus Ksp with dilution and stoichiometry preserved.",
+    "title": "Solubility product"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-stereoisomers"
+    ],
+    "id": "concept:chemistry-stereoisomers",
+    "summary": "Needs correct priority assignment and explicit double-bond geometry.",
+    "title": "E/Z isomerism"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-successive-ionisation"
+    ],
+    "id": "concept:chemistry-successive-ionisation",
+    "summary": "Needs sourced successive ionisation data and the shell-boundary jump.",
+    "title": "Successive ionisation energies"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-synthesis-map"
+    ],
+    "id": "concept:chemistry-synthesis-map",
+    "summary": "Needs a specific route with reagents, conditions and competing pathways.",
+    "title": "Organic synthesis"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-titration-curve"
+    ],
+    "id": "concept:chemistry-titration-curve",
+    "summary": "25.0 mL 0.100 M HCl titrated with 0.100 M NaOH at 25 °C; ideal activities.",
+    "title": "Strong acid–base titration curve"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-water-geometry"
+    ],
+    "id": "concept:chemistry-water-geometry",
+    "summary": "Bent H₂O, approximately 104.5°; planar schematic omits the 3D lone-pair arrangement.",
+    "title": "VSEPR geometry"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:chemistry-weak-acid-titration"
+    ],
+    "id": "concept:chemistry-weak-acid-titration",
+    "summary": "Needs a calibrated curve, buffer region and pH = pKa at half equivalence.",
+    "title": "Weak-acid titration"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:depth-parallax",
+    "summary": "Move visual layers at different rates so depth emerges from relative motion.",
+    "title": "Depth parallax"
+  },
+  {
+    "adjacent_ids": [
+      "concept:bond-morph",
+      "concept:chemistry-curly-arrow"
+    ],
+    "example_ids": [
+      "ex:chemistry-curly-arrow"
+    ],
+    "id": "concept:electron-pushing",
+    "summary": "Animate a curved arrow as a state change, not as decoration on a static scheme.",
+    "title": "Electron pushing"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:explode-assemble",
+    "summary": "Separate a system into identifiable parts, then bring the same parts back into one whole.",
+    "title": "Explode / assemble"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:focus-context",
+    "summary": "Emphasize one node and its neighborhood without erasing the rest of the network.",
+    "title": "Focus + context"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:force-vector-overlay",
+    "summary": "Put forces directly on the object whose motion they explain.",
+    "title": "Force vector overlay"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:grammar-3d-spatial",
+    "summary": "Shape, orientation, depth, camera, assembly, or spatial relationship that is genuinely three-dimensional.",
+    "title": "3D Spatial"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:grammar-audio-time",
+    "summary": "Sound aligned with time, pitch, rhythm, spectrum, events, or notation.",
+    "title": "Audio Time"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:grammar-code-execution",
+    "summary": "Program, algorithm, memory, network, or machine state stepped through while identity is preserved.",
+    "title": "Code Execution"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:grammar-composition-layer",
+    "summary": "A visual or designed whole decomposed into layers, materials, hierarchy, or compositional decisions.",
+    "title": "Composition Layer"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:grammar-dynamic-geometry",
+    "summary": "Geometric construction whose dependent objects update from shared constraints.",
+    "title": "Dynamic Geometry"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:grammar-dynamic-system",
+    "summary": "State evolving through time under explicit physical, algorithmic, or rule-based dynamics.",
+    "title": "Dynamic System"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:grammar-evidence-comparison",
+    "summary": "Multiple claims, sources, observations, or cases aligned so agreement, conflict, and provenance stay visible.",
+    "title": "Evidence Comparison"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:grammar-field-flow",
+    "summary": "Continuous flow, transport, gradient, circulation, or spatially varying field.",
+    "title": "Field Flow"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:grammar-functional-graph",
+    "summary": "Quantitative relationship shown as one or more linked functions, parameters, loci, or curves.",
+    "title": "Functional Graph"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:grammar-image-comparison",
+    "summary": "Visual artifacts compared through aligned crops, overlays, annotations, or spatial correspondence.",
+    "title": "Image Comparison"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:grammar-micro-macro-bridge",
+    "summary": "Link microscopic or local mechanisms to observable macroscopic behavior.",
+    "title": "Micro Macro Bridge"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:grammar-network-relation",
+    "summary": "Entities linked by dependency, influence, exchange, hierarchy, or association.",
+    "title": "Network Relation"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:grammar-optimization-tradeoff",
+    "summary": "Feasible regions, constraints, marginal change, objective values, or competing quantities.",
+    "title": "Optimization Tradeoff"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:grammar-spatial-map",
+    "summary": "Authentic geographic location, scale, distribution, movement, terrain, or spatial comparison.",
+    "title": "Spatial Map"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:grammar-state-process",
+    "summary": "Discrete states and transitions where sequence, branching, feedback, or causality matters.",
+    "title": "State Process"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:grammar-statistical-distribution",
+    "summary": "Distribution, sample, uncertainty, comparison, or statistical model shown with truthful scales.",
+    "title": "Statistical Distribution"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:grammar-structure-anatomy",
+    "summary": "Stable identity of parts within a larger object, organism, molecule, device, or designed system.",
+    "title": "Structure Anatomy"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:grammar-symbolic-notation",
+    "summary": "Structured notation whose spatial placement conveys meaning, such as score, syntax, logic, or technical convention.",
+    "title": "Symbolic Notation"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:grammar-time-sequence",
+    "summary": "Events, stages, trajectories, or evidence arranged through time with sequence preserved.",
+    "title": "Time Sequence"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:grammar-vector-field",
+    "summary": "Magnitude and direction distributed through space or attached to an object.",
+    "title": "Vector Field"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:graph-relayout",
+    "summary": "Change the graph layout while keeping node identity visually continuous.",
+    "title": "Graph re-layout continuity"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:mask-transition",
+    "summary": "Reveal the next state through a controlled moving window instead of cross-fading everything.",
+    "title": "Mask transition"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:movable-tangent",
+    "summary": "Drag a point along a curve to connect local slope with the derivative.",
+    "title": "Movable tangent"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:noise-threshold-wipe",
+    "summary": "Reveal the next state through a spatial noise threshold rather than a clean geometric edge.",
+    "title": "Noise-threshold wipe"
+  },
+  {
+    "adjacent_ids": [
+      "concept:chemistry-orbital-overlap"
+    ],
+    "example_ids": [
+      "ex:chemistry-orbital-overlap"
+    ],
+    "id": "concept:orbital-overlap",
+    "summary": "Move orbitals together and make overlap appear as a spatial relationship.",
+    "title": "Orbital overlap"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:particle-attractor",
+    "summary": "Let many small elements reveal an invisible field by moving toward a controllable attractor.",
+    "title": "Particle attractor"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:pinned-reveal",
+    "summary": "Hold one explanatory object steady while the surrounding narrative advances.",
+    "title": "Pinned reveal"
+  },
+  {
+    "adjacent_ids": [
+      "concept:chemistry-reaction-profile"
+    ],
+    "example_ids": [
+      "ex:chemistry-reaction-profile"
+    ],
+    "id": "concept:reaction-coordinate",
+    "summary": "Scrub from reactants through the transition state to products on one energy path.",
+    "title": "Reaction coordinate"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:scroll-scrub",
+    "summary": "Map scroll position to one deterministic playhead instead of firing disconnected enter animations.",
+    "title": "Scroll-scrub timeline"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:semantic-zoom",
+    "summary": "Reveal more meaning as the user zooms in instead of merely scaling pixels.",
+    "title": "Semantic zoom"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:split-text-reveal",
+    "summary": "Reveal words or lines in reading order so motion reinforces phrasing instead of fragmenting it.",
+    "title": "Split-text reveal"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:stage-spotlight",
+    "summary": "Move one pool of attention across a scene while everything else remains present.",
+    "title": "Stage spotlight"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:vector-decomposition",
+    "summary": "Drag one vector and keep its horizontal and vertical components attached.",
+    "title": "Vector decomposition"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [],
+    "id": "concept:wave-propagation",
+    "summary": "Animate phase through space while keeping amplitude and wavelength legible.",
+    "title": "Wave propagation"
+  }
+]

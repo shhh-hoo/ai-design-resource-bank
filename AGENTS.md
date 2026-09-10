@@ -4,11 +4,15 @@ This repository is an **AI-usable design resource bank**, not a bookmark dump.
 
 When a user provides a file, image, repository, article, website, video, prompt, UI reference, visual effect, component, or other potentially reusable resource, process it using `skills/resource-ingest/SKILL.md`.
 
+## Governing architecture
+
+Read `docs/KNOWLEDGE-ATLAS-CONTRACT.md` first. It supersedes earlier board/subject routing instructions. Content entities are Concept, Example, Tool and Resource; Method is a generated view. Both discovery projections operate in parallel. Explicit selection commit precedes AI lock. Default navigation is Atlas | Explore | Dictionary | Index.
+
 ## Core rule
 
 Store the **reusable mechanism**, not merely the source.
 
-Every accepted resource must become a self-contained package under:
+Only accepted **reusable implementation material** becomes a Resource Package. Perceivable references are Examples and may yield zero Resources. Do not force extraction. Resource Packages live under:
 
 `resources/<domain>/<slug>/`
 
@@ -44,13 +48,7 @@ Before choosing an implementation:
 5. follow `skills/select-frontend-resource/SKILL.md` for nontrivial selection decisions;
 6. prefer an existing verified Resource Package when one already contains the needed mechanism.
 
-For curriculum or subject-matter visualization, add a curriculum-aware routing step **before** tool selection:
-
-1. identify the subject in `registries/curriculum-subjects.yaml`;
-2. read its family in `registries/subject-visualization-families.yaml`;
-3. translate the actual learning relationship into one of the atlas visualization grammars;
-4. then select the narrowest existing tool/mechanism from the bank;
-5. consult `docs/SUBJECT-VISUALIZATION-ATLAS.md` for fidelity rules and cross-subject implementation priorities.
+For subject-matter visualization, browse `subjects/` canonical knowledge and its concrete Example inventory first. Curriculum files supply provenance/crosswalks; they do not own Human taxonomy. Resolve selected Examples to generated Method + Tool + Resource evidence. Reuse legacy registries through `scripts/atlas_core.py`, never by making a competing editable copy.
 
 Do not build one bespoke visualization stack per school subject. Curriculum labels are retrieval metadata; implementations should be shared when the underlying relationship is the same. A derivative, a supply-demand equilibrium, a migration flow, and a protein structure should not be forced through one generic renderer simply because all are “visualizations.”
 
@@ -60,26 +58,17 @@ Prefer domain semantics over generic rendering when correctness matters: e.g. a 
 
 When a registry technique is used successfully and is worth reusing, promote the concrete mechanism into a Resource Package.
 
-## Web board: human-readable first
+## Visual / Interactive Web
 
-When editing the navigable board, follow `docs/EDITORIAL-UI-CONTRACT.md`.
+Follow `docs/EDITORIAL-UI-CONTRACT.md` and `docs/KNOWLEDGE-ATLAS-CONTRACT.md`.
 
-The default Explore surface is for human browsing, not for exposing every machine-readable field. Use progressive disclosure:
-
-`subject → mechanism → live demo → recommended tool → technical detail`
-
-Default UI rules:
-
-- black, white, off-white, and neutral grey for interface chrome;
-- no rainbow domain system;
-- color only as a restrained interaction/demo accent or meaningful semantic distinction;
-- editorial typography, rules, spacing, and hierarchy before dashboard cards, pills, gradients, shadows, or decorative chrome;
-- one sentence per mechanism on the Explore surface;
-- licenses, ecosystems, tags, tiers, rights, maintenance notes, and similar metadata belong in details or Index/Search views;
-- do not display totals or vanity statistics unless they help a decision;
-- each live demo proves one mechanism only.
-
-Do not reintroduce information density simply because the underlying registries contain more data.
+- Default Atlas: subject → canonical topic → concrete visual examples.
+- Example cards show a preview, a short name and truthful LIVE / REFERENCE / GAP kind.
+- Detail opens visual/demo first. AI Build, implementation and curriculum provenance are collapsed.
+- Explore discovers Examples; Dictionary explains Concepts; Index exposes compact exhaustive metadata.
+- Neutral editorial chrome, restrained meaningful color, keyboard access and responsive layouts.
+- Old web/ assets are compatibility evidence only and must not load from index.html.
+- Edit canonical inputs; regenerate catalog/ and catalog.yaml. Run schema, drift, retrieval and browser checks.
 
 ## Provenance and rights
 

@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "registries/reference-galleries.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:gallery-cesium-sandcastle",
+    "locator": "https://cesium.com/learn/cesiumjs-sandcastle/",
+    "locator_type": "url",
+    "publisher": "Cesium Sandcastle",
+    "title": "Cesium Sandcastle",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

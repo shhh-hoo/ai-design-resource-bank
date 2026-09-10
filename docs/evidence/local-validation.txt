@@ -1,0 +1,76 @@
+$ python3 scripts/validate_atlas.py
+{
+  "records": 332,
+  "content": {
+    "Collection": 1,
+    "Concept": 92,
+    "Example": 48,
+    "Intent": 4,
+    "Source": 125,
+    "Tool": 48,
+    "SubjectTopic": 13,
+    "Resource": 1
+  },
+  "examples": {
+    "REFERENCE": 16,
+    "GAP": 26,
+    "LIVE": 6
+  },
+  "crosswalks": 31,
+  "adapter_counts": {
+    "mechanisms": 24,
+    "tools": 47,
+    "curriculum_subjects": 99,
+    "families": 17,
+    "resources": 1
+  }
+}
+
+$ python3 scripts/validate_resources.py
+Resource validation passed: 1 package(s), 1 catalog entry/entries.
+
+$ python3 scripts/validate_registries.py
+Registry validation passed: 47 frontend tools, 23 reference galleries.
+
+$ python3 scripts/validate_mechanisms.py
+Mechanism validation passed: 24 mechanism(s), 9 chapter(s).
+
+$ python3 scripts/validate_subject_atlas.py
+Subject visualization atlas validation passed: 57 Cambridge entries, 42 AP subjects, 17 families, 20 visualization grammars, 45 official provenance anchors.
+
+$ python3 scripts/validate_grammar_mechanisms.py
+Grammar-mechanism routing validation passed: 20 grammars, 49 curated links.
+
+$ python3 scripts/build_catalog.py --check
+{"records": 332, "relations": 368, "examples": 48, "crosswalks": 31, "drift": "clean"}
+
+$ python3 -m unittest discover -s tests -p test_*.py
+....................
+----------------------------------------------------------------------
+Ran 20 tests in 4.036s
+
+OK
+{"records": 348, "relations": 392, "examples": 48, "crosswalks": 31, "drift": "generated"}
+{"records": 348, "relations": 392, "examples": 48, "crosswalks": 31, "drift": "clean"}
+
+$ node --test tests/models.test.mjs
+✔ Reaction endpoints, unique maximum, signs and exact transition state (0.719125ms)
+✔ Boyle invariant and first order half life (0.072541ms)
+✔ Hess route closure and Gibbs crossover (0.046041ms)
+✔ Titration dilution, water equilibrium and monotonicity (0.194417ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 36.174125
+
+$ node --check app/atlas.js
+
+$ node --check app/live.js
+
+$ python3 scripts/build_site.py
+{"records": 332, "relations": 368, "examples": 48, "crosswalks": 31, "drift": "clean"}
+Atlas staged in _site; legacy board is retained in Git but excluded from Pages startup/deployment.

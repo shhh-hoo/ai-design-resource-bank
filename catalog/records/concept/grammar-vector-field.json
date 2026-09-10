@@ -1,0 +1,65 @@
+{
+  "record": {
+    "canonical_path": "registries/subject-visualization-families.yaml",
+    "id": "concept:grammar-vector-field",
+    "source_refs": [
+      "source:legacy-families"
+    ],
+    "subtypes": [
+      "grammar"
+    ],
+    "summary": "Magnitude and direction distributed through space or attached to an object.",
+    "title": "Vector Field",
+    "tool_ids": [
+      "tool:mafs",
+      "tool:plotly-js",
+      "tool:threejs",
+      "tool:p5js"
+    ],
+    "type": "Concept"
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-vector-field",
+      "target": "tool:mafs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-vector-field",
+      "target": "tool:p5js",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-vector-field",
+      "target": "tool:plotly-js",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-vector-field",
+      "target": "tool:threejs",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/subject-visualization-families.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:legacy-families",
+      "locator": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/main/registries/subject-visualization-families.yaml",
+      "locator_type": "url",
+      "publisher": "AIDRB",
+      "title": "Legacy subject family seeds",
+      "type": "Source"
+    }
+  ]
+}
