@@ -22,7 +22,7 @@ CREATE TABLE entities (
 CREATE TABLE concepts (
   entity_id TEXT NOT NULL REFERENCES entities(id) ON DELETE RESTRICT,
   kinds_json TEXT NOT NULL DEFAULT '[]' CHECK (json_valid(kinds_json) AND json_type(kinds_json) = 'array'),
-  definition TEXT NOT NULL,
+  definition TEXT,
   grammar_json TEXT NOT NULL DEFAULT '{}' CHECK (json_valid(grammar_json) AND json_type(grammar_json) = 'object'),
   PRIMARY KEY (entity_id)
 );
@@ -30,7 +30,7 @@ CREATE TABLE concepts (
 CREATE TABLE examples (
   entity_id TEXT NOT NULL REFERENCES entities(id) ON DELETE RESTRICT,
   example_kind TEXT NOT NULL CHECK (example_kind IN ('LIVE','REFERENCE','GAP')),
-  origin_kind TEXT NOT NULL CHECK (origin_kind IN ('real_reference','authored_study','generated_study')),
+  origin_kind TEXT CHECK (origin_kind IN ('real_reference','authored_study','generated_study')),
   medium TEXT,
   formats_json TEXT NOT NULL DEFAULT '[]' CHECK (json_valid(formats_json) AND json_type(formats_json) = 'array'),
   creator TEXT,
@@ -56,7 +56,7 @@ CREATE TABLE tools (
 
 CREATE TABLE resources (
   entity_id TEXT NOT NULL REFERENCES entities(id) ON DELETE RESTRICT,
-  resource_type TEXT NOT NULL CHECK (resource_type IN ('code','prompt','skill','asset','spec','mixed')),
+  resource_type TEXT CHECK (resource_type IN ('code','prompt','skill','asset','spec','mixed')),
   package_path TEXT NOT NULL UNIQUE,
   entrypoint TEXT,
   version TEXT,
@@ -133,12 +133,11 @@ CREATE TABLE collections (
   name TEXT NOT NULL,
   description TEXT,
   canonical_locator TEXT NOT NULL UNIQUE,
-  curator TEXT NOT NULL
+  curator TEXT
 );
 
 CREATE TABLE sources (
   id TEXT NOT NULL PRIMARY KEY,
-  source_key TEXT NOT NULL UNIQUE,
   title TEXT NOT NULL,
   publisher TEXT NOT NULL,
   locator_type TEXT NOT NULL CHECK (locator_type IN ('url','file','image','video','repository','paper','prompt','other','user-upload')),
@@ -158,10 +157,10 @@ CREATE TABLE artifacts (
   id TEXT NOT NULL PRIMARY KEY,
   owner_entity_id TEXT NOT NULL REFERENCES entities(id) ON DELETE RESTRICT,
   artifact_type TEXT NOT NULL,
-  mime_type TEXT NOT NULL,
+  mime_type TEXT,
   path TEXT NOT NULL UNIQUE,
   content_hash TEXT,
-  origin_kind TEXT NOT NULL CHECK (origin_kind IN ('reference_capture','extracted','reimplemented','generated','authored')),
+  origin_kind TEXT CHECK (origin_kind IN ('reference_capture','extracted','reimplemented','generated','authored')),
   role TEXT NOT NULL,
   rights_status TEXT NOT NULL DEFAULT 'unknown' CHECK (rights_status IN ('unknown','known','restricted')),
   license TEXT,

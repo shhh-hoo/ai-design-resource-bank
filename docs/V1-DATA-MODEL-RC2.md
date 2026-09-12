@@ -13,7 +13,7 @@ The documents are independent and are reconciled against real cases, query needs
 
 Creative World remains primary. Canonical content identities remain Concept, Example, Tool and Resource. Academic World (Subject / Knowledge Point) and implementation resolution (Capability / Primitive) are required orthogonal dimensions.
 
-Representation methods do **not** get a parallel identity table. A representation method is a multi-valued role of a Concept (`representation_method`), so Dictionary, Subject, Example and Resource views can refer to the same stable Concept ID.
+Representation methods do **not** get a parallel identity table. A representation method is a multi-valued role of a Concept (`representation_method`), so Dictionary, Subject, Example and Resource views can refer to the same stable Concept ID. This does **not** make the existing generated `Method` view canonical: `Method` remains an Example-specific synthesized view, while `representation_method` names a reusable generic Concept.
 
 Observed facts and contextual recommendations are separate. `built_with` requires evidence of actual use; `can_implement_with`, `use_when`, `avoid_when`, knowledge-point representation choices, similarity and alternatives remain reviewable recommendations with purpose, context, rationale and curator.
 
@@ -21,7 +21,7 @@ Knowledge structure is a graph. Subject membership is explicit; knowledge-point 
 
 Tool resolution is Tool + Capability + Primitive. Primitive↔Capability is many-to-many. Tool subtypes preserve the existing canonical Atlas vocabulary (`library`, `renderer`, `simulation-engine`, `authoring-editor`, etc.). Support rows retain mode/scope/provider semantics; actual Example/Resource use of a Primitive is recorded separately.
 
-Source projection preserves the existing canonical provenance contract: `locator_type + locator`, captured/checked dates and checking scope. `Source.url` is not reintroduced; URL is only one locator type. Evidence locators point to the exact supporting segment inside a versioned Source.
+Source projection preserves the existing canonical provenance contract: `locator_type + locator`, captured/checked dates and checking scope. `Source.url` is not reintroduced; URL is only one locator type. Evidence locators point to the exact supporting segment inside a versioned Source. Existing stable namespaces are preserved rather than renamed (`ex:*`, `concept:*`, `tool:*`, `resource:*`, `source:*`, `topic:*`, `intent:*`, `collection:*`). The normalized `subjects` projection uses existing root `topic:*` identities; it does not mint `subject:*` aliases. New support records use explicit namespaces such as `capability:*`, `primitive:*`, `domain:*` and `evidence:*`.
 
 ## RC2 fixes from adversarial testing
 
@@ -42,20 +42,25 @@ Hot-path reverse indexes are also added for intent→entity, subject→entity an
 - `schemas/relational-v1/02-relations.sql` — 16 relation tables.
 - `schemas/relational-v1/03-constraints-views.sql` — endpoint typing, review invalidation, hash-staleness triggers, reverse indexes and guarded `fact_*` views.
 - `scripts/validate_relational_model.py` — schema loader plus cross-table, graph, evidence, source-date and publication checks; `--self-check` builds an in-memory database.
-- `tests/test_relational_model.py` — 18 baseline structural tests.
+- `tests/test_relational_model.py` — 20 baseline/compatibility structural tests.
 - `tests/test_relational_model_adversarial.py` — heterogeneous positive cases and adversarial lifecycle/publication/index checks.
 
 ## Verification in this PR
 
 Local reference run before opening the PR:
 
-- baseline structural tests: **18/18 passed**
+- baseline/compatibility structural tests: **20/20 passed**
 - adversarial/integration suite: **18/18 passed**
-- total: **36/36 passed**
-- generated schema drift check: passed
+- total: **38/38 passed**
+- relational schema self-check: passed
+- full existing-repository drift/browser suite: pending GitHub CI (the isolated runner did not have a network clone of the repository)
 
 The tests use in-memory SQLite and synthetic fixtures. They prove the modeled structural behavior only; they do not prove reference quality, scientific correctness, retrieval quality or frontend-generation improvement.
 
 ## Still required before freeze
 
 RC2 remains unfrozen until real corpus migration and product-level validation pass: heterogeneous real references/resources without forced identities, consistent Web/Machine projections for the same ID/revision/evidence, commit-before-lock integrity, and the three M1 briefs (theatrical portfolio, high-density editorial page, subject visualization).
+
+## Migration compatibility notes
+
+The projection intentionally allows metadata that the current canonical corpus does not yet state to remain NULL instead of inferring it. In particular, `examples.origin_kind`, `resources.resource_type`, artifact MIME/origin fields, and Collection curator metadata are optional in the relational projection. A migration may populate them only when the canonical record or a reviewed transform supports the value. Existing Concept subtypes such as `knowledge` and `mechanism` remain valid roles; `representation_method` is additive rather than a destructive rename.

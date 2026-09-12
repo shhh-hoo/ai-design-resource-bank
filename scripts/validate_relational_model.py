@@ -12,7 +12,7 @@ from datetime import date
 from collections import defaultdict
 from typing import Iterable
 
-KINDS = {'pattern','technique','style','medium','material','principle','format','interaction_pattern','motion','component','effect','texture','lighting','composition','representation_method','cinematography','stagecraft'}
+KINDS = {'pattern','technique','style','medium','material','principle','format','interaction_pattern','motion','component','effect','texture','lighting','composition','representation_method','cinematography','stagecraft','mechanism','knowledge'}
 
 def _cyclic(edges: Iterable[tuple[str,str]]) -> bool:
     graph: dict[str,list[str]] = defaultdict(list)
@@ -33,6 +33,12 @@ def validate(db: sqlite3.Connection) -> list[str]:
     if db.execute('PRAGMA foreign_keys').fetchone()[0] != 1:
         errors.append('foreign_keys must be enabled on the connection')
     if db.execute('PRAGMA foreign_key_check').fetchall(): errors.append('foreign key violations')
+    prefixes={'concept':'concept:','example':'ex:','tool':'tool:','resource':'resource:'}
+    for eid,typ in db.execute('SELECT id,entity_type FROM entities'):
+        if not eid.startswith(prefixes[typ]): errors.append(f'canonical entity ID namespace mismatch: {eid}')
+    for table,prefix in (('sources','source:'),('subjects','topic:'),('knowledge_points','topic:'),('intents','intent:'),('collections','collection:'),('creative_domains','domain:'),('tool_capabilities','capability:'),('tool_primitives','primitive:'),('evidence_sets','evidence:')):
+        for value, in db.execute(f'SELECT id FROM {table}'):
+            if not value.startswith(prefix): errors.append(f'canonical/support ID namespace mismatch: {value}')
     for eid, typ in db.execute('SELECT id,entity_type FROM entities'):
         children=[]
         for t in ('concepts','examples','tools','resources'):
@@ -125,10 +131,11 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--self-check', action='store_true')
     args=parser.parse_args()
-    if args.self_check or True:
-        errors=self_check()
-        if errors: raise SystemExit('\n'.join(errors))
-        print('AIDRB relational RC2 self-check passed (31 tables).')
+    if not args.self_check:
+        parser.error('use --self-check for the standalone projection check')
+    errors=self_check()
+    if errors: raise SystemExit('\n'.join(errors))
+    print('AIDRB relational RC2 self-check passed (31 tables).')
 
 if __name__=='__main__':
     main()
