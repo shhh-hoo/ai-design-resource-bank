@@ -1,0 +1,30 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Linked computation inspector demo</title>
+<style>
+  body{font:14px/1.4 system-ui;max-width:850px;margin:40px auto;padding:0 20px}
+  .grid{display:grid;grid-template-columns:repeat(4,48px);gap:4px}.grid button{height:48px;border:1px solid #bbb;background:white}
+  .grid button[aria-current=true]{background:#111;color:white}.views{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:28px}
+  pre{background:#f3f3f0;padding:16px;overflow:auto}
+</style>
+<h1>One selection → input → operation → output</h1>
+<div class="grid" id="grid"></div>
+<div class="views"><section><h2>Linked computation</h2><pre id="detail"></pre></section><section><h2>Output</h2><strong id="output"></strong></section></div>
+<script type="module">
+  import { inspectKernel } from "./linked-inspector.js";
+  const data=[[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]];
+  const kernel=[[0,1,0],[1,-4,1],[0,1,0]];
+  const root=document.querySelector("#grid");
+  data.flat().forEach((value,index)=>{
+    const button=document.createElement("button");button.textContent=value;
+    button.onclick=()=>{
+      root.querySelectorAll("button").forEach(x=>x.removeAttribute("aria-current"));
+      button.setAttribute("aria-current","true");
+      const result=inspectKernel(data,kernel,Math.floor(index/4),index%4);
+      document.querySelector("#detail").textContent=JSON.stringify({selection:result.selection,input:result.input,products:result.operation.products},null,2);
+      document.querySelector("#output").textContent=result.output;
+    };
+    root.append(button);
+  });
+  root.firstElementChild.click();
+</script>
