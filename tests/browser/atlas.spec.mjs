@@ -1,6 +1,5 @@
 import { test, expect } from "@playwright/test";
 import fs from "node:fs";
-import { execFileSync } from "node:child_process";
 
 const evidence = process.env.AIDRB_EVIDENCE || ".browser-test/evidence";
 fs.mkdirSync(evidence, { recursive: true });
@@ -54,7 +53,7 @@ for (const [name, width, height] of [
   ["desktop", 1440, 1000],
   ["mobile", 390, 844],
 ]) {
-  test(`${name}: Human Projection creative atlas, cross-media detail, dictionary, resources and selection`, async ({
+  test(`${name}: Human Projection creative atlas, cross-media detail, dictionary and resources`, async ({
     page,
   }) => {
     await page.setViewportSize({ width, height });
@@ -82,6 +81,7 @@ for (const [name, width, height] of [
     await page.waitForLoadState("networkidle");
     await expect(page.locator(".example-tile")).toHaveCount(28);
     await expect(page.locator(".creative-group")).toHaveCount(5);
+    await expect(page.getByRole("link", { name: /Selections/ })).toHaveCount(0);
     expect(requests).not.toEqual(
       expect.arrayContaining([
         expect.stringMatching(
@@ -192,6 +192,8 @@ for (const [name, width, height] of [
       page.getByRole("link", { name: "Open original reference ↗" }),
     ).toHaveAttribute("href", "https://wholeearth.info/");
     await expect(page.locator(".resource-callout")).toHaveCount(1);
+    await expect(page.locator("#select-example")).toHaveCount(0);
+    await expect(page.locator(".data-id")).toContainText("ex:whole-earth-index");
     await expect(page.locator(".resource-callout")).toContainText(
       "not the source preview",
     );
@@ -322,54 +324,11 @@ for (const [name, width, height] of [
       fullPage: true,
     });
 
-    // Human selection preserves the existing machine-compatible commit/lock contract.
+    // Human projection ends at inspection/comparison; machine commit/lock stays outside the browser UI.
     await page.goto("/#example/ex:whole-earth-index");
-    await page.getByRole("button", { name: "Add to selection" }).click();
-    await page.getByRole("link", { name: "Selections 1" }).click();
-    await page
-      .getByLabel("Aspect notes")
-      .fill("Keep the visible corpus structure; do not copy source artwork.");
-    await page
-      .getByLabel(/Constraints/)
-      .fill("Do not replace the stable ID.\nKeep source media external.");
-    await page
-      .getByRole("button", { name: "Commit selection", exact: true })
-      .click();
-    await expect(page.locator("#commit-status")).toContainText("Committed.");
-    const downloadPromise = page.waitForEvent("download");
-    await page
-      .getByRole("button", { name: "Download committed selection" })
-      .click();
-    const download = await downloadPromise;
-    const file = `${evidence}/${name}-selection.json`;
-    await download.saveAs(file);
-    const lock = execFileSync("python3", ["scripts/retrieve.py", "lock", file], {
-      encoding: "utf8",
-    });
-    fs.writeFileSync(`${evidence}/${name}-lock.json`, lock);
-    const fetched = JSON.parse(
-      execFileSync(
-        "python3",
-        ["scripts/retrieve.py", "fetch", `${evidence}/${name}-lock.json`],
-        { encoding: "utf8" },
-      ),
-    );
-    expect(fetched.locked_ids).toEqual(["ex:whole-earth-index"]);
-    expect(fetched.contexts[0].selection.aspect_notes).toContain(
-      "visible corpus structure",
-    );
-    expect(fetched.contexts[0].selection.constraints).toContain(
-      "Keep source media external.",
-    );
-    await page.getByLabel("Aspect notes").fill("Changed after commit");
-    await expect(
-      page.getByRole("button", { name: "Download committed selection" }),
-    ).toBeDisabled();
+    await expect(page.locator("#select-example")).toHaveCount(0);
+    await expect(page.getByRole("link", { name: /Selections/ })).toHaveCount(0);
     await assertNoOverflow(page);
-    await page.screenshot({
-      path: `${evidence}/${name}-human-selection.png`,
-      fullPage: true,
-    });
 
     // Stable record paths remain filename-safe; no colon IDs leak into URLs.
     expect(requests.filter((path) => path.includes("/records/"))).not.toEqual(
@@ -400,7 +359,7 @@ for (const [name, width, height] of [
             "Concept -> Examples -> Resource/Tool path",
             "four runnable Wave 01 Resource demos",
             "External Reference != Resource demo",
-            "browser commit -> CLI lock -> package fetch",
+            "no Human selection / commit / download surface",
             "stable IDs / no mobile overflow / no console errors",
           ],
         },
