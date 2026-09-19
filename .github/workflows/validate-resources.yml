@@ -4,14 +4,12 @@ on:
   push:
     branches: [main]
 permissions:
-  contents: write
+  contents: read
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.event.pull_request.head.sha }}
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -25,25 +23,12 @@ jobs:
           npm ci --no-audit --no-fund
       - name: Validate authoritative Core and compatibility inputs
         run: |
-          python scripts/build_catalog.py
           python scripts/validate_atlas.py
           python scripts/validate_resources.py
           python scripts/validate_registries.py
           python scripts/validate_mechanisms.py
           python scripts/validate_subject_atlas.py
           python scripts/validate_grammar_mechanisms.py
-      - name: Generate Resource extraction catalog
-        run: python scripts/build_catalog.py
-      - name: Commit generated Resource extraction catalog
-        if: github.event.pull_request.head.repo.full_name == github.repository
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add catalog catalog.yaml
-          if ! git diff --cached --quiet; then
-            git commit -m "Generate Wave 01 Resource catalog"
-            git push origin HEAD:${{ github.head_ref }}
-          fi
       - name: Detect generated drift and create SQLite FTS
         run: |
           python scripts/build_catalog.py --check
@@ -79,7 +64,6 @@ jobs:
       - name: Validate Windows checkout, catalog reproducibility and retrieval
         shell: bash
         run: |
-          python scripts/build_catalog.py
           python scripts/validate_atlas.py
           python scripts/validate_resources.py
           python scripts/build_catalog.py --check
