@@ -1,8 +1,8 @@
 # Human Visual / Interactive Projection — V1 contract
 
-The Human projection and the machine retrieval projection are two views over the same canonical Core. The governing architecture remains [the corrected North Star](KNOWLEDGE-ATLAS-CONTRACT.md): Concept, Example, Tool and Resource are canonical content types; stable IDs and commit/lock semantics are shared; Source remains provenance; Method remains generated.
+The Human projection and the machine retrieval projection are two views over the same canonical Core. The governing architecture remains [the corrected North Star](KNOWLEDGE-ATLAS-CONTRACT.md): Concept, Example, Tool and Resource are canonical content types; stable IDs are shared; commit/lock semantics belong to machine retrieval; Source remains provenance; Method remains generated.
 
-This document governs **presentation only**. It does not introduce a new canonical world, media-asset registry, Example identity, Resource identity or selection format.
+This document governs **presentation only**. It does not introduce a new canonical world, media-asset registry, Example identity, Resource identity or Human selection format.
 
 ## Product role
 
@@ -11,11 +11,11 @@ The Human projection is a cross-media creative reference atlas for four linked a
 1. recognize a visual / interactive mechanism;
 2. learn the Concept name for it;
 3. compare the mechanism across real Examples and media;
-4. select exact Examples and, where available, inspect a generalized Resource implementation.
+4. inspect the implementation path when a generalized Resource or Tool path exists.
 
 Creative World is the default Human surface because it is the broadest reference corpus. Academic packs remain first-class and continue to expose canonical subject/topic inventories, LIVE studies, local REFERENCE studies and explicit GAPs.
 
-Default navigation remains **Atlas | Explore | Dictionary | Index**. Selection is shared with machine retrieval and remains accessible globally.
+Default navigation remains **Atlas | Explore | Dictionary | Index**. Human browsing ends at understanding, comparison and exact reference identity; there is no selection, cart, commit or download workflow in the Human projection.
 
 ## Presentation model
 
@@ -89,11 +89,11 @@ The page should make the implementation mechanism legible: summary, primitives, 
 
 The four Wave 01 Resources — archive-as-interface, editable-model-sandbox, linked-computation-inspector and semantic-zoom-levels — are V1 browser fixtures. The existing reaction-profile Resource remains supported through the same generic Resource route even though it is not one of those four Wave 01 packages.
 
-## Selection and machine compatibility
+## Human / machine handoff
 
-Human selection does not create a second selection model. It continues to commit exact Example stable IDs with per-ID aspect notes and constraints, the catalog fingerprint and canonical digest. Editing after commit invalidates the downloadable committed state. Machine lock and deep Resource fetch continue to consume that committed format without substitution.
+The Human projection exposes stable URLs and stable IDs so a person can identify an exact Example, Concept or Resource without entering a workflow state. It must not add `Add to selection`, selection trays, notes forms, commit buttons, downloadable selection JSON or any equivalent cart metaphor.
 
-Human presentation groupings, reference plates and Resource demo routes must never alter canonical IDs.
+Machine retrieval keeps its existing selection → commit → lock → deep-fetch protocol. An agent may translate a person's natural-language instruction such as “use this Example” into that machine protocol internally. Human presentation groupings, reference plates and Resource demo routes must never alter canonical IDs.
 
 ## Accessibility, performance and evidence
 
@@ -101,4 +101,4 @@ Use semantic links/buttons, visible focus, keyboard-operable LIVE/Resource contr
 
 Initial Atlas startup loads the Human shell and generated web index only. Canonical resolve records, relation graph, Dictionary index and Resource artifacts remain lazy. External reference pages are not fetched or executed as part of rendering a reference plate.
 
-Browser validation must cover desktop and mobile Creative Atlas, academic handoff, Explore, website / cinema / installation / LIVE Example details, representative Concept details, all four Wave 01 Resource demos, shared selection commit → CLI lock/fetch, safe provenance rendering, request failures and console errors. Screenshots are evidence and must be visually reviewed; green automated checks alone are insufficient.
+Browser validation must cover desktop and mobile Creative Atlas, academic handoff, Explore, website / cinema / installation / LIVE Example details, representative Concept details, all four Wave 01 Resource demos, absence of Human selection/commit UI, safe provenance rendering, request failures and console errors. Screenshots are evidence and must be visually reviewed; green automated checks alone are insufficient.
