@@ -116,7 +116,7 @@ for (const [name, width, height] of [
     });
 
     // Academic content remains intact and still exposes all 12 Chemistry topics.
-    await page.getByRole("link", { name: /Open Chemistry/ }).click();
+    await page.getByRole("link", { name: "Chemistry", exact: true }).click();
     await expect(
       page.getByRole("heading", { name: "Chemistry", exact: true }),
     ).toBeVisible();
@@ -368,7 +368,7 @@ for (const [name, width, height] of [
     );
   });
 
-  test(`${name}: lossless provenance stays safe in visual-first Example detail`, async ({
+  test(`${name}: lossless provenance stays safe in content-first Example detail`, async ({
     page,
   }) => {
     await page.setViewportSize({ width, height });
