@@ -1,0 +1,22 @@
+{
+  "id": "candidate:dia-studio",
+  "candidate_kind": "source_feed",
+  "status": "discovered",
+  "discovered_by": "scout",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://www.dia.studio/",
+    "title": "DIA Studio"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "Discovery feed to inspect for motion identity, kinetic typography, and system-level visual behavior.",
+  "novelty_axes": [
+    "cross_media_transfer",
+    "new_concept"
+  ],
+  "signals": [
+    "motion identity",
+    "kinetic typography",
+    "brand system"
+  ]
+}
