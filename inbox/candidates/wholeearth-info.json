@@ -1,0 +1,21 @@
+{
+  "id": "candidate:wholeearth-info",
+  "candidate_kind": "example",
+  "status": "discovered",
+  "discovered_by": "manual",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://wholeearth.info/",
+    "title": "Whole Earth"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "Existing user-selected reference to inspect for dense information presentation and nonstandard navigation.",
+  "novelty_axes": [
+    "stronger_example",
+    "new_interaction"
+  ],
+  "signals": [
+    "information density",
+    "editorial navigation"
+  ]
+}

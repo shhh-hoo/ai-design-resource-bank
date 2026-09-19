@@ -1,0 +1,22 @@
+{
+  "id": "candidate:villarejo-igarcia",
+  "candidate_kind": "example",
+  "status": "discovered",
+  "discovered_by": "manual",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://villarejoigarcia.com/",
+    "title": "Villarejo Igarcia"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "Existing user-selected reference to inspect for portfolio composition, typography, and project-transition behavior.",
+  "novelty_axes": [
+    "stronger_example",
+    "new_interaction"
+  ],
+  "signals": [
+    "portfolio",
+    "typography",
+    "project transition"
+  ]
+}

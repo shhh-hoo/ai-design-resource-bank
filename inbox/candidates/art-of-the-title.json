@@ -1,0 +1,23 @@
+{
+  "id": "candidate:art-of-the-title",
+  "candidate_kind": "source_feed",
+  "status": "discovered",
+  "discovered_by": "scout",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://www.artofthetitle.com/titles/view/list/",
+    "title": "Art of the Title"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "High-value discovery feed for concrete title-sequence references spanning film, television, conference, and game work.",
+  "novelty_axes": [
+    "cross_media_transfer",
+    "new_medium"
+  ],
+  "signals": [
+    "title sequence",
+    "motion design",
+    "cinema",
+    "typography"
+  ]
+}

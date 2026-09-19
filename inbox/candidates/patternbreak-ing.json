@@ -1,0 +1,22 @@
+{
+  "id": "candidate:patternbreak-ing",
+  "candidate_kind": "example",
+  "status": "discovered",
+  "discovered_by": "manual",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://patternbreak.ing/",
+    "title": "PatternBreak"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "Existing reference worth inspecting for narrative website structure, deliberate friction, and section-level interaction rather than generic card UI.",
+  "novelty_axes": [
+    "stronger_example",
+    "new_interaction"
+  ],
+  "signals": [
+    "narrative web",
+    "interaction friction",
+    "section choreography"
+  ]
+}

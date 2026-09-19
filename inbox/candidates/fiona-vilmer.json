@@ -1,0 +1,22 @@
+{
+  "id": "candidate:fiona-vilmer",
+  "candidate_kind": "example",
+  "status": "discovered",
+  "discovered_by": "manual",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://fionavilmer.com/",
+    "title": "Fiona Vilmer"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "Existing reference worth inspecting for archive-like information architecture and restrained editorial presentation.",
+  "novelty_axes": [
+    "stronger_example",
+    "new_medium"
+  ],
+  "signals": [
+    "archive",
+    "editorial structure",
+    "text-led navigation"
+  ]
+}

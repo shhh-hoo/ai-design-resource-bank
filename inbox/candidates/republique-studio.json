@@ -1,0 +1,22 @@
+{
+  "id": "candidate:republique-studio",
+  "candidate_kind": "example",
+  "status": "discovered",
+  "discovered_by": "manual",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://www.republique.studio/",
+    "title": "République Studio"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "Existing reference worth inspecting for editorial graphic-design language translated into a digital portfolio.",
+  "novelty_axes": [
+    "stronger_example",
+    "cross_media_transfer"
+  ],
+  "signals": [
+    "graphic design",
+    "editorial web",
+    "typography"
+  ]
+}

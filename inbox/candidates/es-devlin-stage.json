@@ -1,0 +1,24 @@
+{
+  "id": "candidate:es-devlin-stage",
+  "candidate_kind": "source_feed",
+  "status": "discovered",
+  "discovered_by": "scout",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://esdevlin.com/search/stage",
+    "title": "Es Devlin — Stage projects"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "High-value discovery feed for stage, projection, spatial framing, moving scenery, and attention-direction mechanisms that can transfer to web.",
+  "novelty_axes": [
+    "cross_media_transfer",
+    "new_medium",
+    "new_interaction"
+  ],
+  "signals": [
+    "stagecraft",
+    "projection",
+    "spatial composition",
+    "attention"
+  ]
+}
