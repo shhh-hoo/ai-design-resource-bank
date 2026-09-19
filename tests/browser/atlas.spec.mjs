@@ -6,11 +6,33 @@ const evidence = process.env.AIDRB_EVIDENCE || ".browser-test/evidence";
 fs.mkdirSync(evidence, { recursive: true });
 
 async function assertNoOverflow(page) {
+  const metrics = await page.evaluate(() => {
+    const viewport = window.innerWidth;
+    const scrollWidth = document.documentElement.scrollWidth;
+    const offenders = [...document.querySelectorAll("body *")]
+      .map((element) => {
+        const rect = element.getBoundingClientRect();
+        return {
+          tag: element.tagName.toLowerCase(),
+          id: element.id || "",
+          className:
+            typeof element.className === "string" ? element.className : "",
+          left: Math.round(rect.left * 10) / 10,
+          right: Math.round(rect.right * 10) / 10,
+          width: Math.round(rect.width * 10) / 10,
+          scrollWidth: element.scrollWidth,
+          clientWidth: element.clientWidth,
+        };
+      })
+      .filter((item) => item.right > viewport + 0.5 || item.left < -0.5)
+      .sort((a, b) => b.right - a.right)
+      .slice(0, 12);
+    return { viewport, scrollWidth, offenders };
+  });
   expect(
-    await page.evaluate(
-      () => document.documentElement.scrollWidth <= window.innerWidth,
-    ),
-  ).toBe(true);
+    metrics.scrollWidth,
+    `Horizontal overflow diagnostics: ${JSON.stringify(metrics, null, 2)}`,
+  ).toBeLessThanOrEqual(metrics.viewport);
 }
 
 async function setRange(locator, value) {
