@@ -17,11 +17,13 @@ const json = async (path) => {
 let indexPromise;
 let dictionaryPromise;
 let relationsPromise;
+let mediaPromise;
 const indexRecords = () => (indexPromise ||= json("catalog/index.json"));
 const dictionaryRecords = () =>
   (dictionaryPromise ||= json("catalog/dictionary.json"));
 const relationRecords = () =>
   (relationsPromise ||= json("catalog/relations.json"));
+const mediaRecords = () => (mediaPromise ||= json("app/media.json"));
 
 const data = await json("catalog/web-index.json");
 const examples = new Map(data.examples.map((example) => [example.id, example]));
@@ -343,6 +345,51 @@ function sourceLabel(source) {
   return `${label}<br><span class="source-locator">${esc(source.locator_type)} · ${esc(source.locator)}</span>`;
 }
 
+function originalFrame(example, media) {
+  const url = media.embed_url || media.source_url;
+  return `<div class="original-media">
+    <iframe class="original-frame" src="${esc(url)}" title="${esc(example.title)} — original" loading="eager"
+      sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation"
+      referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <div class="media-credit"><span>Original · ${esc(media.attribution)}</span><a href="${esc(media.source_url)}" target="_blank" rel="noreferrer">Open ↗</a></div>
+  </div>`;
+}
+
+function originalPoster(example, media) {
+  return `<figure class="original-media original-media--poster">
+    <img class="original-poster" src="${esc(media.poster_url)}" alt="${esc(example.title)}" loading="eager" referrerpolicy="no-referrer">
+    <figcaption class="media-credit"><span>Original preview · ${esc(media.attribution)}</span><a href="${esc(media.source_url)}" target="_blank" rel="noreferrer">Open ↗</a></figcaption>
+  </figure>`;
+}
+
+function applyOriginalMedia(example, media) {
+  if (!media || example.kind !== "REFERENCE" || example.preview) return;
+  const stage = document.getElementById("stage");
+  if (!stage) return;
+
+  if (media.mode === "embed") {
+    stage.className = "detail-stage original-media-stage";
+    stage.innerHTML = originalFrame(example, media);
+    return;
+  }
+
+  if (media.mode === "poster" && media.poster_url) {
+    stage.className = "detail-stage original-media-stage";
+    stage.innerHTML = originalPoster(example, media);
+    return;
+  }
+
+  if (media.mode === "on-demand-embed") {
+    const access = stage.querySelector(".reference-access");
+    if (!access) return;
+    access.innerHTML = `<button class="load-original" type="button">View original here</button><a href="${esc(media.source_url)}" target="_blank" rel="noreferrer">Open ↗</a>`;
+    access.querySelector(".load-original").addEventListener("click", () => {
+      stage.className = "detail-stage original-media-stage";
+      stage.innerHTML = originalFrame(example, media);
+    });
+  }
+}
+
 async function detail(id, version) {
   const example = examples.get(id);
   if (!example) throw new Error("Unknown Example");
@@ -374,9 +421,10 @@ async function detail(id, version) {
     mountLive(document.getElementById("stage"), example.preview.renderer, example.title);
   }
 
-  const [resolved, concepts] = await Promise.all([
+  const [resolved, concepts, mediaIndex] = await Promise.all([
     json(example.resolve_path),
     dictionaryRecords(),
+    mediaRecords(),
   ]);
   if (version !== routeVersion) return;
   const record = resolved.record;
@@ -399,9 +447,10 @@ async function detail(id, version) {
         .getElementById("stage")
         .insertAdjacentHTML(
           "beforeend",
-          `<div class="reference-access"><a href="${esc(source.locator)}" target="_blank" rel="noreferrer">Original ↗</a></div>`,
+          `<div class="reference-access"><a href="${esc(source.locator)}" target="_blank" rel="noreferrer">Open ↗</a></div>`,
         );
     }
+    applyOriginalMedia(example, mediaIndex.examples?.[example.id]);
   }
 
   document.getElementById("observations").innerHTML = `
@@ -444,8 +493,12 @@ async function detail(id, version) {
   const crosswalkMarkup = resolved.crosswalks.length
     ? `${resolved.crosswalks.map((crosswalk) => `<p><strong>${esc(crosswalk.node.label)}</strong> · ${esc(crosswalk.node.section)}<br>${esc(crosswalk.rationale)}</p>`).join("")}`
     : "";
+  const media = mediaIndex.examples?.[example.id];
+  const mediaMarkup = media
+    ? `<h3>Presentation media</h3><p>${esc(media.mode)} · ${esc(media.rights_status)}${media.license ? ` · ${esc(media.license)}` : ""}<br>${esc(media.attribution)}${media.rights_evidence_url ? ` · <a class="external" href="${esc(media.rights_evidence_url)}" target="_blank" rel="noreferrer">evidence ↗</a>` : ""}</p>`
+    : "";
   document.querySelector("#provenance .details-body").innerHTML =
-    `${crosswalkMarkup}<h3>Sources</h3>${resolved.sources.map((source) => `<p>${sourceLabel(source)}<br>${esc(source.publisher)} · checked ${esc(source.checked_at || "not independently checked")}<br><span class="gap-note">${esc(source.check_scope)}</span></p>`).join("")}`;
+    `${crosswalkMarkup}${mediaMarkup}<h3>Sources</h3>${resolved.sources.map((source) => `<p>${sourceLabel(source)}<br>${esc(source.publisher)} · checked ${esc(source.checked_at || "not independently checked")}<br><span class="gap-note">${esc(source.check_scope)}</span></p>`).join("")}`;
 }
 
 async function dictionary(version) {
