@@ -1,10 +1,10 @@
 # AI Design Resource Bank
 
-A visual knowledge atlas and a machine retrieval projection over one canonical Core. Both can explore candidates in parallel; explicit selection commit comes before AI lock and deep Resource fetch.
+A creative reference atlas and a machine retrieval projection over one canonical Core. The Human projection defaults to the cross-media Creative World for seeing, comparing and choosing references; academic packs remain available without becoming the Human taxonomy. Both projections share stable IDs, and explicit selection commit still comes before AI lock and deep Resource fetch.
 
 **Atlas | Explore | Dictionary | Index**
 
-The first Subject Pack is Chemistry: 12 canonical knowledge areas, 48 concrete example slots (6 LIVE, 16 REFERENCE, 26 honest GAPs). The inventory is explicit coverage planning, not a claim that every syllabus objective has a completed visualization. Cambridge 9701 and AP Chemistry are provenance inputs, not Human taxonomy.
+The Creative World is the default Human surface and includes cross-media external references plus original local studies. Chemistry remains the first Subject Pack: 12 canonical knowledge areas, 48 concrete example slots (6 LIVE, 16 REFERENCE, 26 honest GAPs). Its inventory is explicit coverage planning, not a claim that every syllabus objective has a completed visualization. Cambridge 9701 and AP Chemistry are provenance inputs, not Human taxonomy.
 
 ## Run
 
@@ -17,7 +17,7 @@ npm run build
 npm run dev
 ```
 
-Open `http://127.0.0.1:4173`. Root loads the Atlas from generated `catalog/web-index.json`. No old decision-board scripts, AI index, relation graph or full build records load at startup. Example detail loads its own compact resolve record and, for LIVE, the shared preview runtime. That preview code is distinct from machine-side full Resource Package fetch.
+Open `http://127.0.0.1:4173`. Root loads the Creative Atlas from generated `catalog/web-index.json`; relations and resolved records stay lazy. No old decision-board scripts, AI index or full build records load at startup. External references receive medium-aware Human presentation without copying source media. Example detail loads its own compact resolve record and, for LIVE, the shared preview runtime. Resource pages may run original AIDRB demo artifacts, explicitly separate from any source Example preview and from machine-side deep Resource Package fetch.
 
 ## Source of truth
 
@@ -76,4 +76,4 @@ CI validates the corrected Core, compatibility data, generated drift, retrieval/
 - [Resource ingestion](skills/resource-ingest/SKILL.md): optional extraction and rights.
 - [Validation evidence](docs/evidence/REVIEW.md): measured results and unresolved scope.
 
-This is a Chemistry vertical slice. Original diagrams are bounded teaching studies; scientific behavior checks do not imply external chemistry peer review. 26 slots are explicitly missing. Legacy tool recommendations preserve evidence/rights caveats and do not mean upstream tools were locally installed or validated. No third-party binary reference art is copied.
+The current bank combines a cross-media Creative corpus with a Chemistry academic vertical slice. Original diagrams and Resource demos are bounded AIDRB studies; scientific behavior checks do not imply external chemistry peer review. The Chemistry pack retains 26 explicit GAPs. Legacy tool recommendations preserve evidence/rights caveats and do not mean upstream tools were locally installed or validated. External Creative references remain source-linked unless display/embed rights are explicitly represented; no third-party binary reference art is copied.
