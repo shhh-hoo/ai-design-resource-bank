@@ -116,7 +116,7 @@ for (const [name, width, height] of [
     });
 
     // Academic content remains intact and still exposes all 12 Chemistry topics.
-    await page.getByRole("link", { name: "Chemistry", exact: true }).click();
+    await page.locator(".academic-handoff").click();
     await expect(
       page.getByRole("heading", { name: "Chemistry", exact: true }),
     ).toBeVisible();
