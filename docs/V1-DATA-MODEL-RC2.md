@@ -38,9 +38,9 @@ Hot-path reverse indexes are also added for intent→entity, subject→entity an
 
 ## Files
 
-- `schemas/relational-v1/01-core.sql` — 15 object/support tables.
-- `schemas/relational-v1/02-relations.sql` — 16 relation tables.
-- `schemas/relational-v1/03-constraints-views.sql` — endpoint typing, review invalidation, hash-staleness triggers, reverse indexes and guarded `fact_*` views.
+- `projections/relational-v1/01-core.sql` — 15 object/support tables.
+- `projections/relational-v1/02-relations.sql` — 16 relation tables.
+- `projections/relational-v1/03-constraints-views.sql` — endpoint typing, review invalidation, hash-staleness triggers, reverse indexes and guarded `fact_*` views.
 - `scripts/validate_relational_model.py` — schema loader plus cross-table, graph, evidence, source-date and publication checks; `--self-check` builds an in-memory database.
 - `tests/test_relational_model.py` — 20 baseline/compatibility structural tests.
 - `tests/test_relational_model_adversarial.py` — heterogeneous positive cases and adversarial lifecycle/publication/index checks.

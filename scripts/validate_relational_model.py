@@ -105,7 +105,7 @@ def validate(db: sqlite3.Connection) -> list[str]:
 
 def schema_sql(root: Path | None = None) -> str:
     root = root or Path(__file__).resolve().parents[1]
-    schema_dir = root / 'schemas' / 'relational-v1'
+    schema_dir = root / 'projections' / 'relational-v1'
     return '\n'.join((schema_dir / name).read_text() for name in ('01-core.sql','02-relations.sql','03-constraints-views.sql'))
 
 def self_check(root: Path | None = None) -> list[str]:
