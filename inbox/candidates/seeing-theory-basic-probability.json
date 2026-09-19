@@ -1,0 +1,33 @@
+{
+  "id": "candidate:seeing-theory-basic-probability",
+  "candidate_kind": "example",
+  "status": "promote",
+  "discovered_by": "scout",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://seeing-theory.brown.edu/basic-probability/",
+    "title": "Seeing Theory — Basic Probability",
+    "creator": "Daniel Kunin et al."
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "Interactive probability explanations let users alter underlying distributions and immediately observe samples, expectation, and variance change in linked representations.",
+  "novelty_axes": [
+    "new_interaction",
+    "benchmark_gap",
+    "new_implementation"
+  ],
+  "signals": [
+    "linked representations",
+    "parameter manipulation",
+    "sampling",
+    "probability",
+    "D3"
+  ],
+  "notes": "The official page explicitly describes dragging probability bars, changing die-face distributions, sampling, and observing derived statistics. The parent site states the visualizations were built with D3.js.",
+  "decision": {
+    "outcome": "promote",
+    "rationale": "Adds a strong subject-visualization anchor where one manipulated model state drives both simulation and mathematical/statistical representations.",
+    "reviewed_by": "wave01-curation",
+    "reviewed_at": "2026-09-19"
+  }
+}
