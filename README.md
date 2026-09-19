@@ -1,10 +1,10 @@
 # AI Design Resource Bank
 
-A visual knowledge atlas and a machine retrieval projection over one canonical Core. Both can explore candidates in parallel; explicit selection commit comes before AI lock and deep Resource fetch.
+A creative reference atlas and a machine retrieval projection over one canonical Core. The Human projection defaults to the cross-media Creative World for seeing, understanding and comparing references; academic packs remain available without becoming the Human taxonomy. Both projections share stable IDs, while selection commit → AI lock → deep Resource fetch remains a machine retrieval protocol rather than a Human UI workflow.
 
 **Atlas | Explore | Dictionary | Index**
 
-The first Subject Pack is Chemistry: 12 canonical knowledge areas, 48 concrete example slots (6 LIVE, 16 REFERENCE, 26 honest GAPs). The inventory is explicit coverage planning, not a claim that every syllabus objective has a completed visualization. Cambridge 9701 and AP Chemistry are provenance inputs, not Human taxonomy.
+The Creative World is the default Human surface and includes cross-media external references plus original local studies. Chemistry remains the first Subject Pack: 12 canonical knowledge areas, 48 concrete example slots (6 LIVE, 16 REFERENCE, 26 honest GAPs). Its inventory is explicit coverage planning, not a claim that every syllabus objective has a completed visualization. Cambridge 9701 and AP Chemistry are provenance inputs, not Human taxonomy.
 
 ## Run
 
@@ -17,7 +17,7 @@ npm run build
 npm run dev
 ```
 
-Open `http://127.0.0.1:4173`. Root loads the Atlas from generated `catalog/web-index.json`. No old decision-board scripts, AI index, relation graph or full build records load at startup. Example detail loads its own compact resolve record and, for LIVE, the shared preview runtime. That preview code is distinct from machine-side full Resource Package fetch.
+Open `http://127.0.0.1:4173`. Root loads the Creative Atlas from generated `catalog/web-index.json`; relations, resolved records and `app/media.json` stay lazy. No old decision-board scripts, AI index or full build records load at startup. External Example detail prefers original source media: open-license / explicit embeds load directly, official previews can render remotely, and other source pages can be loaded on demand without copying third-party binary assets. The medium-aware reference plate is fallback only. Resource pages run original AIDRB demo artifacts separately from source Examples and from machine-side deep Resource Package fetch.
 
 ## Source of truth
 
@@ -33,7 +33,7 @@ Open `http://127.0.0.1:4173`. Root loads the Atlas from generated `catalog/web-i
 
 Canonical **content** types are Concept, Example, Tool and Resource. Method is a generated per-Example AI Build view. Lifecycle properties `collected`, `showable`, `reusable`, `verified` are independent. REFERENCE does not imply reuse rights; GAP never pretends to be implemented.
 
-## Retrieve and select
+## Machine retrieval and lock
 
 ```sh
 python3 scripts/retrieve.py query 'reaction profile' --type Example
@@ -52,7 +52,7 @@ python3 scripts/retrieve.py lock committed.json > locked.json
 python3 scripts/retrieve.py fetch locked.json
 ```
 
-The Web selection screen exports the same committed format; continue with `lock` directly. Browser selections remain in the current tab and are not persisted across reloads. Locks freeze exact identities, notes and the catalog fingerprint; stale/tampered locks fail instead of substituting references. Legacy aliases such as `reaction-coordinate` still resolve but commits require canonical Example IDs.
+The Human atlas does not expose selection, commit or download controls. People identify references through stable URLs/IDs; an agent or CLI workflow can translate that instruction into the existing machine selection protocol. Locks freeze exact identities, notes and the catalog fingerprint; stale/tampered locks fail instead of substituting references. Legacy aliases such as `reaction-coordinate` still resolve but commits require canonical Example IDs.
 
 ## Validate
 
@@ -71,9 +71,9 @@ CI validates the corrected Core, compatibility data, generated drift, retrieval/
 ## Contracts and limits
 
 - [Corrected North Star v2.1](docs/KNOWLEDGE-ATLAS-CONTRACT.md): architecture, semantics, migration and tool decision.
-- [Visual contract](docs/EDITORIAL-UI-CONTRACT.md): visual-first views and progressive disclosure.
+- [Visual contract](docs/EDITORIAL-UI-CONTRACT.md): content-first Human reference views and progressive disclosure.
 - [Retrieval skill](skills/aidrb-retrieve/SKILL.md): machine workflow and identity discipline.
 - [Resource ingestion](skills/resource-ingest/SKILL.md): optional extraction and rights.
 - [Validation evidence](docs/evidence/REVIEW.md): measured results and unresolved scope.
 
-This is a Chemistry vertical slice. Original diagrams are bounded teaching studies; scientific behavior checks do not imply external chemistry peer review. 26 slots are explicitly missing. Legacy tool recommendations preserve evidence/rights caveats and do not mean upstream tools were locally installed or validated. No third-party binary reference art is copied.
+The current bank combines a cross-media Creative corpus with a Chemistry academic vertical slice. Original diagrams and Resource demos are bounded AIDRB studies; scientific behavior checks do not imply external chemistry peer review. The Chemistry pack retains 26 explicit GAPs. Legacy tool recommendations preserve evidence/rights caveats and do not mean upstream tools were locally installed or validated. External Creative references remain source-linked unless display/embed rights are explicitly represented; no third-party binary reference art is copied.

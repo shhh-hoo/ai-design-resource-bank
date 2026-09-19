@@ -12,7 +12,7 @@ Four canonical content types; three overlays; normalized non-content Sources. Me
 
 Adapters preserve 24 mechanism IDs as Concepts, 47 original Tool IDs and their capability/use/avoid/rights fields, 99 curriculum entries, 17 subject family inputs, 20 grammar Concepts and 23 reference-gallery Sources. Existing registry files and all web/ assets are unchanged. There were no Resource Packages to migrate; one original reaction-profile package now promotes the existing shared-coordinate mechanism with corrected transition-state labeling. One native-SVG Tool supplements the existing tools. 125 Sources are normalized, with unverified legacy source checks explicitly null.
 
-The root uses Atlas / Explore / Dictionary / Index. All generated files live in catalog/; legacy catalog.yaml is also generated. SQLite is rebuilt from generated FTS input. `build_catalog.py --check` rejects catalog drift and extra files. Human and machine discovery can run in parallel. Browser commit exports exactly the same contract consumed by CLI lock and deep fetch; no identity substitution.
+The root uses Atlas / Explore / Dictionary / Index. All generated files live in catalog/; legacy catalog.yaml is also generated. SQLite is rebuilt from generated FTS input. `build_catalog.py --check` rejects catalog drift and extra files. Human browsing and machine retrieval share canonical stable IDs but do not share an interaction workflow. The browser exposes exact reference identity; machine commit, lock and deep fetch remain CLI/agent-side.
 
 ## Chemistry inventory and provenance
 
@@ -37,7 +37,7 @@ See [retrieval.json](retrieval.json) for actual outputs. `query 'reaction profil
 
 ## Browser and startup
 
-Actual Chrome browser automation at **1440×1000** and **390×844**, with screenshots visually inspected. Both complete flows pass: all four views, all 12 topic inventories, all six live control changes, GAP detail, collapsed AI Build/provenance, no document-wide horizontal overflow, and Web commit → CLI lock → full package fetch. Browser console/page errors and failed HTTP responses: **0**.
+Actual Chrome browser automation at **1440×1000** and **390×844**, with screenshots visually inspected. Both complete flows pass: all four views, all 12 topic inventories, all six live control changes, GAP detail, collapsed AI Build/provenance and no document-wide horizontal overflow. Browser console/page errors and failed HTTP responses: **0**. Machine commit → lock → full package fetch is validated independently from the Human UI.
 
 Final cold-load measurement, uncompressed local static server: **87,374 response-body bytes / 88,874 browser-reported transferred bytes, 5 requests**. Both viewport runs agree. Loaded: root HTML, atlas.css, atlas.js, visuals.js and web-index.json (46,868 bytes). No AI index, canonical resolve records, relation graph, SQLite, Resource artifacts or old board scripts at startup. Full browser request evidence: [desktop-browser.json](desktop-browser.json), [mobile-browser.json](mobile-browser.json).
 
@@ -55,7 +55,7 @@ Reviewed screenshots:
 
 [local-validation.txt](local-validation.txt): canonical/schema/ID/source/crosswalk/topic validation, byte-reproducible generated text, Resource schema, all legacy **data** validators, 20 Python tests, 4 model tests, JS syntax and static publish artifact staging passed. Two full browser flows and two local-provenance browser regressions passed. Tests verify energy endpoints/maxima, Boyle invariance, first-order half-life, Hess closure, Gibbs crossover and dilution/water-equilibrium titration behavior.
 
-Required CI now validates this architecture and runs fresh Chromium browser tests. It uploads screenshots, request measurements and selection artifacts. Old decision-board UI/route/performance validators are excluded from required workflows. Pages deploys the Atlas artifact only when main changes; this PR is not merged. Exact PR CI status is reported on GitHub and in the delivery response.
+Required CI now validates this architecture and runs fresh Chromium browser tests. It uploads screenshots and request measurements. Old decision-board UI/route/performance validators are excluded from required workflows. Pages deploys the Atlas artifact only when main changes; this PR is not merged. Exact PR CI status is reported on GitHub and in the delivery response.
 
 ## Remaining limits
 
@@ -65,7 +65,7 @@ Required CI now validates this architecture and runs fresh Chromium browser test
 - Metadata/FTS retrieval uses lexical matching, not semantic embeddings or a broad recall benchmark. The reaction-profile path is a real successful smoke test, not a general precision guarantee.
 - Browser review covers desktop Chrome and mobile viewport emulation, not physical phones, Safari/Firefox, or screen-reader user studies. Labels, keyboard controls and reduced-motion CSS are present.
 - Startup numbers are cold local uncompressed bytes, not deployed CDN transfer/compression/latency. Production Pages deployment has not been exercised because the PR remains unmerged.
-- Browser selection is tab-local; download before reloading. Locks detect contract/catalog changes but are not authentication signatures.
+- Machine locks detect contract/catalog changes but are not authentication signatures; the Human browser has no selection state.
 - Legacy demos are preserved as migration evidence and are not revalidated as the new Human experience. Existing upstream tool docs, licenses and every external link were not all freshly verified.
 
 ## PR #12 focused contract corrections (2026-09-11)
@@ -76,7 +76,7 @@ Review-fix starting HEAD: `9506274daec7c3dcfa7c9ecda2ecb5f7461d011c`; local work
 - Canonical Sources retain `locator_type` + `locator`; all eight legacy manifest source types are exercised by real temporary Resource Packages through manifest validation → adapter → Core validation → build/drift check → stable-ID resolve. Unicode filenames, Windows screenshot paths, local repository paths, DOI and prompt text survive unchanged. These fixtures do not add production resources or Chemistry coverage. Captured dates and author/notes are retained; imported provenance stays unchecked. Old `Source.url` is explicitly rejected. The diagram-study Source now points to the immutable starting commit.
 - Core required fields have concrete types and structured shapes, with format-checked dates and explicit nullability. Schema validation happens before semantic validation and generation. Negative cases cover malformed interaction/state containers and values, tool choices and evidence, ID/constraint arrays, artifact records, topic fields, numeric dates and invalid calendar dates. Resource structured fields are checked against the manifest schema to prevent contract drift.
 
-Desktop/mobile screenshots were captured again and visually inspected, including Atlas, Example detail and expanded local provenance. [Desktop provenance fixture](desktop-provenance-fixture.png) and [mobile provenance fixture](mobile-provenance-fixture.png) show filenames and prompt text as escaped text, alongside working HTTP(S) source links. Mobile expanded provenance has no horizontal overflow. Original four primary views, collapsed initial details, six live controls and exact-ID selection workflow still pass. Console/page errors and failed responses remain zero. The 4,267-byte startup body increase is the compact per-Example resolve pointers plus source-rendering code/styles; no deep metadata is loaded initially.
+Desktop/mobile screenshots were captured again and visually inspected, including Atlas, Example detail and expanded local provenance. [Desktop provenance fixture](desktop-provenance-fixture.png) and [mobile provenance fixture](mobile-provenance-fixture.png) show filenames and prompt text as escaped text, alongside working HTTP(S) source links. Mobile expanded provenance has no horizontal overflow. Original four primary views, collapsed initial details, six live controls and exact stable-ID routing still pass. Console/page errors and failed responses remain zero. The 4,267-byte startup body increase is the compact per-Example resolve pointers plus source-rendering code/styles; no deep metadata is loaded initially.
 
 Local checks: 20 Python tests, 4 model tests, 4 browser tests, all retained data validators, generated drift checks and publish staging pass. Windows CI now independently checks actual checkout, generation/reproducibility, all Python regressions and publish staging. Exact-HEAD CI results are recorded by GitHub after push.
 

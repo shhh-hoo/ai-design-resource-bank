@@ -6,7 +6,7 @@ When a user provides a file, image, repository, article, website, video, prompt,
 
 ## Governing architecture
 
-Read `docs/KNOWLEDGE-ATLAS-CONTRACT.md` first. It supersedes earlier board/subject routing instructions. Content entities are Concept, Example, Tool and Resource; Method is a generated view. Both discovery projections operate in parallel. Explicit selection commit precedes AI lock. Default navigation is Atlas | Explore | Dictionary | Index.
+Read `docs/KNOWLEDGE-ATLAS-CONTRACT.md` first. It supersedes earlier board/subject routing instructions. Content entities are Concept, Example, Tool and Resource; Method is a generated view. Both projections operate over the same canonical Core. Machine retrieval uses explicit selection commit before AI lock; the Human projection has no selection workflow. Default navigation is Atlas | Explore | Dictionary | Index.
 
 ## Gathering and scouting
 
@@ -68,13 +68,18 @@ When a registry technique is used successfully and is worth reusing, promote the
 
 Follow `docs/EDITORIAL-UI-CONTRACT.md` and `docs/KNOWLEDGE-ATLAS-CONTRACT.md`.
 
-- Default Atlas: subject → canonical topic → concrete visual examples.
-- Example cards show a preview, a short name and truthful LIVE / REFERENCE / GAP kind.
-- Detail opens visual/demo first. AI Build, implementation and curriculum provenance are collapsed.
-- Explore discovers Examples; Dictionary explains Concepts; Index exposes compact exhaustive metadata.
-- Neutral editorial chrome, restrained meaningful color, keyboard access and responsive layouts.
+- Default Atlas: Creative World first, grouped for cross-media recognition and comparison. Academic packs preserve subject → canonical topic → concrete example navigation as a secondary projection.
+- Derive Human presentation strategy from canonical Example kind/medium/relations; do not add a competing presentation truth to canonical records.
+- External REFERENCE, local LIVE and original Resource demo are visually and semantically distinct. Prefer actual original media for external references: open-license / explicit-embed media may render automatically; otherwise use publisher-controlled on-demand framing plus a direct source link. Never manufacture a screenshot or imply that a Resource demo is the source Example.
+- Human UI is a content-first reference library, not an explanation of AIDRB. Do not surface architecture/onboarding copy such as projection, canonical Core, selection/lock workflow or rights-policy explanations in the primary hierarchy.
+- Detail opens with the reference identity, then the visual/reference itself, concise summary, demonstrated Concepts, reuse/failure notes, related Examples and Resources. Machine/build projection is not a Human UI section; provenance stays collapsed and subordinate.
+- Explore is an editorial discovery stream with search plus secondary refinement by world/domain/Concept/medium/interaction/trait/Resource/coverage; it is not a generic card wall.
+- Dictionary routes Concept → real Examples → related Concepts → Resource/Tool implementation path. Resource pages may run only declared local AIDRB demos.
+- A public source locator does not imply permission to copy third-party bytes. Presentation decisions live in `app/media.json`: local copy requires a clear redistribution basis; open-license/explicit embed may display automatically; other official source pages may be framed only on demand so the publisher retains technical control. Use the medium-aware plate only when original media cannot be shown.
+- Do not add Human selection/cart/commit/download UI. Human handoff is an exact stable URL/ID plus natural-language intent; machine retrieval owns selection → commit → lock → fetch.
+- Neutral editorial chrome, restrained meaningful color, readable type scale, keyboard access and responsive layouts. Prefer content labels and working artifacts over slogans, manifesto copy, defensive disclaimers or oversized editorial headings.
 - Old web/ assets are compatibility evidence only and must not load from index.html.
-- Edit canonical inputs; regenerate catalog/ and catalog.yaml. Run schema, drift, retrieval and browser checks.
+- Edit canonical inputs; regenerate catalog/ and catalog.yaml. Projection-only changes must preserve deterministic catalog output, stable IDs, the machine selection commit/lock contract and retrieval benchmarks.
 
 ## Provenance and rights
 

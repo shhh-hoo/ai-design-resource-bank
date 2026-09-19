@@ -1,0 +1,211 @@
+{
+  "version": 1,
+  "checked_at": "2026-09-20",
+  "policy": {
+    "priority": [
+      "local-original",
+      "licensed-poster",
+      "explicit-embed",
+      "publisher-controlled-embed",
+      "fallback-plate"
+    ],
+    "note": "Presentation metadata only. It does not create canonical content identity or imply redistribution rights."
+  },
+  "examples": {
+    "ex:aott-severance": {
+      "mode": "on-demand-embed",
+      "source_url": "https://www.artofthetitle.com/title/severance/",
+      "attribution": "Art of the Title / original creators",
+      "rights_status": "publisher-controlled-frame"
+    },
+    "ex:aott-spider-verse": {
+      "mode": "on-demand-embed",
+      "source_url": "https://www.artofthetitle.com/title/spider-man-into-the-spider-verse/",
+      "attribution": "Art of the Title / original creators",
+      "rights_status": "publisher-controlled-frame"
+    },
+    "ex:aott-uncut-gems": {
+      "mode": "on-demand-embed",
+      "source_url": "https://www.artofthetitle.com/title/uncut-gems/",
+      "attribution": "Art of the Title / original creators",
+      "rights_status": "publisher-controlled-frame"
+    },
+    "ex:bruno-simon-portfolio": {
+      "mode": "on-demand-embed",
+      "source_url": "https://bruno-simon.com/",
+      "attribution": "Bruno Simon",
+      "rights_status": "publisher-controlled-frame"
+    },
+    "ex:chrome-music-lab-kandinsky": {
+      "mode": "on-demand-embed",
+      "source_url": "https://musiclab.chromeexperiments.com/Kandinsky/",
+      "attribution": "Chrome Music Lab",
+      "rights_status": "publisher-controlled-frame",
+      "rights_evidence_url": "https://github.com/googlecreativelab/chrome-music-lab",
+      "notes": "Upstream project is Apache-2.0, but Kandinsky is treated conservatively as source-page embed rather than copied code."
+    },
+    "ex:dia-atrak-live-visuals": {
+      "mode": "on-demand-embed",
+      "source_url": "https://dia.tv/project/a-trak/",
+      "attribution": "DIA / A-Trak",
+      "rights_status": "publisher-controlled-frame"
+    },
+    "ex:dia-catk": {
+      "mode": "on-demand-embed",
+      "source_url": "https://dia.tv/project/catk/",
+      "attribution": "DIA / CATK",
+      "rights_status": "publisher-controlled-frame"
+    },
+    "ex:dia-nike-statement-house": {
+      "mode": "on-demand-embed",
+      "source_url": "https://dia.tv/project/nike-statement-house/",
+      "attribution": "DIA / Nike",
+      "rights_status": "publisher-controlled-frame"
+    },
+    "ex:earth-nullschool": {
+      "mode": "poster",
+      "source_url": "https://earth.nullschool.net/",
+      "poster_url": "https://earth.nullschool.net/preview.jpg",
+      "attribution": "Cameron Beccario / Nullschool Technologies",
+      "rights_status": "open-license-preview",
+      "license": "MIT",
+      "rights_evidence_url": "https://github.com/cambecc/earth/blob/master/LICENSE.md",
+      "notes": "Remote official preview only; bytes are not copied into AIDRB."
+    },
+    "ex:esdevlin-formation-tour": {
+      "mode": "on-demand-embed",
+      "source_url": "https://esdevlin.com/work/projects/beyonce",
+      "attribution": "Es Devlin / Beyoncé Formation Tour",
+      "rights_status": "publisher-controlled-frame"
+    },
+    "ex:esdevlin-mirror-maze": {
+      "mode": "on-demand-embed",
+      "source_url": "https://esdevlin.com/work/projects/mirror-maze",
+      "attribution": "Es Devlin / Mirror Maze",
+      "rights_status": "publisher-controlled-frame"
+    },
+    "ex:esdevlin-u2-sphere": {
+      "mode": "on-demand-embed",
+      "source_url": "https://esdevlin.com/work/projects/the-sphere",
+      "attribution": "Es Devlin / U2 Sphere",
+      "rights_status": "publisher-controlled-frame"
+    },
+    "ex:evolution-of-trust": {
+      "mode": "embed",
+      "source_url": "https://ncase.me/trust/",
+      "embed_url": "https://ncase.me/trust/",
+      "poster_url": "https://ncase.me/trust/social/thumbnail.png",
+      "attribution": "Nicky Case",
+      "rights_status": "open-license",
+      "license": "CC0 / public domain",
+      "rights_evidence_url": "https://github.com/ncase/trust"
+    },
+    "ex:fiona-vilmer": {
+      "mode": "on-demand-embed",
+      "source_url": "https://fionavilmer.com/en",
+      "attribution": "Fiona Vilmer",
+      "rights_status": "publisher-controlled-frame"
+    },
+    "ex:google-100000-stars": {
+      "mode": "on-demand-embed",
+      "source_url": "https://experiments.withgoogle.com/100000-stars",
+      "attribution": "Google / 100,000 Stars",
+      "rights_status": "publisher-controlled-frame"
+    },
+    "ex:parable-of-polygons": {
+      "mode": "embed",
+      "source_url": "https://ncase.me/polygons/",
+      "embed_url": "https://ncase.me/polygons/",
+      "poster_url": "https://ncase.me/polygons/social/thumbnail.png",
+      "attribution": "Vi Hart & Nicky Case",
+      "rights_status": "open-license",
+      "license": "CC0 / public domain",
+      "rights_evidence_url": "https://github.com/ncase/polygons"
+    },
+    "ex:patatap": {
+      "mode": "embed",
+      "source_url": "https://patatap.com/",
+      "embed_url": "https://patatap.com/",
+      "attribution": "Jono Brandel / Patatap",
+      "rights_status": "open-license",
+      "license": "MIT",
+      "rights_evidence_url": "https://github.com/jonobr1/Patatap"
+    },
+    "ex:pattern-breaking": {
+      "mode": "on-demand-embed",
+      "source_url": "https://patternbreak.ing/",
+      "attribution": "Pattern Breaking",
+      "rights_status": "publisher-controlled-frame"
+    },
+    "ex:pulse-room": {
+      "mode": "on-demand-embed",
+      "source_url": "https://www.lozano-hemmer.com/pulse_room.php",
+      "attribution": "Rafael Lozano-Hemmer / Pulse Room",
+      "rights_status": "publisher-controlled-frame"
+    },
+    "ex:rain-room": {
+      "mode": "on-demand-embed",
+      "source_url": "https://www.random-international.com/rain-room",
+      "attribution": "Random International / Rain Room",
+      "rights_status": "publisher-controlled-frame"
+    },
+    "ex:random-future-self": {
+      "mode": "on-demand-embed",
+      "source_url": "https://www.random-international.com/future-self",
+      "attribution": "Random International / Future Self",
+      "rights_status": "publisher-controlled-frame"
+    },
+    "ex:ryoji-data-verse-3": {
+      "mode": "on-demand-embed",
+      "source_url": "https://www.ryojiikeda.com/project/x_verse/",
+      "attribution": "Ryoji Ikeda / data-verse 3",
+      "rights_status": "publisher-controlled-frame"
+    },
+    "ex:seeing-theory-basic-probability": {
+      "mode": "embed",
+      "source_url": "https://seeing-theory.brown.edu/basic-probability/",
+      "embed_url": "https://seeing-theory.brown.edu/basic-probability/",
+      "attribution": "Daniel Kunin / Seeing Theory",
+      "rights_status": "explicit-embed",
+      "license": "Educational use; upstream integration example",
+      "rights_evidence_url": "https://github.com/danielkunin/Seeing-Theory",
+      "notes": "Upstream README explicitly documents iframe integration."
+    },
+    "ex:setosa-image-kernels": {
+      "mode": "embed",
+      "source_url": "https://setosa.io/ev/image-kernels/",
+      "embed_url": "https://setosa.io/ev/image-kernels/",
+      "attribution": "Victor Powell / Setosa",
+      "rights_status": "open-license",
+      "license": "MIT",
+      "rights_evidence_url": "https://github.com/vicapow/explained-visually"
+    },
+    "ex:setosa-markov-chains": {
+      "mode": "embed",
+      "source_url": "https://setosa.io/ev/markov-chains/",
+      "embed_url": "https://setosa.io/ev/markov-chains/",
+      "attribution": "Victor Powell & Lewis Lehe / Setosa",
+      "rights_status": "open-license",
+      "license": "MIT",
+      "rights_evidence_url": "https://github.com/vicapow/explained-visually"
+    },
+    "ex:teamlab-borderless": {
+      "mode": "on-demand-embed",
+      "source_url": "https://www.teamlab.art/e/tokyo/",
+      "attribution": "teamLab Borderless",
+      "rights_status": "publisher-controlled-frame"
+    },
+    "ex:uva-momentum": {
+      "mode": "on-demand-embed",
+      "source_url": "https://www.uva.co.uk/features/momentum-barbican-curve-gallery",
+      "attribution": "United Visual Artists / Momentum",
+      "rights_status": "publisher-controlled-frame"
+    },
+    "ex:whole-earth-index": {
+      "mode": "on-demand-embed",
+      "source_url": "https://wholeearth.info/",
+      "attribution": "Whole Earth Index",
+      "rights_status": "publisher-controlled-frame"
+    }
+  }
+}
