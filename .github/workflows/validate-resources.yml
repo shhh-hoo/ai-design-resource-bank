@@ -31,6 +31,7 @@ jobs:
           python scripts/validate_grammar_mechanisms.py
       - name: Detect generated drift and create SQLite FTS
         run: |
+          python -c "import sys; sys.path.insert(0,'scripts'); from atlas_core import fingerprint; print('EXPECTED_CATALOG_FINGERPRINT='+fingerprint())"
           python scripts/build_catalog.py --check
           python scripts/validate_relational_model.py --self-check
       - name: Exercise retrieval, locking and chemical models
