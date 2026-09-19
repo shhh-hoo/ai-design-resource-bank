@@ -29,6 +29,16 @@ jobs:
           python scripts/validate_mechanisms.py
           python scripts/validate_subject_atlas.py
           python scripts/validate_grammar_mechanisms.py
+      - name: Generate Wave 01 catalog snapshot
+        run: python scripts/build_catalog.py
+      - name: Upload Wave 01 catalog snapshot
+        uses: actions/upload-artifact@v4
+        with:
+          name: wave01-catalog-snapshot
+          include-hidden-files: true
+          path: |
+            catalog/
+            catalog.yaml
       - name: Detect generated drift and create SQLite FTS
         run: |
           python scripts/build_catalog.py --check
