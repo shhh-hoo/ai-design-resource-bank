@@ -12,7 +12,7 @@ from datetime import date
 from collections import defaultdict
 from typing import Iterable
 
-KINDS = {'pattern','technique','style','medium','material','principle','format','interaction_pattern','motion','component','effect','texture','lighting','composition','representation_method','cinematography','stagecraft','mechanism','knowledge'}
+KINDS = {'pattern','technique','style','medium','material','principle','format','interaction_pattern','motion','component','effect','texture','lighting','composition','representation_method','cinematography','stagecraft','mechanism','knowledge','grammar'}
 
 def _cyclic(edges: Iterable[tuple[str,str]]) -> bool:
     graph: dict[str,list[str]] = defaultdict(list)
