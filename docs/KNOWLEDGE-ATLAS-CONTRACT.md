@@ -4,7 +4,7 @@ Governing baseline: [AIDRB — North Star, Architecture v2](https://docs.google.
 
 ## Core and ownership
 
-Only Concept, Example, Tool and Resource are canonical **content** types. Intent, Collection and SubjectTopic are organization overlays. Source is non-content provenance. Grammar is structured descriptive metadata. Method is never a canonical entity: it is generated for an Example from its Concepts/mechanism evidence, grammar, interaction/state model, transfer/fidelity constraints and failure modes.
+Only Concept, Example, Tool and Resource are canonical **content** types. Intent, Collection and SubjectTopic are organization overlays. A Creative Example may have zero SubjectTopic links; academic membership is optional rather than a prerequisite for preservation. Source is non-content provenance. Grammar is structured descriptive metadata. Method is never a canonical entity: it is generated for an Example from its Concepts/mechanism evidence, grammar, interaction/state model, transfer/fidelity constraints and failure modes.
 
 Example means a perceivable/inspectable/tryable/comparable reference or instance. Resource means implementation material intended for reuse elsewhere. Example → yields → Resource is zero-to-many; Resource → implements → Concept and Example → yields may be many-to-many. A reference does not require extraction into a Resource Package.
 

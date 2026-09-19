@@ -401,7 +401,6 @@
           "kind",
           "summary",
           "lifecycle",
-          "subject_id",
           "concept_ids",
           "topic_ids",
           "intent_ids",
