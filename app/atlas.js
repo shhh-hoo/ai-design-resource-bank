@@ -34,8 +34,8 @@ const list = (items, className = "") =>
     ? `<ul class="${className}">${items.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>`
     : '<p class="quiet">None recorded.</p>';
 
-const heading = (tag, title, copy, label = "AIDRB / Creative World") =>
-  `<div class="page-heading"><div><p class="eyebrow">${tag}</p><h1>${title}</h1><p class="intro">${copy}</p></div><span class="subject-label">${label}</span></div>`;
+const heading = (title, label = "") =>
+  `<div class="page-heading"><h1>${esc(title)}</h1>${label ? `<span class="subject-label">${esc(label)}</span>` : ""}</div>`;
 
 function referencePlate(example, detail = false) {
   const type = presentationType(example);
@@ -50,7 +50,6 @@ function referencePlate(example, detail = false) {
       <span class="reference-plate__domain">${esc(domain)}</span>
       <strong>${esc(humanize(example.medium || type))}</strong>
       <small>${esc(example.interaction || "inspect")} ${traits.length ? `· ${traits.map(esc).join(" · ")}` : ""}</small>
-      ${detail ? '<em>Original source media is linked, not reproduced here.</em>' : ""}
     </div>
   </div>`;
 }
@@ -100,12 +99,7 @@ function subjectAtlas(topicId = "topic:chemistry-energetics") {
   if (!topic || !topic.parent) throw new Error("Unknown Chemistry topic");
   main.innerHTML =
     `<a class="back" href="#atlas">← Creative Atlas</a>` +
-    heading(
-      "ACADEMIC PACK / CHEMISTRY",
-      "Chemistry, in view.",
-      "The existing academic pack remains intact: canonical topic → concrete LIVE / REFERENCE / GAP inventory.",
-      "Subject pack / Chemistry",
-    ) +
+    heading("Chemistry", "Academic") +
     `<div class="atlas-layout"><aside class="topic-nav" aria-label="Chemistry topics"><p class="eyebrow">Chemistry</p>${data.topics
       .filter((item) => item.parent === "topic:chemistry")
       .sort((a, b) => a.order - b.order)
@@ -113,7 +107,7 @@ function subjectAtlas(topicId = "topic:chemistry-energetics") {
         (item) =>
           `<a href="#atlas/${item.id}" ${item.id === topicId ? 'aria-current="page"' : ""}>${esc(item.title)}<span>↗</span></a>`,
       )
-      .join("")}</aside><section aria-label="${esc(topic.title)} examples"><div class="topic-heading"><h2>${esc(topic.title)}</h2><small>Visual example inventory</small></div><div class="grid academic-grid">${topic.example_ids
+      .join("")}</aside><section aria-label="${esc(topic.title)} examples"><div class="topic-heading"><h2>${esc(topic.title)}</h2></div><div class="grid academic-grid">${topic.example_ids
       .map((id, index) => exampleTile(examples.get(id), index))
       .join("")}</div></section></div>`;
 }
@@ -139,16 +133,8 @@ function atlas(topicId) {
     .filter(([, items]) => items.length);
 
   main.innerHTML =
-    heading(
-      "CREATIVE WORLD",
-      "Creative references, in view.",
-      "A cross-media atlas for seeing mechanisms before choosing them. External work stays external; original AIDRB demos are clearly marked and runnable.",
-      `${creative.length} creative Examples / one canonical bank`,
-    ) +
-    `<section class="atlas-intro">
-      <div><p class="eyebrow">ONE BANK / TWO PROJECTIONS</p><p>Human view is organized for recognition, comparison and understanding. Stable URLs and IDs remain available when an agent needs an exact reference.</p></div>
-      <a class="academic-handoff" href="#atlas/topic:chemistry-energetics"><span>Academic pack</span><strong>Open Chemistry →</strong><small>6 LIVE · 16 local REFERENCE · 26 explicit GAP</small></a>
-    </section>` +
+    heading("References", `${creative.length} items`) +
+    `<div class="library-switch"><a class="academic-handoff" href="#atlas/topic:chemistry-energetics"><strong>Chemistry</strong><span>12 topics →</span></a></div>` +
     groups
       .map(
         ([domain, items]) =>
@@ -161,11 +147,7 @@ function atlas(topicId) {
 
 async function explore(version) {
   main.innerHTML =
-    heading(
-      "VISUAL DISCOVERY",
-      "Find the mechanism, not the thumbnail.",
-      "Browse by creative domain, medium, interaction, Concept and visual trait. The default surface stays Creative-first; academic studies remain one switch away.",
-    ) +
+    heading("Explore") +
     `<div class="explore-tools">
       <label class="search-field">Search references<input id="explore-search" type="search" placeholder="Archive, spatial, kinetic, probability…"></label>
       <details class="refine" id="refine"><summary>Refine <span aria-hidden="true">＋</span></summary><div class="filters" id="refine-fields">${busy()}</div></details>
@@ -332,7 +314,7 @@ async function explore(version) {
                 <h2><a href="#example/${example.id}">${esc(example.title)}</a></h2>
                 <p>${esc(humanize(example.interaction || "inspect"))} · ${(example.visual_traits || []).map(humanize).map(esc).join(" · ")}</p>
                 <p class="concept-line">${conceptsMarkup || "No Concept mapping yet."}</p>
-                <div class="row-flags"><span>${example.kind}</span>${resourceExamples.has(example.id) ? '<span>Runnable Resource</span>' : '<span>Reference only</span>'}</div>
+                <div class="row-flags">${example.kind === "LIVE" ? "<span>Live</span>" : ""}${resourceExamples.has(example.id) ? "<span>Demo</span>" : ""}</div>
               </div>
             </article>`;
           })
@@ -373,16 +355,15 @@ async function detail(id, version) {
 
   main.innerHTML = `<article class="detail">
     <a class="back" href="${backHref}">← ${esc(backLabel)}</a>
-    <div class="detail-stage ${previewClass(example)}" id="stage">${example.kind === "GAP" ? '<span class="gap-sign">＋</span><span>GAP · A concrete example is still needed</span>' : previewMarkup(example, true)}</div>
     <header class="detail-identification">
-      <div><p class="eyebrow">${example.kind} / ${esc(subjectLabel)}</p><h1>${esc(example.title)}</h1><p class="detail-deck">${esc(humanize(example.medium || example.kind))} · ${esc(humanize(example.interaction || "inspect"))}</p><span class="data-id">${example.id}</span></div>
+      <div><p class="eyebrow">${esc(subjectLabel)} · ${esc(humanize(example.medium || example.kind))}</p><h1>${esc(example.title)}</h1><p class="detail-deck">${esc(humanize(example.interaction || "inspect"))}</p><span class="data-id">${example.id}</span></div>
     </header>
-    <section class="detail-section detail-section--lead"><p class="eyebrow">WHY IT IS BANKED</p><p class="detail-summary" id="context">${example.kind === "GAP" ? esc(example.gap_reason || "Coverage gap") : "Loading reference notes…"}</p><div class="concept-pills" id="concepts"></div></section>
+    <div class="detail-stage ${previewClass(example)}" id="stage">${example.kind === "GAP" ? '<span class="gap-sign">＋</span><span>Example needed</span>' : previewMarkup(example, true)}</div>
+    <section class="detail-section detail-section--lead"><p class="detail-summary" id="context">${example.kind === "GAP" ? esc(example.gap_reason || "Coverage gap") : "Loading…"}</p><div class="concept-pills" id="concepts"></div></section>
     <section class="detail-section detail-columns" id="observations">${busy()}</section>
     <section class="detail-section" id="related">${busy()}</section>
-    <section class="detail-section resource-zone" id="resources">${busy()}</section>
-    <details id="ai-build"><summary>Machine / build projection</summary><div class="details-body">${busy()}</div></details>
-    <details id="implementation"><summary>State model & implementation limits</summary><div class="details-body">${busy()}</div></details>
+    <section class="detail-section resource-zone" id="resources"></section>
+    <details id="implementation"><summary>Technical notes</summary><div class="details-body">${busy()}</div></details>
     <details id="provenance"><summary>Provenance${example.subject_id ? " & curriculum crosswalks" : ""}</summary><div class="details-body">${busy()}</div></details>
   </article>`;
 
@@ -418,14 +399,14 @@ async function detail(id, version) {
         .getElementById("stage")
         .insertAdjacentHTML(
           "beforeend",
-          `<div class="reference-access"><span>Source media remains external.</span><a href="${esc(source.locator)}" target="_blank" rel="noreferrer">Open original reference ↗</a></div>`,
+          `<div class="reference-access"><a href="${esc(source.locator)}" target="_blank" rel="noreferrer">Original ↗</a></div>`,
         );
     }
   }
 
   document.getElementById("observations").innerHTML = `
-    <div><p class="eyebrow">REUSABLE OBSERVATIONS</p>${list(record.transfer_constraints || [], "observation-list")}</div>
-    <div><p class="eyebrow">TRANSFER CONSTRAINTS / FAILURE MODES</p>${list([...(record.fidelity_constraints || []), ...(record.failure_modes || [])], "constraint-list")}</div>`;
+    <div><p class="eyebrow">USE</p>${list(record.transfer_constraints || [], "observation-list")}</div>
+    <div><p class="eyebrow">WATCH FOR</p>${list([...(record.fidelity_constraints || []), ...(record.failure_modes || [])], "constraint-list")}</div>`;
 
   const related = data.examples
     .filter(
@@ -437,25 +418,21 @@ async function detail(id, version) {
         ),
     )
     .slice(0, 5);
-  document.getElementById("related").innerHTML = `<div class="section-heading"><div><p class="eyebrow">RELATED EXAMPLES</p><h2>Compare the mechanism across media.</h2></div><span>${related.length || "—"}</span></div>${
+  document.getElementById("related").innerHTML = `<div class="section-heading"><p class="eyebrow">RELATED</p><span>${related.length || "—"}</span></div>${
     related.length
       ? `<div class="compact-example-list">${related.map(compactExample).join("")}</div>`
       : '<p class="quiet">No other Example currently shares this Concept mapping.</p>'
   }`;
 
-  document.getElementById("resources").innerHTML = `<div class="section-heading"><div><p class="eyebrow">RESOURCES</p><h2>Reusable implementation is a separate object.</h2></div></div>${
-    build.resources.length
-      ? `<div class="resource-callouts">${build.resources
-          .map(
-            (resource) =>
-              `<a class="resource-callout" href="#resource/${resource.id}"><span>Original AIDRB Resource / not the source preview</span><h3>${esc(resource.title)}</h3><p>${esc(resource.status)} · open runnable demo and mechanism contract</p><strong>${esc(resource.id)} →</strong></a>`,
-          )
-          .join("")}</div>`
-      : '<p class="quiet">No reusable Resource has been extracted from this reference. The Example remains useful as a reference without pretending implementation exists.</p>'
-  }`;
+  document.getElementById("resources").innerHTML = build.resources.length
+    ? `<div class="section-heading"><p class="eyebrow">RESOURCES</p></div><div class="resource-callouts">${build.resources
+        .map(
+          (resource) =>
+            `<a class="resource-callout" href="#resource/${resource.id}"><span>AIDRB implementation</span><h3>${esc(resource.title)}</h3><p>${esc(resource.status)}</p><strong>Open →</strong></a>`,
+        )
+        .join("")}</div>`
+    : "";`
 
-  document.querySelector("#ai-build .details-body").innerHTML =
-    `<p>${record.kind === "GAP" ? "Coverage gap: no implementation is claimed." : "Generated from this exact Example. Proposed alternatives remain distinguished from observed implementation."}</p><h3>Method</h3><p>${esc(build.method.grammar.join(" · "))} / ${esc(record.interaction)}</p>${list(build.method.transfer_constraints)}<h3>Mechanism evidence</h3>${build.method.mechanisms.length ? list(build.method.mechanisms.map((item) => `${item.id}: ${item.implementation_note} (${item.evidence})`)) : "<p>No legacy mechanism required.</p>"}<h3>Tools</h3>${build.tools.map((tool) => `<p><strong>${esc(tool.record.title)}</strong> · ${esc(tool.evidence)}<br>${esc(tool.reason)}</p><p>Use when: ${esc(tool.record.use_when)}<br>Avoid when: ${esc(tool.record.avoid_when)}</p>`).join("") || "<p>No tool implementation claim.</p>"}<p class="gap-note">Selection commit remains the boundary before AI lock and deep Resource fetch.</p>`;
 
   document.querySelector("#implementation .details-body").innerHTML =
     `<h3>State model</h3><p>${esc(record.state_model.model)} · deterministic: ${record.state_model.deterministic}</p><p>${esc(record.interaction_model.response)}</p><h3>Lifecycle</h3><p>${Object.entries(
@@ -473,11 +450,7 @@ async function detail(id, version) {
 
 async function dictionary(version) {
   main.innerHTML =
-    heading(
-      "THE DICTIONARY",
-      "A name for what you see.",
-      "Concepts are useful when they connect vocabulary to references and an implementation path—not when they stop at a definition.",
-    ) +
+    heading("Dictionary") +
     '<div class="dictionary-tools"><label class="search-field">Find a Concept<input id="concept-search" type="search" placeholder="Archive, semantic zoom, kinetic identity…"></label><p id="dictionary-count" class="result-count"></p></div><div id="dictionary-results">' +
     busy() +
     "</div>";
@@ -522,7 +495,7 @@ async function dictionary(version) {
             `<a class="dictionary-term" href="#concept/${concept.id}">
               <div class="dictionary-term__name"><span>${concept.id}</span><h2>${esc(concept.title)}</h2></div>
               <p>${esc(concept.summary)}</p>
-              <div class="dictionary-term__meta"><span>${concept.example_ids.length} Example${concept.example_ids.length === 1 ? "" : "s"}</span>${resourceConcepts.has(concept.id) ? "<span>Runnable Resource</span>" : "<span>Reference path</span>"}<strong>Open →</strong></div>
+              <div class="dictionary-term__meta"><span>${concept.example_ids.length} Example${concept.example_ids.length === 1 ? "" : "s"}</span>${resourceConcepts.has(concept.id) ? "<span>Demo</span>" : ""}<strong>Open →</strong></div>
             </a>`,
         )
         .join("") || '<p class="empty">No matching Concepts.</p>';
@@ -608,7 +581,7 @@ async function conceptDetail(id, version) {
   main.innerHTML = `<article class="concept-detail">
     <a class="back" href="#dictionary">← Dictionary</a>
     <header class="concept-hero">
-      <p class="eyebrow">CONCEPT / ${esc((record.subtypes || []).map(humanize).join(" · ") || "Creative mechanism")}</p>
+      <p class="eyebrow">${esc((record.subtypes || []).map(humanize).join(" · ") || "Concept")}</p>
       <h1>${esc(record.title)}</h1>
       <p class="concept-definition">${esc(record.summary)}</p>
       <span class="data-id">${record.id}</span>
@@ -618,7 +591,7 @@ async function conceptDetail(id, version) {
       <div><p class="eyebrow">WATCH FOR</p>${list(failures)}</div>
     </section>
     <section class="concept-section">
-      <div class="section-heading"><div><p class="eyebrow">EXAMPLES / COMPARE</p><h2>Same Concept, different medium.</h2></div><span>${exampleIds.length}</span></div>
+      <div class="section-heading"><p class="eyebrow">EXAMPLES</p><span>${exampleIds.length}</span></div>
       <div class="comparison-list">${
         exampleIds.length
           ? exampleIds
@@ -636,27 +609,27 @@ async function conceptDetail(id, version) {
       }</div>
     </section>
     <section class="concept-section implementation-path">
-      <div class="section-heading"><div><p class="eyebrow">IMPLEMENTATION PATH</p><h2>From name → reference → reusable mechanism.</h2></div></div>
+      <div class="section-heading"><p class="eyebrow">RESOURCES & TOOLS</p></div>
       <div class="implementation-grid">
         <div><h3>Resources</h3>${
           resources.length
             ? resources
                 .map(
                   (resource) =>
-                    `<a class="implementation-link" href="#resource/${resource.record.id}"><strong>${esc(resource.record.title)}</strong><span>${esc(resource.record.mechanism?.summary || resource.record.summary || "")}</span><em>Runnable demo →</em></a>`,
+                    `<a class="implementation-link" href="#resource/${resource.record.id}"><strong>${esc(resource.record.title)}</strong><span>${esc(resource.record.mechanism?.summary || resource.record.summary || "")}</span><em>Open →</em></a>`,
                 )
                 .join("")
-            : '<p class="quiet">No Resource extracted yet.</p>'
+            : '<p class="quiet">—</p>'
         }</div>
         <div><h3>Tools</h3>${
           toolIds.length
             ? toolIds
                 .map(
                   (toolId) =>
-                    `<a class="implementation-link" href="#record/${toolId}"><strong>${esc(indexMap.get(toolId)?.title || humanize(toolId))}</strong><span>${esc(toolId)}</span><em>Inspect Tool →</em></a>`,
+                    `<a class="implementation-link" href="#record/${toolId}"><strong>${esc(indexMap.get(toolId)?.title || humanize(toolId))}</strong><span>${esc(toolId)}</span><em>Open →</em></a>`,
                 )
                 .join("")
-            : '<p class="quiet">No canonical Tool route is attached to this Concept.</p>'
+            : '<p class="quiet">—</p>'
         }</div>
       </div>
     </section>
@@ -687,11 +660,11 @@ async function resourceDetail(id, version) {
   main.innerHTML = `<article class="resource-detail">
     <a class="back" href="#dictionary">← Dictionary</a>
     <header class="resource-hero">
-      <div><p class="eyebrow">RESOURCE / ORIGINAL AIDRB IMPLEMENTATION</p><h1>${esc(record.title)}</h1><p class="intro">${esc(record.summary || record.selection_reason || "")}</p><span class="data-id">${record.id}</span></div>
-      <span class="resource-status">${esc(record.status)}</span>
+      <div><p class="eyebrow">RESOURCE</p><h1>${esc(record.title)}</h1><p class="intro">${esc(record.summary || record.selection_reason || "")}</p><span class="data-id">${record.id}</span></div>
+      <span class="resource-status">AIDRB implementation · ${esc(record.status)}</span>
     </header>
     <section class="resource-demo-section">
-      <div class="resource-demo-label"><div><p class="eyebrow">RUNNABLE DEMO</p><strong>This is the generalized Resource, not a preview of its source Example.</strong></div>${demo ? `<a href="${esc(demo)}" target="_blank" rel="noreferrer">Open demo alone ↗</a>` : ""}</div>
+      <div class="resource-demo-label"><p class="eyebrow">DEMO</p>${demo ? `<a href="${esc(demo)}" target="_blank" rel="noreferrer">Open ↗</a>` : ""}</div>
       ${
         demo
           ? `<iframe class="resource-demo" title="${esc(record.title)} runnable Resource demo" src="${esc(demo)}" sandbox="allow-scripts allow-same-origin"></iframe>`
@@ -703,7 +676,7 @@ async function resourceDetail(id, version) {
       <div class="mechanism-spec"><div><h3>Primitives</h3>${list(record.mechanism?.primitives || [])}</div><div><h3>States</h3>${list(record.mechanism?.states || [])}</div><div><h3>Parameters</h3>${list(record.mechanism?.parameters || [])}</div><div><h3>Failure modes</h3>${list(record.mechanism?.failure_modes || [])}</div></div>
     </section>
     <section class="detail-section">
-      <div class="section-heading"><div><p class="eyebrow">DERIVED / GENERALIZED FROM</p><h2>References stay references.</h2></div><span>${related.length}</span></div>
+      <div class="section-heading"><p class="eyebrow">REFERENCES</p><span>${related.length}</span></div>
       <div class="compact-example-list">${related.length ? related.map(compactExample).join("") : '<p class="quiet">No related Example is declared.</p>'}</div>
     </section>
     <section class="detail-section"><p class="eyebrow">ARTIFACTS</p><div class="artifact-list">${(record.artifacts || []).map((artifact) => `<div><strong>${esc(artifact.kind)}</strong><span>${esc(artifact.path)}</span><p>${esc(artifact.purpose || "")}</p></div>`).join("")}</div></section>
@@ -713,11 +686,7 @@ async function resourceDetail(id, version) {
 
 async function index(version) {
   main.innerHTML =
-    heading(
-      "THE INDEX",
-      "Everything, by name.",
-      "Compact exhaustive retrieval across canonical content, organization and provenance.",
-    ) +
+    heading("Index") +
     '<div class="filters index-filters"><label>Search name or stable ID<input id="index-search" type="search" placeholder="Name or stable ID"></label><label>Entity type<select id="entity-type"><option value="">All types</option>' +
     [
       "Concept",
@@ -787,7 +756,6 @@ async function record(id, version) {
     <p class="data-id">${esc(record.id)}</p>
     <dl class="record-fields">${visibleFields.map(([key, value]) => `<div><dt>${esc(humanize(key))}</dt><dd>${esc(value)}</dd></div>`).join("")}</dl>
     ${resolved.sources?.length ? `<details><summary>Provenance</summary><div class="details-body">${resolved.sources.map((source) => `<p>${sourceLabel(source)}<br>${esc(source.check_scope || "")}</p>`).join("")}</div></details>` : ""}
-    <details><summary>Machine projection</summary><div class="details-body"><pre>${esc(JSON.stringify(resolved, null, 2))}</pre></div></details>
   </article>`;
 }
 
