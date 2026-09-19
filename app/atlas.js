@@ -26,8 +26,6 @@ const relationRecords = () =>
 const data = await json("catalog/web-index.json");
 const examples = new Map(data.examples.map((example) => [example.id, example]));
 const topics = new Map(data.topics.map((topic) => [topic.id, topic]));
-const selected = new Map();
-let committed = null;
 let routeVersion = 0;
 
 const busy = () => '<p class="loading">Loading…</p>';
@@ -148,7 +146,7 @@ function atlas(topicId) {
       `${creative.length} creative Examples / one canonical bank`,
     ) +
     `<section class="atlas-intro">
-      <div><p class="eyebrow">ONE BANK / TWO PROJECTIONS</p><p>Human view is organized for recognition, comparison and selection. Stable IDs remain the same IDs used by retrieval and lock.</p></div>
+      <div><p class="eyebrow">ONE BANK / TWO PROJECTIONS</p><p>Human view is organized for recognition, comparison and understanding. Stable URLs and IDs remain available when an agent needs an exact reference.</p></div>
       <a class="academic-handoff" href="#atlas/topic:chemistry-energetics"><span>Academic pack</span><strong>Open Chemistry →</strong><small>6 LIVE · 16 local REFERENCE · 26 explicit GAP</small></a>
     </section>` +
     groups
@@ -378,7 +376,6 @@ async function detail(id, version) {
     <div class="detail-stage ${previewClass(example)}" id="stage">${example.kind === "GAP" ? '<span class="gap-sign">＋</span><span>GAP · A concrete example is still needed</span>' : previewMarkup(example, true)}</div>
     <header class="detail-identification">
       <div><p class="eyebrow">${example.kind} / ${esc(subjectLabel)}</p><h1>${esc(example.title)}</h1><p class="detail-deck">${esc(humanize(example.medium || example.kind))} · ${esc(humanize(example.interaction || "inspect"))}</p><span class="data-id">${example.id}</span></div>
-      <button id="select-example" ${example.kind === "GAP" ? "disabled" : ""}>${selected.has(id) ? "Selected ✓" : "Add to selection"}</button>
     </header>
     <section class="detail-section detail-section--lead"><p class="eyebrow">WHY IT IS BANKED</p><p class="detail-summary" id="context">${example.kind === "GAP" ? esc(example.gap_reason || "Coverage gap") : "Loading reference notes…"}</p><div class="concept-pills" id="concepts"></div></section>
     <section class="detail-section detail-columns" id="observations">${busy()}</section>
@@ -389,15 +386,6 @@ async function detail(id, version) {
     <details id="provenance"><summary>Provenance${example.subject_id ? " & curriculum crosswalks" : ""}</summary><div class="details-body">${busy()}</div></details>
   </article>`;
 
-  document.getElementById("select-example").onclick = (event) => {
-    selected.set(
-      id,
-      selected.get(id) || { id, aspect_notes: "", constraints: [] },
-    );
-    committed = null;
-    event.target.textContent = "Selected ✓";
-    count();
-  };
 
   if (example.kind === "LIVE") {
     const { mountLive } = await import("./live.js");
@@ -774,111 +762,6 @@ async function index(version) {
   render();
 }
 
-function count() {
-  document.getElementById("selection-count").textContent = selected.size;
-}
-
-function download(value, name) {
-  const url = URL.createObjectURL(
-    new Blob([JSON.stringify(value, null, 2) + "\n"], {
-      type: "application/json",
-    }),
-  );
-  const anchor = document.createElement("a");
-  anchor.href = url;
-  anchor.download = name;
-  anchor.click();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
-}
-
-async function selection(version) {
-  main.innerHTML =
-    heading(
-      "SHARED SELECTION",
-      "Choose what to carry forward.",
-      "Compare selected Examples, annotate what matters, then commit the same stable IDs consumed by the machine projection.",
-    ) +
-    ([...selected.values()]
-      .map((selectionItem) => {
-        const example = examples.get(selectionItem.id);
-        return `<section class="selection-item">
-          <div class="selection-item__identity"><span>${esc(humanize(example.medium || example.kind))}</span><h3><a href="#example/${selectionItem.id}">${esc(example.title)}</a></h3><p>${example.concept_ids.map(humanize).map(esc).join(" · ")}</p></div>
-          <label>Aspect notes<textarea data-notes="${selectionItem.id}" placeholder="What should be borrowed? What should be avoided?">${esc(selectionItem.aspect_notes)}</textarea></label>
-          <label>Constraints · one per line<textarea data-constraints="${selectionItem.id}">${esc(selectionItem.constraints.join("\n"))}</textarea></label>
-          <button data-remove="${selectionItem.id}">Remove</button>
-        </section>`;
-      })
-      .join("") ||
-      '<p class="empty">Open an Example and add it to your selection.</p>') +
-    `<div class="selection-actions"><button class="primary" id="commit" ${selected.size ? "" : "disabled"}>Commit selection</button><button id="export-selection" disabled>Download committed selection</button></div><p class="notice" id="commit-status"></p>`;
-
-  main.querySelectorAll("[data-notes],[data-constraints]").forEach(
-    (input) =>
-      (input.oninput = () => {
-        const item = selected.get(
-          input.dataset.notes || input.dataset.constraints,
-        );
-        if (input.dataset.notes) item.aspect_notes = input.value;
-        else item.constraints = input.value.split("\n").filter(Boolean);
-        committed = null;
-        document.getElementById("export-selection").disabled = true;
-        document.getElementById("commit-status").textContent =
-          "Selection changed. Commit again to freeze these choices.";
-      }),
-  );
-  main.querySelectorAll("[data-remove]").forEach(
-    (button) =>
-      (button.onclick = () => {
-        selected.delete(button.dataset.remove);
-        committed = null;
-        count();
-        selection(version);
-      }),
-  );
-  document.getElementById("commit").onclick = async () => {
-    try {
-      const { fingerprint } = await json("catalog/manifest.json");
-      if (version !== routeVersion) return;
-      const body = {
-        version: 1,
-        state: "committed",
-        selection: {
-          selector: "human",
-          selections: structuredClone([...selected.values()]),
-        },
-        catalog_fingerprint: fingerprint,
-      };
-      const canonical = (value) =>
-        Array.isArray(value)
-          ? value.map(canonical)
-          : value && typeof value === "object"
-            ? Object.fromEntries(
-                Object.keys(value)
-                  .sort()
-                  .map((key) => [key, canonical(value[key])]),
-              )
-            : value;
-      const bytes = new TextEncoder().encode(
-        JSON.stringify(canonical(body), null, 2) + "\n",
-      );
-      const digest = await crypto.subtle.digest("SHA-256", bytes);
-      committed = {
-        ...body,
-        commit_digest: [...new Uint8Array(digest)]
-          .map((value) => value.toString(16).padStart(2, "0"))
-          .join(""),
-      };
-      document.getElementById("export-selection").disabled = false;
-      document.getElementById("commit-status").textContent =
-        "Committed. Download this selection, then use the retrieval CLI to lock these exact IDs and fetch build resources. Selections stay in this tab until reload.";
-    } catch (error) {
-      document.getElementById("commit-status").textContent = error.message;
-    }
-  };
-  document.getElementById("export-selection").onclick = () =>
-    download(committed, "aidrb-selection.json");
-}
-
 async function record(id, version) {
   if (!/^[a-z]+:[a-z0-9-]+$/.test(id)) throw new Error("Invalid stable ID");
   const resolved = await resolveById(id);
@@ -931,7 +814,6 @@ async function route() {
     else if (view === "concept") await conceptDetail(id, version);
     else if (view === "resource") await resourceDetail(id, version);
     else if (view === "index") await index(version);
-    else if (view === "selection") await selection(version);
     else if (view === "record") await record(id, version);
     else throw new Error("Unknown page");
 
