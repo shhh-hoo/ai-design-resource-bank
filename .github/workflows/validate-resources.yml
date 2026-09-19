@@ -25,6 +25,7 @@ jobs:
           npm ci --no-audit --no-fund
       - name: Validate authoritative Core and compatibility inputs
         run: |
+          python scripts/build_catalog.py
           python scripts/validate_atlas.py
           python scripts/validate_resources.py
           python scripts/validate_registries.py
@@ -78,6 +79,7 @@ jobs:
       - name: Validate Windows checkout, catalog reproducibility and retrieval
         shell: bash
         run: |
+          python scripts/build_catalog.py
           python scripts/validate_atlas.py
           python scripts/validate_resources.py
           python scripts/build_catalog.py --check
