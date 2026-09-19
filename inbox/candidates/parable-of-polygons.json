@@ -1,7 +1,7 @@
 {
   "id": "candidate:parable-of-polygons",
   "candidate_kind": "example",
-  "status": "promote",
+  "status": "promoted",
   "discovered_by": "scout",
   "source": {
     "locator_type": "url",
@@ -25,9 +25,13 @@
   ],
   "notes": "Direct inspection confirms drag-and-drop relocation of unhappy polygons, rule changes, larger simulations and a final sandbox. The project explicitly states that adaptations and source modifications are allowed.",
   "decision": {
-    "outcome": "promote",
+    "outcome": "promoted",
     "rationale": "Strong anchor for direct-manipulation models where local actions and parameters visibly accumulate into system-level outcomes.",
     "reviewed_by": "wave01-curation",
-    "reviewed_at": "2026-09-19"
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:parable-of-polygons",
+      "concept:editable-model-sandbox"
+    ]
   }
 }

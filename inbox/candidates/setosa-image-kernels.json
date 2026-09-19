@@ -1,7 +1,7 @@
 {
   "id": "candidate:setosa-image-kernels",
   "candidate_kind": "example",
-  "status": "promote",
+  "status": "promoted",
   "discovered_by": "scout",
   "source": {
     "locator_type": "url",
@@ -25,9 +25,13 @@
   ],
   "notes": "Direct inspection confirms a step-by-step 3×3 convolution explanation, hover-based value tracing, preset/custom kernels, image upload, and optional live video input.",
   "decision": {
-    "outcome": "promote",
+    "outcome": "promoted",
     "rationale": "Canonical example of exposing a hidden local computation by tightly linking source values, operation, and transformed output under direct inspection.",
     "reviewed_by": "wave01-curation",
-    "reviewed_at": "2026-09-19"
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:setosa-image-kernels",
+      "concept:linked-computation-inspection"
+    ]
   }
 }

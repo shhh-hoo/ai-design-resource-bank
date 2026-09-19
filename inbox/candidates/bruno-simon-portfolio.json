@@ -1,7 +1,7 @@
 {
   "id": "candidate:bruno-simon-portfolio",
   "candidate_kind": "example",
-  "status": "promote",
+  "status": "promoted",
   "discovered_by": "scout",
   "source": {
     "locator_type": "url",
@@ -26,9 +26,14 @@
   ],
   "notes": "Direct inspection confirms keyboard, touch, mouse, and gamepad controls; map, respawn/reset, achievements, and interactive world elements. The site explicitly documents Three.js, Rapier, Howler.js, source code and Blender files.",
   "decision": {
-    "outcome": "promote",
+    "outcome": "promoted",
     "rationale": "Strong HCI anchor for replacing page-to-page navigation with embodied spatial control while still providing explicit recovery, mapping, and alternative HTML access.",
     "reviewed_by": "wave01-curation",
-    "reviewed_at": "2026-09-19"
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:bruno-simon-portfolio",
+      "concept:world-as-interface",
+      "concept:camera-dolly"
+    ]
   }
 }

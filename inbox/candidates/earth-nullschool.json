@@ -1,7 +1,7 @@
 {
   "id": "candidate:earth-nullschool",
   "candidate_kind": "example",
-  "status": "promote",
+  "status": "promoted",
   "discovered_by": "scout",
   "source": {
     "locator_type": "url",
@@ -26,9 +26,13 @@
   ],
   "notes": "Direct inspection confirms selectable wind/ocean/chemistry/particulate/space/bio modes, animated flow, height and overlay controls, multiple map projections, time navigation, and gridded meteorological sources.",
   "decision": {
-    "outcome": "promote",
+    "outcome": "promoted",
     "rationale": "Adds a canonical scientific-visualization reference for combining vector flow, scalar overlays, globe navigation, and multiple data dimensions without fragmenting them into separate charts.",
     "reviewed_by": "wave01-curation",
-    "reviewed_at": "2026-09-19"
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:earth-nullschool",
+      "concept:grammar-field-flow"
+    ]
   }
 }

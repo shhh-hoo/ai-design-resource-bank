@@ -1,7 +1,7 @@
 {
   "id": "candidate:google-100000-stars",
   "candidate_kind": "example",
-  "status": "promote",
+  "status": "promoted",
   "discovered_by": "scout",
   "source": {
     "locator_type": "url",
@@ -25,9 +25,13 @@
   ],
   "notes": "The official experiment page states that the visualization contains real locations of over 100,000 nearby stars; zooming reveals 87 named stars and the solar system. It identifies the experiment as 3D/WebGL.",
   "decision": {
-    "outcome": "promote",
+    "outcome": "promoted",
     "rationale": "Provides a strong real Example for the existing semantic-zoom concept and for 3D spatial navigation where information detail changes with scale.",
     "reviewed_by": "wave01-curation",
-    "reviewed_at": "2026-09-19"
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:google-100000-stars",
+      "concept:semantic-zoom"
+    ]
   }
 }

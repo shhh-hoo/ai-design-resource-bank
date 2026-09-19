@@ -1,7 +1,7 @@
 {
   "id": "candidate:setosa-markov-chains",
   "candidate_kind": "example",
-  "status": "promote",
+  "status": "promoted",
   "discovered_by": "scout",
   "source": {
     "locator_type": "url",
@@ -25,9 +25,13 @@
   ],
   "notes": "Direct inspection confirms speed controls, a two-state model, an editable transition-matrix playground, examples/random generation, and invalid-matrix feedback.",
   "decision": {
-    "outcome": "promote",
+    "outcome": "promoted",
     "rationale": "Adds a reusable pattern for synchronizing symbolic parameters with animated state transitions and validating user-authored models in place.",
     "reviewed_by": "wave01-curation",
-    "reviewed_at": "2026-09-19"
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:setosa-markov-chains",
+      "concept:editable-model-sandbox"
+    ]
   }
 }
