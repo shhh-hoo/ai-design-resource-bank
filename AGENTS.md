@@ -71,12 +71,13 @@ Follow `docs/EDITORIAL-UI-CONTRACT.md` and `docs/KNOWLEDGE-ATLAS-CONTRACT.md`.
 - Default Atlas: Creative World first, grouped for cross-media recognition and comparison. Academic packs preserve subject → canonical topic → concrete example navigation as a secondary projection.
 - Derive Human presentation strategy from canonical Example kind/medium/relations; do not add a competing presentation truth to canonical records.
 - External REFERENCE, local LIVE and original Resource demo are visually and semantically distinct. Never manufacture a screenshot or imply that a Resource demo is the source Example.
-- Detail opens visual/reference first, then why it is banked, demonstrated Concepts, reusable observations, transfer/failure constraints, related Examples and Resources. Machine/build and provenance remain available but subordinate.
+- Human UI is a content-first reference library, not an explanation of AIDRB. Do not surface architecture/onboarding copy such as projection, canonical Core, selection/lock workflow or rights-policy explanations in the primary hierarchy.
+- Detail opens with the reference identity, then the visual/reference itself, concise summary, demonstrated Concepts, reuse/failure notes, related Examples and Resources. Machine/build projection is not a Human UI section; provenance stays collapsed and subordinate.
 - Explore is an editorial discovery stream with search plus secondary refinement by world/domain/Concept/medium/interaction/trait/Resource/coverage; it is not a generic card wall.
 - Dictionary routes Concept → real Examples → related Concepts → Resource/Tool implementation path. Resource pages may run only declared local AIDRB demos.
 - A public source locator does not imply display or iframe permission. Embed third-party media only when provenance explicitly supports that mode; otherwise link the source and use an honest medium-aware reference fallback.
 - Do not add Human selection/cart/commit/download UI. Human handoff is an exact stable URL/ID plus natural-language intent; machine retrieval owns selection → commit → lock → fetch.
-- Neutral editorial chrome, restrained meaningful color, keyboard access and responsive layouts.
+- Neutral editorial chrome, restrained meaningful color, readable type scale, keyboard access and responsive layouts. Prefer content labels and working artifacts over slogans, manifesto copy, defensive disclaimers or oversized editorial headings.
 - Old web/ assets are compatibility evidence only and must not load from index.html.
 - Edit canonical inputs; regenerate catalog/ and catalog.yaml. Projection-only changes must preserve deterministic catalog output, stable IDs, the machine selection commit/lock contract and retrieval benchmarks.
 
