@@ -1,0 +1,31 @@
+{
+  "id": "candidate:dia-catk",
+  "candidate_kind": "example",
+  "status": "promote",
+  "discovered_by": "scout",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://dia.tv/project/catk/",
+    "title": "CATK — DIA"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "Flexible typographic identity explicitly designed to function across motion and print without overpowering the underlying work.",
+  "novelty_axes": [
+    "cross_media_transfer",
+    "new_medium",
+    "new_concept"
+  ],
+  "signals": [
+    "kinetic identity",
+    "abbreviation/full-name transformation",
+    "motion + print continuity",
+    "supportive identity system"
+  ],
+  "notes": "Official case study states that the identity was designed as a flexible expressive system working in both motion and print.",
+  "decision": {
+    "outcome": "promote",
+    "rationale": "Adds a concise canonical example of identity as a rule/system rather than a static logo, with direct cross-medium evidence.",
+    "reviewed_by": "wave01-curation",
+    "reviewed_at": "2026-09-19"
+  }
+}

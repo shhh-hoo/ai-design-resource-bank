@@ -1,0 +1,32 @@
+{
+  "id": "candidate:esdevlin-u2-sphere",
+  "candidate_kind": "example",
+  "status": "promote",
+  "discovered_by": "scout",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://esdevlin.com/work/projects/the-sphere",
+    "title": "U2 — The Sphere"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "Architecture-scale display where the enclosing surface becomes the visual field, collapsing the distinction between stage background, environment, and image.",
+  "novelty_axes": [
+    "new_medium",
+    "cross_media_transfer",
+    "new_interaction"
+  ],
+  "signals": [
+    "architecture as screen",
+    "immersive field",
+    "environment-scale image",
+    "world replacement",
+    "communal focal field"
+  ],
+  "notes": "Official page confirms the project; external documentation describes Devlin's Nevada Ark contribution and the venue's immersive screen context. Treat the work as a spatial/scale reference, not a claim that all Sphere content was designed by Devlin.",
+  "decision": {
+    "outcome": "promote",
+    "rationale": "Adds the clearest anchor in the current batch for environment-as-display and scale as a compositional variable.",
+    "reviewed_by": "wave01-curation",
+    "reviewed_at": "2026-09-19"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "id": "candidate:es-devlin-stage",
   "candidate_kind": "source_feed",
-  "status": "discovered",
+  "status": "inspected",
   "discovered_by": "scout",
   "source": {
     "locator_type": "url",
@@ -9,7 +9,7 @@
     "title": "Es Devlin — Stage projects"
   },
   "captured_at": "2026-09-19",
-  "rationale": "High-value discovery feed for stage, projection, spatial framing, moving scenery, and attention-direction mechanisms that can transfer to web.",
+  "rationale": "High-yield official project index for scenography, projection, moving architecture, reflection, scale, and attention-direction mechanisms.",
   "novelty_axes": [
     "cross_media_transfer",
     "new_medium",
@@ -17,8 +17,11 @@
   ],
   "signals": [
     "stagecraft",
+    "concert",
+    "installation",
     "projection",
     "spatial composition",
-    "attention"
-  ]
+    "kinetic scenery"
+  ],
+  "notes": "The official site exposes extensive stage, theatre, music, stadium, and installation project indexes. Concrete works should be promoted individually."
 }

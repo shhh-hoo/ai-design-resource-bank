@@ -1,0 +1,32 @@
+{
+  "id": "candidate:dia-nike-statement-house",
+  "candidate_kind": "example",
+  "status": "promote",
+  "discovered_by": "scout",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://dia.tv/project/nike-statement-house/",
+    "title": "Nike Statement House — DIA"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "Experiential typographic identity distributed across a basketball court and multiple screens, with animation derived from the movement of basketball.",
+  "novelty_axes": [
+    "new_medium",
+    "cross_media_transfer",
+    "new_interaction"
+  ],
+  "signals": [
+    "movement-derived typography",
+    "distributed screens",
+    "experiential identity",
+    "spatial composition",
+    "sport motion as generative input"
+  ],
+  "notes": "Official case study explicitly states that high-energy typographic animations were based on basketball movements and deployed through the court/screen setup.",
+  "decision": {
+    "outcome": "promote",
+    "rationale": "Adds a strong example of deriving visual motion rules from the subject's real movement and distributing one identity across a physical screen ecology.",
+    "reviewed_by": "wave01-curation",
+    "reviewed_at": "2026-09-19"
+  }
+}
