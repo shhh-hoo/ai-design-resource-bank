@@ -1,6 +1,6 @@
 # AI Design Resource Bank
 
-A creative reference atlas and a machine retrieval projection over one canonical Core. The Human projection defaults to the cross-media Creative World for seeing, comparing and choosing references; academic packs remain available without becoming the Human taxonomy. Both projections share stable IDs, and explicit selection commit still comes before AI lock and deep Resource fetch.
+A creative reference atlas and a machine retrieval projection over one canonical Core. The Human projection defaults to the cross-media Creative World for seeing, understanding and comparing references; academic packs remain available without becoming the Human taxonomy. Both projections share stable IDs, while selection commit → AI lock → deep Resource fetch remains a machine retrieval protocol rather than a Human UI workflow.
 
 **Atlas | Explore | Dictionary | Index**
 
@@ -33,7 +33,7 @@ Open `http://127.0.0.1:4173`. Root loads the Creative Atlas from generated `cata
 
 Canonical **content** types are Concept, Example, Tool and Resource. Method is a generated per-Example AI Build view. Lifecycle properties `collected`, `showable`, `reusable`, `verified` are independent. REFERENCE does not imply reuse rights; GAP never pretends to be implemented.
 
-## Retrieve and select
+## Machine retrieval and lock
 
 ```sh
 python3 scripts/retrieve.py query 'reaction profile' --type Example
@@ -52,7 +52,7 @@ python3 scripts/retrieve.py lock committed.json > locked.json
 python3 scripts/retrieve.py fetch locked.json
 ```
 
-The Web selection screen exports the same committed format; continue with `lock` directly. Browser selections remain in the current tab and are not persisted across reloads. Locks freeze exact identities, notes and the catalog fingerprint; stale/tampered locks fail instead of substituting references. Legacy aliases such as `reaction-coordinate` still resolve but commits require canonical Example IDs.
+The Human atlas does not expose selection, commit or download controls. People identify references through stable URLs/IDs; an agent or CLI workflow can translate that instruction into the existing machine selection protocol. Locks freeze exact identities, notes and the catalog fingerprint; stale/tampered locks fail instead of substituting references. Legacy aliases such as `reaction-coordinate` still resolve but commits require canonical Example IDs.
 
 ## Validate
 
