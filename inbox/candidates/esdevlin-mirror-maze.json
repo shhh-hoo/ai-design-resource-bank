@@ -1,0 +1,37 @@
+{
+  "id": "candidate:esdevlin-mirror-maze",
+  "candidate_kind": "example",
+  "status": "promoted",
+  "discovered_by": "scout",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://esdevlin.com/work/projects/mirror-maze",
+    "title": "Mirror Maze — Peckham 2016"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "Immersive installation using repeated mirrored planes, path choice, reflection, projection, and sound to make navigation itself the perceptual experience.",
+  "novelty_axes": [
+    "new_medium",
+    "cross_media_transfer",
+    "new_interaction"
+  ],
+  "signals": [
+    "reflection as spatial multiplier",
+    "maze navigation",
+    "repetition",
+    "disorientation",
+    "projection + sound",
+    "physical wayfinding"
+  ],
+  "notes": "Official project page and independent photo documentation support the physical maze/reflection mechanism. This is valuable for HCI/spatial navigation concepts without pretending a web adaptation should literally reproduce the installation.",
+  "decision": {
+    "outcome": "promoted",
+    "rationale": "Adds a non-screen-native spatial interaction anchor: navigation, repetition, reflection, and partial visibility can inform web/canvas/3D experiences at the mechanism level.",
+    "reviewed_by": "wave01-curation",
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:esdevlin-mirror-maze",
+      "concept:reflective-spatial-multiplication"
+    ]
+  }
+}

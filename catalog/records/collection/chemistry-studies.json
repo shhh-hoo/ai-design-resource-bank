@@ -1,0 +1,252 @@
+{
+  "record": {
+    "canonical_path": "knowledge/collections/collections.json",
+    "id": "collection:chemistry-studies",
+    "summary": "Original bounded studies and named coverage gaps.",
+    "title": "Chemistry · diagram studies",
+    "type": "Collection"
+  },
+  "relations": [
+    {
+      "source": "ex:chemistry-bond-polarity",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-born-haber",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-buffer",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-catalyst-profile",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-chromatography",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-composition-shift",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-conjugate-pairs",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-curly-arrow",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-dilution",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-dissolution",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-dynamic-equilibrium",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-electrolysis",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-electron-configuration",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-empirical-formula",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-equilibrium-expression",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-first-order",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-functional-groups",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-galvanic-cell",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-gibbs-energy",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-group-two",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-halogen-displacement",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-hess-cycle",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-hydrogen-bond",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-hydrogen-emission",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-ideal-gas",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-ionic-lattice",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-ir-spectrum",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-isotope-spectrum",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-ligand-exchange",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-limiting-reagent",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-mass-fragmentation",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-maxwell-boltzmann",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-mole-conversion",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-nernst",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-nmr-mapping",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-orbital-overlap",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-oxidation-state",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-periodic-trends",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-phase-diagram",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-rate-orders",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-reaction-profile",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-solubility-product",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-stereoisomers",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-successive-ionisation",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-synthesis-map",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-titration-curve",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-water-geometry",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-weak-acid-titration",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    }
+  ],
+  "sources": []
+}

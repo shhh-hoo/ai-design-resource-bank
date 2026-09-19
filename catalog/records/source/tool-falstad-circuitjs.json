@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-tools.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:tool-falstad-circuitjs",
+    "locator": "https://www.falstad.com/circuit/doc/js-interface.html",
+    "locator_type": "url",
+    "publisher": "CircuitJS / Falstad Circuit Simulator",
+    "title": "CircuitJS / Falstad Circuit Simulator official documentation",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-tools.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:tool-p5js",
+    "locator": "https://p5js.org/reference/",
+    "locator_type": "url",
+    "publisher": "p5.js",
+    "title": "p5.js official documentation",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

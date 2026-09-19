@@ -1,0 +1,46 @@
+{
+  "record": {
+    "canonical_path": "subjects/chemistry/topics.json",
+    "example_ids": [
+      "ex:chemistry-dynamic-equilibrium",
+      "ex:chemistry-equilibrium-expression",
+      "ex:chemistry-composition-shift",
+      "ex:chemistry-solubility-product"
+    ],
+    "id": "topic:chemistry-equilibrium",
+    "order": 6,
+    "parent": "topic:chemistry",
+    "prerequisites": [],
+    "scope": "Dynamic balance, equilibrium expressions, reaction quotient and composition shifts.",
+    "title": "Equilibrium",
+    "type": "SubjectTopic"
+  },
+  "relations": [
+    {
+      "source": "topic:chemistry-equilibrium",
+      "target": "ex:chemistry-composition-shift",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-equilibrium",
+      "target": "ex:chemistry-dynamic-equilibrium",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-equilibrium",
+      "target": "ex:chemistry-equilibrium-expression",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-equilibrium",
+      "target": "ex:chemistry-solubility-product",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-equilibrium",
+      "target": "topic:chemistry",
+      "type": "part_of"
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-tools.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:tool-mafs",
+    "locator": "https://mafs.dev/guides/get-started/",
+    "locator_type": "url",
+    "publisher": "Mafs",
+    "title": "Mafs official documentation",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

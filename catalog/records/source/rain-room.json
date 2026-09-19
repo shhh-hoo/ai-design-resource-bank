@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+    "captured_at": "2026-09-19",
+    "check_scope": "Official project page inspected for continuous rainfall, presence tracking, local rain suppression, solenoid valves and custom software/3D tracking context.",
+    "checked_at": "2026-09-19",
+    "id": "source:rain-room",
+    "locator": "https://www.random-international.com/rain-room",
+    "locator_type": "url",
+    "publisher": "Random International",
+    "title": "Rain Room",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

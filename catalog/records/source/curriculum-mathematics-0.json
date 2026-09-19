@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "registries/curriculum-research-sources.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:curriculum-mathematics-0",
+    "locator": "https://apstudents.collegeboard.org/courses/ap-calculus-ab",
+    "locator_type": "url",
+    "publisher": "ap",
+    "title": "AP Calculus AB",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

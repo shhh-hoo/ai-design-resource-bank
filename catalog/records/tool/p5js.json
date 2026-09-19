@@ -1,0 +1,99 @@
+{
+  "record": {
+    "agent_notes": "Its examples are especially valuable as algorithm references even when final code uses another renderer.",
+    "avoid_when": "A production component system needs deep React integration and conventional DOM accessibility.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "2d-drawing",
+      "webgl",
+      "animation-loop",
+      "particles",
+      "vectors",
+      "shaders",
+      "interaction"
+    ],
+    "docs": "https://p5js.org/reference/",
+    "domains": [
+      "creative-coding",
+      "education",
+      "generative-art",
+      "simulation"
+    ],
+    "ecosystem": [
+      "JavaScript",
+      "Canvas",
+      "WebGL"
+    ],
+    "examples": "https://p5js.org/examples/",
+    "homepage": "https://p5js.org/",
+    "id": "tool:p5js",
+    "legacy_kind": "creative-coding-library",
+    "license": "LGPL-2.1",
+    "source_refs": [
+      "source:tool-p5js"
+    ],
+    "subtype": "library",
+    "summary": "Rapidly prototyping visual algorithms, particles, procedural drawings, or teachable simulations.",
+    "tags": [
+      "creative-coding",
+      "particles",
+      "simulation",
+      "education"
+    ],
+    "tier": "core",
+    "title": "p5.js",
+    "type": "Tool",
+    "use_when": "Rapidly prototyping visual algorithms, particles, procedural drawings, or teachable simulations."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-dynamic-system",
+      "target": "tool:p5js",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-field-flow",
+      "target": "tool:p5js",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-vector-field",
+      "target": "tool:p5js",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:particle-attractor",
+      "target": "tool:p5js",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:wave-propagation",
+      "target": "tool:p5js",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-p5js",
+      "locator": "https://p5js.org/reference/",
+      "locator_type": "url",
+      "publisher": "p5.js",
+      "title": "p5.js official documentation",
+      "type": "Source"
+    }
+  ]
+}

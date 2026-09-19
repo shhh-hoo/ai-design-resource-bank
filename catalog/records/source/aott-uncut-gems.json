@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "knowledge/provenance/wave01-sources.json",
+    "captured_at": "2026-09-19",
+    "check_scope": "Title page and interview inspected for the continuous push into the opal, imagined interior spaces, scale transition and depth-of-field treatment.",
+    "checked_at": "2026-09-19",
+    "id": "source:aott-uncut-gems",
+    "locator": "https://www.artofthetitle.com/title/uncut-gems/",
+    "locator_type": "url",
+    "publisher": "Art of the Title",
+    "title": "Uncut Gems opening/title sequence — Art of the Title",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

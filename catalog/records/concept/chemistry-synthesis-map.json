@@ -1,0 +1,39 @@
+{
+  "record": {
+    "canonical_path": "knowledge/concepts/chemistry.json",
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "id": "concept:chemistry-synthesis-map",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs a specific route with reagents, conditions and competing pathways.",
+    "title": "Organic synthesis",
+    "type": "Concept"
+  },
+  "relations": [
+    {
+      "source": "ex:chemistry-synthesis-map",
+      "target": "concept:chemistry-synthesis-map",
+      "type": "intended_to_demonstrate"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-10",
+      "check_scope": "Original schematic studies; model equations and limitations recorded per Example. No third-party illustrations copied.",
+      "checked_at": "2026-09-10",
+      "id": "source:atlas-studies",
+      "locator": "https://github.com/shhh-hoo/ai-design-resource-bank/tree/9506274daec7c3dcfa7c9ecda2ecb5f7461d011c/app",
+      "locator_type": "repository",
+      "publisher": "AIDRB",
+      "title": "Original Chemistry diagram studies",
+      "type": "Source"
+    }
+  ]
+}

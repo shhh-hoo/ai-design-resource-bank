@@ -1,0 +1,73 @@
+{
+  "record": {
+    "agent_notes": "Prefer domain semantics over rebuilding molecular rendering with raw Three.js.",
+    "avoid_when": "Only a small 2D chemical structure or reaction scheme is needed.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "molecular-3d",
+      "protein-structure",
+      "trajectories",
+      "selections",
+      "annotations"
+    ],
+    "docs": "https://molstar.org/viewer-docs/",
+    "domains": [
+      "chemistry",
+      "structural-biology"
+    ],
+    "ecosystem": [
+      "TypeScript",
+      "WebGL"
+    ],
+    "examples": "https://molstar.org/viewer/",
+    "homepage": "https://molstar.org/",
+    "id": "tool:molstar",
+    "legacy_kind": "domain-viewer",
+    "license": "MIT",
+    "source_refs": [
+      "source:tool-molstar"
+    ],
+    "subtype": "domain-viewer",
+    "summary": "Serious interactive 3D molecular/macromolecular structure visualization is required.",
+    "tags": [
+      "chemistry",
+      "molecule",
+      "3d",
+      "biology"
+    ],
+    "tier": "core",
+    "title": "Mol*",
+    "type": "Tool",
+    "use_when": "Serious interactive 3D molecular/macromolecular structure visualization is required."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-micro-macro-bridge",
+      "target": "tool:molstar",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-structure-anatomy",
+      "target": "tool:molstar",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-molstar",
+      "locator": "https://molstar.org/viewer-docs/",
+      "locator_type": "url",
+      "publisher": "Mol*",
+      "title": "Mol* official documentation",
+      "type": "Source"
+    }
+  ]
+}

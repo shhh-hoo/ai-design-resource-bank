@@ -1,0 +1,37 @@
+{
+  "id": "candidate:lozano-pulse-room",
+  "candidate_kind": "example",
+  "status": "promoted",
+  "discovered_by": "scout",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://www.lozano-hemmer.com/pulse_room.php",
+    "title": "Pulse Room",
+    "creator": "Rafael Lozano-Hemmer"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "Transforms one participant's heartbeat into a light signal and then appends it to a finite spatial queue of previous participants, making personal biometric data into collective temporal memory.",
+  "novelty_axes": [
+    "new_medium",
+    "new_interaction",
+    "cross_media_transfer"
+  ],
+  "signals": [
+    "biometric input",
+    "queue/history",
+    "collective state",
+    "light array",
+    "sensor-to-environment mapping"
+  ],
+  "notes": "The artist's official page documents 100–300 incandescent bulbs, a heart-rate sensor, computer control, immediate pulse playback on the nearest bulb, and a queue that shifts prior participants' recordings down the grid.",
+  "decision": {
+    "outcome": "promoted",
+    "rationale": "Strong physical HCI anchor for sensor input becoming both immediate feedback and persistent shared history in one spatial representation.",
+    "reviewed_by": "wave01-curation",
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:pulse-room",
+      "concept:sensor-mediated-environment"
+    ]
+  }
+}

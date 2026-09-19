@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "registries/curriculum-research-sources.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:curriculum-psychology-social-1",
+    "locator": "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-psychology-9990/",
+    "locator_type": "url",
+    "publisher": "cambridge-international-as-a-level",
+    "title": "Psychology 9990",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

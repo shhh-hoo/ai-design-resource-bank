@@ -1,0 +1,56 @@
+{
+  "record": {
+    "agent_notes": "Pair with a plotting or assessment engine when expression input is needed.",
+    "avoid_when": "Static formula rendering is sufficient.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "math-input",
+      "latex-editor",
+      "virtual-keyboard",
+      "mathjson"
+    ],
+    "docs": "https://mathlive.io/mathfield/",
+    "domains": [
+      "math",
+      "education"
+    ],
+    "ecosystem": [
+      "Web Components",
+      "LaTeX",
+      "MathJSON"
+    ],
+    "homepage": "https://mathlive.io/",
+    "id": "tool:mathlive",
+    "legacy_kind": "web-component",
+    "license": "MIT",
+    "source_refs": [
+      "source:tool-mathlive"
+    ],
+    "subtype": "web-component",
+    "summary": "Users need to type/edit mathematical notation rather than only render it.",
+    "tags": [
+      "math",
+      "input",
+      "latex"
+    ],
+    "tier": "core",
+    "title": "MathLive",
+    "type": "Tool",
+    "use_when": "Users need to type/edit mathematical notation rather than only render it."
+  },
+  "relations": [],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-mathlive",
+      "locator": "https://mathlive.io/mathfield/",
+      "locator_type": "url",
+      "publisher": "MathLive",
+      "title": "MathLive official documentation",
+      "type": "Source"
+    }
+  ]
+}

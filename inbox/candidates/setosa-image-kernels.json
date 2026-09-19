@@ -1,0 +1,37 @@
+{
+  "id": "candidate:setosa-image-kernels",
+  "candidate_kind": "example",
+  "status": "promoted",
+  "discovered_by": "scout",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://setosa.io/ev/image-kernels/",
+    "title": "Image Kernels — Explained Visually",
+    "creator": "Victor Powell"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "Links a local numerical operation to an image result through pixel hover, kernel selection, custom matrices, and live playground input.",
+  "novelty_axes": [
+    "new_interaction",
+    "benchmark_gap",
+    "new_concept"
+  ],
+  "signals": [
+    "linked local computation",
+    "hover inspection",
+    "custom matrix",
+    "live playground",
+    "before/after image"
+  ],
+  "notes": "Direct inspection confirms a step-by-step 3×3 convolution explanation, hover-based value tracing, preset/custom kernels, image upload, and optional live video input.",
+  "decision": {
+    "outcome": "promoted",
+    "rationale": "Canonical example of exposing a hidden local computation by tightly linking source values, operation, and transformed output under direct inspection.",
+    "reviewed_by": "wave01-curation",
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:setosa-image-kernels",
+      "concept:linked-computation-inspection"
+    ]
+  }
+}

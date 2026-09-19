@@ -1,0 +1,60 @@
+{
+  "record": {
+    "canonical_path": "knowledge/concepts/creative-wave01.json",
+    "id": "concept:display-as-architecture",
+    "source_refs": [
+      "source:esdevlin-formation-tour",
+      "source:esdevlin-u2-sphere"
+    ],
+    "subtypes": [
+      "stagecraft",
+      "principle"
+    ],
+    "summary": "Treat the display surface as a spatial object or environmental envelope that frames, divides, reveals, surrounds, or replaces the scene rather than acting as a flat background.",
+    "title": "Display as architecture",
+    "type": "Concept"
+  },
+  "relations": [
+    {
+      "source": "ex:esdevlin-formation-tour",
+      "target": "concept:display-as-architecture",
+      "type": "demonstrates"
+    },
+    {
+      "source": "ex:esdevlin-u2-sphere",
+      "target": "concept:display-as-architecture",
+      "type": "demonstrates"
+    },
+    {
+      "source": "ex:ryoji-data-verse-3",
+      "target": "concept:display-as-architecture",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Official project page inspected for the stage project. Scenic/screen-volume claims are limited to the project documentation and visible design; full production mechanics are not inferred.",
+      "checked_at": "2026-09-19",
+      "id": "source:esdevlin-formation-tour",
+      "locator": "https://esdevlin.com/work/projects/beyonce",
+      "locator_type": "url",
+      "publisher": "Es Devlin Studio",
+      "title": "Beyoncé — Formation Tour",
+      "type": "Source"
+    },
+    {
+      "canonical_path": "knowledge/provenance/wave01-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Official project page inspected for Es Devlin's contribution. The record uses the work as an environment-scale display reference and does not attribute all Sphere content or engineering to Es Devlin.",
+      "checked_at": "2026-09-19",
+      "id": "source:esdevlin-u2-sphere",
+      "locator": "https://esdevlin.com/work/projects/the-sphere",
+      "locator_type": "url",
+      "publisher": "Es Devlin Studio",
+      "title": "U2 — The Sphere",
+      "type": "Source"
+    }
+  ]
+}

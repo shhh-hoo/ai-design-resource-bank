@@ -1,0 +1,674 @@
+[
+  {
+    "id": "ex:pattern-breaking",
+    "type": "Example",
+    "title": "Pattern Breaking — Fast Fashion's Dirty Tricks",
+    "kind": "REFERENCE",
+    "summary": "A research-led editorial site that combines statistics, deceptive-interface examples, and policy chronology into one continuous argument.",
+    "concept_ids": [
+      "concept:narrative-evidence-choreography"
+    ],
+    "topic_ids": [],
+    "source_refs": [
+      "source:pattern-breaking"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "website",
+    "visual_traits": [
+      "editorial",
+      "data-rich",
+      "chronological",
+      "text-led"
+    ],
+    "interaction": "scroll",
+    "intent_ids": [],
+    "collection_ids": [],
+    "grammar": [
+      "evidence-comparison",
+      "time-sequence",
+      "composition-layer"
+    ],
+    "interaction_model": {
+      "trigger": "scroll through the editorial narrative",
+      "response": "Successive evidence modes—data, examples, explanation, and chronology—advance the same argument."
+    },
+    "state_model": {
+      "model": "external-reference",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Borrow the sequencing logic: change representation when the argument needs a different kind of evidence.",
+      "Keep evidence modes tied to one narrative question rather than turning them into independent dashboard widgets."
+    ],
+    "fidelity_constraints": [
+      "Preserve the editorial/evidence relationship without copying Fast Fashion branding, copy, statistics, or illustrations."
+    ],
+    "failure_modes": [
+      "Do not infer the original implementation stack from the visual result.",
+      "Do not reduce the mechanism to decorative scroll animation without the evidence structure."
+    ],
+    "tool_choices": [],
+    "resource_ids": []
+  },
+  {
+    "id": "ex:whole-earth-index",
+    "type": "Example",
+    "title": "Whole Earth Index",
+    "kind": "REFERENCE",
+    "summary": "A long-form publication archive where publication families and issue chronology remain directly visible as the navigation surface.",
+    "concept_ids": [
+      "concept:archive-as-interface"
+    ],
+    "topic_ids": [],
+    "source_refs": [
+      "source:whole-earth-index"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": false,
+      "reusable": true,
+      "verified": false
+    },
+    "medium": "website",
+    "visual_traits": [
+      "dense",
+      "chronological",
+      "index",
+      "text-led"
+    ],
+    "interaction": "browse-index",
+    "intent_ids": [],
+    "collection_ids": [],
+    "grammar": [
+      "composition-layer",
+      "time-sequence"
+    ],
+    "interaction_model": {
+      "trigger": "browse the visible publication index",
+      "response": "Publication families and dated issues remain exposed, allowing direct scanning and selection without leaving the corpus view."
+    },
+    "state_model": {
+      "model": "external-reference",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Keep archive structure visible enough that users can understand scope before opening an item.",
+      "Use chronology and publication grouping as navigation primitives rather than converting every issue into an isolated card."
+    ],
+    "fidelity_constraints": [
+      "Preserve the archive/index logic without copying publication artwork or editorial assets."
+    ],
+    "failure_modes": [
+      "Do not equate density with poor hierarchy; the visible corpus structure is the mechanism.",
+      "Do not infer implementation technology from the rendered site."
+    ],
+    "tool_choices": [],
+    "resource_ids": [
+      "resource:archive-as-interface"
+    ]
+  },
+  {
+    "id": "ex:fiona-vilmer",
+    "type": "Example",
+    "title": "Fiona Vilmer — cultural portfolio archive",
+    "kind": "REFERENCE",
+    "summary": "A restrained text-led corpus organized by Curating, Texts, Publications, and Programming/Talks, with metadata-rich project detail.",
+    "concept_ids": [
+      "concept:archive-as-interface"
+    ],
+    "topic_ids": [],
+    "source_refs": [
+      "source:fiona-vilmer"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": false,
+      "reusable": true,
+      "verified": false
+    },
+    "medium": "website",
+    "visual_traits": [
+      "editorial",
+      "text-led",
+      "archive",
+      "restrained"
+    ],
+    "interaction": "browse-index",
+    "intent_ids": [],
+    "collection_ids": [],
+    "grammar": [
+      "composition-layer",
+      "time-sequence"
+    ],
+    "interaction_model": {
+      "trigger": "browse categories and open an indexed entry",
+      "response": "The corpus stays legible as a categorized body of work while detail pages expose dates, credits, publication information, and images."
+    },
+    "state_model": {
+      "model": "external-reference",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Keep category structure and work metadata primary; project imagery should enrich rather than replace the corpus index.",
+      "Let detail pages remain connected to the larger archive instead of behaving like isolated campaign pages."
+    ],
+    "fidelity_constraints": [
+      "Preserve the corpus-first editorial structure without copying names, project imagery, or cultural-institution identities."
+    ],
+    "failure_modes": [
+      "Do not claim unobserved transition or interaction behavior.",
+      "Do not turn the archive into a conventional image-card portfolio."
+    ],
+    "tool_choices": [],
+    "resource_ids": [
+      "resource:archive-as-interface"
+    ]
+  },
+  {
+    "id": "ex:aott-severance",
+    "type": "Example",
+    "title": "Severance — title sequence",
+    "kind": "REFERENCE",
+    "summary": "A 3D sequence that uses duplication, soft-body deformation, impossible bodily states, and spatial discontinuity to materialize the idea of split identity.",
+    "concept_ids": [
+      "concept:semantic-3d-metaphor"
+    ],
+    "topic_ids": [],
+    "source_refs": [
+      "source:aott-severance"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "title-sequence",
+    "visual_traits": [
+      "3d",
+      "surreal",
+      "figurative",
+      "soft-body"
+    ],
+    "interaction": "watch",
+    "intent_ids": [],
+    "collection_ids": [],
+    "grammar": [
+      "3d-spatial",
+      "state-process",
+      "time-sequence"
+    ],
+    "interaction_model": {
+      "trigger": "play the title sequence",
+      "response": "Repeated transformations and spatial contradictions accumulate into a continuous metaphor for divided identity."
+    },
+    "state_model": {
+      "model": "external-reference",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Start from the abstract idea, then choose spatial/physical transformations that embody it consistently.",
+      "Maintain recognizable subject identity across deformation so metaphor survives the spectacle."
+    ],
+    "fidelity_constraints": [
+      "Borrow the semantic transformation logic, not the Severance character, imagery, sequence, or title treatment."
+    ],
+    "failure_modes": [
+      "Do not treat generic 3D distortion as equivalent to semantic metaphor.",
+      "Do not infer that the documented film toolchain is required for a frontend adaptation."
+    ],
+    "tool_choices": [],
+    "resource_ids": []
+  },
+  {
+    "id": "ex:aott-spider-verse",
+    "type": "Example",
+    "title": "Spider-Man: Into the Spider-Verse — title sequence",
+    "kind": "REFERENCE",
+    "summary": "A mixed-media title sequence fusing 3D-derived scenes with halftone, spray paint, offset-print color, scanned illustration, hand drawing, and typography.",
+    "concept_ids": [
+      "concept:mixed-media-surface-language"
+    ],
+    "topic_ids": [],
+    "source_refs": [
+      "source:aott-spider-verse"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "title-sequence",
+    "visual_traits": [
+      "mixed-media",
+      "halftone",
+      "hand-drawn",
+      "typographic"
+    ],
+    "interaction": "watch",
+    "intent_ids": [],
+    "collection_ids": [],
+    "grammar": [
+      "composition-layer",
+      "3d-spatial",
+      "time-sequence"
+    ],
+    "interaction_model": {
+      "trigger": "play the title sequence",
+      "response": "Material languages are layered and recombined over motion so print/comic surface behavior remains active inside animated spatial scenes."
+    },
+    "state_model": {
+      "model": "external-reference",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Use materially distinct surface systems intentionally—e.g. print offset, drawn marks, halftone, paint—not as one generic texture layer.",
+      "Keep surface treatments tied to hierarchy, impact, or world logic across the motion sequence."
+    ],
+    "fidelity_constraints": [
+      "Preserve the principle of mixed material languages without copying Spider-Man characters, comic assets, marks, or branded type."
+    ],
+    "failure_modes": [
+      "Do not flatten mixed-media construction into a single noise overlay.",
+      "Do not infer the exact source asset pipeline beyond the documented process."
+    ],
+    "tool_choices": [],
+    "resource_ids": []
+  },
+  {
+    "id": "ex:aott-uncut-gems",
+    "type": "Example",
+    "title": "Uncut Gems — opening/title sequence",
+    "kind": "REFERENCE",
+    "summary": "A continuous camera movement enters an opal, traverses imagined microscopic/cosmic interiors, and connects material space to organic bodily imagery without a hard semantic break.",
+    "concept_ids": [
+      "concept:continuous-scale-transition",
+      "concept:camera-dolly"
+    ],
+    "topic_ids": [],
+    "source_refs": [
+      "source:aott-uncut-gems"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "title-sequence",
+    "visual_traits": [
+      "macro",
+      "cosmic",
+      "organic",
+      "continuous"
+    ],
+    "interaction": "watch",
+    "intent_ids": [],
+    "collection_ids": [],
+    "grammar": [
+      "3d-spatial",
+      "time-sequence",
+      "micro-macro-bridge"
+    ],
+    "interaction_model": {
+      "trigger": "play the opening sequence",
+      "response": "A sustained push-in and changing depth/material cues preserve continuity as scale and semantic context transform."
+    },
+    "state_model": {
+      "model": "external-reference",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Use camera continuity and material/depth cues to bridge scales instead of hiding the change behind a cut.",
+      "Preserve a directional visual thread across the transition so the viewer understands one space becoming another."
+    ],
+    "fidelity_constraints": [
+      "Borrow the continuous scale-transition logic without copying the opal imagery, bodily imagery, film titles, or soundtrack."
+    ],
+    "failure_modes": [
+      "Do not confuse semantic scale transition with ordinary image zoom.",
+      "Do not assert undocumented software or rendering methods."
+    ],
+    "tool_choices": [],
+    "resource_ids": []
+  },
+  {
+    "id": "ex:esdevlin-formation-tour",
+    "type": "Example",
+    "title": "Beyoncé — Formation Tour stage",
+    "kind": "REFERENCE",
+    "summary": "A stage dominated by a monumental image volume whose presence makes the display itself a scenic object, focal field, divider, and reveal device.",
+    "concept_ids": [
+      "concept:display-as-architecture"
+    ],
+    "topic_ids": [],
+    "source_refs": [
+      "source:esdevlin-formation-tour"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "stage-performance",
+    "visual_traits": [
+      "monumental",
+      "screen-volume",
+      "stage",
+      "architectural"
+    ],
+    "interaction": "watch",
+    "intent_ids": [],
+    "collection_ids": [],
+    "grammar": [
+      "3d-spatial",
+      "composition-layer",
+      "time-sequence"
+    ],
+    "interaction_model": {
+      "trigger": "watch the live stage sequence",
+      "response": "The central display object changes the spatial reading of the stage rather than functioning as a passive backdrop."
+    },
+    "state_model": {
+      "model": "external-reference",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Treat one dominant visual surface as a spatial actor that can frame, divide, reveal, or conceal content.",
+      "Let scale and placement establish hierarchy before adding smaller interface layers."
+    ],
+    "fidelity_constraints": [
+      "Preserve the display-as-scenery principle without copying Beyoncé imagery, tour content, choreography, or stage assets."
+    ],
+    "failure_modes": [
+      "Do not infer undocumented stage mechanics.",
+      "Do not reduce the reference to 'large video background'; its spatial role is the useful mechanism."
+    ],
+    "tool_choices": [],
+    "resource_ids": []
+  },
+  {
+    "id": "ex:esdevlin-mirror-maze",
+    "type": "Example",
+    "title": "Mirror Maze — Peckham 2016",
+    "kind": "REFERENCE",
+    "summary": "An immersive mirrored maze in which repeated planes and reflections multiply perceived space, partial views, and navigational ambiguity.",
+    "concept_ids": [
+      "concept:reflective-spatial-multiplication"
+    ],
+    "topic_ids": [],
+    "source_refs": [
+      "source:esdevlin-mirror-maze"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "installation",
+    "visual_traits": [
+      "reflective",
+      "repetitive",
+      "immersive",
+      "spatial"
+    ],
+    "interaction": "spatial-navigation",
+    "intent_ids": [],
+    "collection_ids": [],
+    "grammar": [
+      "3d-spatial",
+      "spatial-map",
+      "state-process"
+    ],
+    "interaction_model": {
+      "trigger": "move through the installation",
+      "response": "Changing position alters reflected paths, apparent depth, self-location, and partial visibility, making navigation itself part of the composition."
+    },
+    "state_model": {
+      "model": "external-spatial-reference",
+      "deterministic": false
+    },
+    "transfer_constraints": [
+      "Translate reflection/repetition at the mechanism level: duplicated views, partial visibility, uncertain orientation, and path-dependent perception.",
+      "Use navigation or viewpoint change to reveal spatial relationships rather than using mirrors only as decoration."
+    ],
+    "fidelity_constraints": [
+      "Preserve the spatial/perceptual principle without copying the physical installation layout, imagery, or audio."
+    ],
+    "failure_modes": [
+      "Do not imply a web adaptation should literally reproduce the installation.",
+      "Do not infer unverified construction or projection technology."
+    ],
+    "tool_choices": [],
+    "resource_ids": []
+  },
+  {
+    "id": "ex:esdevlin-u2-sphere",
+    "type": "Example",
+    "title": "U2 — The Sphere / Nevada Ark contribution",
+    "kind": "REFERENCE",
+    "summary": "An environment-scale display context where the enclosing visual surface operates as the scene itself rather than as a framed screen behind it.",
+    "concept_ids": [
+      "concept:display-as-architecture"
+    ],
+    "topic_ids": [],
+    "source_refs": [
+      "source:esdevlin-u2-sphere"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "concert-environment",
+    "visual_traits": [
+      "immersive",
+      "environmental",
+      "architectural",
+      "large-scale"
+    ],
+    "interaction": "watch",
+    "intent_ids": [],
+    "collection_ids": [],
+    "grammar": [
+      "3d-spatial",
+      "composition-layer"
+    ],
+    "interaction_model": {
+      "trigger": "experience or watch the environment-scale display",
+      "response": "The enclosing image field changes the perceived world around the audience, collapsing background, screen, and spatial envelope."
+    },
+    "state_model": {
+      "model": "external-reference",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Treat the viewport/environment as a field that can replace the surrounding context, not merely contain a centered composition.",
+      "Design for the viewer's field of attention and scale before adding conventional interface framing."
+    ],
+    "fidelity_constraints": [
+      "Use only the environment-as-display principle; do not attribute all Sphere content or engineering to Es Devlin or copy U2 imagery."
+    ],
+    "failure_modes": [
+      "Do not overstate Es Devlin's authorship beyond the documented contribution.",
+      "Do not equate immersion with simply filling a screen edge-to-edge."
+    ],
+    "tool_choices": [],
+    "resource_ids": []
+  },
+  {
+    "id": "ex:dia-catk",
+    "type": "Example",
+    "title": "CATK — kinetic identity system",
+    "kind": "REFERENCE",
+    "summary": "A flexible typographic identity designed to operate coherently in both motion and print while supporting, rather than overpowering, the underlying work.",
+    "concept_ids": [
+      "concept:kinetic-identity-system"
+    ],
+    "topic_ids": [],
+    "source_refs": [
+      "source:dia-catk"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "identity-system",
+    "visual_traits": [
+      "typographic",
+      "kinetic",
+      "systemic",
+      "restrained"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [],
+    "collection_ids": [],
+    "grammar": [
+      "time-sequence",
+      "composition-layer"
+    ],
+    "interaction_model": {
+      "trigger": "inspect static and motion applications",
+      "response": "The same identity rules remain recognizable as typography shifts between still and time-based contexts."
+    },
+    "state_model": {
+      "model": "external-reference",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Define motion and typographic behavior as system rules that survive both static and animated contexts.",
+      "Allow the identity to support content rather than requiring maximum motion in every application."
+    ],
+    "fidelity_constraints": [
+      "Preserve rule continuity across media without copying CATK marks, copy, layouts, or proprietary identity assets."
+    ],
+    "failure_modes": [
+      "Do not reduce kinetic identity to one logo animation.",
+      "Do not infer implementation software not stated by the source."
+    ],
+    "tool_choices": [],
+    "resource_ids": []
+  },
+  {
+    "id": "ex:dia-nike-statement-house",
+    "type": "Example",
+    "title": "Nike Statement House — experiential typographic identity",
+    "kind": "REFERENCE",
+    "summary": "An experiential identity distributed across court and screens, with high-energy typographic animation rules derived from basketball movement.",
+    "concept_ids": [
+      "concept:kinetic-identity-system"
+    ],
+    "topic_ids": [],
+    "source_refs": [
+      "source:dia-nike-statement-house"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "experiential-identity",
+    "visual_traits": [
+      "typographic",
+      "kinetic",
+      "spatial",
+      "high-energy"
+    ],
+    "interaction": "watch",
+    "intent_ids": [],
+    "collection_ids": [],
+    "grammar": [
+      "time-sequence",
+      "composition-layer",
+      "dynamic-geometry"
+    ],
+    "interaction_model": {
+      "trigger": "watch the experiential screen/court system",
+      "response": "Typographic motion takes behavioral cues from basketball movement and propagates one identity across multiple spatial surfaces."
+    },
+    "state_model": {
+      "model": "external-reference",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Derive motion vocabulary from the subject's real movement or behavior instead of selecting arbitrary easing.",
+      "Coordinate distributed surfaces as one identity system rather than independent screens."
+    ],
+    "fidelity_constraints": [
+      "Borrow the movement-derived system logic without copying Nike branding, campaign assets, type treatment, or spatial installation."
+    ],
+    "failure_modes": [
+      "Do not use sports-like velocity as generic decoration without a source behavior.",
+      "Do not infer technical synchronization details not documented by the case study."
+    ],
+    "tool_choices": [],
+    "resource_ids": []
+  },
+  {
+    "id": "ex:dia-atrak-live-visuals",
+    "type": "Example",
+    "title": "A-Trak — scalable live visual identity",
+    "kind": "REFERENCE",
+    "summary": "A typographic identity system whose parameters support restrained website/flyer expressions and much more maximal album/live-show visuals without changing identity language.",
+    "concept_ids": [
+      "concept:kinetic-identity-system"
+    ],
+    "topic_ids": [],
+    "source_refs": [
+      "source:dia-atrak-live-visuals"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "live-visual-system",
+    "visual_traits": [
+      "typographic",
+      "kinetic",
+      "parametric",
+      "live"
+    ],
+    "interaction": "watch",
+    "intent_ids": [],
+    "collection_ids": [],
+    "grammar": [
+      "time-sequence",
+      "composition-layer"
+    ],
+    "interaction_model": {
+      "trigger": "compare identity applications across touchpoints",
+      "response": "The same typographic/motion grammar expands or contracts in intensity to match web, print, album, and live contexts."
+    },
+    "state_model": {
+      "model": "external-reference",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Design identity parameters with a usable intensity range instead of creating separate visual languages for quiet and maximal contexts.",
+      "Keep invariant rules visible even when scale, density, and motion amplitude change."
+    ],
+    "fidelity_constraints": [
+      "Preserve the scalable-system principle without copying A-Trak typography, artwork, live visuals, or music identity."
+    ],
+    "failure_modes": [
+      "Do not equate flexibility with uncontrolled stylistic variation.",
+      "Do not infer specific implementation software from the public case study."
+    ],
+    "tool_choices": [],
+    "resource_ids": []
+  }
+]

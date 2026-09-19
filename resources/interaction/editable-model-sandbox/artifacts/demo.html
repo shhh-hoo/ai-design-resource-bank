@@ -1,0 +1,29 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Editable model sandbox demo</title>
+<style>
+  body{font:15px/1.4 system-ui;max-width:680px;margin:40px auto;padding:0 20px}
+  label{display:grid;grid-template-columns:140px 1fr 60px;gap:12px;margin:18px 0}
+  output{font-variant-numeric:tabular-nums}.bar{height:24px;background:#ddd}.bar>i{display:block;height:100%;background:#111}
+</style>
+<label>Input A <input id="a" type="range" min="0" max="100" value="40"><output></output></label>
+<label>Input B <input id="b" type="range" min="0" max="100" value="60"><output></output></label>
+<p>Normalized share of A</p><div class="bar"><i></i></div><p id="summary"></p>
+<button id="reset">Reset</button>
+<script type="module">
+  import { createModelStore } from "./model-store.js";
+  const a=document.querySelector("#a"),b=document.querySelector("#b");
+  const store=createModelStore({a:40,b:60},{
+    validate:s=>s.a+s.b===0?["At least one input must be positive."]:[],
+    derive:s=>({share:s.a/(s.a+s.b)})
+  });
+  const bind=(input,key)=>input.addEventListener("input",()=>store.set({[key]:Number(input.value)}));
+  bind(a,"a");bind(b,"b");
+  store.subscribe(({state,derived})=>{
+    a.value=state.a;b.value=state.b;
+    a.nextElementSibling.value=state.a;b.nextElementSibling.value=state.b;
+    document.querySelector(".bar i").style.width=(derived.share*100)+"%";
+    document.querySelector("#summary").textContent=`A = ${(derived.share*100).toFixed(1)}%`;
+  });
+  document.querySelector("#reset").onclick=()=>store.reset();
+</script>

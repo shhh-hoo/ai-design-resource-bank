@@ -1,0 +1,36 @@
+{
+  "id": "candidate:dia-atrak-live-visuals",
+  "candidate_kind": "example",
+  "status": "promoted",
+  "discovered_by": "scout",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://dia.tv/project/a-trak/",
+    "title": "A-Trak Live Visuals — DIA"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "Typographic identity defined through parameters that can expand from minimal web/tour graphics to maximal live-show visuals.",
+  "novelty_axes": [
+    "new_medium",
+    "cross_media_transfer",
+    "new_concept"
+  ],
+  "signals": [
+    "parametric identity",
+    "minimal-to-maximal range",
+    "live visuals",
+    "typographic system",
+    "same rules across touchpoints"
+  ],
+  "notes": "Official case study describes a typographic identity system used as the foundation for assets ranging from minimal website/flyer expressions to maximal album/live-show visuals.",
+  "decision": {
+    "outcome": "promoted",
+    "rationale": "Strong anchor for scalable visual systems: one parameterized identity can vary intensity by context without becoming a different design language.",
+    "reviewed_by": "wave01-curation",
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:dia-atrak-live-visuals",
+      "concept:kinetic-identity-system"
+    ]
+  }
+}

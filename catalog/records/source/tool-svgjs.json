@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-tools.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:tool-svgjs",
+    "locator": "https://svgjs.dev/docs/3.2/",
+    "locator_type": "url",
+    "publisher": "SVG.js",
+    "title": "SVG.js official documentation",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

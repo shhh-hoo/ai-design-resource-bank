@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "registries/reference-galleries.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:gallery-pixijs-examples",
+    "locator": "https://pixijs.com/8.x/examples",
+    "locator_type": "url",
+    "publisher": "PixiJS Examples",
+    "title": "PixiJS Examples",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

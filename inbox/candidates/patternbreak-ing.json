@@ -1,0 +1,36 @@
+{
+  "id": "candidate:patternbreak-ing",
+  "candidate_kind": "example",
+  "status": "promoted",
+  "discovered_by": "manual",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://patternbreak.ing/",
+    "title": "Pattern Breaking — Fast Fashion's Dirty Tricks"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "Experimental editorial website that turns research, statistics, interface pressure tactics, and policy chronology into one continuous visual narrative.",
+  "novelty_axes": [
+    "stronger_example",
+    "new_interaction",
+    "cross_media_transfer"
+  ],
+  "signals": [
+    "scroll-led editorial narrative",
+    "data storytelling",
+    "interface pattern used as subject matter",
+    "chronology",
+    "dense evidence links"
+  ],
+  "notes": "Direct inspection confirmed sections combining waste statistics, a live-style truck counter, examples of deceptive patterns, and a policy timeline. The observed value is narrative composition and rhetorical interface use; implementation technology is unknown.",
+  "decision": {
+    "outcome": "promoted",
+    "rationale": "Adds a strong non-card editorial example where content, data, and interface behavior form the narrative mechanism rather than decoration.",
+    "reviewed_by": "wave01-curation",
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:pattern-breaking",
+      "concept:narrative-evidence-choreography"
+    ]
+  }
+}

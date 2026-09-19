@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "registries/curriculum-research-sources.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:curriculum-computer-science-3",
+    "locator": "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-computer-science-9618/",
+    "locator_type": "url",
+    "publisher": "cambridge-international-as-a-level",
+    "title": "Computer Science 9618",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

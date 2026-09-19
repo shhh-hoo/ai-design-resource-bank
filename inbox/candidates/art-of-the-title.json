@@ -1,0 +1,26 @@
+{
+  "id": "candidate:art-of-the-title",
+  "candidate_kind": "source_feed",
+  "status": "inspected",
+  "discovered_by": "scout",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://www.artofthetitle.com/titles/view/list/",
+    "title": "Art of the Title"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "High-yield discovery feed for title-sequence references with interviews, credits, process evidence, and concrete production techniques.",
+  "novelty_axes": [
+    "cross_media_transfer",
+    "new_medium",
+    "new_implementation"
+  ],
+  "signals": [
+    "1449 indexed title entries",
+    "interviews",
+    "process evidence",
+    "motion design",
+    "film/TV/game typography"
+  ],
+  "notes": "Inspection confirmed list/grid browsing plus 244 interviews, 698 summaries, 507 title-only entries and 1449 total entries at crawl time. The feed should generate concrete Example candidates rather than itself becoming a canonical Example."
+}

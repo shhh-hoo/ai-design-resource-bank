@@ -1,0 +1,34 @@
+{
+  "id": "candidate:fiona-vilmer",
+  "candidate_kind": "example",
+  "status": "promoted",
+  "discovered_by": "manual",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://fionavilmer.com/en",
+    "title": "Fiona Vilmer"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "Text-led cultural portfolio/archive organized simultaneously by Curating, Texts, Publications, and Programming/Talks, with detail pages retaining the larger corpus context.",
+  "novelty_axes": [
+    "stronger_example",
+    "cross_media_transfer"
+  ],
+  "signals": [
+    "persistent corpus index",
+    "category-led archive",
+    "text-first navigation",
+    "project metadata + images"
+  ],
+  "notes": "Direct pages expose a large categorized index and project/detail pages with dates, credits, publication metadata, and images. Interaction beyond ordinary navigation was not inferred.",
+  "decision": {
+    "outcome": "promoted",
+    "rationale": "Adds a restrained editorial archive pattern distinct from showcase portfolios: the corpus remains primary and the individual project page does not erase surrounding context.",
+    "reviewed_by": "wave01-curation",
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:fiona-vilmer",
+      "concept:archive-as-interface"
+    ]
+  }
+}

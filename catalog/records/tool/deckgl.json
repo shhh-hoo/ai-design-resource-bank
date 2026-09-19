@@ -1,0 +1,76 @@
+{
+  "record": {
+    "agent_notes": "Often pair with MapLibre rather than treating it as a basemap replacement.",
+    "avoid_when": "The problem is primarily basemap navigation rather than data-layer rendering.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "large-data-layers",
+      "gpu-aggregation",
+      "map-overlays",
+      "arcs",
+      "trips",
+      "point-clouds"
+    ],
+    "docs": "https://deck.gl/docs",
+    "domains": [
+      "maps",
+      "geospatial",
+      "data-visualization"
+    ],
+    "ecosystem": [
+      "JavaScript",
+      "WebGL",
+      "React"
+    ],
+    "examples": "https://deck.gl/examples",
+    "homepage": "https://deck.gl/",
+    "id": "tool:deckgl",
+    "legacy_kind": "geospatial-visualization-library",
+    "license": "MIT",
+    "source_refs": [
+      "source:tool-deckgl"
+    ],
+    "subtype": "library",
+    "summary": "Large geospatial datasets and GPU-accelerated visual layers sit on top of maps.",
+    "tags": [
+      "map",
+      "geospatial",
+      "gpu",
+      "data-viz"
+    ],
+    "tier": "specialized",
+    "title": "deck.gl",
+    "type": "Tool",
+    "use_when": "Large geospatial datasets and GPU-accelerated visual layers sit on top of maps."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-field-flow",
+      "target": "tool:deckgl",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-spatial-map",
+      "target": "tool:deckgl",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-deckgl",
+      "locator": "https://deck.gl/docs",
+      "locator_type": "url",
+      "publisher": "deck.gl",
+      "title": "deck.gl official documentation",
+      "type": "Source"
+    }
+  ]
+}

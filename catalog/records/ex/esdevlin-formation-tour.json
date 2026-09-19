@@ -1,0 +1,117 @@
+{
+  "ai_build": {
+    "availability": "available",
+    "example_id": "ex:esdevlin-formation-tour",
+    "method": {
+      "concepts": [
+        "concept:display-as-architecture"
+      ],
+      "failure_modes": [
+        "Do not infer undocumented stage mechanics.",
+        "Do not reduce the reference to 'large video background'; its spatial role is the useful mechanism."
+      ],
+      "fidelity_constraints": [
+        "Preserve the display-as-scenery principle without copying Beyoncé imagery, tour content, choreography, or stage assets."
+      ],
+      "grammar": [
+        "3d-spatial",
+        "composition-layer",
+        "time-sequence"
+      ],
+      "interaction_model": {
+        "response": "The central display object changes the spatial reading of the stage rather than functioning as a passive backdrop.",
+        "trigger": "watch the live stage sequence"
+      },
+      "mechanisms": [],
+      "state_model": {
+        "deterministic": true,
+        "model": "external-reference"
+      },
+      "transfer_constraints": [
+        "Treat one dominant visual surface as a spatial actor that can frame, divide, reveal, or conceal content.",
+        "Let scale and placement establish hierarchy before adding smaller interface layers."
+      ]
+    },
+    "resources": [],
+    "tools": []
+  },
+  "crosswalks": [],
+  "record": {
+    "canonical_path": "knowledge/examples/creative-wave01.json",
+    "collection_ids": [],
+    "concept_ids": [
+      "concept:display-as-architecture"
+    ],
+    "failure_modes": [
+      "Do not infer undocumented stage mechanics.",
+      "Do not reduce the reference to 'large video background'; its spatial role is the useful mechanism."
+    ],
+    "fidelity_constraints": [
+      "Preserve the display-as-scenery principle without copying Beyoncé imagery, tour content, choreography, or stage assets."
+    ],
+    "grammar": [
+      "3d-spatial",
+      "composition-layer",
+      "time-sequence"
+    ],
+    "id": "ex:esdevlin-formation-tour",
+    "intent_ids": [],
+    "interaction": "watch",
+    "interaction_model": {
+      "response": "The central display object changes the spatial reading of the stage rather than functioning as a passive backdrop.",
+      "trigger": "watch the live stage sequence"
+    },
+    "kind": "REFERENCE",
+    "lifecycle": {
+      "collected": true,
+      "reusable": false,
+      "showable": false,
+      "verified": false
+    },
+    "medium": "stage-performance",
+    "resource_ids": [],
+    "source_refs": [
+      "source:esdevlin-formation-tour"
+    ],
+    "state_model": {
+      "deterministic": true,
+      "model": "external-reference"
+    },
+    "summary": "A stage dominated by a monumental image volume whose presence makes the display itself a scenic object, focal field, divider, and reveal device.",
+    "title": "Beyoncé — Formation Tour stage",
+    "tool_choices": [],
+    "topic_ids": [],
+    "transfer_constraints": [
+      "Treat one dominant visual surface as a spatial actor that can frame, divide, reveal, or conceal content.",
+      "Let scale and placement establish hierarchy before adding smaller interface layers."
+    ],
+    "type": "Example",
+    "visual_traits": [
+      "monumental",
+      "screen-volume",
+      "stage",
+      "architectural"
+    ]
+  },
+  "relations": [
+    {
+      "source": "ex:esdevlin-formation-tour",
+      "target": "concept:display-as-architecture",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Official project page inspected for the stage project. Scenic/screen-volume claims are limited to the project documentation and visible design; full production mechanics are not inferred.",
+      "checked_at": "2026-09-19",
+      "id": "source:esdevlin-formation-tour",
+      "locator": "https://esdevlin.com/work/projects/beyonce",
+      "locator_type": "url",
+      "publisher": "Es Devlin Studio",
+      "title": "Beyoncé — Formation Tour",
+      "type": "Source"
+    }
+  ]
+}

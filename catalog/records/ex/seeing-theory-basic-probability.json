@@ -1,0 +1,192 @@
+{
+  "ai_build": {
+    "availability": "available",
+    "example_id": "ex:seeing-theory-basic-probability",
+    "method": {
+      "concepts": [
+        "concept:editable-model-sandbox"
+      ],
+      "failure_modes": [
+        "Do not fabricate samples that are disconnected from the displayed distribution.",
+        "Do not infer statistical validity outside the model assumptions."
+      ],
+      "fidelity_constraints": [
+        "Reuse the linked model/representation structure without copying Seeing Theory's artwork, prose, charts, or exercises."
+      ],
+      "grammar": [
+        "statistical-distribution",
+        "dynamic-system"
+      ],
+      "interaction_model": {
+        "response": "Samples and derived statistical quantities update from the manipulated distribution, preserving one source of truth across representations.",
+        "trigger": "drag probability values, sample, or alter distribution parameters"
+      },
+      "mechanisms": [],
+      "state_model": {
+        "deterministic": true,
+        "model": "external-reference"
+      },
+      "transfer_constraints": [
+        "Keep probability parameters, simulated samples, and derived summaries synchronized rather than calculating each view independently.",
+        "Make the manipulated quantity visually explicit before showing derived statistics."
+      ]
+    },
+    "resources": [
+      {
+        "id": "resource:editable-model-sandbox",
+        "package_path": "resources/interaction/editable-model-sandbox",
+        "status": "implemented",
+        "title": "Editable model sandbox"
+      }
+    ],
+    "tools": [
+      {
+        "evidence": "observed",
+        "reason": "Seeing Theory project documentation states that its interactive visualizations were built with D3.js.",
+        "record": {
+          "agent_notes": "Do not reach for D3 just because a visualization exists; use it when its primitives are actually needed.",
+          "avoid_when": "A standard chart can be expressed much faster with Plot, Vega-Lite, Plotly, or ECharts.",
+          "canonical_path": "registries/frontend-tools.yaml",
+          "capabilities": [
+            "scales",
+            "axes",
+            "shapes",
+            "transitions",
+            "force-layout",
+            "hierarchy",
+            "geography",
+            "interaction"
+          ],
+          "docs": "https://d3js.org/getting-started",
+          "domains": [
+            "data-visualization",
+            "scientific-visualization"
+          ],
+          "ecosystem": [
+            "JavaScript",
+            "SVG",
+            "Canvas"
+          ],
+          "examples": "https://observablehq.com/@d3/gallery",
+          "homepage": "https://d3js.org/",
+          "id": "tool:d3",
+          "legacy_kind": "library",
+          "license": "ISC",
+          "source_refs": [
+            "source:tool-d3"
+          ],
+          "subtype": "library",
+          "summary": "The visualization grammar or interaction is bespoke and low-level control is valuable.",
+          "tags": [
+            "data-viz",
+            "bespoke",
+            "svg",
+            "layout"
+          ],
+          "tier": "core",
+          "title": "D3",
+          "type": "Tool",
+          "use_when": "The visualization grammar or interaction is bespoke and low-level control is valuable."
+        }
+      }
+    ]
+  },
+  "crosswalks": [],
+  "record": {
+    "canonical_path": "knowledge/examples/creative-wave01-b.json",
+    "collection_ids": [],
+    "concept_ids": [
+      "concept:editable-model-sandbox"
+    ],
+    "failure_modes": [
+      "Do not fabricate samples that are disconnected from the displayed distribution.",
+      "Do not infer statistical validity outside the model assumptions."
+    ],
+    "fidelity_constraints": [
+      "Reuse the linked model/representation structure without copying Seeing Theory's artwork, prose, charts, or exercises."
+    ],
+    "grammar": [
+      "statistical-distribution",
+      "dynamic-system"
+    ],
+    "id": "ex:seeing-theory-basic-probability",
+    "intent_ids": [],
+    "interaction": "parameter-control",
+    "interaction_model": {
+      "response": "Samples and derived statistical quantities update from the manipulated distribution, preserving one source of truth across representations.",
+      "trigger": "drag probability values, sample, or alter distribution parameters"
+    },
+    "kind": "REFERENCE",
+    "lifecycle": {
+      "collected": true,
+      "reusable": true,
+      "showable": false,
+      "verified": false
+    },
+    "medium": "interactive-data-visualization",
+    "resource_ids": [
+      "resource:editable-model-sandbox"
+    ],
+    "source_refs": [
+      "source:seeing-theory-basic-probability"
+    ],
+    "state_model": {
+      "deterministic": true,
+      "model": "external-reference"
+    },
+    "summary": "An interactive probability lesson where users reshape distributions and immediately observe sampling, expectation, variance, and related representations from one shared model.",
+    "title": "Seeing Theory — Basic Probability",
+    "tool_choices": [
+      {
+        "evidence": "observed",
+        "id": "tool:d3",
+        "reason": "Seeing Theory project documentation states that its interactive visualizations were built with D3.js."
+      }
+    ],
+    "topic_ids": [],
+    "transfer_constraints": [
+      "Keep probability parameters, simulated samples, and derived summaries synchronized rather than calculating each view independently.",
+      "Make the manipulated quantity visually explicit before showing derived statistics."
+    ],
+    "type": "Example",
+    "visual_traits": [
+      "quantitative",
+      "linked",
+      "interactive",
+      "statistical"
+    ]
+  },
+  "relations": [
+    {
+      "source": "ex:seeing-theory-basic-probability",
+      "target": "concept:editable-model-sandbox",
+      "type": "demonstrates"
+    },
+    {
+      "evidence": "observed",
+      "reason": "Seeing Theory project documentation states that its interactive visualizations were built with D3.js.",
+      "source": "ex:seeing-theory-basic-probability",
+      "target": "tool:d3",
+      "type": "implemented_with"
+    },
+    {
+      "source": "ex:seeing-theory-basic-probability",
+      "target": "resource:editable-model-sandbox",
+      "type": "yields"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Official interactive chapter inspected for draggable probability distributions, sampling, expectation and variance. Parent project documentation identifies D3.js as the visualization technology.",
+      "checked_at": "2026-09-19",
+      "id": "source:seeing-theory-basic-probability",
+      "locator": "https://seeing-theory.brown.edu/basic-probability/",
+      "locator_type": "url",
+      "publisher": "Seeing Theory / Brown University",
+      "title": "Seeing Theory — Basic Probability",
+      "type": "Source"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "ai_build": {
+    "availability": "available",
+    "example_id": "ex:dia-nike-statement-house",
+    "method": {
+      "concepts": [
+        "concept:kinetic-identity-system"
+      ],
+      "failure_modes": [
+        "Do not use sports-like velocity as generic decoration without a source behavior.",
+        "Do not infer technical synchronization details not documented by the case study."
+      ],
+      "fidelity_constraints": [
+        "Borrow the movement-derived system logic without copying Nike branding, campaign assets, type treatment, or spatial installation."
+      ],
+      "grammar": [
+        "time-sequence",
+        "composition-layer",
+        "dynamic-geometry"
+      ],
+      "interaction_model": {
+        "response": "Typographic motion takes behavioral cues from basketball movement and propagates one identity across multiple spatial surfaces.",
+        "trigger": "watch the experiential screen/court system"
+      },
+      "mechanisms": [],
+      "state_model": {
+        "deterministic": true,
+        "model": "external-reference"
+      },
+      "transfer_constraints": [
+        "Derive motion vocabulary from the subject's real movement or behavior instead of selecting arbitrary easing.",
+        "Coordinate distributed surfaces as one identity system rather than independent screens."
+      ]
+    },
+    "resources": [],
+    "tools": []
+  },
+  "crosswalks": [],
+  "record": {
+    "canonical_path": "knowledge/examples/creative-wave01.json",
+    "collection_ids": [],
+    "concept_ids": [
+      "concept:kinetic-identity-system"
+    ],
+    "failure_modes": [
+      "Do not use sports-like velocity as generic decoration without a source behavior.",
+      "Do not infer technical synchronization details not documented by the case study."
+    ],
+    "fidelity_constraints": [
+      "Borrow the movement-derived system logic without copying Nike branding, campaign assets, type treatment, or spatial installation."
+    ],
+    "grammar": [
+      "time-sequence",
+      "composition-layer",
+      "dynamic-geometry"
+    ],
+    "id": "ex:dia-nike-statement-house",
+    "intent_ids": [],
+    "interaction": "watch",
+    "interaction_model": {
+      "response": "Typographic motion takes behavioral cues from basketball movement and propagates one identity across multiple spatial surfaces.",
+      "trigger": "watch the experiential screen/court system"
+    },
+    "kind": "REFERENCE",
+    "lifecycle": {
+      "collected": true,
+      "reusable": false,
+      "showable": false,
+      "verified": false
+    },
+    "medium": "experiential-identity",
+    "resource_ids": [],
+    "source_refs": [
+      "source:dia-nike-statement-house"
+    ],
+    "state_model": {
+      "deterministic": true,
+      "model": "external-reference"
+    },
+    "summary": "An experiential identity distributed across court and screens, with high-energy typographic animation rules derived from basketball movement.",
+    "title": "Nike Statement House — experiential typographic identity",
+    "tool_choices": [],
+    "topic_ids": [],
+    "transfer_constraints": [
+      "Derive motion vocabulary from the subject's real movement or behavior instead of selecting arbitrary easing.",
+      "Coordinate distributed surfaces as one identity system rather than independent screens."
+    ],
+    "type": "Example",
+    "visual_traits": [
+      "typographic",
+      "kinetic",
+      "spatial",
+      "high-energy"
+    ]
+  },
+  "relations": [
+    {
+      "source": "ex:dia-nike-statement-house",
+      "target": "concept:kinetic-identity-system",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Official case study inspected for the experiential typographic system, distributed screen/court context and animation rules based on basketball movement.",
+      "checked_at": "2026-09-19",
+      "id": "source:dia-nike-statement-house",
+      "locator": "https://dia.tv/project/nike-statement-house/",
+      "locator_type": "url",
+      "publisher": "DIA",
+      "title": "Nike Statement House — DIA",
+      "type": "Source"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+version: 1
+snapshot_date: '2026-09-10'
+purpose: >-
+  Representative official curriculum/course sources used to seed and sanity-check the subject visualization atlas.
+  These are provenance anchors, not a claim that every learning outcome has been transcribed.
+families:
+  mathematics:
+    - {program: ap, label: "AP Calculus AB", url: "https://apstudents.collegeboard.org/courses/ap-calculus-ab"}
+    - {program: ap, label: "AP Statistics", url: "https://apstudents.collegeboard.org/courses/ap-statistics"}
+    - {program: cambridge-international-as-a-level, label: "Mathematics 9709", url: "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-mathematics-9709/"}
+  physics:
+    - {program: ap, label: "AP Physics 1", url: "https://apstudents.collegeboard.org/courses/ap-physics-1"}
+    - {program: ap, label: "AP Physics C: Electricity and Magnetism", url: "https://apstudents.collegeboard.org/courses/ap-physics-c-electricity-and-magnetism"}
+    - {program: cambridge-international-as-a-level, label: "Physics 9702", url: "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-physics-9702/"}
+  chemistry:
+    - {program: ap, label: "AP Chemistry", url: "https://apstudents.collegeboard.org/courses/ap-chemistry"}
+    - {program: cambridge-international-as-a-level, label: "Chemistry 9701", url: "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-chemistry-9701/"}
+  biology:
+    - {program: ap, label: "AP Biology", url: "https://apstudents.collegeboard.org/courses/ap-biology"}
+    - {program: cambridge-international-as-a-level, label: "Biology 9700", url: "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-biology-9700/"}
+  earth-environment:
+    - {program: ap, label: "AP Environmental Science", url: "https://apstudents.collegeboard.org/courses/ap-environmental-science"}
+    - {program: cambridge-international-as-a-level, label: "Marine Science 9693", url: "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-marine-science-9693/"}
+    - {program: cambridge-international-as-a-level, label: "Environmental Management 8291", url: "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-level-environmental-management-8291/"}
+  geography:
+    - {program: ap, label: "AP Human Geography", url: "https://apstudents.collegeboard.org/courses/ap-human-geography"}
+    - {program: cambridge-international-as-a-level, label: "Geography 9696", url: "https://www.cambridgeinternational.org/programmes-and-qualifications/view/cambridge-international-as-and-a-level-geography-9696/"}
+  computer-science:
+    - {program: ap, label: "AP Computer Science A", url: "https://apstudents.collegeboard.org/courses/ap-computer-science-a"}
+    - {program: ap, label: "AP Computer Science Principles", url: "https://apstudents.collegeboard.org/courses/ap-computer-science-principles"}
+    - {program: ap, label: "AP Cybersecurity", url: "https://apstudents.collegeboard.org/courses/ap-cybersecurity"}
+    - {program: cambridge-international-as-a-level, label: "Computer Science 9618", url: "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-computer-science-9618/"}
+  economics-business:
+    - {program: ap, label: "AP Microeconomics", url: "https://apstudents.collegeboard.org/courses/ap-microeconomics"}
+    - {program: ap, label: "AP Macroeconomics", url: "https://apstudents.collegeboard.org/courses/ap-macroeconomics"}
+    - {program: ap, label: "AP Business with Personal Finance", url: "https://apstudents.collegeboard.org/courses/ap-business-personal-finance"}
+    - {program: cambridge-international-as-a-level, label: "Economics 9708", url: "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-economics-9708/"}
+  psychology-social:
+    - {program: ap, label: "AP Psychology", url: "https://apstudents.collegeboard.org/courses/ap-psychology"}
+    - {program: cambridge-international-as-a-level, label: "Psychology 9990", url: "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-psychology-9990/"}
+    - {program: cambridge-international-as-a-level, label: "Sociology 9699", url: "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-sociology-9699/"}
+  history-government:
+    - {program: ap, label: "AP World History: Modern", url: "https://apstudents.collegeboard.org/courses/ap-world-history-modern"}
+    - {program: ap, label: "AP United States Government and Politics", url: "https://apstudents.collegeboard.org/courses/ap-united-states-government-and-politics"}
+    - {program: cambridge-international-as-a-level, label: "History 9489", url: "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-history-9489/"}
+  art-design-media:
+    - {program: ap, label: "AP Art History", url: "https://apstudents.collegeboard.org/courses/ap-art-history"}
+    - {program: cambridge-international-as-a-level, label: "Design & Technology 9705", url: "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-design-and-technology-9705/"}
+    - {program: cambridge-international-as-a-level, label: "Media Studies 9607", url: "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-media-studies-9607/"}
+  music:
+    - {program: ap, label: "AP Music Theory", url: "https://apstudents.collegeboard.org/courses/ap-music-theory"}
+    - {program: cambridge-international-as-a-level, label: "Music 9483", url: "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-music-9483/"}
+  language-literature:
+    - {program: ap, label: "AP English Language and Composition", url: "https://apstudents.collegeboard.org/courses/ap-english-language-and-composition"}
+    - {program: cambridge-international-as-a-level, label: "English Language 9093", url: "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-english-language-9093/"}
+    - {program: cambridge-international-as-a-level, label: "English Language and Literature 8695", url: "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-english-language-and-literature-as-level-only-8695/"}
+  law-religion-thinking:
+    - {program: cambridge-international-as-a-level, label: "Law 9084", url: "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-law-9084/"}
+    - {program: cambridge-international-as-a-level, label: "Thinking Skills 9694", url: "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-thinking-skills-9694/"}
+    - {program: cambridge-international-as-a-level, label: "Islamic Studies 9488", url: "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-islamic-studies-9488/"}
+  physical-education:
+    - {program: cambridge-international-as-a-level, label: "Sport & Physical Education 8386", url: "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-level-sport-and-physical-education-8386/"}
+  research-interdisciplinary:
+    - {program: ap, label: "AP Research", url: "https://apstudents.collegeboard.org/courses/ap-research"}
+    - {program: ap, label: "AP Seminar", url: "https://apstudents.collegeboard.org/courses/ap-seminar"}
+    - {program: cambridge-international-as-a-level, label: "Global Perspectives & Research 9239", url: "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-global-perspectives-and-research-9239/"}
+  travel-tourism:
+    - {program: cambridge-international-as-a-level, label: "Travel & Tourism 9395", url: "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-travel-and-tourism-9395/"}

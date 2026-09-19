@@ -1,0 +1,68 @@
+{
+  "record": {
+    "agent_notes": "Default first check for editor-like 2D canvas interaction.",
+    "avoid_when": "Pure data visualization, mathematical dependency graphs, or GPU sprite workloads dominate.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "scene-graph",
+      "drag-drop",
+      "transforms",
+      "hit-testing",
+      "canvas-events",
+      "serialization"
+    ],
+    "docs": "https://konvajs.org/docs/",
+    "domains": [
+      "graphics",
+      "editors",
+      "whiteboards"
+    ],
+    "ecosystem": [
+      "JavaScript",
+      "Canvas",
+      "React"
+    ],
+    "examples": "https://konvajs.org/docs/sandbox/",
+    "homepage": "https://konvajs.org/",
+    "id": "tool:konva",
+    "legacy_kind": "canvas-library",
+    "license": "MIT",
+    "source_refs": [
+      "source:tool-konva"
+    ],
+    "subtype": "library",
+    "summary": "Building an interactive 2D editor, whiteboard, annotator, or draggable canvas with many selectable shapes.",
+    "tags": [
+      "canvas",
+      "editor",
+      "whiteboard"
+    ],
+    "tier": "core",
+    "title": "Konva",
+    "type": "Tool",
+    "use_when": "Building an interactive 2D editor, whiteboard, annotator, or draggable canvas with many selectable shapes."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:canvas-focus-lens",
+      "target": "tool:konva",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-konva",
+      "locator": "https://konvajs.org/docs/",
+      "locator_type": "url",
+      "publisher": "Konva",
+      "title": "Konva official documentation",
+      "type": "Source"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "candidate:teamlab-borderless",
+  "candidate_kind": "example",
+  "status": "promoted",
+  "discovered_by": "scout",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://www.teamlab.art/e/tokyo/",
+    "title": "teamLab Borderless: MORI Building DIGITAL ART MUSEUM",
+    "creator": "teamLab"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "Treats artworks as mobile spatial entities that cross room boundaries rather than fixed exhibits; the guide app is location-relative and some works allow visitor participation.",
+  "novelty_axes": [
+    "new_medium",
+    "new_interaction",
+    "cross_media_transfer"
+  ],
+  "signals": [
+    "boundaryless environment",
+    "artwork migration",
+    "location-relative guidance",
+    "participation",
+    "spatial continuity"
+  ],
+  "notes": "The official museum page states that there are no fixed artwork captions because artworks move across spaces; the app identifies the concept of the work nearest the visitor and can participate in Infinite Crystal World.",
+  "decision": {
+    "outcome": "promoted",
+    "rationale": "Adds a spatial-information-architecture reference where content is not owned by one container or room, and context follows the viewer's current location.",
+    "reviewed_by": "wave01-curation",
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:teamlab-borderless",
+      "concept:boundaryless-spatial-content"
+    ]
+  }
+}

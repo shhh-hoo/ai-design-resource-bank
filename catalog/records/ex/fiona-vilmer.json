@@ -1,0 +1,129 @@
+{
+  "ai_build": {
+    "availability": "available",
+    "example_id": "ex:fiona-vilmer",
+    "method": {
+      "concepts": [
+        "concept:archive-as-interface"
+      ],
+      "failure_modes": [
+        "Do not claim unobserved transition or interaction behavior.",
+        "Do not turn the archive into a conventional image-card portfolio."
+      ],
+      "fidelity_constraints": [
+        "Preserve the corpus-first editorial structure without copying names, project imagery, or cultural-institution identities."
+      ],
+      "grammar": [
+        "composition-layer",
+        "time-sequence"
+      ],
+      "interaction_model": {
+        "response": "The corpus stays legible as a categorized body of work while detail pages expose dates, credits, publication information, and images.",
+        "trigger": "browse categories and open an indexed entry"
+      },
+      "mechanisms": [],
+      "state_model": {
+        "deterministic": true,
+        "model": "external-reference"
+      },
+      "transfer_constraints": [
+        "Keep category structure and work metadata primary; project imagery should enrich rather than replace the corpus index.",
+        "Let detail pages remain connected to the larger archive instead of behaving like isolated campaign pages."
+      ]
+    },
+    "resources": [
+      {
+        "id": "resource:archive-as-interface",
+        "package_path": "resources/layout/archive-as-interface",
+        "status": "implemented",
+        "title": "Archive as interface"
+      }
+    ],
+    "tools": []
+  },
+  "crosswalks": [],
+  "record": {
+    "canonical_path": "knowledge/examples/creative-wave01.json",
+    "collection_ids": [],
+    "concept_ids": [
+      "concept:archive-as-interface"
+    ],
+    "failure_modes": [
+      "Do not claim unobserved transition or interaction behavior.",
+      "Do not turn the archive into a conventional image-card portfolio."
+    ],
+    "fidelity_constraints": [
+      "Preserve the corpus-first editorial structure without copying names, project imagery, or cultural-institution identities."
+    ],
+    "grammar": [
+      "composition-layer",
+      "time-sequence"
+    ],
+    "id": "ex:fiona-vilmer",
+    "intent_ids": [],
+    "interaction": "browse-index",
+    "interaction_model": {
+      "response": "The corpus stays legible as a categorized body of work while detail pages expose dates, credits, publication information, and images.",
+      "trigger": "browse categories and open an indexed entry"
+    },
+    "kind": "REFERENCE",
+    "lifecycle": {
+      "collected": true,
+      "reusable": true,
+      "showable": false,
+      "verified": false
+    },
+    "medium": "website",
+    "resource_ids": [
+      "resource:archive-as-interface"
+    ],
+    "source_refs": [
+      "source:fiona-vilmer"
+    ],
+    "state_model": {
+      "deterministic": true,
+      "model": "external-reference"
+    },
+    "summary": "A restrained text-led corpus organized by Curating, Texts, Publications, and Programming/Talks, with metadata-rich project detail.",
+    "title": "Fiona Vilmer — cultural portfolio archive",
+    "tool_choices": [],
+    "topic_ids": [],
+    "transfer_constraints": [
+      "Keep category structure and work metadata primary; project imagery should enrich rather than replace the corpus index.",
+      "Let detail pages remain connected to the larger archive instead of behaving like isolated campaign pages."
+    ],
+    "type": "Example",
+    "visual_traits": [
+      "editorial",
+      "text-led",
+      "archive",
+      "restrained"
+    ]
+  },
+  "relations": [
+    {
+      "source": "ex:fiona-vilmer",
+      "target": "concept:archive-as-interface",
+      "type": "demonstrates"
+    },
+    {
+      "source": "ex:fiona-vilmer",
+      "target": "resource:archive-as-interface",
+      "type": "yields"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Direct English index and project pages inspected for category structure, project/publication metadata and image-led detail. Interaction beyond ordinary navigation was not asserted.",
+      "checked_at": "2026-09-19",
+      "id": "source:fiona-vilmer",
+      "locator": "https://fionavilmer.com/en",
+      "locator_type": "url",
+      "publisher": "Fiona Vilmer",
+      "title": "Fiona Vilmer",
+      "type": "Source"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "knowledge/provenance/wave01-sources.json",
+    "captured_at": "2026-09-19",
+    "check_scope": "Direct archive index inspected for publication groupings, issue chronology and dense index structure. Original implementation technology was not checked.",
+    "checked_at": "2026-09-19",
+    "id": "source:whole-earth-index",
+    "locator": "https://wholeearth.info/",
+    "locator_type": "url",
+    "publisher": "Whole Earth Index",
+    "title": "Whole Earth Index",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

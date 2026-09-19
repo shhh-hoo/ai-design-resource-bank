@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-mechanisms.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:legacy-mechanisms",
+    "locator": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/main/registries/frontend-mechanisms.yaml",
+    "locator_type": "url",
+    "publisher": "AIDRB",
+    "title": "Legacy mechanism registry",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

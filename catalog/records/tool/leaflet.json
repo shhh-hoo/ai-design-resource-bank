@@ -1,0 +1,67 @@
+{
+  "record": {
+    "agent_notes": "Still useful for simple map products; MapLibre is often the stronger modern default for vector-map work.",
+    "avoid_when": "WebGL vector styling, globe, heavy 3D, or very large GPU layers are required.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "2d-map",
+      "markers",
+      "popups",
+      "tile-layers",
+      "plugins"
+    ],
+    "docs": "https://leafletjs.com/reference.html",
+    "domains": [
+      "maps",
+      "geospatial"
+    ],
+    "ecosystem": [
+      "JavaScript",
+      "DOM",
+      "Canvas",
+      "SVG"
+    ],
+    "examples": "https://leafletjs.com/examples.html",
+    "homepage": "https://leafletjs.com/",
+    "id": "tool:leaflet",
+    "legacy_kind": "map-library",
+    "license": "BSD-2-Clause",
+    "source_refs": [
+      "source:tool-leaflet"
+    ],
+    "subtype": "library",
+    "summary": "Lightweight conventional 2D maps and a broad plugin ecosystem are enough.",
+    "tags": [
+      "map",
+      "lightweight",
+      "2d"
+    ],
+    "tier": "secondary",
+    "title": "Leaflet",
+    "type": "Tool",
+    "use_when": "Lightweight conventional 2D maps and a broad plugin ecosystem are enough."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-spatial-map",
+      "target": "tool:leaflet",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-leaflet",
+      "locator": "https://leafletjs.com/reference.html",
+      "locator_type": "url",
+      "publisher": "Leaflet",
+      "title": "Leaflet official documentation",
+      "type": "Source"
+    }
+  ]
+}

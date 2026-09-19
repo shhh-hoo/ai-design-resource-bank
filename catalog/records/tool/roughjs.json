@@ -1,0 +1,58 @@
+{
+  "record": {
+    "agent_notes": "A rendering treatment, not a layout or diagram engine.",
+    "avoid_when": "Precise technical drafting or neutral product UI is required.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "hand-drawn-lines",
+      "shapes",
+      "svg-paths",
+      "canvas",
+      "svg"
+    ],
+    "docs": "https://github.com/rough-stuff/rough/wiki",
+    "domains": [
+      "graphics",
+      "education",
+      "illustration"
+    ],
+    "ecosystem": [
+      "JavaScript",
+      "Canvas",
+      "SVG"
+    ],
+    "homepage": "https://roughjs.com/",
+    "id": "tool:roughjs",
+    "legacy_kind": "graphics-library",
+    "license": "MIT",
+    "source_refs": [
+      "source:tool-roughjs"
+    ],
+    "subtype": "library",
+    "summary": "Hand-drawn/sketch rendering communicates an informal explanatory or diagrammatic style.",
+    "tags": [
+      "sketch",
+      "hand-drawn",
+      "diagram"
+    ],
+    "tier": "specialized",
+    "title": "Rough.js",
+    "type": "Tool",
+    "use_when": "Hand-drawn/sketch rendering communicates an informal explanatory or diagrammatic style."
+  },
+  "relations": [],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-roughjs",
+      "locator": "https://github.com/rough-stuff/rough/wiki",
+      "locator_type": "url",
+      "publisher": "Rough.js",
+      "title": "Rough.js official documentation",
+      "type": "Source"
+    }
+  ]
+}

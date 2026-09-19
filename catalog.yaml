@@ -1,0 +1,79 @@
+{
+  "resources": [
+    {
+      "domain": "layout",
+      "hint": "Normalize records, group them by a meaningful corpus axis, keep group scope visible, and filter in place without replacing the archive with isolated cards.",
+      "id": "archive-as-interface",
+      "path": "resources/layout/archive-as-interface",
+      "status": "implemented",
+      "tags": [
+        "archive",
+        "index",
+        "editorial",
+        "dense-navigation",
+        "information-architecture"
+      ],
+      "title": "Archive as interface"
+    },
+    {
+      "domain": "interaction",
+      "hint": "One model store accepts validated edits, derives all outputs from the same state, notifies every view, and provides reset without duplicating state in controls or visualizations.",
+      "id": "editable-model-sandbox",
+      "path": "resources/interaction/editable-model-sandbox",
+      "status": "implemented",
+      "tags": [
+        "model",
+        "sandbox",
+        "controls",
+        "simulation",
+        "linked-state"
+      ],
+      "title": "Editable model sandbox"
+    },
+    {
+      "domain": "interaction",
+      "hint": "A single selected coordinate derives its local inputs, operation products and output together so the user can trace exactly how one result was produced.",
+      "id": "linked-computation-inspector",
+      "path": "resources/interaction/linked-computation-inspector",
+      "status": "implemented",
+      "tags": [
+        "inspection",
+        "computation",
+        "hover",
+        "linked-view",
+        "matrix"
+      ],
+      "title": "Linked computation inspector"
+    },
+    {
+      "domain": "chemistry",
+      "hint": "One coordinate drives a marker on a single-step energy profile; activation energy and enthalpy share explicit endpoints.",
+      "id": "reaction-profile",
+      "path": "resources/chemistry/reaction-profile",
+      "status": "verified",
+      "tags": [
+        "chemistry",
+        "energetics",
+        "activation-energy",
+        "reaction-coordinate",
+        "svg"
+      ],
+      "title": "Reaction profile with linked coordinate marker"
+    },
+    {
+      "domain": "interaction",
+      "hint": "Define named semantic levels with explicit scale thresholds and optional hysteresis; select the active information level independently from geometric rendering.",
+      "id": "semantic-zoom-levels",
+      "path": "resources/interaction/semantic-zoom-levels",
+      "status": "implemented",
+      "tags": [
+        "semantic-zoom",
+        "level-of-detail",
+        "spatial-navigation",
+        "information-density"
+      ],
+      "title": "Semantic zoom levels"
+    }
+  ],
+  "version": 1
+}

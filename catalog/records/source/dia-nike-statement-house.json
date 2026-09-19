@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "knowledge/provenance/wave01-sources.json",
+    "captured_at": "2026-09-19",
+    "check_scope": "Official case study inspected for the experiential typographic system, distributed screen/court context and animation rules based on basketball movement.",
+    "checked_at": "2026-09-19",
+    "id": "source:dia-nike-statement-house",
+    "locator": "https://dia.tv/project/nike-statement-house/",
+    "locator_type": "url",
+    "publisher": "DIA",
+    "title": "Nike Statement House — DIA",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

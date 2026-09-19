@@ -1,0 +1,73 @@
+{
+  "record": {
+    "agent_notes": "Choose for path operations, not merely because the output is vector-like.",
+    "avoid_when": "Simple SVG DOM drawing or GPU-heavy sprite scenes dominate.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "vector-geometry",
+      "paths",
+      "boolean-ops",
+      "hit-testing",
+      "intersections",
+      "simplification"
+    ],
+    "docs": "https://paperjs.org/reference/",
+    "domains": [
+      "graphics",
+      "computational-geometry"
+    ],
+    "ecosystem": [
+      "JavaScript",
+      "Canvas"
+    ],
+    "examples": "https://paperjs.org/examples/",
+    "homepage": "https://paperjs.org/",
+    "id": "tool:paperjs",
+    "legacy_kind": "graphics-library",
+    "license": "MIT",
+    "source_refs": [
+      "source:tool-paperjs"
+    ],
+    "subtype": "library",
+    "summary": "Vector path mathematics and computational geometry are harder than the UI itself.",
+    "tags": [
+      "vector",
+      "geometry",
+      "canvas"
+    ],
+    "tier": "specialized",
+    "title": "Paper.js",
+    "type": "Tool",
+    "use_when": "Vector path mathematics and computational geometry are harder than the UI itself."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-composition-layer",
+      "target": "tool:paperjs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-image-comparison",
+      "target": "tool:paperjs",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-paperjs",
+      "locator": "https://paperjs.org/reference/",
+      "locator_type": "url",
+      "publisher": "Paper.js",
+      "title": "Paper.js official documentation",
+      "type": "Source"
+    }
+  ]
+}

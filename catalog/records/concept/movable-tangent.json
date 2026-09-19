@@ -1,0 +1,58 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-mechanisms.yaml",
+    "evidence": "seed",
+    "id": "concept:movable-tangent",
+    "implementation_note": "Keep the point, tangent, and numeric slope synchronized from one parameter value.",
+    "primitives": [
+      "function-plot",
+      "draggable-point",
+      "tangent-line",
+      "slope-readout"
+    ],
+    "source_refs": [
+      "source:legacy-mechanisms"
+    ],
+    "subtypes": [
+      "mechanism"
+    ],
+    "summary": "Drag a point along a curve to connect local slope with the derivative.",
+    "title": "Movable tangent",
+    "tool_ids": [
+      "tool:mafs",
+      "tool:jsxgraph"
+    ],
+    "type": "Concept",
+    "use_when": "Teaching rate of change, gradient, local linearity, or derivative intuition."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:movable-tangent",
+      "target": "tool:jsxgraph",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:movable-tangent",
+      "target": "tool:mafs",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-mechanisms.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:legacy-mechanisms",
+      "locator": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/main/registries/frontend-mechanisms.yaml",
+      "locator_type": "url",
+      "publisher": "AIDRB",
+      "title": "Legacy mechanism registry",
+      "type": "Source"
+    }
+  ]
+}

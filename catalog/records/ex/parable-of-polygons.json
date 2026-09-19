@@ -1,0 +1,129 @@
+{
+  "ai_build": {
+    "availability": "available",
+    "example_id": "ex:parable-of-polygons",
+    "method": {
+      "concepts": [
+        "concept:editable-model-sandbox"
+      ],
+      "failure_modes": [
+        "Do not imply a social model predicts real populations without its stated assumptions.",
+        "Do not animate agents independently of the same model used for satisfaction/output."
+      ],
+      "fidelity_constraints": [
+        "Reuse the direct-manipulation/emergence mechanism without copying characters, story text, illustration style, or exact simulation parameters."
+      ],
+      "grammar": [
+        "dynamic-system",
+        "state-process"
+      ],
+      "interaction_model": {
+        "response": "Agent satisfaction and the global pattern update from the same rule set, exposing how small local preferences accumulate.",
+        "trigger": "drag unhappy polygons or change the local bias rule"
+      },
+      "mechanisms": [],
+      "state_model": {
+        "deterministic": true,
+        "model": "external-reference"
+      },
+      "transfer_constraints": [
+        "Expose local rules and global consequences at the same time so users can connect individual state to emergent pattern.",
+        "Include reset/sandbox states that let users test counterfactual rules rather than follow one scripted path."
+      ]
+    },
+    "resources": [
+      {
+        "id": "resource:editable-model-sandbox",
+        "package_path": "resources/interaction/editable-model-sandbox",
+        "status": "implemented",
+        "title": "Editable model sandbox"
+      }
+    ],
+    "tools": []
+  },
+  "crosswalks": [],
+  "record": {
+    "canonical_path": "knowledge/examples/creative-wave01-b.json",
+    "collection_ids": [],
+    "concept_ids": [
+      "concept:editable-model-sandbox"
+    ],
+    "failure_modes": [
+      "Do not imply a social model predicts real populations without its stated assumptions.",
+      "Do not animate agents independently of the same model used for satisfaction/output."
+    ],
+    "fidelity_constraints": [
+      "Reuse the direct-manipulation/emergence mechanism without copying characters, story text, illustration style, or exact simulation parameters."
+    ],
+    "grammar": [
+      "dynamic-system",
+      "state-process"
+    ],
+    "id": "ex:parable-of-polygons",
+    "intent_ids": [],
+    "interaction": "drag-and-parameter-edit",
+    "interaction_model": {
+      "response": "Agent satisfaction and the global pattern update from the same rule set, exposing how small local preferences accumulate.",
+      "trigger": "drag unhappy polygons or change the local bias rule"
+    },
+    "kind": "REFERENCE",
+    "lifecycle": {
+      "collected": true,
+      "reusable": true,
+      "showable": false,
+      "verified": false
+    },
+    "medium": "interactive-essay",
+    "resource_ids": [
+      "resource:editable-model-sandbox"
+    ],
+    "source_refs": [
+      "source:parable-polygons"
+    ],
+    "state_model": {
+      "deterministic": true,
+      "model": "external-reference"
+    },
+    "summary": "A direct-manipulation simulation where users move agents, alter local preference rules, and observe emergent segregation at the system level.",
+    "title": "Parable of the Polygons",
+    "tool_choices": [],
+    "topic_ids": [],
+    "transfer_constraints": [
+      "Expose local rules and global consequences at the same time so users can connect individual state to emergent pattern.",
+      "Include reset/sandbox states that let users test counterfactual rules rather than follow one scripted path."
+    ],
+    "type": "Example",
+    "visual_traits": [
+      "playful",
+      "grid",
+      "agent-based",
+      "illustrated"
+    ]
+  },
+  "relations": [
+    {
+      "source": "ex:parable-of-polygons",
+      "target": "concept:editable-model-sandbox",
+      "type": "demonstrates"
+    },
+    {
+      "source": "ex:parable-of-polygons",
+      "target": "resource:editable-model-sandbox",
+      "type": "yields"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Direct interactive page inspected for drag-and-drop relocation, rule changes, larger simulations and final sandbox. Reuse/licensing note on the page was also inspected.",
+      "checked_at": "2026-09-19",
+      "id": "source:parable-polygons",
+      "locator": "https://ncase.me/polygons/",
+      "locator_type": "url",
+      "publisher": "Vi Hart + Nicky Case",
+      "title": "Parable of the Polygons",
+      "type": "Source"
+    }
+  ]
+}

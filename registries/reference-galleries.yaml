@@ -1,0 +1,236 @@
+version: 1
+purpose: >-
+  High-signal places to inspect working frontend mechanisms, subject visualizations,
+  and production-quality interaction patterns. These are reference sources, not a blanket
+  license to copy assets or code. Inspect the specific item's license before reuse.
+
+galleries:
+  - id: codrops-demos
+    name: Codrops Demos Hub
+    priority: core
+    url: https://tympanus.net/codrops/demos/
+    categories: [creative-web, animation, 3d, typography, scroll, svg, ui-effects]
+    best_for: Cutting-edge interaction mechanisms and downloadable experimental frontend demos.
+    reference_mode: Inspect the live behavior, then read/download the corresponding demo and isolate the transferable mechanism.
+    rights_note: Codrops states its demos are downloadable under MIT, but verify third-party assets used inside individual demos.
+    tags: [gsap, threejs, webgl, scroll, transitions]
+
+  - id: codrops-playground
+    name: Codrops Playground
+    priority: core
+    url: https://tympanus.net/codrops/category/playground/
+    categories: [creative-web, experiments, webgpu, shaders, animation]
+    best_for: Recent experimental techniques before they become standard component patterns.
+    reference_mode: Use as a discovery surface; bank only techniques that survive a minimal reproduction.
+    rights_note: Verify the linked experiment and any third-party asset licenses individually.
+    tags: [experimental, shaders, webgpu, gsap]
+
+  - id: motion-examples
+    name: Motion Examples
+    priority: core
+    url: https://motion.dev/examples
+    categories: [ui-animation, gestures, layout, scroll, svg, 3d, text]
+    best_for: Small production-oriented motion patterns that can be adapted to React/JS/Vue interfaces.
+    reference_mode: Search by interaction type, reproduce with the smallest relevant Motion primitive, and avoid importing unrelated styling.
+    rights_note: Core library and example/product access can differ; check the specific example's terms.
+    tags: [motion, react, animation, patterns]
+
+  - id: threejs-examples
+    name: Three.js Examples
+    priority: core
+    url: https://threejs.org/examples/
+    categories: [3d, webgl, webgpu, shader, particles, geometry, animation, loaders]
+    best_for: Canonical implementation patterns for cameras, loaders, materials, postprocessing, shaders, particles, and emerging WebGPU features.
+    reference_mode: Search official examples before implementing a Three.js mechanism from scratch.
+    rights_note: Three.js is MIT; verify licenses of loaded models/textures/assets in individual examples.
+    tags: [threejs, 3d, webgl, webgpu]
+
+  - id: pixijs-examples
+    name: PixiJS Examples
+    priority: core
+    url: https://pixijs.com/8.x/examples
+    categories: [2d-gpu, sprites, particles, filters, mesh, text, interaction]
+    best_for: High-performance 2D scene, particle, filter, mesh, and sprite rendering patterns.
+    reference_mode: Use the example categories as a renderer capability index before selecting custom Canvas/WebGL code.
+    rights_note: Verify example assets separately from PixiJS's MIT code license.
+    tags: [pixijs, 2d, gpu, particles]
+
+  - id: p5js-examples
+    name: p5.js Examples
+    priority: core
+    url: https://p5js.org/examples/
+    categories: [creative-coding, math, physics, generative-art, shaders, simulation]
+    best_for: Readable algorithm references for vectors, sine/cosine, forces, flocking, fractals, particles, soft-body ideas, and procedural drawing.
+    reference_mode: Extract the algorithm/mechanism; final production rendering may use another engine.
+    rights_note: Check code and media asset terms for the specific example.
+    tags: [algorithms, simulation, education, generative]
+
+  - id: g6-examples
+    name: AntV G6 Examples
+    priority: core
+    url: https://g6.antv.antgroup.com/en/examples
+    categories: [graphs, networks, layout, animation, interaction, large-data]
+    best_for: Comparing graph layouts, edge treatments, network interactions, graph animations, and large-network rendering strategies.
+    reference_mode: Choose the graph behavior first, then inspect the minimal G6 example that implements it.
+    rights_note: G6 is MIT; verify any external datasets/assets used by a demo.
+    tags: [graph, network, layout]
+
+  - id: react-flow-examples
+    name: React Flow Examples
+    priority: core
+    url: https://reactflow.dev/examples
+    categories: [node-editor, workflows, whiteboard, layout, edges, interaction]
+    best_for: Node/edge editor UX, handles, selection, subflows, layout integration, save/restore, and whiteboard behaviors.
+    reference_mode: Distinguish MIT base examples from Pro examples before copying code.
+    rights_note: Some React Flow Pro examples require a subscription/license; core React Flow is MIT.
+    tags: [react-flow, diagrams, editor]
+
+  - id: echarts-examples
+    name: Apache ECharts Examples
+    priority: core
+    url: https://echarts.apache.org/examples/en/index.html
+    categories: [charts, dashboards, maps, graph, sankey, animation, large-data]
+    best_for: Rapidly checking whether a polished conventional visualization already exists before custom chart implementation.
+    reference_mode: Start from a live option object, delete irrelevant features, then restyle rather than rebuilding the chart engine.
+    rights_note: ECharts code is Apache-2.0; verify datasets and third-party map assets separately.
+    tags: [echarts, charts, live-editor]
+
+  - id: vega-lite-gallery
+    name: Vega-Lite Example Gallery
+    priority: core
+    url: https://vega.github.io/vega-lite/examples/
+    categories: [charts, statistics, scientific, maps, interaction]
+    best_for: Declarative chart specifications that are easy for an AI agent to inspect, synthesize, and modify.
+    reference_mode: Prefer adapting a structured Vega-Lite spec when the desired visual is data-centric and compositional.
+    rights_note: Vega-Lite is BSD-3-Clause; verify datasets used by individual examples.
+    tags: [vega-lite, declarative, charts]
+
+  - id: cesium-sandcastle
+    name: Cesium Sandcastle
+    priority: core
+    url: https://cesium.com/learn/cesiumjs-sandcastle/
+    categories: [3d-globe, maps, terrain, 3d-tiles, satellites, time-data]
+    best_for: Live runnable patterns for CesiumJS Earth/terrain/3D Tiles/CZML and spatial interaction.
+    reference_mode: Prototype the geospatial behavior in Sandcastle before integrating it into an application shell.
+    rights_note: CesiumJS examples/core are Apache-2.0; hosted assets and Cesium ion services have separate terms.
+    tags: [cesium, globe, geospatial]
+
+  - id: maplibre-examples
+    name: MapLibre GL JS Examples
+    priority: core
+    url: https://maplibre.org/maplibre-gl-js/docs/examples/
+    categories: [maps, vector-tiles, camera, animation, layers, globe]
+    best_for: Concrete patterns for map layers, camera control, custom sources, interaction, styling, and globe modes.
+    reference_mode: Adapt the smallest official example matching the map behavior.
+    rights_note: MapLibre GL JS is BSD-3-Clause; map tiles/styles/data providers may have separate licenses.
+    tags: [maplibre, maps, geospatial]
+
+  - id: phet
+    name: PhET Interactive Simulations
+    priority: core
+    url: https://phet.colorado.edu/
+    categories: [physics, chemistry, math, earth-science, biology, education]
+    best_for: Benchmarking what a research-based interactive subject simulation should let a learner manipulate and observe.
+    reference_mode: Study interaction/representation/feedback mechanisms first; do not treat a complete PhET simulation as a component library.
+    rights_note: Licensing differs between published simulation files, simulation-specific source, and shared source; check PhET licensing before redistribution or commercial reuse.
+    tags: [education, simulation, physics, chemistry]
+
+  - id: mathigon
+    name: Mathigon / Polypad
+    priority: core
+    url: https://mathigon.org/
+    categories: [math, manipulatives, education, interactive-textbook]
+    best_for: Interactive mathematical manipulatives, explorable lesson mechanics, geometry, number, probability, and visual reasoning references.
+    reference_mode: Extract the learning interaction and representation choices, not merely the visual skin.
+    rights_note: Verify licensing and terms for the specific Mathigon/Polypad content or code before reuse.
+    tags: [math, education, manipulatives]
+
+  - id: ciechanowski
+    name: Bartosz Ciechanowski Interactive Essays
+    priority: core
+    url: https://ciechanow.ski/
+    categories: [science-explainer, physics, mechanics, optics, engineering, interactive-essay]
+    best_for: Gold-standard references for explaining difficult physical ideas through tightly coupled prose, diagrams, draggable models, vectors, plots, and camera changes.
+    reference_mode: Reverse-engineer explanatory sequencing and interaction roles; do not clone article assets or prose.
+    rights_note: Reference/inspiration source; treat code, text, and assets as copyrighted unless an explicit license says otherwise.
+    tags: [science, explainer, interaction, pedagogy]
+
+  - id: distill
+    name: Distill
+    priority: reference
+    url: https://distill.pub/
+    categories: [machine-learning, interactive-article, research-communication]
+    best_for: Landmark examples of interactive technical exposition combining mathematical notation, diagrams, live controls, and narrative.
+    reference_mode: Study explanatory structures and interactive figures; the publication is largely archival rather than a current component source.
+    rights_note: Check each article's stated license and attribution requirements.
+    tags: [ml, explainer, research]
+
+  - id: explorable-explanations
+    name: Explorable Explanations
+    priority: reference
+    url: https://explorabl.es/
+    categories: [interactive-explainer, education, games, simulation]
+    best_for: Discovering classic explorable-explanation interaction patterns across subjects.
+    reference_mode: Use as an index to original projects; verify each project's implementation and license at source.
+    rights_note: Aggregator; every linked project has its own terms.
+    tags: [explorable, education, interaction]
+
+  - id: react-bits
+    name: React Bits
+    priority: reference
+    url: https://www.reactbits.dev/
+    categories: [react, animation, text-effects, backgrounds, ui]
+    best_for: Ready-to-study animated React UI primitives and visual effects.
+    reference_mode: Use for implementation discovery; strip decorative defaults and retain only the mechanism relevant to the product.
+    rights_note: Verify the current license and any per-component dependencies/assets before redistribution.
+    tags: [react, animated-ui, effects]
+
+  - id: aceternity-ui
+    name: Aceternity UI
+    priority: reference
+    url: https://ui.aceternity.com/
+    categories: [react, tailwind, motion, landing-pages, effects]
+    best_for: High-polish contemporary React/Tailwind/Motion component and landing-page interaction references.
+    reference_mode: Treat as a mechanism/source reference, not a default design language to paste wholesale.
+    rights_note: Free and paid content may coexist; verify the terms of the specific component/template.
+    tags: [react, tailwind, motion, components]
+
+  - id: magic-ui
+    name: Magic UI
+    priority: reference
+    url: https://magicui.design/
+    categories: [react, animation, ui, effects]
+    best_for: Animated interface primitives and product-marketing effects implemented in a modern React stack.
+    reference_mode: Extract the motion/geometry primitive and adapt it to the target design system.
+    rights_note: Verify current component and template licensing before reuse.
+    tags: [react, animation, components]
+
+  - id: uiverse
+    name: Uiverse
+    priority: reference
+    url: https://uiverse.io/
+    categories: [css, ui-elements, buttons, loaders, inputs, microinteraction]
+    best_for: Quickly searching a broad set of small CSS/HTML UI mechanisms and microinteractions.
+    reference_mode: Use as a low-level pattern mine; quality varies, so simplify and verify accessibility/performance before banking.
+    rights_note: Check the individual contribution/license terms and avoid blindly importing third-party assets.
+    tags: [css, microinteraction, ui]
+
+  - id: animista
+    name: Animista
+    priority: reference
+    url: https://animista.net/
+    categories: [css-animation, entrance, exit, attention, background]
+    best_for: Generating and inspecting conventional CSS keyframe motions without hand-authoring them from memory.
+    reference_mode: Use as a starting parameterization; tune duration/easing/distance to the actual interface hierarchy.
+    rights_note: Verify current site/license terms for generated animation code.
+    tags: [css, keyframes, animation]
+
+  - id: threejs-resources
+    name: Three.js Resources
+    priority: reference
+    url: https://threejsresources.com/
+    categories: [threejs, tools, shaders, learning, assets, showcase]
+    best_for: Discovering specialized Three.js tooling and ecosystem resources beyond the official examples.
+    reference_mode: Use as a directory, then verify every discovered tool at its primary source.
+    rights_note: Aggregator; each linked resource has its own license and terms.
+    tags: [threejs, directory, tools]

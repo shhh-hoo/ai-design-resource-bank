@@ -1,0 +1,58 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-mechanisms.yaml",
+    "evidence": "seed",
+    "id": "concept:graph-relayout",
+    "implementation_note": "Animate the same node objects between positions; replacing the graph with a fresh render destroys correspondence.",
+    "primitives": [
+      "stable-node-id",
+      "old-layout",
+      "new-layout",
+      "interpolated-position"
+    ],
+    "source_refs": [
+      "source:legacy-mechanisms"
+    ],
+    "subtypes": [
+      "mechanism"
+    ],
+    "summary": "Change the graph layout while keeping node identity visually continuous.",
+    "title": "Graph re-layout continuity",
+    "tool_ids": [
+      "tool:antv-g6",
+      "tool:cytoscapejs"
+    ],
+    "type": "Concept",
+    "use_when": "Switching between hierarchy, network, timeline, or grouped views without making users relearn the graph."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:graph-relayout",
+      "target": "tool:antv-g6",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:graph-relayout",
+      "target": "tool:cytoscapejs",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-mechanisms.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:legacy-mechanisms",
+      "locator": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/main/registries/frontend-mechanisms.yaml",
+      "locator_type": "url",
+      "publisher": "AIDRB",
+      "title": "Legacy mechanism registry",
+      "type": "Source"
+    }
+  ]
+}

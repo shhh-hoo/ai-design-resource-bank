@@ -1,0 +1,55 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-mechanisms.yaml",
+    "evidence": "seed",
+    "id": "concept:orbital-overlap",
+    "implementation_note": "Use color only to distinguish phase or overlap; geometry should carry the primary explanation.",
+    "primitives": [
+      "lobes",
+      "separation-control",
+      "overlap-region",
+      "phase"
+    ],
+    "source_refs": [
+      "source:legacy-mechanisms"
+    ],
+    "subtypes": [
+      "mechanism"
+    ],
+    "summary": "Move orbitals together and make overlap appear as a spatial relationship.",
+    "title": "Orbital overlap",
+    "tool_ids": [
+      "tool:threejs"
+    ],
+    "type": "Concept",
+    "use_when": "Explaining bond formation, sigma/pi overlap, or qualitative orbital interaction."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:orbital-overlap",
+      "target": "tool:threejs",
+      "type": "implemented_with"
+    },
+    {
+      "source": "ex:chemistry-orbital-overlap",
+      "target": "concept:orbital-overlap",
+      "type": "intended_to_demonstrate"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-mechanisms.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:legacy-mechanisms",
+      "locator": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/main/registries/frontend-mechanisms.yaml",
+      "locator_type": "url",
+      "publisher": "AIDRB",
+      "title": "Legacy mechanism registry",
+      "type": "Source"
+    }
+  ]
+}

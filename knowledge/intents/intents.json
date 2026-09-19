@@ -1,0 +1,22 @@
+[
+  {
+    "id": "intent:compare",
+    "type": "Intent",
+    "title": "Compare relationships"
+  },
+  {
+    "id": "intent:trace",
+    "type": "Intent",
+    "title": "Trace a change"
+  },
+  {
+    "id": "intent:identify",
+    "type": "Intent",
+    "title": "Identify a structure"
+  },
+  {
+    "id": "intent:predict",
+    "type": "Intent",
+    "title": "Predict a response"
+  }
+]

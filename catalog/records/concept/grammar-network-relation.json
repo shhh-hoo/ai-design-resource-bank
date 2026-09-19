@@ -1,0 +1,65 @@
+{
+  "record": {
+    "canonical_path": "registries/subject-visualization-families.yaml",
+    "id": "concept:grammar-network-relation",
+    "source_refs": [
+      "source:legacy-families"
+    ],
+    "subtypes": [
+      "grammar"
+    ],
+    "summary": "Entities linked by dependency, influence, exchange, hierarchy, or association.",
+    "title": "Network Relation",
+    "tool_ids": [
+      "tool:antv-g6",
+      "tool:cytoscapejs",
+      "tool:react-flow",
+      "tool:d3"
+    ],
+    "type": "Concept"
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-network-relation",
+      "target": "tool:antv-g6",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-network-relation",
+      "target": "tool:cytoscapejs",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-network-relation",
+      "target": "tool:d3",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-network-relation",
+      "target": "tool:react-flow",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/subject-visualization-families.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:legacy-families",
+      "locator": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/main/registries/subject-visualization-families.yaml",
+      "locator_type": "url",
+      "publisher": "AIDRB",
+      "title": "Legacy subject family seeds",
+      "type": "Source"
+    }
+  ]
+}

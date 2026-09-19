@@ -1,0 +1,66 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-mechanisms.yaml",
+    "evidence": "seed",
+    "id": "concept:area-under-curve",
+    "implementation_note": "Make the moving boundary the single source of truth for both geometry and the displayed value.",
+    "primitives": [
+      "function-plot",
+      "variable-boundary",
+      "area-fill",
+      "accumulator"
+    ],
+    "source_refs": [
+      "source:legacy-mechanisms"
+    ],
+    "subtypes": [
+      "mechanism"
+    ],
+    "summary": "Move a boundary and watch accumulated area grow with it.",
+    "title": "Area under a curve",
+    "tool_ids": [
+      "tool:mafs",
+      "tool:jsxgraph",
+      "tool:d3"
+    ],
+    "type": "Concept",
+    "use_when": "Teaching integration, accumulation, displacement from velocity, or probability area."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:area-under-curve",
+      "target": "tool:d3",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:area-under-curve",
+      "target": "tool:jsxgraph",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:area-under-curve",
+      "target": "tool:mafs",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-mechanisms.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:legacy-mechanisms",
+      "locator": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/main/registries/frontend-mechanisms.yaml",
+      "locator_type": "url",
+      "publisher": "AIDRB",
+      "title": "Legacy mechanism registry",
+      "type": "Source"
+    }
+  ]
+}

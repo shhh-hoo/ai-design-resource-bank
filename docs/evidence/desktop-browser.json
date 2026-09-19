@@ -1,0 +1,52 @@
+{
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "startup": [
+    {
+      "url": "/",
+      "encodedBodySize": 1232,
+      "decodedBodySize": 1232,
+      "transferSize": 1532
+    },
+    {
+      "url": "/app/atlas.css",
+      "encodedBodySize": 11776,
+      "decodedBodySize": 11776,
+      "transferSize": 12076
+    },
+    {
+      "url": "/app/atlas.js",
+      "encodedBodySize": 18462,
+      "decodedBodySize": 18462,
+      "transferSize": 18762
+    },
+    {
+      "url": "/app/visuals.js",
+      "encodedBodySize": 9036,
+      "decodedBodySize": 9036,
+      "transferSize": 9336
+    },
+    {
+      "url": "/catalog/web-index.json",
+      "encodedBodySize": 46868,
+      "decodedBodySize": 46868,
+      "transferSize": 47168
+    }
+  ],
+  "bodyBytes": 87374,
+  "transferBytes": 88874,
+  "errors": [],
+  "failed": [],
+  "checks": [
+    "12 topic inventories",
+    "four primary views",
+    "6 live model interactions",
+    "explicit GAP",
+    "collapsed AI/provenance",
+    "no mobile overflow",
+    "browser commit → CLI lock → package fetch",
+    "identity and Unicode notes preserved"
+  ]
+}

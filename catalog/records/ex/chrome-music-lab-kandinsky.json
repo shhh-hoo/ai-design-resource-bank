@@ -1,0 +1,115 @@
+{
+  "ai_build": {
+    "availability": "available",
+    "example_id": "ex:chrome-music-lab-kandinsky",
+    "method": {
+      "concepts": [
+        "concept:cross-modal-input-mapping"
+      ],
+      "failure_modes": [
+        "Do not add sound as an unrelated after-effect to a visual action.",
+        "Do not create mappings so arbitrary that repeated gestures fail to build user expectation."
+      ],
+      "fidelity_constraints": [
+        "Reuse the coupled gesture-to-sound principle without copying Kandinsky's exact mappings, art direction, sounds, or Google branding."
+      ],
+      "grammar": [
+        "audio-time",
+        "composition-layer"
+      ],
+      "interaction_model": {
+        "response": "The same gesture creates visible form and corresponding sound behavior, so drawing and musical input are one action.",
+        "trigger": "draw lines and shapes on the canvas"
+      },
+      "mechanisms": [],
+      "state_model": {
+        "deterministic": true,
+        "model": "external-reference"
+      },
+      "transfer_constraints": [
+        "Map input dimensions to visual and sonic behavior coherently so users can learn the cross-modal instrument through action.",
+        "Keep latency low enough that gesture and feedback are perceived as one event."
+      ]
+    },
+    "resources": [],
+    "tools": []
+  },
+  "crosswalks": [],
+  "record": {
+    "canonical_path": "knowledge/examples/creative-wave01-b.json",
+    "collection_ids": [],
+    "concept_ids": [
+      "concept:cross-modal-input-mapping"
+    ],
+    "failure_modes": [
+      "Do not add sound as an unrelated after-effect to a visual action.",
+      "Do not create mappings so arbitrary that repeated gestures fail to build user expectation."
+    ],
+    "fidelity_constraints": [
+      "Reuse the coupled gesture-to-sound principle without copying Kandinsky's exact mappings, art direction, sounds, or Google branding."
+    ],
+    "grammar": [
+      "audio-time",
+      "composition-layer"
+    ],
+    "id": "ex:chrome-music-lab-kandinsky",
+    "intent_ids": [],
+    "interaction": "draw-to-sound",
+    "interaction_model": {
+      "response": "The same gesture creates visible form and corresponding sound behavior, so drawing and musical input are one action.",
+      "trigger": "draw lines and shapes on the canvas"
+    },
+    "kind": "REFERENCE",
+    "lifecycle": {
+      "collected": true,
+      "reusable": false,
+      "showable": false,
+      "verified": false
+    },
+    "medium": "audiovisual-instrument",
+    "resource_ids": [],
+    "source_refs": [
+      "source:chrome-music-lab-kandinsky"
+    ],
+    "state_model": {
+      "deterministic": true,
+      "model": "external-reference"
+    },
+    "summary": "A drawing interface where marks simultaneously become visible composition and sound-producing input, coupling gesture and audio in one creative surface.",
+    "title": "Chrome Music Lab — Kandinsky",
+    "tool_choices": [],
+    "topic_ids": [],
+    "transfer_constraints": [
+      "Map input dimensions to visual and sonic behavior coherently so users can learn the cross-modal instrument through action.",
+      "Keep latency low enough that gesture and feedback are perceived as one event."
+    ],
+    "type": "Example",
+    "visual_traits": [
+      "drawing",
+      "musical",
+      "minimal",
+      "playful"
+    ]
+  },
+  "relations": [
+    {
+      "source": "ex:chrome-music-lab-kandinsky",
+      "target": "concept:cross-modal-input-mapping",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Official experiment and project information inspected for drawing-as-sound interaction and Chrome Music Lab's open-web audio context. No undocumented internal mapping is asserted.",
+      "checked_at": "2026-09-19",
+      "id": "source:chrome-music-lab-kandinsky",
+      "locator": "https://musiclab.chromeexperiments.com/Kandinsky/",
+      "locator_type": "url",
+      "publisher": "Google Creative Lab / Chrome Music Lab",
+      "title": "Chrome Music Lab — Kandinsky",
+      "type": "Source"
+    }
+  ]
+}

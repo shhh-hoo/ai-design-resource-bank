@@ -1,0 +1,24 @@
+id: editable-model-sandbox
+title: Editable model sandbox
+domain: interaction
+status: implemented
+tags: [model, sandbox, controls, simulation, linked-state]
+source_refs: [source:parable-polygons, source:seeing-theory-basic-probability, source:setosa-markov-chains]
+selection_reason: Preserve one explicit model state across controls, simulation output and derived views so experimentation remains causally legible.
+mechanism:
+  summary: One model store accepts validated edits, derives all outputs from the same state, notifies every view, and provides reset without duplicating state in controls or visualizations.
+  primitives: [model-state, validated-edit, derived-view, subscriber, reset]
+  states: [initial, edited, invalid, reset]
+  parameters: [initial-state, derive-function, validate-function]
+  failure_modes: [Duplicating state in each view, Silently correcting invalid input, Deriving charts from stale control values, Making reset reconstruct a different model]
+fidelity: [concept, behavior, implementation]
+implements: [concept:editable-model-sandbox]
+artifacts:
+  - {path: artifacts/model-store.js, kind: code, purpose: Dependency-free single-source-of-truth model store with validation derivation and subscriptions, generated: false, validated: true}
+  - {path: artifacts/demo.html, kind: example, purpose: Runnable linked-control and derived-view demonstration, generated: false, validated: false}
+rights:
+  source_assets_stored: false
+  license: MIT
+  basis: Original implementation of a generalized editable-model contract. No source code or visual assets from referenced projects are stored.
+related: [ex:parable-of-polygons, ex:seeing-theory-basic-probability, ex:setosa-markov-chains]
+notes: This package is intentionally model-agnostic; domain validity belongs in the supplied validate and derive functions.

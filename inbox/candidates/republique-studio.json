@@ -1,0 +1,30 @@
+{
+  "id": "candidate:republique-studio",
+  "candidate_kind": "example",
+  "status": "deferred",
+  "discovered_by": "manual",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://www.republique.studio/",
+    "title": "République Studio"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "Potentially strong dense studio index translating graphic-design practice into a digital archive.",
+  "novelty_axes": [
+    "stronger_example",
+    "cross_media_transfer"
+  ],
+  "signals": [
+    "graphic design",
+    "dense client index",
+    "monochrome editorial web",
+    "typography"
+  ],
+  "notes": "The direct site was not reliably fetchable in this inspection environment. External visual evidence shows a dense monochrome index with client/work columns, but interaction and state behavior remain unverified.",
+  "decision": {
+    "outcome": "deferred",
+    "rationale": "Likely valuable, but promotion should wait for a direct visual/browser inspection so the bank does not turn a third-party screenshot into claims about the live interface.",
+    "reviewed_by": "wave01-curation",
+    "reviewed_at": "2026-09-19"
+  }
+}

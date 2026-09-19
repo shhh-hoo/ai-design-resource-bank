@@ -1,0 +1,71 @@
+{
+  "record": {
+    "agent_notes": "Use for a scene renderer, not as a replacement for ordinary component UI.",
+    "avoid_when": "Semantic DOM accessibility or simple diagram manipulation matters more than render throughput.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "gpu-2d",
+      "sprites",
+      "particles",
+      "filters",
+      "meshes",
+      "text",
+      "interaction"
+    ],
+    "docs": "https://pixijs.com/8.x/guides",
+    "domains": [
+      "graphics",
+      "games",
+      "simulation",
+      "creative-coding"
+    ],
+    "ecosystem": [
+      "JavaScript",
+      "WebGL",
+      "WebGPU"
+    ],
+    "examples": "https://pixijs.com/8.x/examples",
+    "homepage": "https://pixijs.com/",
+    "id": "tool:pixijs",
+    "legacy_kind": "rendering-engine",
+    "license": "MIT",
+    "source_refs": [
+      "source:tool-pixijs"
+    ],
+    "subtype": "renderer",
+    "summary": "High-performance 2D rendering, sprites, particles, filters, or large animated scenes exceed DOM/SVG comfort.",
+    "tags": [
+      "2d",
+      "gpu",
+      "particles",
+      "rendering"
+    ],
+    "tier": "core",
+    "title": "PixiJS",
+    "type": "Tool",
+    "use_when": "High-performance 2D rendering, sprites, particles, filters, or large animated scenes exceed DOM/SVG comfort."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:particle-attractor",
+      "target": "tool:pixijs",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-pixijs",
+      "locator": "https://pixijs.com/8.x/guides",
+      "locator_type": "url",
+      "publisher": "PixiJS",
+      "title": "PixiJS official documentation",
+      "type": "Source"
+    }
+  ]
+}

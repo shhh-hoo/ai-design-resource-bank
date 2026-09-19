@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "knowledge/provenance/wave01-sources.json",
+    "captured_at": "2026-09-19",
+    "check_scope": "Title page and process interview inspected for the visible sequence, split-identity metaphor, 3D deformation workflow and explicitly documented production tools. No web implementation is inferred.",
+    "checked_at": "2026-09-19",
+    "id": "source:aott-severance",
+    "locator": "https://www.artofthetitle.com/title/severance/",
+    "locator_type": "url",
+    "publisher": "Art of the Title",
+    "title": "Severance title sequence — Art of the Title",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

@@ -1,0 +1,37 @@
+{
+  "record": {
+    "canonical_path": "knowledge/concepts/creative-wave01.json",
+    "id": "concept:semantic-3d-metaphor",
+    "source_refs": [
+      "source:aott-severance"
+    ],
+    "subtypes": [
+      "principle",
+      "cinematography"
+    ],
+    "summary": "Use spatial transformation, duplication, deformation, and impossible physical states to embody an abstract idea rather than treating 3D as surface decoration.",
+    "title": "Semantic 3D metaphor",
+    "type": "Concept"
+  },
+  "relations": [
+    {
+      "source": "ex:aott-severance",
+      "target": "concept:semantic-3d-metaphor",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Title page and process interview inspected for the visible sequence, split-identity metaphor, 3D deformation workflow and explicitly documented production tools. No web implementation is inferred.",
+      "checked_at": "2026-09-19",
+      "id": "source:aott-severance",
+      "locator": "https://www.artofthetitle.com/title/severance/",
+      "locator_type": "url",
+      "publisher": "Art of the Title",
+      "title": "Severance title sequence — Art of the Title",
+      "type": "Source"
+    }
+  ]
+}

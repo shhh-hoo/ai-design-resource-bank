@@ -1,0 +1,3240 @@
+[
+  {
+    "id": "ex:chemistry-electron-configuration",
+    "type": "Example",
+    "title": "Electron configuration · nitrogen",
+    "kind": "REFERENCE",
+    "summary": "Nitrogen: 1s² 2s² 2p³; singly occupy degenerate 2p orbitals before pairing.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-atomic-structure"
+    ],
+    "concept_ids": [
+      "concept:chemistry-electron-configuration"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": true,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "orbital-boxes",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Nitrogen: 1s² 2s² 2p³; singly occupy degenerate 2p orbitals before pairing."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Do not describe a schematic as measured data or a molecular simulation."
+    ],
+    "tool_choices": [
+      {
+        "id": "tool:native-svg",
+        "evidence": "observed",
+        "reason": "The local diagram is rendered with native SVG and HTML controls."
+      },
+      {
+        "id": "tool:svgjs",
+        "evidence": "proposed",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+      }
+    ],
+    "resource_ids": [],
+    "preview": {
+      "renderer": "orbital-boxes",
+      "url": "#example/ex:chemistry-electron-configuration",
+      "description": "Nitrogen: 1s² 2s² 2p³; singly occupy degenerate 2p orbitals before pairing."
+    }
+  },
+  {
+    "id": "ex:chemistry-isotope-spectrum",
+    "type": "Example",
+    "title": "Chlorine isotope mass spectrum",
+    "kind": "REFERENCE",
+    "summary": "Schematic atomic 35Cl / 37Cl peaks at approximately 3:1; not the Cl₂ molecular-ion spectrum.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-atomic-structure"
+    ],
+    "concept_ids": [
+      "concept:chemistry-isotope-spectrum"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": true,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "isotopes",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Schematic atomic 35Cl / 37Cl peaks at approximately 3:1; not the Cl₂ molecular-ion spectrum."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Do not describe a schematic as measured data or a molecular simulation."
+    ],
+    "tool_choices": [
+      {
+        "id": "tool:native-svg",
+        "evidence": "observed",
+        "reason": "The local diagram is rendered with native SVG and HTML controls."
+      },
+      {
+        "id": "tool:svgjs",
+        "evidence": "proposed",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+      }
+    ],
+    "resource_ids": [],
+    "preview": {
+      "renderer": "isotopes",
+      "url": "#example/ex:chemistry-isotope-spectrum",
+      "description": "Schematic atomic 35Cl / 37Cl peaks at approximately 3:1; not the Cl₂ molecular-ion spectrum."
+    }
+  },
+  {
+    "id": "ex:chemistry-successive-ionisation",
+    "type": "Example",
+    "title": "Successive ionisation energies · magnesium",
+    "kind": "GAP",
+    "summary": "Needs sourced successive ionisation data and the shell-boundary jump.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-atomic-structure"
+    ],
+    "concept_ids": [
+      "concept:chemistry-successive-ionisation"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Needs sourced successive ionisation data and the shell-boundary jump."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Needs sourced successive ionisation data and the shell-boundary jump."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Needs sourced successive ionisation data and the shell-boundary jump."
+  },
+  {
+    "id": "ex:chemistry-hydrogen-emission",
+    "type": "Example",
+    "title": "Hydrogen emission line transitions",
+    "kind": "GAP",
+    "summary": "Needs wavelength-calibrated Balmer lines linked to quantized levels.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-atomic-structure"
+    ],
+    "concept_ids": [
+      "concept:chemistry-hydrogen-emission"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Needs wavelength-calibrated Balmer lines linked to quantized levels."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Needs wavelength-calibrated Balmer lines linked to quantized levels."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Needs wavelength-calibrated Balmer lines linked to quantized levels."
+  },
+  {
+    "id": "ex:chemistry-water-geometry",
+    "type": "Example",
+    "title": "VSEPR geometry · water",
+    "kind": "REFERENCE",
+    "summary": "Bent H₂O, approximately 104.5°; planar schematic omits the 3D lone-pair arrangement.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-bonding"
+    ],
+    "concept_ids": [
+      "concept:chemistry-water-geometry"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": true,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "water",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Bent H₂O, approximately 104.5°; planar schematic omits the 3D lone-pair arrangement."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Do not describe a schematic as measured data or a molecular simulation."
+    ],
+    "tool_choices": [
+      {
+        "id": "tool:native-svg",
+        "evidence": "observed",
+        "reason": "The local diagram is rendered with native SVG and HTML controls."
+      },
+      {
+        "id": "tool:svgjs",
+        "evidence": "proposed",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+      }
+    ],
+    "resource_ids": [],
+    "preview": {
+      "renderer": "water",
+      "url": "#example/ex:chemistry-water-geometry",
+      "description": "Bent H₂O, approximately 104.5°; planar schematic omits the 3D lone-pair arrangement."
+    }
+  },
+  {
+    "id": "ex:chemistry-ionic-lattice",
+    "type": "Example",
+    "title": "Ionic lattice · sodium chloride",
+    "kind": "REFERENCE",
+    "summary": "A 2D slice of alternating ions; not the full six-coordinate 3D lattice.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-bonding"
+    ],
+    "concept_ids": [
+      "concept:chemistry-ionic-lattice"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": true,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "lattice",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "A 2D slice of alternating ions; not the full six-coordinate 3D lattice."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Do not describe a schematic as measured data or a molecular simulation."
+    ],
+    "tool_choices": [
+      {
+        "id": "tool:native-svg",
+        "evidence": "observed",
+        "reason": "The local diagram is rendered with native SVG and HTML controls."
+      },
+      {
+        "id": "tool:svgjs",
+        "evidence": "proposed",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+      }
+    ],
+    "resource_ids": [],
+    "preview": {
+      "renderer": "lattice",
+      "url": "#example/ex:chemistry-ionic-lattice",
+      "description": "A 2D slice of alternating ions; not the full six-coordinate 3D lattice."
+    }
+  },
+  {
+    "id": "ex:chemistry-orbital-overlap",
+    "type": "Example",
+    "title": "σ / π orbital overlap",
+    "kind": "GAP",
+    "summary": "Legacy overlap seed lacks orbital phase and symmetry fidelity; a domain-correct example is needed.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-bonding"
+    ],
+    "concept_ids": [
+      "concept:chemistry-orbital-overlap",
+      "concept:orbital-overlap"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Legacy overlap seed lacks orbital phase and symmetry fidelity; a domain-correct example is needed."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Legacy overlap seed lacks orbital phase and symmetry fidelity; a domain-correct example is needed."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Legacy overlap seed lacks orbital phase and symmetry fidelity; a domain-correct example is needed."
+  },
+  {
+    "id": "ex:chemistry-bond-polarity",
+    "type": "Example",
+    "title": "Bond dipole and molecular polarity · CO₂",
+    "kind": "GAP",
+    "summary": "Needs signed bond dipoles and a geometry-linked vector sum.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-bonding"
+    ],
+    "concept_ids": [
+      "concept:chemistry-bond-polarity"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Needs signed bond dipoles and a geometry-linked vector sum."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Needs signed bond dipoles and a geometry-linked vector sum."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Needs signed bond dipoles and a geometry-linked vector sum."
+  },
+  {
+    "id": "ex:chemistry-limiting-reagent",
+    "type": "Example",
+    "title": "Limiting reagent · making water",
+    "kind": "REFERENCE",
+    "summary": "Three H₂ plus one O₂ yield two H₂O with one H₂ left over; amounts are molecular ratios.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-stoichiometry"
+    ],
+    "concept_ids": [
+      "concept:chemistry-limiting-reagent"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": true,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "stoichiometry",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Three H₂ plus one O₂ yield two H₂O with one H₂ left over; amounts are molecular ratios."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Do not describe a schematic as measured data or a molecular simulation."
+    ],
+    "tool_choices": [
+      {
+        "id": "tool:native-svg",
+        "evidence": "observed",
+        "reason": "The local diagram is rendered with native SVG and HTML controls."
+      },
+      {
+        "id": "tool:svgjs",
+        "evidence": "proposed",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+      }
+    ],
+    "resource_ids": [],
+    "preview": {
+      "renderer": "stoichiometry",
+      "url": "#example/ex:chemistry-limiting-reagent",
+      "description": "Three H₂ plus one O₂ yield two H₂O with one H₂ left over; amounts are molecular ratios."
+    }
+  },
+  {
+    "id": "ex:chemistry-mole-conversion",
+    "type": "Example",
+    "title": "Mass ↔ amount ↔ particles",
+    "kind": "REFERENCE",
+    "summary": "For 18.0 g water using M = 18.0 g mol⁻¹: 1.00 mol and approximately 6.02 × 10²³ molecules.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-stoichiometry"
+    ],
+    "concept_ids": [
+      "concept:chemistry-mole-conversion"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": true,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "moles",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "For 18.0 g water using M = 18.0 g mol⁻¹: 1.00 mol and approximately 6.02 × 10²³ molecules."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Do not describe a schematic as measured data or a molecular simulation."
+    ],
+    "tool_choices": [
+      {
+        "id": "tool:native-svg",
+        "evidence": "observed",
+        "reason": "The local diagram is rendered with native SVG and HTML controls."
+      },
+      {
+        "id": "tool:svgjs",
+        "evidence": "proposed",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+      }
+    ],
+    "resource_ids": [],
+    "preview": {
+      "renderer": "moles",
+      "url": "#example/ex:chemistry-mole-conversion",
+      "description": "For 18.0 g water using M = 18.0 g mol⁻¹: 1.00 mol and approximately 6.02 × 10²³ molecules."
+    }
+  },
+  {
+    "id": "ex:chemistry-empirical-formula",
+    "type": "Example",
+    "title": "Combustion data → empirical formula",
+    "kind": "GAP",
+    "summary": "Needs a concrete mass dataset with conserved carbon and hydrogen.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-stoichiometry"
+    ],
+    "concept_ids": [
+      "concept:chemistry-empirical-formula"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Needs a concrete mass dataset with conserved carbon and hydrogen."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Needs a concrete mass dataset with conserved carbon and hydrogen."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Needs a concrete mass dataset with conserved carbon and hydrogen."
+  },
+  {
+    "id": "ex:chemistry-dilution",
+    "type": "Example",
+    "title": "Volumetric dilution · conserved solute",
+    "kind": "GAP",
+    "summary": "Needs a calibrated flask sequence and explicit concentration/volume units.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-stoichiometry"
+    ],
+    "concept_ids": [
+      "concept:chemistry-dilution"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Needs a calibrated flask sequence and explicit concentration/volume units."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Needs a calibrated flask sequence and explicit concentration/volume units."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Needs a calibrated flask sequence and explicit concentration/volume units."
+  },
+  {
+    "id": "ex:chemistry-ideal-gas",
+    "type": "Example",
+    "title": "Boyle’s law · pressure and volume",
+    "kind": "LIVE",
+    "summary": "At fixed amount and temperature, PV is constant; ideal-gas model only.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-states-solutions"
+    ],
+    "concept_ids": [
+      "concept:chemistry-ideal-gas"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": true,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "interactive-diagram",
+    "visual_traits": [
+      "labeled",
+      "quantitative"
+    ],
+    "interaction": "parameter-control",
+    "intent_ids": [
+      "intent:predict"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "functional-graph"
+    ],
+    "interaction_model": {
+      "trigger": "range input",
+      "response": "Dependent visual updates from the same state."
+    },
+    "state_model": {
+      "model": "gas",
+      "deterministic": true,
+      "parameters": {
+        "volume_l": {
+          "min": 5,
+          "max": 50,
+          "initial": 25
+        }
+      },
+      "equations": [
+        "pressure_atm = 24.6 / volume_l"
+      ],
+      "invariants": [
+        "fixed amount and temperature",
+        "ideal gas only"
+      ]
+    },
+    "transfer_constraints": [
+      "At fixed amount and temperature, PV is constant; ideal-gas model only."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Do not describe a schematic as measured data or a molecular simulation."
+    ],
+    "tool_choices": [
+      {
+        "id": "tool:native-svg",
+        "evidence": "observed",
+        "reason": "The local diagram is rendered with native SVG and HTML controls."
+      },
+      {
+        "id": "tool:svgjs",
+        "evidence": "proposed",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+      }
+    ],
+    "resource_ids": [],
+    "preview": {
+      "renderer": "gas",
+      "url": "#example/ex:chemistry-ideal-gas",
+      "description": "At fixed amount and temperature, PV is constant; ideal-gas model only."
+    }
+  },
+  {
+    "id": "ex:chemistry-hydrogen-bond",
+    "type": "Example",
+    "title": "Hydrogen bonding · water pair",
+    "kind": "REFERENCE",
+    "summary": "Dashed O···H interaction is distinct from a solid intramolecular O–H bond.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-states-solutions"
+    ],
+    "concept_ids": [
+      "concept:chemistry-hydrogen-bond"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": true,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "hydrogen-bond",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Dashed O···H interaction is distinct from a solid intramolecular O–H bond."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Do not describe a schematic as measured data or a molecular simulation."
+    ],
+    "tool_choices": [
+      {
+        "id": "tool:native-svg",
+        "evidence": "observed",
+        "reason": "The local diagram is rendered with native SVG and HTML controls."
+      },
+      {
+        "id": "tool:svgjs",
+        "evidence": "proposed",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+      }
+    ],
+    "resource_ids": [],
+    "preview": {
+      "renderer": "hydrogen-bond",
+      "url": "#example/ex:chemistry-hydrogen-bond",
+      "description": "Dashed O···H interaction is distinct from a solid intramolecular O–H bond."
+    }
+  },
+  {
+    "id": "ex:chemistry-phase-diagram",
+    "type": "Example",
+    "title": "Pressure–temperature phase diagram · water",
+    "kind": "GAP",
+    "summary": "Needs sourced phase boundaries with correctly signed solid–liquid slope.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-states-solutions"
+    ],
+    "concept_ids": [
+      "concept:chemistry-phase-diagram"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Needs sourced phase boundaries with correctly signed solid–liquid slope."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Needs sourced phase boundaries with correctly signed solid–liquid slope."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Needs sourced phase boundaries with correctly signed solid–liquid slope."
+  },
+  {
+    "id": "ex:chemistry-dissolution",
+    "type": "Example",
+    "title": "NaCl dissolution and hydration shells",
+    "kind": "GAP",
+    "summary": "Needs solvent orientation around each ion, not generic moving particles.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-states-solutions"
+    ],
+    "concept_ids": [
+      "concept:chemistry-dissolution"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Needs solvent orientation around each ion, not generic moving particles."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Needs solvent orientation around each ion, not generic moving particles."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Needs solvent orientation around each ion, not generic moving particles."
+  },
+  {
+    "id": "ex:chemistry-reaction-profile",
+    "type": "Example",
+    "title": "Reaction profile",
+    "kind": "LIVE",
+    "summary": "Compare the activation barrier with the reactant–product enthalpy difference.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-energetics"
+    ],
+    "concept_ids": [
+      "concept:chemistry-reaction-profile",
+      "concept:reaction-coordinate"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": true,
+      "reusable": true,
+      "verified": true
+    },
+    "medium": "interactive-diagram",
+    "visual_traits": [
+      "labeled",
+      "quantitative"
+    ],
+    "interaction": "parameter-control",
+    "intent_ids": [
+      "intent:predict"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "functional-graph"
+    ],
+    "interaction_model": {
+      "trigger": "range input",
+      "response": "Dependent visual updates from the same state."
+    },
+    "state_model": {
+      "model": "reaction",
+      "deterministic": true,
+      "parameters": {
+        "progress": {
+          "min": 0,
+          "max": 1,
+          "initial": 0.5
+        }
+      },
+      "derived": [
+        "energy",
+        "state-label"
+      ],
+      "units": {
+        "energy": "kJ mol^-1"
+      },
+      "invariants": [
+        "unique maximum at 0.5",
+        "reactants 20; peak 90; products -20",
+        "reaction coordinate is not time"
+      ]
+    },
+    "transfer_constraints": [
+      "Compare the activation barrier with the reactant–product enthalpy difference."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Do not describe a schematic as measured data or a molecular simulation."
+    ],
+    "tool_choices": [
+      {
+        "id": "tool:native-svg",
+        "evidence": "observed",
+        "reason": "The local diagram is rendered with native SVG and HTML controls."
+      },
+      {
+        "id": "tool:svgjs",
+        "evidence": "proposed",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+      }
+    ],
+    "resource_ids": [
+      "resource:reaction-profile"
+    ],
+    "preview": {
+      "renderer": "reaction",
+      "url": "#example/ex:chemistry-reaction-profile",
+      "description": "Compare the activation barrier with the reactant–product enthalpy difference."
+    },
+    "verification": {
+      "scope": "Local energy endpoint/maxima/sign tests, keyboard scrubbing, responsive SVG and desktop/mobile browser review. Not external chemistry peer review.",
+      "evidence": [
+        "tests/models.test.mjs",
+        "tests/browser/atlas.spec.mjs",
+        "docs/evidence/desktop-example.png",
+        "docs/evidence/mobile-example.png"
+      ],
+      "checked_at": "2026-09-10"
+    }
+  },
+  {
+    "id": "ex:chemistry-hess-cycle",
+    "type": "Example",
+    "title": "Hess cycle · carbon monoxide formation",
+    "kind": "LIVE",
+    "summary": "ΔH(C→CO) = ΔH(C→CO₂) − ΔH(CO→CO₂), with all equations balanced.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-energetics"
+    ],
+    "concept_ids": [
+      "concept:chemistry-hess-cycle"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": true,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "interactive-diagram",
+    "visual_traits": [
+      "labeled",
+      "quantitative"
+    ],
+    "interaction": "parameter-control",
+    "intent_ids": [
+      "intent:predict"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "range input",
+      "response": "Dependent visual updates from the same state."
+    },
+    "state_model": {
+      "model": "hess",
+      "deterministic": true,
+      "parameters": {
+        "route": {
+          "values": [
+            "direct",
+            "indirect"
+          ],
+          "initial": "direct"
+        }
+      },
+      "equations": [
+        "delta_h_formation_co = -393.5 - (-283.0)"
+      ],
+      "units": {
+        "enthalpy": "kJ mol^-1"
+      },
+      "invariants": [
+        "all node compositions C + O2",
+        "reverse CO combustion for indirect route",
+        "path independent endpoint difference"
+      ]
+    },
+    "transfer_constraints": [
+      "ΔH(C→CO) = ΔH(C→CO₂) − ΔH(CO→CO₂), with all equations balanced."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Do not describe a schematic as measured data or a molecular simulation."
+    ],
+    "tool_choices": [
+      {
+        "id": "tool:native-svg",
+        "evidence": "observed",
+        "reason": "The local diagram is rendered with native SVG and HTML controls."
+      },
+      {
+        "id": "tool:svgjs",
+        "evidence": "proposed",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+      }
+    ],
+    "resource_ids": [],
+    "preview": {
+      "renderer": "hess",
+      "url": "#example/ex:chemistry-hess-cycle",
+      "description": "ΔH(C→CO) = ΔH(C→CO₂) − ΔH(CO→CO₂), with all equations balanced."
+    }
+  },
+  {
+    "id": "ex:chemistry-born-haber",
+    "type": "Example",
+    "title": "Born–Haber cycle · sodium chloride",
+    "kind": "GAP",
+    "summary": "Needs all atomisation, ionisation, electron-affinity and lattice steps with an explicit lattice sign convention.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-energetics"
+    ],
+    "concept_ids": [
+      "concept:chemistry-born-haber"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Needs all atomisation, ionisation, electron-affinity and lattice steps with an explicit lattice sign convention."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Needs all atomisation, ionisation, electron-affinity and lattice steps with an explicit lattice sign convention."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Needs all atomisation, ionisation, electron-affinity and lattice steps with an explicit lattice sign convention."
+  },
+  {
+    "id": "ex:chemistry-gibbs-energy",
+    "type": "Example",
+    "title": "Gibbs energy · temperature crossover",
+    "kind": "LIVE",
+    "summary": "Illustrative constant ΔH / ΔS model: ΔG = ΔH − TΔS; not a prediction across phase transitions.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-energetics"
+    ],
+    "concept_ids": [
+      "concept:chemistry-gibbs-energy"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": true,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "interactive-diagram",
+    "visual_traits": [
+      "labeled",
+      "quantitative"
+    ],
+    "interaction": "parameter-control",
+    "intent_ids": [
+      "intent:predict"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "functional-graph"
+    ],
+    "interaction_model": {
+      "trigger": "range input",
+      "response": "Dependent visual updates from the same state."
+    },
+    "state_model": {
+      "model": "gibbs",
+      "deterministic": true,
+      "parameters": {
+        "temperature_k": {
+          "min": 200,
+          "max": 600,
+          "initial": 400
+        }
+      },
+      "constants": {
+        "delta_h_kj_mol": 40,
+        "delta_s_kj_mol_k": 0.1
+      },
+      "equations": [
+        "delta_g_kj_mol = 40 - temperature_k * 0.1"
+      ],
+      "invariants": [
+        "constant delta_h and delta_s; no phase transitions"
+      ]
+    },
+    "transfer_constraints": [
+      "Illustrative constant ΔH / ΔS model: ΔG = ΔH − TΔS; not a prediction across phase transitions."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Do not describe a schematic as measured data or a molecular simulation."
+    ],
+    "tool_choices": [
+      {
+        "id": "tool:native-svg",
+        "evidence": "observed",
+        "reason": "The local diagram is rendered with native SVG and HTML controls."
+      },
+      {
+        "id": "tool:svgjs",
+        "evidence": "proposed",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+      }
+    ],
+    "resource_ids": [],
+    "preview": {
+      "renderer": "gibbs",
+      "url": "#example/ex:chemistry-gibbs-energy",
+      "description": "Illustrative constant ΔH / ΔS model: ΔG = ΔH − TΔS; not a prediction across phase transitions."
+    }
+  },
+  {
+    "id": "ex:chemistry-first-order",
+    "type": "Example",
+    "title": "First-order concentration decay",
+    "kind": "LIVE",
+    "summary": "A → products: [A] = [A]₀ exp(−kt), constant temperature and one first-order pathway.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-kinetics"
+    ],
+    "concept_ids": [
+      "concept:chemistry-first-order"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": true,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "interactive-diagram",
+    "visual_traits": [
+      "labeled",
+      "quantitative"
+    ],
+    "interaction": "parameter-control",
+    "intent_ids": [
+      "intent:predict"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "functional-graph"
+    ],
+    "interaction_model": {
+      "trigger": "range input",
+      "response": "Dependent visual updates from the same state."
+    },
+    "state_model": {
+      "model": "kinetics",
+      "deterministic": true,
+      "parameters": {
+        "time_s": {
+          "min": 0,
+          "max": 60,
+          "initial": 10
+        }
+      },
+      "constants": {
+        "initial_concentration_mol_l": 1,
+        "rate_constant_s_inverse": 0.1
+      },
+      "equations": [
+        "concentration = initial_concentration * exp(-rate_constant * time)"
+      ]
+    },
+    "transfer_constraints": [
+      "A → products: [A] = [A]₀ exp(−kt), constant temperature and one first-order pathway."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Do not describe a schematic as measured data or a molecular simulation."
+    ],
+    "tool_choices": [
+      {
+        "id": "tool:native-svg",
+        "evidence": "observed",
+        "reason": "The local diagram is rendered with native SVG and HTML controls."
+      },
+      {
+        "id": "tool:svgjs",
+        "evidence": "proposed",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+      }
+    ],
+    "resource_ids": [],
+    "preview": {
+      "renderer": "kinetics",
+      "url": "#example/ex:chemistry-first-order",
+      "description": "A → products: [A] = [A]₀ exp(−kt), constant temperature and one first-order pathway."
+    }
+  },
+  {
+    "id": "ex:chemistry-catalyst-profile",
+    "type": "Example",
+    "title": "Catalysed vs uncatalysed energy path",
+    "kind": "REFERENCE",
+    "summary": "Schematic alternative pathway has a lower barrier and unchanged endpoint enthalpies.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-kinetics"
+    ],
+    "concept_ids": [
+      "concept:chemistry-catalyst-profile"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": true,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "catalyst",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Schematic alternative pathway has a lower barrier and unchanged endpoint enthalpies."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Do not describe a schematic as measured data or a molecular simulation."
+    ],
+    "tool_choices": [
+      {
+        "id": "tool:native-svg",
+        "evidence": "observed",
+        "reason": "The local diagram is rendered with native SVG and HTML controls."
+      },
+      {
+        "id": "tool:svgjs",
+        "evidence": "proposed",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+      }
+    ],
+    "resource_ids": [],
+    "preview": {
+      "renderer": "catalyst",
+      "url": "#example/ex:chemistry-catalyst-profile",
+      "description": "Schematic alternative pathway has a lower barrier and unchanged endpoint enthalpies."
+    }
+  },
+  {
+    "id": "ex:chemistry-maxwell-boltzmann",
+    "type": "Example",
+    "title": "Maxwell–Boltzmann distribution",
+    "kind": "GAP",
+    "summary": "Needs normalized distributions and an activation-energy tail; generic waves do not qualify.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-kinetics"
+    ],
+    "concept_ids": [
+      "concept:chemistry-maxwell-boltzmann"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Needs normalized distributions and an activation-energy tail; generic waves do not qualify."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Needs normalized distributions and an activation-energy tail; generic waves do not qualify."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Needs normalized distributions and an activation-energy tail; generic waves do not qualify."
+  },
+  {
+    "id": "ex:chemistry-rate-orders",
+    "type": "Example",
+    "title": "Initial-rate table → reaction orders",
+    "kind": "GAP",
+    "summary": "Needs an experimental table with independently varied reactants and stated uncertainty.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-kinetics"
+    ],
+    "concept_ids": [
+      "concept:chemistry-rate-orders"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Needs an experimental table with independently varied reactants and stated uncertainty."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Needs an experimental table with independently varied reactants and stated uncertainty."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Needs an experimental table with independently varied reactants and stated uncertainty."
+  },
+  {
+    "id": "ex:chemistry-dynamic-equilibrium",
+    "type": "Example",
+    "title": "Dynamic equilibrium · equal rates",
+    "kind": "REFERENCE",
+    "summary": "Forward and reverse rates become equal; concentrations need not be equal.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-equilibrium"
+    ],
+    "concept_ids": [
+      "concept:chemistry-dynamic-equilibrium"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": true,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "equilibrium",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Forward and reverse rates become equal; concentrations need not be equal."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Do not describe a schematic as measured data or a molecular simulation."
+    ],
+    "tool_choices": [
+      {
+        "id": "tool:native-svg",
+        "evidence": "observed",
+        "reason": "The local diagram is rendered with native SVG and HTML controls."
+      },
+      {
+        "id": "tool:svgjs",
+        "evidence": "proposed",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+      }
+    ],
+    "resource_ids": [],
+    "preview": {
+      "renderer": "equilibrium",
+      "url": "#example/ex:chemistry-dynamic-equilibrium",
+      "description": "Forward and reverse rates become equal; concentrations need not be equal."
+    }
+  },
+  {
+    "id": "ex:chemistry-equilibrium-expression",
+    "type": "Example",
+    "title": "Equilibrium expression · Haber reaction",
+    "kind": "REFERENCE",
+    "summary": "N₂ + 3H₂ ⇌ 2NH₃; exponents follow stoichiometry in the concentration form.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-equilibrium"
+    ],
+    "concept_ids": [
+      "concept:chemistry-equilibrium-expression"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": true,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "haber",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "N₂ + 3H₂ ⇌ 2NH₃; exponents follow stoichiometry in the concentration form."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Do not describe a schematic as measured data or a molecular simulation."
+    ],
+    "tool_choices": [
+      {
+        "id": "tool:native-svg",
+        "evidence": "observed",
+        "reason": "The local diagram is rendered with native SVG and HTML controls."
+      },
+      {
+        "id": "tool:svgjs",
+        "evidence": "proposed",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+      }
+    ],
+    "resource_ids": [],
+    "preview": {
+      "renderer": "haber",
+      "url": "#example/ex:chemistry-equilibrium-expression",
+      "description": "N₂ + 3H₂ ⇌ 2NH₃; exponents follow stoichiometry in the concentration form."
+    }
+  },
+  {
+    "id": "ex:chemistry-composition-shift",
+    "type": "Example",
+    "title": "Equilibrium composition shift · N₂O₄ / NO₂",
+    "kind": "GAP",
+    "summary": "Needs a mass-balanced equilibrium model and temperature-specific K.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-equilibrium"
+    ],
+    "concept_ids": [
+      "concept:chemistry-composition-shift"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Needs a mass-balanced equilibrium model and temperature-specific K."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Needs a mass-balanced equilibrium model and temperature-specific K."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Needs a mass-balanced equilibrium model and temperature-specific K."
+  },
+  {
+    "id": "ex:chemistry-solubility-product",
+    "type": "Example",
+    "title": "Solubility product · precipitation threshold",
+    "kind": "GAP",
+    "summary": "Needs ion product versus Ksp with dilution and stoichiometry preserved.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-equilibrium"
+    ],
+    "concept_ids": [
+      "concept:chemistry-solubility-product"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Needs ion product versus Ksp with dilution and stoichiometry preserved."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Needs ion product versus Ksp with dilution and stoichiometry preserved."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Needs ion product versus Ksp with dilution and stoichiometry preserved."
+  },
+  {
+    "id": "ex:chemistry-titration-curve",
+    "type": "Example",
+    "title": "Strong acid–base titration curve",
+    "kind": "LIVE",
+    "summary": "25.0 mL 0.100 M HCl titrated with 0.100 M NaOH at 25 °C; ideal activities.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-acids-bases"
+    ],
+    "concept_ids": [
+      "concept:chemistry-titration-curve"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": true,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "interactive-diagram",
+    "visual_traits": [
+      "labeled",
+      "quantitative"
+    ],
+    "interaction": "parameter-control",
+    "intent_ids": [
+      "intent:predict"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "functional-graph"
+    ],
+    "interaction_model": {
+      "trigger": "range input",
+      "response": "Dependent visual updates from the same state."
+    },
+    "state_model": {
+      "model": "titration",
+      "deterministic": true,
+      "parameters": {
+        "naoh_volume_ml": {
+          "min": 0,
+          "max": 50,
+          "initial": 25
+        }
+      },
+      "constants": {
+        "hcl_volume_ml": 25,
+        "hcl_molarity": 0.1,
+        "naoh_molarity": 0.1,
+        "kw": 1e-14,
+        "temperature_c": 25
+      },
+      "equations": [
+        "excess = (0.1*0.025 - 0.1*volume_ml/1000)/(0.025+volume_ml/1000)",
+        "[H+] - Kw/[H+] = excess",
+        "pH = -log10([H+])"
+      ],
+      "invariants": [
+        "total volume includes titrant",
+        "water autoionisation retained at equivalence",
+        "ideal activities"
+      ]
+    },
+    "transfer_constraints": [
+      "25.0 mL 0.100 M HCl titrated with 0.100 M NaOH at 25 °C; ideal activities."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Do not describe a schematic as measured data or a molecular simulation."
+    ],
+    "tool_choices": [
+      {
+        "id": "tool:native-svg",
+        "evidence": "observed",
+        "reason": "The local diagram is rendered with native SVG and HTML controls."
+      },
+      {
+        "id": "tool:svgjs",
+        "evidence": "proposed",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+      }
+    ],
+    "resource_ids": [],
+    "preview": {
+      "renderer": "titration",
+      "url": "#example/ex:chemistry-titration-curve",
+      "description": "25.0 mL 0.100 M HCl titrated with 0.100 M NaOH at 25 °C; ideal activities."
+    }
+  },
+  {
+    "id": "ex:chemistry-conjugate-pairs",
+    "type": "Example",
+    "title": "Conjugate pairs · ammonia and water",
+    "kind": "REFERENCE",
+    "summary": "NH₃ accepts a proton from H₂O, giving NH₄⁺ and OH⁻.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-acids-bases"
+    ],
+    "concept_ids": [
+      "concept:chemistry-conjugate-pairs"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": true,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "acid-base",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "NH₃ accepts a proton from H₂O, giving NH₄⁺ and OH⁻."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Do not describe a schematic as measured data or a molecular simulation."
+    ],
+    "tool_choices": [
+      {
+        "id": "tool:native-svg",
+        "evidence": "observed",
+        "reason": "The local diagram is rendered with native SVG and HTML controls."
+      },
+      {
+        "id": "tool:svgjs",
+        "evidence": "proposed",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+      }
+    ],
+    "resource_ids": [],
+    "preview": {
+      "renderer": "acid-base",
+      "url": "#example/ex:chemistry-conjugate-pairs",
+      "description": "NH₃ accepts a proton from H₂O, giving NH₄⁺ and OH⁻."
+    }
+  },
+  {
+    "id": "ex:chemistry-buffer",
+    "type": "Example",
+    "title": "Buffer response · ethanoic acid / ethanoate",
+    "kind": "GAP",
+    "summary": "Needs mass balance and equilibrium response to added acid/base.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-acids-bases"
+    ],
+    "concept_ids": [
+      "concept:chemistry-buffer"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Needs mass balance and equilibrium response to added acid/base."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Needs mass balance and equilibrium response to added acid/base."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Needs mass balance and equilibrium response to added acid/base."
+  },
+  {
+    "id": "ex:chemistry-weak-acid-titration",
+    "type": "Example",
+    "title": "Weak-acid titration · half equivalence",
+    "kind": "GAP",
+    "summary": "Needs a calibrated curve, buffer region and pH = pKa at half equivalence.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-acids-bases"
+    ],
+    "concept_ids": [
+      "concept:chemistry-weak-acid-titration"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Needs a calibrated curve, buffer region and pH = pKa at half equivalence."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Needs a calibrated curve, buffer region and pH = pKa at half equivalence."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Needs a calibrated curve, buffer region and pH = pKa at half equivalence."
+  },
+  {
+    "id": "ex:chemistry-galvanic-cell",
+    "type": "Example",
+    "title": "Galvanic cell · zinc and copper",
+    "kind": "REFERENCE",
+    "summary": "Zn anode oxidizes; electrons flow externally to the Cu cathode; salt bridge closes the ionic circuit.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-redox"
+    ],
+    "concept_ids": [
+      "concept:chemistry-galvanic-cell"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": true,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "cell",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Zn anode oxidizes; electrons flow externally to the Cu cathode; salt bridge closes the ionic circuit."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Do not describe a schematic as measured data or a molecular simulation."
+    ],
+    "tool_choices": [
+      {
+        "id": "tool:native-svg",
+        "evidence": "observed",
+        "reason": "The local diagram is rendered with native SVG and HTML controls."
+      },
+      {
+        "id": "tool:svgjs",
+        "evidence": "proposed",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+      }
+    ],
+    "resource_ids": [],
+    "preview": {
+      "renderer": "cell",
+      "url": "#example/ex:chemistry-galvanic-cell",
+      "description": "Zn anode oxidizes; electrons flow externally to the Cu cathode; salt bridge closes the ionic circuit."
+    }
+  },
+  {
+    "id": "ex:chemistry-oxidation-state",
+    "type": "Example",
+    "title": "Oxidation states · permanganate",
+    "kind": "REFERENCE",
+    "summary": "In MnO₄⁻, four O at −2 require Mn at +7 to sum to −1.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-redox"
+    ],
+    "concept_ids": [
+      "concept:chemistry-oxidation-state"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": true,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "oxidation",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "In MnO₄⁻, four O at −2 require Mn at +7 to sum to −1."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Do not describe a schematic as measured data or a molecular simulation."
+    ],
+    "tool_choices": [
+      {
+        "id": "tool:native-svg",
+        "evidence": "observed",
+        "reason": "The local diagram is rendered with native SVG and HTML controls."
+      },
+      {
+        "id": "tool:svgjs",
+        "evidence": "proposed",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+      }
+    ],
+    "resource_ids": [],
+    "preview": {
+      "renderer": "oxidation",
+      "url": "#example/ex:chemistry-oxidation-state",
+      "description": "In MnO₄⁻, four O at −2 require Mn at +7 to sum to −1."
+    }
+  },
+  {
+    "id": "ex:chemistry-nernst",
+    "type": "Example",
+    "title": "Cell potential vs concentration · Nernst",
+    "kind": "GAP",
+    "summary": "Needs specified reaction quotient, electron number and temperature.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-redox"
+    ],
+    "concept_ids": [
+      "concept:chemistry-nernst"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Needs specified reaction quotient, electron number and temperature."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Needs specified reaction quotient, electron number and temperature."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Needs specified reaction quotient, electron number and temperature."
+  },
+  {
+    "id": "ex:chemistry-electrolysis",
+    "type": "Example",
+    "title": "Copper electrolysis · charge to mass",
+    "kind": "GAP",
+    "summary": "Needs charge integration, Faraday stoichiometry and electrode conditions.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-redox"
+    ],
+    "concept_ids": [
+      "concept:chemistry-electrolysis"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Needs charge integration, Faraday stoichiometry and electrode conditions."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Needs charge integration, Faraday stoichiometry and electrode conditions."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Needs charge integration, Faraday stoichiometry and electrode conditions."
+  },
+  {
+    "id": "ex:chemistry-periodic-trends",
+    "type": "Example",
+    "title": "Period 3 · first ionisation energy",
+    "kind": "REFERENCE",
+    "summary": "Qualitative trend includes the Mg→Al and P→S exceptions; no fabricated measurements.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-periodicity"
+    ],
+    "concept_ids": [
+      "concept:chemistry-periodic-trends"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": true,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "periodic",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Qualitative trend includes the Mg→Al and P→S exceptions; no fabricated measurements."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Do not describe a schematic as measured data or a molecular simulation."
+    ],
+    "tool_choices": [
+      {
+        "id": "tool:native-svg",
+        "evidence": "observed",
+        "reason": "The local diagram is rendered with native SVG and HTML controls."
+      },
+      {
+        "id": "tool:svgjs",
+        "evidence": "proposed",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+      }
+    ],
+    "resource_ids": [],
+    "preview": {
+      "renderer": "periodic",
+      "url": "#example/ex:chemistry-periodic-trends",
+      "description": "Qualitative trend includes the Mg→Al and P→S exceptions; no fabricated measurements."
+    }
+  },
+  {
+    "id": "ex:chemistry-group-two",
+    "type": "Example",
+    "title": "Group 2 hydroxide solubility trend",
+    "kind": "GAP",
+    "summary": "Needs sourced solubility values and stated temperature.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-periodicity"
+    ],
+    "concept_ids": [
+      "concept:chemistry-group-two"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Needs sourced solubility values and stated temperature."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Needs sourced solubility values and stated temperature."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Needs sourced solubility values and stated temperature."
+  },
+  {
+    "id": "ex:chemistry-halogen-displacement",
+    "type": "Example",
+    "title": "Halogen displacement · chlorine and bromide",
+    "kind": "GAP",
+    "summary": "Needs actual species, observations and a balanced ionic equation.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-periodicity"
+    ],
+    "concept_ids": [
+      "concept:chemistry-halogen-displacement"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Needs actual species, observations and a balanced ionic equation."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Needs actual species, observations and a balanced ionic equation."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Needs actual species, observations and a balanced ionic equation."
+  },
+  {
+    "id": "ex:chemistry-ligand-exchange",
+    "type": "Example",
+    "title": "Copper(II) ligand exchange",
+    "kind": "GAP",
+    "summary": "Needs coordination number, charge and solvent-dependent color evidence.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-periodicity"
+    ],
+    "concept_ids": [
+      "concept:chemistry-ligand-exchange"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Needs coordination number, charge and solvent-dependent color evidence."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Needs coordination number, charge and solvent-dependent color evidence."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Needs coordination number, charge and solvent-dependent color evidence."
+  },
+  {
+    "id": "ex:chemistry-functional-groups",
+    "type": "Example",
+    "title": "Functional groups · ethanol and ethanoic acid",
+    "kind": "REFERENCE",
+    "summary": "Condensed structural formulas compare alcohol and carboxylic acid groups.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-organic"
+    ],
+    "concept_ids": [
+      "concept:chemistry-functional-groups"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": true,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "organic",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Condensed structural formulas compare alcohol and carboxylic acid groups."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Do not describe a schematic as measured data or a molecular simulation."
+    ],
+    "tool_choices": [
+      {
+        "id": "tool:native-svg",
+        "evidence": "observed",
+        "reason": "The local diagram is rendered with native SVG and HTML controls."
+      },
+      {
+        "id": "tool:svgjs",
+        "evidence": "proposed",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+      }
+    ],
+    "resource_ids": [],
+    "preview": {
+      "renderer": "organic",
+      "url": "#example/ex:chemistry-functional-groups",
+      "description": "Condensed structural formulas compare alcohol and carboxylic acid groups."
+    }
+  },
+  {
+    "id": "ex:chemistry-curly-arrow",
+    "type": "Example",
+    "title": "Curly-arrow mechanism · SN2 substitution",
+    "kind": "GAP",
+    "summary": "Legacy electron-pushing and bond-morph seeds lack a fully specified chemical reaction and charge accounting.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-organic"
+    ],
+    "concept_ids": [
+      "concept:chemistry-curly-arrow",
+      "concept:electron-pushing",
+      "concept:bond-morph"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Legacy electron-pushing and bond-morph seeds lack a fully specified chemical reaction and charge accounting."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Legacy electron-pushing and bond-morph seeds lack a fully specified chemical reaction and charge accounting."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Legacy electron-pushing and bond-morph seeds lack a fully specified chemical reaction and charge accounting."
+  },
+  {
+    "id": "ex:chemistry-stereoisomers",
+    "type": "Example",
+    "title": "E/Z isomerism · but-2-ene",
+    "kind": "GAP",
+    "summary": "Needs correct priority assignment and explicit double-bond geometry.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-organic"
+    ],
+    "concept_ids": [
+      "concept:chemistry-stereoisomers"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Needs correct priority assignment and explicit double-bond geometry."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Needs correct priority assignment and explicit double-bond geometry."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Needs correct priority assignment and explicit double-bond geometry."
+  },
+  {
+    "id": "ex:chemistry-synthesis-map",
+    "type": "Example",
+    "title": "Organic synthesis · functional-group route",
+    "kind": "GAP",
+    "summary": "Needs a specific route with reagents, conditions and competing pathways.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-organic"
+    ],
+    "concept_ids": [
+      "concept:chemistry-synthesis-map"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Needs a specific route with reagents, conditions and competing pathways."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Needs a specific route with reagents, conditions and competing pathways."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Needs a specific route with reagents, conditions and competing pathways."
+  },
+  {
+    "id": "ex:chemistry-chromatography",
+    "type": "Example",
+    "title": "Chromatography · Rf measurement",
+    "kind": "REFERENCE",
+    "summary": "Rf = distance traveled by spot / distance traveled by solvent front, both from the baseline.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-analytical"
+    ],
+    "concept_ids": [
+      "concept:chemistry-chromatography"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": true,
+      "showable": true,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "chromatography",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Rf = distance traveled by spot / distance traveled by solvent front, both from the baseline."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Do not describe a schematic as measured data or a molecular simulation."
+    ],
+    "tool_choices": [
+      {
+        "id": "tool:native-svg",
+        "evidence": "observed",
+        "reason": "The local diagram is rendered with native SVG and HTML controls."
+      },
+      {
+        "id": "tool:svgjs",
+        "evidence": "proposed",
+        "reason": "Alternative for programmatic SVG manipulation; not loaded in this instance."
+      }
+    ],
+    "resource_ids": [],
+    "preview": {
+      "renderer": "chromatography",
+      "url": "#example/ex:chemistry-chromatography",
+      "description": "Rf = distance traveled by spot / distance traveled by solvent front, both from the baseline."
+    }
+  },
+  {
+    "id": "ex:chemistry-ir-spectrum",
+    "type": "Example",
+    "title": "IR spectrum · carbonyl identification",
+    "kind": "GAP",
+    "summary": "Needs a sourced spectrum with wavenumber axis and labeled absorption convention.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-analytical"
+    ],
+    "concept_ids": [
+      "concept:chemistry-ir-spectrum"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Needs a sourced spectrum with wavenumber axis and labeled absorption convention."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Needs a sourced spectrum with wavenumber axis and labeled absorption convention."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Needs a sourced spectrum with wavenumber axis and labeled absorption convention."
+  },
+  {
+    "id": "ex:chemistry-nmr-mapping",
+    "type": "Example",
+    "title": "NMR spectrum → structure · ethanol",
+    "kind": "GAP",
+    "summary": "Needs sourced chemical shifts, integration and splitting; no invented spectrum.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-analytical"
+    ],
+    "concept_ids": [
+      "concept:chemistry-nmr-mapping"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Needs sourced chemical shifts, integration and splitting; no invented spectrum."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Needs sourced chemical shifts, integration and splitting; no invented spectrum."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Needs sourced chemical shifts, integration and splitting; no invented spectrum."
+  },
+  {
+    "id": "ex:chemistry-mass-fragmentation",
+    "type": "Example",
+    "title": "Mass spectrum · fragmentation assignment",
+    "kind": "GAP",
+    "summary": "Needs a specific spectrum and chemically valid fragment masses.",
+    "subject_id": "topic:chemistry",
+    "topic_ids": [
+      "topic:chemistry-analytical"
+    ],
+    "concept_ids": [
+      "concept:chemistry-mass-fragmentation"
+    ],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "lifecycle": {
+      "collected": false,
+      "showable": false,
+      "reusable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ],
+    "interaction": "inspect",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "interaction_model": {
+      "trigger": "inspect",
+      "response": "Static schematic; no simulated behavior."
+    },
+    "state_model": {
+      "model": "missing",
+      "deterministic": true
+    },
+    "transfer_constraints": [
+      "Needs a specific spectrum and chemically valid fragment masses."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "failure_modes": [
+      "Needs a specific spectrum and chemically valid fragment masses."
+    ],
+    "tool_choices": [],
+    "resource_ids": [],
+    "gap_reason": "Needs a specific spectrum and chemically valid fragment masses."
+  }
+]

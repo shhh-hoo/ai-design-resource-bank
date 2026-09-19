@@ -1,0 +1,408 @@
+version: 1
+purpose: >-
+  Route curriculum topics to truthful visualization grammars, then to tools and reusable mechanisms
+  already present in the bank. Families deliberately sit above individual syllabuses so one strong
+  implementation can serve Cambridge, AP, and later AQA/Pearson/OCR overlays.
+selection_principles:
+  - Start from the relationship learners need to understand, not from a renderer or visual effect.
+  - Prefer the narrowest mature abstraction that already models the hard semantics.
+  - Reuse banked mechanisms before inventing another interaction pattern.
+  - Do not force prose, interpretation, or uncertain evidence into a diagram merely to make it visual.
+  - Keep curriculum labels for retrieval while sharing implementation primitives across curricula.
+  - Promote repeated successful implementations into verified Resource Packages.
+visual_priorities:
+  high: Visualization frequently carries core explanatory content in this family.
+  medium: Visualization is often useful but should support rather than replace verbal or symbolic reasoning.
+  selective: Visualization is valuable for specific relationships only; text, close reading, argument, or performance may remain primary.
+
+grammars:
+  functional-graph:
+    description: Quantitative relationship shown as one or more linked functions, parameters, loci, or curves.
+    default_tools: [mafs, jsxgraph, plotly-js]
+  dynamic-geometry:
+    description: Geometric construction whose dependent objects update from shared constraints.
+    default_tools: [jsxgraph, mafs]
+  statistical-distribution:
+    description: Distribution, sample, uncertainty, comparison, or statistical model shown with truthful scales.
+    default_tools: [observable-plot, vega-lite, plotly-js]
+  vector-field:
+    description: Magnitude and direction distributed through space or attached to an object.
+    default_tools: [mafs, plotly-js, threejs, p5js]
+  dynamic-system:
+    description: State evolving through time under explicit physical, algorithmic, or rule-based dynamics.
+    default_tools: [matter-js, rapier, p5js, threejs]
+  state-process:
+    description: Discrete states and transitions where sequence, branching, feedback, or causality matters.
+    default_tools: [d3, react-flow, motion]
+  3d-spatial:
+    description: Shape, orientation, depth, camera, assembly, or spatial relationship that is genuinely three-dimensional.
+    default_tools: [threejs, react-three-fiber]
+  structure-anatomy:
+    description: Stable identity of parts within a larger object, organism, molecule, device, or designed system.
+    default_tools: [threejs, molstar, 3dmol-js, svgjs]
+  micro-macro-bridge:
+    description: Link microscopic or local mechanisms to observable macroscopic behavior.
+    default_tools: [threejs, rdkit-js, molstar, plotly-js]
+  field-flow:
+    description: Continuous flow, transport, gradient, circulation, or spatially varying field.
+    default_tools: [deckgl, threejs, p5js, d3]
+  spatial-map:
+    description: Authentic geographic location, scale, distribution, movement, terrain, or spatial comparison.
+    default_tools: [maplibre-gl-js, deckgl, cesiumjs, leaflet]
+  network-relation:
+    description: Entities linked by dependency, influence, exchange, hierarchy, or association.
+    default_tools: [antv-g6, cytoscapejs, react-flow, d3]
+  time-sequence:
+    description: Events, stages, trajectories, or evidence arranged through time with sequence preserved.
+    default_tools: [d3, observable-plot, motion]
+  evidence-comparison:
+    description: Multiple claims, sources, observations, or cases aligned so agreement, conflict, and provenance stay visible.
+    default_tools: [d3, observable-plot, react-flow]
+  image-comparison:
+    description: Visual artifacts compared through aligned crops, overlays, annotations, or spatial correspondence.
+    default_tools: [svgjs, paperjs, motion]
+  composition-layer:
+    description: A visual or designed whole decomposed into layers, materials, hierarchy, or compositional decisions.
+    default_tools: [svgjs, paperjs, threejs, motion]
+  symbolic-notation:
+    description: Structured notation whose spatial placement conveys meaning, such as score, syntax, logic, or technical convention.
+    default_tools: [svgjs, d3]
+  audio-time:
+    description: Sound aligned with time, pitch, rhythm, spectrum, events, or notation.
+    default_tools: [d3, svgjs]
+    gap_note: Dedicated audio and notation engines are not yet represented strongly enough in the bank.
+  optimization-tradeoff:
+    description: Feasible regions, constraints, marginal change, objective values, or competing quantities.
+    default_tools: [mafs, jsxgraph, observable-plot]
+  code-execution:
+    description: Program, algorithm, memory, network, or machine state stepped through while identity is preserved.
+    default_tools: [react-flow, d3, tldraw]
+
+families:
+  mathematics:
+    label: Mathematics
+    visual_priority: high
+    grammars: [functional-graph, dynamic-geometry, statistical-distribution, vector-field, optimization-tradeoff]
+    tools: [mafs, jsxgraph, plotly-js, observable-plot, vega-lite]
+    mechanisms: [movable-tangent, area-under-curve, vector-decomposition]
+    topic_seeds:
+      - topic: Functions, transformations, inverse relationships, and modelling
+        visualize_as: Linked graphs, parameter controls, domain/range emphasis, and multiple representations tied to one state.
+      - topic: Limits, derivatives, local linearity, and rates of change
+        visualize_as: Secant-to-tangent transitions, movable tangent, slope field, derivative comparison.
+      - topic: Integration and accumulation
+        visualize_as: Signed area, moving bounds, Riemann sums, accumulation function, area-to-rate linkage.
+      - topic: Vectors, complex numbers, coordinates, and geometry
+        visualize_as: Draggable vectors, projections, Argand plane, transformations, loci, and constrained constructions.
+      - topic: Probability, distributions, sampling, and inference
+        visualize_as: Distribution morphs, sampling simulations, confidence/uncertainty bands, residual and regression views.
+      - topic: Mathematical mechanics
+        visualize_as: State-linked trajectories, force/vector overlays, momentum and energy representations.
+
+  physics:
+    label: Physics
+    visual_priority: high
+    grammars: [vector-field, dynamic-system, functional-graph, field-flow, 3d-spatial, state-process]
+    tools: [matter-js, rapier, mafs, plotly-js, threejs, p5js, falstad-circuitjs]
+    mechanisms: [force-vector-overlay, wave-propagation, vector-decomposition, particle-attractor]
+    topic_seeds:
+      - topic: Kinematics and reference frames
+        visualize_as: Position/velocity/acceleration linked to the same moving object and synchronized graphs.
+      - topic: Forces and dynamics
+        visualize_as: Free-body vectors attached to simulated bodies, resultant force, acceleration, friction, constraints.
+      - topic: Work, energy, momentum, and collisions
+        visualize_as: Energy bars and phase plots linked to motion; collision before/after states with conserved quantities.
+      - topic: Rotation, torque, angular momentum, and gravitation
+        visualize_as: Lever arms, angular vectors, rotational state, orbits and potential relationships.
+      - topic: Oscillations and waves
+        visualize_as: Oscillator state, phase, propagation, superposition, standing waves, interference and resonance.
+      - topic: Fluids and thermal physics
+        visualize_as: Pressure/velocity fields, particle-to-bulk bridge, cycles, state diagrams, flow and buoyancy.
+      - topic: Electricity, magnetism, fields, and induction
+        visualize_as: Field vectors/lines, equipotential surfaces, flux, charge motion, induction and circuit state.
+      - topic: Circuits and electronics
+        visualize_as: Validated circuit simulation with synchronized current, voltage, charge and component state.
+
+  chemistry:
+    label: Chemistry
+    visual_priority: high
+    grammars: [structure-anatomy, micro-macro-bridge, 3d-spatial, functional-graph, state-process, statistical-distribution]
+    tools: [rdkit-js, molstar, 3dmol-js, ketcher, plotly-js, threejs, svgjs]
+    mechanisms: [reaction-coordinate, orbital-overlap, electron-pushing, bond-morph, anchored-callout]
+    topic_seeds:
+      - topic: Atomic structure, spectra, orbitals, and periodicity
+        visualize_as: Energy levels, spectra, orbital geometry, periodic trends and electron configuration linked across representations.
+      - topic: Bonding, molecular shape, intermolecular forces, and structure
+        visualize_as: Chemically correct 2D structure plus rotatable 3D geometry, orbital overlap, polarity and packing.
+      - topic: States, gases, solutions, and particle models
+        visualize_as: Micro-to-macro particle behavior linked to pressure, concentration, phase and measurable properties.
+      - topic: Energetics and thermodynamics
+        visualize_as: Reaction coordinate, energy cycles, state functions, entropy/free-energy comparisons.
+      - topic: Kinetics and mechanisms
+        visualize_as: Collision/energy distributions, rate graphs, reaction coordinate, elementary steps and causal electron movement.
+      - topic: Equilibrium, acids, bases, and solubility
+        visualize_as: Dynamic opposing processes, composition vs condition, titration/speciation curves and equilibrium shifts.
+      - topic: Redox and electrochemistry
+        visualize_as: Electron/ion flow, electrode processes, cell potential, concentration effects and electrolysis state.
+      - topic: Organic reactions and synthesis
+        visualize_as: Atom identity preserved through mechanisms, electron-pushing, bond morphing, stereochemical and pathway views.
+      - topic: Spectroscopy and analytical chemistry
+        visualize_as: Spectrum-to-structure linkage, peak annotation, fragmentation and evidence comparison.
+
+  biology:
+    label: Biology
+    visual_priority: high
+    grammars: [structure-anatomy, micro-macro-bridge, state-process, network-relation, statistical-distribution, field-flow]
+    tools: [molstar, 3dmol-js, d3, observable-plot, threejs, cytoscapejs]
+    mechanisms: [focus-context, semantic-zoom, anchored-callout, graph-relayout]
+    topic_seeds:
+      - topic: Biomolecules and molecular interactions
+        visualize_as: Protein/nucleic-acid structure, binding sites, molecular recognition and structure-function relationships.
+      - topic: Cells, membranes, transport, and organelles
+        visualize_as: Layered anatomy, selective transport, gradients, compartment relationships and scale transitions.
+      - topic: Enzymes, respiration, and photosynthesis
+        visualize_as: Reaction/state networks, energy transfer, limiting factors and linked molecular-to-system views.
+      - topic: DNA, gene expression, inheritance, and biotechnology
+        visualize_as: Sequence-to-process views, chromosome/gene structure, probability and pedigree/inheritance models.
+      - topic: Signalling, immunity, coordination, and homeostasis
+        visualize_as: Feedback loops, receptor pathways, system anatomy and changing internal state.
+      - topic: Evolution and population genetics
+        visualize_as: Allele-frequency change, selection/drift simulations, phylogenetic relationships and variation distributions.
+      - topic: Ecology, populations, communities, and cycles
+        visualize_as: Food/network graphs, abundance distributions, sampling uncertainty, nutrient flows and population dynamics.
+
+  earth-environment:
+    label: Earth, Environmental & Marine Science
+    visual_priority: high
+    grammars: [spatial-map, field-flow, dynamic-system, time-sequence, statistical-distribution, network-relation]
+    tools: [maplibre-gl-js, deckgl, cesiumjs, d3, plotly-js, p5js]
+    mechanisms: [wave-propagation, particle-attractor, semantic-zoom, focus-context]
+    topic_seeds:
+      - topic: Atmosphere, weather, climate, ocean circulation, and coupled Earth systems
+        visualize_as: Vector/flow fields, layers, circulation cells, time series, anomaly maps and coupled-system diagrams.
+      - topic: Biogeochemical, water, carbon, and nutrient cycles
+        visualize_as: Stock-flow systems tied to geography and time rather than decorative circular arrows.
+      - topic: Ecosystems, productivity, biodiversity, and fisheries
+        visualize_as: Food/network relationships, spatial distributions, population dynamics, trophic transfer and uncertainty.
+      - topic: Earth processes, hazards, coasts, and marine systems
+        visualize_as: Terrain/cross-sections, hazard propagation, plate/process animation, bathymetry and shoreline change.
+      - topic: Pollution, resource use, energy, and sustainability
+        visualize_as: Source-pathway-receptor flows, spatial exposure, scenarios, trade-offs and impact comparisons.
+
+  geography:
+    label: Geography
+    visual_priority: high
+    grammars: [spatial-map, field-flow, statistical-distribution, time-sequence, network-relation]
+    tools: [maplibre-gl-js, deckgl, cesiumjs, leaflet, d3, observable-plot]
+    mechanisms: [semantic-zoom, canvas-focus-lens, focus-context, graph-relayout]
+    topic_seeds:
+      - topic: Hydrology, rivers, water resources, and hazards
+        visualize_as: Catchment maps, longitudinal/cross profiles, hydrographs, flow networks, flood extent and management scenarios.
+      - topic: Atmosphere, climate, and climate change
+        visualize_as: Global/local maps, pressure/wind fields, climate graphs, anomalies and time-linked spatial change.
+      - topic: Earth processes, mass movement, and environments
+        visualize_as: Cross-sections, terrain, process sequences, risk layers and spatial comparisons.
+      - topic: Population, migration, and demographic change
+        visualize_as: Choropleths/dot maps, flow maps, age structures, migration networks and time-series transitions.
+      - topic: Urban areas, land use, infrastructure, and management
+        visualize_as: Layered city maps, accessibility, land-use patterns, network flows and scenario comparison.
+      - topic: Global environments and themes
+        visualize_as: Multi-scale maps and linked evidence panels preserving case-study location, time and uncertainty.
+
+  computer-science:
+    label: Computer Science, IT & Cybersecurity
+    visual_priority: high
+    grammars: [code-execution, state-process, network-relation, structure-anatomy, time-sequence, statistical-distribution]
+    tools: [react-flow, antv-g6, cytoscapejs, d3, mermaid, tldraw]
+    mechanisms: [focus-context, graph-relayout, semantic-zoom, canvas-focus-lens]
+    topic_seeds:
+      - topic: Data representation, encoding, compression, and information
+        visualize_as: Bit/byte layouts, transforms, encoding pipelines, compression state and error representations.
+      - topic: Logic, processors, computer architecture, and operating systems
+        visualize_as: Data-path diagrams, register/memory state, fetch-decode-execute, scheduling and layered system anatomy.
+      - topic: Algorithms and data structures
+        visualize_as: Step-through execution with stable item identity, complexity plots, tree/graph state and invariant highlighting.
+      - topic: Programming, objects, recursion, and memory
+        visualize_as: Source line linked to call stack, heap/object graph, variable state and control flow.
+      - topic: Networks and distributed communication
+        visualize_as: Packet routes, protocol layers, latency/throughput, topology and failure propagation.
+      - topic: Databases and information systems
+        visualize_as: Entity relationships, tables/keys, query transformation, indexing and transaction state.
+      - topic: AI, robotics, and computational models
+        visualize_as: State/action loops, search trees, model inputs/outputs and sensor-to-actuator pipelines without anthropomorphic decoration.
+      - topic: Cybersecurity
+        visualize_as: Trust boundaries, attack paths, protocol/state diagrams, threat surfaces and defense-in-depth layers.
+
+  economics-business:
+    label: Economics, Business, Accounting & Finance
+    visual_priority: high
+    grammars: [functional-graph, optimization-tradeoff, statistical-distribution, state-process, network-relation, time-sequence]
+    tools: [mafs, jsxgraph, observable-plot, vega-lite, echarts, d3]
+    mechanisms: [area-under-curve, graph-relayout, focus-context]
+    topic_seeds:
+      - topic: Scarcity, production possibilities, opportunity cost, and trade-offs
+        visualize_as: Feasible frontiers, marginal trade-offs, constrained choice and scenario shifts.
+      - topic: Demand, supply, elasticity, intervention, and welfare
+        visualize_as: Interactive curves, equilibrium shifts, incidence, surplus/deadweight areas and parameter sensitivity.
+      - topic: Firms, costs, revenue, market structure, and competition
+        visualize_as: Linked cost/revenue curves, scale, profit regions, game/market structure comparisons.
+      - topic: Macroeconomic flows and indicators
+        visualize_as: Stock-flow/circular-flow views, inflation/unemployment/output time series and decomposition.
+      - topic: Aggregate demand/supply, money, policy, and growth
+        visualize_as: Linked macro models, policy scenarios, transmission pathways and uncertainty around outcomes.
+      - topic: International trade, exchange rates, development, and global issues
+        visualize_as: Trade/network flows, comparative advantage, FX graphs, development distributions and country comparisons.
+      - topic: Accounting, finance, budgeting, and personal finance
+        visualize_as: Statement flows, cash/working-capital timelines, break-even, compounding, loan/investment scenarios and risk-return.
+      - topic: Marketing, operations, management, and strategy
+        visualize_as: Process flows, capacity/bottlenecks, segmentation maps, portfolio/trade-off matrices and causal assumptions.
+
+  psychology-social:
+    label: Psychology & Sociology
+    visual_priority: medium
+    grammars: [statistical-distribution, network-relation, state-process, evidence-comparison, time-sequence]
+    tools: [observable-plot, vega-lite, d3, react-flow]
+    mechanisms: [focus-context, graph-relayout]
+    topic_seeds:
+      - topic: Biological, cognitive, learning, and social approaches
+        visualize_as: Competing models, process diagrams, study designs and evidence alignment rather than literal brain cartoons.
+      - topic: Research methods, data, reliability, validity, and inference
+        visualize_as: Experimental design, sampling, distributions, uncertainty, correlation and evidence-quality comparison.
+      - topic: Clinical, health, consumer, and organisational psychology
+        visualize_as: Pathways, study comparisons, interventions, outcomes and context-sensitive causal models.
+      - topic: Social structures, institutions, inequality, identity, and change
+        visualize_as: Networks, distributions, cohort/time comparisons and multi-level relationships with source context retained.
+
+  history-government:
+    label: History, Government & Politics
+    visual_priority: medium
+    grammars: [time-sequence, spatial-map, network-relation, evidence-comparison, statistical-distribution]
+    tools: [d3, observable-plot, maplibre-gl-js, react-flow]
+    mechanisms: [focus-context, graph-relayout, semantic-zoom]
+    topic_seeds:
+      - topic: Chronology and periodisation
+        visualize_as: Multi-track timelines that distinguish event date, duration, region and thematic strand.
+      - topic: War, migration, expansion, trade, and exchange
+        visualize_as: Time-aware maps and flow networks with uncertainty/provenance rather than decorative arrows.
+      - topic: Causes, consequences, continuity, and change
+        visualize_as: Evidence-linked causal graphs or matrices that preserve competing interpretations.
+      - topic: Institutions, constitutions, elections, states, and political systems
+        visualize_as: Institutional relationships, process/state diagrams, jurisdiction maps and comparative structures.
+      - topic: Primary and secondary source analysis
+        visualize_as: Aligned source/evidence panels showing provenance, claim, corroboration, contradiction and missing evidence.
+
+  art-design-media:
+    label: Art, Design, Media & Drama
+    visual_priority: high
+    grammars: [image-comparison, composition-layer, 3d-spatial, structure-anatomy, time-sequence, evidence-comparison]
+    tools: [threejs, react-three-fiber, svgjs, paperjs, roughjs, motion, gsap]
+    mechanisms: [explode-assemble, anchored-callout, stage-spotlight, camera-dolly, mask-transition, pinned-reveal]
+    topic_seeds:
+      - topic: Composition, form, colour, texture, typography, and visual hierarchy
+        visualize_as: Layer isolation, crop/alignment comparison, compositional overlays and controllable transformations.
+      - topic: Materials, fabrication, product structure, and design technology
+        visualize_as: Exploded assemblies, material layers, manufacturing sequences, tolerances and annotated 3D structure.
+      - topic: Perspective, space, light, staging, movement, and performance
+        visualize_as: Camera/light controls, blocking, stage plans, viewpoint comparison and time-based scene development.
+      - topic: Media language, editing, sequence, and representation
+        visualize_as: Shot/timeline structure, composition comparison, edit rhythm, information layers and evidence-backed annotation.
+      - topic: Design process, iteration, critique, and contextual research
+        visualize_as: Version/decision trails, alternatives, constraints, references and evidence rather than a generic double-diamond diagram.
+
+  music:
+    label: Music
+    visual_priority: high
+    grammars: [audio-time, symbolic-notation, time-sequence, network-relation, statistical-distribution]
+    tools: [d3, svgjs]
+    mechanisms: [scroll-scrub, focus-context]
+    topic_seeds:
+      - topic: Pitch, scales, keys, intervals, and tuning relationships
+        visualize_as: Staff/keyboard/pitch-class views synchronized with sound and interval geometry.
+      - topic: Rhythm, meter, tempo, syncopation, and polyrhythm
+        visualize_as: Beat grid, onset timeline, meter hierarchy and playback cursor.
+      - topic: Harmony, chords, function, cadence, and voice leading
+        visualize_as: Score-linked harmonic function, voice trajectories, chord graph and playable before/after comparisons.
+      - topic: Melody, motive, sequence, texture, orchestration, and timbre
+        visualize_as: Contour, motif correspondence, layered parts, orchestration layers and audio-aligned annotations.
+      - topic: Form, phrase, set works, performance, and composition
+        visualize_as: Time-aligned formal sections, score/audio navigation, comparative interpretations and version layers.
+    gaps:
+      - Dedicated Web Audio/music scheduling engine such as Tone.js.
+      - Music-notation renderer such as VexFlow or OpenSheetMusicDisplay.
+      - Waveform/spectrum tooling where audio inspection is itself the task.
+
+  language-literature:
+    label: Languages & Literature
+    visual_priority: selective
+    grammars: [symbolic-notation, network-relation, time-sequence, evidence-comparison, statistical-distribution]
+    tools: [d3, react-flow, svgjs, observable-plot]
+    mechanisms: [focus-context, split-text-reveal]
+    topic_seeds:
+      - topic: Grammar, syntax, morphology, and sentence structure
+        visualize_as: Dependency/constituency relationships, transformations and aligned examples only when structure is the learning target.
+      - topic: Phonology, pronunciation, prosody, and listening
+        visualize_as: Stress/intonation contours, timing and phonetic contrasts synchronized with audio when warranted.
+      - topic: Vocabulary, semantics, register, and discourse relationships
+        visualize_as: Semantic networks, collocation patterns, register continua and corpus distributions with examples attached.
+      - topic: Narrative, argument, rhetoric, and textual structure
+        visualize_as: Argument/evidence maps, narrative time, motif recurrence and paragraph/claim structure as optional analytic lenses.
+      - topic: Literary comparison and historical/cultural context
+        visualize_as: Evidence-aligned comparison, chronology and context maps; close reading remains primary.
+
+  law-religion-thinking:
+    label: Law, Religion, Classics & Thinking Skills
+    visual_priority: selective
+    grammars: [state-process, network-relation, time-sequence, evidence-comparison]
+    tools: [react-flow, d3, mermaid]
+    mechanisms: [focus-context, graph-relayout]
+    topic_seeds:
+      - topic: Legal rules, doctrines, tests, procedure, and precedent
+        visualize_as: Decision trees, process/state diagrams, precedent networks and rule-to-fact application while preserving exceptions.
+      - topic: Arguments, assumptions, evidence, counterclaims, and reasoning
+        visualize_as: Argument maps that distinguish premise, inference, evidence, objection and uncertainty.
+      - topic: Religious, philosophical, and classical texts or traditions
+        visualize_as: Chronology, textual relationships, schools/traditions and historical context; interpretation itself should not be reduced to a graph.
+
+  physical-education:
+    label: Sport & Physical Education
+    visual_priority: high
+    grammars: [structure-anatomy, dynamic-system, vector-field, statistical-distribution, time-sequence]
+    tools: [threejs, rapier, mafs, observable-plot]
+    mechanisms: [vector-decomposition, force-vector-overlay, anchored-callout]
+    topic_seeds:
+      - topic: Biomechanics and movement analysis
+        visualize_as: Joint/segment kinematics, force vectors, centre of mass, projectile motion and technique comparison.
+      - topic: Anatomy, physiology, and body systems
+        visualize_as: Layered anatomy, circulation/respiration pathways and physiological response over exercise intensity/time.
+      - topic: Energy systems, training, fatigue, and recovery
+        visualize_as: Contribution over intensity/time, training-load curves, adaptation timelines and performance data.
+      - topic: Skill acquisition, tactics, and performance analysis
+        visualize_as: Movement trajectories, spatial occupancy, decision networks and annotated video-derived events when data is available.
+
+  research-interdisciplinary:
+    label: Research, Seminar & Interdisciplinary Inquiry
+    visual_priority: medium
+    grammars: [evidence-comparison, network-relation, statistical-distribution, time-sequence, state-process]
+    tools: [d3, observable-plot, react-flow, vega-lite]
+    mechanisms: [focus-context, graph-relayout]
+    topic_seeds:
+      - topic: Research question, claims, evidence, sources, and perspectives
+        visualize_as: Evidence maps, provenance, claim-source matrices and competing-perspective relationships.
+      - topic: Methods, variables, sampling, data, and limitations
+        visualize_as: Study design, data pipeline, distribution/uncertainty and limitation annotations.
+      - topic: Synthesis, argument development, and communication
+        visualize_as: Argument structure and evidence coverage as planning/debugging aids rather than replacements for writing.
+
+  travel-tourism:
+    label: Travel & Tourism
+    visual_priority: medium
+    grammars: [spatial-map, network-relation, statistical-distribution, time-sequence, optimization-tradeoff]
+    tools: [maplibre-gl-js, deckgl, d3, observable-plot]
+    mechanisms: [semantic-zoom, focus-context]
+    topic_seeds:
+      - topic: Destinations, accessibility, visitor flows, and transport
+        visualize_as: Real maps, origin-destination flows, travel-time/accessibility and seasonality.
+      - topic: Tourism systems, stakeholders, products, and operations
+        visualize_as: Stakeholder/network relationships, service process, capacity and dependency diagrams.
+      - topic: Demand, impacts, sustainability, and destination management
+        visualize_as: Time series, distributions, spatial pressure, trade-offs and scenario comparisons tied to real cases.

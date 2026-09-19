@@ -1,0 +1,23 @@
+id: reaction-profile
+title: Reaction profile with linked coordinate marker
+domain: chemistry
+status: verified
+tags: [chemistry, energetics, activation-energy, reaction-coordinate, svg]
+source_refs: [source:legacy-mechanisms, source:atlas-studies, source:cambridge-9701-2025, source:ap-chemistry-2024]
+selection_reason: Preserve the existing reaction-coordinate mechanism while correcting transition-state identification and exposing energy constraints.
+mechanism:
+  summary: One coordinate drives a marker on a single-step energy profile; activation energy and enthalpy share explicit endpoints.
+  primitives: [energy-curve, scrubber, state-marker, energy-difference]
+  states: [reactants, reaction-path, transition-state, products]
+  parameters: [progress, reactant-energy, product-energy, barrier-height]
+  failure_modes: [Treating reaction coordinate as time, Treating the whole barrier region as transition state, Inferring a rate from a schematic barrier, Changing endpoints when comparing catalysts]
+fidelity: [concept, behavior, geometry, implementation]
+implements: [concept:reaction-coordinate, concept:chemistry-reaction-profile]
+requires: [tool:native-svg]
+artifacts:
+  - {path: artifacts/profile.js, kind: code, purpose: Pure bounded energy/state model used by the live preview, generated: false, validated: true}
+rights:
+  source_assets_stored: false
+  license: MIT
+  basis: Original implementation of a general teaching mechanism; existing registry evidence is attributed. No third-party binary assets.
+notes: Qualitative single-step profile with illustrative energies. Local automated checks are not external chemistry peer review.

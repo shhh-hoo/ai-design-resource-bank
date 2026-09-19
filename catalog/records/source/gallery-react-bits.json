@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "registries/reference-galleries.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:gallery-react-bits",
+    "locator": "https://www.reactbits.dev/",
+    "locator_type": "url",
+    "publisher": "React Bits",
+    "title": "React Bits",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

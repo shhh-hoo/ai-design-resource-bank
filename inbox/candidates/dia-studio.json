@@ -1,0 +1,26 @@
+{
+  "id": "candidate:dia-studio",
+  "candidate_kind": "source_feed",
+  "status": "inspected",
+  "discovered_by": "scout",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://dia.tv/",
+    "title": "DIA Studio"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "High-yield source for kinetic identity systems, typographic systems, generative instruments, and motion/print continuity.",
+  "novelty_axes": [
+    "cross_media_transfer",
+    "new_concept",
+    "new_implementation"
+  ],
+  "signals": [
+    "kinetic identity",
+    "typographic systems",
+    "generative instruments",
+    "motion + print",
+    "experiential design"
+  ],
+  "notes": "Official project pages document systems that operate across motion, print, web, live visuals, and spatial screens. Promote individual projects, not the studio index."
+}

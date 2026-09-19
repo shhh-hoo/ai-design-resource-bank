@@ -1,0 +1,27 @@
+id: example-resource
+title: Example Resource
+domain: interaction
+tags:
+  - example
+status: distilled
+# Create this normalized Source in knowledge/provenance/ before validation.
+source_refs: [source:replace-with-source-id]
+selection_reason: "What specific thing was worth saving."
+mechanism:
+  summary: "Describe the transferable mechanism precisely."
+  primitives:
+    - "Primitive or rule 1"
+    - "Primitive or rule 2"
+  states: []
+  parameters: []
+  failure_modes: []
+fidelity:
+  - concept
+artifacts: []
+rights:
+  source_assets_stored: false
+  license: unknown
+  basis: "Only provenance and transformed analysis are stored until rights are known."
+  restrictions: []
+related: []
+notes: ""

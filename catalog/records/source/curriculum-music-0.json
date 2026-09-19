@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "registries/curriculum-research-sources.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:curriculum-music-0",
+    "locator": "https://apstudents.collegeboard.org/courses/ap-music-theory",
+    "locator_type": "url",
+    "publisher": "ap",
+    "title": "AP Music Theory",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

@@ -1,0 +1,59 @@
+{
+  "record": {
+    "agent_notes": "Do not classify as a universally free MIT dependency without checking current licensing.",
+    "avoid_when": "Only browser-resident interaction or animation is needed.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "programmatic-video",
+      "react-scenes",
+      "rendering",
+      "studio",
+      "templates"
+    ],
+    "docs": "https://www.remotion.dev/docs/",
+    "domains": [
+      "video",
+      "animation",
+      "react"
+    ],
+    "ecosystem": [
+      "React",
+      "TypeScript",
+      "video"
+    ],
+    "homepage": "https://www.remotion.dev/",
+    "id": "tool:remotion",
+    "legacy_kind": "video-framework",
+    "license": "terms-apply",
+    "rights_note": "Current licensing depends on organization/use case, including some automated rendering scenarios; verify before adoption.",
+    "source_refs": [
+      "source:tool-remotion"
+    ],
+    "subtype": "framework",
+    "summary": "The deliverable is rendered video/motion graphics and React/code should be the source of truth.",
+    "tags": [
+      "video",
+      "react",
+      "animation"
+    ],
+    "tier": "specialized",
+    "title": "Remotion",
+    "type": "Tool",
+    "use_when": "The deliverable is rendered video/motion graphics and React/code should be the source of truth."
+  },
+  "relations": [],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-remotion",
+      "locator": "https://www.remotion.dev/docs/",
+      "locator_type": "url",
+      "publisher": "Remotion",
+      "title": "Remotion official documentation",
+      "type": "Source"
+    }
+  ]
+}

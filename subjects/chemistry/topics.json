@@ -1,0 +1,182 @@
+[
+  {
+    "id": "topic:chemistry-atomic-structure",
+    "type": "SubjectTopic",
+    "title": "Atomic Structure",
+    "parent": "topic:chemistry",
+    "scope": "Nuclear composition, isotopes, electron arrangement and atomic spectra.",
+    "prerequisites": [],
+    "example_ids": [
+      "ex:chemistry-electron-configuration",
+      "ex:chemistry-isotope-spectrum",
+      "ex:chemistry-successive-ionisation",
+      "ex:chemistry-hydrogen-emission"
+    ],
+    "order": 0
+  },
+  {
+    "id": "topic:chemistry-bonding",
+    "type": "SubjectTopic",
+    "title": "Bonding",
+    "parent": "topic:chemistry",
+    "scope": "Ionic, covalent and metallic bonding; shape, polarity and orbital overlap.",
+    "prerequisites": [],
+    "example_ids": [
+      "ex:chemistry-water-geometry",
+      "ex:chemistry-ionic-lattice",
+      "ex:chemistry-orbital-overlap",
+      "ex:chemistry-bond-polarity"
+    ],
+    "order": 1
+  },
+  {
+    "id": "topic:chemistry-stoichiometry",
+    "type": "SubjectTopic",
+    "title": "Stoichiometry",
+    "parent": "topic:chemistry",
+    "scope": "Amounts, composition, conservation, equations and limiting reagents.",
+    "prerequisites": [],
+    "example_ids": [
+      "ex:chemistry-limiting-reagent",
+      "ex:chemistry-mole-conversion",
+      "ex:chemistry-empirical-formula",
+      "ex:chemistry-dilution"
+    ],
+    "order": 2
+  },
+  {
+    "id": "topic:chemistry-states-solutions",
+    "type": "SubjectTopic",
+    "title": "States, Gases and Solutions",
+    "parent": "topic:chemistry",
+    "scope": "Phase, intermolecular forces, ideal gases, mixtures and solubility.",
+    "prerequisites": [],
+    "example_ids": [
+      "ex:chemistry-ideal-gas",
+      "ex:chemistry-hydrogen-bond",
+      "ex:chemistry-phase-diagram",
+      "ex:chemistry-dissolution"
+    ],
+    "order": 3
+  },
+  {
+    "id": "topic:chemistry-energetics",
+    "type": "SubjectTopic",
+    "title": "Energetics",
+    "parent": "topic:chemistry",
+    "scope": "Enthalpy changes, cycles, lattice energetics, entropy and Gibbs energy.",
+    "prerequisites": [],
+    "example_ids": [
+      "ex:chemistry-reaction-profile",
+      "ex:chemistry-hess-cycle",
+      "ex:chemistry-born-haber",
+      "ex:chemistry-gibbs-energy"
+    ],
+    "order": 4
+  },
+  {
+    "id": "topic:chemistry-kinetics",
+    "type": "SubjectTopic",
+    "title": "Kinetics",
+    "parent": "topic:chemistry",
+    "scope": "Rates, rate laws, collision distributions, mechanisms and catalysis.",
+    "prerequisites": [],
+    "example_ids": [
+      "ex:chemistry-first-order",
+      "ex:chemistry-catalyst-profile",
+      "ex:chemistry-maxwell-boltzmann",
+      "ex:chemistry-rate-orders"
+    ],
+    "order": 5
+  },
+  {
+    "id": "topic:chemistry-equilibrium",
+    "type": "SubjectTopic",
+    "title": "Equilibrium",
+    "parent": "topic:chemistry",
+    "scope": "Dynamic balance, equilibrium expressions, reaction quotient and composition shifts.",
+    "prerequisites": [],
+    "example_ids": [
+      "ex:chemistry-dynamic-equilibrium",
+      "ex:chemistry-equilibrium-expression",
+      "ex:chemistry-composition-shift",
+      "ex:chemistry-solubility-product"
+    ],
+    "order": 6
+  },
+  {
+    "id": "topic:chemistry-acids-bases",
+    "type": "SubjectTopic",
+    "title": "Acids and Bases",
+    "parent": "topic:chemistry",
+    "scope": "Proton transfer, acid strength, pH, buffers and titration.",
+    "prerequisites": [],
+    "example_ids": [
+      "ex:chemistry-titration-curve",
+      "ex:chemistry-conjugate-pairs",
+      "ex:chemistry-buffer",
+      "ex:chemistry-weak-acid-titration"
+    ],
+    "order": 7
+  },
+  {
+    "id": "topic:chemistry-redox",
+    "type": "SubjectTopic",
+    "title": "Redox and Electrochemistry",
+    "parent": "topic:chemistry",
+    "scope": "Electron transfer, oxidation states, cells, electrode potentials and electrolysis.",
+    "prerequisites": [],
+    "example_ids": [
+      "ex:chemistry-galvanic-cell",
+      "ex:chemistry-oxidation-state",
+      "ex:chemistry-nernst",
+      "ex:chemistry-electrolysis"
+    ],
+    "order": 8
+  },
+  {
+    "id": "topic:chemistry-periodicity",
+    "type": "SubjectTopic",
+    "title": "Periodicity and Inorganic Chemistry",
+    "parent": "topic:chemistry",
+    "scope": "Periodic trends, group chemistry, coordination and transition elements.",
+    "prerequisites": [],
+    "example_ids": [
+      "ex:chemistry-periodic-trends",
+      "ex:chemistry-group-two",
+      "ex:chemistry-halogen-displacement",
+      "ex:chemistry-ligand-exchange"
+    ],
+    "order": 9
+  },
+  {
+    "id": "topic:chemistry-organic",
+    "type": "SubjectTopic",
+    "title": "Organic Chemistry",
+    "parent": "topic:chemistry",
+    "scope": "Structure, stereochemistry, functional groups, mechanisms, synthesis and polymers.",
+    "prerequisites": [],
+    "example_ids": [
+      "ex:chemistry-functional-groups",
+      "ex:chemistry-curly-arrow",
+      "ex:chemistry-stereoisomers",
+      "ex:chemistry-synthesis-map"
+    ],
+    "order": 10
+  },
+  {
+    "id": "topic:chemistry-analytical",
+    "type": "SubjectTopic",
+    "title": "Analytical and Spectroscopic Chemistry",
+    "parent": "topic:chemistry",
+    "scope": "Separation, identification, spectroscopy and structure inference.",
+    "prerequisites": [],
+    "example_ids": [
+      "ex:chemistry-chromatography",
+      "ex:chemistry-ir-spectrum",
+      "ex:chemistry-nmr-mapping",
+      "ex:chemistry-mass-fragmentation"
+    ],
+    "order": 11
+  }
+]

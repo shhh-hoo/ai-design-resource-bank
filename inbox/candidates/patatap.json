@@ -1,0 +1,37 @@
+{
+  "id": "candidate:patatap",
+  "candidate_kind": "example",
+  "status": "promoted",
+  "discovered_by": "scout",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://patatap.com/",
+    "title": "Patatap",
+    "creator": "Jono Brandel + Lullatone"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "A deliberately minimal input vocabulary maps touch/keyboard events to tightly coupled animation-and-sound responses, turning the browser itself into a portable instrument.",
+  "novelty_axes": [
+    "new_interaction",
+    "cross_media_transfer",
+    "new_implementation"
+  ],
+  "signals": [
+    "discrete input mapping",
+    "audiovisual instrument",
+    "touch/keyboard",
+    "immediate feedback",
+    "Two.js"
+  ],
+  "notes": "The official page describes Patatap as a portable animation and sound kit and explicitly states that it was made with Two.js.",
+  "decision": {
+    "outcome": "promoted",
+    "rationale": "Canonical example of low-latency one-action/one-response audiovisual mapping with almost no chrome, useful for understanding expressive interfaces and immediate feedback.",
+    "reviewed_by": "wave01-curation",
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:patatap",
+      "concept:cross-modal-input-mapping"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-tools.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:tool-3dmol-js",
+    "locator": "https://3dmol.csb.pitt.edu/doc/",
+    "locator_type": "url",
+    "publisher": "3Dmol.js",
+    "title": "3Dmol.js official documentation",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

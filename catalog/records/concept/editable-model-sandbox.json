@@ -1,0 +1,78 @@
+{
+  "record": {
+    "canonical_path": "knowledge/concepts/creative-wave01-b.json",
+    "id": "concept:editable-model-sandbox",
+    "source_refs": [
+      "source:parable-polygons",
+      "source:seeing-theory-basic-probability",
+      "source:setosa-markov-chains"
+    ],
+    "subtypes": [
+      "interaction_pattern",
+      "representation_method"
+    ],
+    "summary": "Expose meaningful model parameters or rules for direct manipulation while keeping simulation, derived values, and explanatory views synchronized to the same state.",
+    "title": "Editable model sandbox",
+    "type": "Concept"
+  },
+  "relations": [
+    {
+      "source": "ex:parable-of-polygons",
+      "target": "concept:editable-model-sandbox",
+      "type": "demonstrates"
+    },
+    {
+      "source": "ex:seeing-theory-basic-probability",
+      "target": "concept:editable-model-sandbox",
+      "type": "demonstrates"
+    },
+    {
+      "source": "ex:setosa-markov-chains",
+      "target": "concept:editable-model-sandbox",
+      "type": "demonstrates"
+    },
+    {
+      "source": "resource:editable-model-sandbox",
+      "target": "concept:editable-model-sandbox",
+      "type": "implements"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Direct interactive page inspected for drag-and-drop relocation, rule changes, larger simulations and final sandbox. Reuse/licensing note on the page was also inspected.",
+      "checked_at": "2026-09-19",
+      "id": "source:parable-polygons",
+      "locator": "https://ncase.me/polygons/",
+      "locator_type": "url",
+      "publisher": "Vi Hart + Nicky Case",
+      "title": "Parable of the Polygons",
+      "type": "Source"
+    },
+    {
+      "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Official interactive chapter inspected for draggable probability distributions, sampling, expectation and variance. Parent project documentation identifies D3.js as the visualization technology.",
+      "checked_at": "2026-09-19",
+      "id": "source:seeing-theory-basic-probability",
+      "locator": "https://seeing-theory.brown.edu/basic-probability/",
+      "locator_type": "url",
+      "publisher": "Seeing Theory / Brown University",
+      "title": "Seeing Theory — Basic Probability",
+      "type": "Source"
+    },
+    {
+      "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Direct page inspected for animated state transitions, speed controls, editable transition matrices, random/examples controls and invalid-matrix feedback.",
+      "checked_at": "2026-09-19",
+      "id": "source:setosa-markov-chains",
+      "locator": "https://setosa.io/ev/markov-chains/",
+      "locator_type": "url",
+      "publisher": "Setosa / Explained Visually",
+      "title": "Markov Chains — Explained Visually",
+      "type": "Source"
+    }
+  ]
+}

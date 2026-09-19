@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-tools.yaml",
+    "captured_at": "2026-09-10",
+    "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+    "checked_at": null,
+    "id": "source:tool-observable-plot",
+    "locator": "https://observablehq.com/plot/what-is-plot",
+    "locator_type": "url",
+    "publisher": "Observable Plot",
+    "title": "Observable Plot official documentation",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

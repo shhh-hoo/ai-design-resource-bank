@@ -1,0 +1,57 @@
+{
+  "record": {
+    "canonical_path": "registries/subject-visualization-families.yaml",
+    "id": "concept:grammar-evidence-comparison",
+    "source_refs": [
+      "source:legacy-families"
+    ],
+    "subtypes": [
+      "grammar"
+    ],
+    "summary": "Multiple claims, sources, observations, or cases aligned so agreement, conflict, and provenance stay visible.",
+    "title": "Evidence Comparison",
+    "tool_ids": [
+      "tool:d3",
+      "tool:observable-plot",
+      "tool:react-flow"
+    ],
+    "type": "Concept"
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-evidence-comparison",
+      "target": "tool:d3",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-evidence-comparison",
+      "target": "tool:observable-plot",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-evidence-comparison",
+      "target": "tool:react-flow",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/subject-visualization-families.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:legacy-families",
+      "locator": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/main/registries/subject-visualization-families.yaml",
+      "locator_type": "url",
+      "publisher": "AIDRB",
+      "title": "Legacy subject family seeds",
+      "type": "Source"
+    }
+  ]
+}

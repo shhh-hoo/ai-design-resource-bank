@@ -1,0 +1,37 @@
+{
+  "id": "candidate:setosa-markov-chains",
+  "candidate_kind": "example",
+  "status": "promoted",
+  "discovered_by": "scout",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://setosa.io/ev/markov-chains/",
+    "title": "Markov Chains — Explained Visually",
+    "creator": "Victor Powell + Lewis Lehe"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "Makes state-transition behavior inspectable through animated states, speed controls, editable transition matrices, validation feedback, and a sandbox.",
+  "novelty_axes": [
+    "new_interaction",
+    "benchmark_gap",
+    "new_concept"
+  ],
+  "signals": [
+    "state machine",
+    "transition matrix",
+    "animated graph",
+    "editable model",
+    "validation feedback"
+  ],
+  "notes": "Direct inspection confirms speed controls, a two-state model, an editable transition-matrix playground, examples/random generation, and invalid-matrix feedback.",
+  "decision": {
+    "outcome": "promoted",
+    "rationale": "Adds a reusable pattern for synchronizing symbolic parameters with animated state transitions and validating user-authored models in place.",
+    "reviewed_by": "wave01-curation",
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:setosa-markov-chains",
+      "concept:editable-model-sandbox"
+    ]
+  }
+}

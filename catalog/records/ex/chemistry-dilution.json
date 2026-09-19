@@ -1,0 +1,191 @@
+{
+  "ai_build": {
+    "availability": "missing",
+    "example_id": "ex:chemistry-dilution",
+    "method": {
+      "concepts": [
+        "concept:chemistry-dilution"
+      ],
+      "failure_modes": [
+        "Needs a calibrated flask sequence and explicit concentration/volume units."
+      ],
+      "fidelity_constraints": [
+        "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+      ],
+      "grammar": [
+        "symbolic-notation"
+      ],
+      "interaction_model": {
+        "response": "Static schematic; no simulated behavior.",
+        "trigger": "inspect"
+      },
+      "mechanisms": [],
+      "state_model": {
+        "deterministic": true,
+        "model": "missing"
+      },
+      "transfer_constraints": [
+        "Needs a calibrated flask sequence and explicit concentration/volume units."
+      ]
+    },
+    "resources": [],
+    "tools": []
+  },
+  "crosswalks": [
+    {
+      "canonical_scope": "Amounts, composition, conservation, equations and limiting reagents.",
+      "node": {
+        "id": "ap:Unit 1",
+        "label": "Atomic Structure and Properties",
+        "section": "Unit 1"
+      },
+      "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+      "relation": "partial",
+      "source_id": "source:ap-chemistry-2024",
+      "topic_id": "topic:chemistry-stoichiometry"
+    },
+    {
+      "canonical_scope": "Amounts, composition, conservation, equations and limiting reagents.",
+      "node": {
+        "id": "ap:Unit 4",
+        "label": "Chemical Reactions",
+        "section": "Unit 4"
+      },
+      "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+      "relation": "partial",
+      "source_id": "source:ap-chemistry-2024",
+      "topic_id": "topic:chemistry-stoichiometry"
+    },
+    {
+      "canonical_scope": "Amounts, composition, conservation, equations and limiting reagents.",
+      "node": {
+        "id": "cambridge:2",
+        "label": "Atoms, molecules and stoichiometry",
+        "section": "2"
+      },
+      "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+      "relation": "partial",
+      "source_id": "source:cambridge-9701-2025",
+      "topic_id": "topic:chemistry-stoichiometry"
+    }
+  ],
+  "record": {
+    "canonical_path": "knowledge/examples/chemistry.json",
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "concept_ids": [
+      "concept:chemistry-dilution"
+    ],
+    "failure_modes": [
+      "Needs a calibrated flask sequence and explicit concentration/volume units."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "gap_reason": "Needs a calibrated flask sequence and explicit concentration/volume units.",
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "id": "ex:chemistry-dilution",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "interaction": "inspect",
+    "interaction_model": {
+      "response": "Static schematic; no simulated behavior.",
+      "trigger": "inspect"
+    },
+    "kind": "GAP",
+    "lifecycle": {
+      "collected": false,
+      "reusable": false,
+      "showable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "resource_ids": [],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "state_model": {
+      "deterministic": true,
+      "model": "missing"
+    },
+    "subject_id": "topic:chemistry",
+    "summary": "Needs a calibrated flask sequence and explicit concentration/volume units.",
+    "title": "Volumetric dilution · conserved solute",
+    "tool_choices": [],
+    "topic_ids": [
+      "topic:chemistry-stoichiometry"
+    ],
+    "transfer_constraints": [
+      "Needs a calibrated flask sequence and explicit concentration/volume units."
+    ],
+    "type": "Example",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ]
+  },
+  "relations": [
+    {
+      "source": "ex:chemistry-dilution",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-dilution",
+      "target": "concept:chemistry-dilution",
+      "type": "intended_to_demonstrate"
+    },
+    {
+      "source": "ex:chemistry-dilution",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "topic:chemistry-stoichiometry",
+      "target": "ex:chemistry-dilution",
+      "type": "has_example"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-10",
+      "check_scope": "Original schematic studies; model equations and limitations recorded per Example. No third-party illustrations copied.",
+      "checked_at": "2026-09-10",
+      "id": "source:atlas-studies",
+      "locator": "https://github.com/shhh-hoo/ai-design-resource-bank/tree/9506274daec7c3dcfa7c9ecda2ecb5f7461d011c/app",
+      "locator_type": "repository",
+      "publisher": "AIDRB",
+      "title": "Original Chemistry diagram studies",
+      "type": "Source"
+    },
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-10",
+      "check_scope": "Official linked CED read; unit scope and course-at-a-glance verified. Mapping is editorial, not board endorsement.",
+      "checked_at": "2026-09-10",
+      "id": "source:ap-chemistry-2024",
+      "locator": "https://apcentral.collegeboard.org/media/pdf/ap-chemistry-course-and-exam-description.pdf",
+      "locator_type": "url",
+      "publisher": "College Board",
+      "title": "AP Chemistry Course and Exam Description, effective Fall 2024",
+      "type": "Source"
+    },
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-10",
+      "check_scope": "Official PDF downloaded and text inspected; content overview p10 and mapped sections. Scope mapping is editorial, not board endorsement.",
+      "checked_at": "2026-09-10",
+      "id": "source:cambridge-9701-2025",
+      "locator": "https://www.cambridgeinternational.org/Images/664563-2025-2027-syllabus.pdf",
+      "locator_type": "url",
+      "publisher": "Cambridge International Education",
+      "title": "Chemistry 9701 syllabus 2025–2027",
+      "type": "Source"
+    }
+  ]
+}

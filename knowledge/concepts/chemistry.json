@@ -1,0 +1,722 @@
+[
+  {
+    "id": "concept:chemistry-electron-configuration",
+    "type": "Concept",
+    "title": "Electron configuration",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Nitrogen: 1s² 2s² 2p³; singly occupy degenerate 2p orbitals before pairing.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-isotope-spectrum",
+    "type": "Concept",
+    "title": "Chlorine isotope mass spectrum",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Schematic atomic 35Cl / 37Cl peaks at approximately 3:1; not the Cl₂ molecular-ion spectrum.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-successive-ionisation",
+    "type": "Concept",
+    "title": "Successive ionisation energies",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs sourced successive ionisation data and the shell-boundary jump.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-hydrogen-emission",
+    "type": "Concept",
+    "title": "Hydrogen emission line transitions",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs wavelength-calibrated Balmer lines linked to quantized levels.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-water-geometry",
+    "type": "Concept",
+    "title": "VSEPR geometry",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Bent H₂O, approximately 104.5°; planar schematic omits the 3D lone-pair arrangement.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-ionic-lattice",
+    "type": "Concept",
+    "title": "Ionic lattice",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "A 2D slice of alternating ions; not the full six-coordinate 3D lattice.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-orbital-overlap",
+    "type": "Concept",
+    "title": "σ / π orbital overlap",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Legacy overlap seed lacks orbital phase and symmetry fidelity; a domain-correct example is needed.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-bond-polarity",
+    "type": "Concept",
+    "title": "Bond dipole and molecular polarity",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs signed bond dipoles and a geometry-linked vector sum.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-limiting-reagent",
+    "type": "Concept",
+    "title": "Limiting reagent",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Three H₂ plus one O₂ yield two H₂O with one H₂ left over; amounts are molecular ratios.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-mole-conversion",
+    "type": "Concept",
+    "title": "Mass ↔ amount ↔ particles",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "For 18.0 g water using M = 18.0 g mol⁻¹: 1.00 mol and approximately 6.02 × 10²³ molecules.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-empirical-formula",
+    "type": "Concept",
+    "title": "Combustion data → empirical formula",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs a concrete mass dataset with conserved carbon and hydrogen.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-dilution",
+    "type": "Concept",
+    "title": "Volumetric dilution",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs a calibrated flask sequence and explicit concentration/volume units.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-ideal-gas",
+    "type": "Concept",
+    "title": "Boyle’s law",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "At fixed amount and temperature, PV is constant; ideal-gas model only.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "functional-graph"
+    ]
+  },
+  {
+    "id": "concept:chemistry-hydrogen-bond",
+    "type": "Concept",
+    "title": "Hydrogen bonding",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Dashed O···H interaction is distinct from a solid intramolecular O–H bond.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-phase-diagram",
+    "type": "Concept",
+    "title": "Pressure–temperature phase diagram",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs sourced phase boundaries with correctly signed solid–liquid slope.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-dissolution",
+    "type": "Concept",
+    "title": "NaCl dissolution and hydration shells",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs solvent orientation around each ion, not generic moving particles.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-reaction-profile",
+    "type": "Concept",
+    "title": "Reaction profile",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Compare the activation barrier with the reactant–product enthalpy difference.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "functional-graph"
+    ]
+  },
+  {
+    "id": "concept:chemistry-hess-cycle",
+    "type": "Concept",
+    "title": "Hess cycle",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "ΔH(C→CO) = ΔH(C→CO₂) − ΔH(CO→CO₂), with all equations balanced.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "functional-graph"
+    ]
+  },
+  {
+    "id": "concept:chemistry-born-haber",
+    "type": "Concept",
+    "title": "Born–Haber cycle",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs all atomisation, ionisation, electron-affinity and lattice steps with an explicit lattice sign convention.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-gibbs-energy",
+    "type": "Concept",
+    "title": "Gibbs energy",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Illustrative constant ΔH / ΔS model: ΔG = ΔH − TΔS; not a prediction across phase transitions.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "functional-graph"
+    ]
+  },
+  {
+    "id": "concept:chemistry-first-order",
+    "type": "Concept",
+    "title": "First-order concentration decay",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "A → products: [A] = [A]₀ exp(−kt), constant temperature and one first-order pathway.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "functional-graph"
+    ]
+  },
+  {
+    "id": "concept:chemistry-catalyst-profile",
+    "type": "Concept",
+    "title": "Catalysed vs uncatalysed energy path",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Schematic alternative pathway has a lower barrier and unchanged endpoint enthalpies.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-maxwell-boltzmann",
+    "type": "Concept",
+    "title": "Maxwell–Boltzmann distribution",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs normalized distributions and an activation-energy tail; generic waves do not qualify.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-rate-orders",
+    "type": "Concept",
+    "title": "Initial-rate table → reaction orders",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs an experimental table with independently varied reactants and stated uncertainty.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-dynamic-equilibrium",
+    "type": "Concept",
+    "title": "Dynamic equilibrium",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Forward and reverse rates become equal; concentrations need not be equal.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-equilibrium-expression",
+    "type": "Concept",
+    "title": "Equilibrium expression",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "N₂ + 3H₂ ⇌ 2NH₃; exponents follow stoichiometry in the concentration form.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-composition-shift",
+    "type": "Concept",
+    "title": "Equilibrium composition shift",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs a mass-balanced equilibrium model and temperature-specific K.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-solubility-product",
+    "type": "Concept",
+    "title": "Solubility product",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs ion product versus Ksp with dilution and stoichiometry preserved.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-titration-curve",
+    "type": "Concept",
+    "title": "Strong acid–base titration curve",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "25.0 mL 0.100 M HCl titrated with 0.100 M NaOH at 25 °C; ideal activities.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "functional-graph"
+    ]
+  },
+  {
+    "id": "concept:chemistry-conjugate-pairs",
+    "type": "Concept",
+    "title": "Conjugate pairs",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "NH₃ accepts a proton from H₂O, giving NH₄⁺ and OH⁻.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-buffer",
+    "type": "Concept",
+    "title": "Buffer response",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs mass balance and equilibrium response to added acid/base.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-weak-acid-titration",
+    "type": "Concept",
+    "title": "Weak-acid titration",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs a calibrated curve, buffer region and pH = pKa at half equivalence.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-galvanic-cell",
+    "type": "Concept",
+    "title": "Galvanic cell",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Zn anode oxidizes; electrons flow externally to the Cu cathode; salt bridge closes the ionic circuit.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-oxidation-state",
+    "type": "Concept",
+    "title": "Oxidation states",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "In MnO₄⁻, four O at −2 require Mn at +7 to sum to −1.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-nernst",
+    "type": "Concept",
+    "title": "Cell potential vs concentration",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs specified reaction quotient, electron number and temperature.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-electrolysis",
+    "type": "Concept",
+    "title": "Copper electrolysis",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs charge integration, Faraday stoichiometry and electrode conditions.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-periodic-trends",
+    "type": "Concept",
+    "title": "Period 3",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Qualitative trend includes the Mg→Al and P→S exceptions; no fabricated measurements.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-group-two",
+    "type": "Concept",
+    "title": "Group 2 hydroxide solubility trend",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs sourced solubility values and stated temperature.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-halogen-displacement",
+    "type": "Concept",
+    "title": "Halogen displacement",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs actual species, observations and a balanced ionic equation.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-ligand-exchange",
+    "type": "Concept",
+    "title": "Copper(II) ligand exchange",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs coordination number, charge and solvent-dependent color evidence.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-functional-groups",
+    "type": "Concept",
+    "title": "Functional groups",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Condensed structural formulas compare alcohol and carboxylic acid groups.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-curly-arrow",
+    "type": "Concept",
+    "title": "Curly-arrow mechanism",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Legacy electron-pushing and bond-morph seeds lack a fully specified chemical reaction and charge accounting.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-stereoisomers",
+    "type": "Concept",
+    "title": "E/Z isomerism",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs correct priority assignment and explicit double-bond geometry.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-synthesis-map",
+    "type": "Concept",
+    "title": "Organic synthesis",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs a specific route with reagents, conditions and competing pathways.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-chromatography",
+    "type": "Concept",
+    "title": "Chromatography",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Rf = distance traveled by spot / distance traveled by solvent front, both from the baseline.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-ir-spectrum",
+    "type": "Concept",
+    "title": "IR spectrum",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs a sourced spectrum with wavenumber axis and labeled absorption convention.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-nmr-mapping",
+    "type": "Concept",
+    "title": "NMR spectrum → structure",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs sourced chemical shifts, integration and splitting; no invented spectrum.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  },
+  {
+    "id": "concept:chemistry-mass-fragmentation",
+    "type": "Concept",
+    "title": "Mass spectrum",
+    "subtypes": [
+      "knowledge"
+    ],
+    "summary": "Needs a specific spectrum and chemically valid fragment masses.",
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "grammar": [
+      "symbolic-notation"
+    ]
+  }
+]

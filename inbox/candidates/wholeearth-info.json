@@ -1,0 +1,35 @@
+{
+  "id": "candidate:wholeearth-info",
+  "candidate_kind": "example",
+  "status": "promoted",
+  "discovered_by": "manual",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://wholeearth.info/",
+    "title": "Whole Earth Index"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "A nearly complete publication archive presented as a single legible index across decades, publication families, and individual issues.",
+  "novelty_axes": [
+    "stronger_example",
+    "cross_media_transfer",
+    "new_medium"
+  ],
+  "signals": [
+    "archive as interface",
+    "chronological index",
+    "dense text navigation",
+    "publication hierarchy"
+  ],
+  "notes": "Direct inspection confirmed six major publication groupings with long chronological issue lists from 1968–2002. The reusable value is the index/archive information architecture, not a specific implementation stack.",
+  "decision": {
+    "outcome": "promoted",
+    "rationale": "Fills the high-density editorial/archive benchmark with a real information-heavy interface that stays navigable without converting everything into cards.",
+    "reviewed_by": "wave01-curation",
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:whole-earth-index",
+      "concept:archive-as-interface"
+    ]
+  }
+}

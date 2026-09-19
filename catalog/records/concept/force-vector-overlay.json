@@ -1,0 +1,50 @@
+{
+  "record": {
+    "canonical_path": "registries/frontend-mechanisms.yaml",
+    "evidence": "seed",
+    "id": "concept:force-vector-overlay",
+    "implementation_note": "Derive arrow direction and length from the same state used by the simulation.",
+    "primitives": [
+      "body",
+      "force-arrows",
+      "direction",
+      "magnitude"
+    ],
+    "source_refs": [
+      "source:legacy-mechanisms"
+    ],
+    "subtypes": [
+      "mechanism"
+    ],
+    "summary": "Put forces directly on the object whose motion they explain.",
+    "title": "Force vector overlay",
+    "tool_ids": [
+      "tool:matter-js"
+    ],
+    "type": "Concept",
+    "use_when": "Showing free-body ideas without separating the diagram from the moving system."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:force-vector-overlay",
+      "target": "tool:matter-js",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-mechanisms.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:legacy-mechanisms",
+      "locator": "https://github.com/shhh-hoo/ai-design-resource-bank/blob/main/registries/frontend-mechanisms.yaml",
+      "locator_type": "url",
+      "publisher": "AIDRB",
+      "title": "Legacy mechanism registry",
+      "type": "Source"
+    }
+  ]
+}

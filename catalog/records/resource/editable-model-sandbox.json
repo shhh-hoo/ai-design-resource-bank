@@ -1,0 +1,148 @@
+{
+  "record": {
+    "artifacts": [
+      {
+        "generated": false,
+        "kind": "code",
+        "path": "artifacts/model-store.js",
+        "purpose": "Dependency-free single-source-of-truth model store with validation derivation and subscriptions",
+        "validated": true
+      },
+      {
+        "generated": false,
+        "kind": "example",
+        "path": "artifacts/demo.html",
+        "purpose": "Runnable linked-control and derived-view demonstration",
+        "validated": false
+      }
+    ],
+    "canonical_path": "resources/interaction/editable-model-sandbox/resource.yaml",
+    "domain": "interaction",
+    "fidelity": [
+      "concept",
+      "behavior",
+      "implementation"
+    ],
+    "id": "resource:editable-model-sandbox",
+    "implements": [
+      "concept:editable-model-sandbox"
+    ],
+    "legacy_id": "editable-model-sandbox",
+    "mechanism": {
+      "failure_modes": [
+        "Duplicating state in each view",
+        "Silently correcting invalid input",
+        "Deriving charts from stale control values",
+        "Making reset reconstruct a different model"
+      ],
+      "parameters": [
+        "initial-state",
+        "derive-function",
+        "validate-function"
+      ],
+      "primitives": [
+        "model-state",
+        "validated-edit",
+        "derived-view",
+        "subscriber",
+        "reset"
+      ],
+      "states": [
+        "initial",
+        "edited",
+        "invalid",
+        "reset"
+      ],
+      "summary": "One model store accepts validated edits, derives all outputs from the same state, notifies every view, and provides reset without duplicating state in controls or visualizations."
+    },
+    "notes": "This package is intentionally model-agnostic; domain validity belongs in the supplied validate and derive functions.",
+    "package_path": "resources/interaction/editable-model-sandbox",
+    "related": [
+      "ex:parable-of-polygons",
+      "ex:seeing-theory-basic-probability",
+      "ex:setosa-markov-chains"
+    ],
+    "rights": {
+      "basis": "Original implementation of a generalized editable-model contract. No source code or visual assets from referenced projects are stored.",
+      "license": "MIT",
+      "source_assets_stored": false
+    },
+    "selection_reason": "Preserve one explicit model state across controls, simulation output and derived views so experimentation remains causally legible.",
+    "source_refs": [
+      "source:parable-polygons",
+      "source:seeing-theory-basic-probability",
+      "source:setosa-markov-chains"
+    ],
+    "status": "implemented",
+    "summary": "One model store accepts validated edits, derives all outputs from the same state, notifies every view, and provides reset without duplicating state in controls or visualizations.",
+    "tags": [
+      "model",
+      "sandbox",
+      "controls",
+      "simulation",
+      "linked-state"
+    ],
+    "title": "Editable model sandbox",
+    "type": "Resource"
+  },
+  "relations": [
+    {
+      "source": "ex:parable-of-polygons",
+      "target": "resource:editable-model-sandbox",
+      "type": "yields"
+    },
+    {
+      "source": "ex:seeing-theory-basic-probability",
+      "target": "resource:editable-model-sandbox",
+      "type": "yields"
+    },
+    {
+      "source": "ex:setosa-markov-chains",
+      "target": "resource:editable-model-sandbox",
+      "type": "yields"
+    },
+    {
+      "source": "resource:editable-model-sandbox",
+      "target": "concept:editable-model-sandbox",
+      "type": "implements"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Direct interactive page inspected for drag-and-drop relocation, rule changes, larger simulations and final sandbox. Reuse/licensing note on the page was also inspected.",
+      "checked_at": "2026-09-19",
+      "id": "source:parable-polygons",
+      "locator": "https://ncase.me/polygons/",
+      "locator_type": "url",
+      "publisher": "Vi Hart + Nicky Case",
+      "title": "Parable of the Polygons",
+      "type": "Source"
+    },
+    {
+      "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Official interactive chapter inspected for draggable probability distributions, sampling, expectation and variance. Parent project documentation identifies D3.js as the visualization technology.",
+      "checked_at": "2026-09-19",
+      "id": "source:seeing-theory-basic-probability",
+      "locator": "https://seeing-theory.brown.edu/basic-probability/",
+      "locator_type": "url",
+      "publisher": "Seeing Theory / Brown University",
+      "title": "Seeing Theory — Basic Probability",
+      "type": "Source"
+    },
+    {
+      "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Direct page inspected for animated state transitions, speed controls, editable transition matrices, random/examples controls and invalid-matrix feedback.",
+      "checked_at": "2026-09-19",
+      "id": "source:setosa-markov-chains",
+      "locator": "https://setosa.io/ev/markov-chains/",
+      "locator_type": "url",
+      "publisher": "Setosa / Explained Visually",
+      "title": "Markov Chains — Explained Visually",
+      "type": "Source"
+    }
+  ]
+}

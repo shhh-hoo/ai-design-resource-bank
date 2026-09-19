@@ -1,0 +1,754 @@
+version: 1
+purpose: >-
+  Curated upstream tools for building interactive visual and subject-matter frontends.
+  This is a capability registry, not evidence that every tool has already been distilled
+  into a Resource Package. Agents should consult it before hand-building a mechanism.
+selection_order:
+  - Prefer a core tool whose abstraction matches the task.
+  - Prefer official examples and minimal adapters over custom engines.
+  - Use specialized tools when domain semantics matter more than generic graphics.
+  - Check licensing and embedding/API terms before redistribution or commercial deployment.
+  - When a concrete mechanism is reused, bank that mechanism as a Resource Package.
+
+tools:
+  - id: mafs
+    name: Mafs
+    kind: library
+    tier: core
+    domains: [math, education]
+    capabilities: [function-plot, coordinates, vectors, transforms, movable-points, interactive-math]
+    homepage: https://mafs.dev/
+    docs: https://mafs.dev/guides/get-started/
+    examples: https://mafs.dev/guides/display/functions/
+    ecosystem: [React, SVG]
+    license: MIT
+    use_when: Declarative React-native interactive mathematics, especially teachable 2D graphs and manipulable constructions.
+    avoid_when: Dense general-purpose dashboards, large datasets, or arbitrary 3D scenes.
+    agent_notes: Default first check for an interactive math explanation in React.
+    tags: [math, plotting, interactive, react]
+
+  - id: jsxgraph
+    name: JSXGraph
+    kind: library
+    tier: core
+    domains: [math, geometry, education]
+    capabilities: [function-plot, dynamic-geometry, calculus, statistics, interaction]
+    homepage: https://jsxgraph.org/
+    docs: https://jsxgraph.org/docs/
+    examples: https://jsxgraph.org/showcase/
+    ecosystem: [JavaScript, SVG, Canvas]
+    license: LGPL-3.0-or-later OR MIT
+    rights_note: Verify the license option and distribution obligations for the chosen version.
+    use_when: Dynamic geometry, constructions, loci, functions, sliders, and mathematically constrained interactions.
+    avoid_when: Pure decorative animation or generic app UI.
+    agent_notes: Prefer over generic SVG when geometric dependency rules are the hard part.
+    tags: [math, geometry, plotting, education]
+
+  - id: function-plot
+    name: function-plot
+    kind: library
+    tier: specialized
+    domains: [math]
+    capabilities: [function-plot, scatter, zoom, annotations]
+    homepage: https://github.com/mauriciopoppe/function-plot
+    docs: https://mauriciopoppe.github.io/function-plot/
+    examples: https://mauriciopoppe.github.io/function-plot/
+    ecosystem: [JavaScript, D3, SVG]
+    license: MIT
+    use_when: A compact embeddable 2D function plotter is enough and a full math environment would be excessive.
+    avoid_when: Rich dynamic geometry, complex symbolic manipulation, or 3D.
+    agent_notes: Good small dependency for conventional Cartesian plots.
+    tags: [math, function, plot]
+
+  - id: desmos-api
+    name: Desmos Graphing Calculator API
+    kind: embed-api
+    tier: specialized
+    domains: [math, education]
+    capabilities: [graphing-calculator, expressions, sliders, points, accessibility]
+    homepage: https://www.desmos.com/api/v1.11/docs/index.html
+    docs: https://www.desmos.com/api/v1.11/docs/index.html
+    ecosystem: [JavaScript, embed]
+    license: proprietary-api
+    rights_note: API key and Desmos terms apply; do not treat it as an open-source dependency.
+    use_when: Desmos-quality graphing UX and expression editing are more valuable than owning the renderer.
+    avoid_when: Offline/self-contained OSS distribution or highly custom rendering internals are required.
+    agent_notes: Treat as an external service/embed capability, not source code to copy.
+    tags: [math, calculator, embed]
+
+  - id: geogebra
+    name: GeoGebra Apps Embedding
+    kind: embed-api
+    tier: specialized
+    domains: [math, geometry, education]
+    capabilities: [graphing, geometry, cas, 3d-math, applets, scripting]
+    homepage: https://www.geogebra.org/
+    docs: https://geogebra.github.io/docs/reference/en/GeoGebra_Apps_Embedding/
+    examples: https://www.geogebra.org/maths-apps
+    ecosystem: [JavaScript, embed]
+    license: terms-apply
+    rights_note: GeoGebra software/content licensing and embedding terms are nuanced; verify the intended deployment.
+    use_when: Existing GeoGebra applets or its mature geometry/CAS ecosystem materially reduce implementation work.
+    avoid_when: A lightweight fully-owned renderer or simple custom visual is preferable.
+    agent_notes: Strong for leveraging existing educational constructions; not a generic UI primitive.
+    tags: [math, geometry, cas, 3d, embed]
+
+  - id: mathbox
+    name: MathBox
+    kind: library
+    tier: secondary
+    domains: [math, scientific-visualization]
+    capabilities: [3d-math, webgl-plot, vectors, surfaces, animated-relations]
+    homepage: https://github.com/unconed/mathbox
+    docs: https://github.com/unconed/mathbox
+    examples: https://mathbox.io/
+    ecosystem: [Three.js, WebGL]
+    license: MIT
+    maintenance_note: Powerful but not the default modern choice; check current compatibility before committing to it.
+    use_when: Presentation-like animated 3D mathematical relationships map naturally to MathBox primitives.
+    avoid_when: A new long-lived app needs the most active modern ecosystem or only simple 2D plots.
+    agent_notes: Reference its expressive model even when implementing with Three.js/R3F instead.
+    tags: [math, webgl, 3d]
+
+  - id: cindyjs
+    name: CindyJS
+    kind: library
+    tier: secondary
+    domains: [math, geometry, physics, education]
+    capabilities: [dynamic-geometry, simulation, scripting, interactive-math]
+    homepage: https://cindyjs.org/
+    docs: https://cindyjs.org/ref/
+    examples: https://cindyjs.org/gallery/
+    ecosystem: [JavaScript, WebGL]
+    license: Apache-2.0
+    use_when: Dynamic geometry and mathematical/physical experimentation need an integrated scripting environment.
+    avoid_when: Conventional React UI composition is the dominant requirement.
+    agent_notes: Specialized educational engine; compare with JSXGraph before choosing.
+    tags: [math, geometry, simulation]
+
+  - id: d3
+    name: D3
+    kind: library
+    tier: core
+    domains: [data-visualization, scientific-visualization]
+    capabilities: [scales, axes, shapes, transitions, force-layout, hierarchy, geography, interaction]
+    homepage: https://d3js.org/
+    docs: https://d3js.org/getting-started
+    examples: https://observablehq.com/@d3/gallery
+    ecosystem: [JavaScript, SVG, Canvas]
+    license: ISC
+    use_when: The visualization grammar or interaction is bespoke and low-level control is valuable.
+    avoid_when: A standard chart can be expressed much faster with Plot, Vega-Lite, Plotly, or ECharts.
+    agent_notes: Do not reach for D3 just because a visualization exists; use it when its primitives are actually needed.
+    tags: [data-viz, bespoke, svg, layout]
+
+  - id: observable-plot
+    name: Observable Plot
+    kind: library
+    tier: core
+    domains: [data-visualization, scientific-visualization]
+    capabilities: [statistical-chart, marks, scales, transforms, facets, projections]
+    homepage: https://observablehq.com/plot/
+    docs: https://observablehq.com/plot/what-is-plot
+    examples: https://observablehq.com/@observablehq/plot-gallery
+    ecosystem: [JavaScript, D3, SVG]
+    license: ISC
+    use_when: Concise, high-quality exploratory or explanatory statistical graphics are needed without hand-authoring D3 primitives.
+    avoid_when: Highly custom node editors, game-like interaction, or 3D graphics.
+    agent_notes: Default first check for custom-looking but fundamentally data-driven 2D charts.
+    tags: [data-viz, charts, statistical]
+
+  - id: vega-lite
+    name: Vega-Lite
+    kind: declarative-grammar
+    tier: core
+    domains: [data-visualization, scientific-visualization]
+    capabilities: [charts, layered-views, faceting, transforms, interaction, maps]
+    homepage: https://vega.github.io/vega-lite/
+    docs: https://vega.github.io/vega-lite/docs/
+    examples: https://vega.github.io/vega-lite/examples/
+    ecosystem: [JSON, Vega]
+    license: BSD-3-Clause
+    use_when: A deterministic declarative visualization specification is useful for AI generation, serialization, and reproducibility.
+    avoid_when: Pixel-level bespoke art direction or non-data-centric interactions dominate.
+    agent_notes: Particularly AI-digestible because the visualization is a structured spec rather than imperative drawing code.
+    tags: [data-viz, declarative, spec]
+
+  - id: plotly-js
+    name: Plotly.js
+    kind: library
+    tier: core
+    domains: [data-visualization, scientific-visualization, engineering]
+    capabilities: [charts, 3d-surfaces, contour, heatmap, ternary, scientific-plots, interaction]
+    homepage: https://plotly.com/javascript/
+    docs: https://plotly.com/javascript/reference/
+    examples: https://plotly.com/javascript/
+    ecosystem: [JavaScript, SVG, WebGL]
+    license: MIT
+    use_when: Scientific/engineering charts, especially 3D surfaces, contours, ternary plots, heatmaps, and rich built-in interactions.
+    avoid_when: Tiny bundles, a strongly bespoke visual identity, or custom scene semantics are the priority.
+    agent_notes: Default first check for scientific chart types before implementing them manually.
+    tags: [scientific, charts, 3d, engineering]
+
+  - id: echarts
+    name: Apache ECharts
+    kind: library
+    tier: core
+    domains: [data-visualization, dashboards]
+    capabilities: [charts, maps, graph, tree, sankey, animation, large-data, interaction]
+    homepage: https://echarts.apache.org/
+    docs: https://echarts.apache.org/en/option.html
+    examples: https://echarts.apache.org/examples/en/index.html
+    ecosystem: [JavaScript, Canvas, SVG]
+    license: Apache-2.0
+    use_when: Many polished chart types, dashboard interactions, animation, and large-data rendering are needed quickly.
+    avoid_when: The visual must behave like a custom simulation or the DOM/SVG primitives need direct control.
+    agent_notes: Strong broad default for product dashboards and rich conventional charting.
+    tags: [charts, dashboard, graph, animation]
+
+  - id: mathlive
+    name: MathLive
+    kind: web-component
+    tier: core
+    domains: [math, education]
+    capabilities: [math-input, latex-editor, virtual-keyboard, mathjson]
+    homepage: https://mathlive.io/
+    docs: https://mathlive.io/mathfield/
+    ecosystem: [Web Components, LaTeX, MathJSON]
+    license: MIT
+    use_when: Users need to type/edit mathematical notation rather than only render it.
+    avoid_when: Static formula rendering is sufficient.
+    agent_notes: Pair with a plotting or assessment engine when expression input is needed.
+    tags: [math, input, latex]
+
+  - id: katex
+    name: KaTeX
+    kind: renderer
+    tier: core
+    domains: [math, education]
+    capabilities: [latex-rendering, server-rendering]
+    homepage: https://katex.org/
+    docs: https://katex.org/docs/api
+    ecosystem: [JavaScript, HTML, CSS]
+    license: MIT
+    use_when: Fast static or mostly-static TeX rendering with a small predictable runtime is needed.
+    avoid_when: Broad MathML/AsciiMath input or MathJax's richer accessibility/integration model is required.
+    agent_notes: Default for straightforward formula rendering.
+    tags: [math, latex, typesetting]
+
+  - id: mathjax
+    name: MathJax
+    kind: renderer
+    tier: specialized
+    domains: [math, accessibility, education]
+    capabilities: [tex, mathml, asciimath, html-output, svg-output, accessibility]
+    homepage: https://www.mathjax.org/
+    docs: https://docs.mathjax.org/
+    ecosystem: [JavaScript, TeX, MathML, SVG]
+    license: Apache-2.0
+    use_when: Input-format breadth, accessibility, or MathML support matters more than minimal runtime simplicity.
+    avoid_when: KaTeX already covers a simple static TeX use case.
+    agent_notes: Prefer when accessibility and standards interoperability are explicit requirements.
+    tags: [math, accessibility, mathml]
+
+  - id: molstar
+    name: Mol*
+    kind: domain-viewer
+    tier: core
+    domains: [chemistry, structural-biology]
+    capabilities: [molecular-3d, protein-structure, trajectories, selections, annotations]
+    homepage: https://molstar.org/
+    docs: https://molstar.org/viewer-docs/
+    examples: https://molstar.org/viewer/
+    ecosystem: [TypeScript, WebGL]
+    license: MIT
+    use_when: Serious interactive 3D molecular/macromolecular structure visualization is required.
+    avoid_when: Only a small 2D chemical structure or reaction scheme is needed.
+    agent_notes: Prefer domain semantics over rebuilding molecular rendering with raw Three.js.
+    tags: [chemistry, molecule, 3d, biology]
+
+  - id: rdkit-js
+    name: RDKit.js
+    kind: domain-toolkit
+    tier: core
+    domains: [chemistry, cheminformatics]
+    capabilities: [smiles, smarts, 2d-depiction, substructure, highlighting, descriptors]
+    homepage: https://www.rdkitjs.com/
+    docs: https://www.rdkitjs.com/
+    ecosystem: [WebAssembly, JavaScript, SVG, Canvas]
+    license: BSD-3-Clause
+    use_when: Chemical structure semantics, parsing, depiction, substructure matching, or cheminformatics logic is needed in-browser.
+    avoid_when: A purely decorative molecule illustration is enough.
+    agent_notes: Default first check for chemically correct 2D structure logic.
+    tags: [chemistry, smiles, structure, wasm]
+
+  - id: 3dmol-js
+    name: 3Dmol.js
+    kind: domain-viewer
+    tier: specialized
+    domains: [chemistry, structural-biology]
+    capabilities: [molecular-3d, surfaces, styles, selections]
+    homepage: https://3dmol.csb.pitt.edu/
+    docs: https://3dmol.csb.pitt.edu/doc/
+    ecosystem: [JavaScript, WebGL]
+    license: BSD-3-Clause
+    use_when: A focused browser molecular viewer is needed with a relatively direct JavaScript API.
+    avoid_when: Mol*'s richer structural-biology ecosystem is required.
+    agent_notes: Compare with Mol* on dataset size, UX, and required domain features.
+    tags: [chemistry, molecule, webgl]
+
+  - id: ketcher
+    name: Ketcher
+    kind: domain-editor
+    tier: specialized
+    domains: [chemistry, cheminformatics]
+    capabilities: [chemical-structure-editor, reactions, templates, smiles]
+    homepage: https://lifescience.opensource.epam.com/ketcher/
+    docs: https://lifescience.opensource.epam.com/ketcher/
+    ecosystem: [React, TypeScript]
+    license: Apache-2.0
+    use_when: Users must draw or edit chemical structures/reactions interactively.
+    avoid_when: Read-only depiction or simple formula rendering is enough.
+    agent_notes: Treat chemical editing as a domain editor problem, not generic SVG dragging.
+    tags: [chemistry, editor, structure]
+
+  - id: matter-js
+    name: Matter.js
+    kind: physics-engine
+    tier: core
+    domains: [physics, simulation, creative-coding]
+    capabilities: [rigid-body-2d, collision, constraints, gravity, friction]
+    homepage: https://brm.io/matter-js/
+    docs: https://brm.io/matter-js/docs/
+    examples: https://brm.io/matter-js/demo/
+    ecosystem: [JavaScript, Canvas]
+    license: MIT
+    use_when: 2D rigid-body physics, playful interactions, falling/stacking objects, constraints, or collision-driven UI effects.
+    avoid_when: Accurate scientific solvers, soft-body/fluids, or 3D dynamics are required.
+    agent_notes: Good interaction physics engine; do not imply scientific numerical accuracy without validation.
+    tags: [physics, 2d, collision, interaction]
+
+  - id: rapier
+    name: Rapier
+    kind: physics-engine
+    tier: core
+    domains: [physics, simulation, 3d]
+    capabilities: [rigid-body-2d, rigid-body-3d, collision, joints, raycasting]
+    homepage: https://rapier.rs/
+    docs: https://rapier.rs/docs/
+    ecosystem: [Rust, WebAssembly, JavaScript]
+    license: Apache-2.0
+    use_when: High-performance 2D/3D rigid-body physics is required, especially with Three.js/R3F.
+    avoid_when: A tiny 2D interaction is simpler with Matter.js or deterministic bespoke motion.
+    agent_notes: Default first check for performant 3D physics on the web.
+    tags: [physics, wasm, 3d]
+
+  - id: p5js
+    name: p5.js
+    kind: creative-coding-library
+    tier: core
+    domains: [creative-coding, education, generative-art, simulation]
+    capabilities: [2d-drawing, webgl, animation-loop, particles, vectors, shaders, interaction]
+    homepage: https://p5js.org/
+    docs: https://p5js.org/reference/
+    examples: https://p5js.org/examples/
+    ecosystem: [JavaScript, Canvas, WebGL]
+    license: LGPL-2.1
+    use_when: Rapidly prototyping visual algorithms, particles, procedural drawings, or teachable simulations.
+    avoid_when: A production component system needs deep React integration and conventional DOM accessibility.
+    agent_notes: Its examples are especially valuable as algorithm references even when final code uses another renderer.
+    tags: [creative-coding, particles, simulation, education]
+
+  - id: falstad-circuitjs
+    name: CircuitJS / Falstad Circuit Simulator
+    kind: simulator
+    tier: specialized
+    domains: [physics, electronics, education]
+    capabilities: [circuit-simulation, interactive-electronics, embedding]
+    homepage: https://www.falstad.com/circuit/
+    docs: https://www.falstad.com/circuit/doc/js-interface.html
+    ecosystem: [JavaScript, embed]
+    license: GPL-family-and-project-terms
+    rights_note: Verify the exact CircuitJS source/license and embedding constraints before redistribution.
+    use_when: Interactive circuit behavior is the subject matter and an existing simulator can be embedded or studied.
+    avoid_when: Only a static circuit diagram is needed.
+    agent_notes: Prefer validated simulation over faking electrical behavior with animation.
+    tags: [physics, circuits, simulation]
+
+  - id: svgjs
+    name: SVG.js
+    kind: graphics-library
+    tier: core
+    domains: [graphics, diagrams, education]
+    capabilities: [svg-dom, animation, gradients, masks, clipping, paths, text]
+    homepage: https://svgjs.dev/
+    docs: https://svgjs.dev/docs/3.2/
+    ecosystem: [JavaScript, SVG]
+    license: MIT
+    use_when: Direct SVG construction/manipulation is needed without D3's data-centric model.
+    avoid_when: Thousands of continuously moving sprites or 3D scenes are required.
+    agent_notes: Strong default for explanatory vector diagrams with controllable DOM geometry.
+    tags: [svg, vector, diagram]
+
+  - id: paperjs
+    name: Paper.js
+    kind: graphics-library
+    tier: specialized
+    domains: [graphics, computational-geometry]
+    capabilities: [vector-geometry, paths, boolean-ops, hit-testing, intersections, simplification]
+    homepage: https://paperjs.org/
+    docs: https://paperjs.org/reference/
+    examples: https://paperjs.org/examples/
+    ecosystem: [JavaScript, Canvas]
+    license: MIT
+    use_when: Vector path mathematics and computational geometry are harder than the UI itself.
+    avoid_when: Simple SVG DOM drawing or GPU-heavy sprite scenes dominate.
+    agent_notes: Choose for path operations, not merely because the output is vector-like.
+    tags: [vector, geometry, canvas]
+
+  - id: roughjs
+    name: Rough.js
+    kind: graphics-library
+    tier: specialized
+    domains: [graphics, education, illustration]
+    capabilities: [hand-drawn-lines, shapes, svg-paths, canvas, svg]
+    homepage: https://roughjs.com/
+    docs: https://github.com/rough-stuff/rough/wiki
+    ecosystem: [JavaScript, Canvas, SVG]
+    license: MIT
+    use_when: Hand-drawn/sketch rendering communicates an informal explanatory or diagrammatic style.
+    avoid_when: Precise technical drafting or neutral product UI is required.
+    agent_notes: A rendering treatment, not a layout or diagram engine.
+    tags: [sketch, hand-drawn, diagram]
+
+  - id: rough-notation
+    name: Rough Notation
+    kind: annotation-library
+    tier: specialized
+    domains: [education, text, presentation]
+    capabilities: [underline, highlight, box, circle, strike-through, animated-annotation]
+    homepage: https://roughnotation.com/
+    docs: https://roughnotation.com/
+    ecosystem: [JavaScript, SVG]
+    license: MIT
+    use_when: Animated emphasis around text/formulas should look hand-annotated rather than like generic CSS highlighting.
+    avoid_when: Dense persistent annotations or exact technical overlays are needed.
+    agent_notes: Useful micro-primitive for teaching emphasis.
+    tags: [annotation, highlight, education]
+
+  - id: konva
+    name: Konva
+    kind: canvas-library
+    tier: core
+    domains: [graphics, editors, whiteboards]
+    capabilities: [scene-graph, drag-drop, transforms, hit-testing, canvas-events, serialization]
+    homepage: https://konvajs.org/
+    docs: https://konvajs.org/docs/
+    examples: https://konvajs.org/docs/sandbox/
+    ecosystem: [JavaScript, Canvas, React]
+    license: MIT
+    use_when: Building an interactive 2D editor, whiteboard, annotator, or draggable canvas with many selectable shapes.
+    avoid_when: Pure data visualization, mathematical dependency graphs, or GPU sprite workloads dominate.
+    agent_notes: Default first check for editor-like 2D canvas interaction.
+    tags: [canvas, editor, whiteboard]
+
+  - id: pixijs
+    name: PixiJS
+    kind: rendering-engine
+    tier: core
+    domains: [graphics, games, simulation, creative-coding]
+    capabilities: [gpu-2d, sprites, particles, filters, meshes, text, interaction]
+    homepage: https://pixijs.com/
+    docs: https://pixijs.com/8.x/guides
+    examples: https://pixijs.com/8.x/examples
+    ecosystem: [JavaScript, WebGL, WebGPU]
+    license: MIT
+    use_when: High-performance 2D rendering, sprites, particles, filters, or large animated scenes exceed DOM/SVG comfort.
+    avoid_when: Semantic DOM accessibility or simple diagram manipulation matters more than render throughput.
+    agent_notes: Use for a scene renderer, not as a replacement for ordinary component UI.
+    tags: [2d, gpu, particles, rendering]
+
+  - id: threejs
+    name: Three.js
+    kind: rendering-engine
+    tier: core
+    domains: [3d, scientific-visualization, creative-coding]
+    capabilities: [webgl, webgpu, geometry, materials, shaders, cameras, postprocessing, animation]
+    homepage: https://threejs.org/
+    docs: https://threejs.org/docs/
+    examples: https://threejs.org/examples/
+    ecosystem: [JavaScript, WebGL, WebGPU]
+    license: MIT
+    use_when: Custom 3D scenes, shaders, spatial visualizations, WebGL/WebGPU rendering, or nontrivial camera work is needed.
+    avoid_when: A domain-specific viewer such as Mol* or Cesium already solves the hard semantics.
+    agent_notes: Check official examples before inventing shader/camera/loader patterns.
+    tags: [3d, webgl, webgpu, shaders]
+
+  - id: react-three-fiber
+    name: React Three Fiber
+    kind: framework-adapter
+    tier: core
+    domains: [3d, react]
+    capabilities: [react-threejs, declarative-scene, hooks, composition]
+    homepage: https://r3f.docs.pmnd.rs/
+    docs: https://r3f.docs.pmnd.rs/getting-started/introduction
+    ecosystem: [React, Three.js]
+    license: MIT
+    use_when: A Three.js scene lives inside a React product and component/state composition is valuable.
+    avoid_when: A standalone imperative Three.js scene is simpler or React is absent.
+    agent_notes: Prefer R3F for React integration; still consult Three.js examples for underlying rendering techniques.
+    tags: [3d, react, threejs]
+
+  - id: motion
+    name: Motion
+    kind: animation-library
+    tier: core
+    domains: [animation, ui, react]
+    capabilities: [spring, gesture, layout-animation, scroll, presence, svg, threejs]
+    homepage: https://motion.dev/
+    docs: https://motion.dev/docs
+    examples: https://motion.dev/examples
+    ecosystem: [JavaScript, React, Vue]
+    license: MIT-core-with-paid-content
+    rights_note: Core library is open source; examples/templates may have their own access or product terms.
+    use_when: Product UI animation, gestures, layout transitions, springs, scroll-linked motion, and React composition.
+    avoid_when: A timeline authoring UI or deep shader/scene choreography is the core requirement.
+    agent_notes: Default first check for component-level UI motion.
+    tags: [animation, motion, react, ui]
+
+  - id: gsap
+    name: GSAP
+    kind: animation-library
+    tier: core
+    domains: [animation, ui, creative-web]
+    capabilities: [timeline, scrolltrigger, svg, transforms, sequencing, scrub, pin]
+    homepage: https://gsap.com/
+    docs: https://gsap.com/docs/v3/
+    examples: https://gsap.com/demos/
+    ecosystem: [JavaScript, DOM, SVG, Canvas, WebGL]
+    license: standard-no-charge-license-with-terms
+    rights_note: GSAP licensing changed after Webflow acquisition; verify current terms for the intended use rather than assuming MIT.
+    use_when: Precise multi-step choreography, timelines, scroll-driven sequences, or cross-renderer animation orchestration is needed.
+    avoid_when: A few simple component transitions are clearer with Motion or CSS.
+    agent_notes: Default first check for complex timeline/scroll choreography.
+    tags: [animation, timeline, scroll]
+
+  - id: animejs
+    name: Anime.js
+    kind: animation-library
+    tier: specialized
+    domains: [animation, ui]
+    capabilities: [timeline, svg, text, draggable, layout, easing, waapi]
+    homepage: https://animejs.com/
+    docs: https://animejs.com/documentation/
+    ecosystem: [JavaScript, DOM, SVG, WAAPI]
+    license: MIT
+    use_when: Framework-agnostic timeline/SVG/text animation with a compact API fits better than React-specific motion.
+    avoid_when: Deep React layout/presence semantics or a visual keyframe editor is required.
+    agent_notes: Good general alternative to GSAP/Motion; select based on required primitives, not preference.
+    tags: [animation, svg, timeline]
+
+  - id: theatrejs
+    name: Theatre.js
+    kind: animation-authoring-tool
+    tier: specialized
+    domains: [animation, 3d, creative-web]
+    capabilities: [keyframes, sequencing, visual-editor, threejs, react-three-fiber, html, svg]
+    homepage: https://www.theatrejs.com/
+    docs: https://www.theatrejs.com/docs/latest
+    ecosystem: [JavaScript, Three.js, React]
+    license: Apache-2.0
+    use_when: Designers/developers benefit from visually authoring keyframes and tuning complex web/3D sequences.
+    avoid_when: Motion must remain entirely code-generated or only simple transitions exist.
+    agent_notes: Strong bridge between code and timeline authoring.
+    tags: [animation, keyframes, 3d, editor]
+
+  - id: motion-canvas
+    name: Motion Canvas
+    kind: animation-authoring-framework
+    tier: specialized
+    domains: [education, explanatory-animation, video]
+    capabilities: [procedural-animation, timeline, audio-sync, code-driven-scenes, vector-graphics]
+    homepage: https://motioncanvas.io/
+    docs: https://motioncanvas.io/docs/
+    ecosystem: [TypeScript, Vite, Canvas]
+    license: MIT
+    use_when: Programmatic explanatory animations or educational motion sequences need reproducible code plus a timeline/editor workflow.
+    avoid_when: The output is ordinary in-page UI motion rather than a composed scene/video-like sequence.
+    agent_notes: Particularly relevant for animated explanations, diagrams, equations, and lesson visuals.
+    tags: [education, animation, procedural, video]
+
+  - id: remotion
+    name: Remotion
+    kind: video-framework
+    tier: specialized
+    domains: [video, animation, react]
+    capabilities: [programmatic-video, react-scenes, rendering, studio, templates]
+    homepage: https://www.remotion.dev/
+    docs: https://www.remotion.dev/docs/
+    ecosystem: [React, TypeScript, video]
+    license: terms-apply
+    rights_note: Current licensing depends on organization/use case, including some automated rendering scenarios; verify before adoption.
+    use_when: The deliverable is rendered video/motion graphics and React/code should be the source of truth.
+    avoid_when: Only browser-resident interaction or animation is needed.
+    agent_notes: Do not classify as a universally free MIT dependency without checking current licensing.
+    tags: [video, react, animation]
+
+  - id: react-flow
+    name: React Flow
+    kind: diagram-framework
+    tier: core
+    domains: [diagrams, node-editors, workflows]
+    capabilities: [nodes, edges, handles, pan-zoom, selection, subflows, layout-integration, whiteboard]
+    homepage: https://reactflow.dev/
+    docs: https://reactflow.dev/learn
+    examples: https://reactflow.dev/examples
+    ecosystem: [React, SVG, HTML]
+    license: MIT-core-with-pro-examples
+    rights_note: Core React Flow is MIT; some Pro examples/components require a subscription/license.
+    use_when: Interactive node-edge editors, process maps, concept maps, workflow builders, or spatial teaching canvases.
+    avoid_when: Static flowcharts are enough or graph-analysis/large-network rendering is dominant.
+    agent_notes: Default first check for editable node-based React interfaces.
+    tags: [graph, diagram, editor, react]
+
+  - id: antv-g6
+    name: AntV G6
+    kind: graph-engine
+    tier: core
+    domains: [graphs, networks, data-visualization]
+    capabilities: [graph-layout, network-analysis, interaction, animation, large-graphs, webgpu]
+    homepage: https://g6.antv.antgroup.com/en
+    docs: https://g6.antv.antgroup.com/en/manual/introduction
+    examples: https://g6.antv.antgroup.com/en/examples
+    ecosystem: [JavaScript, Canvas, SVG, WebGL, WebGPU]
+    license: MIT
+    use_when: Relationship/network visualization needs graph layouts, many nodes/edges, graph-specific behaviors, or large-data performance.
+    avoid_when: The user is editing a workflow/node canvas rather than analyzing or viewing a graph.
+    agent_notes: Compare with React Flow — G6 for graph visualization; React Flow for node-editor product interaction.
+    tags: [graph, network, layout, large-data]
+
+  - id: cytoscapejs
+    name: Cytoscape.js
+    kind: graph-engine
+    tier: specialized
+    domains: [graphs, networks, scientific-visualization]
+    capabilities: [graph-layout, graph-theory, styling, interaction, analysis]
+    homepage: https://js.cytoscape.org/
+    docs: https://js.cytoscape.org/#documentation
+    ecosystem: [JavaScript, Canvas]
+    license: MIT
+    use_when: Graph-theoretic operations and network analysis matter alongside interactive visualization.
+    avoid_when: A simple editable flow UI or static diagram is sufficient.
+    agent_notes: Strong scientific/network graph option with analytical semantics.
+    tags: [graph, network, analysis]
+
+  - id: mermaid
+    name: Mermaid
+    kind: diagram-grammar
+    tier: core
+    domains: [diagrams, documentation]
+    capabilities: [flowchart, sequence, class, state, er, gantt, timeline, mindmap]
+    homepage: https://mermaid.js.org/
+    docs: https://mermaid.js.org/intro/
+    ecosystem: [text, SVG]
+    license: MIT
+    use_when: A diagram should be generated deterministically from compact text and does not need freeform direct manipulation.
+    avoid_when: Fine visual art direction or rich node editing is required.
+    agent_notes: Default first check for documentation/process diagrams generated by AI.
+    tags: [diagram, text-to-diagram, documentation]
+
+  - id: tldraw
+    name: tldraw
+    kind: canvas-sdk
+    tier: specialized
+    domains: [whiteboards, diagrams, editors]
+    capabilities: [infinite-canvas, selection, transforms, shapes, camera, persistence, collaboration]
+    homepage: https://tldraw.dev/
+    docs: https://tldraw.dev/docs
+    ecosystem: [React, TypeScript, Canvas]
+    license: terms-apply
+    rights_note: Source and SDK are available, but current commercial/production licensing terms should be verified before adoption.
+    use_when: A polished infinite-canvas/whiteboard product surface is itself the product requirement.
+    avoid_when: A small fixed diagram or graph viewer is enough.
+    agent_notes: Treat as an application SDK with licensing considerations, not a tiny drawing utility.
+    tags: [canvas, whiteboard, editor]
+
+  - id: maplibre-gl-js
+    name: MapLibre GL JS
+    kind: map-engine
+    tier: core
+    domains: [maps, geospatial]
+    capabilities: [vector-tiles, webgl-map, globe, camera, layers, styling, interaction]
+    homepage: https://maplibre.org/maplibre-gl-js/docs/
+    docs: https://maplibre.org/maplibre-gl-js/docs/
+    examples: https://maplibre.org/maplibre-gl-js/docs/examples/
+    ecosystem: [TypeScript, WebGL]
+    license: BSD-3-Clause
+    use_when: Interactive slippy/vector maps with custom layers and styling are required without a proprietary renderer lock-in.
+    avoid_when: Full 3D globe/terrain/3D Tiles semantics are the core need.
+    agent_notes: Default first check for conventional modern interactive maps.
+    tags: [map, geospatial, vector-tiles]
+
+  - id: cesiumjs
+    name: CesiumJS
+    kind: geospatial-engine
+    tier: core
+    domains: [maps, geospatial, 3d, earth-science]
+    capabilities: [3d-globe, terrain, 3d-tiles, gltf, czml, time-dynamic-data]
+    homepage: https://cesium.com/platform/cesiumjs/
+    docs: https://cesium.com/learn/cesiumjs/ref-doc/
+    examples: https://cesium.com/learn/cesiumjs-sandcastle/
+    ecosystem: [JavaScript, WebGL]
+    license: Apache-2.0-core
+    rights_note: CesiumJS core is open source; hosted Cesium ion services/assets have separate terms.
+    use_when: Globe-scale 3D geospatial scenes, terrain, 3D Tiles, satellites, trajectories, or time-dynamic Earth data are required.
+    avoid_when: A conventional 2D vector map is sufficient.
+    agent_notes: Prefer over raw Three.js when geospatial coordinates/terrain/tiles are the hard problem.
+    tags: [map, globe, 3d, geospatial]
+
+  - id: deckgl
+    name: deck.gl
+    kind: geospatial-visualization-library
+    tier: specialized
+    domains: [maps, geospatial, data-visualization]
+    capabilities: [large-data-layers, gpu-aggregation, map-overlays, arcs, trips, point-clouds]
+    homepage: https://deck.gl/
+    docs: https://deck.gl/docs
+    examples: https://deck.gl/examples
+    ecosystem: [JavaScript, WebGL, React]
+    license: MIT
+    use_when: Large geospatial datasets and GPU-accelerated visual layers sit on top of maps.
+    avoid_when: The problem is primarily basemap navigation rather than data-layer rendering.
+    agent_notes: Often pair with MapLibre rather than treating it as a basemap replacement.
+    tags: [map, geospatial, gpu, data-viz]
+
+  - id: leaflet
+    name: Leaflet
+    kind: map-library
+    tier: secondary
+    domains: [maps, geospatial]
+    capabilities: [2d-map, markers, popups, tile-layers, plugins]
+    homepage: https://leafletjs.com/
+    docs: https://leafletjs.com/reference.html
+    examples: https://leafletjs.com/examples.html
+    ecosystem: [JavaScript, DOM, Canvas, SVG]
+    license: BSD-2-Clause
+    use_when: Lightweight conventional 2D maps and a broad plugin ecosystem are enough.
+    avoid_when: WebGL vector styling, globe, heavy 3D, or very large GPU layers are required.
+    agent_notes: Still useful for simple map products; MapLibre is often the stronger modern default for vector-map work.
+    tags: [map, lightweight, 2d]
+
+  - id: globe-gl
+    name: Globe.GL
+    kind: visualization-component
+    tier: specialized
+    domains: [geospatial, 3d, data-visualization]
+    capabilities: [interactive-globe, arcs, points, polygons, labels, custom-objects]
+    homepage: https://globe.gl/
+    docs: https://github.com/vasturiano/globe.gl
+    ecosystem: [Three.js, WebGL]
+    license: MIT
+    use_when: A visually compelling data globe is needed without Cesium's full geospatial platform complexity.
+    avoid_when: Accurate terrain/3D Tiles/geospatial engineering is required.
+    agent_notes: Good expressive globe primitive; not a GIS engine.
+    tags: [globe, 3d, data-viz]

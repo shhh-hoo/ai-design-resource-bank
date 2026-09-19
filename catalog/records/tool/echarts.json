@@ -1,0 +1,62 @@
+{
+  "record": {
+    "agent_notes": "Strong broad default for product dashboards and rich conventional charting.",
+    "avoid_when": "The visual must behave like a custom simulation or the DOM/SVG primitives need direct control.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "charts",
+      "maps",
+      "graph",
+      "tree",
+      "sankey",
+      "animation",
+      "large-data",
+      "interaction"
+    ],
+    "docs": "https://echarts.apache.org/en/option.html",
+    "domains": [
+      "data-visualization",
+      "dashboards"
+    ],
+    "ecosystem": [
+      "JavaScript",
+      "Canvas",
+      "SVG"
+    ],
+    "examples": "https://echarts.apache.org/examples/en/index.html",
+    "homepage": "https://echarts.apache.org/",
+    "id": "tool:echarts",
+    "legacy_kind": "library",
+    "license": "Apache-2.0",
+    "source_refs": [
+      "source:tool-echarts"
+    ],
+    "subtype": "library",
+    "summary": "Many polished chart types, dashboard interactions, animation, and large-data rendering are needed quickly.",
+    "tags": [
+      "charts",
+      "dashboard",
+      "graph",
+      "animation"
+    ],
+    "tier": "core",
+    "title": "Apache ECharts",
+    "type": "Tool",
+    "use_when": "Many polished chart types, dashboard interactions, animation, and large-data rendering are needed quickly."
+  },
+  "relations": [],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-echarts",
+      "locator": "https://echarts.apache.org/en/option.html",
+      "locator_type": "url",
+      "publisher": "Apache ECharts",
+      "title": "Apache ECharts official documentation",
+      "type": "Source"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "record": {
+    "agent_notes": "Default first check for custom-looking but fundamentally data-driven 2D charts.",
+    "avoid_when": "Highly custom node editors, game-like interaction, or 3D graphics.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "statistical-chart",
+      "marks",
+      "scales",
+      "transforms",
+      "facets",
+      "projections"
+    ],
+    "docs": "https://observablehq.com/plot/what-is-plot",
+    "domains": [
+      "data-visualization",
+      "scientific-visualization"
+    ],
+    "ecosystem": [
+      "JavaScript",
+      "D3",
+      "SVG"
+    ],
+    "examples": "https://observablehq.com/@observablehq/plot-gallery",
+    "homepage": "https://observablehq.com/plot/",
+    "id": "tool:observable-plot",
+    "legacy_kind": "library",
+    "license": "ISC",
+    "source_refs": [
+      "source:tool-observable-plot"
+    ],
+    "subtype": "library",
+    "summary": "Concise, high-quality exploratory or explanatory statistical graphics are needed without hand-authoring D3 primitives.",
+    "tags": [
+      "data-viz",
+      "charts",
+      "statistical"
+    ],
+    "tier": "core",
+    "title": "Observable Plot",
+    "type": "Tool",
+    "use_when": "Concise, high-quality exploratory or explanatory statistical graphics are needed without hand-authoring D3 primitives."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-evidence-comparison",
+      "target": "tool:observable-plot",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-optimization-tradeoff",
+      "target": "tool:observable-plot",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-statistical-distribution",
+      "target": "tool:observable-plot",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-time-sequence",
+      "target": "tool:observable-plot",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-observable-plot",
+      "locator": "https://observablehq.com/plot/what-is-plot",
+      "locator_type": "url",
+      "publisher": "Observable Plot",
+      "title": "Observable Plot official documentation",
+      "type": "Source"
+    }
+  ]
+}

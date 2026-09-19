@@ -1,0 +1,179 @@
+{
+  "ai_build": {
+    "availability": "missing",
+    "example_id": "ex:chemistry-halogen-displacement",
+    "method": {
+      "concepts": [
+        "concept:chemistry-halogen-displacement"
+      ],
+      "failure_modes": [
+        "Needs actual species, observations and a balanced ionic equation."
+      ],
+      "fidelity_constraints": [
+        "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+      ],
+      "grammar": [
+        "symbolic-notation"
+      ],
+      "interaction_model": {
+        "response": "Static schematic; no simulated behavior.",
+        "trigger": "inspect"
+      },
+      "mechanisms": [],
+      "state_model": {
+        "deterministic": true,
+        "model": "missing"
+      },
+      "transfer_constraints": [
+        "Needs actual species, observations and a balanced ionic equation."
+      ]
+    },
+    "resources": [],
+    "tools": []
+  },
+  "crosswalks": [
+    {
+      "canonical_scope": "Periodic trends, group chemistry, coordination and transition elements.",
+      "node": {
+        "id": "ap:Unit 1",
+        "label": "Atomic Structure and Properties",
+        "section": "Unit 1"
+      },
+      "rationale": "Overlap is periodic trends in Unit 1; no claim that AP covers the Cambridge group or transition-element syllabus.",
+      "relation": "partial",
+      "source_id": "source:ap-chemistry-2024",
+      "topic_id": "topic:chemistry-periodicity"
+    },
+    {
+      "canonical_scope": "Periodic trends, group chemistry, coordination and transition elements.",
+      "node": {
+        "id": "cambridge:9–12, 27–28",
+        "label": "Inorganic chemistry topics",
+        "section": "9–12, 27–28"
+      },
+      "rationale": "Shared knowledge is present; canonical grouping and source unit include different boundaries or levels of detail.",
+      "relation": "partial",
+      "source_id": "source:cambridge-9701-2025",
+      "topic_id": "topic:chemistry-periodicity"
+    }
+  ],
+  "record": {
+    "canonical_path": "knowledge/examples/chemistry.json",
+    "collection_ids": [
+      "collection:chemistry-studies"
+    ],
+    "concept_ids": [
+      "concept:chemistry-halogen-displacement"
+    ],
+    "failure_modes": [
+      "Needs actual species, observations and a balanced ionic equation."
+    ],
+    "fidelity_constraints": [
+      "Schematic teaching reference; preserve labels, units, stoichiometry and stated model limits."
+    ],
+    "gap_reason": "Needs actual species, observations and a balanced ionic equation.",
+    "grammar": [
+      "symbolic-notation"
+    ],
+    "id": "ex:chemistry-halogen-displacement",
+    "intent_ids": [
+      "intent:identify"
+    ],
+    "interaction": "inspect",
+    "interaction_model": {
+      "response": "Static schematic; no simulated behavior.",
+      "trigger": "inspect"
+    },
+    "kind": "GAP",
+    "lifecycle": {
+      "collected": false,
+      "reusable": false,
+      "showable": false,
+      "verified": false
+    },
+    "medium": "diagram",
+    "resource_ids": [],
+    "source_refs": [
+      "source:atlas-studies"
+    ],
+    "state_model": {
+      "deterministic": true,
+      "model": "missing"
+    },
+    "subject_id": "topic:chemistry",
+    "summary": "Needs actual species, observations and a balanced ionic equation.",
+    "title": "Halogen displacement · chlorine and bromide",
+    "tool_choices": [],
+    "topic_ids": [
+      "topic:chemistry-periodicity"
+    ],
+    "transfer_constraints": [
+      "Needs actual species, observations and a balanced ionic equation."
+    ],
+    "type": "Example",
+    "visual_traits": [
+      "labeled",
+      "schematic"
+    ]
+  },
+  "relations": [
+    {
+      "source": "ex:chemistry-halogen-displacement",
+      "target": "collection:chemistry-studies",
+      "type": "in_collection"
+    },
+    {
+      "source": "ex:chemistry-halogen-displacement",
+      "target": "concept:chemistry-halogen-displacement",
+      "type": "intended_to_demonstrate"
+    },
+    {
+      "source": "ex:chemistry-halogen-displacement",
+      "target": "intent:identify",
+      "type": "supports_intent"
+    },
+    {
+      "source": "topic:chemistry-periodicity",
+      "target": "ex:chemistry-halogen-displacement",
+      "type": "has_example"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-10",
+      "check_scope": "Original schematic studies; model equations and limitations recorded per Example. No third-party illustrations copied.",
+      "checked_at": "2026-09-10",
+      "id": "source:atlas-studies",
+      "locator": "https://github.com/shhh-hoo/ai-design-resource-bank/tree/9506274daec7c3dcfa7c9ecda2ecb5f7461d011c/app",
+      "locator_type": "repository",
+      "publisher": "AIDRB",
+      "title": "Original Chemistry diagram studies",
+      "type": "Source"
+    },
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-10",
+      "check_scope": "Official linked CED read; unit scope and course-at-a-glance verified. Mapping is editorial, not board endorsement.",
+      "checked_at": "2026-09-10",
+      "id": "source:ap-chemistry-2024",
+      "locator": "https://apcentral.collegeboard.org/media/pdf/ap-chemistry-course-and-exam-description.pdf",
+      "locator_type": "url",
+      "publisher": "College Board",
+      "title": "AP Chemistry Course and Exam Description, effective Fall 2024",
+      "type": "Source"
+    },
+    {
+      "canonical_path": "knowledge/provenance/sources.json",
+      "captured_at": "2026-09-10",
+      "check_scope": "Official PDF downloaded and text inspected; content overview p10 and mapped sections. Scope mapping is editorial, not board endorsement.",
+      "checked_at": "2026-09-10",
+      "id": "source:cambridge-9701-2025",
+      "locator": "https://www.cambridgeinternational.org/Images/664563-2025-2027-syllabus.pdf",
+      "locator_type": "url",
+      "publisher": "Cambridge International Education",
+      "title": "Chemistry 9701 syllabus 2025–2027",
+      "type": "Source"
+    }
+  ]
+}

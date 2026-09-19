@@ -1,0 +1,37 @@
+{
+  "id": "candidate:random-future-self",
+  "candidate_kind": "example",
+  "status": "promoted",
+  "discovered_by": "scout",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://www.random-international.com/future-self",
+    "title": "Future Self",
+    "creator": "Random International"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "3D body tracking is intentionally reduced to sparse points of light, preserving recognizable movement while introducing delay and abstraction.",
+  "novelty_axes": [
+    "new_medium",
+    "new_interaction",
+    "cross_media_transfer"
+  ],
+  "signals": [
+    "3D body tracking",
+    "low-resolution embodiment",
+    "delayed reflection",
+    "points of light",
+    "movement identity"
+  ],
+  "notes": "The official page documents Metrilus 3D cameras, custom electronics and LEDs; the work presents a full-length body image as distributed points of light with a slight delay while retaining recognisability.",
+  "decision": {
+    "outcome": "promoted",
+    "rationale": "Strong physical HCI example of information reduction: identity and movement survive aggressive abstraction, and latency becomes part of the perceptual relationship rather than an implementation flaw.",
+    "reviewed_by": "wave01-curation",
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:random-future-self",
+      "concept:sensor-mediated-environment"
+    ]
+  }
+}

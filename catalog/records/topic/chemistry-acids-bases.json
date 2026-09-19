@@ -1,0 +1,46 @@
+{
+  "record": {
+    "canonical_path": "subjects/chemistry/topics.json",
+    "example_ids": [
+      "ex:chemistry-titration-curve",
+      "ex:chemistry-conjugate-pairs",
+      "ex:chemistry-buffer",
+      "ex:chemistry-weak-acid-titration"
+    ],
+    "id": "topic:chemistry-acids-bases",
+    "order": 7,
+    "parent": "topic:chemistry",
+    "prerequisites": [],
+    "scope": "Proton transfer, acid strength, pH, buffers and titration.",
+    "title": "Acids and Bases",
+    "type": "SubjectTopic"
+  },
+  "relations": [
+    {
+      "source": "topic:chemistry-acids-bases",
+      "target": "ex:chemistry-buffer",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-acids-bases",
+      "target": "ex:chemistry-conjugate-pairs",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-acids-bases",
+      "target": "ex:chemistry-titration-curve",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-acids-bases",
+      "target": "ex:chemistry-weak-acid-titration",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-acids-bases",
+      "target": "topic:chemistry",
+      "type": "part_of"
+    }
+  ],
+  "sources": []
+}

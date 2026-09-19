@@ -1,0 +1,37 @@
+{
+  "id": "candidate:aott-spider-verse",
+  "candidate_kind": "example",
+  "status": "promoted",
+  "discovered_by": "scout",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://www.artofthetitle.com/title/spider-man-into-the-spider-verse/",
+    "title": "Spider-Man: Into the Spider-Verse title sequence"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "Mixed-media title design deliberately fuses 3D scenes with halftone, spray paint, offset print, hand drawing, scanned illustrations, and typographic treatment.",
+  "novelty_axes": [
+    "new_medium",
+    "cross_media_transfer",
+    "new_implementation"
+  ],
+  "signals": [
+    "mixed-media compositing",
+    "3D + analog drawing",
+    "halftone",
+    "overprint/color offset",
+    "zoetrope-like motion",
+    "hand-drawn typography"
+  ],
+  "notes": "The process interview documents scanned physical drawings composited onto 3D-derived sequences and a workflow using Adobe tools plus Cinema 4D. The key bank value is the transformation of material/print grammar into motion, not the software list itself.",
+  "decision": {
+    "outcome": "promoted",
+    "rationale": "Provides an unusually clear cross-media bridge from comic/print materiality to animated 3D composition, useful for escaping flat web-style imitation.",
+    "reviewed_by": "wave01-curation",
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:aott-spider-verse",
+      "concept:mixed-media-surface-language"
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "record": {
+    "canonical_path": "subjects/chemistry/topics.json",
+    "example_ids": [
+      "ex:chemistry-galvanic-cell",
+      "ex:chemistry-oxidation-state",
+      "ex:chemistry-nernst",
+      "ex:chemistry-electrolysis"
+    ],
+    "id": "topic:chemistry-redox",
+    "order": 8,
+    "parent": "topic:chemistry",
+    "prerequisites": [],
+    "scope": "Electron transfer, oxidation states, cells, electrode potentials and electrolysis.",
+    "title": "Redox and Electrochemistry",
+    "type": "SubjectTopic"
+  },
+  "relations": [
+    {
+      "source": "topic:chemistry-redox",
+      "target": "ex:chemistry-electrolysis",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-redox",
+      "target": "ex:chemistry-galvanic-cell",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-redox",
+      "target": "ex:chemistry-nernst",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-redox",
+      "target": "ex:chemistry-oxidation-state",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-redox",
+      "target": "topic:chemistry",
+      "type": "part_of"
+    }
+  ],
+  "sources": []
+}

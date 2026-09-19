@@ -1,0 +1,60 @@
+{
+  "record": {
+    "canonical_path": "knowledge/concepts/creative-wave01.json",
+    "id": "concept:archive-as-interface",
+    "source_refs": [
+      "source:whole-earth-index",
+      "source:fiona-vilmer"
+    ],
+    "subtypes": [
+      "pattern",
+      "composition"
+    ],
+    "summary": "Make the corpus, chronology, categories, and visible index itself the primary navigation instead of hiding the archive behind isolated cards or search.",
+    "title": "Archive as interface",
+    "type": "Concept"
+  },
+  "relations": [
+    {
+      "source": "ex:fiona-vilmer",
+      "target": "concept:archive-as-interface",
+      "type": "demonstrates"
+    },
+    {
+      "source": "ex:whole-earth-index",
+      "target": "concept:archive-as-interface",
+      "type": "demonstrates"
+    },
+    {
+      "source": "resource:archive-as-interface",
+      "target": "concept:archive-as-interface",
+      "type": "implements"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Direct archive index inspected for publication groupings, issue chronology and dense index structure. Original implementation technology was not checked.",
+      "checked_at": "2026-09-19",
+      "id": "source:whole-earth-index",
+      "locator": "https://wholeearth.info/",
+      "locator_type": "url",
+      "publisher": "Whole Earth Index",
+      "title": "Whole Earth Index",
+      "type": "Source"
+    },
+    {
+      "canonical_path": "knowledge/provenance/wave01-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Direct English index and project pages inspected for category structure, project/publication metadata and image-led detail. Interaction beyond ordinary navigation was not asserted.",
+      "checked_at": "2026-09-19",
+      "id": "source:fiona-vilmer",
+      "locator": "https://fionavilmer.com/en",
+      "locator_type": "url",
+      "publisher": "Fiona Vilmer",
+      "title": "Fiona Vilmer",
+      "type": "Source"
+    }
+  ]
+}

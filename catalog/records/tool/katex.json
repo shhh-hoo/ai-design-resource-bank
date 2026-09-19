@@ -1,0 +1,54 @@
+{
+  "record": {
+    "agent_notes": "Default for straightforward formula rendering.",
+    "avoid_when": "Broad MathML/AsciiMath input or MathJax's richer accessibility/integration model is required.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "latex-rendering",
+      "server-rendering"
+    ],
+    "docs": "https://katex.org/docs/api",
+    "domains": [
+      "math",
+      "education"
+    ],
+    "ecosystem": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "homepage": "https://katex.org/",
+    "id": "tool:katex",
+    "legacy_kind": "renderer",
+    "license": "MIT",
+    "source_refs": [
+      "source:tool-katex"
+    ],
+    "subtype": "renderer",
+    "summary": "Fast static or mostly-static TeX rendering with a small predictable runtime is needed.",
+    "tags": [
+      "math",
+      "latex",
+      "typesetting"
+    ],
+    "tier": "core",
+    "title": "KaTeX",
+    "type": "Tool",
+    "use_when": "Fast static or mostly-static TeX rendering with a small predictable runtime is needed."
+  },
+  "relations": [],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-katex",
+      "locator": "https://katex.org/docs/api",
+      "locator_type": "url",
+      "publisher": "KaTeX",
+      "title": "KaTeX official documentation",
+      "type": "Source"
+    }
+  ]
+}

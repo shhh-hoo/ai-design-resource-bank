@@ -1,0 +1,46 @@
+{
+  "record": {
+    "canonical_path": "subjects/chemistry/topics.json",
+    "example_ids": [
+      "ex:chemistry-periodic-trends",
+      "ex:chemistry-group-two",
+      "ex:chemistry-halogen-displacement",
+      "ex:chemistry-ligand-exchange"
+    ],
+    "id": "topic:chemistry-periodicity",
+    "order": 9,
+    "parent": "topic:chemistry",
+    "prerequisites": [],
+    "scope": "Periodic trends, group chemistry, coordination and transition elements.",
+    "title": "Periodicity and Inorganic Chemistry",
+    "type": "SubjectTopic"
+  },
+  "relations": [
+    {
+      "source": "topic:chemistry-periodicity",
+      "target": "ex:chemistry-group-two",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-periodicity",
+      "target": "ex:chemistry-halogen-displacement",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-periodicity",
+      "target": "ex:chemistry-ligand-exchange",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-periodicity",
+      "target": "ex:chemistry-periodic-trends",
+      "type": "has_example"
+    },
+    {
+      "source": "topic:chemistry-periodicity",
+      "target": "topic:chemistry",
+      "type": "part_of"
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,10 @@
+{
+  "record": {
+    "canonical_path": "knowledge/intents/intents.json",
+    "id": "intent:compare",
+    "title": "Compare relationships",
+    "type": "Intent"
+  },
+  "relations": [],
+  "sources": []
+}

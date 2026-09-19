@@ -1,0 +1,10 @@
+{
+  "record": {
+    "canonical_path": "knowledge/intents/intents.json",
+    "id": "intent:trace",
+    "title": "Trace a change",
+    "type": "Intent"
+  },
+  "relations": [],
+  "sources": []
+}

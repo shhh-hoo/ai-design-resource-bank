@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+    "captured_at": "2026-09-19",
+    "check_scope": "Artist's official project page inspected for the audiovisual installation format, large-scale projection/computer/speaker setup, variable dimensions and programming/computer-graphics credits.",
+    "checked_at": "2026-09-19",
+    "id": "source:ryoji-data-verse-3",
+    "locator": "https://www.ryojiikeda.com/project/x_verse/",
+    "locator_type": "url",
+    "publisher": "Ryoji Ikeda",
+    "title": "data-verse 3",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

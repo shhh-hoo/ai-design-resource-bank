@@ -1,0 +1,75 @@
+{
+  "record": {
+    "agent_notes": "Default first check for chemically correct 2D structure logic.",
+    "avoid_when": "A purely decorative molecule illustration is enough.",
+    "canonical_path": "registries/frontend-tools.yaml",
+    "capabilities": [
+      "smiles",
+      "smarts",
+      "2d-depiction",
+      "substructure",
+      "highlighting",
+      "descriptors"
+    ],
+    "docs": "https://www.rdkitjs.com/",
+    "domains": [
+      "chemistry",
+      "cheminformatics"
+    ],
+    "ecosystem": [
+      "WebAssembly",
+      "JavaScript",
+      "SVG",
+      "Canvas"
+    ],
+    "homepage": "https://www.rdkitjs.com/",
+    "id": "tool:rdkit-js",
+    "legacy_kind": "domain-toolkit",
+    "license": "BSD-3-Clause",
+    "source_refs": [
+      "source:tool-rdkit-js"
+    ],
+    "subtype": "library",
+    "summary": "Chemical structure semantics, parsing, depiction, substructure matching, or cheminformatics logic is needed in-browser.",
+    "tags": [
+      "chemistry",
+      "smiles",
+      "structure",
+      "wasm"
+    ],
+    "tier": "core",
+    "title": "RDKit.js",
+    "type": "Tool",
+    "use_when": "Chemical structure semantics, parsing, depiction, substructure matching, or cheminformatics logic is needed in-browser."
+  },
+  "relations": [
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:bond-morph",
+      "target": "tool:rdkit-js",
+      "type": "implemented_with"
+    },
+    {
+      "evidence": "proposed",
+      "reason": "Legacy registry recommendation, not observed implementation.",
+      "source": "concept:grammar-micro-macro-bridge",
+      "target": "tool:rdkit-js",
+      "type": "implemented_with"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "registries/frontend-tools.yaml",
+      "captured_at": "2026-09-10",
+      "check_scope": "Legacy discovery evidence; upstream implementation not validated locally.",
+      "checked_at": null,
+      "id": "source:tool-rdkit-js",
+      "locator": "https://www.rdkitjs.com/",
+      "locator_type": "url",
+      "publisher": "RDKit.js",
+      "title": "RDKit.js official documentation",
+      "type": "Source"
+    }
+  ]
+}
