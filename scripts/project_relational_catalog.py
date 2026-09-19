@@ -384,7 +384,17 @@ def build_projection(db: sqlite3.Connection) -> dict[str, Any]:
                 report["inserted"]["entity_recommendations"] += 1
                 report["mapped_relations"]["implemented_with:proposed_concept"] += 1
             elif evidence == "proposed" and by_id.get(source, {}).get("type") == "Example":
-                report["unresolved_relations"]["implemented_with:proposed_example"] += 1
+                put(
+                    db, "entity_recommendations",
+                    from_entity_id=source, to_entity_id=target,
+                    predicate="can_reimplement_with", context_key="legacy",
+                    context_json=j({"purpose": "reimplement or adapt this Example"}),
+                    verdict="conditional",
+                    rationale=rel.get("reason") or "Migrated proposed Example implementation choice.",
+                    curator=CURATOR, evidence_set_id=None, review_status="proposed",
+                )
+                report["inserted"]["entity_recommendations"] += 1
+                report["mapped_relations"]["implemented_with:proposed_example"] += 1
             else:
                 report["unresolved_relations"][f"implemented_with:{evidence or 'unknown'}"] += 1
         elif rtype in {"demonstrates", "implements", "requires"}:
@@ -396,7 +406,13 @@ def build_projection(db: sqlite3.Connection) -> dict[str, Any]:
             report["inserted"]["entity_relations"] += 1
             report["mapped_relations"][rtype] += 1
         elif rtype in {"intended_to_demonstrate", "yields"}:
-            report["unresolved_relations"][rtype] += 1
+            put(
+                db, "entity_relations",
+                from_entity_id=source, to_entity_id=target, predicate=rtype,
+                context_key="global", qualifiers_json="{}", evidence_set_id=EVIDENCE_ID,
+            )
+            report["inserted"]["entity_relations"] += 1
+            report["mapped_relations"][rtype] += 1
         else:
             report["unresolved_relations"][rtype] += 1
 
