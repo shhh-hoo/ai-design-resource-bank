@@ -850,7 +850,10 @@ footer {
   .topic-nav .eyebrow, .topic-nav span { display: none; }
   .grid { grid-template-columns: 1fr; gap: 28px; }
   .topic-heading small { display: none; }
-  .explore-tools, .dictionary-tools { grid-template-columns: 1fr auto; }
+  .explore-tools, .dictionary-tools { grid-template-columns: minmax(0,1fr) auto; width: 100%; min-width: 0; }
+  .search-field, .refine, .result-count { min-width: 0; }
+  .search-field input { width: 100%; min-width: 0; }
+  .result-count { white-space: normal; }
   .result-count { grid-column: 1/-1; }
   .refine .filters {
     position: fixed;
