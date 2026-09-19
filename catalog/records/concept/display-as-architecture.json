@@ -24,6 +24,11 @@
       "source": "ex:esdevlin-u2-sphere",
       "target": "concept:display-as-architecture",
       "type": "demonstrates"
+    },
+    {
+      "source": "ex:ryoji-data-verse-3",
+      "target": "concept:display-as-architecture",
+      "type": "demonstrates"
     }
   ],
   "sources": [

@@ -1,0 +1,122 @@
+{
+  "ai_build": {
+    "availability": "available",
+    "example_id": "ex:ryoji-data-verse-3",
+    "method": {
+      "concepts": [
+        "concept:data-as-environment",
+        "concept:display-as-architecture"
+      ],
+      "failure_modes": [
+        "Do not call arbitrary code-like texture 'data visualization' without real data semantics.",
+        "Do not sacrifice necessary legibility when the task requires analytical reading rather than immersive perception."
+      ],
+      "fidelity_constraints": [
+        "Reuse data-as-environment/display principles without copying Ikeda's visual language, datasets, audio, sequences, or installation design."
+      ],
+      "grammar": [
+        "composition-layer",
+        "time-sequence"
+      ],
+      "interaction_model": {
+        "response": "Data imagery and sound operate as one timed spatial field whose density and scale dominate the viewer's attention rather than reading as separate charts.",
+        "trigger": "occupy and watch the environment-scale audiovisual composition"
+      },
+      "mechanisms": [],
+      "state_model": {
+        "deterministic": true,
+        "model": "external-reference"
+      },
+      "transfer_constraints": [
+        "Use data density, layering, rhythm, and spatial scale as deliberate representational variables rather than dashboard decoration.",
+        "Preserve data/source semantics whenever an adaptation makes factual scientific claims."
+      ]
+    },
+    "resources": [],
+    "tools": []
+  },
+  "crosswalks": [],
+  "record": {
+    "canonical_path": "knowledge/examples/creative-wave01-b.json",
+    "collection_ids": [],
+    "concept_ids": [
+      "concept:data-as-environment",
+      "concept:display-as-architecture"
+    ],
+    "failure_modes": [
+      "Do not call arbitrary code-like texture 'data visualization' without real data semantics.",
+      "Do not sacrifice necessary legibility when the task requires analytical reading rather than immersive perception."
+    ],
+    "fidelity_constraints": [
+      "Reuse data-as-environment/display principles without copying Ikeda's visual language, datasets, audio, sequences, or installation design."
+    ],
+    "grammar": [
+      "composition-layer",
+      "time-sequence"
+    ],
+    "id": "ex:ryoji-data-verse-3",
+    "intent_ids": [],
+    "interaction": "watch-and-occupy",
+    "interaction_model": {
+      "response": "Data imagery and sound operate as one timed spatial field whose density and scale dominate the viewer's attention rather than reading as separate charts.",
+      "trigger": "occupy and watch the environment-scale audiovisual composition"
+    },
+    "kind": "REFERENCE",
+    "lifecycle": {
+      "collected": true,
+      "reusable": false,
+      "showable": false,
+      "verified": false
+    },
+    "medium": "audiovisual-installation",
+    "resource_ids": [],
+    "source_refs": [
+      "source:ryoji-data-verse-3"
+    ],
+    "state_model": {
+      "deterministic": true,
+      "model": "external-reference"
+    },
+    "summary": "A large-scale audiovisual installation that treats scientific and computational data as an immersive compositional field of density, precision, rhythm, layering, and scale.",
+    "title": "Ryoji Ikeda — data-verse 3",
+    "tool_choices": [],
+    "topic_ids": [],
+    "transfer_constraints": [
+      "Use data density, layering, rhythm, and spatial scale as deliberate representational variables rather than dashboard decoration.",
+      "Preserve data/source semantics whenever an adaptation makes factual scientific claims."
+    ],
+    "type": "Example",
+    "visual_traits": [
+      "data-dense",
+      "monochrome",
+      "large-scale",
+      "audiovisual"
+    ]
+  },
+  "relations": [
+    {
+      "source": "ex:ryoji-data-verse-3",
+      "target": "concept:data-as-environment",
+      "type": "demonstrates"
+    },
+    {
+      "source": "ex:ryoji-data-verse-3",
+      "target": "concept:display-as-architecture",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Artist's official project page inspected for the audiovisual installation format, large-scale projection/computer/speaker setup, variable dimensions and programming/computer-graphics credits.",
+      "checked_at": "2026-09-19",
+      "id": "source:ryoji-data-verse-3",
+      "locator": "https://www.ryojiikeda.com/project/x_verse/",
+      "locator_type": "url",
+      "publisher": "Ryoji Ikeda",
+      "title": "data-verse 3",
+      "type": "Source"
+    }
+  ]
+}

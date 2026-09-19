@@ -1,0 +1,117 @@
+{
+  "ai_build": {
+    "availability": "available",
+    "example_id": "ex:teamlab-borderless",
+    "method": {
+      "concepts": [
+        "concept:boundaryless-spatial-content"
+      ],
+      "failure_modes": [
+        "Do not remove all labels/context unless an alternate orientation mechanism exists.",
+        "Do not call ordinary carousel/page transitions 'boundaryless' when content is still container-owned."
+      ],
+      "fidelity_constraints": [
+        "Reuse the boundaryless-content/context principle without copying teamLab artworks, environments, interaction assets, or museum layout."
+      ],
+      "grammar": [
+        "3d-spatial",
+        "spatial-map",
+        "composition-layer"
+      ],
+      "interaction_model": {
+        "response": "Artworks cross room boundaries while location-relative guidance and participation maintain context around the visitor rather than around a fixed container.",
+        "trigger": "move through the museum and encounter migrating works"
+      },
+      "mechanisms": [],
+      "state_model": {
+        "deterministic": false,
+        "model": "spatial-external-reference"
+      },
+      "transfer_constraints": [
+        "Allow content identity to persist when it moves between containers or contexts.",
+        "Attach orientation/help to current location or nearby content when fixed labels would contradict the spatial model."
+      ]
+    },
+    "resources": [],
+    "tools": []
+  },
+  "crosswalks": [],
+  "record": {
+    "canonical_path": "knowledge/examples/creative-wave01-b.json",
+    "collection_ids": [],
+    "concept_ids": [
+      "concept:boundaryless-spatial-content"
+    ],
+    "failure_modes": [
+      "Do not remove all labels/context unless an alternate orientation mechanism exists.",
+      "Do not call ordinary carousel/page transitions 'boundaryless' when content is still container-owned."
+    ],
+    "fidelity_constraints": [
+      "Reuse the boundaryless-content/context principle without copying teamLab artworks, environments, interaction assets, or museum layout."
+    ],
+    "grammar": [
+      "3d-spatial",
+      "spatial-map",
+      "composition-layer"
+    ],
+    "id": "ex:teamlab-borderless",
+    "intent_ids": [],
+    "interaction": "spatial-navigation",
+    "interaction_model": {
+      "response": "Artworks cross room boundaries while location-relative guidance and participation maintain context around the visitor rather than around a fixed container.",
+      "trigger": "move through the museum and encounter migrating works"
+    },
+    "kind": "REFERENCE",
+    "lifecycle": {
+      "collected": true,
+      "reusable": false,
+      "showable": false,
+      "verified": false
+    },
+    "medium": "digital-art-museum",
+    "resource_ids": [],
+    "source_refs": [
+      "source:teamlab-borderless"
+    ],
+    "state_model": {
+      "deterministic": false,
+      "model": "spatial-external-reference"
+    },
+    "summary": "A spatial exhibition where artworks migrate across rooms and context follows the visitor, so content is not owned by one fixed wall, screen, or container.",
+    "title": "teamLab Borderless",
+    "tool_choices": [],
+    "topic_ids": [],
+    "transfer_constraints": [
+      "Allow content identity to persist when it moves between containers or contexts.",
+      "Attach orientation/help to current location or nearby content when fixed labels would contradict the spatial model."
+    ],
+    "type": "Example",
+    "visual_traits": [
+      "immersive",
+      "spatial",
+      "moving-content",
+      "participatory"
+    ]
+  },
+  "relations": [
+    {
+      "source": "ex:teamlab-borderless",
+      "target": "concept:boundaryless-spatial-content",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Official museum page inspected for artworks moving across spaces, absence of fixed artwork captions, location-relative guide behavior and stated visitor participation.",
+      "checked_at": "2026-09-19",
+      "id": "source:teamlab-borderless",
+      "locator": "https://www.teamlab.art/e/tokyo/",
+      "locator_type": "url",
+      "publisher": "teamLab",
+      "title": "teamLab Borderless: MORI Building DIGITAL ART MUSEUM",
+      "type": "Source"
+    }
+  ]
+}

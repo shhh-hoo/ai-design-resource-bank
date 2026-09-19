@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+    "captured_at": "2026-09-19",
+    "check_scope": "UVA official project page inspected for the Barbican Curve installation, pendulum-like elements, evolving light/sound and visitor-paced traversal through the gallery.",
+    "checked_at": "2026-09-19",
+    "id": "source:uva-momentum",
+    "locator": "https://www.uva.co.uk/features/momentum-barbican-curve-gallery",
+    "locator_type": "url",
+    "publisher": "United Visual Artists",
+    "title": "Momentum",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

@@ -804,6 +804,30 @@
     "type": "demonstrates"
   },
   {
+    "source": "ex:bruno-simon-portfolio",
+    "target": "concept:camera-dolly",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:bruno-simon-portfolio",
+    "target": "concept:world-as-interface",
+    "type": "demonstrates"
+  },
+  {
+    "evidence": "observed",
+    "reason": "The portfolio documentation identifies Rapier for physics.",
+    "source": "ex:bruno-simon-portfolio",
+    "target": "tool:rapier",
+    "type": "implemented_with"
+  },
+  {
+    "evidence": "observed",
+    "reason": "The portfolio documentation identifies Three.js as the 3D rendering foundation.",
+    "source": "ex:bruno-simon-portfolio",
+    "target": "tool:threejs",
+    "type": "implemented_with"
+  },
+  {
     "source": "ex:chemistry-bond-polarity",
     "target": "collection:chemistry-studies",
     "type": "in_collection"
@@ -1857,6 +1881,11 @@
     "type": "supports_intent"
   },
   {
+    "source": "ex:chrome-music-lab-kandinsky",
+    "target": "concept:cross-modal-input-mapping",
+    "type": "demonstrates"
+  },
+  {
     "source": "ex:dia-atrak-live-visuals",
     "target": "concept:kinetic-identity-system",
     "type": "demonstrates"
@@ -1869,6 +1898,11 @@
   {
     "source": "ex:dia-nike-statement-house",
     "target": "concept:kinetic-identity-system",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:earth-nullschool",
+    "target": "concept:grammar-field-flow",
     "type": "demonstrates"
   },
   {
@@ -1887,13 +1921,90 @@
     "type": "demonstrates"
   },
   {
+    "source": "ex:evolution-of-trust",
+    "target": "concept:playable-model-narrative",
+    "type": "demonstrates"
+  },
+  {
     "source": "ex:fiona-vilmer",
     "target": "concept:archive-as-interface",
     "type": "demonstrates"
   },
   {
+    "source": "ex:google-100000-stars",
+    "target": "concept:semantic-zoom",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:parable-of-polygons",
+    "target": "concept:editable-model-sandbox",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:patatap",
+    "target": "concept:cross-modal-input-mapping",
+    "type": "demonstrates"
+  },
+  {
     "source": "ex:pattern-breaking",
     "target": "concept:narrative-evidence-choreography",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:pulse-room",
+    "target": "concept:sensor-mediated-environment",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:rain-room",
+    "target": "concept:sensor-mediated-environment",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:random-future-self",
+    "target": "concept:sensor-mediated-environment",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:ryoji-data-verse-3",
+    "target": "concept:data-as-environment",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:ryoji-data-verse-3",
+    "target": "concept:display-as-architecture",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:seeing-theory-basic-probability",
+    "target": "concept:editable-model-sandbox",
+    "type": "demonstrates"
+  },
+  {
+    "evidence": "observed",
+    "reason": "Seeing Theory project documentation states that its interactive visualizations were built with D3.js.",
+    "source": "ex:seeing-theory-basic-probability",
+    "target": "tool:d3",
+    "type": "implemented_with"
+  },
+  {
+    "source": "ex:setosa-image-kernels",
+    "target": "concept:linked-computation-inspection",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:setosa-markov-chains",
+    "target": "concept:editable-model-sandbox",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:teamlab-borderless",
+    "target": "concept:boundaryless-spatial-content",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:uva-momentum",
+    "target": "concept:path-paced-spatial-choreography",
     "type": "demonstrates"
   },
   {

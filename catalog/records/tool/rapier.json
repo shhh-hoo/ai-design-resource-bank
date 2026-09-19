@@ -47,6 +47,13 @@
       "source": "concept:grammar-dynamic-system",
       "target": "tool:rapier",
       "type": "implemented_with"
+    },
+    {
+      "evidence": "observed",
+      "reason": "The portfolio documentation identifies Rapier for physics.",
+      "source": "ex:bruno-simon-portfolio",
+      "target": "tool:rapier",
+      "type": "implemented_with"
     }
   ],
   "sources": [

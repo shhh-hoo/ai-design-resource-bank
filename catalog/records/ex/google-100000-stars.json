@@ -1,0 +1,127 @@
+{
+  "ai_build": {
+    "availability": "available",
+    "example_id": "ex:google-100000-stars",
+    "method": {
+      "concepts": [
+        "concept:semantic-zoom"
+      ],
+      "failure_modes": [
+        "Do not add labels at every scale until the space becomes unreadable.",
+        "Do not treat ordinary camera zoom as semantic zoom unless information granularity changes."
+      ],
+      "fidelity_constraints": [
+        "Reuse semantic zoom and spatial navigation without copying star-rendering assets, tour narration, or Google visual identity."
+      ],
+      "grammar": [
+        "3d-spatial",
+        "spatial-map"
+      ],
+      "interaction_model": {
+        "response": "Spatial scale changes continuously while labels/context emerge at useful levels instead of merely enlarging pixels.",
+        "trigger": "zoom, orbit, and move through the stellar neighborhood"
+      },
+      "mechanisms": [
+        {
+          "evidence": "seed",
+          "id": "concept:semantic-zoom",
+          "implementation_note": "Define semantic thresholds explicitly so added detail corresponds to a real information level.",
+          "primitives": [
+            "zoom-level",
+            "label-threshold",
+            "detail-threshold",
+            "aggregation"
+          ]
+        }
+      ],
+      "state_model": {
+        "deterministic": true,
+        "model": "external-reference"
+      },
+      "transfer_constraints": [
+        "Tie added detail to meaningful scale thresholds while preserving orientation across zoom levels.",
+        "Keep the global neighborhood understandable even as local named objects become available."
+      ]
+    },
+    "resources": [],
+    "tools": []
+  },
+  "crosswalks": [],
+  "record": {
+    "canonical_path": "knowledge/examples/creative-wave01-b.json",
+    "collection_ids": [],
+    "concept_ids": [
+      "concept:semantic-zoom"
+    ],
+    "failure_modes": [
+      "Do not add labels at every scale until the space becomes unreadable.",
+      "Do not treat ordinary camera zoom as semantic zoom unless information granularity changes."
+    ],
+    "fidelity_constraints": [
+      "Reuse semantic zoom and spatial navigation without copying star-rendering assets, tour narration, or Google visual identity."
+    ],
+    "grammar": [
+      "3d-spatial",
+      "spatial-map"
+    ],
+    "id": "ex:google-100000-stars",
+    "intent_ids": [],
+    "interaction": "zoom-and-orbit",
+    "interaction_model": {
+      "response": "Spatial scale changes continuously while labels/context emerge at useful levels instead of merely enlarging pixels.",
+      "trigger": "zoom, orbit, and move through the stellar neighborhood"
+    },
+    "kind": "REFERENCE",
+    "lifecycle": {
+      "collected": true,
+      "reusable": false,
+      "showable": false,
+      "verified": false
+    },
+    "medium": "3d-data-visualization",
+    "resource_ids": [],
+    "source_refs": [
+      "source:google-100000-stars"
+    ],
+    "state_model": {
+      "deterministic": true,
+      "model": "external-reference"
+    },
+    "summary": "A navigable 3D stellar neighborhood where continuous zoom changes the level of named/contextual information while preserving spatial orientation.",
+    "title": "100,000 Stars",
+    "tool_choices": [],
+    "topic_ids": [],
+    "transfer_constraints": [
+      "Tie added detail to meaningful scale thresholds while preserving orientation across zoom levels.",
+      "Keep the global neighborhood understandable even as local named objects become available."
+    ],
+    "type": "Example",
+    "visual_traits": [
+      "3d",
+      "spatial",
+      "astronomical",
+      "large-scale"
+    ]
+  },
+  "relations": [
+    {
+      "source": "ex:google-100000-stars",
+      "target": "concept:semantic-zoom",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Official experiment page inspected for a spatial dataset of nearby stars, continuous 3D navigation, named-star detail and stated 3D/WebGL implementation context.",
+      "checked_at": "2026-09-19",
+      "id": "source:google-100000-stars",
+      "locator": "https://experiments.withgoogle.com/100000-stars",
+      "locator_type": "url",
+      "publisher": "Experiments with Google / Google Data Arts Team",
+      "title": "100,000 Stars",
+      "type": "Source"
+    }
+  ]
+}

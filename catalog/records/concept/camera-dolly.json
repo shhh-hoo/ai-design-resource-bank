@@ -45,6 +45,11 @@
       "source": "ex:aott-uncut-gems",
       "target": "concept:camera-dolly",
       "type": "demonstrates"
+    },
+    {
+      "source": "ex:bruno-simon-portfolio",
+      "target": "concept:camera-dolly",
+      "type": "demonstrates"
     }
   ],
   "sources": [

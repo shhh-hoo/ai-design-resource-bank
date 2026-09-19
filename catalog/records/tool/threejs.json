@@ -136,6 +136,13 @@
       "source": "concept:orbital-overlap",
       "target": "tool:threejs",
       "type": "implemented_with"
+    },
+    {
+      "evidence": "observed",
+      "reason": "The portfolio documentation identifies Three.js as the 3D rendering foundation.",
+      "source": "ex:bruno-simon-portfolio",
+      "target": "tool:threejs",
+      "type": "implemented_with"
     }
   ],
   "sources": [

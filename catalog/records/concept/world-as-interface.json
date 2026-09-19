@@ -1,0 +1,37 @@
+{
+  "record": {
+    "canonical_path": "knowledge/concepts/creative-wave01-b.json",
+    "id": "concept:world-as-interface",
+    "source_refs": [
+      "source:bruno-simon"
+    ],
+    "subtypes": [
+      "interaction_pattern",
+      "composition"
+    ],
+    "summary": "Let navigation and selection happen through movement inside a persistent spatial world rather than through separate page or menu transitions, while retaining recovery and alternate access paths.",
+    "title": "World as interface",
+    "type": "Concept"
+  },
+  "relations": [
+    {
+      "source": "ex:bruno-simon-portfolio",
+      "target": "concept:world-as-interface",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Direct portfolio inspected for embodied vehicle navigation, keyboard/touch/mouse/gamepad mappings, map/reset/respawn affordances and alternative navigation. The site documentation identifies Three.js, Rapier and Howler.js.",
+      "checked_at": "2026-09-19",
+      "id": "source:bruno-simon",
+      "locator": "https://bruno-simon.com/",
+      "locator_type": "url",
+      "publisher": "Bruno Simon",
+      "title": "Bruno Simon — 3D portfolio",
+      "type": "Source"
+    }
+  ]
+}

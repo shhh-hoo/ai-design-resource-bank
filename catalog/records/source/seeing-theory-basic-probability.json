@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+    "captured_at": "2026-09-19",
+    "check_scope": "Official interactive chapter inspected for draggable probability distributions, sampling, expectation and variance. Parent project documentation identifies D3.js as the visualization technology.",
+    "checked_at": "2026-09-19",
+    "id": "source:seeing-theory-basic-probability",
+    "locator": "https://seeing-theory.brown.edu/basic-probability/",
+    "locator_type": "url",
+    "publisher": "Seeing Theory / Brown University",
+    "title": "Seeing Theory — Basic Probability",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

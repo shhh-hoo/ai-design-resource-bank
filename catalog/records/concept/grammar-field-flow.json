@@ -46,6 +46,11 @@
       "source": "concept:grammar-field-flow",
       "target": "tool:threejs",
       "type": "implemented_with"
+    },
+    {
+      "source": "ex:earth-nullschool",
+      "target": "concept:grammar-field-flow",
+      "type": "demonstrates"
     }
   ],
   "sources": [

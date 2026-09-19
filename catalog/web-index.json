@@ -71,6 +71,27 @@
       ]
     },
     {
+      "collection_ids": [],
+      "concept_ids": [
+        "concept:world-as-interface",
+        "concept:camera-dolly"
+      ],
+      "id": "ex:bruno-simon-portfolio",
+      "intent_ids": [],
+      "interaction": "embodied-navigation",
+      "kind": "REFERENCE",
+      "medium": "3d-website",
+      "resolve_path": "catalog/records/ex/bruno-simon-portfolio.json",
+      "title": "Bruno Simon — 3D portfolio",
+      "topic_ids": [],
+      "visual_traits": [
+        "3d",
+        "playful",
+        "spatial",
+        "game-like"
+      ]
+    },
+    {
       "collection_ids": [
         "collection:chemistry-studies"
       ],
@@ -1413,6 +1434,26 @@
     {
       "collection_ids": [],
       "concept_ids": [
+        "concept:cross-modal-input-mapping"
+      ],
+      "id": "ex:chrome-music-lab-kandinsky",
+      "intent_ids": [],
+      "interaction": "draw-to-sound",
+      "kind": "REFERENCE",
+      "medium": "audiovisual-instrument",
+      "resolve_path": "catalog/records/ex/chrome-music-lab-kandinsky.json",
+      "title": "Chrome Music Lab — Kandinsky",
+      "topic_ids": [],
+      "visual_traits": [
+        "drawing",
+        "musical",
+        "minimal",
+        "playful"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
         "concept:kinetic-identity-system"
       ],
       "id": "ex:dia-atrak-live-visuals",
@@ -1468,6 +1509,27 @@
         "kinetic",
         "spatial",
         "high-energy"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
+        "concept:grammar-field-flow"
+      ],
+      "id": "ex:earth-nullschool",
+      "intent_ids": [],
+      "interaction": "navigate-and-filter-field",
+      "kind": "REFERENCE",
+      "medium": "interactive-geospatial-visualization",
+      "resolve_path": "catalog/records/ex/earth-nullschool.json",
+      "title": "earth :: global wind, weather and ocean conditions",
+      "topic_ids": [],
+      "visual_traits": [
+        "flow-field",
+        "globe",
+        "layered",
+        "animated",
+        "scientific"
       ]
     },
     {
@@ -1533,6 +1595,26 @@
     {
       "collection_ids": [],
       "concept_ids": [
+        "concept:playable-model-narrative"
+      ],
+      "id": "ex:evolution-of-trust",
+      "intent_ids": [],
+      "interaction": "repeated-choice",
+      "kind": "REFERENCE",
+      "medium": "interactive-essay",
+      "resolve_path": "catalog/records/ex/evolution-of-trust.json",
+      "title": "The Evolution of Trust",
+      "topic_ids": [],
+      "visual_traits": [
+        "illustrated",
+        "playable",
+        "narrative",
+        "diagrammatic"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
         "concept:archive-as-interface"
       ],
       "id": "ex:fiona-vilmer",
@@ -1553,6 +1635,66 @@
     {
       "collection_ids": [],
       "concept_ids": [
+        "concept:semantic-zoom"
+      ],
+      "id": "ex:google-100000-stars",
+      "intent_ids": [],
+      "interaction": "zoom-and-orbit",
+      "kind": "REFERENCE",
+      "medium": "3d-data-visualization",
+      "resolve_path": "catalog/records/ex/google-100000-stars.json",
+      "title": "100,000 Stars",
+      "topic_ids": [],
+      "visual_traits": [
+        "3d",
+        "spatial",
+        "astronomical",
+        "large-scale"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
+        "concept:editable-model-sandbox"
+      ],
+      "id": "ex:parable-of-polygons",
+      "intent_ids": [],
+      "interaction": "drag-and-parameter-edit",
+      "kind": "REFERENCE",
+      "medium": "interactive-essay",
+      "resolve_path": "catalog/records/ex/parable-of-polygons.json",
+      "title": "Parable of the Polygons",
+      "topic_ids": [],
+      "visual_traits": [
+        "playful",
+        "grid",
+        "agent-based",
+        "illustrated"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
+        "concept:cross-modal-input-mapping"
+      ],
+      "id": "ex:patatap",
+      "intent_ids": [],
+      "interaction": "key-and-touch-trigger",
+      "kind": "REFERENCE",
+      "medium": "audiovisual-instrument",
+      "resolve_path": "catalog/records/ex/patatap.json",
+      "title": "Patatap",
+      "topic_ids": [],
+      "visual_traits": [
+        "minimal",
+        "kinetic",
+        "musical",
+        "abstract"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
         "concept:narrative-evidence-choreography"
       ],
       "id": "ex:pattern-breaking",
@@ -1568,6 +1710,187 @@
         "data-rich",
         "chronological",
         "text-led"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
+        "concept:sensor-mediated-environment"
+      ],
+      "id": "ex:pulse-room",
+      "intent_ids": [],
+      "interaction": "biometric-input",
+      "kind": "REFERENCE",
+      "medium": "interactive-installation",
+      "resolve_path": "catalog/records/ex/pulse-room.json",
+      "title": "Pulse Room",
+      "topic_ids": [],
+      "visual_traits": [
+        "light",
+        "biometric",
+        "serial",
+        "collective"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
+        "concept:sensor-mediated-environment"
+      ],
+      "id": "ex:rain-room",
+      "intent_ids": [],
+      "interaction": "presence-tracking",
+      "kind": "REFERENCE",
+      "medium": "interactive-installation",
+      "resolve_path": "catalog/records/ex/rain-room.json",
+      "title": "Rain Room",
+      "topic_ids": [],
+      "visual_traits": [
+        "environmental",
+        "rain",
+        "immersive",
+        "negative-space"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
+        "concept:sensor-mediated-environment"
+      ],
+      "id": "ex:random-future-self",
+      "intent_ids": [],
+      "interaction": "body-tracking",
+      "kind": "REFERENCE",
+      "medium": "interactive-installation",
+      "resolve_path": "catalog/records/ex/random-future-self.json",
+      "title": "Random International — Future Self",
+      "topic_ids": [],
+      "visual_traits": [
+        "low-resolution",
+        "light",
+        "embodied",
+        "delayed"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
+        "concept:data-as-environment",
+        "concept:display-as-architecture"
+      ],
+      "id": "ex:ryoji-data-verse-3",
+      "intent_ids": [],
+      "interaction": "watch-and-occupy",
+      "kind": "REFERENCE",
+      "medium": "audiovisual-installation",
+      "resolve_path": "catalog/records/ex/ryoji-data-verse-3.json",
+      "title": "Ryoji Ikeda — data-verse 3",
+      "topic_ids": [],
+      "visual_traits": [
+        "data-dense",
+        "monochrome",
+        "large-scale",
+        "audiovisual"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
+        "concept:editable-model-sandbox"
+      ],
+      "id": "ex:seeing-theory-basic-probability",
+      "intent_ids": [],
+      "interaction": "parameter-control",
+      "kind": "REFERENCE",
+      "medium": "interactive-data-visualization",
+      "resolve_path": "catalog/records/ex/seeing-theory-basic-probability.json",
+      "title": "Seeing Theory — Basic Probability",
+      "topic_ids": [],
+      "visual_traits": [
+        "quantitative",
+        "linked",
+        "interactive",
+        "statistical"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
+        "concept:linked-computation-inspection"
+      ],
+      "id": "ex:setosa-image-kernels",
+      "intent_ids": [],
+      "interaction": "hover-and-edit",
+      "kind": "REFERENCE",
+      "medium": "interactive-explainer",
+      "resolve_path": "catalog/records/ex/setosa-image-kernels.json",
+      "title": "Image Kernels — Explained Visually",
+      "topic_ids": [],
+      "visual_traits": [
+        "pixel",
+        "before-after",
+        "annotated",
+        "computational"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
+        "concept:editable-model-sandbox"
+      ],
+      "id": "ex:setosa-markov-chains",
+      "intent_ids": [],
+      "interaction": "edit-and-run-model",
+      "kind": "REFERENCE",
+      "medium": "interactive-explainer",
+      "resolve_path": "catalog/records/ex/setosa-markov-chains.json",
+      "title": "Markov Chains — Explained Visually",
+      "topic_ids": [],
+      "visual_traits": [
+        "network",
+        "matrix",
+        "animated",
+        "stateful"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
+        "concept:boundaryless-spatial-content"
+      ],
+      "id": "ex:teamlab-borderless",
+      "intent_ids": [],
+      "interaction": "spatial-navigation",
+      "kind": "REFERENCE",
+      "medium": "digital-art-museum",
+      "resolve_path": "catalog/records/ex/teamlab-borderless.json",
+      "title": "teamLab Borderless",
+      "topic_ids": [],
+      "visual_traits": [
+        "immersive",
+        "spatial",
+        "moving-content",
+        "participatory"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
+        "concept:path-paced-spatial-choreography"
+      ],
+      "id": "ex:uva-momentum",
+      "intent_ids": [],
+      "interaction": "walk-through",
+      "kind": "REFERENCE",
+      "medium": "kinetic-installation",
+      "resolve_path": "catalog/records/ex/uva-momentum.json",
+      "title": "UVA — Momentum",
+      "topic_ids": [],
+      "visual_traits": [
+        "kinetic",
+        "light",
+        "sound",
+        "spatial"
       ]
     },
     {

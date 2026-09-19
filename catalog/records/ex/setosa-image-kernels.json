@@ -1,0 +1,115 @@
+{
+  "ai_build": {
+    "availability": "available",
+    "example_id": "ex:setosa-image-kernels",
+    "method": {
+      "concepts": [
+        "concept:linked-computation-inspection"
+      ],
+      "failure_modes": [
+        "Do not show a transformed output without exposing which local values generated it.",
+        "Do not imply every image operation is a linear convolution."
+      ],
+      "fidelity_constraints": [
+        "Reuse the linked-computation mechanism without copying Setosa illustrations, examples, wording, or image assets."
+      ],
+      "grammar": [
+        "image-comparison",
+        "state-process"
+      ],
+      "interaction_model": {
+        "response": "The local neighborhood, numerical operation, kernel, and transformed output stay linked to the same selected location and parameters.",
+        "trigger": "hover a pixel, select/edit a kernel, or supply an image/video source"
+      },
+      "mechanisms": [],
+      "state_model": {
+        "deterministic": true,
+        "model": "external-reference"
+      },
+      "transfer_constraints": [
+        "Use one selection/hover state to connect the input neighborhood, calculation, and output result.",
+        "Let users move from presets to custom parameters only after the local operation is legible."
+      ]
+    },
+    "resources": [],
+    "tools": []
+  },
+  "crosswalks": [],
+  "record": {
+    "canonical_path": "knowledge/examples/creative-wave01-b.json",
+    "collection_ids": [],
+    "concept_ids": [
+      "concept:linked-computation-inspection"
+    ],
+    "failure_modes": [
+      "Do not show a transformed output without exposing which local values generated it.",
+      "Do not imply every image operation is a linear convolution."
+    ],
+    "fidelity_constraints": [
+      "Reuse the linked-computation mechanism without copying Setosa illustrations, examples, wording, or image assets."
+    ],
+    "grammar": [
+      "image-comparison",
+      "state-process"
+    ],
+    "id": "ex:setosa-image-kernels",
+    "intent_ids": [],
+    "interaction": "hover-and-edit",
+    "interaction_model": {
+      "response": "The local neighborhood, numerical operation, kernel, and transformed output stay linked to the same selected location and parameters.",
+      "trigger": "hover a pixel, select/edit a kernel, or supply an image/video source"
+    },
+    "kind": "REFERENCE",
+    "lifecycle": {
+      "collected": true,
+      "reusable": false,
+      "showable": false,
+      "verified": false
+    },
+    "medium": "interactive-explainer",
+    "resource_ids": [],
+    "source_refs": [
+      "source:setosa-image-kernels"
+    ],
+    "state_model": {
+      "deterministic": true,
+      "model": "external-reference"
+    },
+    "summary": "A convolution explainer that links source pixels, a local 3×3 operation, kernel values, and the transformed output under hover and editable matrices.",
+    "title": "Image Kernels — Explained Visually",
+    "tool_choices": [],
+    "topic_ids": [],
+    "transfer_constraints": [
+      "Use one selection/hover state to connect the input neighborhood, calculation, and output result.",
+      "Let users move from presets to custom parameters only after the local operation is legible."
+    ],
+    "type": "Example",
+    "visual_traits": [
+      "pixel",
+      "before-after",
+      "annotated",
+      "computational"
+    ]
+  },
+  "relations": [
+    {
+      "source": "ex:setosa-image-kernels",
+      "target": "concept:linked-computation-inspection",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Direct page inspected for 3×3 convolution explanation, hover-linked values, preset/custom kernels, image upload and live-video playground.",
+      "checked_at": "2026-09-19",
+      "id": "source:setosa-image-kernels",
+      "locator": "https://setosa.io/ev/image-kernels/",
+      "locator_type": "url",
+      "publisher": "Setosa / Explained Visually",
+      "title": "Image Kernels — Explained Visually",
+      "type": "Source"
+    }
+  ]
+}
