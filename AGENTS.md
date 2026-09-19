@@ -68,13 +68,16 @@ When a registry technique is used successfully and is worth reusing, promote the
 
 Follow `docs/EDITORIAL-UI-CONTRACT.md` and `docs/KNOWLEDGE-ATLAS-CONTRACT.md`.
 
-- Default Atlas: subject → canonical topic → concrete visual examples.
-- Example cards show a preview, a short name and truthful LIVE / REFERENCE / GAP kind.
-- Detail opens visual/demo first. AI Build, implementation and curriculum provenance are collapsed.
-- Explore discovers Examples; Dictionary explains Concepts; Index exposes compact exhaustive metadata.
+- Default Atlas: Creative World first, grouped for cross-media recognition and comparison. Academic packs preserve subject → canonical topic → concrete example navigation as a secondary projection.
+- Derive Human presentation strategy from canonical Example kind/medium/relations; do not add a competing presentation truth to canonical records.
+- External REFERENCE, local LIVE and original Resource demo are visually and semantically distinct. Never manufacture a screenshot or imply that a Resource demo is the source Example.
+- Detail opens visual/reference first, then why it is banked, demonstrated Concepts, reusable observations, transfer/failure constraints, related Examples and Resources. Machine/build and provenance remain available but subordinate.
+- Explore is an editorial discovery stream with search plus secondary refinement by world/domain/Concept/medium/interaction/trait/Resource/coverage; it is not a generic card wall.
+- Dictionary routes Concept → real Examples → related Concepts → Resource/Tool implementation path. Resource pages may run only declared local AIDRB demos.
+- A public source locator does not imply display or iframe permission. Embed third-party media only when provenance explicitly supports that mode; otherwise link the source and use an honest medium-aware reference fallback.
 - Neutral editorial chrome, restrained meaningful color, keyboard access and responsive layouts.
 - Old web/ assets are compatibility evidence only and must not load from index.html.
-- Edit canonical inputs; regenerate catalog/ and catalog.yaml. Run schema, drift, retrieval and browser checks.
+- Edit canonical inputs; regenerate catalog/ and catalog.yaml. Projection-only changes must preserve deterministic catalog output, stable IDs, selection commit/lock and retrieval benchmarks.
 
 ## Provenance and rights
 
