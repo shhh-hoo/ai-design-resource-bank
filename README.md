@@ -17,7 +17,7 @@ npm run build
 npm run dev
 ```
 
-Open `http://127.0.0.1:4173`. Root loads the Creative Atlas from generated `catalog/web-index.json`; relations and resolved records stay lazy. No old decision-board scripts, AI index or full build records load at startup. External references receive medium-aware Human presentation without copying source media. Example detail loads its own compact resolve record and, for LIVE, the shared preview runtime. Resource pages may run original AIDRB demo artifacts, explicitly separate from any source Example preview and from machine-side deep Resource Package fetch.
+Open `http://127.0.0.1:4173`. Root loads the Creative Atlas from generated `catalog/web-index.json`; relations, resolved records and `app/media.json` stay lazy. No old decision-board scripts, AI index or full build records load at startup. External Example detail prefers original source media: open-license / explicit embeds load directly, official previews can render remotely, and other source pages can be loaded on demand without copying third-party binary assets. The medium-aware reference plate is fallback only. Resource pages run original AIDRB demo artifacts separately from source Examples and from machine-side deep Resource Package fetch.
 
 ## Source of truth
 
