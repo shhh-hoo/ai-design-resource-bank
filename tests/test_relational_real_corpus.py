@@ -24,17 +24,16 @@ class RealCorpusProjectionTests(unittest.TestCase):
         finally:
             db.close()
 
-    def test_real_migration_gaps_are_explicit(self):
+    def test_all_current_relation_semantics_are_mapped(self):
         db, report = project_current_corpus()
         try:
-            allowed = {
+            self.assertEqual({}, report["unresolved_relations"])
+            for key in (
                 "implemented_with:proposed_example",
                 "intended_to_demonstrate",
                 "yields",
-            }
-            self.assertEqual(allowed, set(report["unresolved_relations"]))
-            for key in allowed:
-                self.assertGreater(report["unresolved_relations"][key], 0)
+            ):
+                self.assertGreater(report["mapped_relations"].get(key, 0), 0)
         finally:
             db.close()
 
