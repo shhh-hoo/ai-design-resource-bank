@@ -1,0 +1,134 @@
+[
+  {
+    "id": "source:pattern-breaking",
+    "type": "Source",
+    "title": "Pattern Breaking — Fast Fashion's Dirty Tricks",
+    "publisher": "Pattern Breaking",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Direct page inspected for its editorial section structure, statistics, deceptive-pattern examples and policy chronology. Original implementation technology was not checked.",
+    "locator_type": "url",
+    "locator": "https://patternbreak.ing/"
+  },
+  {
+    "id": "source:whole-earth-index",
+    "type": "Source",
+    "title": "Whole Earth Index",
+    "publisher": "Whole Earth Index",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Direct archive index inspected for publication groupings, issue chronology and dense index structure. Original implementation technology was not checked.",
+    "locator_type": "url",
+    "locator": "https://wholeearth.info/"
+  },
+  {
+    "id": "source:fiona-vilmer",
+    "type": "Source",
+    "title": "Fiona Vilmer",
+    "publisher": "Fiona Vilmer",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Direct English index and project pages inspected for category structure, project/publication metadata and image-led detail. Interaction beyond ordinary navigation was not asserted.",
+    "locator_type": "url",
+    "locator": "https://fionavilmer.com/en"
+  },
+  {
+    "id": "source:aott-severance",
+    "type": "Source",
+    "title": "Severance title sequence — Art of the Title",
+    "publisher": "Art of the Title",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Title page and process interview inspected for the visible sequence, split-identity metaphor, 3D deformation workflow and explicitly documented production tools. No web implementation is inferred.",
+    "locator_type": "url",
+    "locator": "https://www.artofthetitle.com/title/severance/"
+  },
+  {
+    "id": "source:aott-spider-verse",
+    "type": "Source",
+    "title": "Spider-Man: Into the Spider-Verse title sequence — Art of the Title",
+    "publisher": "Art of the Title",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Title page and process interview inspected for mixed 3D/analog construction, halftone/offset/hand-drawn treatments and explicitly documented production workflow.",
+    "locator_type": "url",
+    "locator": "https://www.artofthetitle.com/title/spider-man-into-the-spider-verse/"
+  },
+  {
+    "id": "source:aott-uncut-gems",
+    "type": "Source",
+    "title": "Uncut Gems opening/title sequence — Art of the Title",
+    "publisher": "Art of the Title",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Title page and interview inspected for the continuous push into the opal, imagined interior spaces, scale transition and depth-of-field treatment.",
+    "locator_type": "url",
+    "locator": "https://www.artofthetitle.com/title/uncut-gems/"
+  },
+  {
+    "id": "source:esdevlin-formation-tour",
+    "type": "Source",
+    "title": "Beyoncé — Formation Tour",
+    "publisher": "Es Devlin Studio",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Official project page inspected for the stage project. Scenic/screen-volume claims are limited to the project documentation and visible design; full production mechanics are not inferred.",
+    "locator_type": "url",
+    "locator": "https://esdevlin.com/work/projects/beyonce"
+  },
+  {
+    "id": "source:esdevlin-mirror-maze",
+    "type": "Source",
+    "title": "Mirror Maze — Peckham 2016",
+    "publisher": "Es Devlin Studio",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Official project page inspected for the installation; reflection, repetition and navigable mirrored space are treated as the reusable mechanism, not a claim about web technology.",
+    "locator_type": "url",
+    "locator": "https://esdevlin.com/work/projects/mirror-maze"
+  },
+  {
+    "id": "source:esdevlin-u2-sphere",
+    "type": "Source",
+    "title": "U2 — The Sphere",
+    "publisher": "Es Devlin Studio",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Official project page inspected for Es Devlin's contribution. The record uses the work as an environment-scale display reference and does not attribute all Sphere content or engineering to Es Devlin.",
+    "locator_type": "url",
+    "locator": "https://esdevlin.com/work/projects/the-sphere"
+  },
+  {
+    "id": "source:dia-catk",
+    "type": "Source",
+    "title": "CATK — DIA",
+    "publisher": "DIA",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Official case study inspected for the stated flexible typographic identity and its operation across motion and print.",
+    "locator_type": "url",
+    "locator": "https://dia.tv/project/catk/"
+  },
+  {
+    "id": "source:dia-nike-statement-house",
+    "type": "Source",
+    "title": "Nike Statement House — DIA",
+    "publisher": "DIA",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Official case study inspected for the experiential typographic system, distributed screen/court context and animation rules based on basketball movement.",
+    "locator_type": "url",
+    "locator": "https://dia.tv/project/nike-statement-house/"
+  },
+  {
+    "id": "source:dia-atrak-live-visuals",
+    "type": "Source",
+    "title": "A-Trak Live Visuals — DIA",
+    "publisher": "DIA",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Official case study inspected for the typographic identity system and its stated range from restrained web/flyer applications to maximal live-show visuals.",
+    "locator_type": "url",
+    "locator": "https://dia.tv/project/a-trak/"
+  }
+]
