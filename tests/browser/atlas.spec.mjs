@@ -191,7 +191,7 @@ for (const [name, width, height] of [
       "Original source media is linked, not reproduced here.",
     );
     await expect(
-      page.getByRole("button", { name: "View original here" }),
+      page.getByRole("button", { name: "Load original" }),
     ).toBeVisible();
     await expect(
       page.getByRole("link", { name: "Open ↗" }),
@@ -214,7 +214,7 @@ for (const [name, width, height] of [
         body: "<!doctype html><title>Whole Earth Index</title><main>Original media fixture</main>",
       }),
     );
-    await page.getByRole("button", { name: "View original here" }).click();
+    await page.getByRole("button", { name: "Load original" }).click();
     await expect(page.locator("iframe.original-frame")).toHaveAttribute(
       "src",
       "https://wholeearth.info/",
@@ -247,7 +247,7 @@ for (const [name, width, height] of [
     await page.goto("/#example/ex:aott-severance");
     await expect(page.locator('#stage [data-presentation="cinema"]')).toBeVisible();
     await expect(
-      page.getByRole("button", { name: "View original here" }),
+      page.getByRole("button", { name: "Load original" }),
     ).toBeVisible();
     await expect(page.locator("#resources")).toBeHidden();
     await assertNoOverflow(page);
@@ -260,7 +260,7 @@ for (const [name, width, height] of [
     await page.goto("/#example/ex:pulse-room");
     await expect(page.locator('#stage [data-presentation="spatial"]')).toBeVisible();
     await expect(
-      page.getByRole("button", { name: "View original here" }),
+      page.getByRole("button", { name: "Load original" }),
     ).toBeVisible();
     await expect(page.locator("#resources")).toBeHidden();
     await assertNoOverflow(page);
