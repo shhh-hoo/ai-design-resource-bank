@@ -71,7 +71,7 @@ CI validates the corrected Core, compatibility data, generated drift, retrieval/
 ## Contracts and limits
 
 - [Corrected North Star v2.1](docs/KNOWLEDGE-ATLAS-CONTRACT.md): architecture, semantics, migration and tool decision.
-- [Visual contract](docs/EDITORIAL-UI-CONTRACT.md): visual-first views and progressive disclosure.
+- [Visual contract](docs/EDITORIAL-UI-CONTRACT.md): content-first Human reference views and progressive disclosure.
 - [Retrieval skill](skills/aidrb-retrieve/SKILL.md): machine workflow and identity discipline.
 - [Resource ingestion](skills/resource-ingest/SKILL.md): optional extraction and rights.
 - [Validation evidence](docs/evidence/REVIEW.md): measured results and unresolved scope.
