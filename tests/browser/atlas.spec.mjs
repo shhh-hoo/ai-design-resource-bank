@@ -252,9 +252,9 @@ for (const [name, width, height] of [
     );
     await page.goto("/#concept/concept:kinetic-identity-system");
     await expect(page.locator(".comparison-row")).toHaveCount(3);
-    await expect(page.locator(".implementation-path")).toContainText(
-      "No Resource extracted yet.",
-    );
+    await expect(
+      page.locator('.implementation-grid > div:first-child .implementation-link'),
+    ).toHaveCount(0);
 
     // All four Wave 01 Resource Packages are directly runnable in the Human view.
     const resourceCases = [
