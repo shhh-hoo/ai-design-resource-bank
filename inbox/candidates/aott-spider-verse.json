@@ -1,7 +1,7 @@
 {
   "id": "candidate:aott-spider-verse",
   "candidate_kind": "example",
-  "status": "promote",
+  "status": "promoted",
   "discovered_by": "scout",
   "source": {
     "locator_type": "url",
@@ -25,9 +25,13 @@
   ],
   "notes": "The process interview documents scanned physical drawings composited onto 3D-derived sequences and a workflow using Adobe tools plus Cinema 4D. The key bank value is the transformation of material/print grammar into motion, not the software list itself.",
   "decision": {
-    "outcome": "promote",
+    "outcome": "promoted",
     "rationale": "Provides an unusually clear cross-media bridge from comic/print materiality to animated 3D composition, useful for escaping flat web-style imitation.",
     "reviewed_by": "wave01-curation",
-    "reviewed_at": "2026-09-19"
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:aott-spider-verse",
+      "concept:mixed-media-surface-language"
+    ]
   }
 }
