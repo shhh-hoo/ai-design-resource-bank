@@ -98,7 +98,7 @@ function subjectAtlas(topicId = "topic:chemistry-energetics") {
   const topic = topics.get(topicId);
   if (!topic || !topic.parent) throw new Error("Unknown Chemistry topic");
   main.innerHTML =
-    `<a class="back" href="#atlas">← Creative Atlas</a>` +
+    `<a class="back" href="#atlas">← References</a>` +
     heading("Chemistry", "Academic") +
     `<div class="atlas-layout"><aside class="topic-nav" aria-label="Chemistry topics"><p class="eyebrow">Chemistry</p>${data.topics
       .filter((item) => item.parent === "topic:chemistry")
@@ -235,10 +235,10 @@ async function explore(version) {
         .sort()
         .map((value) => [value, humanize(value)]),
     ]) +
-    filter("resource", "Resource", [
+    filter("resource", "Demo", [
       ["", "Any"],
-      ["yes", "Runnable Resource available"],
-      ["no", "Reference only"],
+      ["yes", "Available"],
+      ["no", "None"],
     ]) +
     filter("availability", "Coverage", [
       ["", "Any"],
@@ -442,7 +442,7 @@ async function detail(id, version) {
       .join(" · ")}</p>`;
 
   const crosswalkMarkup = resolved.crosswalks.length
-    ? `<p>Canonical topic → curriculum node. These editorial mappings describe scope, not approval by a curriculum board.</p>${resolved.crosswalks.map((crosswalk) => `<p><strong>${esc(crosswalk.node.label)}</strong> · ${esc(crosswalk.node.section)}<br>Canonical topic is <strong>${esc(crosswalk.relation)}</strong> relative to this source node.<br>${esc(crosswalk.rationale)}</p>`).join("")}`
+    ? `${resolved.crosswalks.map((crosswalk) => `<p><strong>${esc(crosswalk.node.label)}</strong> · ${esc(crosswalk.node.section)}<br>${esc(crosswalk.rationale)}</p>`).join("")}`
     : "";
   document.querySelector("#provenance .details-body").innerHTML =
     `${crosswalkMarkup}<h3>Sources</h3>${resolved.sources.map((source) => `<p>${sourceLabel(source)}<br>${esc(source.publisher)} · checked ${esc(source.checked_at || "not independently checked")}<br><span class="gap-note">${esc(source.check_scope)}</span></p>`).join("")}`;
