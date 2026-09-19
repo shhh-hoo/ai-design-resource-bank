@@ -1,0 +1,24 @@
+id: archive-as-interface
+title: Archive as interface
+domain: layout
+status: implemented
+tags: [archive, index, editorial, dense-navigation, information-architecture]
+source_refs: [source:whole-earth-index, source:fiona-vilmer]
+selection_reason: Turn a large corpus into the navigation surface itself while keeping chronology, grouping and metadata visible.
+mechanism:
+  summary: Normalize records, group them by a meaningful corpus axis, keep group scope visible, and filter in place without replacing the archive with isolated cards.
+  primitives: [visible-corpus, group-heading, metadata-row, persistent-context, in-place-filter]
+  states: [overview, filtered, focused]
+  parameters: [group-key, sort-direction, visible-metadata, query]
+  failure_modes: [Hiding corpus scope behind cards, Losing chronology while filtering, Making metadata columns too wide to scan, Treating density as permission to remove hierarchy]
+fidelity: [concept, behavior, geometry, implementation]
+implements: [concept:archive-as-interface]
+artifacts:
+  - {path: artifacts/archive-index.js, kind: code, purpose: Framework-free grouping filtering and semantic DOM renderer, generated: false, validated: true}
+  - {path: artifacts/demo.html, kind: example, purpose: Runnable archive/index example with visible grouping and in-place search, generated: false, validated: false}
+rights:
+  source_assets_stored: false
+  license: MIT
+  basis: Original implementation of the generalized archive/index mechanism. No source-site code, copy, images or branded assets are stored.
+related: [ex:whole-earth-index, ex:fiona-vilmer]
+notes: The package preserves corpus visibility and navigation behavior, not the appearance of either source.
