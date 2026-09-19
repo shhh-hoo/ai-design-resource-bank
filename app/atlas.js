@@ -431,7 +431,7 @@ async function detail(id, version) {
             `<a class="resource-callout" href="#resource/${resource.id}"><span>AIDRB implementation</span><h3>${esc(resource.title)}</h3><p>${esc(resource.status)}</p><strong>Open →</strong></a>`,
         )
         .join("")}</div>`
-    : "";`
+    : "";
 
 
   document.querySelector("#implementation .details-body").innerHTML =
