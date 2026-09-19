@@ -1,0 +1,33 @@
+{
+  "id": "candidate:parable-of-polygons",
+  "candidate_kind": "example",
+  "status": "promote",
+  "discovered_by": "scout",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://ncase.me/polygons/",
+    "title": "Parable of the Polygons",
+    "creator": "Vi Hart + Nicky Case"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "Direct manipulation and sandbox controls expose how local rules produce emergent global patterns; the user can intervene, reset, and alter bias rather than merely watch an animation.",
+  "novelty_axes": [
+    "new_interaction",
+    "cross_media_transfer",
+    "benchmark_gap"
+  ],
+  "signals": [
+    "drag-and-drop simulation",
+    "emergent behavior",
+    "parameter sandbox",
+    "causal exploration",
+    "public-domain playable"
+  ],
+  "notes": "Direct inspection confirms drag-and-drop relocation of unhappy polygons, rule changes, larger simulations and a final sandbox. The project explicitly states that adaptations and source modifications are allowed.",
+  "decision": {
+    "outcome": "promote",
+    "rationale": "Strong anchor for direct-manipulation models where local actions and parameters visibly accumulate into system-level outcomes.",
+    "reviewed_by": "wave01-curation",
+    "reviewed_at": "2026-09-19"
+  }
+}

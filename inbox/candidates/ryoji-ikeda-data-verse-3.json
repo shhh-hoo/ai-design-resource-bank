@@ -1,0 +1,34 @@
+{
+  "id": "candidate:ryoji-ikeda-data-verse-3",
+  "candidate_kind": "example",
+  "status": "promote",
+  "discovered_by": "scout",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://www.ryojiikeda.com/project/x_verse/",
+    "title": "data-verse 3",
+    "creator": "Ryoji Ikeda"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "Scientific and computational data are composed as an architecture-scale audiovisual field, using extreme density, precision, scale and synchronized sound rather than conventional chart framing.",
+  "novelty_axes": [
+    "new_medium",
+    "cross_media_transfer",
+    "benchmark_gap"
+  ],
+  "signals": [
+    "data as environment",
+    "audiovisual installation",
+    "large-scale projection",
+    "scientific imagery",
+    "density",
+    "precision"
+  ],
+  "notes": "The artist's official page identifies data-verse 3 as a 2020 audiovisual installation using DCI-4K projection, computer and speakers, with variable dimensions and a minimum width over ten metres; credits include concept/composition plus computer graphics/programming.",
+  "decision": {
+    "outcome": "promote",
+    "rationale": "Adds a non-screen-native information-visualization anchor for treating dense scientific/computational data as an immersive compositional field rather than a dashboard.",
+    "reviewed_by": "wave01-curation",
+    "reviewed_at": "2026-09-19"
+  }
+}

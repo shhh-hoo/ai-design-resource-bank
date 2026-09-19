@@ -1,0 +1,33 @@
+{
+  "id": "candidate:google-100000-stars",
+  "candidate_kind": "example",
+  "status": "promote",
+  "discovered_by": "scout",
+  "source": {
+    "locator_type": "url",
+    "locator": "https://experiments.withgoogle.com/100000-stars",
+    "title": "100,000 Stars",
+    "creator": "Google Data Arts Team"
+  },
+  "captured_at": "2026-09-19",
+  "rationale": "A large spatial dataset becomes navigable through continuous 3D zoom, with deeper labels and named-star context revealed as scale changes.",
+  "novelty_axes": [
+    "new_interaction",
+    "new_medium",
+    "new_implementation"
+  ],
+  "signals": [
+    "semantic zoom",
+    "3D spatial data",
+    "scale transition",
+    "stellar neighborhood",
+    "WebGL"
+  ],
+  "notes": "The official experiment page states that the visualization contains real locations of over 100,000 nearby stars; zooming reveals 87 named stars and the solar system. It identifies the experiment as 3D/WebGL.",
+  "decision": {
+    "outcome": "promote",
+    "rationale": "Provides a strong real Example for the existing semantic-zoom concept and for 3D spatial navigation where information detail changes with scale.",
+    "reviewed_by": "wave01-curation",
+    "reviewed_at": "2026-09-19"
+  }
+}
