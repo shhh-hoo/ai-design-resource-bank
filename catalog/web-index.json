@@ -10,6 +10,67 @@
   ],
   "examples": [
     {
+      "collection_ids": [],
+      "concept_ids": [
+        "concept:semantic-3d-metaphor"
+      ],
+      "id": "ex:aott-severance",
+      "intent_ids": [],
+      "interaction": "watch",
+      "kind": "REFERENCE",
+      "medium": "title-sequence",
+      "resolve_path": "catalog/records/ex/aott-severance.json",
+      "title": "Severance — title sequence",
+      "topic_ids": [],
+      "visual_traits": [
+        "3d",
+        "surreal",
+        "figurative",
+        "soft-body"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
+        "concept:mixed-media-surface-language"
+      ],
+      "id": "ex:aott-spider-verse",
+      "intent_ids": [],
+      "interaction": "watch",
+      "kind": "REFERENCE",
+      "medium": "title-sequence",
+      "resolve_path": "catalog/records/ex/aott-spider-verse.json",
+      "title": "Spider-Man: Into the Spider-Verse — title sequence",
+      "topic_ids": [],
+      "visual_traits": [
+        "mixed-media",
+        "halftone",
+        "hand-drawn",
+        "typographic"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
+        "concept:continuous-scale-transition",
+        "concept:camera-dolly"
+      ],
+      "id": "ex:aott-uncut-gems",
+      "intent_ids": [],
+      "interaction": "watch",
+      "kind": "REFERENCE",
+      "medium": "title-sequence",
+      "resolve_path": "catalog/records/ex/aott-uncut-gems.json",
+      "title": "Uncut Gems — opening/title sequence",
+      "topic_ids": [],
+      "visual_traits": [
+        "macro",
+        "cosmic",
+        "organic",
+        "continuous"
+      ]
+    },
+    {
       "collection_ids": [
         "collection:chemistry-studies"
       ],
@@ -1347,6 +1408,186 @@
       "visual_traits": [
         "labeled",
         "schematic"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
+        "concept:kinetic-identity-system"
+      ],
+      "id": "ex:dia-atrak-live-visuals",
+      "intent_ids": [],
+      "interaction": "watch",
+      "kind": "REFERENCE",
+      "medium": "live-visual-system",
+      "resolve_path": "catalog/records/ex/dia-atrak-live-visuals.json",
+      "title": "A-Trak — scalable live visual identity",
+      "topic_ids": [],
+      "visual_traits": [
+        "typographic",
+        "kinetic",
+        "parametric",
+        "live"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
+        "concept:kinetic-identity-system"
+      ],
+      "id": "ex:dia-catk",
+      "intent_ids": [],
+      "interaction": "inspect",
+      "kind": "REFERENCE",
+      "medium": "identity-system",
+      "resolve_path": "catalog/records/ex/dia-catk.json",
+      "title": "CATK — kinetic identity system",
+      "topic_ids": [],
+      "visual_traits": [
+        "typographic",
+        "kinetic",
+        "systemic",
+        "restrained"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
+        "concept:kinetic-identity-system"
+      ],
+      "id": "ex:dia-nike-statement-house",
+      "intent_ids": [],
+      "interaction": "watch",
+      "kind": "REFERENCE",
+      "medium": "experiential-identity",
+      "resolve_path": "catalog/records/ex/dia-nike-statement-house.json",
+      "title": "Nike Statement House — experiential typographic identity",
+      "topic_ids": [],
+      "visual_traits": [
+        "typographic",
+        "kinetic",
+        "spatial",
+        "high-energy"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
+        "concept:display-as-architecture"
+      ],
+      "id": "ex:esdevlin-formation-tour",
+      "intent_ids": [],
+      "interaction": "watch",
+      "kind": "REFERENCE",
+      "medium": "stage-performance",
+      "resolve_path": "catalog/records/ex/esdevlin-formation-tour.json",
+      "title": "Beyoncé — Formation Tour stage",
+      "topic_ids": [],
+      "visual_traits": [
+        "monumental",
+        "screen-volume",
+        "stage",
+        "architectural"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
+        "concept:reflective-spatial-multiplication"
+      ],
+      "id": "ex:esdevlin-mirror-maze",
+      "intent_ids": [],
+      "interaction": "spatial-navigation",
+      "kind": "REFERENCE",
+      "medium": "installation",
+      "resolve_path": "catalog/records/ex/esdevlin-mirror-maze.json",
+      "title": "Mirror Maze — Peckham 2016",
+      "topic_ids": [],
+      "visual_traits": [
+        "reflective",
+        "repetitive",
+        "immersive",
+        "spatial"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
+        "concept:display-as-architecture"
+      ],
+      "id": "ex:esdevlin-u2-sphere",
+      "intent_ids": [],
+      "interaction": "watch",
+      "kind": "REFERENCE",
+      "medium": "concert-environment",
+      "resolve_path": "catalog/records/ex/esdevlin-u2-sphere.json",
+      "title": "U2 — The Sphere / Nevada Ark contribution",
+      "topic_ids": [],
+      "visual_traits": [
+        "immersive",
+        "environmental",
+        "architectural",
+        "large-scale"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
+        "concept:archive-as-interface"
+      ],
+      "id": "ex:fiona-vilmer",
+      "intent_ids": [],
+      "interaction": "browse-index",
+      "kind": "REFERENCE",
+      "medium": "website",
+      "resolve_path": "catalog/records/ex/fiona-vilmer.json",
+      "title": "Fiona Vilmer — cultural portfolio archive",
+      "topic_ids": [],
+      "visual_traits": [
+        "editorial",
+        "text-led",
+        "archive",
+        "restrained"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
+        "concept:narrative-evidence-choreography"
+      ],
+      "id": "ex:pattern-breaking",
+      "intent_ids": [],
+      "interaction": "scroll",
+      "kind": "REFERENCE",
+      "medium": "website",
+      "resolve_path": "catalog/records/ex/pattern-breaking.json",
+      "title": "Pattern Breaking — Fast Fashion's Dirty Tricks",
+      "topic_ids": [],
+      "visual_traits": [
+        "editorial",
+        "data-rich",
+        "chronological",
+        "text-led"
+      ]
+    },
+    {
+      "collection_ids": [],
+      "concept_ids": [
+        "concept:archive-as-interface"
+      ],
+      "id": "ex:whole-earth-index",
+      "intent_ids": [],
+      "interaction": "browse-index",
+      "kind": "REFERENCE",
+      "medium": "website",
+      "resolve_path": "catalog/records/ex/whole-earth-index.json",
+      "title": "Whole Earth Index",
+      "topic_ids": [],
+      "visual_traits": [
+        "dense",
+        "chronological",
+        "index",
+        "text-led"
       ]
     }
   ],

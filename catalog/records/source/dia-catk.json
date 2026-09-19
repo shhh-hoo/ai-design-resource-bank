@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "knowledge/provenance/wave01-sources.json",
+    "captured_at": "2026-09-19",
+    "check_scope": "Official case study inspected for the stated flexible typographic identity and its operation across motion and print.",
+    "checked_at": "2026-09-19",
+    "id": "source:dia-catk",
+    "locator": "https://dia.tv/project/catk/",
+    "locator_type": "url",
+    "publisher": "DIA",
+    "title": "CATK — DIA",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

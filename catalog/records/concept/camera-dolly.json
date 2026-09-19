@@ -40,6 +40,11 @@
       "source": "concept:camera-dolly",
       "target": "tool:threejs",
       "type": "implemented_with"
+    },
+    {
+      "source": "ex:aott-uncut-gems",
+      "target": "concept:camera-dolly",
+      "type": "demonstrates"
     }
   ],
   "sources": [

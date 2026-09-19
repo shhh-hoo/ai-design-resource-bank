@@ -8,6 +8,16 @@
   },
   {
     "adjacent_ids": [],
+    "example_ids": [
+      "ex:fiona-vilmer",
+      "ex:whole-earth-index"
+    ],
+    "id": "concept:archive-as-interface",
+    "summary": "Make the corpus, chronology, categories, and visible index itself the primary navigation instead of hiding the archive behind isolated cards or search.",
+    "title": "Archive as interface"
+  },
+  {
+    "adjacent_ids": [],
     "example_ids": [],
     "id": "concept:area-under-curve",
     "summary": "Move a boundary and watch accumulated area grow with it.",
@@ -26,8 +36,12 @@
     "title": "Bond morph"
   },
   {
-    "adjacent_ids": [],
-    "example_ids": [],
+    "adjacent_ids": [
+      "concept:continuous-scale-transition"
+    ],
+    "example_ids": [
+      "ex:aott-uncut-gems"
+    ],
     "id": "concept:camera-dolly",
     "summary": "Move the viewpoint through depth so foreground and background change relationship, not just size.",
     "title": "Camera dolly"
@@ -479,11 +493,32 @@
     "title": "Weak-acid titration"
   },
   {
+    "adjacent_ids": [
+      "concept:camera-dolly"
+    ],
+    "example_ids": [
+      "ex:aott-uncut-gems"
+    ],
+    "id": "concept:continuous-scale-transition",
+    "summary": "Maintain perceptual continuity while moving through radically different scales or semantic spaces, using camera motion and material cues instead of a hard scene cut.",
+    "title": "Continuous scale transition"
+  },
+  {
     "adjacent_ids": [],
     "example_ids": [],
     "id": "concept:depth-parallax",
     "summary": "Move visual layers at different rates so depth emerges from relative motion.",
     "title": "Depth parallax"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:esdevlin-formation-tour",
+      "ex:esdevlin-u2-sphere"
+    ],
+    "id": "concept:display-as-architecture",
+    "summary": "Treat the display surface as a spatial object or environmental envelope that frames, divides, reveals, surrounds, or replaces the scene rather than acting as a flat background.",
+    "title": "Display as architecture"
   },
   {
     "adjacent_ids": [
@@ -667,6 +702,17 @@
   },
   {
     "adjacent_ids": [],
+    "example_ids": [
+      "ex:dia-atrak-live-visuals",
+      "ex:dia-catk",
+      "ex:dia-nike-statement-house"
+    ],
+    "id": "concept:kinetic-identity-system",
+    "summary": "Define identity as a reusable set of typographic and motion rules that can vary in intensity and medium while remaining recognizably one system.",
+    "title": "Kinetic identity system"
+  },
+  {
+    "adjacent_ids": [],
     "example_ids": [],
     "id": "concept:mask-transition",
     "summary": "Reveal the next state through a controlled moving window instead of cross-fading everything.",
@@ -674,10 +720,28 @@
   },
   {
     "adjacent_ids": [],
+    "example_ids": [
+      "ex:aott-spider-verse"
+    ],
+    "id": "concept:mixed-media-surface-language",
+    "summary": "Combine rendered geometry with print, drawing, scan, halftone, overprint, paint, or other materially distinct marks so the surface language carries meaning across media.",
+    "title": "Mixed-media surface language"
+  },
+  {
+    "adjacent_ids": [],
     "example_ids": [],
     "id": "concept:movable-tangent",
     "summary": "Drag a point along a curve to connect local slope with the derivative.",
     "title": "Movable tangent"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:pattern-breaking"
+    ],
+    "id": "concept:narrative-evidence-choreography",
+    "summary": "Sequence research evidence, quantitative signals, concrete examples, and chronology so each mode advances one argument rather than appearing as separate content widgets.",
+    "title": "Narrative evidence choreography"
   },
   {
     "adjacent_ids": [],
@@ -724,10 +788,28 @@
   },
   {
     "adjacent_ids": [],
+    "example_ids": [
+      "ex:esdevlin-mirror-maze"
+    ],
+    "id": "concept:reflective-spatial-multiplication",
+    "summary": "Use reflection and repeated planes to multiply perceived space, partial views, orientation cues, and possible paths so navigation itself becomes part of the visual experience.",
+    "title": "Reflective spatial multiplication"
+  },
+  {
+    "adjacent_ids": [],
     "example_ids": [],
     "id": "concept:scroll-scrub",
     "summary": "Map scroll position to one deterministic playhead instead of firing disconnected enter animations.",
     "title": "Scroll-scrub timeline"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:aott-severance"
+    ],
+    "id": "concept:semantic-3d-metaphor",
+    "summary": "Use spatial transformation, duplication, deformation, and impossible physical states to embody an abstract idea rather than treating 3D as surface decoration.",
+    "title": "Semantic 3D metaphor"
   },
   {
     "adjacent_ids": [],
