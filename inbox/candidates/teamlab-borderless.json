@@ -1,7 +1,7 @@
 {
   "id": "candidate:teamlab-borderless",
   "candidate_kind": "example",
-  "status": "promote",
+  "status": "promoted",
   "discovered_by": "scout",
   "source": {
     "locator_type": "url",
@@ -25,9 +25,13 @@
   ],
   "notes": "The official museum page states that there are no fixed artwork captions because artworks move across spaces; the app identifies the concept of the work nearest the visitor and can participate in Infinite Crystal World.",
   "decision": {
-    "outcome": "promote",
+    "outcome": "promoted",
     "rationale": "Adds a spatial-information-architecture reference where content is not owned by one container or room, and context follows the viewer's current location.",
     "reviewed_by": "wave01-curation",
-    "reviewed_at": "2026-09-19"
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:teamlab-borderless",
+      "concept:boundaryless-spatial-content"
+    ]
   }
 }

@@ -30,6 +30,12 @@
     "type": "Concept"
   },
   {
+    "id": "concept:boundaryless-spatial-content",
+    "resolve_path": "catalog/records/concept/boundaryless-spatial-content.json",
+    "title": "Boundaryless spatial content",
+    "type": "Concept"
+  },
+  {
     "id": "concept:camera-dolly",
     "resolve_path": "catalog/records/concept/camera-dolly.json",
     "title": "Camera dolly",
@@ -336,6 +342,18 @@
     "type": "Concept"
   },
   {
+    "id": "concept:cross-modal-input-mapping",
+    "resolve_path": "catalog/records/concept/cross-modal-input-mapping.json",
+    "title": "Cross-modal input mapping",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:data-as-environment",
+    "resolve_path": "catalog/records/concept/data-as-environment.json",
+    "title": "Data as environment",
+    "type": "Concept"
+  },
+  {
     "id": "concept:depth-parallax",
     "resolve_path": "catalog/records/concept/depth-parallax.json",
     "title": "Depth parallax",
@@ -345,6 +363,12 @@
     "id": "concept:display-as-architecture",
     "resolve_path": "catalog/records/concept/display-as-architecture.json",
     "title": "Display as architecture",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:editable-model-sandbox",
+    "resolve_path": "catalog/records/concept/editable-model-sandbox.json",
+    "title": "Editable model sandbox",
     "type": "Concept"
   },
   {
@@ -504,6 +528,12 @@
     "type": "Concept"
   },
   {
+    "id": "concept:linked-computation-inspection",
+    "resolve_path": "catalog/records/concept/linked-computation-inspection.json",
+    "title": "Linked computation inspection",
+    "type": "Concept"
+  },
+  {
     "id": "concept:mask-transition",
     "resolve_path": "catalog/records/concept/mask-transition.json",
     "title": "Mask transition",
@@ -546,9 +576,21 @@
     "type": "Concept"
   },
   {
+    "id": "concept:path-paced-spatial-choreography",
+    "resolve_path": "catalog/records/concept/path-paced-spatial-choreography.json",
+    "title": "Path-paced spatial choreography",
+    "type": "Concept"
+  },
+  {
     "id": "concept:pinned-reveal",
     "resolve_path": "catalog/records/concept/pinned-reveal.json",
     "title": "Pinned reveal",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:playable-model-narrative",
+    "resolve_path": "catalog/records/concept/playable-model-narrative.json",
+    "title": "Playable model narrative",
     "type": "Concept"
   },
   {
@@ -582,6 +624,12 @@
     "type": "Concept"
   },
   {
+    "id": "concept:sensor-mediated-environment",
+    "resolve_path": "catalog/records/concept/sensor-mediated-environment.json",
+    "title": "Sensor-mediated environment",
+    "type": "Concept"
+  },
+  {
     "id": "concept:split-text-reveal",
     "resolve_path": "catalog/records/concept/split-text-reveal.json",
     "title": "Split-text reveal",
@@ -606,6 +654,12 @@
     "type": "Concept"
   },
   {
+    "id": "concept:world-as-interface",
+    "resolve_path": "catalog/records/concept/world-as-interface.json",
+    "title": "World as interface",
+    "type": "Concept"
+  },
+  {
     "id": "ex:aott-severance",
     "resolve_path": "catalog/records/ex/aott-severance.json",
     "title": "Severance — title sequence",
@@ -621,6 +675,12 @@
     "id": "ex:aott-uncut-gems",
     "resolve_path": "catalog/records/ex/aott-uncut-gems.json",
     "title": "Uncut Gems — opening/title sequence",
+    "type": "Example"
+  },
+  {
+    "id": "ex:bruno-simon-portfolio",
+    "resolve_path": "catalog/records/ex/bruno-simon-portfolio.json",
+    "title": "Bruno Simon — 3D portfolio",
     "type": "Example"
   },
   {
@@ -912,6 +972,12 @@
     "type": "Example"
   },
   {
+    "id": "ex:chrome-music-lab-kandinsky",
+    "resolve_path": "catalog/records/ex/chrome-music-lab-kandinsky.json",
+    "title": "Chrome Music Lab — Kandinsky",
+    "type": "Example"
+  },
+  {
     "id": "ex:dia-atrak-live-visuals",
     "resolve_path": "catalog/records/ex/dia-atrak-live-visuals.json",
     "title": "A-Trak — scalable live visual identity",
@@ -927,6 +993,12 @@
     "id": "ex:dia-nike-statement-house",
     "resolve_path": "catalog/records/ex/dia-nike-statement-house.json",
     "title": "Nike Statement House — experiential typographic identity",
+    "type": "Example"
+  },
+  {
+    "id": "ex:earth-nullschool",
+    "resolve_path": "catalog/records/ex/earth-nullschool.json",
+    "title": "earth :: global wind, weather and ocean conditions",
     "type": "Example"
   },
   {
@@ -948,15 +1020,93 @@
     "type": "Example"
   },
   {
+    "id": "ex:evolution-of-trust",
+    "resolve_path": "catalog/records/ex/evolution-of-trust.json",
+    "title": "The Evolution of Trust",
+    "type": "Example"
+  },
+  {
     "id": "ex:fiona-vilmer",
     "resolve_path": "catalog/records/ex/fiona-vilmer.json",
     "title": "Fiona Vilmer — cultural portfolio archive",
     "type": "Example"
   },
   {
+    "id": "ex:google-100000-stars",
+    "resolve_path": "catalog/records/ex/google-100000-stars.json",
+    "title": "100,000 Stars",
+    "type": "Example"
+  },
+  {
+    "id": "ex:parable-of-polygons",
+    "resolve_path": "catalog/records/ex/parable-of-polygons.json",
+    "title": "Parable of the Polygons",
+    "type": "Example"
+  },
+  {
+    "id": "ex:patatap",
+    "resolve_path": "catalog/records/ex/patatap.json",
+    "title": "Patatap",
+    "type": "Example"
+  },
+  {
     "id": "ex:pattern-breaking",
     "resolve_path": "catalog/records/ex/pattern-breaking.json",
     "title": "Pattern Breaking — Fast Fashion's Dirty Tricks",
+    "type": "Example"
+  },
+  {
+    "id": "ex:pulse-room",
+    "resolve_path": "catalog/records/ex/pulse-room.json",
+    "title": "Pulse Room",
+    "type": "Example"
+  },
+  {
+    "id": "ex:rain-room",
+    "resolve_path": "catalog/records/ex/rain-room.json",
+    "title": "Rain Room",
+    "type": "Example"
+  },
+  {
+    "id": "ex:random-future-self",
+    "resolve_path": "catalog/records/ex/random-future-self.json",
+    "title": "Random International — Future Self",
+    "type": "Example"
+  },
+  {
+    "id": "ex:ryoji-data-verse-3",
+    "resolve_path": "catalog/records/ex/ryoji-data-verse-3.json",
+    "title": "Ryoji Ikeda — data-verse 3",
+    "type": "Example"
+  },
+  {
+    "id": "ex:seeing-theory-basic-probability",
+    "resolve_path": "catalog/records/ex/seeing-theory-basic-probability.json",
+    "title": "Seeing Theory — Basic Probability",
+    "type": "Example"
+  },
+  {
+    "id": "ex:setosa-image-kernels",
+    "resolve_path": "catalog/records/ex/setosa-image-kernels.json",
+    "title": "Image Kernels — Explained Visually",
+    "type": "Example"
+  },
+  {
+    "id": "ex:setosa-markov-chains",
+    "resolve_path": "catalog/records/ex/setosa-markov-chains.json",
+    "title": "Markov Chains — Explained Visually",
+    "type": "Example"
+  },
+  {
+    "id": "ex:teamlab-borderless",
+    "resolve_path": "catalog/records/ex/teamlab-borderless.json",
+    "title": "teamLab Borderless",
+    "type": "Example"
+  },
+  {
+    "id": "ex:uva-momentum",
+    "resolve_path": "catalog/records/ex/uva-momentum.json",
+    "title": "UVA — Momentum",
     "type": "Example"
   },
   {
@@ -1026,9 +1176,21 @@
     "type": "Source"
   },
   {
+    "id": "source:bruno-simon",
+    "resolve_path": "catalog/records/source/bruno-simon.json",
+    "title": "Bruno Simon — 3D portfolio",
+    "type": "Source"
+  },
+  {
     "id": "source:cambridge-9701-2025",
     "resolve_path": "catalog/records/source/cambridge-9701-2025.json",
     "title": "Chemistry 9701 syllabus 2025–2027",
+    "type": "Source"
+  },
+  {
+    "id": "source:chrome-music-lab-kandinsky",
+    "resolve_path": "catalog/records/source/chrome-music-lab-kandinsky.json",
+    "title": "Chrome Music Lab — Kandinsky",
     "type": "Source"
   },
   {
@@ -1338,6 +1500,12 @@
     "type": "Source"
   },
   {
+    "id": "source:earth-nullschool",
+    "resolve_path": "catalog/records/source/earth-nullschool.json",
+    "title": "earth :: a global map of wind, weather, and ocean conditions",
+    "type": "Source"
+  },
+  {
     "id": "source:esdevlin-formation-tour",
     "resolve_path": "catalog/records/source/esdevlin-formation-tour.json",
     "title": "Beyoncé — Formation Tour",
@@ -1353,6 +1521,12 @@
     "id": "source:esdevlin-u2-sphere",
     "resolve_path": "catalog/records/source/esdevlin-u2-sphere.json",
     "title": "U2 — The Sphere",
+    "type": "Source"
+  },
+  {
+    "id": "source:evolution-of-trust",
+    "resolve_path": "catalog/records/source/evolution-of-trust.json",
+    "title": "The Evolution of Trust",
     "type": "Source"
   },
   {
@@ -1500,6 +1674,12 @@
     "type": "Source"
   },
   {
+    "id": "source:google-100000-stars",
+    "resolve_path": "catalog/records/source/google-100000-stars.json",
+    "title": "100,000 Stars",
+    "type": "Source"
+  },
+  {
     "id": "source:legacy-families",
     "resolve_path": "catalog/records/source/legacy-families.json",
     "title": "Legacy subject family seeds",
@@ -1518,15 +1698,75 @@
     "type": "Source"
   },
   {
+    "id": "source:parable-polygons",
+    "resolve_path": "catalog/records/source/parable-polygons.json",
+    "title": "Parable of the Polygons",
+    "type": "Source"
+  },
+  {
+    "id": "source:patatap",
+    "resolve_path": "catalog/records/source/patatap.json",
+    "title": "Patatap",
+    "type": "Source"
+  },
+  {
     "id": "source:pattern-breaking",
     "resolve_path": "catalog/records/source/pattern-breaking.json",
     "title": "Pattern Breaking — Fast Fashion's Dirty Tricks",
     "type": "Source"
   },
   {
+    "id": "source:pulse-room",
+    "resolve_path": "catalog/records/source/pulse-room.json",
+    "title": "Pulse Room",
+    "type": "Source"
+  },
+  {
+    "id": "source:rain-room",
+    "resolve_path": "catalog/records/source/rain-room.json",
+    "title": "Rain Room",
+    "type": "Source"
+  },
+  {
+    "id": "source:random-future-self",
+    "resolve_path": "catalog/records/source/random-future-self.json",
+    "title": "Future Self",
+    "type": "Source"
+  },
+  {
+    "id": "source:ryoji-data-verse-3",
+    "resolve_path": "catalog/records/source/ryoji-data-verse-3.json",
+    "title": "data-verse 3",
+    "type": "Source"
+  },
+  {
+    "id": "source:seeing-theory-basic-probability",
+    "resolve_path": "catalog/records/source/seeing-theory-basic-probability.json",
+    "title": "Seeing Theory — Basic Probability",
+    "type": "Source"
+  },
+  {
+    "id": "source:setosa-image-kernels",
+    "resolve_path": "catalog/records/source/setosa-image-kernels.json",
+    "title": "Image Kernels — Explained Visually",
+    "type": "Source"
+  },
+  {
+    "id": "source:setosa-markov-chains",
+    "resolve_path": "catalog/records/source/setosa-markov-chains.json",
+    "title": "Markov Chains — Explained Visually",
+    "type": "Source"
+  },
+  {
     "id": "source:svg-standard",
     "resolve_path": "catalog/records/source/svg-standard.json",
     "title": "SVG 2",
+    "type": "Source"
+  },
+  {
+    "id": "source:teamlab-borderless",
+    "resolve_path": "catalog/records/source/teamlab-borderless.json",
+    "title": "teamLab Borderless: MORI Building DIGITAL ART MUSEUM",
     "type": "Source"
   },
   {
@@ -1809,6 +2049,12 @@
     "id": "source:tool-vega-lite",
     "resolve_path": "catalog/records/source/tool-vega-lite.json",
     "title": "Vega-Lite official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:uva-momentum",
+    "resolve_path": "catalog/records/source/uva-momentum.json",
+    "title": "Momentum",
     "type": "Source"
   },
   {

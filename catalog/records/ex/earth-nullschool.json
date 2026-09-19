@@ -1,0 +1,118 @@
+{
+  "ai_build": {
+    "availability": "available",
+    "example_id": "ex:earth-nullschool",
+    "method": {
+      "concepts": [
+        "concept:grammar-field-flow"
+      ],
+      "failure_modes": [
+        "Do not present particle motion as measured trajectories when it is a field visualization.",
+        "Do not mix overlays with incompatible physical meaning or units without clear labeling."
+      ],
+      "fidelity_constraints": [
+        "Reuse the integrated field-navigation structure without copying map styling, data assets, or branding; preserve units/source semantics in any scientific adaptation."
+      ],
+      "grammar": [
+        "field-flow",
+        "spatial-map",
+        "dynamic-system"
+      ],
+      "interaction_model": {
+        "response": "Vector flow and scalar context re-render over one geographic frame while the chosen physical/data dimension changes.",
+        "trigger": "rotate/zoom the globe, change time/height, switch overlays or projection"
+      },
+      "mechanisms": [],
+      "state_model": {
+        "deterministic": true,
+        "model": "external-reference"
+      },
+      "transfer_constraints": [
+        "Keep vector flow, scalar overlay, spatial frame, and time/height controls visibly coordinated.",
+        "Use mode changes to swap physical meaning without fragmenting each data layer into a separate chart."
+      ]
+    },
+    "resources": [],
+    "tools": []
+  },
+  "crosswalks": [],
+  "record": {
+    "canonical_path": "knowledge/examples/creative-wave01-b.json",
+    "collection_ids": [],
+    "concept_ids": [
+      "concept:grammar-field-flow"
+    ],
+    "failure_modes": [
+      "Do not present particle motion as measured trajectories when it is a field visualization.",
+      "Do not mix overlays with incompatible physical meaning or units without clear labeling."
+    ],
+    "fidelity_constraints": [
+      "Reuse the integrated field-navigation structure without copying map styling, data assets, or branding; preserve units/source semantics in any scientific adaptation."
+    ],
+    "grammar": [
+      "field-flow",
+      "spatial-map",
+      "dynamic-system"
+    ],
+    "id": "ex:earth-nullschool",
+    "intent_ids": [],
+    "interaction": "navigate-and-filter-field",
+    "interaction_model": {
+      "response": "Vector flow and scalar context re-render over one geographic frame while the chosen physical/data dimension changes.",
+      "trigger": "rotate/zoom the globe, change time/height, switch overlays or projection"
+    },
+    "kind": "REFERENCE",
+    "lifecycle": {
+      "collected": true,
+      "reusable": false,
+      "showable": false,
+      "verified": false
+    },
+    "medium": "interactive-geospatial-visualization",
+    "resource_ids": [],
+    "source_refs": [
+      "source:earth-nullschool"
+    ],
+    "state_model": {
+      "deterministic": true,
+      "model": "external-reference"
+    },
+    "summary": "A rotatable global field visualization that combines animated vector flow with scalar overlays, time/altitude controls, data modes, and projection changes in one spatial model.",
+    "title": "earth :: global wind, weather and ocean conditions",
+    "tool_choices": [],
+    "topic_ids": [],
+    "transfer_constraints": [
+      "Keep vector flow, scalar overlay, spatial frame, and time/height controls visibly coordinated.",
+      "Use mode changes to swap physical meaning without fragmenting each data layer into a separate chart."
+    ],
+    "type": "Example",
+    "visual_traits": [
+      "flow-field",
+      "globe",
+      "layered",
+      "animated",
+      "scientific"
+    ]
+  },
+  "relations": [
+    {
+      "source": "ex:earth-nullschool",
+      "target": "concept:grammar-field-flow",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Direct site and about/control information inspected for animated vector flow, globe navigation, time/height controls, overlays and projection changes. Data-source descriptions were inspected at the interface level.",
+      "checked_at": "2026-09-19",
+      "id": "source:earth-nullschool",
+      "locator": "https://earth.nullschool.net/",
+      "locator_type": "url",
+      "publisher": "Cameron Beccario / earth.nullschool.net",
+      "title": "earth :: a global map of wind, weather, and ocean conditions",
+      "type": "Source"
+    }
+  ]
+}

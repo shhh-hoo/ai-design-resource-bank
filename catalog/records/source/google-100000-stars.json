@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+    "captured_at": "2026-09-19",
+    "check_scope": "Official experiment page inspected for a spatial dataset of nearby stars, continuous 3D navigation, named-star detail and stated 3D/WebGL implementation context.",
+    "checked_at": "2026-09-19",
+    "id": "source:google-100000-stars",
+    "locator": "https://experiments.withgoogle.com/100000-stars",
+    "locator_type": "url",
+    "publisher": "Experiments with Google / Google Data Arts Team",
+    "title": "100,000 Stars",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

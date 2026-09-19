@@ -1,0 +1,73 @@
+{
+  "record": {
+    "canonical_path": "knowledge/concepts/creative-wave01-b.json",
+    "id": "concept:sensor-mediated-environment",
+    "source_refs": [
+      "source:pulse-room",
+      "source:rain-room",
+      "source:random-future-self"
+    ],
+    "subtypes": [
+      "interaction_pattern",
+      "principle"
+    ],
+    "summary": "Use sensed body, biometric, or presence data to alter the surrounding spatial field directly, making the participant part of the environment's state rather than a controller of a detached interface.",
+    "title": "Sensor-mediated environment",
+    "type": "Concept"
+  },
+  "relations": [
+    {
+      "source": "ex:pulse-room",
+      "target": "concept:sensor-mediated-environment",
+      "type": "demonstrates"
+    },
+    {
+      "source": "ex:rain-room",
+      "target": "concept:sensor-mediated-environment",
+      "type": "demonstrates"
+    },
+    {
+      "source": "ex:random-future-self",
+      "target": "concept:sensor-mediated-environment",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Artist's official project page inspected for heart-rate sensing, immediate bulb feedback, computer control and the queue of prior participants' pulse recordings.",
+      "checked_at": "2026-09-19",
+      "id": "source:pulse-room",
+      "locator": "https://www.lozano-hemmer.com/pulse_room.php",
+      "locator_type": "url",
+      "publisher": "Rafael Lozano-Hemmer",
+      "title": "Pulse Room",
+      "type": "Source"
+    },
+    {
+      "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Official project page inspected for continuous rainfall, presence tracking, local rain suppression, solenoid valves and custom software/3D tracking context.",
+      "checked_at": "2026-09-19",
+      "id": "source:rain-room",
+      "locator": "https://www.random-international.com/rain-room",
+      "locator_type": "url",
+      "publisher": "Random International",
+      "title": "Rain Room",
+      "type": "Source"
+    },
+    {
+      "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Official project page inspected for 3D body tracking, LED point representation, custom electronics and the slightly delayed but recognizable full-body image.",
+      "checked_at": "2026-09-19",
+      "id": "source:random-future-self",
+      "locator": "https://www.random-international.com/future-self",
+      "locator_type": "url",
+      "publisher": "Random International",
+      "title": "Future Self",
+      "type": "Source"
+    }
+  ]
+}

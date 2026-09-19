@@ -1,0 +1,124 @@
+[
+  {
+    "id": "concept:playable-model-narrative",
+    "type": "Concept",
+    "title": "Playable model narrative",
+    "subtypes": [
+      "interaction_pattern",
+      "representation_method"
+    ],
+    "summary": "Advance an explanation by making the user repeatedly act inside the model, then use the outcomes to introduce the next rule, strategy, or argument.",
+    "source_refs": [
+      "source:evolution-of-trust"
+    ]
+  },
+  {
+    "id": "concept:editable-model-sandbox",
+    "type": "Concept",
+    "title": "Editable model sandbox",
+    "subtypes": [
+      "interaction_pattern",
+      "representation_method"
+    ],
+    "summary": "Expose meaningful model parameters or rules for direct manipulation while keeping simulation, derived values, and explanatory views synchronized to the same state.",
+    "source_refs": [
+      "source:parable-polygons",
+      "source:seeing-theory-basic-probability",
+      "source:setosa-markov-chains"
+    ]
+  },
+  {
+    "id": "concept:linked-computation-inspection",
+    "type": "Concept",
+    "title": "Linked computation inspection",
+    "subtypes": [
+      "interaction_pattern",
+      "representation_method"
+    ],
+    "summary": "Reveal a hidden local computation by linking source values, the operation applied to them, and the resulting output under one hover, cursor, or selected location.",
+    "source_refs": [
+      "source:setosa-image-kernels"
+    ]
+  },
+  {
+    "id": "concept:world-as-interface",
+    "type": "Concept",
+    "title": "World as interface",
+    "subtypes": [
+      "interaction_pattern",
+      "composition"
+    ],
+    "summary": "Let navigation and selection happen through movement inside a persistent spatial world rather than through separate page or menu transitions, while retaining recovery and alternate access paths.",
+    "source_refs": [
+      "source:bruno-simon"
+    ]
+  },
+  {
+    "id": "concept:cross-modal-input-mapping",
+    "type": "Concept",
+    "title": "Cross-modal input mapping",
+    "subtypes": [
+      "interaction_pattern",
+      "principle"
+    ],
+    "summary": "Map one immediate user gesture or discrete input to coordinated outputs in multiple sensory channels so visual form and sound feel like one instrument rather than separate feedback systems.",
+    "source_refs": [
+      "source:chrome-music-lab-kandinsky",
+      "source:patatap"
+    ]
+  },
+  {
+    "id": "concept:sensor-mediated-environment",
+    "type": "Concept",
+    "title": "Sensor-mediated environment",
+    "subtypes": [
+      "interaction_pattern",
+      "principle"
+    ],
+    "summary": "Use sensed body, biometric, or presence data to alter the surrounding spatial field directly, making the participant part of the environment's state rather than a controller of a detached interface.",
+    "source_refs": [
+      "source:pulse-room",
+      "source:rain-room",
+      "source:random-future-self"
+    ]
+  },
+  {
+    "id": "concept:boundaryless-spatial-content",
+    "type": "Concept",
+    "title": "Boundaryless spatial content",
+    "subtypes": [
+      "stagecraft",
+      "composition"
+    ],
+    "summary": "Allow content to migrate across spatial containers so context is determined by the viewer's location and neighboring works rather than by one fixed screen, room, or card.",
+    "source_refs": [
+      "source:teamlab-borderless"
+    ]
+  },
+  {
+    "id": "concept:path-paced-spatial-choreography",
+    "type": "Concept",
+    "title": "Path-paced spatial choreography",
+    "subtypes": [
+      "stagecraft",
+      "motion"
+    ],
+    "summary": "Compose one evolving light, sound, or kinetic system across a path so each visitor samples its temporal sequence through their own movement and pace.",
+    "source_refs": [
+      "source:uva-momentum"
+    ]
+  },
+  {
+    "id": "concept:data-as-environment",
+    "type": "Concept",
+    "title": "Data as environment",
+    "subtypes": [
+      "representation_method",
+      "composition"
+    ],
+    "summary": "Scale dense scientific or computational data into an audiovisual field that surrounds attention and uses rhythm, precision, layering, and spatial extent as part of the representation.",
+    "source_refs": [
+      "source:ryoji-data-verse-3"
+    ]
+  }
+]

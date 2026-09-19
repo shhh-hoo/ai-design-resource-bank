@@ -1,7 +1,7 @@
 {
   "id": "candidate:evolution-of-trust",
   "candidate_kind": "example",
-  "status": "promote",
+  "status": "promoted",
   "discovered_by": "scout",
   "source": {
     "locator_type": "url",
@@ -25,9 +25,13 @@
   ],
   "notes": "Direct page inspection confirms a 30-minute interactive guide in which users repeatedly play trust games and compare strategies. The value is the coupling of narrative progression and playable model, not the hand-drawn visual style alone.",
   "decision": {
-    "outcome": "promote",
+    "outcome": "promoted",
     "rationale": "Adds a canonical HCI example of an argument taught through repeated interaction and model feedback rather than static explanation.",
     "reviewed_by": "wave01-curation",
-    "reviewed_at": "2026-09-19"
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:evolution-of-trust",
+      "concept:playable-model-narrative"
+    ]
   }
 }

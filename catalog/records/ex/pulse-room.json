@@ -1,0 +1,117 @@
+{
+  "ai_build": {
+    "availability": "available",
+    "example_id": "ex:pulse-room",
+    "method": {
+      "concepts": [
+        "concept:sensor-mediated-environment"
+      ],
+      "failure_modes": [
+        "Do not treat sensitive biometric data casually in contexts where privacy/consent are relevant.",
+        "Do not fake individual histories if real participation is the stated meaning."
+      ],
+      "fidelity_constraints": [
+        "Reuse the sensor→immediate feedback→collective history mechanism without copying the bulb installation, physical layout, or artwork identity."
+      ],
+      "grammar": [
+        "time-sequence",
+        "composition-layer",
+        "state-process"
+      ],
+      "interaction_model": {
+        "response": "The nearest bulb flashes the current pulse, then the recording joins a spatial queue that shifts prior participants' pulses through the room.",
+        "trigger": "hold the heart-rate sensor"
+      },
+      "mechanisms": [],
+      "state_model": {
+        "deterministic": false,
+        "model": "sensor-mediated-external-reference"
+      },
+      "transfer_constraints": [
+        "Separate immediate personal feedback from the persistent/shared-history representation while deriving both from the same sensed event.",
+        "Use finite memory/queue behavior to make previous participation visibly present rather than storing history invisibly."
+      ]
+    },
+    "resources": [],
+    "tools": []
+  },
+  "crosswalks": [],
+  "record": {
+    "canonical_path": "knowledge/examples/creative-wave01-b.json",
+    "collection_ids": [],
+    "concept_ids": [
+      "concept:sensor-mediated-environment"
+    ],
+    "failure_modes": [
+      "Do not treat sensitive biometric data casually in contexts where privacy/consent are relevant.",
+      "Do not fake individual histories if real participation is the stated meaning."
+    ],
+    "fidelity_constraints": [
+      "Reuse the sensor→immediate feedback→collective history mechanism without copying the bulb installation, physical layout, or artwork identity."
+    ],
+    "grammar": [
+      "time-sequence",
+      "composition-layer",
+      "state-process"
+    ],
+    "id": "ex:pulse-room",
+    "intent_ids": [],
+    "interaction": "biometric-input",
+    "interaction_model": {
+      "response": "The nearest bulb flashes the current pulse, then the recording joins a spatial queue that shifts prior participants' pulses through the room.",
+      "trigger": "hold the heart-rate sensor"
+    },
+    "kind": "REFERENCE",
+    "lifecycle": {
+      "collected": true,
+      "reusable": false,
+      "showable": false,
+      "verified": false
+    },
+    "medium": "interactive-installation",
+    "resource_ids": [],
+    "source_refs": [
+      "source:pulse-room"
+    ],
+    "state_model": {
+      "deterministic": false,
+      "model": "sensor-mediated-external-reference"
+    },
+    "summary": "A biometric installation where a participant's heartbeat appears immediately in one bulb, then enters a finite spatial queue of previous participants' pulse recordings.",
+    "title": "Pulse Room",
+    "tool_choices": [],
+    "topic_ids": [],
+    "transfer_constraints": [
+      "Separate immediate personal feedback from the persistent/shared-history representation while deriving both from the same sensed event.",
+      "Use finite memory/queue behavior to make previous participation visibly present rather than storing history invisibly."
+    ],
+    "type": "Example",
+    "visual_traits": [
+      "light",
+      "biometric",
+      "serial",
+      "collective"
+    ]
+  },
+  "relations": [
+    {
+      "source": "ex:pulse-room",
+      "target": "concept:sensor-mediated-environment",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Artist's official project page inspected for heart-rate sensing, immediate bulb feedback, computer control and the queue of prior participants' pulse recordings.",
+      "checked_at": "2026-09-19",
+      "id": "source:pulse-room",
+      "locator": "https://www.lozano-hemmer.com/pulse_room.php",
+      "locator_type": "url",
+      "publisher": "Rafael Lozano-Hemmer",
+      "title": "Pulse Room",
+      "type": "Source"
+    }
+  ]
+}

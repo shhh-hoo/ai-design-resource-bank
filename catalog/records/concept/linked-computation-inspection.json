@@ -1,0 +1,37 @@
+{
+  "record": {
+    "canonical_path": "knowledge/concepts/creative-wave01-b.json",
+    "id": "concept:linked-computation-inspection",
+    "source_refs": [
+      "source:setosa-image-kernels"
+    ],
+    "subtypes": [
+      "interaction_pattern",
+      "representation_method"
+    ],
+    "summary": "Reveal a hidden local computation by linking source values, the operation applied to them, and the resulting output under one hover, cursor, or selected location.",
+    "title": "Linked computation inspection",
+    "type": "Concept"
+  },
+  "relations": [
+    {
+      "source": "ex:setosa-image-kernels",
+      "target": "concept:linked-computation-inspection",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Direct page inspected for 3×3 convolution explanation, hover-linked values, preset/custom kernels, image upload and live-video playground.",
+      "checked_at": "2026-09-19",
+      "id": "source:setosa-image-kernels",
+      "locator": "https://setosa.io/ev/image-kernels/",
+      "locator_type": "url",
+      "publisher": "Setosa / Explained Visually",
+      "title": "Image Kernels — Explained Visually",
+      "type": "Source"
+    }
+  ]
+}

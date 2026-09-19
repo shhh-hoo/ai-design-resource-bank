@@ -1,0 +1,55 @@
+{
+  "record": {
+    "canonical_path": "knowledge/concepts/creative-wave01-b.json",
+    "id": "concept:cross-modal-input-mapping",
+    "source_refs": [
+      "source:chrome-music-lab-kandinsky",
+      "source:patatap"
+    ],
+    "subtypes": [
+      "interaction_pattern",
+      "principle"
+    ],
+    "summary": "Map one immediate user gesture or discrete input to coordinated outputs in multiple sensory channels so visual form and sound feel like one instrument rather than separate feedback systems.",
+    "title": "Cross-modal input mapping",
+    "type": "Concept"
+  },
+  "relations": [
+    {
+      "source": "ex:chrome-music-lab-kandinsky",
+      "target": "concept:cross-modal-input-mapping",
+      "type": "demonstrates"
+    },
+    {
+      "source": "ex:patatap",
+      "target": "concept:cross-modal-input-mapping",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Official experiment and project information inspected for drawing-as-sound interaction and Chrome Music Lab's open-web audio context. No undocumented internal mapping is asserted.",
+      "checked_at": "2026-09-19",
+      "id": "source:chrome-music-lab-kandinsky",
+      "locator": "https://musiclab.chromeexperiments.com/Kandinsky/",
+      "locator_type": "url",
+      "publisher": "Google Creative Lab / Chrome Music Lab",
+      "title": "Chrome Music Lab — Kandinsky",
+      "type": "Source"
+    },
+    {
+      "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Official site inspected for keyboard/touch-triggered audiovisual responses and the stated portable animation-and-sound-kit framing. The site explicitly credits Two.js.",
+      "checked_at": "2026-09-19",
+      "id": "source:patatap",
+      "locator": "https://patatap.com/",
+      "locator_type": "url",
+      "publisher": "Jono Brandel + Lullatone",
+      "title": "Patatap",
+      "type": "Source"
+    }
+  ]
+}

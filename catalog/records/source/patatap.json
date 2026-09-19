@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+    "captured_at": "2026-09-19",
+    "check_scope": "Official site inspected for keyboard/touch-triggered audiovisual responses and the stated portable animation-and-sound-kit framing. The site explicitly credits Two.js.",
+    "checked_at": "2026-09-19",
+    "id": "source:patatap",
+    "locator": "https://patatap.com/",
+    "locator_type": "url",
+    "publisher": "Jono Brandel + Lullatone",
+    "title": "Patatap",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

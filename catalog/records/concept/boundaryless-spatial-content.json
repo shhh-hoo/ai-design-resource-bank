@@ -1,0 +1,37 @@
+{
+  "record": {
+    "canonical_path": "knowledge/concepts/creative-wave01-b.json",
+    "id": "concept:boundaryless-spatial-content",
+    "source_refs": [
+      "source:teamlab-borderless"
+    ],
+    "subtypes": [
+      "stagecraft",
+      "composition"
+    ],
+    "summary": "Allow content to migrate across spatial containers so context is determined by the viewer's location and neighboring works rather than by one fixed screen, room, or card.",
+    "title": "Boundaryless spatial content",
+    "type": "Concept"
+  },
+  "relations": [
+    {
+      "source": "ex:teamlab-borderless",
+      "target": "concept:boundaryless-spatial-content",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Official museum page inspected for artworks moving across spaces, absence of fixed artwork captions, location-relative guide behavior and stated visitor participation.",
+      "checked_at": "2026-09-19",
+      "id": "source:teamlab-borderless",
+      "locator": "https://www.teamlab.art/e/tokyo/",
+      "locator_type": "url",
+      "publisher": "teamLab",
+      "title": "teamLab Borderless: MORI Building DIGITAL ART MUSEUM",
+      "type": "Source"
+    }
+  ]
+}

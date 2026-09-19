@@ -36,11 +36,22 @@
     "title": "Bond morph"
   },
   {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:teamlab-borderless"
+    ],
+    "id": "concept:boundaryless-spatial-content",
+    "summary": "Allow content to migrate across spatial containers so context is determined by the viewer's location and neighboring works rather than by one fixed screen, room, or card.",
+    "title": "Boundaryless spatial content"
+  },
+  {
     "adjacent_ids": [
-      "concept:continuous-scale-transition"
+      "concept:continuous-scale-transition",
+      "concept:world-as-interface"
     ],
     "example_ids": [
-      "ex:aott-uncut-gems"
+      "ex:aott-uncut-gems",
+      "ex:bruno-simon-portfolio"
     ],
     "id": "concept:camera-dolly",
     "summary": "Move the viewpoint through depth so foreground and background change relationship, not just size.",
@@ -505,20 +516,55 @@
   },
   {
     "adjacent_ids": [],
+    "example_ids": [
+      "ex:chrome-music-lab-kandinsky",
+      "ex:patatap"
+    ],
+    "id": "concept:cross-modal-input-mapping",
+    "summary": "Map one immediate user gesture or discrete input to coordinated outputs in multiple sensory channels so visual form and sound feel like one instrument rather than separate feedback systems.",
+    "title": "Cross-modal input mapping"
+  },
+  {
+    "adjacent_ids": [
+      "concept:display-as-architecture"
+    ],
+    "example_ids": [
+      "ex:ryoji-data-verse-3"
+    ],
+    "id": "concept:data-as-environment",
+    "summary": "Scale dense scientific or computational data into an audiovisual field that surrounds attention and uses rhythm, precision, layering, and spatial extent as part of the representation.",
+    "title": "Data as environment"
+  },
+  {
+    "adjacent_ids": [],
     "example_ids": [],
     "id": "concept:depth-parallax",
     "summary": "Move visual layers at different rates so depth emerges from relative motion.",
     "title": "Depth parallax"
   },
   {
-    "adjacent_ids": [],
+    "adjacent_ids": [
+      "concept:data-as-environment"
+    ],
     "example_ids": [
       "ex:esdevlin-formation-tour",
-      "ex:esdevlin-u2-sphere"
+      "ex:esdevlin-u2-sphere",
+      "ex:ryoji-data-verse-3"
     ],
     "id": "concept:display-as-architecture",
     "summary": "Treat the display surface as a spatial object or environmental envelope that frames, divides, reveals, surrounds, or replaces the scene rather than acting as a flat background.",
     "title": "Display as architecture"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:parable-of-polygons",
+      "ex:seeing-theory-basic-probability",
+      "ex:setosa-markov-chains"
+    ],
+    "id": "concept:editable-model-sandbox",
+    "summary": "Expose meaningful model parameters or rules for direct manipulation while keeping simulation, derived values, and explanatory views synchronized to the same state.",
+    "title": "Editable model sandbox"
   },
   {
     "adjacent_ids": [
@@ -604,7 +650,9 @@
   },
   {
     "adjacent_ids": [],
-    "example_ids": [],
+    "example_ids": [
+      "ex:earth-nullschool"
+    ],
     "id": "concept:grammar-field-flow",
     "summary": "Continuous flow, transport, gradient, circulation, or spatially varying field.",
     "title": "Field Flow"
@@ -713,6 +761,15 @@
   },
   {
     "adjacent_ids": [],
+    "example_ids": [
+      "ex:setosa-image-kernels"
+    ],
+    "id": "concept:linked-computation-inspection",
+    "summary": "Reveal a hidden local computation by linking source values, the operation applied to them, and the resulting output under one hover, cursor, or selected location.",
+    "title": "Linked computation inspection"
+  },
+  {
+    "adjacent_ids": [],
     "example_ids": [],
     "id": "concept:mask-transition",
     "summary": "Reveal the next state through a controlled moving window instead of cross-fading everything.",
@@ -770,10 +827,28 @@
   },
   {
     "adjacent_ids": [],
+    "example_ids": [
+      "ex:uva-momentum"
+    ],
+    "id": "concept:path-paced-spatial-choreography",
+    "summary": "Compose one evolving light, sound, or kinetic system across a path so each visitor samples its temporal sequence through their own movement and pace.",
+    "title": "Path-paced spatial choreography"
+  },
+  {
+    "adjacent_ids": [],
     "example_ids": [],
     "id": "concept:pinned-reveal",
     "summary": "Hold one explanatory object steady while the surrounding narrative advances.",
     "title": "Pinned reveal"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:evolution-of-trust"
+    ],
+    "id": "concept:playable-model-narrative",
+    "summary": "Advance an explanation by making the user repeatedly act inside the model, then use the outcomes to introduce the next rule, strategy, or argument.",
+    "title": "Playable model narrative"
   },
   {
     "adjacent_ids": [
@@ -813,10 +888,23 @@
   },
   {
     "adjacent_ids": [],
-    "example_ids": [],
+    "example_ids": [
+      "ex:google-100000-stars"
+    ],
     "id": "concept:semantic-zoom",
     "summary": "Reveal more meaning as the user zooms in instead of merely scaling pixels.",
     "title": "Semantic zoom"
+  },
+  {
+    "adjacent_ids": [],
+    "example_ids": [
+      "ex:pulse-room",
+      "ex:rain-room",
+      "ex:random-future-self"
+    ],
+    "id": "concept:sensor-mediated-environment",
+    "summary": "Use sensed body, biometric, or presence data to alter the surrounding spatial field directly, making the participant part of the environment's state rather than a controller of a detached interface.",
+    "title": "Sensor-mediated environment"
   },
   {
     "adjacent_ids": [],
@@ -845,5 +933,16 @@
     "id": "concept:wave-propagation",
     "summary": "Animate phase through space while keeping amplitude and wavelength legible.",
     "title": "Wave propagation"
+  },
+  {
+    "adjacent_ids": [
+      "concept:camera-dolly"
+    ],
+    "example_ids": [
+      "ex:bruno-simon-portfolio"
+    ],
+    "id": "concept:world-as-interface",
+    "summary": "Let navigation and selection happen through movement inside a persistent spatial world rather than through separate page or menu transitions, while retaining recovery and alternate access paths.",
+    "title": "World as interface"
   }
 ]

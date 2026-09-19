@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "purpose": "Bounded retrieval benchmark for AIDRB. Required cases must stay retrievable; open_gap cases justify promotion work but do not fail CI until converted to required.",
+  "purpose": "Bounded retrieval benchmark for AIDRB. All Wave 01 cases are now required; new open gaps may be added only when real retrieval/project needs justify further gathering.",
   "cases": [
     {
       "id": "creative-archive-density",
@@ -164,194 +164,178 @@
     {
       "id": "gap-playable-trust",
       "cluster": "hci",
-      "status": "open_gap",
+      "status": "required",
       "type": "Example",
       "brief": "playable trust strategy simulation narrative game theory repeated decisions",
-      "expected_any": [],
-      "candidate_ids": [
-        "candidate:evolution-of-trust"
+      "expected_any": [
+        "ex:evolution-of-trust"
       ],
-      "rationale": "Need an Example where repeated play is the explanatory argument."
+      "rationale": "Closed by Wave 01 Batch B canonical promotion. Need an Example where repeated play is the explanatory argument."
     },
     {
       "id": "gap-emergent-local-rules",
       "cluster": "hci",
-      "status": "open_gap",
+      "status": "required",
       "type": "Example",
       "brief": "drag agents local bias emergent global segregation sandbox parameters",
-      "expected_any": [],
-      "candidate_ids": [
-        "candidate:parable-of-polygons"
+      "expected_any": [
+        "ex:parable-of-polygons"
       ],
-      "rationale": "Need direct manipulation of local rules with visible emergent system behavior."
+      "rationale": "Closed by Wave 01 Batch B canonical promotion. Need direct manipulation of local rules with visible emergent system behavior."
     },
     {
       "id": "gap-probability-direct-manipulation",
       "cluster": "scientific-viz",
-      "status": "open_gap",
+      "status": "required",
       "type": "Example",
       "brief": "drag probability distribution sample expectation variance linked visualization",
-      "expected_any": [],
-      "candidate_ids": [
-        "candidate:seeing-theory-basic-probability"
+      "expected_any": [
+        "ex:seeing-theory-basic-probability"
       ],
-      "rationale": "Need one model state driving samples and derived statistical representations."
+      "rationale": "Closed by Wave 01 Batch B canonical promotion. Need one model state driving samples and derived statistical representations."
     },
     {
       "id": "gap-local-computation",
       "cluster": "scientific-viz",
-      "status": "open_gap",
+      "status": "required",
       "type": "Example",
       "brief": "image kernel hover pixel local computation custom matrix convolution",
-      "expected_any": [],
-      "candidate_ids": [
-        "candidate:setosa-image-kernels"
+      "expected_any": [
+        "ex:setosa-image-kernels"
       ],
-      "rationale": "Need an Example that exposes hidden local computation and transformed output together."
+      "rationale": "Closed by Wave 01 Batch B canonical promotion. Need an Example that exposes hidden local computation and transformed output together."
     },
     {
       "id": "gap-state-transition-matrix",
       "cluster": "scientific-viz",
-      "status": "open_gap",
+      "status": "required",
       "type": "Example",
       "brief": "Markov transition matrix editable animated states validation playground",
-      "expected_any": [],
-      "candidate_ids": [
-        "candidate:setosa-markov-chains"
+      "expected_any": [
+        "ex:setosa-markov-chains"
       ],
-      "rationale": "Need synchronized symbolic model and animated state transitions."
+      "rationale": "Closed by Wave 01 Batch B canonical promotion. Need synchronized symbolic model and animated state transitions."
     },
     {
       "id": "gap-stellar-semantic-zoom",
       "cluster": "spatial",
-      "status": "open_gap",
+      "status": "required",
       "type": "Example",
       "brief": "stellar neighborhood 3D semantic zoom named stars scale navigation",
-      "expected_any": [],
-      "candidate_ids": [
-        "candidate:google-100000-stars"
+      "expected_any": [
+        "ex:google-100000-stars"
       ],
-      "rationale": "Need a concrete Example for semantic zoom across a large 3D dataset."
+      "rationale": "Closed by Wave 01 Batch B canonical promotion. Need a concrete Example for semantic zoom across a large 3D dataset."
     },
     {
       "id": "gap-global-flow-field",
       "cluster": "scientific-viz",
-      "status": "open_gap",
+      "status": "required",
       "type": "Example",
       "brief": "global wind flow field globe overlays altitude time projection",
-      "expected_any": [],
-      "candidate_ids": [
-        "candidate:earth-nullschool"
+      "expected_any": [
+        "ex:earth-nullschool"
       ],
-      "rationale": "Need integrated vector flow, scalar overlays and spatial controls."
+      "rationale": "Closed by Wave 01 Batch B canonical promotion. Need integrated vector flow, scalar overlays and spatial controls."
     },
     {
       "id": "gap-world-as-interface",
       "cluster": "hci",
-      "status": "open_gap",
+      "status": "required",
       "type": "Example",
       "brief": "drive car through 3D world portfolio navigation keyboard touch gamepad",
-      "expected_any": [],
-      "candidate_ids": [
-        "candidate:bruno-simon-portfolio"
+      "expected_any": [
+        "ex:bruno-simon-portfolio"
       ],
-      "rationale": "Need embodied world navigation as interface rather than page navigation."
+      "rationale": "Closed by Wave 01 Batch B canonical promotion. Need embodied world navigation as interface rather than page navigation."
     },
     {
       "id": "gap-drawing-to-sound",
       "cluster": "cross-modal",
-      "status": "open_gap",
+      "status": "required",
       "type": "Example",
       "brief": "draw shapes gesture creates sound audiovisual canvas",
-      "expected_any": [],
-      "candidate_ids": [
-        "candidate:chrome-music-lab-kandinsky"
+      "expected_any": [
+        "ex:chrome-music-lab-kandinsky"
       ],
-      "rationale": "Need one gesture to create coupled visual and sonic output."
+      "rationale": "Closed by Wave 01 Batch B canonical promotion. Need one gesture to create coupled visual and sonic output."
     },
     {
       "id": "gap-audiovisual-instrument",
       "cluster": "cross-modal",
-      "status": "open_gap",
+      "status": "required",
       "type": "Example",
       "brief": "keyboard touch animation sound instrument immediate feedback",
-      "expected_any": [],
-      "candidate_ids": [
-        "candidate:patatap"
+      "expected_any": [
+        "ex:patatap"
       ],
-      "rationale": "Need minimal discrete-input audiovisual mapping."
+      "rationale": "Closed by Wave 01 Batch B canonical promotion. Need minimal discrete-input audiovisual mapping."
     },
     {
       "id": "gap-biometric-history",
       "cluster": "physical-hci",
-      "status": "open_gap",
+      "status": "required",
       "type": "Example",
       "brief": "heartbeat sensor lights queue previous participants collective history",
-      "expected_any": [],
-      "candidate_ids": [
-        "candidate:lozano-pulse-room"
+      "expected_any": [
+        "ex:pulse-room"
       ],
-      "rationale": "Need sensor input that becomes both immediate feedback and persistent shared history."
+      "rationale": "Closed by Wave 01 Batch B canonical promotion. Need sensor input that becomes both immediate feedback and persistent shared history."
     },
     {
       "id": "gap-presence-negative-space",
       "cluster": "physical-hci",
-      "status": "open_gap",
+      "status": "required",
       "type": "Example",
       "brief": "presence tracking stops rain around visitor negative space environment",
-      "expected_any": [],
-      "candidate_ids": [
-        "candidate:random-international-rain-room"
+      "expected_any": [
+        "ex:rain-room"
       ],
-      "rationale": "Need interaction that subtracts an environmental effect around the user."
+      "rationale": "Closed by Wave 01 Batch B canonical promotion. Need interaction that subtracts an environmental effect around the user."
     },
     {
       "id": "gap-boundaryless-content",
       "cluster": "spatial",
-      "status": "open_gap",
+      "status": "required",
       "type": "Example",
       "brief": "artworks move across rooms location-relative guide boundaryless environment",
-      "expected_any": [],
-      "candidate_ids": [
-        "candidate:teamlab-borderless"
+      "expected_any": [
+        "ex:teamlab-borderless"
       ],
-      "rationale": "Need content that is not owned by one fixed container or room."
+      "rationale": "Closed by Wave 01 Batch B canonical promotion. Need content that is not owned by one fixed container or room."
     },
     {
       "id": "gap-spatial-instrument",
       "cluster": "physical-hci",
-      "status": "open_gap",
+      "status": "required",
       "type": "Example",
       "brief": "kinetic light sound pendulum spatial instrument visitor path gallery",
-      "expected_any": [],
-      "candidate_ids": [
-        "candidate:uva-momentum"
+      "expected_any": [
+        "ex:uva-momentum"
       ],
-      "rationale": "Need a physical time/attention system experienced through traversal."
+      "rationale": "Closed by Wave 01 Batch B canonical promotion. Need a physical time/attention system experienced through traversal."
     },
     {
       "id": "gap-data-as-environment",
       "cluster": "scientific-viz",
-      "status": "open_gap",
+      "status": "required",
       "type": "Example",
       "brief": "scientific computational data immersive audiovisual field large scale projection",
-      "expected_any": [],
-      "candidate_ids": [
-        "candidate:ryoji-ikeda-data-verse-3"
+      "expected_any": [
+        "ex:ryoji-data-verse-3"
       ],
-      "rationale": "Need data composition at environment scale rather than dashboard scale."
+      "rationale": "Closed by Wave 01 Batch B canonical promotion. Need data composition at environment scale rather than dashboard scale."
     },
     {
       "id": "gap-delayed-lowres-self",
       "cluster": "physical-hci",
-      "status": "open_gap",
+      "status": "required",
       "type": "Example",
       "brief": "3D body tracking sparse points light delayed reflection recognizable movement",
-      "expected_any": [],
-      "candidate_ids": [
-        "candidate:random-future-self"
+      "expected_any": [
+        "ex:random-future-self"
       ],
-      "rationale": "Need identity-preserving reduction and latency as deliberate interaction material."
+      "rationale": "Closed by Wave 01 Batch B canonical promotion. Need identity-preserving reduction and latency as deliberate interaction material."
     }
   ]
 }

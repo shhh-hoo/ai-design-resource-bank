@@ -1,0 +1,117 @@
+{
+  "ai_build": {
+    "availability": "available",
+    "example_id": "ex:patatap",
+    "method": {
+      "concepts": [
+        "concept:cross-modal-input-mapping"
+      ],
+      "failure_modes": [
+        "Do not introduce perceptible latency between input and multimodal feedback.",
+        "Do not overload the surface with explanatory UI that competes with playing."
+      ],
+      "fidelity_constraints": [
+        "Reuse the immediate audiovisual mapping principle without copying Patatap's animations, sounds, key mappings, or branding."
+      ],
+      "grammar": [
+        "audio-time",
+        "time-sequence",
+        "composition-layer"
+      ],
+      "interaction_model": {
+        "response": "Each discrete action immediately launches a coordinated visual and sonic response, allowing rhythmic composition through repeated input.",
+        "trigger": "press mapped keys or use touch input"
+      },
+      "mechanisms": [],
+      "state_model": {
+        "deterministic": true,
+        "model": "external-reference"
+      },
+      "transfer_constraints": [
+        "Keep the input vocabulary simple and feedback immediate enough that the interface behaves like an instrument.",
+        "Let repeated discrete mappings combine into emergent rhythm rather than wrapping them in heavy control chrome."
+      ]
+    },
+    "resources": [],
+    "tools": []
+  },
+  "crosswalks": [],
+  "record": {
+    "canonical_path": "knowledge/examples/creative-wave01-b.json",
+    "collection_ids": [],
+    "concept_ids": [
+      "concept:cross-modal-input-mapping"
+    ],
+    "failure_modes": [
+      "Do not introduce perceptible latency between input and multimodal feedback.",
+      "Do not overload the surface with explanatory UI that competes with playing."
+    ],
+    "fidelity_constraints": [
+      "Reuse the immediate audiovisual mapping principle without copying Patatap's animations, sounds, key mappings, or branding."
+    ],
+    "grammar": [
+      "audio-time",
+      "time-sequence",
+      "composition-layer"
+    ],
+    "id": "ex:patatap",
+    "intent_ids": [],
+    "interaction": "key-and-touch-trigger",
+    "interaction_model": {
+      "response": "Each discrete action immediately launches a coordinated visual and sonic response, allowing rhythmic composition through repeated input.",
+      "trigger": "press mapped keys or use touch input"
+    },
+    "kind": "REFERENCE",
+    "lifecycle": {
+      "collected": true,
+      "reusable": false,
+      "showable": false,
+      "verified": false
+    },
+    "medium": "audiovisual-instrument",
+    "resource_ids": [],
+    "source_refs": [
+      "source:patatap"
+    ],
+    "state_model": {
+      "deterministic": true,
+      "model": "external-reference"
+    },
+    "summary": "A minimal browser instrument mapping discrete keyboard/touch input to tightly synchronized animation and sound responses with almost no interface chrome.",
+    "title": "Patatap",
+    "tool_choices": [],
+    "topic_ids": [],
+    "transfer_constraints": [
+      "Keep the input vocabulary simple and feedback immediate enough that the interface behaves like an instrument.",
+      "Let repeated discrete mappings combine into emergent rhythm rather than wrapping them in heavy control chrome."
+    ],
+    "type": "Example",
+    "visual_traits": [
+      "minimal",
+      "kinetic",
+      "musical",
+      "abstract"
+    ]
+  },
+  "relations": [
+    {
+      "source": "ex:patatap",
+      "target": "concept:cross-modal-input-mapping",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-b-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Official site inspected for keyboard/touch-triggered audiovisual responses and the stated portable animation-and-sound-kit framing. The site explicitly credits Two.js.",
+      "checked_at": "2026-09-19",
+      "id": "source:patatap",
+      "locator": "https://patatap.com/",
+      "locator_type": "url",
+      "publisher": "Jono Brandel + Lullatone",
+      "title": "Patatap",
+      "type": "Source"
+    }
+  ]
+}

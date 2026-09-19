@@ -1,0 +1,178 @@
+[
+  {
+    "id": "source:evolution-of-trust",
+    "type": "Source",
+    "title": "The Evolution of Trust",
+    "publisher": "Nicky Case",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Direct interactive page inspected for repeated trust-game decisions, strategy comparison, progressive narrative and simulation. Visual/implementation claims are limited to what the page itself exposes.",
+    "locator_type": "url",
+    "locator": "https://ncase.me/trust/"
+  },
+  {
+    "id": "source:parable-polygons",
+    "type": "Source",
+    "title": "Parable of the Polygons",
+    "publisher": "Vi Hart + Nicky Case",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Direct interactive page inspected for drag-and-drop relocation, rule changes, larger simulations and final sandbox. Reuse/licensing note on the page was also inspected.",
+    "locator_type": "url",
+    "locator": "https://ncase.me/polygons/"
+  },
+  {
+    "id": "source:seeing-theory-basic-probability",
+    "type": "Source",
+    "title": "Seeing Theory — Basic Probability",
+    "publisher": "Seeing Theory / Brown University",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Official interactive chapter inspected for draggable probability distributions, sampling, expectation and variance. Parent project documentation identifies D3.js as the visualization technology.",
+    "locator_type": "url",
+    "locator": "https://seeing-theory.brown.edu/basic-probability/"
+  },
+  {
+    "id": "source:setosa-image-kernels",
+    "type": "Source",
+    "title": "Image Kernels — Explained Visually",
+    "publisher": "Setosa / Explained Visually",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Direct page inspected for 3×3 convolution explanation, hover-linked values, preset/custom kernels, image upload and live-video playground.",
+    "locator_type": "url",
+    "locator": "https://setosa.io/ev/image-kernels/"
+  },
+  {
+    "id": "source:setosa-markov-chains",
+    "type": "Source",
+    "title": "Markov Chains — Explained Visually",
+    "publisher": "Setosa / Explained Visually",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Direct page inspected for animated state transitions, speed controls, editable transition matrices, random/examples controls and invalid-matrix feedback.",
+    "locator_type": "url",
+    "locator": "https://setosa.io/ev/markov-chains/"
+  },
+  {
+    "id": "source:google-100000-stars",
+    "type": "Source",
+    "title": "100,000 Stars",
+    "publisher": "Experiments with Google / Google Data Arts Team",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Official experiment page inspected for a spatial dataset of nearby stars, continuous 3D navigation, named-star detail and stated 3D/WebGL implementation context.",
+    "locator_type": "url",
+    "locator": "https://experiments.withgoogle.com/100000-stars"
+  },
+  {
+    "id": "source:earth-nullschool",
+    "type": "Source",
+    "title": "earth :: a global map of wind, weather, and ocean conditions",
+    "publisher": "Cameron Beccario / earth.nullschool.net",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Direct site and about/control information inspected for animated vector flow, globe navigation, time/height controls, overlays and projection changes. Data-source descriptions were inspected at the interface level.",
+    "locator_type": "url",
+    "locator": "https://earth.nullschool.net/"
+  },
+  {
+    "id": "source:bruno-simon",
+    "type": "Source",
+    "title": "Bruno Simon — 3D portfolio",
+    "publisher": "Bruno Simon",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Direct portfolio inspected for embodied vehicle navigation, keyboard/touch/mouse/gamepad mappings, map/reset/respawn affordances and alternative navigation. The site documentation identifies Three.js, Rapier and Howler.js.",
+    "locator_type": "url",
+    "locator": "https://bruno-simon.com/"
+  },
+  {
+    "id": "source:chrome-music-lab-kandinsky",
+    "type": "Source",
+    "title": "Chrome Music Lab — Kandinsky",
+    "publisher": "Google Creative Lab / Chrome Music Lab",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Official experiment and project information inspected for drawing-as-sound interaction and Chrome Music Lab's open-web audio context. No undocumented internal mapping is asserted.",
+    "locator_type": "url",
+    "locator": "https://musiclab.chromeexperiments.com/Kandinsky/"
+  },
+  {
+    "id": "source:patatap",
+    "type": "Source",
+    "title": "Patatap",
+    "publisher": "Jono Brandel + Lullatone",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Official site inspected for keyboard/touch-triggered audiovisual responses and the stated portable animation-and-sound-kit framing. The site explicitly credits Two.js.",
+    "locator_type": "url",
+    "locator": "https://patatap.com/"
+  },
+  {
+    "id": "source:pulse-room",
+    "type": "Source",
+    "title": "Pulse Room",
+    "publisher": "Rafael Lozano-Hemmer",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Artist's official project page inspected for heart-rate sensing, immediate bulb feedback, computer control and the queue of prior participants' pulse recordings.",
+    "locator_type": "url",
+    "locator": "https://www.lozano-hemmer.com/pulse_room.php"
+  },
+  {
+    "id": "source:rain-room",
+    "type": "Source",
+    "title": "Rain Room",
+    "publisher": "Random International",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Official project page inspected for continuous rainfall, presence tracking, local rain suppression, solenoid valves and custom software/3D tracking context.",
+    "locator_type": "url",
+    "locator": "https://www.random-international.com/rain-room"
+  },
+  {
+    "id": "source:teamlab-borderless",
+    "type": "Source",
+    "title": "teamLab Borderless: MORI Building DIGITAL ART MUSEUM",
+    "publisher": "teamLab",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Official museum page inspected for artworks moving across spaces, absence of fixed artwork captions, location-relative guide behavior and stated visitor participation.",
+    "locator_type": "url",
+    "locator": "https://www.teamlab.art/e/tokyo/"
+  },
+  {
+    "id": "source:uva-momentum",
+    "type": "Source",
+    "title": "Momentum",
+    "publisher": "United Visual Artists",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "UVA official project page inspected for the Barbican Curve installation, pendulum-like elements, evolving light/sound and visitor-paced traversal through the gallery.",
+    "locator_type": "url",
+    "locator": "https://www.uva.co.uk/features/momentum-barbican-curve-gallery"
+  },
+  {
+    "id": "source:ryoji-data-verse-3",
+    "type": "Source",
+    "title": "data-verse 3",
+    "publisher": "Ryoji Ikeda",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Artist's official project page inspected for the audiovisual installation format, large-scale projection/computer/speaker setup, variable dimensions and programming/computer-graphics credits.",
+    "locator_type": "url",
+    "locator": "https://www.ryojiikeda.com/project/x_verse/"
+  },
+  {
+    "id": "source:random-future-self",
+    "type": "Source",
+    "title": "Future Self",
+    "publisher": "Random International",
+    "captured_at": "2026-09-19",
+    "checked_at": "2026-09-19",
+    "check_scope": "Official project page inspected for 3D body tracking, LED point representation, custom electronics and the slightly delayed but recognizable full-body image.",
+    "locator_type": "url",
+    "locator": "https://www.random-international.com/future-self"
+  }
+]
