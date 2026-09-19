@@ -1,7 +1,7 @@
 {
   "id": "candidate:esdevlin-mirror-maze",
   "candidate_kind": "example",
-  "status": "promote",
+  "status": "promoted",
   "discovered_by": "scout",
   "source": {
     "locator_type": "url",
@@ -25,9 +25,13 @@
   ],
   "notes": "Official project page and independent photo documentation support the physical maze/reflection mechanism. This is valuable for HCI/spatial navigation concepts without pretending a web adaptation should literally reproduce the installation.",
   "decision": {
-    "outcome": "promote",
+    "outcome": "promoted",
     "rationale": "Adds a non-screen-native spatial interaction anchor: navigation, repetition, reflection, and partial visibility can inform web/canvas/3D experiences at the mechanism level.",
     "reviewed_by": "wave01-curation",
-    "reviewed_at": "2026-09-19"
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:esdevlin-mirror-maze",
+      "concept:reflective-spatial-multiplication"
+    ]
   }
 }

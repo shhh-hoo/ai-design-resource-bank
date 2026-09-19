@@ -1,7 +1,7 @@
 {
   "id": "candidate:esdevlin-formation-tour",
   "candidate_kind": "example",
-  "status": "promote",
+  "status": "promoted",
   "discovered_by": "scout",
   "source": {
     "locator_type": "url",
@@ -24,9 +24,13 @@
   ],
   "notes": "Official project page confirms the work; independent visual documentation shows the large screen volume as the dominant scenic object. Exact mechanics should be recorded only where documented.",
   "decision": {
-    "outcome": "promote",
+    "outcome": "promoted",
     "rationale": "Strong cross-media reference for replacing flat page layers with one spatial object that can frame, reveal, split, and dominate attention.",
     "reviewed_by": "wave01-curation",
-    "reviewed_at": "2026-09-19"
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:esdevlin-formation-tour",
+      "concept:display-as-architecture"
+    ]
   }
 }

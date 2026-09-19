@@ -1,7 +1,7 @@
 {
   "id": "candidate:esdevlin-u2-sphere",
   "candidate_kind": "example",
-  "status": "promote",
+  "status": "promoted",
   "discovered_by": "scout",
   "source": {
     "locator_type": "url",
@@ -24,9 +24,13 @@
   ],
   "notes": "Official page confirms the project; external documentation describes Devlin's Nevada Ark contribution and the venue's immersive screen context. Treat the work as a spatial/scale reference, not a claim that all Sphere content was designed by Devlin.",
   "decision": {
-    "outcome": "promote",
+    "outcome": "promoted",
     "rationale": "Adds the clearest anchor in the current batch for environment-as-display and scale as a compositional variable.",
     "reviewed_by": "wave01-curation",
-    "reviewed_at": "2026-09-19"
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:esdevlin-u2-sphere",
+      "concept:display-as-architecture"
+    ]
   }
 }
