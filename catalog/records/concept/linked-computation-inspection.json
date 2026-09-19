@@ -18,6 +18,11 @@
       "source": "ex:setosa-image-kernels",
       "target": "concept:linked-computation-inspection",
       "type": "demonstrates"
+    },
+    {
+      "source": "resource:linked-computation-inspector",
+      "target": "concept:linked-computation-inspection",
+      "type": "implements"
     }
   ],
   "sources": [

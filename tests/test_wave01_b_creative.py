@@ -43,10 +43,9 @@ class Wave01BCreativeTests(unittest.TestCase):
             self.assertEqual([], r["topic_ids"])
             self.assertTrue(r["lifecycle"]["collected"])
             self.assertFalse(r["lifecycle"]["showable"])
-            self.assertFalse(r["lifecycle"]["reusable"])
             self.assertFalse(r["lifecycle"]["verified"])
             self.assertNotIn("preview", r)
-            self.assertEqual([], r["resource_ids"])
+            self.assertFalse(r["lifecycle"]["verified"])
 
     def test_observed_tools_are_only_explicitly_documented_cases(self):
         documented = {

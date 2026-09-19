@@ -71,7 +71,7 @@
     "lifecycle": {
       "collected": true,
       "showable": false,
-      "reusable": false,
+      "reusable": true,
       "verified": false
     },
     "medium": "interactive-essay",
@@ -108,7 +108,9 @@
       "Do not animate agents independently of the same model used for satisfaction/output."
     ],
     "tool_choices": [],
-    "resource_ids": []
+    "resource_ids": [
+      "resource:editable-model-sandbox"
+    ]
   },
   {
     "id": "ex:seeing-theory-basic-probability",
@@ -126,7 +128,7 @@
     "lifecycle": {
       "collected": true,
       "showable": false,
-      "reusable": false,
+      "reusable": true,
       "verified": false
     },
     "medium": "interactive-data-visualization",
@@ -169,7 +171,9 @@
         "reason": "Seeing Theory project documentation states that its interactive visualizations were built with D3.js."
       }
     ],
-    "resource_ids": []
+    "resource_ids": [
+      "resource:editable-model-sandbox"
+    ]
   },
   {
     "id": "ex:setosa-image-kernels",
@@ -187,7 +191,7 @@
     "lifecycle": {
       "collected": true,
       "showable": false,
-      "reusable": false,
+      "reusable": true,
       "verified": false
     },
     "medium": "interactive-explainer",
@@ -224,7 +228,9 @@
       "Do not imply every image operation is a linear convolution."
     ],
     "tool_choices": [],
-    "resource_ids": []
+    "resource_ids": [
+      "resource:linked-computation-inspector"
+    ]
   },
   {
     "id": "ex:setosa-markov-chains",
@@ -242,7 +248,7 @@
     "lifecycle": {
       "collected": true,
       "showable": false,
-      "reusable": false,
+      "reusable": true,
       "verified": false
     },
     "medium": "interactive-explainer",
@@ -280,7 +286,9 @@
       "Do not hide invalid probability structure behind automatic correction without explanation."
     ],
     "tool_choices": [],
-    "resource_ids": []
+    "resource_ids": [
+      "resource:editable-model-sandbox"
+    ]
   },
   {
     "id": "ex:google-100000-stars",
@@ -298,7 +306,7 @@
     "lifecycle": {
       "collected": true,
       "showable": false,
-      "reusable": false,
+      "reusable": true,
       "verified": false
     },
     "medium": "3d-data-visualization",
@@ -335,7 +343,9 @@
       "Do not treat ordinary camera zoom as semantic zoom unless information granularity changes."
     ],
     "tool_choices": [],
-    "resource_ids": []
+    "resource_ids": [
+      "resource:semantic-zoom-levels"
+    ]
   },
   {
     "id": "ex:earth-nullschool",

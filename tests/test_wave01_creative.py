@@ -39,9 +39,8 @@ class Wave01CreativeTests(unittest.TestCase):
             self.assertEqual([], r["topic_ids"])
             self.assertTrue(r["lifecycle"]["collected"])
             self.assertFalse(r["lifecycle"]["showable"])
-            self.assertFalse(r["lifecycle"]["reusable"])
             self.assertNotIn("preview", r)
-            self.assertEqual([], r["resource_ids"])
+            self.assertFalse(r["lifecycle"]["verified"])
 
     def test_promoted_candidates_point_to_real_canonical_ids(self):
         for path in (ROOT / "inbox" / "candidates").glob("*.json"):

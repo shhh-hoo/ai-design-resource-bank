@@ -31,7 +31,14 @@
         "Make the manipulated quantity visually explicit before showing derived statistics."
       ]
     },
-    "resources": [],
+    "resources": [
+      {
+        "id": "resource:editable-model-sandbox",
+        "package_path": "resources/interaction/editable-model-sandbox",
+        "status": "implemented",
+        "title": "Editable model sandbox"
+      }
+    ],
     "tools": [
       {
         "evidence": "observed",
@@ -112,12 +119,14 @@
     "kind": "REFERENCE",
     "lifecycle": {
       "collected": true,
-      "reusable": false,
+      "reusable": true,
       "showable": false,
       "verified": false
     },
     "medium": "interactive-data-visualization",
-    "resource_ids": [],
+    "resource_ids": [
+      "resource:editable-model-sandbox"
+    ],
     "source_refs": [
       "source:seeing-theory-basic-probability"
     ],
@@ -159,6 +168,11 @@
       "source": "ex:seeing-theory-basic-probability",
       "target": "tool:d3",
       "type": "implemented_with"
+    },
+    {
+      "source": "ex:seeing-theory-basic-probability",
+      "target": "resource:editable-model-sandbox",
+      "type": "yields"
     }
   ],
   "sources": [

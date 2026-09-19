@@ -32,7 +32,14 @@
         "Validate editable models close to the control that created the invalid state rather than silently normalizing them."
       ]
     },
-    "resources": [],
+    "resources": [
+      {
+        "id": "resource:editable-model-sandbox",
+        "package_path": "resources/interaction/editable-model-sandbox",
+        "status": "implemented",
+        "title": "Editable model sandbox"
+      }
+    ],
     "tools": []
   },
   "crosswalks": [],
@@ -64,12 +71,14 @@
     "kind": "REFERENCE",
     "lifecycle": {
       "collected": true,
-      "reusable": false,
+      "reusable": true,
       "showable": false,
       "verified": false
     },
     "medium": "interactive-explainer",
-    "resource_ids": [],
+    "resource_ids": [
+      "resource:editable-model-sandbox"
+    ],
     "source_refs": [
       "source:setosa-markov-chains"
     ],
@@ -98,6 +107,11 @@
       "source": "ex:setosa-markov-chains",
       "target": "concept:editable-model-sandbox",
       "type": "demonstrates"
+    },
+    {
+      "source": "ex:setosa-markov-chains",
+      "target": "resource:editable-model-sandbox",
+      "type": "yields"
     }
   ],
   "sources": [
