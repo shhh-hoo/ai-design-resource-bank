@@ -16,7 +16,7 @@ def build(output=ROOT/'catalog', check=False):
     stamp=fingerprint()
     examples=[r for r in records if r['type']=='Example']
     topics=[r for r in records if r['type']=='SubjectTopic']
-    web_fields=['id','title','kind','subject_id','topic_ids','concept_ids','medium','visual_traits','interaction','intent_ids','collection_ids','preview','gap_reason']
+    web_fields=['id','title','kind','subject_id','topic_ids','concept_ids','medium','visual_traits','interaction','intent_ids','collection_ids','preview','gap_reason','lifecycle']
     web=dict(version=1,examples=[dict({k:r[k] for k in web_fields if k in r},resolve_path='catalog/'+record_path(r['id'])) for r in examples],
              topics=topics,intents=[r for r in records if r['type']=='Intent'],collections=[r for r in records if r['type']=='Collection'])
     ai=[]

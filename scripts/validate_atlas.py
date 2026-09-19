@@ -30,18 +30,23 @@ def validate(records, aliases, migration, crosswalks):
             require(set(life)=={'collected','showable','reusable','verified'} and all(isinstance(v,bool) for v in life.values()),f'{id}: lifecycle is orthogonal booleans')
             gap=r.get('kind')=='GAP'
             require(bool(r.get('concept_ids')),f'{id}: no concept')
-            require(bool(r.get('topic_ids')),f'{id}: no topic')
             for tid in r.get('topic_ids',[]):
                 require(by_id.get(tid,{}).get('type')=='SubjectTopic',f'{id}: invalid topic')
                 require(id in by_id.get(tid,{}).get('example_ids',[]),f'{id}: missing reciprocal topic inventory')
-            require(r.get('subject_id') in by_id and by_id.get(r.get('subject_id'),{}).get('parent') is None,f'{id}: invalid subject')
+            if r.get('subject_id') is not None:
+                require(r.get('subject_id') in by_id and by_id.get(r.get('subject_id'),{}).get('parent') is None,f'{id}: invalid subject')
+            else:
+                require(not r.get('topic_ids'),f'{id}: subjectless Example cannot carry subject topics')
             if gap:
                 require(bool(r.get('gap_reason')),f'{id}: GAP needs reason')
                 require(not r.get('preview') and not r.get('resource_ids') and not r.get('tool_choices'),f'{id}: GAP cannot claim a preview, resource or implementation')
                 require(not any(life.values()),f'{id}: GAP cannot claim lifecycle completion')
             else:
-                require(bool(r.get('preview',{}).get('renderer')) and life.get('showable'),f'{id}: showable instance needs preview')
-                require(r.get('preview',{}).get('url')=='#example/'+id,f'{id}: preview does not resolve exact identity')
+                if life.get('showable'):
+                    require(bool(r.get('preview',{}).get('renderer')),f'{id}: showable instance needs preview')
+                    require(r.get('preview',{}).get('url')=='#example/'+id,f'{id}: preview does not resolve exact identity')
+                else:
+                    require(not r.get('preview'),f'{id}: non-showable reference cannot claim a local preview')
             if life.get('reusable'):require(bool(r.get('resource_ids')),f'{id}: reusable needs a package')
             if life.get('verified'):require(bool(r.get('verification',{}).get('evidence')) and bool(r.get('verification',{}).get('scope')),f'{id}: verified needs scoped evidence')
             for key in ['grammar','transfer_constraints','fidelity_constraints','failure_modes']:require(bool(r.get(key)),f'{id}: missing Method input {key}')

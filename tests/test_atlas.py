@@ -39,6 +39,39 @@ class AtlasTests(unittest.TestCase):
     def test_wrong_relation_target_rejected(self):
         example=next(r for r in self.data[0] if r['type']=='Example');example['concept_ids']=['tool:d3']
         with self.assertRaisesRegex(ValueError,'schema concept_ids'):validate(*self.data)
+    def test_creative_external_reference_without_subject_or_preview(self):
+        self.data[0].append({
+            'id':'ex:synthetic-creative-reference','type':'Example','title':'Synthetic creative reference',
+            'canonical_path':'knowledge/examples/chemistry.json','kind':'REFERENCE',
+            'summary':'Synthetic fixture for a collected external creative reference.',
+            'topic_ids':[],'concept_ids':['concept:mask-transition'],'source_refs':['source:legacy-mechanisms'],
+            'lifecycle':{'collected':True,'showable':False,'reusable':False,'verified':False},
+            'medium':'website','visual_traits':['editorial'],'interaction':'inspect',
+            'intent_ids':[],'collection_ids':[],'grammar':['time-sequence'],
+            'interaction_model':{'trigger':'inspect','response':'Open the external source.'},
+            'state_model':{'model':'external-reference','deterministic':True},
+            'transfer_constraints':['Reuse the transition logic, not the source identity.'],
+            'fidelity_constraints':['No local preview is stored.'],
+            'failure_modes':['Do not infer the original implementation technology.'],
+            'tool_choices':[],'resource_ids':[]
+        })
+        validate(*self.data)
+    def test_showable_reference_requires_local_preview(self):
+        fixture={
+            'id':'ex:synthetic-showable-reference','type':'Example','title':'Synthetic showable reference',
+            'canonical_path':'knowledge/examples/chemistry.json','kind':'REFERENCE',
+            'summary':'Synthetic fixture.','topic_ids':[],'concept_ids':['concept:mask-transition'],
+            'source_refs':['source:legacy-mechanisms'],
+            'lifecycle':{'collected':True,'showable':True,'reusable':False,'verified':False},
+            'medium':'website','visual_traits':['editorial'],'interaction':'inspect',
+            'intent_ids':[],'collection_ids':[],'grammar':['time-sequence'],
+            'interaction_model':{'trigger':'inspect','response':'Inspect.'},
+            'state_model':{'model':'external-reference','deterministic':True},
+            'transfer_constraints':['Synthetic.'],'fidelity_constraints':['Synthetic.'],
+            'failure_modes':['Synthetic.'],'tool_choices':[],'resource_ids':[]
+        }
+        self.data[0].append(fixture)
+        with self.assertRaisesRegex(ValueError,'showable instance needs preview'):validate(*self.data)
     def test_query_resolve_build_fetch(self):
         candidates=query('reaction profile','Example')
         self.assertEqual(candidates[0]['id'],'ex:chemistry-reaction-profile')

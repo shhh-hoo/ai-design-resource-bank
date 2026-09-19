@@ -13,10 +13,17 @@ const topics = new Map(data.topics.map((t) => [t.id, t]));
 const selected = new Map();
 let committed = null,
   routeVersion = 0;
+const previewMarkup = (e) =>
+  e.kind === "GAP"
+    ? '<span class="gap-sign">＋</span><span>Example needed</span>'
+    : e.preview
+      ? visual(e.preview.renderer, e.title)
+      : '<span class="reference-sign">↗</span><span>External reference</span>';
+const previewClass = (e) => e.kind === "GAP" ? "gap-preview" : e.preview ? "" : "reference-preview";
 const card = (e) =>
-  `<a class="card" href="#example/${e.id}"><div class="preview ${e.kind === "GAP" ? "gap-preview" : ""}">${e.kind === "GAP" ? '<span class="gap-sign">＋</span><span>Example needed</span>' : visual(e.preview.renderer, e.title)}</div><h3>${esc(e.title)}</h3><div class="card-meta"><span class="kind-${e.kind.toLowerCase()}">${e.kind}</span><span>·</span><span>${e.kind === "LIVE" ? "Try the diagram" : e.kind === "GAP" ? "Missing coverage" : "Diagram study"}</span></div></a>`;
-const heading = (tag, title, copy) =>
-  `<div class="page-heading"><div><p class="eyebrow">${tag}</p><h1>${title}</h1><p class="intro">${copy}</p></div><span class="subject-label">Subject pack / Chemistry</span></div>`;
+  `<a class="card" href="#example/${e.id}"><div class="preview ${previewClass(e)}">${previewMarkup(e)}</div><h3>${esc(e.title)}</h3><div class="card-meta"><span class="kind-${e.kind.toLowerCase()}">${e.kind}</span><span>·</span><span>${e.kind === "LIVE" ? "Try the diagram" : e.kind === "GAP" ? "Missing coverage" : e.preview ? "Local study" : "External reference"}</span></div></a>`;
+const heading = (tag, title, copy, label = "AIDRB / Creative + Subject") =>
+  `<div class="page-heading"><div><p class="eyebrow">${tag}</p><h1>${title}</h1><p class="intro">${copy}</p></div><span class="subject-label">${label}</span></div>`;
 const list = (arr) =>
   `<ul>${arr.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>`;
 const busy = () => '<p class="loading">Loading…</p>';
@@ -28,6 +35,7 @@ function atlas(topicId = "topic:chemistry-energetics") {
       "THE KNOWLEDGE ATLAS",
       "Chemistry, in view.",
       "Browse a knowledge point. See the relationship. Try an example.",
+      "Subject pack / Chemistry",
     ) +
     `<div class="atlas-layout"><aside class="topic-nav" aria-label="Chemistry topics"><p class="eyebrow">Chemistry</p>${data.topics
       .filter((t) => t.parent === "topic:chemistry")
@@ -53,17 +61,7 @@ function explore() {
       "intent",
       "Intent",
       data.intents.map((x) => [x.id, x.title]),
-    )}${filter("medium", "Medium", [
-      ["diagram", "Diagram"],
-      ["interactive-diagram", "Interactive diagram"],
-    ])}${filter("interaction", "Interaction", [
-      ["inspect", "Inspect"],
-      ["parameter-control", "Parameter control"],
-    ])}${filter("trait", "Visual trait", [
-      ["schematic", "Schematic"],
-      ["quantitative", "Quantitative"],
-      ["labeled", "Labeled"],
-    ])}${filter(
+    )}${filter("medium", "Medium", [...new Set(data.examples.map((e) => e.medium).filter(Boolean))].sort().map((v) => [v, v.replaceAll("-", " ")]))}${filter("interaction", "Interaction", [...new Set(data.examples.map((e) => e.interaction).filter(Boolean))].sort().map((v) => [v, v.replaceAll("-", " ")]))}${filter("trait", "Visual trait", [...new Set(data.examples.flatMap((e) => e.visual_traits || []))].sort().map((v) => [v, v.replaceAll("-", " ")]))}${filter(
       "collection",
       "Collection",
       data.collections.map((x) => [x.id, x.title]),
@@ -107,7 +105,11 @@ function sourceLabel(source) {
 async function detail(id, version) {
   const e = examples.get(id);
   if (!e) throw new Error("Unknown Example");
-  main.innerHTML = `<article class="detail"><a class="back" href="#atlas/${e.topic_ids[0]}">← ${esc(topics.get(e.topic_ids[0]).title)}</a><div class="detail-stage ${e.kind === "GAP" ? "gap-preview" : ""}" id="stage">${e.kind === "GAP" ? '<span class="gap-sign">＋</span><span>GAP · A concrete example is still needed</span>' : visual(e.preview.renderer, e.title)}</div><div class="detail-identification"><div><p class="eyebrow">${e.kind} / Chemistry</p><h1>${esc(e.title)}</h1><p id="context">${e.kind === "GAP" ? esc(e.gap_reason) : ""}</p><span class="data-id">${e.id}</span></div><button id="select-example" ${e.kind === "GAP" ? "disabled" : ""}>${selected.has(id) ? "Selected ✓" : "Add to selection"}</button></div><details id="ai-build"><summary>AI Build</summary><div class="details-body">${busy()}</div></details><details id="implementation"><summary>Implementation & model limits</summary><div class="details-body">${busy()}</div></details><details id="provenance"><summary>Provenance & curriculum crosswalks</summary><div class="details-body">${busy()}</div></details></article>`;
+  const primaryTopic = e.topic_ids?.[0];
+  const backHref = primaryTopic ? `#atlas/${primaryTopic}` : "#explore";
+  const backLabel = primaryTopic ? topics.get(primaryTopic)?.title || "Atlas" : "Explore";
+  const subjectLabel = e.subject_id ? topics.get(e.subject_id)?.title || "Subject" : "Creative";
+  main.innerHTML = `<article class="detail"><a class="back" href="${backHref}">← ${esc(backLabel)}</a><div class="detail-stage ${previewClass(e)}" id="stage">${e.kind === "GAP" ? '<span class="gap-sign">＋</span><span>GAP · A concrete example is still needed</span>' : previewMarkup(e)}</div><div class="detail-identification"><div><p class="eyebrow">${e.kind} / ${esc(subjectLabel)}</p><h1>${esc(e.title)}</h1><p id="context">${e.kind === "GAP" ? esc(e.gap_reason) : ""}</p><span class="data-id">${e.id}</span></div><button id="select-example" ${e.kind === "GAP" ? "disabled" : ""}>${selected.has(id) ? "Selected ✓" : "Add to selection"}</button></div><details id="ai-build"><summary>AI Build</summary><div class="details-body">${busy()}</div></details><details id="implementation"><summary>Implementation & model limits</summary><div class="details-body">${busy()}</div></details><details id="provenance"><summary>Provenance${e.subject_id ? " & curriculum crosswalks" : ""}</summary><div class="details-body">${busy()}</div></details></article>`;
   document.getElementById("select-example").onclick = (event) => {
     selected.set(
       id,
@@ -135,8 +137,11 @@ async function detail(id, version) {
     )
       .map(([k, v]) => `${k}: ${v ? "yes" : "no"}`)
       .join(" · ")}</p>`;
+  const crosswalkMarkup = resolved.crosswalks.length
+    ? `<p>Canonical topic → curriculum node. These editorial mappings describe scope, not approval by a curriculum board.</p>${resolved.crosswalks.map((c) => `<p><strong>${esc(c.node.label)}</strong> · ${esc(c.node.section)}<br>Canonical topic is <strong>${c.relation}</strong> relative to this source node.<br>${esc(c.rationale)}</p>`).join("")}`
+    : "";
   document.querySelector("#provenance .details-body").innerHTML =
-    `<p>Canonical topic → curriculum node. These editorial mappings describe scope, not approval by a curriculum board.</p>${resolved.crosswalks.map((c) => `<p><strong>${esc(c.node.label)}</strong> · ${esc(c.node.section)}<br>Canonical topic is <strong>${c.relation}</strong> relative to this source node.<br>${esc(c.rationale)}</p>`).join("")}<h3>Sources</h3>${resolved.sources.map((s) => `<p>${sourceLabel(s)}<br>${esc(s.publisher)} · checked ${esc(s.checked_at || "not independently checked")}<br><span class="gap-note">${esc(s.check_scope)}</span></p>`).join("")}`;
+    `${crosswalkMarkup}<h3>Sources</h3>${resolved.sources.map((s) => `<p>${sourceLabel(s)}<br>${esc(s.publisher)} · checked ${esc(s.checked_at || "not independently checked")}<br><span class="gap-note">${esc(s.check_scope)}</span></p>`).join("")}`;
 }
 async function dictionary(version) {
   main.innerHTML =
