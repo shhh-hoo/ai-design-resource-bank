@@ -71,7 +71,7 @@
     "lifecycle": {
       "collected": true,
       "showable": false,
-      "reusable": false,
+      "reusable": true,
       "verified": false
     },
     "medium": "website",
@@ -108,7 +108,9 @@
       "Do not infer implementation technology from the rendered site."
     ],
     "tool_choices": [],
-    "resource_ids": []
+    "resource_ids": [
+      "resource:archive-as-interface"
+    ]
   },
   {
     "id": "ex:fiona-vilmer",
@@ -126,7 +128,7 @@
     "lifecycle": {
       "collected": true,
       "showable": false,
-      "reusable": false,
+      "reusable": true,
       "verified": false
     },
     "medium": "website",
@@ -163,7 +165,9 @@
       "Do not turn the archive into a conventional image-card portfolio."
     ],
     "tool_choices": [],
-    "resource_ids": []
+    "resource_ids": [
+      "resource:archive-as-interface"
+    ]
   },
   {
     "id": "ex:aott-severance",
