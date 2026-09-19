@@ -6,7 +6,7 @@ When a user provides a file, image, repository, article, website, video, prompt,
 
 ## Governing architecture
 
-Read `docs/KNOWLEDGE-ATLAS-CONTRACT.md` first. It supersedes earlier board/subject routing instructions. Content entities are Concept, Example, Tool and Resource; Method is a generated view. Both discovery projections operate in parallel. Explicit selection commit precedes AI lock. Default navigation is Atlas | Explore | Dictionary | Index.
+Read `docs/KNOWLEDGE-ATLAS-CONTRACT.md` first. It supersedes earlier board/subject routing instructions. Content entities are Concept, Example, Tool and Resource; Method is a generated view. Both projections operate over the same canonical Core. Machine retrieval uses explicit selection commit before AI lock; the Human projection has no selection workflow. Default navigation is Atlas | Explore | Dictionary | Index.
 
 ## Gathering and scouting
 
@@ -75,9 +75,10 @@ Follow `docs/EDITORIAL-UI-CONTRACT.md` and `docs/KNOWLEDGE-ATLAS-CONTRACT.md`.
 - Explore is an editorial discovery stream with search plus secondary refinement by world/domain/Concept/medium/interaction/trait/Resource/coverage; it is not a generic card wall.
 - Dictionary routes Concept → real Examples → related Concepts → Resource/Tool implementation path. Resource pages may run only declared local AIDRB demos.
 - A public source locator does not imply display or iframe permission. Embed third-party media only when provenance explicitly supports that mode; otherwise link the source and use an honest medium-aware reference fallback.
+- Do not add Human selection/cart/commit/download UI. Human handoff is an exact stable URL/ID plus natural-language intent; machine retrieval owns selection → commit → lock → fetch.
 - Neutral editorial chrome, restrained meaningful color, keyboard access and responsive layouts.
 - Old web/ assets are compatibility evidence only and must not load from index.html.
-- Edit canonical inputs; regenerate catalog/ and catalog.yaml. Projection-only changes must preserve deterministic catalog output, stable IDs, selection commit/lock and retrieval benchmarks.
+- Edit canonical inputs; regenerate catalog/ and catalog.yaml. Projection-only changes must preserve deterministic catalog output, stable IDs, the machine selection commit/lock contract and retrieval benchmarks.
 
 ## Provenance and rights
 
