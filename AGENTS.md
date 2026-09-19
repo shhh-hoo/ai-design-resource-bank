@@ -8,6 +8,12 @@ When a user provides a file, image, repository, article, website, video, prompt,
 
 Read `docs/KNOWLEDGE-ATLAS-CONTRACT.md` first. It supersedes earlier board/subject routing instructions. Content entities are Concept, Example, Tool and Resource; Method is a generated view. Both discovery projections operate in parallel. Explicit selection commit precedes AI lock. Default navigation is Atlas | Explore | Dictionary | Index.
 
+## Gathering and scouting
+
+Before running any discovery sweep, read `docs/GATHERING-PROTOCOL.md`. New finds go to `inbox/candidates/` first and must validate against `inbox/candidate.schema.json`.
+
+A scout may discover and inspect candidates, but it must not promote a candidate, create canonical records, or expand taxonomy merely to increase inventory. Promotion requires a separate curation decision based on marginal value, dedupe, saturation and retrieval gaps. Rejected/deferred candidates remain useful dedupe history.
+
 ## Core rule
 
 Store the **reusable mechanism**, not merely the source.
