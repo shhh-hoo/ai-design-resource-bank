@@ -191,7 +191,10 @@ for (const [name, width, height] of [
       "Original source media is linked, not reproduced here.",
     );
     await expect(
-      page.getByRole("link", { name: "Original ↗" }),
+      page.getByRole("button", { name: "View original here" }),
+    ).toBeVisible();
+    await expect(
+      page.getByRole("link", { name: "Open ↗" }),
     ).toHaveAttribute("href", "https://wholeearth.info/");
     await expect(page.locator(".resource-callout")).toHaveCount(1);
     await expect(page.locator("#select-example")).toHaveCount(0);
@@ -205,10 +208,47 @@ for (const [name, width, height] of [
       path: `${evidence}/${name}-human-example-editorial.png`,
       fullPage: true,
     });
+    await page.route("https://wholeearth.info/**", (route) =>
+      route.fulfill({
+        contentType: "text/html",
+        body: "<!doctype html><title>Whole Earth Index</title><main>Original media fixture</main>",
+      }),
+    );
+    await page.getByRole("button", { name: "View original here" }).click();
+    await expect(page.locator("iframe.original-frame")).toHaveAttribute(
+      "src",
+      "https://wholeearth.info/",
+    );
+    await expect(
+      page.frameLocator("iframe.original-frame").locator("body"),
+    ).toContainText("Original media fixture");
+
+    // Licensed / explicitly embeddable references load the original automatically.
+    await page.route("https://ncase.me/trust/**", (route) =>
+      route.fulfill({
+        contentType: "text/html",
+        body: "<!doctype html><title>The Evolution of Trust</title><main>Trust original fixture</main>",
+      }),
+    );
+    await page.goto("/#example/ex:evolution-of-trust");
+    await expect(page.locator("iframe.original-frame")).toHaveAttribute(
+      "src",
+      "https://ncase.me/trust/",
+    );
+    await expect(
+      page.frameLocator("iframe.original-frame").locator("body"),
+    ).toContainText("Trust original fixture");
+    await expect(page.locator(".media-credit")).toContainText(
+      "Original · Nicky Case",
+    );
+    await assertNoOverflow(page);
 
     // Film/title sequence: a distinct moving-image presentation; no fake Resource.
     await page.goto("/#example/ex:aott-severance");
     await expect(page.locator('#stage [data-presentation="cinema"]')).toBeVisible();
+    await expect(
+      page.getByRole("button", { name: "View original here" }),
+    ).toBeVisible();
     await expect(page.locator("#resources")).toBeHidden();
     await assertNoOverflow(page);
     await page.screenshot({
@@ -219,6 +259,9 @@ for (const [name, width, height] of [
     // Physical installation: spatial presentation semantics, external source only.
     await page.goto("/#example/ex:pulse-room");
     await expect(page.locator('#stage [data-presentation="spatial"]')).toBeVisible();
+    await expect(
+      page.getByRole("button", { name: "View original here" }),
+    ).toBeVisible();
     await expect(page.locator("#resources")).toBeHidden();
     await assertNoOverflow(page);
     await page.screenshot({
@@ -355,6 +398,7 @@ for (const [name, width, height] of [
             "website / cinema / installation presentation semantics",
             "Concept -> Examples -> Resource/Tool path",
             "four runnable Wave 01 Resource demos",
+            "original media audit / auto + on-demand source embeds",
             "External Reference != Resource demo",
             "no Human selection / commit / download surface",
             "stable IDs / no mobile overflow / no console errors",
