@@ -1,22 +1,30 @@
 {
   "id": "candidate:villarejo-igarcia",
   "candidate_kind": "example",
-  "status": "discovered",
+  "status": "deferred",
   "discovered_by": "manual",
   "source": {
     "locator_type": "url",
-    "locator": "https://villarejoigarcia.com/",
-    "title": "Villarejo Igarcia"
+    "locator": "https://www.villarejoigarcia.com/",
+    "title": "Alex Villarejo i Garcia"
   },
   "captured_at": "2026-09-19",
-  "rationale": "Existing user-selected reference to inspect for portfolio composition, typography, and project-transition behavior.",
+  "rationale": "Potential portfolio reference for composition, typography, shuffle/navigation behavior, and transitions.",
   "novelty_axes": [
     "stronger_example",
     "new_interaction"
   ],
   "signals": [
     "portfolio",
-    "typography",
-    "project transition"
-  ]
+    "shuffle",
+    "graphic design",
+    "web/code"
+  ],
+  "notes": "The direct crawl exposed only the label 'Shuffle'; external profiles confirm a graphic/web/code practice but do not establish the site's interaction mechanics.",
+  "decision": {
+    "outcome": "deferred",
+    "rationale": "Keep as a promising candidate, but do not promote until the live interaction and project-transition behavior can be directly observed.",
+    "reviewed_by": "wave01-curation",
+    "reviewed_at": "2026-09-19"
+  }
 }
