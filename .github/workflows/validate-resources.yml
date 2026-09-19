@@ -41,7 +41,7 @@ jobs:
           node --check app/live.js
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
-      - name: Browser navigation, mobile, selection and startup budget
+      - name: Browser navigation, mobile, resources and startup budget
         run: npm run test:browser
       - name: Validate publish artifact
         run: python scripts/build_site.py
