@@ -30,7 +30,9 @@ jobs:
           python scripts/validate_subject_atlas.py
           python scripts/validate_grammar_mechanisms.py
       - name: Detect generated drift and create SQLite FTS
-        run: python scripts/build_catalog.py --check
+        run: |
+          python scripts/build_catalog.py --check
+          python scripts/validate_relational_model.py --self-check
       - name: Exercise retrieval, locking and chemical models
         run: |
           python -m unittest discover -s tests -p 'test_*.py'
@@ -65,5 +67,6 @@ jobs:
           python scripts/validate_atlas.py
           python scripts/validate_resources.py
           python scripts/build_catalog.py --check
+          python scripts/validate_relational_model.py --self-check
           python -m unittest discover -s tests -p 'test_*.py'
           python scripts/build_site.py
