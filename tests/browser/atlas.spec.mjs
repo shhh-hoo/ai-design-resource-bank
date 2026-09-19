@@ -9,9 +9,12 @@ async function assertNoOverflow(page) {
   const metrics = await page.evaluate(() => {
     const viewport = window.innerWidth;
     const scrollWidth = document.documentElement.scrollWidth;
+    const scrollX = window.scrollX;
     const offenders = [...document.querySelectorAll("body *")]
       .map((element) => {
         const rect = element.getBoundingClientRect();
+        const documentLeft = rect.left + scrollX;
+        const documentRight = rect.right + scrollX;
         return {
           tag: element.tagName.toLowerCase(),
           id: element.id || "",
@@ -19,15 +22,20 @@ async function assertNoOverflow(page) {
             typeof element.className === "string" ? element.className : "",
           left: Math.round(rect.left * 10) / 10,
           right: Math.round(rect.right * 10) / 10,
+          documentLeft: Math.round(documentLeft * 10) / 10,
+          documentRight: Math.round(documentRight * 10) / 10,
           width: Math.round(rect.width * 10) / 10,
           scrollWidth: element.scrollWidth,
           clientWidth: element.clientWidth,
         };
       })
-      .filter((item) => item.right > viewport + 0.5 || item.left < -0.5)
-      .sort((a, b) => b.right - a.right)
+      .filter(
+        (item) =>
+          item.documentRight > viewport + 0.5 || item.documentLeft < -0.5,
+      )
+      .sort((a, b) => b.documentRight - a.documentRight)
       .slice(0, 12);
-    return { viewport, scrollWidth, offenders };
+    return { viewport, scrollWidth, scrollX, offenders };
   });
   expect(
     metrics.scrollWidth,
