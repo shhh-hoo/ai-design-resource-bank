@@ -230,9 +230,7 @@ for (const [name, width, height] of [
     await page.getByRole("link", { name: "Dictionary", exact: true }).click();
     await page.getByLabel("Find a Concept").fill("archive as interface");
     await expect(page.locator(".dictionary-term")).toHaveCount(1);
-    await expect(page.locator(".dictionary-term")).toContainText(
-      "Runnable Resource",
-    );
+    await expect(page.locator(".dictionary-term")).toContainText("Demo");
     await page.locator(".dictionary-term").click();
     await expect(
       page.getByRole("heading", { name: "Archive as interface", exact: true }),
