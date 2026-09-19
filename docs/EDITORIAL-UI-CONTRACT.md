@@ -2,7 +2,7 @@
 
 The Human projection and the machine retrieval projection are two views over the same canonical Core. The governing architecture remains [the corrected North Star](KNOWLEDGE-ATLAS-CONTRACT.md): Concept, Example, Tool and Resource are canonical content types; stable IDs are shared; commit/lock semantics belong to machine retrieval; Source remains provenance; Method remains generated.
 
-This document governs **presentation only**. It does not introduce a new canonical world, media-asset registry, Example identity, Resource identity or Human selection format.
+This document governs **presentation only**. It does not introduce a new canonical world, Example identity, Resource identity or Human selection format. `app/media.json` is a Human-only presentation/provenance audit keyed by stable Example ID; it is not canonical content and does not create new identity.
 
 ## Product role
 
@@ -27,23 +27,19 @@ Treat every default-visible sentence as suspect unless it helps the user underst
 
 ## Presentation model
 
-Presentation is derived in the Human client from existing Example fields (`kind`, `medium`, `preview`, lifecycle and relations). It is not persisted as canonical identity.
+Presentation is derived from canonical Example identity plus the Human-only media audit in `app/media.json`. Media audit entries may select one of four display strategies without changing the Example:
 
-| Canonical situation | Human renderer | Rights / semantic rule |
+| Situation | Human renderer | Rule |
 | --- | --- | --- |
 | `LIVE` Example with local preview runtime | local live renderer | This is the Example itself. Preserve its stable ID and model constraints. |
-| Local `REFERENCE` with an existing AIDRB schematic preview | local study renderer | Render only the authored AIDRB study declared by the Example. Do not imply it is source media. |
-| External editorial / web reference | editorial reference plate + original-source link | No copied site screenshot or remote page is required. The plate communicates medium and interaction, not source appearance. |
-| External film / title sequence | moving-image reference plate + original-source link | Do not copy frames, posters or video unless a later canonical media contract explicitly establishes display rights. |
-| External identity / motion system | identity reference plate + original-source link | The plate is an AIDRB navigation primitive, not a reconstruction of the identity. |
-| External stage / installation / spatial work | spatial reference plate + original-source link | Do not fake installation imagery or spatial documentation. |
-| External interactive / HCI / data work | interactive reference plate + original-source link | Do not iframe the source merely because it is technically embeddable. Source interaction remains external unless explicitly allowed. |
-| `Resource` with a declared local HTML demo | sandboxed local demo iframe | This is an original generalized implementation and must be labelled as a Resource, never as an Example preview. |
-| `GAP` | explicit coverage-gap renderer | Never generate a plausible visual to hide missing coverage. |
+| Local `REFERENCE` with an authored AIDRB preview | local study renderer | Render the declared local study. |
+| External reference with open-license media or explicit upstream embed support | original source embed / official preview | Prefer the actual reference over an abstract representation. Keep attribution and evidence in the media audit. |
+| External reference without explicit redistribution rights | on-demand remote source-page frame + source link | Do not copy third-party binary assets. Let the publisher control framing via its own headers; retain a direct source link. |
+| External reference that cannot be shown | medium-aware reference plate | Final fallback only; never a synthetic reconstruction. |
+| `Resource` with a declared local HTML demo | sandboxed local demo iframe | Original generalized AIDRB implementation, distinct from the source Example. |
+| `GAP` | explicit coverage-gap renderer | Never fabricate media to hide missing coverage. |
 
-A reference plate is deliberately **not** a synthetic screenshot. It uses AIDRB typography, layout and abstract medium cues only. External provenance remains available through the original-source link and collapsed provenance; the primary view should not explain this policy in prose.
-
-V1 intentionally does not infer remote-embed rights from `Source.locator`. A future image / gallery / video / iframe renderer may be added only when canonical provenance can explicitly distinguish: locally displayable asset, permitted remote embed, external-link-only reference, and no lawful visual asset. Until then, external-link fallback is the correct renderer.
+The display priority is: **real original media first, fallback plate last**. Public availability alone is not permission to copy bytes into the repository. Local copies require a clear redistribution basis; remote official previews and embeds remain source-attributed and are recorded separately from canonical content.
 
 ## Atlas
 
@@ -105,6 +101,6 @@ Machine retrieval keeps its existing selection → commit → lock → deep-fetc
 
 Use semantic links/buttons, visible focus, keyboard-operable LIVE/Resource controls, responsive layouts, reduced-motion support and no document-wide mobile overflow. Typography should prioritize sustained reading: avoid oversized display text, repeated eyebrow/hero stacks and low-contrast explanatory copy when ordinary metadata or a short sentence is enough.
 
-Initial Atlas startup loads the Human shell and generated web index only. Canonical resolve records, relation graph, Dictionary index and Resource artifacts remain lazy. External reference pages are not fetched or executed as part of rendering a reference plate.
+Initial Atlas startup loads the Human shell and generated web index only. Canonical resolve records, relation graph, Dictionary index, media audit and Resource artifacts remain lazy. External source pages are never loaded on the Atlas grid; original media is resolved only after opening an Example, and publisher-controlled source-page embeds are user-triggered unless open-license/explicit embed evidence supports automatic display.
 
-Browser validation must cover desktop and mobile Creative Atlas, academic handoff, Explore, website / cinema / installation / LIVE Example details, representative Concept details, all four Wave 01 Resource demos, absence of Human selection/commit UI, safe provenance rendering, request failures and console errors. Screenshots are evidence and must be visually reviewed; green automated checks alone are insufficient.
+Browser validation must cover desktop and mobile Creative Atlas, academic handoff, Explore, website / cinema / installation / LIVE Example details, automatic original-media rendering, on-demand source-page embedding, representative Concept details, all four Wave 01 Resource demos, absence of Human selection/commit UI, safe provenance rendering, request failures and console errors. Screenshots are evidence and must be visually reviewed; green automated checks alone are insufficient.
