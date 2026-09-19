@@ -484,7 +484,7 @@ h3 { font-weight: 500; font-size: 17px; }
   padding: 18px;
   box-shadow: 0 15px 30px rgba(0,0,0,.08);
 }
-.filters label { display: flex; flex-direction: column; gap: 5px; font-size: 10px; color: var(--muted); min-width: 0; }\n.filters select { width: 100%; min-width: 0; max-width: 100%; }
+.filters label { display: flex; flex-direction: column; gap: 5px; font-size: 10px; color: var(--muted); }
 .result-count { font-size: 10px; color: var(--muted); margin: 0; white-space: nowrap; text-transform: uppercase; letter-spacing: .8px; }
 
 .explore-stream { border-top: 1px solid var(--line); }
