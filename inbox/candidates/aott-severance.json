@@ -1,7 +1,7 @@
 {
   "id": "candidate:aott-severance",
   "candidate_kind": "example",
-  "status": "promote",
+  "status": "promoted",
   "discovered_by": "scout",
   "source": {
     "locator_type": "url",
@@ -25,9 +25,13 @@
   ],
   "notes": "The process interview explicitly documents Houdini simulations, Cinema 4D camera/render work, Octane rendering, additional compositing tools, and motion capture. This makes it useful both as a Creative Example and as implementation evidence without claiming those tools are required for web transfer.",
   "decision": {
-    "outcome": "promote",
+    "outcome": "promoted",
     "rationale": "Adds a strong cinematic anchor for semantic 3D transformation and identity-preserving surreal transitions, with unusually good process evidence.",
     "reviewed_by": "wave01-curation",
-    "reviewed_at": "2026-09-19"
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:aott-severance",
+      "concept:semantic-3d-metaphor"
+    ]
   }
 }

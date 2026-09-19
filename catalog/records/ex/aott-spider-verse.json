@@ -1,0 +1,117 @@
+{
+  "ai_build": {
+    "availability": "available",
+    "example_id": "ex:aott-spider-verse",
+    "method": {
+      "concepts": [
+        "concept:mixed-media-surface-language"
+      ],
+      "failure_modes": [
+        "Do not flatten mixed-media construction into a single noise overlay.",
+        "Do not infer the exact source asset pipeline beyond the documented process."
+      ],
+      "fidelity_constraints": [
+        "Preserve the principle of mixed material languages without copying Spider-Man characters, comic assets, marks, or branded type."
+      ],
+      "grammar": [
+        "composition-layer",
+        "3d-spatial",
+        "time-sequence"
+      ],
+      "interaction_model": {
+        "response": "Material languages are layered and recombined over motion so print/comic surface behavior remains active inside animated spatial scenes.",
+        "trigger": "play the title sequence"
+      },
+      "mechanisms": [],
+      "state_model": {
+        "deterministic": true,
+        "model": "external-reference"
+      },
+      "transfer_constraints": [
+        "Use materially distinct surface systems intentionally—e.g. print offset, drawn marks, halftone, paint—not as one generic texture layer.",
+        "Keep surface treatments tied to hierarchy, impact, or world logic across the motion sequence."
+      ]
+    },
+    "resources": [],
+    "tools": []
+  },
+  "crosswalks": [],
+  "record": {
+    "canonical_path": "knowledge/examples/creative-wave01.json",
+    "collection_ids": [],
+    "concept_ids": [
+      "concept:mixed-media-surface-language"
+    ],
+    "failure_modes": [
+      "Do not flatten mixed-media construction into a single noise overlay.",
+      "Do not infer the exact source asset pipeline beyond the documented process."
+    ],
+    "fidelity_constraints": [
+      "Preserve the principle of mixed material languages without copying Spider-Man characters, comic assets, marks, or branded type."
+    ],
+    "grammar": [
+      "composition-layer",
+      "3d-spatial",
+      "time-sequence"
+    ],
+    "id": "ex:aott-spider-verse",
+    "intent_ids": [],
+    "interaction": "watch",
+    "interaction_model": {
+      "response": "Material languages are layered and recombined over motion so print/comic surface behavior remains active inside animated spatial scenes.",
+      "trigger": "play the title sequence"
+    },
+    "kind": "REFERENCE",
+    "lifecycle": {
+      "collected": true,
+      "reusable": false,
+      "showable": false,
+      "verified": false
+    },
+    "medium": "title-sequence",
+    "resource_ids": [],
+    "source_refs": [
+      "source:aott-spider-verse"
+    ],
+    "state_model": {
+      "deterministic": true,
+      "model": "external-reference"
+    },
+    "summary": "A mixed-media title sequence fusing 3D-derived scenes with halftone, spray paint, offset-print color, scanned illustration, hand drawing, and typography.",
+    "title": "Spider-Man: Into the Spider-Verse — title sequence",
+    "tool_choices": [],
+    "topic_ids": [],
+    "transfer_constraints": [
+      "Use materially distinct surface systems intentionally—e.g. print offset, drawn marks, halftone, paint—not as one generic texture layer.",
+      "Keep surface treatments tied to hierarchy, impact, or world logic across the motion sequence."
+    ],
+    "type": "Example",
+    "visual_traits": [
+      "mixed-media",
+      "halftone",
+      "hand-drawn",
+      "typographic"
+    ]
+  },
+  "relations": [
+    {
+      "source": "ex:aott-spider-verse",
+      "target": "concept:mixed-media-surface-language",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Title page and process interview inspected for mixed 3D/analog construction, halftone/offset/hand-drawn treatments and explicitly documented production workflow.",
+      "checked_at": "2026-09-19",
+      "id": "source:aott-spider-verse",
+      "locator": "https://www.artofthetitle.com/title/spider-man-into-the-spider-verse/",
+      "locator_type": "url",
+      "publisher": "Art of the Title",
+      "title": "Spider-Man: Into the Spider-Verse title sequence — Art of the Title",
+      "type": "Source"
+    }
+  ]
+}

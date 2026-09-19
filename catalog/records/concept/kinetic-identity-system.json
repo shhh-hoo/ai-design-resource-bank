@@ -1,0 +1,73 @@
+{
+  "record": {
+    "canonical_path": "knowledge/concepts/creative-wave01.json",
+    "id": "concept:kinetic-identity-system",
+    "source_refs": [
+      "source:dia-catk",
+      "source:dia-nike-statement-house",
+      "source:dia-atrak-live-visuals"
+    ],
+    "subtypes": [
+      "motion",
+      "pattern"
+    ],
+    "summary": "Define identity as a reusable set of typographic and motion rules that can vary in intensity and medium while remaining recognizably one system.",
+    "title": "Kinetic identity system",
+    "type": "Concept"
+  },
+  "relations": [
+    {
+      "source": "ex:dia-atrak-live-visuals",
+      "target": "concept:kinetic-identity-system",
+      "type": "demonstrates"
+    },
+    {
+      "source": "ex:dia-catk",
+      "target": "concept:kinetic-identity-system",
+      "type": "demonstrates"
+    },
+    {
+      "source": "ex:dia-nike-statement-house",
+      "target": "concept:kinetic-identity-system",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Official case study inspected for the stated flexible typographic identity and its operation across motion and print.",
+      "checked_at": "2026-09-19",
+      "id": "source:dia-catk",
+      "locator": "https://dia.tv/project/catk/",
+      "locator_type": "url",
+      "publisher": "DIA",
+      "title": "CATK — DIA",
+      "type": "Source"
+    },
+    {
+      "canonical_path": "knowledge/provenance/wave01-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Official case study inspected for the experiential typographic system, distributed screen/court context and animation rules based on basketball movement.",
+      "checked_at": "2026-09-19",
+      "id": "source:dia-nike-statement-house",
+      "locator": "https://dia.tv/project/nike-statement-house/",
+      "locator_type": "url",
+      "publisher": "DIA",
+      "title": "Nike Statement House — DIA",
+      "type": "Source"
+    },
+    {
+      "canonical_path": "knowledge/provenance/wave01-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Official case study inspected for the typographic identity system and its stated range from restrained web/flyer applications to maximal live-show visuals.",
+      "checked_at": "2026-09-19",
+      "id": "source:dia-atrak-live-visuals",
+      "locator": "https://dia.tv/project/a-trak/",
+      "locator_type": "url",
+      "publisher": "DIA",
+      "title": "A-Trak Live Visuals — DIA",
+      "type": "Source"
+    }
+  ]
+}

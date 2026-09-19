@@ -1,0 +1,115 @@
+{
+  "ai_build": {
+    "availability": "available",
+    "example_id": "ex:dia-atrak-live-visuals",
+    "method": {
+      "concepts": [
+        "concept:kinetic-identity-system"
+      ],
+      "failure_modes": [
+        "Do not equate flexibility with uncontrolled stylistic variation.",
+        "Do not infer specific implementation software from the public case study."
+      ],
+      "fidelity_constraints": [
+        "Preserve the scalable-system principle without copying A-Trak typography, artwork, live visuals, or music identity."
+      ],
+      "grammar": [
+        "time-sequence",
+        "composition-layer"
+      ],
+      "interaction_model": {
+        "response": "The same typographic/motion grammar expands or contracts in intensity to match web, print, album, and live contexts.",
+        "trigger": "compare identity applications across touchpoints"
+      },
+      "mechanisms": [],
+      "state_model": {
+        "deterministic": true,
+        "model": "external-reference"
+      },
+      "transfer_constraints": [
+        "Design identity parameters with a usable intensity range instead of creating separate visual languages for quiet and maximal contexts.",
+        "Keep invariant rules visible even when scale, density, and motion amplitude change."
+      ]
+    },
+    "resources": [],
+    "tools": []
+  },
+  "crosswalks": [],
+  "record": {
+    "canonical_path": "knowledge/examples/creative-wave01.json",
+    "collection_ids": [],
+    "concept_ids": [
+      "concept:kinetic-identity-system"
+    ],
+    "failure_modes": [
+      "Do not equate flexibility with uncontrolled stylistic variation.",
+      "Do not infer specific implementation software from the public case study."
+    ],
+    "fidelity_constraints": [
+      "Preserve the scalable-system principle without copying A-Trak typography, artwork, live visuals, or music identity."
+    ],
+    "grammar": [
+      "time-sequence",
+      "composition-layer"
+    ],
+    "id": "ex:dia-atrak-live-visuals",
+    "intent_ids": [],
+    "interaction": "watch",
+    "interaction_model": {
+      "response": "The same typographic/motion grammar expands or contracts in intensity to match web, print, album, and live contexts.",
+      "trigger": "compare identity applications across touchpoints"
+    },
+    "kind": "REFERENCE",
+    "lifecycle": {
+      "collected": true,
+      "reusable": false,
+      "showable": false,
+      "verified": false
+    },
+    "medium": "live-visual-system",
+    "resource_ids": [],
+    "source_refs": [
+      "source:dia-atrak-live-visuals"
+    ],
+    "state_model": {
+      "deterministic": true,
+      "model": "external-reference"
+    },
+    "summary": "A typographic identity system whose parameters support restrained website/flyer expressions and much more maximal album/live-show visuals without changing identity language.",
+    "title": "A-Trak — scalable live visual identity",
+    "tool_choices": [],
+    "topic_ids": [],
+    "transfer_constraints": [
+      "Design identity parameters with a usable intensity range instead of creating separate visual languages for quiet and maximal contexts.",
+      "Keep invariant rules visible even when scale, density, and motion amplitude change."
+    ],
+    "type": "Example",
+    "visual_traits": [
+      "typographic",
+      "kinetic",
+      "parametric",
+      "live"
+    ]
+  },
+  "relations": [
+    {
+      "source": "ex:dia-atrak-live-visuals",
+      "target": "concept:kinetic-identity-system",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Official case study inspected for the typographic identity system and its stated range from restrained web/flyer applications to maximal live-show visuals.",
+      "checked_at": "2026-09-19",
+      "id": "source:dia-atrak-live-visuals",
+      "locator": "https://dia.tv/project/a-trak/",
+      "locator_type": "url",
+      "publisher": "DIA",
+      "title": "A-Trak Live Visuals — DIA",
+      "type": "Source"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "record": {
+    "canonical_path": "knowledge/concepts/creative-wave01.json",
+    "id": "concept:continuous-scale-transition",
+    "source_refs": [
+      "source:aott-uncut-gems"
+    ],
+    "subtypes": [
+      "cinematography",
+      "motion"
+    ],
+    "summary": "Maintain perceptual continuity while moving through radically different scales or semantic spaces, using camera motion and material cues instead of a hard scene cut.",
+    "title": "Continuous scale transition",
+    "type": "Concept"
+  },
+  "relations": [
+    {
+      "source": "ex:aott-uncut-gems",
+      "target": "concept:continuous-scale-transition",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Title page and interview inspected for the continuous push into the opal, imagined interior spaces, scale transition and depth-of-field treatment.",
+      "checked_at": "2026-09-19",
+      "id": "source:aott-uncut-gems",
+      "locator": "https://www.artofthetitle.com/title/uncut-gems/",
+      "locator_type": "url",
+      "publisher": "Art of the Title",
+      "title": "Uncut Gems opening/title sequence — Art of the Title",
+      "type": "Source"
+    }
+  ]
+}

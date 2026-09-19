@@ -784,6 +784,26 @@
     "type": "implemented_with"
   },
   {
+    "source": "ex:aott-severance",
+    "target": "concept:semantic-3d-metaphor",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:aott-spider-verse",
+    "target": "concept:mixed-media-surface-language",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:aott-uncut-gems",
+    "target": "concept:camera-dolly",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:aott-uncut-gems",
+    "target": "concept:continuous-scale-transition",
+    "type": "demonstrates"
+  },
+  {
     "source": "ex:chemistry-bond-polarity",
     "target": "collection:chemistry-studies",
     "type": "in_collection"
@@ -1835,6 +1855,51 @@
     "source": "ex:chemistry-weak-acid-titration",
     "target": "intent:identify",
     "type": "supports_intent"
+  },
+  {
+    "source": "ex:dia-atrak-live-visuals",
+    "target": "concept:kinetic-identity-system",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:dia-catk",
+    "target": "concept:kinetic-identity-system",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:dia-nike-statement-house",
+    "target": "concept:kinetic-identity-system",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:esdevlin-formation-tour",
+    "target": "concept:display-as-architecture",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:esdevlin-mirror-maze",
+    "target": "concept:reflective-spatial-multiplication",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:esdevlin-u2-sphere",
+    "target": "concept:display-as-architecture",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:fiona-vilmer",
+    "target": "concept:archive-as-interface",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:pattern-breaking",
+    "target": "concept:narrative-evidence-choreography",
+    "type": "demonstrates"
+  },
+  {
+    "source": "ex:whole-earth-index",
+    "target": "concept:archive-as-interface",
+    "type": "demonstrates"
   },
   {
     "source": "resource:reaction-profile",

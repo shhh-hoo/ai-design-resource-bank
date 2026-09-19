@@ -1,0 +1,115 @@
+{
+  "ai_build": {
+    "availability": "available",
+    "example_id": "ex:esdevlin-u2-sphere",
+    "method": {
+      "concepts": [
+        "concept:display-as-architecture"
+      ],
+      "failure_modes": [
+        "Do not overstate Es Devlin's authorship beyond the documented contribution.",
+        "Do not equate immersion with simply filling a screen edge-to-edge."
+      ],
+      "fidelity_constraints": [
+        "Use only the environment-as-display principle; do not attribute all Sphere content or engineering to Es Devlin or copy U2 imagery."
+      ],
+      "grammar": [
+        "3d-spatial",
+        "composition-layer"
+      ],
+      "interaction_model": {
+        "response": "The enclosing image field changes the perceived world around the audience, collapsing background, screen, and spatial envelope.",
+        "trigger": "experience or watch the environment-scale display"
+      },
+      "mechanisms": [],
+      "state_model": {
+        "deterministic": true,
+        "model": "external-reference"
+      },
+      "transfer_constraints": [
+        "Treat the viewport/environment as a field that can replace the surrounding context, not merely contain a centered composition.",
+        "Design for the viewer's field of attention and scale before adding conventional interface framing."
+      ]
+    },
+    "resources": [],
+    "tools": []
+  },
+  "crosswalks": [],
+  "record": {
+    "canonical_path": "knowledge/examples/creative-wave01.json",
+    "collection_ids": [],
+    "concept_ids": [
+      "concept:display-as-architecture"
+    ],
+    "failure_modes": [
+      "Do not overstate Es Devlin's authorship beyond the documented contribution.",
+      "Do not equate immersion with simply filling a screen edge-to-edge."
+    ],
+    "fidelity_constraints": [
+      "Use only the environment-as-display principle; do not attribute all Sphere content or engineering to Es Devlin or copy U2 imagery."
+    ],
+    "grammar": [
+      "3d-spatial",
+      "composition-layer"
+    ],
+    "id": "ex:esdevlin-u2-sphere",
+    "intent_ids": [],
+    "interaction": "watch",
+    "interaction_model": {
+      "response": "The enclosing image field changes the perceived world around the audience, collapsing background, screen, and spatial envelope.",
+      "trigger": "experience or watch the environment-scale display"
+    },
+    "kind": "REFERENCE",
+    "lifecycle": {
+      "collected": true,
+      "reusable": false,
+      "showable": false,
+      "verified": false
+    },
+    "medium": "concert-environment",
+    "resource_ids": [],
+    "source_refs": [
+      "source:esdevlin-u2-sphere"
+    ],
+    "state_model": {
+      "deterministic": true,
+      "model": "external-reference"
+    },
+    "summary": "An environment-scale display context where the enclosing visual surface operates as the scene itself rather than as a framed screen behind it.",
+    "title": "U2 — The Sphere / Nevada Ark contribution",
+    "tool_choices": [],
+    "topic_ids": [],
+    "transfer_constraints": [
+      "Treat the viewport/environment as a field that can replace the surrounding context, not merely contain a centered composition.",
+      "Design for the viewer's field of attention and scale before adding conventional interface framing."
+    ],
+    "type": "Example",
+    "visual_traits": [
+      "immersive",
+      "environmental",
+      "architectural",
+      "large-scale"
+    ]
+  },
+  "relations": [
+    {
+      "source": "ex:esdevlin-u2-sphere",
+      "target": "concept:display-as-architecture",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Official project page inspected for Es Devlin's contribution. The record uses the work as an environment-scale display reference and does not attribute all Sphere content or engineering to Es Devlin.",
+      "checked_at": "2026-09-19",
+      "id": "source:esdevlin-u2-sphere",
+      "locator": "https://esdevlin.com/work/projects/the-sphere",
+      "locator_type": "url",
+      "publisher": "Es Devlin Studio",
+      "title": "U2 — The Sphere",
+      "type": "Source"
+    }
+  ]
+}

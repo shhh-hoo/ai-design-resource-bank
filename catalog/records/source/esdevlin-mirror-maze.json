@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "knowledge/provenance/wave01-sources.json",
+    "captured_at": "2026-09-19",
+    "check_scope": "Official project page inspected for the installation; reflection, repetition and navigable mirrored space are treated as the reusable mechanism, not a claim about web technology.",
+    "checked_at": "2026-09-19",
+    "id": "source:esdevlin-mirror-maze",
+    "locator": "https://esdevlin.com/work/projects/mirror-maze",
+    "locator_type": "url",
+    "publisher": "Es Devlin Studio",
+    "title": "Mirror Maze — Peckham 2016",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

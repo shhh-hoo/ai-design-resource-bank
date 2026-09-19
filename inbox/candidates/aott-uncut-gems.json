@@ -1,7 +1,7 @@
 {
   "id": "candidate:aott-uncut-gems",
   "candidate_kind": "example",
-  "status": "promote",
+  "status": "promoted",
   "discovered_by": "scout",
   "source": {
     "locator_type": "url",
@@ -24,9 +24,14 @@
   ],
   "notes": "The interview documents the deliberate construction of imaginary interior 'rooms', virtual microscopic depth-of-field behavior, and the transition from gemstone material into organic space. Implementation should not be inferred beyond what the source explicitly states.",
   "decision": {
-    "outcome": "promote",
+    "outcome": "promoted",
     "rationale": "Adds a cinematic anchor for seamless scale/semantic transition where camera movement itself is the continuity mechanism.",
     "reviewed_by": "wave01-curation",
-    "reviewed_at": "2026-09-19"
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:aott-uncut-gems",
+      "concept:continuous-scale-transition",
+      "concept:camera-dolly"
+    ]
   }
 }

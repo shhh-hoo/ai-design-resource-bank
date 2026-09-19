@@ -1,0 +1,37 @@
+{
+  "record": {
+    "canonical_path": "knowledge/concepts/creative-wave01.json",
+    "id": "concept:reflective-spatial-multiplication",
+    "source_refs": [
+      "source:esdevlin-mirror-maze"
+    ],
+    "subtypes": [
+      "stagecraft",
+      "interaction_pattern"
+    ],
+    "summary": "Use reflection and repeated planes to multiply perceived space, partial views, orientation cues, and possible paths so navigation itself becomes part of the visual experience.",
+    "title": "Reflective spatial multiplication",
+    "type": "Concept"
+  },
+  "relations": [
+    {
+      "source": "ex:esdevlin-mirror-maze",
+      "target": "concept:reflective-spatial-multiplication",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Official project page inspected for the installation; reflection, repetition and navigable mirrored space are treated as the reusable mechanism, not a claim about web technology.",
+      "checked_at": "2026-09-19",
+      "id": "source:esdevlin-mirror-maze",
+      "locator": "https://esdevlin.com/work/projects/mirror-maze",
+      "locator_type": "url",
+      "publisher": "Es Devlin Studio",
+      "title": "Mirror Maze — Peckham 2016",
+      "type": "Source"
+    }
+  ]
+}

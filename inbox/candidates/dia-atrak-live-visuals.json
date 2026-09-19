@@ -1,7 +1,7 @@
 {
   "id": "candidate:dia-atrak-live-visuals",
   "candidate_kind": "example",
-  "status": "promote",
+  "status": "promoted",
   "discovered_by": "scout",
   "source": {
     "locator_type": "url",
@@ -24,9 +24,13 @@
   ],
   "notes": "Official case study describes a typographic identity system used as the foundation for assets ranging from minimal website/flyer expressions to maximal album/live-show visuals.",
   "decision": {
-    "outcome": "promote",
+    "outcome": "promoted",
     "rationale": "Strong anchor for scalable visual systems: one parameterized identity can vary intensity by context without becoming a different design language.",
     "reviewed_by": "wave01-curation",
-    "reviewed_at": "2026-09-19"
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:dia-atrak-live-visuals",
+      "concept:kinetic-identity-system"
+    ]
   }
 }

@@ -1,0 +1,115 @@
+{
+  "ai_build": {
+    "availability": "available",
+    "example_id": "ex:dia-catk",
+    "method": {
+      "concepts": [
+        "concept:kinetic-identity-system"
+      ],
+      "failure_modes": [
+        "Do not reduce kinetic identity to one logo animation.",
+        "Do not infer implementation software not stated by the source."
+      ],
+      "fidelity_constraints": [
+        "Preserve rule continuity across media without copying CATK marks, copy, layouts, or proprietary identity assets."
+      ],
+      "grammar": [
+        "time-sequence",
+        "composition-layer"
+      ],
+      "interaction_model": {
+        "response": "The same identity rules remain recognizable as typography shifts between still and time-based contexts.",
+        "trigger": "inspect static and motion applications"
+      },
+      "mechanisms": [],
+      "state_model": {
+        "deterministic": true,
+        "model": "external-reference"
+      },
+      "transfer_constraints": [
+        "Define motion and typographic behavior as system rules that survive both static and animated contexts.",
+        "Allow the identity to support content rather than requiring maximum motion in every application."
+      ]
+    },
+    "resources": [],
+    "tools": []
+  },
+  "crosswalks": [],
+  "record": {
+    "canonical_path": "knowledge/examples/creative-wave01.json",
+    "collection_ids": [],
+    "concept_ids": [
+      "concept:kinetic-identity-system"
+    ],
+    "failure_modes": [
+      "Do not reduce kinetic identity to one logo animation.",
+      "Do not infer implementation software not stated by the source."
+    ],
+    "fidelity_constraints": [
+      "Preserve rule continuity across media without copying CATK marks, copy, layouts, or proprietary identity assets."
+    ],
+    "grammar": [
+      "time-sequence",
+      "composition-layer"
+    ],
+    "id": "ex:dia-catk",
+    "intent_ids": [],
+    "interaction": "inspect",
+    "interaction_model": {
+      "response": "The same identity rules remain recognizable as typography shifts between still and time-based contexts.",
+      "trigger": "inspect static and motion applications"
+    },
+    "kind": "REFERENCE",
+    "lifecycle": {
+      "collected": true,
+      "reusable": false,
+      "showable": false,
+      "verified": false
+    },
+    "medium": "identity-system",
+    "resource_ids": [],
+    "source_refs": [
+      "source:dia-catk"
+    ],
+    "state_model": {
+      "deterministic": true,
+      "model": "external-reference"
+    },
+    "summary": "A flexible typographic identity designed to operate coherently in both motion and print while supporting, rather than overpowering, the underlying work.",
+    "title": "CATK — kinetic identity system",
+    "tool_choices": [],
+    "topic_ids": [],
+    "transfer_constraints": [
+      "Define motion and typographic behavior as system rules that survive both static and animated contexts.",
+      "Allow the identity to support content rather than requiring maximum motion in every application."
+    ],
+    "type": "Example",
+    "visual_traits": [
+      "typographic",
+      "kinetic",
+      "systemic",
+      "restrained"
+    ]
+  },
+  "relations": [
+    {
+      "source": "ex:dia-catk",
+      "target": "concept:kinetic-identity-system",
+      "type": "demonstrates"
+    }
+  ],
+  "sources": [
+    {
+      "canonical_path": "knowledge/provenance/wave01-sources.json",
+      "captured_at": "2026-09-19",
+      "check_scope": "Official case study inspected for the stated flexible typographic identity and its operation across motion and print.",
+      "checked_at": "2026-09-19",
+      "id": "source:dia-catk",
+      "locator": "https://dia.tv/project/catk/",
+      "locator_type": "url",
+      "publisher": "DIA",
+      "title": "CATK — DIA",
+      "type": "Source"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "knowledge/provenance/wave01-sources.json",
+    "captured_at": "2026-09-19",
+    "check_scope": "Direct page inspected for its editorial section structure, statistics, deceptive-pattern examples and policy chronology. Original implementation technology was not checked.",
+    "checked_at": "2026-09-19",
+    "id": "source:pattern-breaking",
+    "locator": "https://patternbreak.ing/",
+    "locator_type": "url",
+    "publisher": "Pattern Breaking",
+    "title": "Pattern Breaking — Fast Fashion's Dirty Tricks",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

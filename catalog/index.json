@@ -12,6 +12,12 @@
     "type": "Concept"
   },
   {
+    "id": "concept:archive-as-interface",
+    "resolve_path": "catalog/records/concept/archive-as-interface.json",
+    "title": "Archive as interface",
+    "type": "Concept"
+  },
+  {
     "id": "concept:area-under-curve",
     "resolve_path": "catalog/records/concept/area-under-curve.json",
     "title": "Area under a curve",
@@ -324,9 +330,21 @@
     "type": "Concept"
   },
   {
+    "id": "concept:continuous-scale-transition",
+    "resolve_path": "catalog/records/concept/continuous-scale-transition.json",
+    "title": "Continuous scale transition",
+    "type": "Concept"
+  },
+  {
     "id": "concept:depth-parallax",
     "resolve_path": "catalog/records/concept/depth-parallax.json",
     "title": "Depth parallax",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:display-as-architecture",
+    "resolve_path": "catalog/records/concept/display-as-architecture.json",
+    "title": "Display as architecture",
     "type": "Concept"
   },
   {
@@ -480,15 +498,33 @@
     "type": "Concept"
   },
   {
+    "id": "concept:kinetic-identity-system",
+    "resolve_path": "catalog/records/concept/kinetic-identity-system.json",
+    "title": "Kinetic identity system",
+    "type": "Concept"
+  },
+  {
     "id": "concept:mask-transition",
     "resolve_path": "catalog/records/concept/mask-transition.json",
     "title": "Mask transition",
     "type": "Concept"
   },
   {
+    "id": "concept:mixed-media-surface-language",
+    "resolve_path": "catalog/records/concept/mixed-media-surface-language.json",
+    "title": "Mixed-media surface language",
+    "type": "Concept"
+  },
+  {
     "id": "concept:movable-tangent",
     "resolve_path": "catalog/records/concept/movable-tangent.json",
     "title": "Movable tangent",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:narrative-evidence-choreography",
+    "resolve_path": "catalog/records/concept/narrative-evidence-choreography.json",
+    "title": "Narrative evidence choreography",
     "type": "Concept"
   },
   {
@@ -522,9 +558,21 @@
     "type": "Concept"
   },
   {
+    "id": "concept:reflective-spatial-multiplication",
+    "resolve_path": "catalog/records/concept/reflective-spatial-multiplication.json",
+    "title": "Reflective spatial multiplication",
+    "type": "Concept"
+  },
+  {
     "id": "concept:scroll-scrub",
     "resolve_path": "catalog/records/concept/scroll-scrub.json",
     "title": "Scroll-scrub timeline",
+    "type": "Concept"
+  },
+  {
+    "id": "concept:semantic-3d-metaphor",
+    "resolve_path": "catalog/records/concept/semantic-3d-metaphor.json",
+    "title": "Semantic 3D metaphor",
     "type": "Concept"
   },
   {
@@ -556,6 +604,24 @@
     "resolve_path": "catalog/records/concept/wave-propagation.json",
     "title": "Wave propagation",
     "type": "Concept"
+  },
+  {
+    "id": "ex:aott-severance",
+    "resolve_path": "catalog/records/ex/aott-severance.json",
+    "title": "Severance — title sequence",
+    "type": "Example"
+  },
+  {
+    "id": "ex:aott-spider-verse",
+    "resolve_path": "catalog/records/ex/aott-spider-verse.json",
+    "title": "Spider-Man: Into the Spider-Verse — title sequence",
+    "type": "Example"
+  },
+  {
+    "id": "ex:aott-uncut-gems",
+    "resolve_path": "catalog/records/ex/aott-uncut-gems.json",
+    "title": "Uncut Gems — opening/title sequence",
+    "type": "Example"
   },
   {
     "id": "ex:chemistry-bond-polarity",
@@ -846,6 +912,60 @@
     "type": "Example"
   },
   {
+    "id": "ex:dia-atrak-live-visuals",
+    "resolve_path": "catalog/records/ex/dia-atrak-live-visuals.json",
+    "title": "A-Trak — scalable live visual identity",
+    "type": "Example"
+  },
+  {
+    "id": "ex:dia-catk",
+    "resolve_path": "catalog/records/ex/dia-catk.json",
+    "title": "CATK — kinetic identity system",
+    "type": "Example"
+  },
+  {
+    "id": "ex:dia-nike-statement-house",
+    "resolve_path": "catalog/records/ex/dia-nike-statement-house.json",
+    "title": "Nike Statement House — experiential typographic identity",
+    "type": "Example"
+  },
+  {
+    "id": "ex:esdevlin-formation-tour",
+    "resolve_path": "catalog/records/ex/esdevlin-formation-tour.json",
+    "title": "Beyoncé — Formation Tour stage",
+    "type": "Example"
+  },
+  {
+    "id": "ex:esdevlin-mirror-maze",
+    "resolve_path": "catalog/records/ex/esdevlin-mirror-maze.json",
+    "title": "Mirror Maze — Peckham 2016",
+    "type": "Example"
+  },
+  {
+    "id": "ex:esdevlin-u2-sphere",
+    "resolve_path": "catalog/records/ex/esdevlin-u2-sphere.json",
+    "title": "U2 — The Sphere / Nevada Ark contribution",
+    "type": "Example"
+  },
+  {
+    "id": "ex:fiona-vilmer",
+    "resolve_path": "catalog/records/ex/fiona-vilmer.json",
+    "title": "Fiona Vilmer — cultural portfolio archive",
+    "type": "Example"
+  },
+  {
+    "id": "ex:pattern-breaking",
+    "resolve_path": "catalog/records/ex/pattern-breaking.json",
+    "title": "Pattern Breaking — Fast Fashion's Dirty Tricks",
+    "type": "Example"
+  },
+  {
+    "id": "ex:whole-earth-index",
+    "resolve_path": "catalog/records/ex/whole-earth-index.json",
+    "title": "Whole Earth Index",
+    "type": "Example"
+  },
+  {
     "id": "intent:compare",
     "resolve_path": "catalog/records/intent/compare.json",
     "title": "Compare relationships",
@@ -874,6 +994,24 @@
     "resolve_path": "catalog/records/resource/reaction-profile.json",
     "title": "Reaction profile with linked coordinate marker",
     "type": "Resource"
+  },
+  {
+    "id": "source:aott-severance",
+    "resolve_path": "catalog/records/source/aott-severance.json",
+    "title": "Severance title sequence — Art of the Title",
+    "type": "Source"
+  },
+  {
+    "id": "source:aott-spider-verse",
+    "resolve_path": "catalog/records/source/aott-spider-verse.json",
+    "title": "Spider-Man: Into the Spider-Verse title sequence — Art of the Title",
+    "type": "Source"
+  },
+  {
+    "id": "source:aott-uncut-gems",
+    "resolve_path": "catalog/records/source/aott-uncut-gems.json",
+    "title": "Uncut Gems opening/title sequence — Art of the Title",
+    "type": "Source"
   },
   {
     "id": "source:ap-chemistry-2024",
@@ -1182,6 +1320,48 @@
     "type": "Source"
   },
   {
+    "id": "source:dia-atrak-live-visuals",
+    "resolve_path": "catalog/records/source/dia-atrak-live-visuals.json",
+    "title": "A-Trak Live Visuals — DIA",
+    "type": "Source"
+  },
+  {
+    "id": "source:dia-catk",
+    "resolve_path": "catalog/records/source/dia-catk.json",
+    "title": "CATK — DIA",
+    "type": "Source"
+  },
+  {
+    "id": "source:dia-nike-statement-house",
+    "resolve_path": "catalog/records/source/dia-nike-statement-house.json",
+    "title": "Nike Statement House — DIA",
+    "type": "Source"
+  },
+  {
+    "id": "source:esdevlin-formation-tour",
+    "resolve_path": "catalog/records/source/esdevlin-formation-tour.json",
+    "title": "Beyoncé — Formation Tour",
+    "type": "Source"
+  },
+  {
+    "id": "source:esdevlin-mirror-maze",
+    "resolve_path": "catalog/records/source/esdevlin-mirror-maze.json",
+    "title": "Mirror Maze — Peckham 2016",
+    "type": "Source"
+  },
+  {
+    "id": "source:esdevlin-u2-sphere",
+    "resolve_path": "catalog/records/source/esdevlin-u2-sphere.json",
+    "title": "U2 — The Sphere",
+    "type": "Source"
+  },
+  {
+    "id": "source:fiona-vilmer",
+    "resolve_path": "catalog/records/source/fiona-vilmer.json",
+    "title": "Fiona Vilmer",
+    "type": "Source"
+  },
+  {
     "id": "source:gallery-aceternity-ui",
     "resolve_path": "catalog/records/source/gallery-aceternity-ui.json",
     "title": "Aceternity UI",
@@ -1335,6 +1515,12 @@
     "id": "source:north-star",
     "resolve_path": "catalog/records/source/north-star.json",
     "title": "AIDRB — North Star v2",
+    "type": "Source"
+  },
+  {
+    "id": "source:pattern-breaking",
+    "resolve_path": "catalog/records/source/pattern-breaking.json",
+    "title": "Pattern Breaking — Fast Fashion's Dirty Tricks",
     "type": "Source"
   },
   {
@@ -1623,6 +1809,12 @@
     "id": "source:tool-vega-lite",
     "resolve_path": "catalog/records/source/tool-vega-lite.json",
     "title": "Vega-Lite official documentation",
+    "type": "Source"
+  },
+  {
+    "id": "source:whole-earth-index",
+    "resolve_path": "catalog/records/source/whole-earth-index.json",
+    "title": "Whole Earth Index",
     "type": "Source"
   },
   {

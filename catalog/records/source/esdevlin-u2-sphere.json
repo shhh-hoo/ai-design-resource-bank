@@ -1,0 +1,16 @@
+{
+  "record": {
+    "canonical_path": "knowledge/provenance/wave01-sources.json",
+    "captured_at": "2026-09-19",
+    "check_scope": "Official project page inspected for Es Devlin's contribution. The record uses the work as an environment-scale display reference and does not attribute all Sphere content or engineering to Es Devlin.",
+    "checked_at": "2026-09-19",
+    "id": "source:esdevlin-u2-sphere",
+    "locator": "https://esdevlin.com/work/projects/the-sphere",
+    "locator_type": "url",
+    "publisher": "Es Devlin Studio",
+    "title": "U2 — The Sphere",
+    "type": "Source"
+  },
+  "relations": [],
+  "sources": []
+}

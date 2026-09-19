@@ -1,7 +1,7 @@
 {
   "id": "candidate:dia-catk",
   "candidate_kind": "example",
-  "status": "promote",
+  "status": "promoted",
   "discovered_by": "scout",
   "source": {
     "locator_type": "url",
@@ -23,9 +23,13 @@
   ],
   "notes": "Official case study states that the identity was designed as a flexible expressive system working in both motion and print.",
   "decision": {
-    "outcome": "promote",
+    "outcome": "promoted",
     "rationale": "Adds a concise canonical example of identity as a rule/system rather than a static logo, with direct cross-medium evidence.",
     "reviewed_by": "wave01-curation",
-    "reviewed_at": "2026-09-19"
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:dia-catk",
+      "concept:kinetic-identity-system"
+    ]
   }
 }

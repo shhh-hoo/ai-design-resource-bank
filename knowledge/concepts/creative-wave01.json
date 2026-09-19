@@ -1,0 +1,110 @@
+[
+  {
+    "id": "concept:archive-as-interface",
+    "type": "Concept",
+    "title": "Archive as interface",
+    "subtypes": [
+      "pattern",
+      "composition"
+    ],
+    "summary": "Make the corpus, chronology, categories, and visible index itself the primary navigation instead of hiding the archive behind isolated cards or search.",
+    "source_refs": [
+      "source:whole-earth-index",
+      "source:fiona-vilmer"
+    ]
+  },
+  {
+    "id": "concept:narrative-evidence-choreography",
+    "type": "Concept",
+    "title": "Narrative evidence choreography",
+    "subtypes": [
+      "composition",
+      "pattern"
+    ],
+    "summary": "Sequence research evidence, quantitative signals, concrete examples, and chronology so each mode advances one argument rather than appearing as separate content widgets.",
+    "source_refs": [
+      "source:pattern-breaking"
+    ]
+  },
+  {
+    "id": "concept:semantic-3d-metaphor",
+    "type": "Concept",
+    "title": "Semantic 3D metaphor",
+    "subtypes": [
+      "principle",
+      "cinematography"
+    ],
+    "summary": "Use spatial transformation, duplication, deformation, and impossible physical states to embody an abstract idea rather than treating 3D as surface decoration.",
+    "source_refs": [
+      "source:aott-severance"
+    ]
+  },
+  {
+    "id": "concept:mixed-media-surface-language",
+    "type": "Concept",
+    "title": "Mixed-media surface language",
+    "subtypes": [
+      "style",
+      "material"
+    ],
+    "summary": "Combine rendered geometry with print, drawing, scan, halftone, overprint, paint, or other materially distinct marks so the surface language carries meaning across media.",
+    "source_refs": [
+      "source:aott-spider-verse"
+    ]
+  },
+  {
+    "id": "concept:continuous-scale-transition",
+    "type": "Concept",
+    "title": "Continuous scale transition",
+    "subtypes": [
+      "cinematography",
+      "motion"
+    ],
+    "summary": "Maintain perceptual continuity while moving through radically different scales or semantic spaces, using camera motion and material cues instead of a hard scene cut.",
+    "source_refs": [
+      "source:aott-uncut-gems"
+    ]
+  },
+  {
+    "id": "concept:display-as-architecture",
+    "type": "Concept",
+    "title": "Display as architecture",
+    "subtypes": [
+      "stagecraft",
+      "principle"
+    ],
+    "summary": "Treat the display surface as a spatial object or environmental envelope that frames, divides, reveals, surrounds, or replaces the scene rather than acting as a flat background.",
+    "source_refs": [
+      "source:esdevlin-formation-tour",
+      "source:esdevlin-u2-sphere"
+    ]
+  },
+  {
+    "id": "concept:reflective-spatial-multiplication",
+    "type": "Concept",
+    "title": "Reflective spatial multiplication",
+    "subtypes": [
+      "stagecraft",
+      "interaction_pattern"
+    ],
+    "summary": "Use reflection and repeated planes to multiply perceived space, partial views, orientation cues, and possible paths so navigation itself becomes part of the visual experience.",
+    "source_refs": [
+      "source:esdevlin-mirror-maze"
+    ]
+  },
+  {
+    "id": "concept:kinetic-identity-system",
+    "type": "Concept",
+    "title": "Kinetic identity system",
+    "subtypes": [
+      "motion",
+      "pattern"
+    ],
+    "summary": "Define identity as a reusable set of typographic and motion rules that can vary in intensity and medium while remaining recognizably one system.",
+    "source_refs": [
+      "source:dia-catk",
+      "source:dia-nike-statement-house",
+      "source:dia-atrak-live-visuals"
+    ]
+  }
+]
