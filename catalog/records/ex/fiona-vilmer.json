@@ -31,7 +31,14 @@
         "Let detail pages remain connected to the larger archive instead of behaving like isolated campaign pages."
       ]
     },
-    "resources": [],
+    "resources": [
+      {
+        "id": "resource:archive-as-interface",
+        "package_path": "resources/layout/archive-as-interface",
+        "status": "implemented",
+        "title": "Archive as interface"
+      }
+    ],
     "tools": []
   },
   "crosswalks": [],
@@ -62,12 +69,14 @@
     "kind": "REFERENCE",
     "lifecycle": {
       "collected": true,
-      "reusable": false,
+      "reusable": true,
       "showable": false,
       "verified": false
     },
     "medium": "website",
-    "resource_ids": [],
+    "resource_ids": [
+      "resource:archive-as-interface"
+    ],
     "source_refs": [
       "source:fiona-vilmer"
     ],
@@ -96,6 +105,11 @@
       "source": "ex:fiona-vilmer",
       "target": "concept:archive-as-interface",
       "type": "demonstrates"
+    },
+    {
+      "source": "ex:fiona-vilmer",
+      "target": "resource:archive-as-interface",
+      "type": "yields"
     }
   ],
   "sources": [

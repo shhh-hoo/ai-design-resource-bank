@@ -43,7 +43,14 @@
         "Keep the global neighborhood understandable even as local named objects become available."
       ]
     },
-    "resources": [],
+    "resources": [
+      {
+        "id": "resource:semantic-zoom-levels",
+        "package_path": "resources/interaction/semantic-zoom-levels",
+        "status": "implemented",
+        "title": "Semantic zoom levels"
+      }
+    ],
     "tools": []
   },
   "crosswalks": [],
@@ -74,12 +81,14 @@
     "kind": "REFERENCE",
     "lifecycle": {
       "collected": true,
-      "reusable": false,
+      "reusable": true,
       "showable": false,
       "verified": false
     },
     "medium": "3d-data-visualization",
-    "resource_ids": [],
+    "resource_ids": [
+      "resource:semantic-zoom-levels"
+    ],
     "source_refs": [
       "source:google-100000-stars"
     ],
@@ -108,6 +117,11 @@
       "source": "ex:google-100000-stars",
       "target": "concept:semantic-zoom",
       "type": "demonstrates"
+    },
+    {
+      "source": "ex:google-100000-stars",
+      "target": "resource:semantic-zoom-levels",
+      "type": "yields"
     }
   ],
   "sources": [

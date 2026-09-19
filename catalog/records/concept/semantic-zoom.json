@@ -36,6 +36,11 @@
       "source": "ex:google-100000-stars",
       "target": "concept:semantic-zoom",
       "type": "demonstrates"
+    },
+    {
+      "source": "resource:semantic-zoom-levels",
+      "target": "concept:semantic-zoom",
+      "type": "implements"
     }
   ],
   "sources": [

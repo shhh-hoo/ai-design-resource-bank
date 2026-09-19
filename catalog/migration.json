@@ -2554,7 +2554,11 @@
     "concept:canvas-focus-lens"
   ],
   "resources": [
-    "resource:reaction-profile"
+    "resource:reaction-profile",
+    "resource:editable-model-sandbox",
+    "resource:linked-computation-inspector",
+    "resource:semantic-zoom-levels",
+    "resource:archive-as-interface"
   ],
   "tools": [
     "tool:mafs",

@@ -1931,14 +1931,29 @@
     "type": "demonstrates"
   },
   {
+    "source": "ex:fiona-vilmer",
+    "target": "resource:archive-as-interface",
+    "type": "yields"
+  },
+  {
     "source": "ex:google-100000-stars",
     "target": "concept:semantic-zoom",
     "type": "demonstrates"
   },
   {
+    "source": "ex:google-100000-stars",
+    "target": "resource:semantic-zoom-levels",
+    "type": "yields"
+  },
+  {
     "source": "ex:parable-of-polygons",
     "target": "concept:editable-model-sandbox",
     "type": "demonstrates"
+  },
+  {
+    "source": "ex:parable-of-polygons",
+    "target": "resource:editable-model-sandbox",
+    "type": "yields"
   },
   {
     "source": "ex:patatap",
@@ -1988,14 +2003,29 @@
     "type": "implemented_with"
   },
   {
+    "source": "ex:seeing-theory-basic-probability",
+    "target": "resource:editable-model-sandbox",
+    "type": "yields"
+  },
+  {
     "source": "ex:setosa-image-kernels",
     "target": "concept:linked-computation-inspection",
     "type": "demonstrates"
   },
   {
+    "source": "ex:setosa-image-kernels",
+    "target": "resource:linked-computation-inspector",
+    "type": "yields"
+  },
+  {
     "source": "ex:setosa-markov-chains",
     "target": "concept:editable-model-sandbox",
     "type": "demonstrates"
+  },
+  {
+    "source": "ex:setosa-markov-chains",
+    "target": "resource:editable-model-sandbox",
+    "type": "yields"
   },
   {
     "source": "ex:teamlab-borderless",
@@ -2013,6 +2043,26 @@
     "type": "demonstrates"
   },
   {
+    "source": "ex:whole-earth-index",
+    "target": "resource:archive-as-interface",
+    "type": "yields"
+  },
+  {
+    "source": "resource:archive-as-interface",
+    "target": "concept:archive-as-interface",
+    "type": "implements"
+  },
+  {
+    "source": "resource:editable-model-sandbox",
+    "target": "concept:editable-model-sandbox",
+    "type": "implements"
+  },
+  {
+    "source": "resource:linked-computation-inspector",
+    "target": "concept:linked-computation-inspection",
+    "type": "implements"
+  },
+  {
     "source": "resource:reaction-profile",
     "target": "concept:chemistry-reaction-profile",
     "type": "implements"
@@ -2026,6 +2076,11 @@
     "source": "resource:reaction-profile",
     "target": "tool:native-svg",
     "type": "requires"
+  },
+  {
+    "source": "resource:semantic-zoom-levels",
+    "target": "concept:semantic-zoom",
+    "type": "implements"
   },
   {
     "source": "topic:chemistry-acids-bases",

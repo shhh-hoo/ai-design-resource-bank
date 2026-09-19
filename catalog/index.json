@@ -1140,9 +1140,33 @@
     "type": "Intent"
   },
   {
+    "id": "resource:archive-as-interface",
+    "resolve_path": "catalog/records/resource/archive-as-interface.json",
+    "title": "Archive as interface",
+    "type": "Resource"
+  },
+  {
+    "id": "resource:editable-model-sandbox",
+    "resolve_path": "catalog/records/resource/editable-model-sandbox.json",
+    "title": "Editable model sandbox",
+    "type": "Resource"
+  },
+  {
+    "id": "resource:linked-computation-inspector",
+    "resolve_path": "catalog/records/resource/linked-computation-inspector.json",
+    "title": "Linked computation inspector",
+    "type": "Resource"
+  },
+  {
     "id": "resource:reaction-profile",
     "resolve_path": "catalog/records/resource/reaction-profile.json",
     "title": "Reaction profile with linked coordinate marker",
+    "type": "Resource"
+  },
+  {
+    "id": "resource:semantic-zoom-levels",
+    "resolve_path": "catalog/records/resource/semantic-zoom-levels.json",
+    "title": "Semantic zoom levels",
     "type": "Resource"
   },
   {

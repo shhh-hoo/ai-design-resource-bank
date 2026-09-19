@@ -24,6 +24,11 @@
       "source": "ex:whole-earth-index",
       "target": "concept:archive-as-interface",
       "type": "demonstrates"
+    },
+    {
+      "source": "resource:archive-as-interface",
+      "target": "concept:archive-as-interface",
+      "type": "implements"
     }
   ],
   "sources": [

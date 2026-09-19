@@ -30,6 +30,11 @@
       "source": "ex:setosa-markov-chains",
       "target": "concept:editable-model-sandbox",
       "type": "demonstrates"
+    },
+    {
+      "source": "resource:editable-model-sandbox",
+      "target": "concept:editable-model-sandbox",
+      "type": "implements"
     }
   ],
   "sources": [

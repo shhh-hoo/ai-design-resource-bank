@@ -31,7 +31,14 @@
         "Let users move from presets to custom parameters only after the local operation is legible."
       ]
     },
-    "resources": [],
+    "resources": [
+      {
+        "id": "resource:linked-computation-inspector",
+        "package_path": "resources/interaction/linked-computation-inspector",
+        "status": "implemented",
+        "title": "Linked computation inspector"
+      }
+    ],
     "tools": []
   },
   "crosswalks": [],
@@ -62,12 +69,14 @@
     "kind": "REFERENCE",
     "lifecycle": {
       "collected": true,
-      "reusable": false,
+      "reusable": true,
       "showable": false,
       "verified": false
     },
     "medium": "interactive-explainer",
-    "resource_ids": [],
+    "resource_ids": [
+      "resource:linked-computation-inspector"
+    ],
     "source_refs": [
       "source:setosa-image-kernels"
     ],
@@ -96,6 +105,11 @@
       "source": "ex:setosa-image-kernels",
       "target": "concept:linked-computation-inspection",
       "type": "demonstrates"
+    },
+    {
+      "source": "ex:setosa-image-kernels",
+      "target": "resource:linked-computation-inspector",
+      "type": "yields"
     }
   ],
   "sources": [
