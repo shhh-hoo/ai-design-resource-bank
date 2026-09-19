@@ -76,11 +76,13 @@ for (const [name, width, height] of [
     // record/relations/resource payloads until a deeper surface needs them.
     await page.goto("/");
     await expect(
-      page.getByRole("heading", { name: "Creative references, in view." }),
+      page.getByRole("heading", { name: "References", exact: true }),
     ).toBeVisible();
     await page.waitForLoadState("networkidle");
     await expect(page.locator(".example-tile")).toHaveCount(28);
     await expect(page.locator(".creative-group")).toHaveCount(5);
+    await expect(page.locator("body")).not.toContainText("ONE BANK / TWO PROJECTIONS");
+    await expect(page.locator("body")).not.toContainText("Human view is organized");
     await expect(page.getByRole("link", { name: /Selections/ })).toHaveCount(0);
     expect(requests).not.toEqual(
       expect.arrayContaining([
@@ -116,7 +118,7 @@ for (const [name, width, height] of [
     // Academic content remains intact and still exposes all 12 Chemistry topics.
     await page.getByRole("link", { name: /Open Chemistry/ }).click();
     await expect(
-      page.getByRole("heading", { name: "Chemistry, in view." }),
+      page.getByRole("heading", { name: "Chemistry", exact: true }),
     ).toBeVisible();
     await expect(page.locator(".topic-nav a")).toHaveCount(12);
     const topicLinks = await page
@@ -134,15 +136,15 @@ for (const [name, width, height] of [
       page.getByRole("heading", { name: "Reaction profile", exact: true }),
     ).toBeVisible();
     await expect(page.locator("output")).toContainText("Transition state");
-    await expect(page.locator("#ai-build")).not.toHaveAttribute("open", "");
+    await expect(page.locator("#ai-build")).toHaveCount(0);
     await expect(page.locator("#provenance")).not.toHaveAttribute("open", "");
     expect(
       await page
-        .locator(".detail-stage")
+        .locator("h1")
         .evaluate((element) => element.getBoundingClientRect().top),
     ).toBeLessThan(
       await page
-        .locator("h1")
+        .locator(".detail-stage")
         .evaluate((element) => element.getBoundingClientRect().top),
     );
     await page.getByRole("slider").focus();
@@ -160,7 +162,7 @@ for (const [name, width, height] of [
     // secondary to browsing rhythm rather than exposed as a filter dashboard.
     await page.getByRole("link", { name: "Explore", exact: true }).click();
     await expect(
-      page.getByRole("heading", { name: "Find the mechanism, not the thumbnail." }),
+      page.getByRole("heading", { name: "Explore", exact: true }),
     ).toBeVisible();
     await expect(page.locator(".explore-row")).toHaveCount(28);
     await expect(page.locator("#result-count")).toHaveText("28 references");
@@ -168,9 +170,9 @@ for (const [name, width, height] of [
     await expect(page.locator(".explore-row")).toHaveCount(2);
     await page.getByLabel("Search references").fill("");
     await page.locator("#refine summary").click();
-    await page.getByLabel("Resource", { exact: true }).selectOption("yes");
+    await page.getByLabel("Demo", { exact: true }).selectOption("yes");
     await expect(page.locator(".explore-row")).toHaveCount(7);
-    await page.getByLabel("Resource", { exact: true }).selectOption("");
+    await page.getByLabel("Demo", { exact: true }).selectOption("");
     await page.getByLabel("World", { exact: true }).selectOption("all");
     await page.getByLabel("Coverage", { exact: true }).selectOption("LIVE");
     await expect(page.locator(".explore-row")).toHaveCount(6);
@@ -185,17 +187,17 @@ for (const [name, width, height] of [
     // External website reference: medium-aware, source-linked, not copied.
     await page.goto("/#example/ex:whole-earth-index");
     await expect(page.locator('#stage [data-presentation="editorial"]')).toBeVisible();
-    await expect(page.locator("#stage")).toContainText(
+    await expect(page.locator("#stage")).not.toContainText(
       "Original source media is linked, not reproduced here.",
     );
     await expect(
-      page.getByRole("link", { name: "Open original reference ↗" }),
+      page.getByRole("link", { name: "Original ↗" }),
     ).toHaveAttribute("href", "https://wholeearth.info/");
     await expect(page.locator(".resource-callout")).toHaveCount(1);
     await expect(page.locator("#select-example")).toHaveCount(0);
     await expect(page.locator(".data-id")).toContainText("ex:whole-earth-index");
     await expect(page.locator(".resource-callout")).toContainText(
-      "not the source preview",
+      "AIDRB implementation",
     );
     await expect(page.locator("#provenance")).not.toHaveAttribute("open", "");
     await assertNoOverflow(page);
@@ -207,9 +209,7 @@ for (const [name, width, height] of [
     // Film/title sequence: a distinct moving-image presentation; no fake Resource.
     await page.goto("/#example/ex:aott-severance");
     await expect(page.locator('#stage [data-presentation="cinema"]')).toBeVisible();
-    await expect(page.locator("#resources")).toContainText(
-      "No reusable Resource has been extracted",
-    );
+    await expect(page.locator("#resources")).toBeHidden();
     await assertNoOverflow(page);
     await page.screenshot({
       path: `${evidence}/${name}-human-example-cinema.png`,
@@ -219,9 +219,7 @@ for (const [name, width, height] of [
     // Physical installation: spatial presentation semantics, external source only.
     await page.goto("/#example/ex:pulse-room");
     await expect(page.locator('#stage [data-presentation="spatial"]')).toBeVisible();
-    await expect(page.locator("#resources")).toContainText(
-      "No reusable Resource has been extracted",
-    );
+    await expect(page.locator("#resources")).toBeHidden();
     await assertNoOverflow(page);
     await page.screenshot({
       path: `${evidence}/${name}-human-example-spatial.png`,
@@ -311,8 +309,9 @@ for (const [name, width, height] of [
           exact: true,
         }),
       ).toBeVisible();
-      await expect(page.locator(".resource-demo-label")).toContainText(
-        "not a preview of its source Example",
+      await expect(page.locator(".resource-demo-label")).toContainText("DEMO");
+      await expect(page.locator(".resource-status")).toContainText(
+        "AIDRB implementation",
       );
       await expect(page.locator("iframe.resource-demo")).toBeVisible();
       const frame = page.frameLocator("iframe.resource-demo");
