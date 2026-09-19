@@ -1,7 +1,7 @@
 {
   "id": "candidate:patatap",
   "candidate_kind": "example",
-  "status": "promote",
+  "status": "promoted",
   "discovered_by": "scout",
   "source": {
     "locator_type": "url",
@@ -25,9 +25,13 @@
   ],
   "notes": "The official page describes Patatap as a portable animation and sound kit and explicitly states that it was made with Two.js.",
   "decision": {
-    "outcome": "promote",
+    "outcome": "promoted",
     "rationale": "Canonical example of low-latency one-action/one-response audiovisual mapping with almost no chrome, useful for understanding expressive interfaces and immediate feedback.",
     "reviewed_by": "wave01-curation",
-    "reviewed_at": "2026-09-19"
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:patatap",
+      "concept:cross-modal-input-mapping"
+    ]
   }
 }

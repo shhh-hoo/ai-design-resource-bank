@@ -1,7 +1,7 @@
 {
   "id": "candidate:random-future-self",
   "candidate_kind": "example",
-  "status": "promote",
+  "status": "promoted",
   "discovered_by": "scout",
   "source": {
     "locator_type": "url",
@@ -25,9 +25,13 @@
   ],
   "notes": "The official page documents Metrilus 3D cameras, custom electronics and LEDs; the work presents a full-length body image as distributed points of light with a slight delay while retaining recognisability.",
   "decision": {
-    "outcome": "promote",
+    "outcome": "promoted",
     "rationale": "Strong physical HCI example of information reduction: identity and movement survive aggressive abstraction, and latency becomes part of the perceptual relationship rather than an implementation flaw.",
     "reviewed_by": "wave01-curation",
-    "reviewed_at": "2026-09-19"
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:random-future-self",
+      "concept:sensor-mediated-environment"
+    ]
   }
 }

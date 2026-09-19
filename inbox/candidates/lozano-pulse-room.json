@@ -1,7 +1,7 @@
 {
   "id": "candidate:lozano-pulse-room",
   "candidate_kind": "example",
-  "status": "promote",
+  "status": "promoted",
   "discovered_by": "scout",
   "source": {
     "locator_type": "url",
@@ -25,9 +25,13 @@
   ],
   "notes": "The artist's official page documents 100–300 incandescent bulbs, a heart-rate sensor, computer control, immediate pulse playback on the nearest bulb, and a queue that shifts prior participants' recordings down the grid.",
   "decision": {
-    "outcome": "promote",
+    "outcome": "promoted",
     "rationale": "Strong physical HCI anchor for sensor input becoming both immediate feedback and persistent shared history in one spatial representation.",
     "reviewed_by": "wave01-curation",
-    "reviewed_at": "2026-09-19"
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:pulse-room",
+      "concept:sensor-mediated-environment"
+    ]
   }
 }

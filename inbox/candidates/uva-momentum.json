@@ -1,7 +1,7 @@
 {
   "id": "candidate:uva-momentum",
   "candidate_kind": "example",
-  "status": "promote",
+  "status": "promoted",
   "discovered_by": "scout",
   "source": {
     "locator_type": "url",
@@ -25,9 +25,13 @@
   ],
   "notes": "UVA's official page states that Momentum transformed the Barbican Curve using pendulum-like elements, evolving light and sound, and visitor movement through the room; visitors explored at their own pace.",
   "decision": {
-    "outcome": "promote",
+    "outcome": "promoted",
     "rationale": "Strong physical reference for composing time and attention across a path rather than a screen: the user's traversal determines the temporal slice of one evolving spatial system.",
     "reviewed_by": "wave01-curation",
-    "reviewed_at": "2026-09-19"
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:uva-momentum",
+      "concept:path-paced-spatial-choreography"
+    ]
   }
 }

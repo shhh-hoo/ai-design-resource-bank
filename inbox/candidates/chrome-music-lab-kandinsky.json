@@ -1,7 +1,7 @@
 {
   "id": "candidate:chrome-music-lab-kandinsky",
   "candidate_kind": "example",
-  "status": "promote",
+  "status": "promoted",
   "discovered_by": "scout",
   "source": {
     "locator_type": "url",
@@ -25,9 +25,13 @@
   ],
   "notes": "The Chrome Music Lab project describes hands-on browser experiments and states that experiments use open web technologies including Web Audio API, WebMIDI and Tone.js. Kandinsky specifically centers drawing as the sound-making gesture.",
   "decision": {
-    "outcome": "promote",
+    "outcome": "promoted",
     "rationale": "Adds a canonical cross-modal direct-manipulation example where the same user gesture generates both visible form and sound rather than controlling two separate interfaces.",
     "reviewed_by": "wave01-curation",
-    "reviewed_at": "2026-09-19"
+    "reviewed_at": "2026-09-19",
+    "canonical_ids": [
+      "ex:chrome-music-lab-kandinsky",
+      "concept:cross-modal-input-mapping"
+    ]
   }
 }
