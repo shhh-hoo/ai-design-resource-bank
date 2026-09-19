@@ -382,7 +382,7 @@ function applyOriginalMedia(example, media) {
   if (media.mode === "on-demand-embed") {
     const access = stage.querySelector(".reference-access");
     if (!access) return;
-    access.innerHTML = `<button class="load-original" type="button">View original here</button><a href="${esc(media.source_url)}" target="_blank" rel="noreferrer">Open ↗</a>`;
+    access.innerHTML = `<button class="load-original" type="button">Load original</button><a href="${esc(media.source_url)}" target="_blank" rel="noreferrer">Open ↗</a>`;
     access.querySelector(".load-original").addEventListener("click", () => {
       stage.className = "detail-stage original-media-stage";
       stage.innerHTML = originalFrame(example, media);
